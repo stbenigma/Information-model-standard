@@ -1,0 +1,69 @@
+{% macro tile(text,href,src="mainview.html") -%}
+					<div class="kachel">
+						<div class=text>
+                            {{ text }}
+						</div>
+						<a id="#MainViewtext" href="{{ href }}" target="contentIframe"  >
+							<img src="{{ src }}" alt="Diag-SVG" width="300" height="200" >
+						</a>
+					</div>
+{%- endmacro %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Main-View</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<style>
+		  .kachel {
+		    position: relative;
+		    width: 250px;
+		    height: 150px;
+		    overflow: hidden;
+			  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+		  }
+		  .kachel img {
+		    width: 100%;
+		    height: 100%;
+		  }
+		  .kachel .text {
+		    position: absolute;
+			text-align: center;
+			top: 0;
+		    left: 0;
+		    width: 100%;
+		    padding: 5px;
+		    background-color: rgba(0, 0, 0, 0.5);
+		    color: #fff;
+		    font-size: 18px;
+		    line-height: 1;
+		  }
+		</style>
+</head>
+
+<body>
+	<div id="MasterView">
+		<h3 id="MasterViewH3">Main-View</h3>
+		<table class=mytable>
+            {% for diags_batched in webmodel.diagrams|batch(4) %}
+                <tr>
+                {% for diag in diags_batched %}
+                    <td>
+                        <div class="kachel">
+                            <a id="#MainViewtext" href="{{ diag["id"] }}.html" target="contentIframe"  >
+                                <img src="{{ diag["id"] }}.svg" alt="Diag-SVG" width="300" height="200" >
+                                <div class=text>
+                                    {{ diag["name"] }}
+                                </div>
+                            </a>
+                        </div>
+                    </td>
+                {% endfor %}
+                </tr>
+            {% endfor %}
+		</table>
+	</div>
+</body>
+</html>

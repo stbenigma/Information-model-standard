@@ -1,0 +1,1813 @@
+<svg id="DIAG1455-SVG" width="1969" height="1437" 
+            viewBox="0 0 1969 1437" 
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+            version="1.1"> 
+            <style>
+            text{
+                font-family: "TT Norms Pro",Helvetica, Arial
+            }
+            text.entity {
+                font-size: 12px;
+                font-weight: bold;
+            }text.subentity {
+                font-size: 11px;
+                font-weight: bold;
+            }text.attribute {
+                font-size: 10px;
+                font-weight: normal;
+            }text.subattribute {
+                font-size: 9px;
+                font-weight: normal;
+            }text.relation {
+                font-size: 8px;
+                font-weight: normal;
+            }text.metainfo {
+                font-size: 9px;
+                font-weight: normal;
+            }text.legendcategory {
+                font-size: 9px;
+                font-weight: normal;
+            }text.category {
+                font-size: 12px;
+                font-weight: bold;
+            }
+        </style >
+            <defs id="dmw_defs" >
+            </defs>
+            <g id="level0"  minzoom="0" maxzoom="4">
+                 
+<g transform="translate(1457,1034)" minzoom="0" maxzoom="1">
+            <a id="DIAG1455-ENTI228" href="../../../en/elements/entities/ENTI228.html" target="contentIframe"  >
+            <rect x="0" y="0" width="153" height="103" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>Value that is a valid value for an enumerated value list. 
+The attribute &quot;value&quot; is the physical (language-independent) value, which is the actual value in the conceptual model
+
+Internal -&gt; Logical va
+
+</title>
+            </a><a id="DIAG1455-ENTI228NAME" href="../../../en/elements/entities/ENTI228.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="entity" x="9" y="24" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Allowed value</tspan>
+    <title>Value that is a valid value for an enumerated value list. 
+The attribute &quot;value&quot; is the physical (language-independent) value, which is the actual value in the conceptual model
+
+Internal -&gt; Logical va
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR334NAME" href="../../../en/elements/attributes/ATTR334.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="attribute" x="9" y="40" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Value</tspan>
+    <title>A value that an attribute can assume.
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR335NAME" href="../../../en/elements/attributes/ATTR335.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="attribute" x="9" y="56" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Display text [L]</tspan>
+    <title>Textual representation of a value in several languages possible.
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR336NAME" href="../../../en/elements/attributes/ATTR336.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="attribute" x="9" y="72" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Sort order</tspan>
+    <title>Number by which the values in a display are sorted in ascending order. Empty -&gt; Value is placed at the end of the list in random order
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR337NAME" href="../../../en/elements/attributes/ATTR337.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="attribute" x="9" y="88" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Description [L]</tspan>
+    <title>Long text / description of a value in several languages possible.
+
+</title>
+    </text></a>
+        </g>
+<g transform="translate(504,751)" minzoom="0" maxzoom="3">
+            <a id="DIAG1455-ENTI229" href="../../../en/elements/entities/ENTI229.html" target="contentIframe"  >
+            <rect x="0" y="0" width="307" height="167" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>Description of a carrier of a value. 
+This attribute is the valid Single Source of Truth of the conceptual model.   
+It is not absolutely necessary for this attribute to be managed in this form in one
+
+Name
+Birthdate
+Geo-Position</title>
+            </a><a id="DIAG1455-ENTI229NAME" href="../../../en/elements/entities/ENTI229.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="entity" x="9" y="24" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Attribute</tspan>
+    <title>Description of a carrier of a value. 
+This attribute is the valid Single Source of Truth of the conceptual model.   
+It is not absolutely necessary for this attribute to be managed in this form in one
+
+Name
+Birthdate
+Geo-Position</title>
+    </text></a>
+<a id="DIAG1455-ATTR297NAME" href="../../../en/elements/attributes/ATTR297.html" target="contentIframe"  minzoom="0" maxzoom="2"><text class="attribute" x="9" y="40" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Name</tspan>
+    <title>Name that says something about the role, use of the property in the entity. Frequently = domain name
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR302NAME" href="../../../en/elements/attributes/ATTR302.html" target="contentIframe"  minzoom="0" maxzoom="2"><text class="attribute" x="9" y="56" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">is mandatory</tspan>
+    <title>YES -&gt; The field must contain a value.
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR303NAME" href="../../../en/elements/attributes/ATTR303.html" target="contentIframe"  minzoom="0" maxzoom="0"><text class="attribute" x="9" y="72" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">is repeated</tspan>
+    <title>YES -&gt; The field can contain several values.  NO -&gt; Field contains a maximum of one value. Can be solved via extra table.
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR304NAME" href="../../../en/elements/attributes/ATTR304.html" target="contentIframe"  minzoom="0" maxzoom="0"><text class="attribute" x="9" y="88" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">is language-dependent</tspan>
+    <title>YES -&gt; The field value can occur in several languages. Solve via extra table linked with languages
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR-OVL1412NAME" href="#ATTR-OVL1412"  minzoom="0" maxzoom="4"><text class="attribute" x="9" y="104" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">... +5</tspan>
+    <title>is encrypted
+Description
+Display name
+Display sequence
+Tooltip</title>
+    </text></a>
+        </g><g transform="translate(671,847)" minzoom="0" maxzoom="3">
+            <a id="DIAG1455-ENTI233" href="../../../en/elements/entities/ENTI233.html" target="contentIframe"  >
+            <rect x="0" y="0" width="130" height="45" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>Description of a field in a group domain
+
+Longitude
+Lattitude</title>
+            </a><a id="DIAG1455-ENTI233NAME" href="../../../en/elements/entities/ENTI233.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="subentity" x="21.5" y="29.5" 
+    text-anchor="start" >
+    <tspan x="21.5" dy="0">Domain Attribute</tspan>
+    <title>Description of a field in a group domain
+
+Longitude
+Lattitude</title>
+    </text></a>
+        </g><g transform="translate(671,783)" minzoom="0" maxzoom="3">
+            <a id="DIAG1455-ENTI236" href="../../../en/elements/entities/ENTI236.html" target="contentIframe"  >
+            <rect x="0" y="0" width="130" height="48" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>Description of a carrier of a value of an objekct / thing / entity
+
+Name
+Birthdate
+Length</title>
+            </a><a id="DIAG1455-ENTI236NAME" href="../../../en/elements/entities/ENTI236.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="subentity" x="9" y="23" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Entity Attribute</tspan>
+    <title>Description of a carrier of a value of an objekct / thing / entity
+
+Name
+Birthdate
+Length</title>
+    </text></a>
+<a id="DIAG1455-ATTR287NAME" href="../../../en/elements/attributes/ATTR287.html" target="contentIframe"  minzoom="0" maxzoom="1"><text class="subattribute" x="9" y="37" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">is descriptive</tspan>
+    <title>The attribute characterizes the entity and is important for its understanding
+
+</title>
+    </text></a>
+        </g>
+<g transform="translate(259,515)" minzoom="0" maxzoom="4">
+            <a id="DIAG1455-ENTI230" href="../../../en/elements/entities/ENTI230.html" target="contentIframe"  >
+            <rect x="0" y="0" width="170" height="120" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>Group of domains, entities or categories. Categorizing elements for ease of communication, display and finding.
+
+</title>
+            </a><a id="DIAG1455-ENTI230NAME" href="../../../en/elements/entities/ENTI230.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="entity" x="9" y="24" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Category</tspan>
+    <title>Group of domains, entities or categories. Categorizing elements for ease of communication, display and finding.
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR309NAME" href="../../../en/elements/attributes/ATTR309.html" target="contentIframe"  minzoom="0" maxzoom="1"><text class="attribute" x="9" y="40" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Name [L]</tspan>
+    <title>Name of the category if it is not a reference to any other elements
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR310NAME" href="../../../en/elements/attributes/ATTR310.html" target="contentIframe"  minzoom="0" maxzoom="1"><text class="attribute" x="9" y="56" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Description [L]</tspan>
+    <title>default IU representation of an entity
+
+</title>
+    </text></a>
+        </g>
+<g transform="translate(340,10)" minzoom="0" maxzoom="4">
+            <a id="DIAG1455-ENTI231" href="../../../en/elements/entities/ENTI231.html" target="contentIframe"  >
+            <rect x="0" y="0" width="154" height="51" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>
+
+</title>
+            </a><a id="DIAG1455-ENTI231NAME" href="../../../en/elements/entities/ENTI231.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="entity" x="50.0" y="33.0" 
+    text-anchor="start" >
+    <tspan x="50.0" dy="0">Data layer</tspan>
+    <title>
+
+</title>
+    </text></a>
+        </g>
+<g transform="translate(1235,649)" minzoom="0" maxzoom="3">
+            <a id="DIAG1455-ENTI232" href="../../../en/elements/entities/ENTI232.html" target="contentIframe"  >
+            <rect x="0" y="0" width="401" height="317" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>Description of the value range of one (or more) attribute(s).  The types numerical, text, time or enumeration are to be understood conceptually. The real data types and, if applicable, formats (for nu
+
+</title>
+            </a><a id="DIAG1455-ENTI232NAME" href="../../../en/elements/entities/ENTI232.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="entity" x="9" y="24" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Domain</tspan>
+    <title>Description of the value range of one (or more) attribute(s).  The types numerical, text, time or enumeration are to be understood conceptually. The real data types and, if applicable, formats (for nu
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR323NAME" href="../../../en/elements/attributes/ATTR323.html" target="contentIframe"  minzoom="0" maxzoom="2"><text class="attribute" x="9" y="40" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Name [L]</tspan>
+    <title>
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR324NAME" href="../../../en/elements/attributes/ATTR324.html" target="contentIframe"  minzoom="0" maxzoom="2"><text class="attribute" x="9" y="56" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Description [L]</tspan>
+    <title>
+
+</title>
+    </text></a>
+        </g><g transform="translate(1440,805)" minzoom="0" maxzoom="2">
+            <a id="DIAG1455-ENTI253" href="../../../en/elements/entities/ENTI253.html" target="contentIframe"  >
+            <rect x="0" y="0" width="176" height="65" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>Documents of any kind that cannot be saved in a format called structured (text, number, date).  Managed as documents in the file system (PDF, PNG, TIFF, XLS, DOC, pages, etc.) or as final database obj
+
+</title>
+            </a><a id="DIAG1455-ENTI253NAME" href="../../../en/elements/entities/ENTI253.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="subentity" x="9" y="23" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Binary value range</tspan>
+    <title>Documents of any kind that cannot be saved in a format called structured (text, number, date).  Managed as documents in the file system (PDF, PNG, TIFF, XLS, DOC, pages, etc.) or as final database obj
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR296NAME" href="../../../en/elements/attributes/ATTR296.html" target="contentIframe"  minzoom="0" maxzoom="1"><text class="subattribute" x="9" y="37" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Content type</tspan>
+    <title>
+
+</title>
+    </text></a>
+        </g><g transform="translate(1262,884)" minzoom="0" maxzoom="2">
+            <a id="DIAG1455-ENTI240" href="../../../en/elements/entities/ENTI240.html" target="contentIframe"  >
+            <rect x="0" y="0" width="162" height="64" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>There are attributes that consist of several components, but can be regarded as one attribute for an entity. 
+The components of this attribute group always occur together. 
+The fact that an attribute 
+
+</title>
+            </a><a id="DIAG1455-ENTI240NAME" href="../../../en/elements/entities/ENTI240.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="subentity" x="41.0" y="39.0" 
+    text-anchor="start" >
+    <tspan x="41.0" dy="0">Group Attribute</tspan>
+    <title>There are attributes that consist of several components, but can be regarded as one attribute for an entity. 
+The components of this attribute group always occur together. 
+The fact that an attribute 
+
+</title>
+    </text></a>
+        </g><g transform="translate(1441,681)" minzoom="0" maxzoom="2">
+            <a id="DIAG1455-ENTI242" href="../../../en/elements/entities/ENTI242.html" target="contentIframe"  >
+            <rect x="0" y="0" width="176" height="104" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>Can record numerical values
+
+</title>
+            </a><a id="DIAG1455-ENTI242NAME" href="../../../en/elements/entities/ENTI242.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="subentity" x="9" y="23" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Numeric value range</tspan>
+    <title>Can record numerical values
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR318NAME" href="../../../en/elements/attributes/ATTR318.html" target="contentIframe"  minzoom="0" maxzoom="1"><text class="subattribute" x="9" y="37" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Total Digits Count</tspan>
+    <title>Number of digits before the decimal point
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR319NAME" href="../../../en/elements/attributes/ATTR319.html" target="contentIframe"  minzoom="0" maxzoom="1"><text class="subattribute" x="9" y="51" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Decimal places#</tspan>
+    <title>Number of digits after the decimal point
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR320NAME" href="../../../en/elements/attributes/ATTR320.html" target="contentIframe"  minzoom="0" maxzoom="1"><text class="subattribute" x="9" y="65" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Min value</tspan>
+    <title>Minimum value for a numeric field. Empty -&gt; as small as the system allows
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR321NAME" href="../../../en/elements/attributes/ATTR321.html" target="contentIframe"  minzoom="0" maxzoom="1"><text class="subattribute" x="9" y="79" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Max value</tspan>
+    <title>Maximum value for a numeric field. Empty -&gt; as big as the system allows
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR322NAME" href="../../../en/elements/attributes/ATTR322.html" target="contentIframe"  minzoom="0" maxzoom="1"><text class="subattribute" x="9" y="93" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Rounding unit</tspan>
+    <title>A value that indicates the unit to which a numeric value is rounded for storage. (e.g. 0.5, 0.25, 1000) empty -&gt; not rounded explicitly
+
+</title>
+    </text></a>
+        </g><g transform="translate(1253,712)" minzoom="0" maxzoom="2">
+            <a id="DIAG1455-ENTI248" href="../../../en/elements/entities/ENTI248.html" target="contentIframe"  >
+            <rect x="0" y="0" width="161" height="73" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>Value range (domain) for a user-defined text attribute
+
+</title>
+            </a><a id="DIAG1455-ENTI248NAME" href="../../../en/elements/entities/ENTI248.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="subentity" x="9" y="23" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Text value range</tspan>
+    <title>Value range (domain) for a user-defined text attribute
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR338NAME" href="../../../en/elements/attributes/ATTR338.html" target="contentIframe"  minzoom="0" maxzoom="1"><text class="subattribute" x="9" y="37" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Max length</tspan>
+    <title>Maximum length of text in letters (CHAR)
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR339NAME" href="../../../en/elements/attributes/ATTR339.html" target="contentIframe"  minzoom="0" maxzoom="1"><text class="subattribute" x="9" y="51" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Value rule</tspan>
+    <title>Restrictive rule for the permitted characters of a text.
+
+</title>
+    </text></a>
+        </g><g transform="translate(1250,797)" minzoom="0" maxzoom="2">
+            <a id="DIAG1455-ENTI249" href="../../../en/elements/entities/ENTI249.html" target="contentIframe"  >
+            <rect x="0" y="0" width="177" height="70" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>Value range for time attributes (granularity decides about level (sec, min, h, d, w,m,y)
+
+</title>
+            </a><a id="DIAG1455-ENTI249NAME" href="../../../en/elements/entities/ENTI249.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="subentity" x="9" y="23" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Time Value range</tspan>
+    <title>Value range for time attributes (granularity decides about level (sec, min, h, d, w,m,y)
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR333NAME" href="../../../en/elements/attributes/ATTR333.html" target="contentIframe"  minzoom="0" maxzoom="1"><text class="subattribute" x="9" y="37" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Granularity</tspan>
+    <title>To which unit is the date rounded (day, minute, month, year)?
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR331NAME" href="../../../en/elements/attributes/ATTR331.html" target="contentIframe"  minzoom="0" maxzoom="1"><text class="subattribute" x="9" y="51" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Min Time</tspan>
+    <title>earliest time in this attribute. Empty -&gt; there is no lower limit
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR332NAME" href="../../../en/elements/attributes/ATTR332.html" target="contentIframe"  minzoom="0" maxzoom="1"><text class="subattribute" x="9" y="65" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Max Time</tspan>
+    <title>latest time in this attribute. Empty -&gt; there is no upper limit
+
+</title>
+    </text></a>
+        </g><g transform="translate(1451,881)" minzoom="0" maxzoom="2">
+            <a id="DIAG1455-ENTI251" href="../../../en/elements/entities/ENTI251.html" target="contentIframe"  >
+            <rect x="0" y="0" width="162" height="71" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>A list (final enumeration) of valid values
+
+</title>
+            </a><a id="DIAG1455-ENTI251NAME" href="../../../en/elements/entities/ENTI251.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="subentity" x="9" y="23" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Value list</tspan>
+    <title>A list (final enumeration) of valid values
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR328NAME" href="../../../en/elements/attributes/ATTR328.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="subattribute" x="9" y="37" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Allowed Value [N]</tspan>
+    <title>
+
+</title>
+    </text></a>
+        </g>
+<g transform="translate(491,164)" minzoom="0" maxzoom="3">
+            <a id="DIAG1455-ENTI235" href="../../../en/elements/entities/ENTI235.html" target="contentIframe"  >
+            <rect x="0" y="0" width="217" height="173" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>Designates a thing of interest in this shere of influence (targetenvironment). A being, a tangible or intangible (abstract) object with properties and relationships.
+It is an IT-system- and technology
+
+</title>
+            </a><a id="DIAG1455-ENTI235NAME" href="../../../en/elements/entities/ENTI235.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="entity" x="9" y="24" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Entity</tspan>
+    <title>Designates a thing of interest in this shere of influence (targetenvironment). A being, a tangible or intangible (abstract) object with properties and relationships.
+It is an IT-system- and technology
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR312NAME" href="../../../en/elements/attributes/ATTR312.html" target="contentIframe"  minzoom="0" maxzoom="2"><text class="attribute" x="9" y="40" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Name [L]</tspan>
+    <title>unique Name of the entity normally used in communication.
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR313NAME" href="../../../en/elements/attributes/ATTR313.html" target="contentIframe"  minzoom="0" maxzoom="2"><text class="attribute" x="9" y="56" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Description [L]</tspan>
+    <title>Meaning, benefits, usage  of the Entity
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR314NAME" href="../../../en/elements/attributes/ATTR314.html" target="contentIframe"  minzoom="0" maxzoom="2"><text class="attribute" x="9" y="72" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Synonym [LN]</tspan>
+    <title>List of synonym names for this thing beeing used in old systems or out of habit. Not unique.
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR315NAME" href="../../../en/elements/attributes/ATTR315.html" target="contentIframe"  minzoom="0" maxzoom="0"><text class="attribute" x="9" y="88" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Short name</tspan>
+    <title>nonempty short text for often used for references. Using letters, digits and &#x27; &#x27;,-,:,$,_
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR-OVL1413NAME" href="#ATTR-OVL1413"  minzoom="0" maxzoom="4"><text class="attribute" x="9" y="104" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">... +2</tspan>
+    <title>Prefix
+Tooltip</title>
+    </text></a>
+        </g>
+<g transform="translate(781,337)" minzoom="0" maxzoom="2">
+            <a id="DIAG1455-ENTI237" href="../../../en/elements/entities/ENTI237.html" target="contentIframe"  >
+            <rect x="0" y="0" width="150" height="86" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>Group of identifying relationships and/or attributes of an entity. 
+Each combination of values in a key is unique to the entity.  
+I.e. it identifies exactly 1 entry in the entity.  
+The sequence numb
+
+</title>
+            </a><a id="DIAG1455-ENTI237NAME" href="../../../en/elements/entities/ENTI237.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="entity" x="48.0" y="50.5" 
+    text-anchor="start" >
+    <tspan x="48.0" dy="0">Entity key</tspan>
+    <title>Group of identifying relationships and/or attributes of an entity. 
+Each combination of values in a key is unique to the entity.  
+I.e. it identifies exactly 1 entry in the entity.  
+The sequence numb
+
+</title>
+    </text></a>
+        </g>
+<g transform="translate(752,71)" minzoom="0" maxzoom="1">
+            <a id="DIAG1455-ENTI238" href="../../../en/elements/entities/ENTI238.html" target="contentIframe"  >
+            <rect x="0" y="0" width="144" height="71" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>Relationships that emanate from an entity can be exclusive. I.e. none or 1 of them is possible, but never several simultaneously.
+Relationships in a group are all IsA relations or all functional relat
+
+a Person is reachable via Mobile-Phone or via Land-Line-Phone</title>
+            </a><a id="DIAG1455-ENTI238NAME" href="../../../en/elements/entities/ENTI238.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="entity" x="9" y="24" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Exclusive relation</tspan>
+    <title>Relationships that emanate from an entity can be exclusive. I.e. none or 1 of them is possible, but never several simultaneously.
+Relationships in a group are all IsA relations or all functional relat
+
+a Person is reachable via Mobile-Phone or via Land-Line-Phone</title>
+    </text></a>
+<a id="DIAG1455-ATTR311NAME" href="../../../en/elements/attributes/ATTR311.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="attribute" x="9" y="40" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Number</tspan>
+    <title>Arbitrary naming to distinguish multiple exclusive relationships in an entity. If missing, generate as entity short name + run no.
+
+</title>
+    </text></a>
+        </g>
+<g transform="translate(946,685)" minzoom="0" maxzoom="2">
+            <a id="DIAG1455-ENTI239" href="../../../en/elements/entities/ENTI239.html" target="contentIframe"  >
+            <rect x="0" y="0" width="170" height="192" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>Generic expansion of elements
+Example or user defined property adding to the documentation of an element.
+
+</title>
+            </a><a id="DIAG1455-ENTI239NAME" href="../../../en/elements/entities/ENTI239.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="entity" x="9" y="24" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Generic element</tspan>
+    <title>Generic expansion of elements
+Example or user defined property adding to the documentation of an element.
+
+</title>
+    </text></a>
+        </g><g transform="translate(956,725)" minzoom="0" maxzoom="2">
+            <a id="DIAG1455-ENTI254" href="../../../en/elements/entities/ENTI254.html" target="contentIframe"  >
+            <rect x="0" y="0" width="150" height="63" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>Examplevalue  for Entity, Attribute or example Sentence for Relationshipend.
+Entity: Typically values of descriptive (and unique) attributes.
+Attributes: Typical values, boundary values (if possible f
+
+0
+1
+99</title>
+            </a><a id="DIAG1455-ENTI254NAME" href="../../../en/elements/entities/ENTI254.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="subentity" x="9" y="23" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Example</tspan>
+    <title>Examplevalue  for Entity, Attribute or example Sentence for Relationshipend.
+Entity: Typically values of descriptive (and unique) attributes.
+Attributes: Typical values, boundary values (if possible f
+
+0
+1
+99</title>
+    </text></a>
+<a id="DIAG1455-ATTR293NAME" href="../../../en/elements/attributes/ATTR293.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="subattribute" x="9" y="37" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Value</tspan>
+    <title>
+
+</title>
+    </text></a>
+        </g><g transform="translate(956,802)" minzoom="0" maxzoom="4">
+            <a id="DIAG1455-ENTI250" href="../../../en/elements/entities/ENTI250.html" target="contentIframe"  >
+            <rect x="0" y="0" width="150" height="63" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>For project- or environment-specific extensions, separate properties can be defined for each model element.  Example: - Quality requirement level - Security level
+
+</title>
+            </a><a id="DIAG1455-ENTI250NAME" href="../../../en/elements/entities/ENTI250.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="subentity" x="9" y="23" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">User-defined property</tspan>
+    <title>For project- or environment-specific extensions, separate properties can be defined for each model element.  Example: - Quality requirement level - Security level
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR294NAME" href="../../../en/elements/attributes/ATTR294.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="subattribute" x="9" y="37" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Name</tspan>
+    <title>
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR295NAME" href="../../../en/elements/attributes/ATTR295.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="subattribute" x="9" y="51" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Value</tspan>
+    <title>
+
+</title>
+    </text></a>
+        </g>
+<g transform="translate(925,443)" minzoom="0" maxzoom="2">
+            <a id="DIAG1455-ENTI241" href="../../../en/elements/entities/ENTI241.html" target="contentIframe"  >
+            <rect x="0" y="0" width="150" height="86" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>Group of identifying relationships and/or attributes of an entity. 
+Each combination of values in a key is unique to the entity.  
+I.e. it identifies exactly 1 entry in the entity.  
+The sequence numb
+
+</title>
+            </a><a id="DIAG1455-ENTI241NAME" href="../../../en/elements/entities/ENTI241.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="entity" x="40.5" y="50.5" 
+    text-anchor="start" >
+    <tspan x="40.5" dy="0">Key element</tspan>
+    <title>Group of identifying relationships and/or attributes of an entity. 
+Each combination of values in a key is unique to the entity.  
+I.e. it identifies exactly 1 entry in the entity.  
+The sequence numb
+
+</title>
+    </text></a>
+        </g>
+<g transform="translate(1468,468)" minzoom="0" maxzoom="0">
+            <a id="DIAG1455-ENTI243" href="../../../en/elements/entities/ENTI243.html" target="contentIframe"  >
+            <rect x="0" y="0" width="181" height="94" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>Physical measuring unit . See also e.g. https://en.wikipedia.org/wiki/International_unit #IU-basic sizes and - unities
+
+</title>
+            </a><a id="DIAG1455-ENTI243NAME" href="../../../en/elements/entities/ENTI243.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="entity" x="9" y="24" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Physical unit</tspan>
+    <title>Physical measuring unit . See also e.g. https://en.wikipedia.org/wiki/International_unit #IU-basic sizes and - unities
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR325NAME" href="../../../en/elements/attributes/ATTR325.html" target="contentIframe"  minzoom="0" maxzoom="0"><text class="attribute" x="9" y="40" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Symbol</tspan>
+    <title>
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR327NAME" href="../../../en/elements/attributes/ATTR327.html" target="contentIframe"  minzoom="0" maxzoom="0"><text class="attribute" x="9" y="56" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">SI unit</tspan>
+    <title>Unit according to SI specification
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR326NAME" href="../../../en/elements/attributes/ATTR326.html" target="contentIframe"  minzoom="0" maxzoom="0"><text class="attribute" x="9" y="72" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Description [L]</tspan>
+    <title>
+
+</title>
+    </text></a>
+        </g>
+<g transform="translate(1198,147)" minzoom="0" maxzoom="3">
+            <a id="DIAG1455-ENTI244" href="../../../en/elements/entities/ENTI244.html" target="contentIframe"  >
+            <rect x="0" y="0" width="210" height="172" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>A relationship always links the start entity  to exactly 1 other entity (end/revers entity). 
+They are an important part of the understanding a model. 
+For functional and m2n relationships association
+
+</title>
+            </a><a id="DIAG1455-ENTI244NAME" href="../../../en/elements/entities/ENTI244.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="entity" x="9" y="24" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Relation</tspan>
+    <title>A relationship always links the start entity  to exactly 1 other entity (end/revers entity). 
+They are an important part of the understanding a model. 
+For functional and m2n relationships association
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR288NAME" href="../../../en/elements/attributes/ATTR288.html" target="contentIframe"  minzoom="0" maxzoom="0"><text class="attribute" x="9" y="40" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Name</tspan>
+    <title>
+
+</title>
+    </text></a>
+        </g><g transform="translate(1214,275)" minzoom="0" maxzoom="2">
+            <a id="DIAG1455-ENTI255" href="../../../en/elements/entities/ENTI255.html" target="contentIframe"  >
+            <rect x="0" y="0" width="170" height="34" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>An M:1 relationship between two entities.
+The M side is always the from side (not listed like that in the ODM).
+
+</title>
+            </a><a id="DIAG1455-ENTI255NAME" href="../../../en/elements/entities/ENTI255.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="subentity" x="38.5" y="24.0" 
+    text-anchor="start" >
+    <tspan x="38.5" dy="0">Functional relation</tspan>
+    <title>An M:1 relationship between two entities.
+The M side is always the from side (not listed like that in the ODM).
+
+</title>
+    </text></a>
+        </g><g transform="translate(1214,229)" minzoom="0" maxzoom="2">
+            <a id="DIAG1455-ENTI246" href="../../../en/elements/entities/ENTI246.html" target="contentIframe"  >
+            <rect x="0" y="0" width="170" height="34" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>1:1 relationship that defines a role
+Relationship from father to child is usually optional. From child to father it must be mandatory.
+
+Person IsA
+Buyer
+Employee</title>
+            </a><a id="DIAG1455-ENTI246NAME" href="../../../en/elements/entities/ENTI246.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="subentity" x="52.5" y="24.0" 
+    text-anchor="start" >
+    <tspan x="52.5" dy="0">Role Relation</tspan>
+    <title>1:1 relationship that defines a role
+Relationship from father to child is usually optional. From child to father it must be mandatory.
+
+Person IsA
+Buyer
+Employee</title>
+    </text></a>
+        </g><g transform="translate(1214,185)" minzoom="0" maxzoom="2">
+            <a id="DIAG1455-ENTI252" href="../../../en/elements/entities/ENTI252.html" target="contentIframe"  >
+            <rect x="0" y="0" width="170" height="34" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>An M:N relationship between two entities. 
+Cardinality on both ends has to be &quot;M&quot;
+Association text&#x27;s are mandatory.
+
+</title>
+            </a><a id="DIAG1455-ENTI252NAME" href="../../../en/elements/entities/ENTI252.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="subentity" x="33.5" y="24.0" 
+    text-anchor="start" >
+    <tspan x="33.5" dy="0">many2many Relation</tspan>
+    <title>An M:N relationship between two entities. 
+Cardinality on both ends has to be &quot;M&quot;
+Association text&#x27;s are mandatory.
+
+</title>
+    </text></a>
+        </g>
+<g transform="translate(932,153)" minzoom="0" maxzoom="1">
+            <a id="DIAG1455-ENTI245" href="../../../en/elements/entities/ENTI245.html" target="contentIframe"  >
+            <rect x="0" y="0" width="139" height="138" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>Endpoint of a relation. Attach point of the relation to an entity.
+
+Their are always exactly 2 end points in a relation.
+
+</title>
+            </a><a id="DIAG1455-ENTI245NAME" href="../../../en/elements/entities/ENTI245.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="entity" x="9" y="24" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Relation End</tspan>
+    <title>Endpoint of a relation. Attach point of the relation to an entity.
+
+Their are always exactly 2 end points in a relation.
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR290NAME" href="../../../en/elements/attributes/ATTR290.html" target="contentIframe"  minzoom="0" maxzoom="1"><text class="attribute" x="9" y="40" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">is mandatory</tspan>
+    <title>to-entity must have at least 1 connection to the from-entity
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR291NAME" href="../../../en/elements/attributes/ATTR291.html" target="contentIframe"  minzoom="0" maxzoom="1"><text class="attribute" x="9" y="56" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Cardinality</tspan>
+    <title>
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR289NAME" href="../../../en/elements/attributes/ATTR289.html" target="contentIframe"  minzoom="0" maxzoom="1"><text class="attribute" x="9" y="72" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Association [L]</tspan>
+    <title>What connects the from-Entity with the to-Entity?
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR292NAME" href="../../../en/elements/attributes/ATTR292.html" target="contentIframe"  minzoom="0" maxzoom="1"><text class="attribute" x="9" y="88" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">is historicized</tspan>
+    <title>YES -&gt; Relationship can change over time. Only 1 relationship can apply at one specific time. System must keep history of changes. To be solved via extra table.
+
+</title>
+    </text></a>
+        </g>
+<g transform="translate(1655,888)" minzoom="0" maxzoom="0">
+            <a id="DIAG1455-ENTI247" href="../../../en/elements/entities/ENTI247.html" target="contentIframe"  >
+            <rect x="0" y="0" width="164" height="85" rx="4"
+            fill="#efcdc6" fill-opacity="0.2" />
+            <title>Format for storeing binary coded values.  
+Examples: GIF TIFF JPEG DOC DOCX SVG PDF
+
+</title>
+            </a><a id="DIAG1455-ENTI247NAME" href="../../../en/elements/entities/ENTI247.html" target="contentIframe"  minzoom="0" maxzoom="4"><text class="entity" x="9" y="24" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Storage format</tspan>
+    <title>Format for storeing binary coded values.  
+Examples: GIF TIFF JPEG DOC DOCX SVG PDF
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR329NAME" href="../../../en/elements/attributes/ATTR329.html" target="contentIframe"  minzoom="0" maxzoom="0"><text class="attribute" x="9" y="40" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Name</tspan>
+    <title>
+
+</title>
+    </text></a>
+<a id="DIAG1455-ATTR330NAME" href="../../../en/elements/attributes/ATTR330.html" target="contentIframe"  minzoom="0" maxzoom="0"><text class="attribute" x="9" y="56" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Description</tspan>
+    <title>
+
+</title>
+    </text></a>
+        </g>
+<g transform="translate(1071,190)" minzoom="0" maxzoom="1">
+            <line x1="2" y1="0" x2="-3" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+<a id="DIAG1455-1613NAME"   minzoom="0" maxzoom="4"><text class="relation" x="15" y="-2.8" 
+    text-anchor="start" >
+    <tspan x="15" dy="0">star</tspan>
+<tspan x="15" dy="10">ts</tspan>
+    <title>1 &quot;Relation End&quot; starts 1 &quot;Relation&quot;
+
+</title>
+    </text></a>
+<a id="D1614-1615NAME"   minzoom="0" maxzoom="4"><text class="relation" x="29.6" y="2.2" 
+    text-anchor="start" >
+    <tspan x="29.6" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="0" x2="13" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+<circle stroke="black" stroke-width=".3" fill="none" cx="9.75" cy="0.0" r="2.2" />
+        </g>
+<g transform="translate(1198,190)" minzoom="0" maxzoom="1">
+            <line x1="-125" y1="0" x2="-52" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+<a id="DIAG1455-1617NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-42" y="2.2" 
+    text-anchor="start" >
+    <tspan x="-42" dy="0">starts at</tspan>
+    <title>1 &quot;Relation&quot; starts at 1 &quot;Relation End&quot;
+
+</title>
+    </text></a>
+<a id="D1618-1619NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-48" y="1.2000000000000002" transform="rotate(180 -47 -0.19999999999999973)"
+    text-anchor="start" >
+    <tspan x="-48" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="-13" y1="0" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+        </g>
+<g transform="translate(1235,701)" minzoom="0" maxzoom="4">
+            <line x1="-50" y1="0" x2="-45" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<a id="DIAG1455-1621NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-35" y="-7.8" 
+    text-anchor="start" >
+    <tspan x="-35" dy="0">explai</tspan>
+<tspan x="-35" dy="10">ned</tspan>
+<tspan x="-35" dy="10">with</tspan>
+    <title>1 &quot;Domain&quot; explained with 0..N &quot;Generic element&quot;
+
+</title>
+    </text></a>
+<a id="D1622-1623NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-41" y="1.2000000000000002" transform="rotate(180 -40 -0.19999999999999973)"
+    text-anchor="start" >
+    <tspan x="-41" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="-13" y1="0" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+        </g>
+<g transform="translate(1116,701)" minzoom="0" maxzoom="4">
+            <line x1="69" y1="0" x2="53.45" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+<a id="DIAG1455-1625NAME"   minzoom="0" maxzoom="4"><text class="relation" x="15" y="2.2" 
+    text-anchor="start" >
+    <tspan x="15" dy="0">explains</tspan>
+    <title>1 &quot;Generic element&quot; explains 1 &quot;Domain&quot;
+
+</title>
+    </text></a>
+<a id="D1626-1627NAME"   minzoom="0" maxzoom="4"><text class="relation" x="47.45" y="2.2" 
+    text-anchor="start" >
+    <tspan x="47.45" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="0" x2="13" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/><path  d="M 0.0 -3.5 l 7 3.5 l -7 3.5" fill="transparent" stroke="black" stroke-width=".7"/>
+<circle stroke="black" stroke-width=".3" fill="none" cx="9.75" cy="0.0" r="2.2" />
+        </g>
+<g transform="translate(1546,562)" minzoom="0" maxzoom="0">
+            <line x1="0" y1="93" x2="0" y2="33" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<a id="DIAG1455-1629NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-13.0" y="21" 
+    text-anchor="start" >
+    <tspan x="-13.0" dy="0">defines</tspan>
+    <title>1 &quot;Physical unit&quot; defines 0..N &quot;Numeric value range&quot;
+
+</title>
+    </text></a>
+<a id="D1630-1631NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-5.9" y="31" transform="rotate(90 -0.9000000000000004 31)"
+    text-anchor="start" >
+    <tspan x="-5.9" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="0" x2="0" y2="13" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+        </g>
+<g transform="translate(1546,681)" minzoom="0" maxzoom="0">
+            <line x1="0" y1="-39.0" x2="0" y2="-26" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<a id="DIAG1455-1633NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-21.5" y="-25.0" 
+    text-anchor="start" >
+    <tspan x="-21.5" dy="0">measured in</tspan>
+    <title>1 &quot;Numeric value range&quot; measured in 0..1 &quot;Physical unit&quot;
+
+</title>
+    </text></a>
+<a id="D1634-1635NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-1.5" y="-37.0" transform="rotate(-90 3.5 -37.0)"
+    text-anchor="start" >
+    <tspan x="-1.5" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="-13" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/><path transform="rotate(-90 -3.5 -3.5)" d="M -7.0 -3.5 l 7 3.5 l -7 3.5" fill="transparent" stroke="black" stroke-width=".7"/>
+        </g>
+<g transform="translate(708,227)" minzoom="0" maxzoom="1">
+            <line x1="112" y1="0" x2="56.6" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<a id="DIAG1455-1637NAME"   minzoom="0" maxzoom="4"><text class="relation" x="15" y="2.2" 
+    text-anchor="start" >
+    <tspan x="15" dy="0">linked by</tspan>
+    <title>1 &quot;Entity&quot; linked by 0..N &quot;Relation End&quot;
+
+</title>
+    </text></a>
+<a id="D1638-1639NAME"   minzoom="0" maxzoom="4"><text class="relation" x="50.6" y="2.2" 
+    text-anchor="start" >
+    <tspan x="50.6" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="0" x2="13" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+        </g>
+<g transform="translate(932,227)" minzoom="0" maxzoom="1">
+            <line x1="-112" y1="0" x2="-42" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+<a id="DIAG1455-1641NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-32" y="2.2" 
+    text-anchor="start" >
+    <tspan x="-32" dy="0">links</tspan>
+    <title>1 &quot;Relation End&quot; links 1 &quot;Entity&quot;
+
+</title>
+    </text></a>
+<a id="D1642-1643NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-38" y="1.2000000000000002" transform="rotate(180 -37 -0.19999999999999973)"
+    text-anchor="start" >
+    <tspan x="-38" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="-13" y1="0" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/><path transform="rotate(180 -3.5 0)" d="M -7.0 -3.5 l 7 3.5 l -7 3.5" fill="transparent" stroke="black" stroke-width=".7"/>
+        </g>
+<g transform="translate(1071,228)" minzoom="0" maxzoom="1">
+            <line x1="12" y1="0" x2="7" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+<a id="DIAG1455-1645NAME"   minzoom="0" maxzoom="4"><text class="relation" x="15" y="2.2" 
+    text-anchor="start" >
+    <tspan x="15" dy="0">ends</tspan>
+    <title>1 &quot;Relation End&quot; ends 1 &quot;Relation&quot;
+
+</title>
+    </text></a>
+<a id="D1646-1647NAME"   minzoom="0" maxzoom="4"><text class="relation" x="35.900000000000006" y="2.2" 
+    text-anchor="start" >
+    <tspan x="35.900000000000006" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="0" x2="13" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+<circle stroke="black" stroke-width=".3" fill="none" cx="9.75" cy="0.0" r="2.2" />
+        </g>
+<g transform="translate(1198,228)" minzoom="0" maxzoom="1">
+            <line x1="-115" y1="0" x2="-50" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+<a id="DIAG1455-1649NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-40" y="2.2" 
+    text-anchor="start" >
+    <tspan x="-40" dy="0">ends at</tspan>
+    <title>1 &quot;Relation&quot; ends at 1 &quot;Relation End&quot;
+
+</title>
+    </text></a>
+<a id="D1650-1651NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-46" y="1.2000000000000002" transform="rotate(180 -45 -0.19999999999999973)"
+    text-anchor="start" >
+    <tspan x="-46" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="-13" y1="0" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+        </g>
+<g transform="translate(1308,948)" minzoom="0" maxzoom="2">
+            <line x1="0" y1="0" x2="0" y2="27" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+        </g>
+<g transform="translate(1308,975)" minzoom="0" maxzoom="2">
+            <line x1="-570" y1="4" x2="-56" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+<a id="DIAG1455-1653NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-46" y="2.2" 
+    text-anchor="start" >
+    <tspan x="-46" dy="0">includes</tspan>
+    <title>1 &quot;Group Attribute&quot; includes 1..N &quot;Domain Attribute&quot;
+
+</title>
+    </text></a>
+<a id="D1654-1655NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-52" y="1.2000000000000002" transform="rotate(180 -51 -0.19999999999999973)"
+    text-anchor="start" >
+    <tspan x="-52" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="-13" y1="0" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+        </g>
+<g transform="translate(738,892)" minzoom="0" maxzoom="2">
+            <line x1="0" y1="87" x2="0" y2="43" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+<a id="DIAG1455-1657NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-21.0" y="21" 
+    text-anchor="start" >
+    <tspan x="-21.0" dy="0">contributes</tspan>
+<tspan x="-21.0" dy="10">to</tspan>
+    <title>1 &quot;Domain Attribute&quot; contributes to 1 &quot;Group Attribute&quot;
+
+</title>
+    </text></a>
+<a id="D1658-1659NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-5.9" y="41" transform="rotate(90 -0.9000000000000004 41)"
+    text-anchor="start" >
+    <tspan x="-5.9" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="0" x2="0" y2="13" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/><path transform="rotate(90 0 0)" d="M 0.0 -3.5 l 7 3.5 l -7 3.5" fill="transparent" stroke="black" stroke-width=".7"/>
+        </g>
+<g transform="translate(389,515)" minzoom="0" maxzoom="4">
+            <line x1="0" y1="-39.0" x2="0" y2="-58" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<a id="DIAG1455-1661NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-13.0" y="-25.0" 
+    text-anchor="start" >
+    <tspan x="-13.0" dy="0">groups</tspan>
+    <title>1 &quot;Category&quot; groups 0..N &quot;Category&quot;
+
+</title>
+    </text></a>
+<a id="D1662-1663NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-1.5" y="-37.0" transform="rotate(-90 3.5 -37.0)"
+    text-anchor="start" >
+    <tspan x="-1.5" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="-13" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<circle stroke="black" stroke-width=".3" fill="none" cx="0.0" cy="-9.75" r="2.2" />
+        </g>
+<g transform="translate(389,457)" minzoom="0" maxzoom="4">
+            <line x1="0" y1="0" x2="-208" y2="-1" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+        </g>
+<g transform="translate(181,456)" minzoom="0" maxzoom="4">
+            <line x1="0" y1="0" x2="0" y2="93" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+        </g>
+<g transform="translate(259,549)" minzoom="0" maxzoom="4">
+            <line x1="-78" y1="0" x2="-65" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<a id="DIAG1455-1665NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-55" y="2.2" 
+    text-anchor="start" >
+    <tspan x="-55" dy="0">grouped in</tspan>
+    <title>1 &quot;Category&quot; grouped in 0..1 &quot;Category&quot;
+
+</title>
+    </text></a>
+<a id="D1666-1667NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-61" y="1.2000000000000002" transform="rotate(180 -60 -0.19999999999999973)"
+    text-anchor="start" >
+    <tspan x="-61" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="-13" y1="0" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/><path transform="rotate(180 -3.5 0)" d="M -7.0 -3.5 l 7 3.5 l -7 3.5" fill="transparent" stroke="black" stroke-width=".7"/>
+<circle stroke="black" stroke-width=".3" fill="none" cx="-9.75" cy="0.0" r="2.2" />
+        </g>
+<g transform="translate(429,543)" minzoom="0" maxzoom="4">
+            <line x1="74" y1="0" x2="50.3" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<a id="DIAG1455-1669NAME"   minzoom="0" maxzoom="4"><text class="relation" x="15" y="2.2" 
+    text-anchor="start" >
+    <tspan x="15" dy="0">groups</tspan>
+    <title>1 &quot;Category&quot; groups 0..N &quot;Domain&quot;
+
+</title>
+    </text></a>
+<a id="D1670-1671NAME"   minzoom="0" maxzoom="4"><text class="relation" x="44.3" y="2.2" 
+    text-anchor="start" >
+    <tspan x="44.3" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="0" x2="13" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<circle stroke="black" stroke-width=".3" fill="none" cx="9.75" cy="0.0" r="2.2" />
+        </g>
+<g transform="translate(503,543)" minzoom="0" maxzoom="4">
+            <line x1="0" y1="0" x2="861" y2="-2" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+        </g>
+<g transform="translate(1364,649)" minzoom="0" maxzoom="4">
+            <line x1="0" y1="-39.0" x2="0" y2="-108" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<a id="DIAG1455-1673NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-20.0" y="-25.0" 
+    text-anchor="start" >
+    <tspan x="-20.0" dy="0">grouped in</tspan>
+    <title>1 &quot;Domain&quot; grouped in 0..1 &quot;Category&quot;
+
+</title>
+    </text></a>
+<a id="D1674-1675NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-1.5" y="-37.0" transform="rotate(-90 3.5 -37.0)"
+    text-anchor="start" >
+    <tspan x="-1.5" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="-13" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/><path transform="rotate(-90 -3.5 -3.5)" d="M -7.0 -3.5 l 7 3.5 l -7 3.5" fill="transparent" stroke="black" stroke-width=".7"/>
+        </g>
+<g transform="translate(708,293)" minzoom="0" maxzoom="4">
+            <line x1="138" y1="0" x2="69.2" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<a id="DIAG1455-1677NAME"   minzoom="0" maxzoom="4"><text class="relation" x="15" y="2.2" 
+    text-anchor="start" >
+    <tspan x="15" dy="0">restricted by</tspan>
+    <title>1 &quot;Entity&quot; restricted by 0..N &quot;Entity key&quot;
+
+</title>
+    </text></a>
+<a id="D1678-1679NAME"   minzoom="0" maxzoom="4"><text class="relation" x="63.2" y="2.2" 
+    text-anchor="start" >
+    <tspan x="63.2" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="0" x2="13" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+        </g>
+<g transform="translate(846,337)" minzoom="0" maxzoom="4">
+            <line x1="0" y1="-39.0" x2="0" y2="-44" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+<a id="DIAG1455-1681NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-14.0" y="-25.0" 
+    text-anchor="start" >
+    <tspan x="-14.0" dy="0">restricts</tspan>
+    <title>1 &quot;Entity key&quot; restricts 1 &quot;Entity&quot;
+
+</title>
+    </text></a>
+<a id="D1682-1683NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-1.5" y="-37.0" transform="rotate(-90 3.5 -37.0)"
+    text-anchor="start" >
+    <tspan x="-1.5" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="-13" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/><path transform="rotate(-90 -3.5 -3.5)" d="M -7.0 -3.5 l 7 3.5 l -7 3.5" fill="transparent" stroke="black" stroke-width=".7"/>
+        </g>
+<g transform="translate(769,783)" minzoom="0" maxzoom="4">
+            <line x1="0" y1="-39.0" x2="0" y2="-302" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<a id="DIAG1455-1685NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-15.5" y="-25.0" 
+    text-anchor="start" >
+    <tspan x="-15.5" dy="0">serves as</tspan>
+    <title>1 &quot;Entity Attribute&quot; serves as 0..N &quot;Key element&quot;
+
+</title>
+    </text></a>
+<a id="D1686-1687NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-1.5" y="-37.0" transform="rotate(-90 3.5 -37.0)"
+    text-anchor="start" >
+    <tspan x="-1.5" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="-13" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+        </g>
+<g transform="translate(925,481)" minzoom="0" maxzoom="4">
+            <line x1="-156" y1="0" x2="-36" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+<a id="DIAG1455-1689NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-26" y="2.2" 
+    text-anchor="start" >
+    <tspan x="-26" dy="0">is a</tspan>
+    <title>1 &quot;Key element&quot; is a 1 &quot;Entity Attribute&quot;
+
+</title>
+    </text></a>
+<a id="D1690-1691NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-32" y="1.2000000000000002" transform="rotate(180 -31 -0.19999999999999973)"
+    text-anchor="start" >
+    <tspan x="-32" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="-13" y1="0" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/><path transform="rotate(180 -3.5 0)" d="M -7.0 -3.5 l 7 3.5 l -7 3.5" fill="transparent" stroke="black" stroke-width=".7"/>
+<circle stroke="black" stroke-width=".3" fill="none" cx="-9.75" cy="0.0" r="2.2" />
+        </g>
+<g transform="translate(1318,319)" minzoom="0" maxzoom="4">
+            <line x1="0" y1="254" x2="0" y2="43" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<a id="DIAG1455-1693NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-17.0" y="21" 
+    text-anchor="start" >
+    <tspan x="-17.0" dy="0">explained</tspan>
+<tspan x="-17.0" dy="10">with</tspan>
+    <title>1 &quot;Relation&quot; explained with 0..N &quot;Generic element&quot;
+
+</title>
+    </text></a>
+<a id="D1694-1695NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-5.9" y="41" transform="rotate(90 -0.9000000000000004 41)"
+    text-anchor="start" >
+    <tspan x="-5.9" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="0" x2="0" y2="13" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+        </g>
+<g transform="translate(1318,573)" minzoom="0" maxzoom="4">
+            <line x1="0" y1="0" x2="-258" y2="2" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+        </g>
+<g transform="translate(1060,685)" minzoom="0" maxzoom="4">
+            <line x1="0" y1="-39.0" x2="0" y2="-110" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+<a id="DIAG1455-1697NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-14.5" y="-25.0" 
+    text-anchor="start" >
+    <tspan x="-14.5" dy="0">explains</tspan>
+    <title>1 &quot;Generic element&quot; explains 1 &quot;Relation&quot;
+
+</title>
+    </text></a>
+<a id="D1698-1699NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-1.5" y="-37.0" transform="rotate(-90 3.5 -37.0)"
+    text-anchor="start" >
+    <tspan x="-1.5" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="-13" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/><path transform="rotate(-90 -3.5 -3.5)" d="M -7.0 -3.5 l 7 3.5 l -7 3.5" fill="transparent" stroke="black" stroke-width=".7"/>
+<circle stroke="black" stroke-width=".3" fill="none" cx="0.0" cy="-9.75" r="2.2" />
+        </g>
+<g transform="translate(667,164)" minzoom="0" maxzoom="4">
+            <line x1="0" y1="-39.0" x2="0" y2="-58" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<a id="DIAG1455-1701NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-22.0" y="-25.0" 
+    text-anchor="start" >
+    <tspan x="-22.0" dy="0">restricted by</tspan>
+    <title>1 &quot;Entity&quot; restricted by 0..N &quot;Exclusive relation&quot;
+
+</title>
+    </text></a>
+<a id="D1702-1703NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-1.5" y="-37.0" transform="rotate(-90 3.5 -37.0)"
+    text-anchor="start" >
+    <tspan x="-1.5" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="-13" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+        </g>
+<g transform="translate(752,106)" minzoom="0" maxzoom="4">
+            <line x1="-85" y1="0" x2="-53" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+<a id="DIAG1455-1705NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-43" y="2.2" 
+    text-anchor="start" >
+    <tspan x="-43" dy="0">restricts</tspan>
+    <title>1 &quot;Exclusive relation&quot; restricts 1 &quot;Entity&quot;
+
+</title>
+    </text></a>
+<a id="D1706-1707NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-49" y="1.2000000000000002" transform="rotate(180 -48 -0.19999999999999973)"
+    text-anchor="start" >
+    <tspan x="-49" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="-13" y1="0" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/><path transform="rotate(180 -3.5 0)" d="M -7.0 -3.5 l 7 3.5 l -7 3.5" fill="transparent" stroke="black" stroke-width=".7"/>
+        </g>
+<g transform="translate(1235,886)" minzoom="0" maxzoom="4">
+            <line x1="-153" y1="0" x2="-53" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<a id="DIAG1455-1709NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-43" y="2.2" 
+    text-anchor="start" >
+    <tspan x="-43" dy="0">restricts</tspan>
+    <title>1 &quot;Domain&quot; restricts 0..N &quot;Attribute&quot;
+
+</title>
+    </text></a>
+<a id="D1710-1711NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-49" y="1.2000000000000002" transform="rotate(180 -48 -0.19999999999999973)"
+    text-anchor="start" >
+    <tspan x="-49" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="-13" y1="0" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+        </g>
+<g transform="translate(811,886)" minzoom="0" maxzoom="4">
+            <line x1="271" y1="0" x2="69.2" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<a id="DIAG1455-1713NAME"   minzoom="0" maxzoom="4"><text class="relation" x="15" y="2.2" 
+    text-anchor="start" >
+    <tspan x="15" dy="0">restricted by</tspan>
+    <title>1 &quot;Attribute&quot; restricted by 0..1 &quot;Domain&quot;
+
+</title>
+    </text></a>
+<a id="D1714-1715NAME"   minzoom="0" maxzoom="4"><text class="relation" x="63.2" y="2.2" 
+    text-anchor="start" >
+    <tspan x="63.2" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="0" x2="13" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/><path  d="M 0.0 -3.5 l 7 3.5 l -7 3.5" fill="transparent" stroke="black" stroke-width=".7"/>
+        </g>
+<g transform="translate(1527,952)" minzoom="0" maxzoom="1">
+            <line x1="0" y1="36" x2="0" y2="33" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+<a id="DIAG1455-1717NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-12.5" y="21" 
+    text-anchor="start" >
+    <tspan x="-12.5" dy="0">can be</tspan>
+    <title>1 &quot;Value list&quot; can be 1..N &quot;Allowed value&quot;
+
+</title>
+    </text></a>
+<a id="D1718-1719NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-5.9" y="31" transform="rotate(90 -0.9000000000000004 31)"
+    text-anchor="start" >
+    <tspan x="-5.9" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="0" x2="0" y2="13" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+        </g>
+<g transform="translate(1527,1034)" minzoom="0" maxzoom="1">
+            <line x1="0" y1="-39.0" x2="0" y2="-46" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+<a id="DIAG1455-1721NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-14.0" y="-25.0" 
+    text-anchor="start" >
+    <tspan x="-14.0" dy="0">restricts</tspan>
+    <title>1 &quot;Allowed value&quot; restricts 1 &quot;Value list&quot;
+
+</title>
+    </text></a>
+<a id="D1722-1723NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-1.5" y="-37.0" transform="rotate(-90 3.5 -37.0)"
+    text-anchor="start" >
+    <tspan x="-1.5" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="-13" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/><path transform="rotate(-90 -3.5 -3.5)" d="M -7.0 -3.5 l 7 3.5 l -7 3.5" fill="transparent" stroke="black" stroke-width=".7"/>
+        </g>
+<g transform="translate(1241,309)" minzoom="0" maxzoom="4">
+            <line x1="0" y1="176" x2="0" y2="33" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<a id="DIAG1455-1725NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-15.5" y="21" 
+    text-anchor="start" >
+    <tspan x="-15.5" dy="0">serves as</tspan>
+    <title>1 &quot;Functional relation&quot; serves as 0..N &quot;Key element&quot;
+
+</title>
+    </text></a>
+<a id="D1726-1727NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-5.9" y="31" transform="rotate(90 -0.9000000000000004 31)"
+    text-anchor="start" >
+    <tspan x="-5.9" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="0" x2="0" y2="13" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+        </g>
+<g transform="translate(1075,485)" minzoom="0" maxzoom="4">
+            <line x1="166" y1="0" x2="34.55" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+<a id="DIAG1455-1729NAME"   minzoom="0" maxzoom="4"><text class="relation" x="15" y="2.2" 
+    text-anchor="start" >
+    <tspan x="15" dy="0">is a</tspan>
+    <title>1 &quot;Key element&quot; is a 1 &quot;Functional relation&quot;
+
+</title>
+    </text></a>
+<a id="D1730-1731NAME"   minzoom="0" maxzoom="4"><text class="relation" x="28.55" y="2.2" 
+    text-anchor="start" >
+    <tspan x="28.55" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="0" x2="13" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/><path  d="M 0.0 -3.5 l 7 3.5 l -7 3.5" fill="transparent" stroke="black" stroke-width=".7"/>
+<circle stroke="black" stroke-width=".3" fill="none" cx="9.75" cy="0.0" r="2.2" />
+        </g>
+<g transform="translate(1721,888)" minzoom="0" maxzoom="0">
+            <line x1="0" y1="-39.0" x2="0" y2="-54" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<a id="DIAG1455-1733NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-18.0" y="-25.0" 
+    text-anchor="start" >
+    <tspan x="-18.0" dy="0">applied to</tspan>
+    <title>1 &quot;Storage format&quot; applied to 0..N &quot;Binary value range&quot;
+
+</title>
+    </text></a>
+<a id="D1734-1735NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-1.5" y="-37.0" transform="rotate(-90 3.5 -37.0)"
+    text-anchor="start" >
+    <tspan x="-1.5" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="-13" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+        </g>
+<g transform="translate(1616,834)" minzoom="0" maxzoom="0">
+            <line x1="105" y1="0" x2="69.2" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<a id="DIAG1455-1737NAME"   minzoom="0" maxzoom="4"><text class="relation" x="15" y="2.2" 
+    text-anchor="start" >
+    <tspan x="15" dy="0">managed as</tspan>
+    <title>1 &quot;Binary value range&quot; managed as 0..1 &quot;Storage format&quot;
+
+</title>
+    </text></a>
+<a id="D1738-1739NAME"   minzoom="0" maxzoom="4"><text class="relation" x="63.2" y="2.2" 
+    text-anchor="start" >
+    <tspan x="63.2" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="0" x2="13" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/><path  d="M 0.0 -3.5 l 7 3.5 l -7 3.5" fill="transparent" stroke="black" stroke-width=".7"/>
+        </g>
+<g transform="translate(999,153)" minzoom="0" maxzoom="1">
+            <line x1="0" y1="-39.0" x2="0" y2="-48" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<a id="DIAG1455-1741NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-22.0" y="-25.0" 
+    text-anchor="start" >
+    <tspan x="-22.0" dy="0">restricted by</tspan>
+    <title>1 &quot;Relation End&quot; restricted by 0..1 &quot;Exclusive relation&quot;
+
+</title>
+    </text></a>
+<a id="D1742-1743NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-1.5" y="-37.0" transform="rotate(-90 3.5 -37.0)"
+    text-anchor="start" >
+    <tspan x="-1.5" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="-13" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/><path transform="rotate(-90 -3.5 -3.5)" d="M -7.0 -3.5 l 7 3.5 l -7 3.5" fill="transparent" stroke="black" stroke-width=".7"/>
+        </g>
+<g transform="translate(896,105)" minzoom="0" maxzoom="1">
+            <line x1="103" y1="0" x2="52.400000000000006" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+<a id="DIAG1455-1745NAME"   minzoom="0" maxzoom="4"><text class="relation" x="15" y="2.2" 
+    text-anchor="start" >
+    <tspan x="15" dy="0">restricts</tspan>
+    <title>1 &quot;Exclusive relation&quot; restricts 1..N &quot;Relation End&quot;
+
+</title>
+    </text></a>
+<a id="D1746-1747NAME"   minzoom="0" maxzoom="4"><text class="relation" x="46.400000000000006" y="2.2" 
+    text-anchor="start" >
+    <tspan x="46.400000000000006" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="0" x2="13" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+        </g>
+<g transform="translate(621,337)" minzoom="0" maxzoom="2">
+            <line x1="0" y1="279" x2="0" y2="43" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<a id="DIAG1455-1749NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-17.0" y="21" 
+    text-anchor="start" >
+    <tspan x="-17.0" dy="0">explained</tspan>
+<tspan x="-17.0" dy="10">with</tspan>
+    <title>1 &quot;Entity&quot; explained with 0..N &quot;Generic element&quot;
+
+</title>
+    </text></a>
+<a id="D1750-1751NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-5.9" y="41" transform="rotate(90 -0.9000000000000004 41)"
+    text-anchor="start" >
+    <tspan x="-5.9" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="0" x2="0" y2="13" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+        </g>
+<g transform="translate(621,616)" minzoom="0" maxzoom="2">
+            <line x1="0" y1="0" x2="355" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+        </g>
+<g transform="translate(976,685)" minzoom="0" maxzoom="2">
+            <line x1="0" y1="-39.0" x2="0" y2="-69" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+<a id="DIAG1455-1753NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-14.5" y="-25.0" 
+    text-anchor="start" >
+    <tspan x="-14.5" dy="0">explains</tspan>
+    <title>1 &quot;Generic element&quot; explains 1 &quot;Entity&quot;
+
+</title>
+    </text></a>
+<a id="D1754-1755NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-1.5" y="-37.0" transform="rotate(-90 3.5 -37.0)"
+    text-anchor="start" >
+    <tspan x="-1.5" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="-13" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/><path transform="rotate(-90 -3.5 -3.5)" d="M -7.0 -3.5 l 7 3.5 l -7 3.5" fill="transparent" stroke="black" stroke-width=".7"/>
+<circle stroke="black" stroke-width=".3" fill="none" cx="0.0" cy="-9.75" r="2.2" />
+        </g>
+<g transform="translate(785,751)" minzoom="0" maxzoom="4">
+            <line x1="0" y1="-44.0" x2="0" y2="-47" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<a id="DIAG1455-1757NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-17.0" y="-30.0" 
+    text-anchor="start" >
+    <tspan x="-17.0" dy="0">explained</tspan>
+<tspan x="-17.0" dy="10">with</tspan>
+    <title>1 &quot;Attribute&quot; explained with 0..N &quot;Generic element&quot;
+
+</title>
+    </text></a>
+<a id="D1758-1759NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-1.5" y="-42.0" transform="rotate(-90 3.5 -42.0)"
+    text-anchor="start" >
+    <tspan x="-1.5" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="-13" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+        </g>
+<g transform="translate(946,704)" minzoom="0" maxzoom="4">
+            <line x1="-161" y1="0" x2="-54" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+<a id="DIAG1455-1761NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-44" y="2.2" 
+    text-anchor="start" >
+    <tspan x="-44" dy="0">explains</tspan>
+    <title>1 &quot;Generic element&quot; explains 1 &quot;Attribute&quot;
+
+</title>
+    </text></a>
+<a id="D1762-1763NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-50" y="1.2000000000000002" transform="rotate(180 -49 -0.19999999999999973)"
+    text-anchor="start" >
+    <tspan x="-50" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="-13" y1="0" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/><path transform="rotate(180 -3.5 0)" d="M -7.0 -3.5 l 7 3.5 l -7 3.5" fill="transparent" stroke="black" stroke-width=".7"/>
+<circle stroke="black" stroke-width=".3" fill="none" cx="-9.75" cy="0.0" r="2.2" />
+        </g>
+<g transform="translate(415,515)" minzoom="0" maxzoom="4">
+            <line x1="0" y1="-39.0" x2="0" y2="-206" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<a id="DIAG1455-1765NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-13.0" y="-25.0" 
+    text-anchor="start" >
+    <tspan x="-13.0" dy="0">groups</tspan>
+    <title>1 &quot;Category&quot; groups 0..N &quot;Entity&quot;
+
+</title>
+    </text></a>
+<a id="D1766-1767NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-1.5" y="-37.0" transform="rotate(-90 3.5 -37.0)"
+    text-anchor="start" >
+    <tspan x="-1.5" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="-13" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<circle stroke="black" stroke-width=".3" fill="none" cx="0.0" cy="-9.75" r="2.2" />
+        </g>
+<g transform="translate(491,309)" minzoom="0" maxzoom="4">
+            <line x1="-76" y1="0" x2="-65" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<a id="DIAG1455-1769NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-55" y="2.2" 
+    text-anchor="start" >
+    <tspan x="-55" dy="0">grouped in</tspan>
+    <title>1 &quot;Entity&quot; grouped in 0..1 &quot;Category&quot;
+
+</title>
+    </text></a>
+<a id="D1770-1771NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-61" y="1.2000000000000002" transform="rotate(180 -60 -0.19999999999999973)"
+    text-anchor="start" >
+    <tspan x="-61" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="-13" y1="0" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/><path transform="rotate(180 -3.5 0)" d="M -7.0 -3.5 l 7 3.5 l -7 3.5" fill="transparent" stroke="black" stroke-width=".7"/>
+        </g>
+<g transform="translate(578,337)" minzoom="0" maxzoom="4">
+            <line x1="0" y1="333" x2="0" y2="33" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<a id="DIAG1455-1773NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-23.0" y="21" 
+    text-anchor="start" >
+    <tspan x="-23.0" dy="0">described by</tspan>
+    <title>1 &quot;Entity&quot; described by 0..N &quot;Entity Attribute&quot;
+
+</title>
+    </text></a>
+<a id="D1774-1775NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-5.9" y="31" transform="rotate(90 -0.9000000000000004 31)"
+    text-anchor="start" >
+    <tspan x="-5.9" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="0" x2="0" y2="13" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+        </g>
+<g transform="translate(578,670)" minzoom="0" maxzoom="4">
+            <line x1="0" y1="0" x2="127" y2="1" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+        </g>
+<g transform="translate(705,783)" minzoom="0" maxzoom="4">
+            <line x1="0" y1="-39.0" x2="0" y2="-112" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+<a id="DIAG1455-1777NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-17.0" y="-25.0" 
+    text-anchor="start" >
+    <tspan x="-17.0" dy="0">describes</tspan>
+    <title>1 &quot;Entity Attribute&quot; describes 1 &quot;Entity&quot;
+
+</title>
+    </text></a>
+<a id="D1778-1779NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-1.5" y="-37.0" transform="rotate(-90 3.5 -37.0)"
+    text-anchor="start" >
+    <tspan x="-1.5" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="-13" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/><path transform="rotate(-90 -3.5 -3.5)" d="M -7.0 -3.5 l 7 3.5 l -7 3.5" fill="transparent" stroke="black" stroke-width=".7"/>
+        </g>
+<g transform="translate(931,377)" minzoom="0" maxzoom="4">
+            <line x1="52" y1="0" x2="47" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+<a id="DIAG1455-1781NAME"   minzoom="0" maxzoom="4"><text class="relation" x="15" y="-2.8" 
+    text-anchor="start" >
+    <tspan x="15" dy="0">consist</tspan>
+<tspan x="15" dy="10">s of</tspan>
+    <title>1 &quot;Entity key&quot; consists of 1..N &quot;Key element&quot;
+
+</title>
+    </text></a>
+<a id="D1782-1783NAME"   minzoom="0" maxzoom="4"><text class="relation" x="42.2" y="2.2" 
+    text-anchor="start" >
+    <tspan x="42.2" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="0" x2="13" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+        </g>
+<g transform="translate(983,443)" minzoom="0" maxzoom="4">
+            <line x1="0" y1="-39.0" x2="0" y2="-66" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+<a id="DIAG1455-1785NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-11.0" y="-25.0" 
+    text-anchor="start" >
+    <tspan x="-11.0" dy="0">forms</tspan>
+    <title>1 &quot;Key element&quot; forms 1 &quot;Entity key&quot;
+
+</title>
+    </text></a>
+<a id="D1786-1787NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-1.5" y="-37.0" transform="rotate(-90 3.5 -37.0)"
+    text-anchor="start" >
+    <tspan x="-1.5" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="-13" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/><path transform="rotate(-90 -3.5 -3.5)" d="M -7.0 -3.5 l 7 3.5 l -7 3.5" fill="transparent" stroke="black" stroke-width=".7"/>
+        </g>
+<g  transform="translate(25,1172)" >
+                    <a id="D1788-1789NAME"   minzoom="0" maxzoom="4"><text class="metainfo" x="0" y="0" 
+    text-anchor="start" >
+    <tspan x="0" dy="0">Model:</tspan>
+    <title></title>
+    </text></a>
+<a id="D1790-1791NAME"   minzoom="0" maxzoom="4"><text class="metainfo" x="50" y="0" 
+    text-anchor="start" >
+    <tspan x="50" dy="0">IM-standard</tspan>
+    <title></title>
+    </text></a>
+<a id="D1792-1793NAME"   minzoom="0" maxzoom="4"><text class="metainfo" x="0" y="13" 
+    text-anchor="start" >
+    <tspan x="0" dy="0">Diagram:</tspan>
+    <title></title>
+    </text></a>
+<a id="D1794-1795NAME"   minzoom="0" maxzoom="4"><text class="metainfo" x="50" y="13" 
+    text-anchor="start" >
+    <tspan x="50" dy="0">Information Model-0</tspan>
+    <title></title>
+    </text></a>
+<a id="D1796-1797NAME"   minzoom="0" maxzoom="4"><text class="metainfo" x="0" y="26" 
+    text-anchor="start" >
+    <tspan x="0" dy="0">updated:</tspan>
+    <title></title>
+    </text></a>
+<a id="D1798-1799NAME"   minzoom="0" maxzoom="4"><text class="metainfo" x="50" y="26" 
+    text-anchor="start" >
+    <tspan x="50" dy="0">stb,</tspan>
+    <title></title>
+    </text></a>
+<a id="D1800-1801NAME"   minzoom="0" maxzoom="4"><text class="metainfo" x="85" y="26" 
+    text-anchor="start" >
+    <tspan x="85" dy="0">2020-02-09 20:01:41 UTC</tspan>
+    <title></title>
+    </text></a>
+                    </g>
+                
+<g transform="translate(241,1172)" >
+                    <rect x="0" y="0" width="90" height="30" 
+            fill="#efcdc6" fill-opacity="0.2" /><a id="D1802-1803NAME"   minzoom="0" maxzoom="4"><text class="legendcategory" x="23.5" y="20.5" 
+    text-anchor="start" >
+    <tspan x="23.5" dy="0">Data Layer</tspan>
+    <title></title>
+    </text></a>
+                    </g>
+                
+<g transform="translate(336,1172)" >
+                    <rect x="0" y="0" width="90" height="30" 
+            fill="#efcdc6" fill-opacity="0.2" /><a id="D1804-1805NAME"   minzoom="0" maxzoom="4"><text class="legendcategory" x="24.5" y="20.5" 
+    text-anchor="start" >
+    <tspan x="24.5" dy="0">data Layer</tspan>
+    <title></title>
+    </text></a>
+                    </g>
+                
+<g transform="translate(1459,1172)" >
+                    <a href="https://www.informationsmodellierung.ch/english/syntax-of-the-information-model/" minzoom="0" maxzoom="4"><text class="metainfo" x="0" y="0" 
+    text-anchor="start" >
+    <tspan x="0" dy="0">Informationmodel Syntax</tspan>
+    <title></title>
+    </text></a>
+<g transform="translate(0,10)" minzoom="0" maxzoom="4">
+            <a id="D1806-1807"   >
+            <rect x="0" y="0" width="85" height="50" rx="4"
+            fill="#000000" fill-opacity="0.2" />
+            <title>Thing of interest in the current environment
+
+Customer
+Product
+Sales Representant</title>
+            </a><a id="D1808-1809NAME"   minzoom="0" maxzoom="4"><text class="entity" x="9" y="24" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Entity-1</tspan>
+    <title>Thing of interest in the current environment
+
+Customer
+Product
+Sales Representant</title>
+    </text></a>
+<a id="D1810-1811NAME"   minzoom="0" maxzoom="4"><text class="attribute" x="9" y="40" 
+    text-anchor="start" >
+    <tspan x="9" dy="0">Attribute</tspan>
+    <title>Property of this entity, containing one value
+
+Name
+Size
+Weight</title>
+    </text></a>
+        </g>
+<g transform="translate(275,10)" minzoom="0" maxzoom="4">
+            <a id="D1812-1813"   >
+            <rect x="0" y="0" width="85" height="50" rx="4"
+            fill="#000000" fill-opacity="0.2" />
+            <title>Another thing of interest in the current environment
+
+Name
+Size
+Weight</title>
+            </a><a id="D1814-1815NAME"   minzoom="0" maxzoom="4"><text class="entity" x="21.0" y="32.5" 
+    text-anchor="start" >
+    <tspan x="21.0" dy="0">Entity-2</tspan>
+    <title>Another thing of interest in the current environment
+
+Name
+Size
+Weight</title>
+    </text></a>
+        </g>
+<g transform="translate(85,35.0)" minzoom="0" maxzoom="4">
+            <line x1="95.0" y1="0.0" x2="88.10000000000001" y2="0.0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/>
+<a id="D1816-1817NAME"   minzoom="0" maxzoom="4"><text class="relation" x="15" y="2.2" 
+    text-anchor="start" >
+    <tspan x="15" dy="0">Relationship verb</tspan>
+    <title>Relation verb mandatorily (solid line) connecting an instance of Entity-1 with 1 instance (ending in single line) of Entity-2
+
+Several relations comming off an entity which are marked with the same ty
+
+Person must live in 1 House
+Tax must be applicable for 1 country</title>
+    </text></a>
+<a id="D1818-1819NAME"   minzoom="0" maxzoom="4"><text class="relation" x="82.10000000000001" y="2.2" 
+    text-anchor="start" >
+    <tspan x="82.10000000000001" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="0" y1="0" x2="13" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="0"/><path  d="M 0.0 -3.5 l 7 3.5 l -7 3.5" fill="transparent" stroke="black" stroke-width=".7"/>
+<circle stroke="black" stroke-width=".3" fill="none" cx="9.75" cy="0.0" r="2.2" />
+        </g>
+<g transform="translate(275,35.0)" minzoom="0" maxzoom="4">
+            <line x1="-95.0" y1="-0.0" x2="-91" y2="-0.0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+<a id="D1820-1821NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-81" y="2.2" 
+    text-anchor="start" >
+    <tspan x="-81" dy="0">Relationship verb2</tspan>
+    <title>Relation verb2 optionally (dashed line) connecting an instance of Entity-2 with 1 or many instances (ending in crowfoot) of Entity-1
+
+House can house several Persons
+Country can be subject to many Taxes</title>
+    </text></a>
+<a id="D1822-1823NAME"   minzoom="0" maxzoom="4"><text class="relation" x="-87" y="1.2000000000000002" transform="rotate(180 -86 -0.19999999999999973)"
+    text-anchor="start" >
+    <tspan x="-87" dy="0">&gt;</tspan>
+    <title></title>
+    </text></a>
+<line x1="-13" y1="0" x2="0" y2="0" 
+                stroke="black" stroke-width=".7" stroke-dasharray="3"/>
+        </g>
+                    </g>
+                
+                 </g>
+              
+        </svg>

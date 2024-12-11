@@ -1,0 +1,59 @@
+		{% call blocks.mainblock(type=webmodel.gettransltext("Org. Einheiten"), id=elemid, name=elem["name"],
+		            descr=elem["descr"], lbc=elemid ~ "main",
+                    basedirec=basedirec,singlefile=webmodel.export.singlefile) %}
+					<h2>Information</h2>
+					<div class="table-responsive">
+						<table class="table borderless">
+							<tbody>
+								<tr>
+									<th>{{ webmodel.gettransltext('Beschreibung') }}</th>
+									<th>{{ webmodel.gettransltext('Mail') }}</th>
+									<th>{{ webmodel.gettransltext('Telefon') }}</th>
+									<th>{{ webmodel.gettransltext('Adresse') }}</th>
+									<th>{{ webmodel.gettransltext('übergeordnet') }}</th>
+									<th>{{ webmodel.gettransltext('untergeordnet') }}
+								</tr>
+								<tr>
+									<td class="attribute">{{ getnvl(elem["descr"]) }}</td>
+									<td class="attribute">{{ getnvl(elem['mail']) }}</td>
+									<td class="attribute">{{ getnvl(elem['telefon']) }}</td>
+									<td class="attribute">{{ getnvl(elem['address']) }}</td>
+									{% set parentdispl = "" %}
+									{% set parentid = elem['parent'] %}
+									{% if parentid %}
+										{% set parent = webmodel.getelem (parentid) %}
+										{% set parentdispl = webmodel.getreflink(name=parent['name']
+										                ,destid=parentid
+									                   	,basedirec=basedirec
+									                	,desttype="orgunits") |safe%}
+									{% endif %}
+									<td class="attribute">{{ parentdispl }}</td>
+									{% set children = "" %}
+									{% for child in webmodel.orgunits %}
+									{% set childelem = webmodel.getelem(child[0])%}
+									{% if childelem['parent'] == elemid %}
+										{% if children != "" %}
+											{% set children = children ~ ', ' %}
+										{% endif %}
+										{% set children = children ~ webmodel.getreflink(name=childelem['name']
+										                                ,destid=child[0]
+									            	                    ,basedirec=basedirec
+									            	                    ,desttype="orgunits") |safe%}
+									{% endif %}
+									{% endfor %}
+									<td class="attribute">{{ children }}</td>
+
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<!--references-->
+					{% if elem|count > 0 %}
+					{% call blocks.subblock(header=webmodel.gettransltext("Referenziert"), lbc=elemid ~ "element",
+                            basedirec=basedirec) %}
+						{{ blocks.referencelist(webmodel,elemid,elem["references+"],basedirec=basedirec) }}
+					{% endcall %}
+					{% endif %}
+
+		{% endcall%}

@@ -1,0 +1,389 @@
+{# expected parameters:
+	timestamp
+	webmodel
+#}
+{% set company =  "foryouandyourcustomers"  %}
+{% set modelname = webmodel.metainfo.modelname  %}
+{% set title = webmodel.metainfo.title  %}
+{% set logofilename = "logo.jpg" %}
+{% set basedirec = "../../" %}
+{% set dummy  = webmodel.setbasedirec(basedirec) %}
+{% import 'macros.jinja.html' as blocks %}
+{% import 'header.jinja.html' as companyheader %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ title }}</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="{{ basedirec }}infra/image/imicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ basedirec }}infra/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="{{ basedirec }}infra/js/jscode.js"></script>
+    <script src="{{ basedirec }}infra/js/IM.js"></script>
+	<script src="{{ basedirec }}infra/js/svg-pan-zoom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="header" id="TopBar">
+		<h4>{{ company }}</h4>
+		<h4>{{ title }}</h4>
+		<h4>{{ timestamp }}</h4>
+		<img src="{{ basedirec }}infra/image/{{ logofilename }}" alt="{{ company }}" id="LLogo">
+	</div>
+	<button id="btnF" type="button" class="btn btn-info" data-toggle="modal" data-target="#MobileSearch">
+		<img class="icon-filter" alt="filter" src="{{ basedirec }}infra/images/icons/search.svg">
+	</button>
+	<div class="container" id="sidebar">
+		<div id="toc_list">
+			<div class="form-wrapper">
+				<form autocomplete="off">
+					<div class="form-group">
+						<label class="form-label" for="first">search key</label>
+						<input id="first" class="form-input" type="text" onkeyup="$d_Find('toc_list',this.value,'a')">
+						<img id="searchclear" alt="plus" class="icon-times" src="{{ basedirec }}infra/images/icons/cross.svg">
+						<img class="icon-search" alt="minus" src="{{ basedirec }}infra/images/icons/search.svg" id="searcher">
+					</div>
+				</form>
+			</div>
+			<h3>Hits:</h3>
+			<output id="count"></output>
+			<div class="contentView">
+
+				<!--tables-->       
+				{% call blocks.listblock(label="Tables", id="TablesL", lbc="bartabl",basedirec=basedirec) %}
+						<ol class="tree" id="TablesList">
+							{% for tab in webmodel.tables %} 
+							<li class="obj">{{ webmodel.getreflink(name=tab[1], curdatmid=webmodel.getdatmid() ,
+							                                destdatmid=webmodel.getdatmid(),
+                                                            destid=tab[0],basedirec=basedirec) |safe}}
+							{% endfor %}
+						</ol>
+				{% endcall %}
+				
+				<!--columns-->       
+				{% call blocks.listblock(label="Columns", id="ColumnsL",lbc="barcolu",basedirec=basedirec) %}
+						<ol class="tree" id="ColumnsList">
+							{% for col in webmodel.columns %}
+							{% set tablid = webmodel.getelem(col[0])["table-id"] %}
+							{% set tabl = webmodel.getelem(tablid) %}
+							<li class="obj">{{ webmodel.getreflink(name=col[1] ~ " (" ~ tabl["name"] ~ ")",
+							                    curdatmid=webmodel.getdatmid() ,destdatmid=webmodel.getdatmid(),
+							                        destid=col[0],basedirec=basedirec) |safe}}
+							{% endfor %}
+						</ol>
+				{% endcall %}
+				
+				
+				<!--domains-->       
+				{% if webmodel.domains|count > 0 %}
+				{% call blocks.listblock(label="Domains", id="DomainsL",lbc="bardoma",basedirec=basedirec) %}
+						<ol class="tree" id="DomainList">
+							{% for dom in webmodel.domains %}
+							<li class="obj">{{ webmodel.getreflink(name=dom[1],
+							                curdatmid=webmodel.getdatmid() ,destid=dom[0],basedirec=basedirec) |safe}}
+							{% endfor %}
+						</ol>
+				{% endcall %}
+				{% endif %}
+				
+				<!--diagrams-->       
+				{% if False and (webmodel.diagrams|count > 0) %}
+				{% call blocks.listblock(label="Diagrams", id="DiagramL",lbc="bardiag",basedirec=basedirec) %}
+					<ol class="tree" id="DiagramList">
+						{% for diag in webmodel.diagrams %}
+							<li class="obj">{{ webmodel.getreflink(name=diag.name,
+							                curdatmid=webmodel.getdatmid() ,destid=diag.id,basedirec=basedirec) |safe}}
+						{% endfor %}
+					</ol>
+				{% endcall %}
+				{% endif %}
+				</div>
+			</div>
+		</div>
+
+	<div class="wrapper">
+		<!--header-->
+		{{ companyheader.databaseheader(modelname=modelname,databasename=title,company=company) }}
+		
+		<!--diagrams-->       
+		{% if False and (webmodel.diagrams|count > 0) %}
+			{% for diag in webmodel.diagrams %}
+				<div id="{{ diag.id }}-container">
+					<h3 id="{{ diag.id }}">{{ diag.name }}</h3>
+					<div class="diagram" id = "diag0"> 
+					{{ diag.svg|safe }}
+					<div class="print-button-container">
+						<button class="print-button" onclick="printElem(this)">print</button>
+					</div>
+				 	</div>
+				</div>
+			{% endfor %}
+		{% endif %}
+		
+		<!--tables-->       
+		{% for tabl in webmodel.tables %}
+		{% set elemid = tabl[0] %}
+		{% set elem = webmodel.getelem (elemid) %}
+		{% call blocks.mainblock(type="Table", id=elemid, name=elem["name"], descr=elem["descr"],
+		                lbc=elemid ~ "main",basedirec=basedirec) %}
+
+					<h2>Information</h2>
+					<div class="table-responsive">
+						<table class="table borderless">
+							<tbody>
+								<tr>
+									<th>Dev. Status</th>
+									<th>CRUD</th>
+									<th>updated</th>
+								</tr>
+								<tr>
+									<td class="attribute">{{ elem["devstatus"] }}</td>
+									<td class="attribute">{{ elem["CRUD"] }}</td>
+									<td class="attribute">{{ "{}, {}".format(elem["uc"],elem["dc"]) }}</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!--businessrules-->
+					{% if elem["businessrules+"]|count > 0 %}
+					{% call blocks.subblock(header=webmodel.gettransltext("Business Rules"),
+					                lbc=elemid ~ "refburu",basedirec=basedirec) %}
+						{{ blocks.refbylist(webmodel,elemid,elem["businessrules+"]) }}
+					{% endcall %}
+					{% endif %}
+
+					<!--actorroles-->
+					{% if elem["raci+"]|count > 0 %}
+					{% call blocks.subblock(header=webmodel.gettransltext("Akteurrollen"),
+					                 lbc=elemid ~ "refraci",basedirec=basedirec) %}
+						{{ blocks.refbylist(webmodel,elemid,elem["raci+"]) }}
+					{% endcall %}
+					{% endif %}
+
+					<!--columns-->       
+					{% call blocks.subblock(header="Columns", lbc=elemid ~ "colu",basedirec=basedirec) %}
+						<div class="table-responsive">
+							<table class="table borderless" >
+								<tbody>
+									<tr>
+										<th>Name</th>
+										<th>Description</th>
+										<th>Domain</th>
+										<th>Datatype</th>
+										<th>R/W</th>
+									</tr>
+									{% for colid in elem["columns+"] %}
+									{% set colu = webmodel.getelem(colid) %}
+									{% set domaid = colu["domain"] %}
+									<tr>
+										<td>{{ webmodel.getreflink(name=colu["name"], destid=colid,basedirec=basedirec) |safe}}</td>
+										<td>{{ getnvl(colu["descr"]) }}</td>
+										<td> {% if domaid is defined and domaid is not none %}
+											{% set doma = webmodel.getelem(domaid) %}
+										    	{% if doma["origin"] == 'DER' %}
+											        {{ webmodel.getlangstr(doma["name"]) }}
+										    	{% else %}
+											        {{ webmodel.getreflink(name=webmodel.getlangstr(doma["name"]), destid=domaid
+														, curdatmid=webmodel.getelemdatmid(elemid)
+														 ,destdatmid=webmodel.getelemdatmid(domaid),
+                                                            basedirec=basedirec) |safe }}
+										    	{% endif %}
+											{% endif %}
+										</td>
+										<td>{{ colu["datatype"] }}</td>
+										<td>{{ colu["R/W"] }}</td>
+									</tr>
+									{% endfor %}
+								</tbody>
+							</table>
+						</div> 
+					{% endcall %}
+
+					<!--mappings-->       
+					{% if (elem["entitiesmapped"]|count + elem["relationsmapped"]|count) > 0 %}
+					{% call blocks.subblock(header="Mappings", lbc=elemid ~ "map",
+                            basedirec=basedirec) %}
+						<div class="table-responsive">
+							<table class="table borderless" >
+								<tbody>
+									<tr>
+										<th>Model</th>
+										<th>Entity(ies) / Table(s)</th>
+									</tr>
+									{% for key,val in webmodel.getmaplist(id=elemid,
+									                    curdatmid=webmodel.getelemdatmid(elemid)).items() %}
+									<tr>
+										<td>{{ key }}</td>
+										<td>{{ val|safe }}</td>
+									</tr>
+									{% endfor %}
+								</tbody>
+							</table>
+						</div> 
+					{% endcall %}
+					{% endif %}
+
+					<!--referencedby-->       
+					{% if elem["referencedby"]|count > 0 %}
+					{% call blocks.subblock(header="Referenced by", lbc=elemid ~ "element",
+                            basedirec=basedirec) %}
+						<div class="table-responsive">
+							<table class="table borderless" >
+								<tbody>
+									<tr>
+										<th>Type</th>
+										<th>Reference</th>
+									</tr>
+									{% for refid in elem["referencedby"] %}
+									<tr>
+										<td>{{ webmodel.displelemtype(refid)}}</td>
+										<td>{{ webmodel.getreflink(name=webmodel.getlangstr(webmodel.getelem(refid)["name"])
+											   ,destid=refid
+											   ,curdatmid=webmodel.getelemdatmid(elemid),
+                                                basedirec=basedirec)|safe }}
+										</td>
+									</tr>
+									{% endfor %}
+								</tbody>
+							</table>
+						</div> 
+					{% endcall %}					
+					{% endif %}
+
+					<!--user defined properties-->
+					{% if elem["userdefprops"]|count > 0 %}
+					{% call blocks.subblock(header="User defined properties", lbc=elemid ~ "udp",
+					                basedirec=basedirec) %}
+					{{ blocks.userdefproperties(udprs=elem["userdefprops"]) }}
+					{% endcall %}
+					{% endif %}
+		{% endcall %}
+		{% endfor %}
+
+		<!--columns-->        
+		{% for col in webmodel.columns %}
+            {% set elemid = col[0] %}
+            {% set elem = webmodel.getelem (elemid) %}
+            {% set tablid = elem["table-id"] %}
+            {% set domaid = elem["domain"] %}
+    		{% call blocks.mainblock(type="Column", id=elemid, name=elem["name"], descr=elem["descr"], lbc=elemid ~ "main"
+						 , parenttype="Table", basedirec=basedirec
+						 ,parentname=webmodel.getreflink(name=webmodel.getelem(tablid)["name"], destid=tablid) | safe)%}
+					<h2>Information</h2>
+					<div class="table-responsive">
+						<table class="table borderless">
+							<tbody>
+								<tr>
+									<th>Domain</th>
+									<th>Datatype</th>
+									<th>Base Type</th>
+									<th>Dev. Status</th>
+									<th>R/W</th>
+									<th>updated</th>
+								</tr>
+								<tr>
+									<td class="attribute">
+										{% if domaid is defined and domaid is not none %}
+											{% set doma = webmodel.getelem(domaid) %}
+											{% if doma["origin"] == 'DER' %}
+												{{ webmodel.getlangstr(doma["name"]) }}
+											{% else %}
+												{{ webmodel.getreflink(name=webmodel.getlangstr(doma["name"]), destid=domaid
+															,curdatmid=webmodel.getelemdatmid(elemid)
+														 	,destdatmid=webmodel.getelemdatmid(domaid)) |safe }}
+											{% endif %}
+										{% endif %}
+										</td>
+									<td class="attribute">{{ elem["datatype"] }}</td>
+									<td class="attribute">{{ elem["basedatatype+"] }}</td>
+									<td class="attribute">{{ elem["devstatus"] }}</td>
+									<td class="attribute">{{ elem["R/W"] }}</td>
+									<td class="attribute">{{ "{}, {}".format(elem["uc"],elem["dc"]) }}</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!--businessrules-->
+					{% if elem["businessrules+"]|count > 0 %}
+					{% call blocks.subblock(header=webmodel.gettransltext("Business Rules"),
+					                lbc=elemid ~ "refburu",basedirec=basedirec) %}
+						{{ blocks.refbylist(webmodel,elemid,elem["businessrules+"]) }}
+					{% endcall %}
+					{% endif %}
+
+					<!--actorroles-->
+					{% if elem["raci+"]|count > 0 %}
+					{% call blocks.subblock(header=webmodel.gettransltext("Akteurrollen"),
+					            lbc=elemid ~ "refraci",basedirec=basedirec) %}
+						{{ blocks.refbylist(webmodel,elemid,elem["raci+"]) }}
+					{% endcall %}
+					{% endif %}
+
+
+					<!--mappings-->       
+					{% if (elem["attributesmapped"]|count) > 0 %}
+					{% call blocks.subblock(header="Mappings", lbc=elemid ~ "map", basedirec=basedirec) %}
+						<div class="table-responsive">
+							<table class="table borderless" >
+								<tbody>
+									<tr>
+										<th>Model </th>
+										<th>Attribute(s) / Column(s)</th>
+									</tr>
+									{% for key,val in webmodel.getmaplist(id=elemid,
+									                curdatmid=webmodel.getelemdatmid(elemid)).items() %}
+									<tr>
+										<td>{{ key }}</td>
+										<td>{{ val|safe }}</td>
+									</tr>
+									{% endfor %}
+								</tbody>
+							</table>
+						</div> 
+					{% endcall %}
+					{% endif %}
+
+					<!--user defined properties-->
+					{% if elem["userdefprops"]|count > 0 %}
+					{% call blocks.subblock(header="User defined properties", lbc=elemid ~ "udp",basedirec=basedirec) %}
+					{{ blocks.userdefproperties(udprs=elem["userdefprops"]) }}
+					{% endcall %}
+					{% endif %}
+
+		    {% endcall %}
+		{% endfor %}
+		
+        <!--domains-->
+		{% for doma in webmodel.domains %}
+		    {% set elemid = doma[0] %}
+		    {% set elem = webmodel.getelem (elemid) %}
+            {% include 'domains.jinja.html' %}
+        {% endfor %}
+		
+	</div>
+
+    <div class="modal" id="MobileSearch" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-full" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Filter</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeM0">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalContent">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closeM1">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	{{ blocks.zoomfinish(diagrams=webmodel.diagrams) }}
+</body>
+</html>

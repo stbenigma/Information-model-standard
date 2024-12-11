@@ -1,0 +1,474 @@
+{% macro tdbool2icon(bool,basedirec='') -%}
+	{% if bool %}	
+		<td class="symbol"><img alt="?" class="icon-check" src="{{ basedirec }}infra/images/icons/checkmark.svg"></td>
+	{% else %}	
+		<td class="symbol"><img alt="?" class="icon-remove" src="{{ basedirec }}infra/images/icons/cross.svg"></td>
+	{% endif %}	
+{%- endmacro %}
+
+{% macro tdicon(icon,basedirec='') -%}
+	{% if icon == 'down' %}	
+		<td class="leftsymbol"><img alt="?" class="icon-down" src="{{ basedirec }}infra/images/icons/downarrow.svg"></td>
+	{% elif icon == 'up' %}		
+		<td class="leftsymbol"><img alt="?" class="icon-up" src="{{ basedirec }}infra/images/icons/uparrow.svg"></td>
+	{% else %}	
+		<td> icon </td>
+	{% endif %}	
+{%- endmacro %}
+
+
+{% macro listblock(label, id, lbc,basedirec='') -%}
+				<div class="panel-body" id="{{id}}">
+					<div class="panel">
+						<div class="panel-heading collapsed" data-toggle="collapse" data-target="#{{lbc}}">
+							<label class="label0">{{ label }}</label>
+							<img class="icon-minus" alt="minus" src="{{ basedirec }}infra/images/icons/minus.svg">
+							<img class="icon-plus" alt="plus" src="{{ basedirec }}infra/images/icons/plus.svg">
+						</div>
+					</div>
+					<!-- The inside div eliminates the 'jumping' animation. -->
+					<div class="collapse" id="{{lbc}}">
+						{{ caller() }}
+					</div>
+				</div>
+{%- endmacro %}
+
+{% macro mainblock(type, id, name, descr, lbc, parenttype='',parentname=''
+                    ,icon = None,environ=None
+                    ,subparents='',basedirec='',singlefile=True) -%}
+		<div class="entity" id="{{ id }}">
+			<div class="describtion">
+				 {# <span> verträgt sich tnicht mit h1, p1, table etc. #}
+						<p>{{ type }}</p>
+						<h1>{{ name }}
+{# ersetzt durch Icon in tabelle unten
+						 {% if icon %}
+							 <img src="{{ icon }}" height="40px" width="40px">
+						 {% endif %}
+#}						
+						</h1>
+						<h3>{{ parenttype ~"  "}}
+                            {{ parentname }}
+                            {% if subparents!="" %}
+                                {{ "(" ~ subparents ~ ")" }}
+                            {% endif %}
+                        </h3>
+			<table style="width:100%">
+			  <tr>
+			  	<th style="width:70%">{{ descr|nvl|formattext|safe }}</th>
+			    {% if icon %}
+					<th style="width:10%"><img src="{{ icon }}" alt="" height="100px" width="100px"></th>
+				{% endif %}  
+			    {% if environ %}
+					<th style="width:20%">{{ environ|safe }}</th>
+				{% endif %}  
+			  </tr>
+			</table>
+                {# </span>   siehe beim Start#}
+			</div>
+			
+			<div class="panel-body">
+    			{% if singlefile %}
+	    			<div class="collapse" id="{{ lbc }}">
+                 {%  endif %}
+		    		   {{  caller() }}
+    			{% if singlefile %}
+    				</div>
+                 {% endif %}
+			</div>
+            {% if singlefile %}
+    			<div class="panel">
+	    			<div class="panel-heading collapsed" data-toggle="collapse" data-target="#{{ lbc }}">
+		    			<img class="icon-chevron-up" alt="minus" src="{{ basedirec }}infra/images/icons/chevron-up.svg">
+			    		<img class="icon-chevron-down" alt="plus" src="{{ basedirec }}infra/images/icons/chevron-down.svg">
+				    	<label class="label1">more</label>
+				    </div>
+			    </div>
+             {%  endif %}
+		</div>
+{%- endmacro %}
+
+{% macro subblock(header, lbc,basedirec='') -%}
+					<div class="panel"  id="#{{lbc}}">
+						<div class="panel-heading collapsed" data-toggle="collapse"  data-target="#{{lbc}}">
+							<img class="icon-chevron-up" alt="minus" src="{{ basedirec }}infra/images/icons/chevron-up.svg">
+							<img class="icon-chevron-down" alt="plus" src="{{ basedirec }}infra/images/icons/chevron-down.svg">
+							<label class="label1">{{ header }}</label>
+						</div>
+					</div>
+					<div class="collapse" id="{{lbc}}">
+						{{ caller () }}
+					</div>
+{%- endmacro %}
+
+{% macro userdefproperties(udprs) -%}
+				{% for udptheme,udpgroups in udprs.items() %}
+					<div class="table-responsive">
+						<h3>{{ udptheme }}</h3>
+						<table class="table borderless" >
+							<tbody>
+								<tr>
+									<th>Group</th>
+									<th>Property</th>
+									<th>Value</th>
+								</tr>
+								{% for udpgrpid,udpgroup in udpgroups.items() %}
+									{% for udpid,udp in udpgroup.items() %}
+									<tr>
+										<td>{{ udpgrpid }}</td>
+										<td>{{ udp.name }}</td> 
+										<td>{{ getnvl(udp.value) }}</td>
+									</tr>
+									{% endfor %}
+								{% endfor %}
+							</tbody>
+						</table>
+					</div> 
+				{% endfor %}
+{%- endmacro %}
+
+{% macro referencelist(webmodel,elemid,elem,basedirec='') -%}
+            <div class="table-responsive">
+                <table class="table borderless" >
+                    <tbody>
+                        <tr>
+                            <th>{{ webmodel.gettransltext("Typ") }}</th>
+                            <th>{{ webmodel.gettransltext("Referenz") }}</th>
+                            {% if webmodel.getelem(elemid) == 'businessrules' %}
+                            <th>
+                                 {{ webmodel.gettransltext("R/W") }}
+                            </th>
+                            {% elif webmodel.getelem(elemid) == 'actorroles' %}
+                            <th>
+                                 {{ webmodel.gettransltext("RACI") }}
+                            </th>
+                            {% endif %}
+                        </tr>
+                        {% for refid in elem %}
+                        {% set refelem = webmodel.getelem(refid) %}
+                        <tr>
+                            <td>{{ webmodel.displelemtype(refid)}}</td>
+                            {% set displ = webmodel.getlangstr(refelem["name"]) %}
+                            {% if webmodel.elemtype(refid) == 'tables' %}
+                                {% set displ = displ ~ " ({})".format(refelem["datamodel-name+"]) %}
+                            {% elif webmodel.elemtype(refid) == 'columns' %}
+                                {% set displ = displ ~ " ({}: {})".format(refelem["table-name+"],refelem["datamodel-name+"]) %}
+                            {% elif webmodel.elemtype(refid) == 'attributes' %}
+                                {% set displ = displ ~ " ({})".format(webmodel.getlangstr(webmodel.getelem(refelem["entity"])["name"])) %}
+                            {% endif %}
+                            <td>{% if (webmodel.elemtype(elemid) == 'businessrules' and webmodel.elemtype(refid) == 'relations' ) %}
+                                    {% set refid1 = webmodel.getelem(refid)["from-to"]["enti"] %}
+                                    {% set displ1 = webmodel.getlangstr(webmodel.getelem(refid1)["name"]) %}
+                                    {% set refid2 = webmodel.getelem(refid)["to-from"]["enti"] %}
+                                    {% set displ2 = webmodel.getlangstr(webmodel.getelem(refid2)["name"]) %}
+                                    {{ displ ~ ': ' ~ webmodel.getreflink(name=displ1
+                                       ,destid=refid1,desttype=webmodel.elemtype(refid1)
+                                       ,destdatmid=webmodel.getelemdatmid(refid1),basedirec=basedirec)|safe }}
+                                    {{ '   <->   ' ~ webmodel.getreflink(name=displ2
+                                       ,destid=refid2,desttype=webmodel.elemtype(refid2)
+                                       ,destdatmid=webmodel.getelemdatmid(refid2),basedirec=basedirec)|safe }}
+                                {% else %}
+                                    {{ webmodel.getreflink(name=displ
+                                       ,destid=refid
+                                       ,destdatmid=webmodel.getelemdatmid(refid)
+                                          ,desttype=webmodel.elemtype(refid)
+                                           , basedirec=basedirec)|safe }}
+                                {% endif %}
+                            </td>
+                            {% if webmodel.elemtype(elemid) == 'businessrules' %}
+                            <td>
+                                 {{ elem[refid]["r/w"] }}
+                            </td>
+                            {% elif webmodel.elemtype(elemid) == 'actorroles' %}
+                            <td>
+                                 {{ elem[refid] }}
+                            </td>
+                            {% endif %}
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+{%- endmacro %}
+
+{% macro refbylist(webmodel, elemid,elem,basedirec='') -%}
+                <div class="table-responsive">
+                    <table class="table borderless" >
+                        <tbody>
+                            <tr>
+                                <th width="10%">{{ webmodel.gettransltext("Typ") }}</th>
+                                <th width="45%">{{ webmodel.gettransltext("Referenz") }}</th>
+                                <th width="45%">{{ webmodel.gettransltext("Dokument link") }}</th>
+                            </tr>
+                            {% for refid in elem["referencedby"] %}
+                                {% set refelem = webmodel.getelem(refid) %}
+                            <tr>
+                                <td>{{ webmodel.displelemtype(refid)}}</td>
+                                <td>{{ webmodel.getreflink(name=webmodel.getlangstr(refelem["name"])
+                                       ,destid=refid
+                                       ,curdatmid=webmodel.getelemdatmid(elemid)
+                                       ,destdatmid=webmodel.getelemdatmid(refid)
+                                        ,desttype=webmodel.elemtype(refid)
+                                        ,basedirec=basedirec)|safe }}
+                                </td>
+                                <td>
+                                    {% if webmodel.elemtype(refid) == 'documents' %}
+                                        {{ refelem["reference"]|urlize(target="_blank") }}
+                                    {% else %}
+                                        {{ "" }}
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+{%- endmacro %}
+
+{% macro reflist(webmodel, elemid, refs,basedirec='') -%}
+    {% set type =webmodel.elemtype(elemid) %}
+						<div class="table-responsive">
+							<table class="table borderless" >
+								<tbody>
+									<tr>
+										<th>{{ webmodel.gettransltext("Name") }}</th>
+										{% if type == 'businessrules' %}
+										<th>{{ webmodel.gettransltext("Typ") }}</th>
+										<th>{{ webmodel.gettransltext("R/W") }}</th>
+										{% elif type == 'actorroles' %}
+										<th>{{ webmodel.gettransltext("RACI") }}</th>
+										{% endif %}
+									</tr>
+									{% for refid in refs %}
+									{% set ref = webmodel.getelem(refid) %}
+									{% set desttype = webmodel.elemtype(refid) %}
+									<tr>
+										<td>{{ webmodel.getreflink(name=webmodel.getlangstr(getnvl(ref["name"],'???'))
+											   ,destid=refid
+											   ,curdatmid=webmodel.getelemdatmid(elemid)
+											   ,destdatmid=webmodel.getelemdatmid(refid)
+                                                ,desttype=desttype
+                                                ,basedirec=basedirec)|safe }}
+										</td>
+										{% if type == 'businessrules' %}
+										<td>{{ ref["type"] }}</td>
+										<td>{{ ref['elements'][elemid]["r/w"] }}</td>
+										{% elif type == 'ACTR' %}
+										<td>{{ refs[refid] }}</td>
+										{% endif %}
+									</tr>
+									{% endfor %}
+								</tbody>
+							</table>
+						</div>
+{%- endmacro %}
+
+
+{% macro elementlist(webmodel, elems,basedirec='') -%}
+			{% for elemid in elems %}
+			{% if loop.index > 1 %} {{ ', ' }} {% endif %}
+			{{ webmodel.getreflink(name=webmodel.getlangstr(webmodel.getelem(elemid)["name"]),destid=elemid,
+                                        desttype=webmodel.elemtype(elemid),basedirec=basedirec) |safe}}
+			{% endfor %}
+{%- endmacro %}
+
+{% macro  attrlist (webmodel,elem,title,attrtype,basedirec='') -%}
+				<h4>{{ webmodel.gettransltext(title) }}</h4>
+				<div class="table-responsive">
+					<table class="table borderless" >
+						<tbody>
+							<tr>
+								<th>{{ webmodel.gettransltext('Name') }}</th>
+								<th>{{ webmodel.gettransltext('Wertebereich') }}</th>
+								<th>{{ webmodel.gettransltext('Typ') }}</th>
+								<th>{{ webmodel.gettransltext('Pflichtattribut') }}</th>
+								<th>{{ webmodel.gettransltext('Schlüssel') }}</th>
+								<th>{{ webmodel.gettransltext('Deskriptor') }}</th>
+								{% if attrtype == "attributes+" %}
+								<th>{{ webmodel.gettransltext('übersetzt') }}</th>
+								<th>{{ webmodel.gettransltext('wiederholt') }}</th>
+								<th>{{ webmodel.gettransltext('historisiert') }}</th>
+								<th>{{ webmodel.gettransltext('verschlüsselt') }}</th>
+								{% else %}
+								<th>{{ webmodel.gettransltext('Entität') }}</th>
+								{% endif %}
+							</tr>
+							{% for attrid in elem[attrtype] %}
+							{% set attr = webmodel.getelem(attrid) %}
+							{% set domaid = attr["domain"] %}
+							{% set entiid = attr["entity"] %}
+							<tr>
+								<td>{{ webmodel.getreflink(name=webmodel.getlangstr(attr["name"]), destid=attrid,
+                                        desttype='attributes',basedirec=basedirec) |safe}}</td>
+								<td> {% if domaid %}
+									{% set doma = webmodel.getelem(domaid) %}
+									{% if doma["origin"] == 'DER' %}
+									{{ webmodel.getlangstr(doma["name"]) }}
+									{% else %}
+									{{ webmodel.getreflink(name=webmodel.getlangstr(doma["name"]),destid=domaid,
+                                        desttype='domains',basedirec=basedirec)|safe}}
+									{% endif %}
+									{% endif %}
+								</td>
+								<td>{{ attr["type+"] }}</td>
+								{{ tdbool2icon(attr["mandatory"],basedirec=basedirec) }}
+								{{ tdbool2icon(attr["keys+"]|count > 0,basedirec=basedirec) }}
+								{{ tdbool2icon(attr["descriptive"],basedirec=basedirec) }}
+								{% if attrtype == "attributes+" %}
+									{{ tdbool2icon(attr["translated"],basedirec=basedirec) }}
+									{{ tdbool2icon(attr["repeated"],basedirec=basedirec) }}
+									{{ tdbool2icon(attr["historisiert"],basedirec=basedirec) }}
+									{{ tdbool2icon(attr["encrypted"],basedirec=basedirec) }}
+								{% else %}
+									<td>{{ webmodel.getreflink(name=webmodel.getlangstr(webmodel.getelem(entiid)["name"]),destid=entiid,
+                                        desttype='entities',basedirec=basedirec)|safe }}</td>
+								{% endif %}
+							</tr>
+							{% endfor %}
+						</tbody>
+					</table>
+				</div>
+{%- endmacro %}
+
+{% macro relalist (webmodel,elem,title,relatype,basedirec='') -%}
+			<h4>{{ webmodel.gettransltext(title) }}</h4>
+			<div class="table-responsive">
+				<table class="table borderless" >
+					<tbody>
+						<tr>
+							<th>{{ webmodel.gettransltext('Name') }}</th>
+							<th>{{ webmodel.gettransltext('Entität')~'-1' }}</th>
+							<th></th>
+							<th>{{ webmodel.gettransltext('Beziehung') }}</th>
+							<th></th>
+							<th>{{ webmodel.gettransltext('Entität')~'-2' }}</th>
+							<th>{{ webmodel.gettransltext('Arc') }}</th>
+							<th>{{ webmodel.gettransltext('Schlüssel') }}</th>
+							<th>{{ webmodel.gettransltext('Business Rules') }}</th>
+						</tr>
+						{% for relaid in elem[relatype] %}
+						{% set rela = webmodel.getelem(relaid) %}
+							{% if (rela['type'] not in ('ISAR','ISAS')) %}
+								{% set fromarc,toarc = '','' %}
+								{% if (rela['from-to']['arc'] is not none) %} {% set arc = webmodel.getelem(rela['from-to']['arc'])['name'] %}{% endif %}
+								{% if (rela['to-from']['arc'] is not none) %} {% set arc = webmodel.getelem(rela['to-from']['arc'])['name'] %}{% endif %}
+								{% if (relaid == rela['from-to']['enti']) %}
+									{% set fromto =  rela['from-to'] %}
+									{% set tofrom =  rela['to-from'] %}
+								{% else %}
+									{% set fromto =  rela['to-from'] %}
+									{% set tofrom =  rela['from-to'] %}
+								{% endif %}
+								<tr>
+								<td>{{ getnvl(rela["name"]) }}</td>
+								<td>{{ webmodel.getlangstr(webmodel.getelem(fromto['enti'])['name']) }}</td>
+								<td>{{ "->" }}</td>
+								<td>{{ webmodel.getlangstr(getnvl(fromto['assoc'])) }}</td>
+								<td>{{ fromto['cardstr+'] }}</td>
+								{{ tdicon(icon='down',basedirec=basedirec) }}
+								<td>{{ arc }}</td>
+								{{ tdbool2icon((rela['isinkeys+']|count) > 0,basedirec=basedirec) }}
+									<td> {% for buruid in rela["businessrules+"] %}
+										 {% set buru = webmodel.getelem(buruid) %}
+										 {{ webmodel.getreflink(name=webmodel.getlangstr(buru["name"])
+											,destid=buruid
+											,curdatmid=webmodel.getelemdatmid(relaid)
+                                                 ,desttype='relations',basedirec=basedirec)|safe }}
+										{% endfor %}
+									</td>
+							   </tr>
+								<tr>
+								<td>{{ '' }}</td>
+								{{ tdicon(icon='up',basedirec=basedirec) }}
+								<td>{{ tofrom['cardstr+'] }}</td>
+								<td>{{ '<-' }}</td>
+								<td>{{ webmodel.getlangstr(getnvl(tofrom['assoc'])) }}</td>
+								<td>{{ webmodel.getreflink(name=webmodel.getlangstr(webmodel.getelem(tofrom['enti'])['name'])
+													,destid=tofrom['enti'],
+                                        desttype='entities',basedirec=basedirec) |safe }}</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								</tr>
+							{% endif %}
+						{% endfor %}
+					</tbody>
+				</table>
+			</div>
+{%- endmacro %}
+
+{% macro zoomfinish1(diagram) -%}
+    {{ zoomfinish([diagram]) }}
+{%- endmacro %}
+
+{% macro zoomfinish(diagrams) -%}
+	<script>
+		function initSVGZoom() {
+			let shifted = false
+			let zoomchange = 0.1
+            $('[minzoom="3"],[minzoom="4"]').hide();
+            $('[maxzoom="0"],[maxzoom="1"]').hide();
+
+			{% if diagrams|count > 0 %}
+				{% for elem in diagrams %}
+					{% set diagname = elem['id']+ "-SVG" %}
+					let panZoomDiag{{ elem['id'] }} = svgPanZoom('#{{ diagname }}', {
+					panEnabled: true,
+					controlIconsEnabled: true,
+					mouseWheelZoomEnabled: true,
+					zoomEnabled: false,
+					onZoom: function(e){
+                        if(e < (1 - 3*zoomchange)) { //zoom
+                            $('[maxzoom="4"]').show();
+                            $('[maxzoom="0"],[maxzoom="1"],[maxzoom="2"],[maxzoom="3"]').hide();
+                        } else if(e < (1 - 1*zoomchange)) {
+                            $('[maxzoom="4"],[maxzoom="3"]').show();
+                            $('[maxzoom="0"],[maxzoom="1"],[maxzoom="2"],[minzoom="4"]').hide();
+                        } else if(e < (1 + 1*zoomchange)) {
+                            $('[maxzoom="4"],[maxzoom="3"],[maxzoom="2"]').show();
+                            $('[maxzoom="0"],[maxzoom="1"],[minzoom="3"],[minzoom="4"]').hide();
+                        } else if(e > (1 + 4*zoomchange)) {
+                            $('[maxzoom="4"],[maxzoom="3"],[maxzoom="2"],[maxzoom="1"]').show();
+                            $('[maxzoom="0"],[minzoom="2"],[minzoom="3"],[minzoom="4"]').hide();
+                        } else if(e > (1 + 2*zoomchange)) {
+                            $('[maxzoom="4"],[maxzoom="3"],[maxzoom="2"],[maxzoom="1"],[maxzoom="0"]').show();
+                            $('[minzoom="1"],[minzoom="2"],[minzoom="3"],[minzoom="4"]').hide();
+                    }					}
+					});
+				{% endfor %}
+				$(document).on('keyup keydown', function(e){
+				shifted = e.shiftKey;
+				{% for elem in diagrams %}
+					if(shifted) {
+						panZoomDiag{{ elem['id'] }}.enableZoom();
+					} else {
+						panZoomDiag{{ elem['id'] }}.disableZoom();
+					}
+				{% endfor %}
+				} );
+			{% endif %}
+		}
+
+		$(document).ready(function() {
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 700) {
+					$('#btnTop').fadeIn();
+				} else {
+					$('#btnTop').fadeOut();
+				}
+			});
+			// scroll content to top by clicking on button
+			$('#btnTop').click(function() {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 400);
+				return false;
+			});
+
+			$tblshow();
+			initSVGZoom();
+		});
+		initSVGZoom();
+        //parent.IFrameLoaded();
+	</script>
+{%- endmacro %}
