@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_329" directorySegmentName="seg_0" id="17E5147D-EA29-D1D5-0DA4-94D0CF5C5A13">
+<createdBy>Lea</createdBy>
+<createdTime>2022-01-20 12:47:44 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="17F5F16D-4CB1-2968-618E-D369CD8C5B93" value="true"/>
+<item key="BE22189E-C358-530C-6354-65FB4784079F" value="true"/>
+<item key="A91573EF-1254-1C9A-797A-A2AF60AC738D" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="1A90F064-D225-B8AB-AC38-0393157EE4FC" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>builds</nameOnSource>
+<nameOnTarget>consists of</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>912EDDB5-425E-E4AE-2ED5-BAFDB805C3AB</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>DC57A6BC-D3A1-CF6B-AE38-45DD03C078E4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<propertyMap>
+<property name="DE_RELA_TEXT_FROM" value="baut"/>
+<property name="DE_RELA_TEXT_TO" value="besteht aus"/>
+<property name="EN_RELA_TEXT_FROM" value="builds"/>
+<property name="EN_RELA_TEXT_TO" value="consists of"/>
+</propertyMap>
+</Relation>

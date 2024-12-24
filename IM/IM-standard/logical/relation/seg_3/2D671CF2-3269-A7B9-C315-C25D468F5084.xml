@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_80" directorySegmentName="seg_3" id="2D671CF2-3269-A7B9-C315-C25D468F5084">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:06:23 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="17F5F16D-4CB1-2968-618E-D369CD8C5B93" value="true"/>
+<item key="BE22189E-C358-530C-6354-65FB4784079F" value="true"/>
+<item key="A91573EF-1254-1C9A-797A-A2AF60AC738D" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="1A90F064-D225-B8AB-AC38-0393157EE4FC" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>false</identifying>
+<nameOnSource>uses</nameOnSource>
+<nameOnTarget>used in</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>CD0AF996-DFB0-3BFC-0848-4F1529E725A5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D718E671-DE1C-59BC-9C74-A352687F07F5</targetEntity>
+<transferable>true</transferable>
+<propertyMap>
+<property name="DE_RELA_TEXT_FROM" value="verwendet"/>
+<property name="DE_RELA_TEXT_TO" value="verwendet in"/>
+<property name="EN_RELA_TEXT_FROM" value="uses"/>
+<property name="EN_RELA_TEXT_TO" value="used in"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="DRAFT"/>
+</propertyMap>
+</Relation>

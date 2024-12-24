@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="23D800D2-69D7-19A7-A112-599DD4855100" name="Physical unit">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<comment><![CDATA[Physical measuring unit . See also e.g. https://en.wikipedia.org/wiki/International_unit #IU-basic sizes and - unities]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Physikalische Messeinheit.
+Siehe dazu z.B. https://de.wikipedia.org/wiki/Liste_physikalischer_Größen #SI-Basisgrößen_und_-einheiten
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Physical measuring unit . See also e.g. https://en.wikipedia.org/wiki/International_unit #IU-basic sizes and - unities
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>PHYU</shortName>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="DE_ENTI_NAME" value="Physikalische Einheit"/>
+<property name="EN_ENTI_NAME" value="Physical unit"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Symbol" id="D110C56D-0639-36A9-856A-F50A0DB6F0FE">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>B63051FE-1409-073C-01EA-C372603FDBA3</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>DF321C7C-26AB-AE86-F75B-320EE5F91E6D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value=""/>
+<property name="DE_ATTR_NAME" value="Symbol"/>
+<property name="EN_ATTR_COMMENT" value=""/>
+<property name="EN_ATTR_NAME" value="Symbol"/>
+<property name="isdescriptive" value="TRUE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Description [L]" id="BE51FA69-1EC3-E4EF-DAE1-0C1845EA613C">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>3A2394FA-CB07-573D-46E0-7BE1D89248A6</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value=""/>
+<property name="DE_ATTR_NAME" value="Beschreibung [L]"/>
+<property name="EN_ATTR_COMMENT" value=""/>
+<property name="EN_ATTR_NAME" value="Description [L]"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="SI unit" id="10B2F6C3-9A2A-78A2-C064-EB3522695570">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<comment><![CDATA[Unit according to SI specification]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Einheit gemäss SI-Vorgabe
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Unit according to SI specification
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>EB7B509C-E485-EFAE-3DC7-C07E94245DB7</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DD765D8A-B6DE-C725-89D4-5A0AE9EEB09A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Einheit gemäss SI-Vorgabe"/>
+<property name="DE_ATTR_NAME" value="SI-Einheit"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Einheit gemäss SI-Vorgabe"/>
+<property name="EN_ATTR_NAME" value="SI unit"/>
+<property name="isdescriptive" value="TRUE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9B15D3A7-BD3D-E2D3-FC7E-A3CD772A71A1" name="PHEI_NAME_UK">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>D110C56D-0639-36A9-856A-F50A0DB6F0FE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

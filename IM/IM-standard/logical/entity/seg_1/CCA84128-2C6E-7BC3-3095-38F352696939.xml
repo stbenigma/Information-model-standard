@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="CCA84128-2C6E-7BC3-3095-38F352696939" name="Functional relation">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<comment><![CDATA[A many-to-1 relationship.
+Each instance of the first entity is connected to exactly one instance of the entity at the other end (reverse/end entity). This is a clear, functional dependency. Starting from the instance of the 1st entity, the assigned instance of the other entity can be found unambiguously.
+The term ‘many’ means 1 or more. If the end of the relationship is optional, it means 0, 1 or more.
+
+The cardinality from the first (start) entity is always ‘1’. The cardinality at the other end can be ‘1’ or ‘M’. We speak of an ‘M:1’ / ‘many-to-1’ or a 1:1 relationship.
+
+For functional relationships, the association texts must be specified in both directions. They provide the meaning of the functional dependency.
+
+It can only be a 1:1 functional relationship if both sides are optional or both sides are mandatory. In the latter case, the relationship must not be grouped in an arc.
+Differentiation between 1:1 functional relationships and role/subentity relationships: 
+1:1 
+  1 optional - 1 optional 
+  1 mandatory - 1 mandatory (without arc)
+  1 mandatory - 1 optional
+Roles 
+  1 mandatory - 1 optional
+Subentities 
+  1 mandatory - 1 mandatory (with arc)
+
+Examples:
+An employee employed by a company - A company employs many employees.
+A person is married to 1 person.
+A planet orbits a sun - A sun is orbited by many planets.]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Eine Many-zu-1-Beziehung.
+Jede Instanz der ersten Entität ist mit genau einer Instanz der Entität am anderen Ende (reverse/ende-Entität) verbunden. Es handelt sich um eine eindeutige, funktionale Abhängigkeit. Ausgehend von der Instanz der 1. Entität findet man eindeutig die zugewiesene Instanz der anderen Entität.
+Die Bezeichnung "viele" bedeutet 1 oder mehrere. Falls das Beziehungsende optional ist, bedeutet es 0,1 oder mehrere.
+
+Die Kardinalität ab der ersten (Start-)Entität ist immer "1". Die Kardinalität am anderen Ende kann "1" oder "M" sein. Wir sprechen von einer „M:1“ / „many-to-1“ respektive von einer 1:1 Beziehung.
+
+Für funktionale Beziehungen müssen die Assotziationstexte in beide Richtungen angegeben werden. Sie liefern die Bedeutung der funktionalien Abhängigkeit.
+
+Eine 1:1 funktionale Beziehung kann es nur sein, wenn beide Seiten optional oder beide Seiten obligatorisch sind. Im letzteren Fall darf die Beziehung nicht in einem Arc gruppiert sein.
+Abgrenzung von 1:1 funktionalen Beziehungen zu Rollen/Subentität- Beziehungen: 
+1:1 
+  1 optional - 1 optional 
+  1 obligatorsich - 1 obligatorisch (ohne arc)
+  1 obligatorsich - 1 optional
+Rollen 
+  1 obligatorisch - 1 optional
+Subentitäten 
+  1 obligatorisch - 1 obligatorisch (mit arc)
+
+Beispiele:
+Ein Angestellter angestellt in einer Firma - Eine Firma beschäftigt viele Angestellte.
+Eine Person ist verheiratet mit 1 Person.
+Ein Planet umkreist eine Sonne - Eine Sonne wird umkreist von vielen Planeten.
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+A many-to-1 relationship.
+Each instance of the first entity is connected to exactly one instance of the entity at the other end (reverse/end entity). This is a clear, functional dependency. Starting from the instance of the 1st entity, the assigned instance of the other entity can be found unambiguously.
+The term ‘many’ means 1 or more. If the end of the relationship is optional, it means 0, 1 or more.
+
+The cardinality from the first (start) entity is always ‘1’. The cardinality at the other end can be ‘1’ or ‘M’. We speak of an ‘M:1’ / ‘many-to-1’ or a 1:1 relationship.
+
+For functional relationships, the association texts must be specified in both directions. They provide the meaning of the functional dependency.
+
+It can only be a 1:1 functional relationship if both sides are optional or both sides are mandatory. In the latter case, the relationship must not be grouped in an arc.
+Differentiation between 1:1 functional relationships and role/subentity relationships: 
+1:1 
+  1 optional - 1 optional 
+  1 mandatory - 1 mandatory (without arc)
+  1 mandatory - 1 optional
+Roles 
+  1 mandatory - 1 optional
+Subentities 
+  1 mandatory - 1 mandatory (with arc)
+
+Examples:
+An employee employed by a company - A company employs many employees.
+A person is married to 1 person.
+A planet orbits a sun - A sun is orbited by many planets.
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="false"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>1A2BD7DD-DE7A-C8E0-C1A6-B282BC7AD488</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>RELA</shortName>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="DE_ENTI_NAME" value="Funktionale Beziehung"/>
+<property name="EN_ENTI_NAME" value="Functional relation"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Entity>

@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="IM-standard" id="C0F99BD6-EFBC-2981-8BDE-316C8D1D0E97" version="3.5">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 17:29:16 UTC</createdTime>
+<comment><![CDATA[TRANSLATION{
+currentLang=EN
+languages=EN,DE
+lastSync=19/12/2022  16:33:57
+version=2.1
+DEEPLAuthKey=
+}
+
+Information Model of the Information Model.
+Based on the relational model and described in 
+- the book Information Modelling (ISBN-978-3-7281-3943-6).
+- the jsonschema definition Informationmodel.json (https://...)]]></comment>
+<ownerDesignName>ModellModell_neu</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>C0F99BD6-EFBC-2981-8BDE-316C8D1D0E97</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="645F674F-B148-EAEF-AE60-85AD8E55754E">
+<designStoragePath>/dbms-odm</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="4C73711C-AE6D-0394-6773-CF2AD132A6F3">
+<designStoragePath>/Users/stb/Documents/Projekte/FYAYC_intern/gitHub/ModellModell/IM/ModellModell</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="C32C13E0-EBDD-3035-A0C2-190E892CC55C">
+<designStoragePath>/map</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="23C1D274-FC7F-DC3A-7AC7-2256BC17593F">
+<designStoragePath>/domains</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="F0F91F6E-92BA-2C63-CAC7-C6D716F2001E">
+<designStoragePath>/Users/stb/Documents/Projekte/FYAYC_intern/gitHub/ModellModell/IM</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="B809C031-D058-8D90-FBEF-743479E370FC">
+<designStoragePath>/Users/stb/Documents/Projekte/FYAYC_intern/gitHub/ModellModell/IM</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="D4BF115F-D298-7AE8-A3F3-A065DFA9DC3D">
+<designStoragePath>/Users/stb/Documents/Projekte/FYAYC_intern/gitHub/ModellModell/IM</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="DF6E2A23-DDCF-E0FB-8729-0BFB455ADEDD">
+<designStoragePath>/Users/stb/Documents/Projekte/FYAYC_intern/gitHub/ModellModell/IM</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="232F3332-DAA6-5063-C289-72DE475E97E7">
+<designStoragePath>/Users/stb/Documents/Projekte/FYAYC_intern/gitHub/ModellModell/IM</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="C8F172AF-D827-191D-80A1-36962247B6C9">
+<designStoragePath>/Users/stb/Documents/Projekte/FYAYC_intern/gitHub/ModellModell/IM</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="16ACAC01-18D3-C23F-86DF-9E5A3F736D00">
+<designStoragePath>/newtables</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="5BFEB558-D8BB-A437-4FDE-B66A21290527">
+<designStoragePath>/konbert-export-bcf81e940ca24</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="C0F99BD6-EFBC-2981-8BDE-316C8D1D0E97">
+<designStoragePath>/Users/stb/Documents/Projekte/FYAYC_intern/fyyccim-ModellModell/gitHub/IM/ModellModell_neu</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

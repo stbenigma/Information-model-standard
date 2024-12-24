@@ -1,0 +1,221 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_2" id="EE0F479E-2B85-9DC9-1CB8-66D3967F8993" name="Numeric domain">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<comment><![CDATA[Can record numerical values]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Kann Zahlenwerte aufnehmen
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Can record numerical values
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="false"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>1725C503-BB91-0A6D-6E10-6908B44EDA95</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>DOMA</shortName>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="DE_ENTI_NAME" value="Numerischer Wertebereich"/>
+<property name="EN_ENTI_NAME" value="Numeric domain"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Total Digits Count" id="7E77D48A-823A-2E1C-12FB-94F9A785C501">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<comment><![CDATA[Number of digits before the decimal point]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Anzahl der Stellen vor dem Komma
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Number of digits before the decimal point
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>6013584E-6DC3-0F87-63DB-782BE75793F2</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9CA83673-0453-9943-665C-CCB4497CF164</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Anzahl der Stellen vor dem Komma"/>
+<property name="DE_ATTR_NAME" value="Totalstellen#"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Anzahl der Stellen vor dem Komma"/>
+<property name="EN_ATTR_NAME" value="Total Digits Count"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Decimal places#" id="D2115AAA-10BB-6729-053F-50CD98171F6C">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<comment><![CDATA[Number of digits after the decimal point]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Anzahl der Stellen nach dem Komma
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Number of digits after the decimal point
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>1A0F5548-154B-9B85-CAD0-538CA8502229</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9CA83673-0453-9943-665C-CCB4497CF164</domain>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Decimal places# is NULL or Decimal places# &lt; Total Digits Count"/>
+</checkConstraint>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Anzahl der Stellen nach dem Komma"/>
+<property name="DE_ATTR_NAME" value="Nachkommastellen#"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Anzahl der Stellen nach dem Komma"/>
+<property name="EN_ATTR_NAME" value="Decimal places#"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Min value" id="E5CC6E75-E08C-C5ED-7AD2-5C644AC557AD">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<comment><![CDATA[Minimum value for a numeric field. Empty -> as small as the system allows]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Minimaler Wert für ein numerisches Feld. Leer -> so klein wie das System zulässt
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Minimum value for a numeric field. Empty -> as small as the system allows
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>5D6EF497-1C80-55B3-9A08-19906F7E598E</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>656CA02F-3748-45E2-D2A6-08D930AAB75B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Minimaler Wert für ein numerisches Feld. Leer -&gt; so klein wie das System zulässt"/>
+<property name="DE_ATTR_NAME" value="Min Wert"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Minimaler Wert für ein numerisches Feld. Leer -&gt; so klein wie das System zulässt"/>
+<property name="EN_ATTR_NAME" value="Min value"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Max value" id="EBB0952C-C757-86BA-30FC-CF6002E22D95">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<comment><![CDATA[Maximum value for a numeric field. Empty -> as big as the system allows]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Maximaler Wert für ein numerisches Feld. Leer -> so gross wie das System zulässt
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Maximum value for a numeric field. Empty -> as big as the system allows
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>A72F2CB8-1949-9C66-ECCA-BF3F2AC681C0</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>656CA02F-3748-45E2-D2A6-08D930AAB75B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Maximaler Wert für ein numerisches Feld. Leer -&gt; so gross wie das System zulässt"/>
+<property name="DE_ATTR_NAME" value="Max Wert"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Maximaler Wert für ein numerisches Feld. Leer -&gt; so gross wie das System zulässt"/>
+<property name="EN_ATTR_NAME" value="Max value"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Rounding unit" id="EB863265-2766-76A8-568E-EEFEA2D851F2">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<comment><![CDATA[A value that indicates the unit to which a numeric value is rounded for storage. (e.g. 0.5, 0.25, 1000) empty -> not rounded explicitly]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Wert, der angibt, auf welche Einheit ein numerischer Wert für die Speicherung gerundet wird. (z.B. 0.5, 0.25, 1000) leer -> es wird nicht explizit gerundet
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+A value that indicates the unit to which a numeric value is rounded for storage. (e.g. 0.5, 0.25, 1000) empty -> not rounded explicitly
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>7B43FC60-8938-1F2F-FFC9-AC52103A91B0</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9D57C5ED-8336-6617-9BC7-29B138AA6191</domain>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Wert, der angibt, auf welche Einheit ein numerischer Wert für die Speicherung gerundet wird. (z.B. 0.5, 0.25, 1000) leer -&gt; es wird nicht explizit gerundet"/>
+<property name="DE_ATTR_NAME" value="Rundungseinheit"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Wert, der angibt, auf welche Einheit ein numerischer Wert für die Speicherung gerundet wird. (z.B. 0.5, 0.25, 1000) leer -&gt; es wird nicht explizit gerundet"/>
+<property name="EN_ATTR_NAME" value="Rounding unit"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+</attributes>
+</Entity>

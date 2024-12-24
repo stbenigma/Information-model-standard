@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_ENTI_KEYS" directorySegmentName="seg_0" id="7DFF44B9-D585-A3B7-7342-79EA825C4941">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<sourcePk>0DCB8532-B1E4-BF67-1F61-05895B0E758E</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>restricted by</nameOnSource>
+<nameOnTarget>restricts</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A23E6C38-310F-4379-F953-0B04C1A4B16F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7810FD23-A6BA-9ECA-1944-4593B865E654</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<propertyMap>
+<property name="DE_RELA_TEXT_FROM" value="eingeschränkt durch"/>
+<property name="DE_RELA_TEXT_TO" value="schänkt ein"/>
+<property name="EN_RELA_TEXT_FROM" value="limited by"/>
+<property name="EN_RELA_TEXT_TO" value="limits"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Relation>

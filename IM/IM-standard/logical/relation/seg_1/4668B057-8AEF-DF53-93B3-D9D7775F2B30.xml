@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_326" directorySegmentName="seg_1" id="4668B057-8AEF-DF53-93B3-D9D7775F2B30">
+<createdBy>stb</createdBy>
+<createdTime>2022-11-03 06:53:19 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<targetPk>01978A28-13C8-5C45-CADD-2BF926266DE9</targetPk>
+<arc>A1A8C26F-AAF9-C211-E675-7622B5E69B8B</arc>
+<identifying>false</identifying>
+<nameOnSource>ends</nameOnSource>
+<nameOnTarget>ends at</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>404BAB59-D88C-9275-EAA6-D33642623799</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>1A2BD7DD-DE7A-C8E0-C1A6-B282BC7AD488</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<propertyMap>
+<property name="DE_RELA_TEXT_FROM" value="beendet"/>
+<property name="DE_RELA_TEXT_TO" value="endet in"/>
+<property name="EN_RELA_TEXT_FROM" value="ends"/>
+<property name="EN_RELA_TEXT_TO" value="ends at"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Relation>

@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="234A5520-6FC5-F97D-0838-A80335AEF71D" name="Key element">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-09 14:48:30 UTC</createdTime>
+<comment><![CDATA[Attribute or (functional) Relationship ID beeing part of a key for the entity.]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Attribut- oder (funktionale) Beziehung, die Teil eines Schlüssels für die Entität ist.
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Attribute or (functional) Relationship ID beeing part of a key for the entity.
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>KEYS</shortName>
+<propertyMap>
+<property name="DE_ENTI_NAME" value="Schlüsselelement"/>
+<property name="EN_ENTI_NAME" value="Key element"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C2B95893-B868-4796-8082-647021F7B382" name="keyelem_uk">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-09 14:48:30 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<newElementsIDs>F509F179-4B45-A8E5-8C1E-27F318F8132B,9DA7BF28-D7AF-5C4A-9346-FA3FE87BC0CB,872B80A8-6026-169F-A1E5-264E25EA7005</newElementsIDs>
+</identifier>
+</identifiers>
+</Entity>

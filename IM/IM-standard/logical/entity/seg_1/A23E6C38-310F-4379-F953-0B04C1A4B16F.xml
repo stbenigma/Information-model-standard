@@ -1,0 +1,280 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="A23E6C38-310F-4379-F953-0B04C1A4B16F" name="Entity">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:03:22 UTC</createdTime>
+<comment><![CDATA[Designates a thing of interest in this shere of influence (targetenvironment). A being, a tangible or intangible (abstract) object with properties and relationships.
+It is an IT-system- and technology-independent and consolidated description of the structure and meaning of the thing of interest.
+An entity name is unique in the considered environment and the definition of the entity (attributes, description, rules, relationships,...) is the only valid interpretation expressed with this name.
+]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Bezeichnet eine Sache von Interesse in diesem Einflussbereich (Zielumwelt). Ein Wesen, ein materielles oder immaterielles (abstraktes) Objekt mit Eigenschaften und Beziehungen.
+Es handelt sich um eine IT-System- und Technologie-unabhängige und konsolidierte Beschreibung der Struktur und Bedeutung des interessierenden Dings.
+Ein Entitätsname ist in der betrachteten Umgebung eindeutig und die Definition der Entität (Attribute, Beschreibung, Regeln, Beziehungen,...) ist die einzig gültige Interpretation, die mit diesem Namen ausgedrückt wird.
+Eine Entität kann wiederum aus einzelnen Teilen (Attributen, Unterentitäten, Beziehungen, etc.) bestehen ; entsprechend dem Begriff Holon oder Ganzes/Teil.
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Designates a thing of interest in this shere of influence (targetenvironment). A being, a tangible or intangible (abstract) object with properties and relationships.
+It is an IT-system- and technology-independent and consolidated description of the structure and meaning of the thing of interest.
+An entity name is unique in the considered environment and the definition of the entity (attributes, description, rules, relationships,...) is the only valid interpretation expressed with this name.
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="false"/>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>ENTI</shortName>
+<generateDiscrimColumn>true</generateDiscrimColumn>
+<discriminatorColumnName>ENTI_SUBTYPE</discriminatorColumnName>
+<completeSubtypes>true</completeSubtypes>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="DE_ENTI_NAME" value="Entität"/>
+<property name="EN_ENTI_NAME" value="Entity"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Name [L]" id="F1D0F128-7361-E0A9-E706-227C158FCD42">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:03:22 UTC</createdTime>
+<comment><![CDATA[unique Name of the entity normally used in communication.]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+eindeutiger Name der Entität der in der Kommunikation normalerweise gebraucht wird.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+unique Name of the entity normally used in communication.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>0F2758D2-C7D1-07D3-5C35-F1697AF2FBE0</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="false"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<use>0</use>
+<collectionType>874CA941-0FD3-8BB4-AA0F-9770697B8F8E</collectionType>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Name der Entität der in der Kommunikation normalerweise gebraucht wird."/>
+<property name="DE_ATTR_NAME" value="Name [L]"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Name der Entität der in der Kommunikation normalerweise gebraucht wird."/>
+<property name="EN_ATTR_NAME" value="Name [L]"/>
+<property name="isdescriptive" value="TRUE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Description [L]" id="8AE86DAB-876D-4996-6150-123B705AB4AA">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:03:22 UTC</createdTime>
+<comment><![CDATA[Meaning, benefits, usage  of the Entity]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Bedeutung, Nutzen, Nutzung der Entität
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Meaning, benefits, usage  of the Entity
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>78E7CC00-D288-42DD-98DE-293BD4C4788A</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="false"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Bedeutung, Nutzen, Nutzung der Entität"/>
+<property name="DE_ATTR_NAME" value="Beschreibung [L]"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Bedeutung, Nutzen, Nutzung der Entität"/>
+<property name="EN_ATTR_NAME" value="Description [L]"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Synonym [LN]" id="A95649D8-C7D7-F752-DF78-460367ECD340">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:03:22 UTC</createdTime>
+<comment><![CDATA[List of synonym names for this thing beeing used in old systems or out of habit. Not unique.]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Liste von Synonymen für dieses Ding, die in alten Systemen oder aus Gewohnheit verwendet werden. Nicht eindeutig.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+List of synonym names for this thing beeing used in old systems or out of habit. Not unique.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>86F63762-7E3D-9675-C4EB-5EF70C2112E7</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="false"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Name, der für diese Entität auch verwendet wird"/>
+<property name="DE_ATTR_NAME" value="Synonym [LN]"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Name, der für diese Entität auch verwendet wird"/>
+<property name="EN_ATTR_NAME" value="Synonym [LN]"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Short name" id="5E305761-9FBD-94B3-D12B-A0811406A63D">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:03:22 UTC</createdTime>
+<comment><![CDATA[nonempty short text for often used for references. Using letters, digits and ' ',-,:,$,_ 
+]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+nicht leerer Kurztext, der häufig für Referenzen verwendet wird. Verwendung von Buchstaben, Ziffern und ' ',-,:,$,_ 
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+nonempty short text for often used for references. Using letters, digits and ' ',-,:,$,_ 
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>3F71D6FF-01E1-8249-78A0-A7FF4F70650A</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="false"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>DF321C7C-26AB-AE86-F75B-320EE5F91E6D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Kurzbezeichnung der Entität für die Verwendung aus Überschrift, in Referenzen "/>
+<property name="DE_ATTR_NAME" value="Kurzname [L]"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Kurzbezeichnung der Entität für die Verwendung aus Überschrift, in Referenzen "/>
+<property name="EN_ATTR_NAME" value="Short name [L]"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Prefix" id="7EC6D9A7-E9AA-F77D-4FAF-CF5E57BD58E7">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:03:22 UTC</createdTime>
+<comment><![CDATA[Abbreviated name (3-5 characters, usually capital letters) that can be used as a prefix for implementation names.]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Kürzestname (3-5 Zeichen, Normalerweise Grossbuchstaben) der als Präfix für  Implementierungsnamen verwendet werden kann.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Abbreviated name (3-5 characters, usually capital letters) that can be used as a prefix for implementation names.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>05044FC2-ACB4-20D7-8B53-8FCF430B32D9</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="false"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>4134D0C7-BB61-4182-3736-8DE33C572E80</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Kürzestname (3-5 Zeichen, Normalerweise Grossbuchstaben) der als Präfix für  Implementierungsnamen verwendet werden kann."/>
+<property name="DE_ATTR_NAME" value="Präfix"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Kürzestname (3-5 Zeichen, Normalerweise Grossbuchstaben) der als Präfix für  Implementierungsnamen verwendet werden kann."/>
+<property name="EN_ATTR_NAME" value="Prefix"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Tooltip [L]" id="09BFD6A9-516C-6EA2-95BC-6189D7482BFC">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:03:22 UTC</createdTime>
+<comment><![CDATA[Short text explaining the meaning for the user în the user interface.]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Anzeige der Bedeutung für Bediener:innen in der Benutzerschnittstelle..
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Short text explaining the meaning for the user în the user interface.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>54A2577F-F95D-B646-574D-6693D12215E0</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="false"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Anzeige der Bedeutung für Bediener auf einer Maske."/>
+<property name="DE_ATTR_NAME" value="Tooltip [L]"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Anzeige der Bedeutung für Bediener auf einer Maske."/>
+<property name="EN_ATTR_NAME" value="Tooltip [L]"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Name" id="970C26B8-4A9C-9B24-92F4-85B0E648E1F5">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-13 15:57:07 UTC</createdTime>
+<generatorID>5C7E8293-F8C6-F81B-03AF-EEAC910B7329</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<referedAttribute>AB6554AF-DFFF-EA79-99CF-84D5586888C1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+</attributes>
+</Entity>

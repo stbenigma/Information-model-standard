@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<CollectionType class="oracle.dbtools.crest.model.design.datatypes.CollectionType" name="DomainGroupList" directorySegmentName="seg_0" id="39BF2D8B-24B7-8D70-F2B2-4EA745D5A062">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 16:04:35 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<predefined>false</predefined>
+<dataTypeDescr class="oracle.dbtools.crest.model.design.datatypes.CollectionType$DataTypeWrapper">
+<size></size>
+<type>DOM3000004</type>
+<isreference>false</isreference>
+</dataTypeDescr>
+<maxElement>1</maxElement>
+<type>ARRAY</type>
+</CollectionType>

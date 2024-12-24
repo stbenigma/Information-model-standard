@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_ENTI_RELA" directorySegmentName="seg_1" id="3140D369-7F42-15FD-F0B1-8F385B6A588C">
+<createdBy>stb</createdBy>
+<createdTime>2022-11-03 06:50:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<sourcePk>0DCB8532-B1E4-BF67-1F61-05895B0E758E</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>linked by</nameOnSource>
+<nameOnTarget>links</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A23E6C38-310F-4379-F953-0B04C1A4B16F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>404BAB59-D88C-9275-EAA6-D33642623799</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<propertyMap>
+<property name="DE_RELA_TEXT_FROM" value="verknüpft mittels"/>
+<property name="DE_RELA_TEXT_TO" value="verknüpft"/>
+<property name="EN_RELA_TEXT_FROM" value="linked by"/>
+<property name="EN_RELA_TEXT_TO" value="links"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Relation>

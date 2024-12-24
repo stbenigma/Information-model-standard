@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="newtables_Domains">
+<domains>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Integer" id="1DD6349F-4E9D-F08B-72AC-53BAEEEBED22">
+<createdBy>stb</createdBy>
+<createdTime>2023-09-05 06:25:54 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>newtables_Domains</fileName>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Domain>
+</domains>
+</DomainFile>

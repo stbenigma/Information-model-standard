@@ -1,0 +1,159 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="9A6ABC18-5650-0FB0-E73C-B83E71DE19B1" name="Time domain">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<comment><![CDATA[Values that describe a point in time.
+The accuracy of the value (from millisecond to year) is determined by the granularity (millisecond, second, minute, hour, day, week, month, quarter, half-year, year).
+Neither the storage nor the representation of the point in time is part of the information model. This is handled in the database or UI specification.
+
+Please note that a time of day such as 14:17 is not representable!
+]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Werte die einen Zeitpunkt beschreiben.
+Die Genauigkeit des Wertes (von Milisekunde bis zu Jahr) wird durch die Granularität festgelegt (Miliosekunde, Sekunde, Minute, Stunde, Tag, Woche, Monat, Quartal, Halbjahr, Jahr).
+Weder die Speicherung noch die Darstellung des Zeitpunkts ist Teil des Informationsmodells. Dies wird in der Datenbank- oder UI-Spezifikation behandelt.
+
+Achtung eine Tagesuhrzeit wie 14:17 ist damit nicht darstellar!
+
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Values that describe a point in time.
+The accuracy of the value (from millisecond to year) is determined by the granularity (millisecond, second, minute, hour, day, week, month, quarter, half-year, year).
+Neither the storage nor the representation of the point in time is part of the information model. This is handled in the database or UI specification.
+
+Please note that a time of day such as 14:17 is not representable!
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="false"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>1725C503-BB91-0A6D-6E10-6908B44EDA95</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>DOMA</shortName>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="DE_ENTI_NAME" value="Zeitpunkt Wertebereich"/>
+<property name="EN_ENTI_NAME" value="Time domain"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Min Time" id="F8E42CB1-E43D-0D27-9900-D7A7BD67D0D6">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<comment><![CDATA[earliest time in this attribute. Empty -> there is no lower limit]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+frühestes Zeitpunkt in diesem Attribut. Leer -> es gibt keine Untergrenze
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+earliest time in this attribute. Empty -> there is no lower limit
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>C900DFA0-C133-8F58-C3EA-D4BC024F775B</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>0AD80E26-0F5C-D068-29EA-4740A04582AE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="frühestes Zeitpunkt in diesem Attribut. Leer -&gt; es gibt keine Untergrenze"/>
+<property name="DE_ATTR_NAME" value="Min Zeitpunkt"/>
+<property name="EN_ATTR_COMMENT" value="*DE* frühestes Zeitpunkt in diesem Attribut. Leer -&gt; es gibt keine Untergrenze"/>
+<property name="EN_ATTR_NAME" value="Min Time"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Max Time" id="7B927CAB-9C49-8F87-C70C-F980DF438F94">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<comment><![CDATA[latest time in this attribute. Empty -> there is no upper limit]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+spätester Zeitpunkt in diesem Attribut. Leer -> es gibt keine Obergrenze
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+latest time in this attribute. Empty -> there is no upper limit
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>53E73B83-83D6-4DF9-14B9-EAA8D6C39A8E</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>0AD80E26-0F5C-D068-29EA-4740A04582AE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="spätester Zeitpunkt in diesem Attribut. Leer -&gt; es gibt keine Obergrenze"/>
+<property name="DE_ATTR_NAME" value="Max Zeitpunkt"/>
+<property name="EN_ATTR_COMMENT" value="*DE* spätester Zeitpunkt in diesem Attribut. Leer -&gt; es gibt keine Obergrenze"/>
+<property name="EN_ATTR_NAME" value="Max Time"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Granularity" id="6E889AC5-72FE-0BF0-A64F-E96B19560FAC">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<comment><![CDATA[To which unit is the date rounded (day, minute, month, year)?]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Auf welche Einheit wird die Datumsangabe gerundet (Tag, Minute, Monat, Jahr)
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+To which unit is the date rounded (day, minute, month, year)?
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>CB8DB002-CFDF-5208-AAF5-348E49AF3F17</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>802FD5C1-7C5B-0290-1F1C-F8FBB1AD2AA9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Auf welche Einheit wird die Datumsangabe gerundet (Tag, Minute, Monat, Jahr)"/>
+<property name="DE_ATTR_NAME" value="Granularität"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Auf welche Einheit wird die Datumsangabe gerundet (Tag, Minute, Monat, Jahr)"/>
+<property name="EN_ATTR_NAME" value="Granularity"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+</attributes>
+</Entity>

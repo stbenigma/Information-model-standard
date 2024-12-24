@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CB8A4F1C-9E60-C19B-9889-65BDE25D890F" name="Binary domain">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<comment><![CDATA[Documents of any kind that cannot be saved in a format designated as structured (text, number, Boolean, time).
+
+Managed as documents in the file system (formats: PDF, PNG, TIFF, XLS, DOC, pages, etc.) or as final database objects.]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Dokumente irgendwelcher Art, die nicht in einem als strukturiert bezeichneten Format (Text, Zahl, Boolean, Zeitpunkt) abgespeichert werden kann.
+
+Als Dokumente im Filesystem (Formate: PDF, PNG, TIFF, XLS, DOC, pages, etc.) oder als finäre Datenbankobjekte verwaltet.
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Documents of any kind that cannot be saved in a format designated as structured (text, number, Boolean, time).
+
+Managed as documents in the file system (formats: PDF, PNG, TIFF, XLS, DOC, pages, etc.) or as final database objects.
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="false"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>1725C503-BB91-0A6D-6E10-6908B44EDA95</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>DOMA</shortName>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="DE_ENTI_NAME" value="Binärer Wertebereich"/>
+<property name="EN_ENTI_NAME" value="Binary domain"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Content type" id="C5CA5BD0-DFBF-51B8-8719-DDA23703721E">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>9625B729-C7C6-CD5F-2155-3648986FD9F6</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>23CFFE8F-D989-8ED0-93D0-C4BF59140074</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value=""/>
+<property name="DE_ATTR_NAME" value="Inhaltstyp"/>
+<property name="EN_ATTR_COMMENT" value=""/>
+<property name="EN_ATTR_NAME" value="Content type"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+</attributes>
+</Entity>

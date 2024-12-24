@@ -1,0 +1,197 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="9B10A30A-9185-8568-3F5A-30A4DB81182F" name="Allowed value">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:06:23 UTC</createdTime>
+<comment><![CDATA[Value that is a valid value for an enumerated value list. 
+The attribute "value" is the physical (language-independent) value, which is the actual value in the conceptual model
+
+Internal -> Logical value, information model (in the company)
+External -> Value used in an interface / system]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Wert, der für eine Aufzählungs-Werteliste ein gültiger Wert ist.
+Das Attribut "Wert ist der physikalische (sprachunabhängige) Wert, der als eigentlicher Wert im konzeptionellen Modell gilt.
+
+Beispiele:
+Bayern
+Niedersachsen
+Ok
+NotOk
+
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Value that is a valid value for an enumerated value list. 
+The attribute "value" is the physical (language-independent) value, which is the actual value in the conceptual model
+
+Examples:
+Bayern
+Niedersachsen
+Ok
+NotOk
+
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>VALU</shortName>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="DE_ENTI_NAME" value="Vorgabewert"/>
+<property name="EN_ENTI_NAME" value="Allowed value"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Value" id="C64892B8-1474-E5AC-044B-909ED247F4B5">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:06:23 UTC</createdTime>
+<comment><![CDATA[A value that an attribute can assume.]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Ein Wert den ein Attribut annehmen kann.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+A value that an attribute can assume.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>59765AA1-8537-2C40-B70F-8535A79BB0B1</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Ein Wert den ein Attribut annehmen kann."/>
+<property name="DE_ATTR_NAME" value="Wert"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Ein Wert den ein Attribut annehmen kann."/>
+<property name="EN_ATTR_NAME" value="Value"/>
+<property name="isdescriptive" value="TRUE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Display text [L]" id="13085E12-B520-73E9-F36A-D716638264B1">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:06:23 UTC</createdTime>
+<comment><![CDATA[Textual representation of a value in several languages possible.]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Textliche Darstellung eines Wertes in mehreren Sprachen möglich.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Textual representation of a value in several languages possible.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>4E1AEBA5-21DE-AE54-BD76-B067836EB23E</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Textliche Darstellung eines Wertes in mehreren Sprachen möglich."/>
+<property name="DE_ATTR_NAME" value="Anzeigetext [L]"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Textliche Darstellung eines Wertes in mehreren Sprachen möglich."/>
+<property name="EN_ATTR_NAME" value="Display text [L]"/>
+<property name="isdescriptive" value="TRUE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Sort order" id="555F662C-236E-BA4D-E517-51C3C51143EE">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:06:23 UTC</createdTime>
+<comment><![CDATA[Number by which the values in a display are sorted in ascending order. Empty -> Value is placed at the end of the list in random order]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Zahl nach der die Werte in einer Anzeige aufsteigend sortiert werden. Leer -> Wert kommt an den Schluss der Liste in zufälliger Reihenfolge
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Number by which the values in a display are sorted in ascending order. Empty -> Value is placed at the end of the list in random order
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>AD72172B-C474-F68D-AF1E-7AB2C9E50592</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>39B01BA7-C3D2-D42E-5518-83CB3845A63D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Zahl nach der die Werte in einer Anzeige aufsteigend sortiert werden. Leer -&gt; Wert kommt an den Schluss der Liste in zufälliger Reihenfolge"/>
+<property name="DE_ATTR_NAME" value="Sortierreihenfolge"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Zahl nach der die Werte in einer Anzeige aufsteigend sortiert werden. Leer -&gt; Wert kommt an den Schluss der Liste in zufälliger Reihenfolge"/>
+<property name="EN_ATTR_NAME" value="Sort order"/>
+<property name="isdescriptive" value="TRUE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Description [L]" id="92FC87AC-8106-08CC-12A8-2849A8185FA9">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:06:23 UTC</createdTime>
+<comment><![CDATA[Long text / description of a value in several languages possible.]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Langer Text / Beschreibung eines Wertes in mehreren Sprachen möglich.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Long text / description of a value in several languages possible.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>B6C16C90-4423-0B66-880F-5462F0519189</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Langer Text / Beschreibung eines Wertes in mehreren Sprachen möglich."/>
+<property name="DE_ATTR_NAME" value="Beschreibung [L]"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Langer Text / Beschreibung eines Wertes in mehreren Sprachen möglich."/>
+<property name="EN_ATTR_NAME" value="Description [L]"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+</attributes>
+</Entity>

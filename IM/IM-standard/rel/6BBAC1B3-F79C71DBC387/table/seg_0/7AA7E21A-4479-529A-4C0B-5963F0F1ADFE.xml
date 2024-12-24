@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7AA7E21A-4479-529A-4C0B-5963F0F1ADFE" name="keys">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 08:56:04 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<ordsAlias>key_elementsv1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<propertyMap>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="entityid" id="3023C318-24F0-6BAE-A36A-B7CB367836A9">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 09:30:33 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>95EF892F-DD50-79ED-90F5-D7FEFFD0CDFB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4898E610-59F6-8E38-A7E5-DB8DB975E9E4" referredColumn="B3945E8F-F0EF-07C1-9918-6B0CE67D3FBB"/>
+</associations>
+</Column>
+<Column name="keymembers" id="EF9DB067-7B3B-307E-1EEB-129A5050B755">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 14:32:38 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>4</use>
+<collectionType>E1E48BD5-F70E-0F6B-0B4F-ABA4D766EC3E</collectionType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A8A23319-654B-C17B-363D-9623698ABB4D" name="KEYS_entities_FK">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 09:30:33 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3023C318-24F0-6BAE-A36A-B7CB367836A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

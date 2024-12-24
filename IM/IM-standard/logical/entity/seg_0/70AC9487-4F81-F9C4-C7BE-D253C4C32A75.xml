@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="70AC9487-4F81-F9C4-C7BE-D253C4C32A75" name="Role Relation">
+<createdBy>stb</createdBy>
+<createdTime>2020-07-30 13:03:21 UTC</createdTime>
+<comment><![CDATA[1:1 relationship that defines a role
+Relationship from father to child is usually optional. From child to father it must be mandatory.
+
+Example:
+Person IsA 
+	Buyer
+	Employee
+	Tenant
+	Member of the club]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+1:1 Beziehung die eine Rolle darstellt.
+Analogon: Ein:e Schauspieler:in (Person) spielt eine Rolle um eine andere Person (mit anderen Merkmalen) zu repräsentieren.
+
+Eine Rolle hat immer eine Grundentität, die sie erweitert. 
+Ein physikalischer Artikel ist ein Artikel mit Abmessungen und Gewicht.
+Alle Eigenschaften (Attribute, Beziehungen, Schlüssel, Regeln,... ) der Grundentität gelten auch für die Rolle. Die Rolle *ist* die Grundentität, erweitert umd eigene Eigenschaften, für spezielle Nutzungen.
+
+Eine spezielle Art von Rolle sind exklusive / "entweder-oder" Rollen sog. Subentitäten. Eine Gruppe von exkusiven Rollen wird in einem Arc zusammengefasst. Die Grundentität (in dem Fall genannt Superentität) muss genau eine der Rollen aus der Gruppe annehmen. Bsp: Ein öffentliches Verkehrsmittel ist entweder ein Bus oder ein Zug oder ein Schiff.
+
+Bei Rollenbeziehungen sind die Kardinalitäten auf beiden Seiten "1".
+Die Beziehung von der Rolle zur Grundentität ist obligatorisch, von der Grundentität zur Rolle ist optional.
+Bei Subentitäten ist die Beziehung der Subentität zur Grundentität (Superentität) immer obligatorisch, von der Superentität zur Grundentität ist die Beziehunge obligatorisch und in einem  "entweder-oder", d.h. in einem Arc zusammengefasst. 
+Der Assoziationstext ist immer "ist". Darum wäre der Text redundant und er kann zu Gunsten der Einfachheit, weggelassen werden. 
+
+Beispiele:
+Ein Arbeitnehmer ist eine Person - eine Person kann ein Arbeitnehmer sein.
+Ein Mieter ist eine Person - eine Person kann ein Mieter sein.
+Ein öffentliches Verkehrsmittel ist entweder ein Bus oder ein Zug oder ein Schiff
+Ein Schiff ist ein öffentliches Verkehrsmittel
+Ein Zug ist ein öffentliches Verkehrsmittel
+Ein Bus ist ein öffentliches Verkehrsmittel
+Ein Artikel ist entweder ein virtueller Artikel oder ein physischer Artikel
+Ein virtueller Artikel ist ein Artikel
+Ein physikalischer Artikel ist ein Artikel
+
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+1:1 relationship that represents a role.
+Analogue: An actor plays a role to represent another person (with different characteristics).
+
+A role always has a basic entity that extends it. 
+A physical item is an item with dimensions and weight.
+All properties (attributes, relationships, keys, rules, ... ) of the basic entity also apply to the role. The role *is* the basic entity, extended by its own properties for special uses.
+
+A special type of role are exclusive / ‘either-or’ roles, so-called sub-entities. A group of exclusive roles is summarised in an arc. The basic entity (in this case called the super entity) must assume exactly one of the roles from the group. Example: A means of public transport is either a bus or a train or a ship.
+
+In role relationships, the cardinalities on both sides are ‘1’.
+The relationship from the role to the basic entity is mandatory, from the basic entity to the role is optional.
+For subentities, the relationship of the subentity to the base entity (superentity) is always mandatory, from the superentity to the base entity the relationship is mandatory and summarised in an ‘either-or’, i.e. in an arc. 
+The association text is always ‘is’. The text would therefore be redundant and can be omitted in favour of simplicity. 
+
+Examples:
+An employee is a person - a person can be an employee.
+A tenant is a person - a person can be a tenant.
+A means of public transport is either a bus or a train or a ship
+A ship is a means of public transport
+A train is a means of public transport
+A bus is a means of public transport
+An item is either a virtual item or a physical item
+A virtual item is an item
+A physical item is an item
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="false"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>1A2BD7DD-DE7A-C8E0-C1A6-B282BC7AD488</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>RELA</shortName>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="DE_ENTI_NAME" value="Rollenbeziehung"/>
+<property name="EN_ENTI_NAME" value="Role Relation"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Entity>

@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B1B9ECC5-079C-BBDA-6BEF-7EA19AA6EC49" name="Boolean domain">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-11 16:25:58 UTC</createdTime>
+<comment><![CDATA[Boolean, there can only be one.
+The meaning of true and false is always the same: the statement is true or it is false.
+The meaning or effect of true and false is defined in the attribute.]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Boolean kann es nur einen geben.
+Die Bedeutung von Wahr (true) und Falsch (false) ist immer dieselbe:  Die Aussage ist wahr oder sie ist falsch.
+Was wahr und falsch für eine Bedeutung oder Auswirkung hat, wird im Attribut festgelegt.
+
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Boolean, there can only be one.
+The meaning of true and false is always the same: the statement is true or it is false.
+The meaning or effect of true and false is defined in the attribute.
+
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="false"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>1725C503-BB91-0A6D-6E10-6908B44EDA95</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>DOMA</shortName>
+<propertyMap>
+<property name="DE_ENTI_NAME" value="Boolean Wertebereich"/>
+<property name="EN_ENTI_NAME" value="Boolean domain"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Entity>

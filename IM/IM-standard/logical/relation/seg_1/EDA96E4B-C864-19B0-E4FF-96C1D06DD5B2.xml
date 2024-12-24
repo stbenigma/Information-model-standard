@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_ENTI_CATG" directorySegmentName="seg_1" id="EDA96E4B-C864-19B0-E4FF-96C1D06DD5B2">
+<createdBy>stb</createdBy>
+<createdTime>2021-03-31 09:07:47 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<arc>E9668B3A-9622-F5BA-00D5-329C63AB1106</arc>
+<identifying>false</identifying>
+<nameOnSource>groups</nameOnSource>
+<nameOnTarget>grouped in</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F740632B-7914-7B81-BBB6-4D51E8EE9FA5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A23E6C38-310F-4379-F953-0B04C1A4B16F</targetEntity>
+<transferable>true</transferable>
+<propertyMap>
+<property name="DE_RELA_TEXT_FROM" value="gruppiert"/>
+<property name="DE_RELA_TEXT_TO" value="gruppiert in"/>
+<property name="EN_RELA_TEXT_FROM" value="groups"/>
+<property name="EN_RELA_TEXT_TO" value="grouped in"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Relation>

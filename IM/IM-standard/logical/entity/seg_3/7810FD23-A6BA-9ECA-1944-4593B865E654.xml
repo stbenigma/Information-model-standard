@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="7810FD23-A6BA-9ECA-1944-4593B865E654" name="Entity key">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<comment><![CDATA[A combination of attributes and (functional) relationships whose combination of values is unique for all instances of an entity.
+
+Keys should be natural keys wherever possible. I.e. use properties that occur in reality. Artificial keys do not help to find an instance of a thing in the real world.
+
+Examples:
+Country, Zipcode
+Product name, version number, BOM position
+Product name
+GSC identification
+]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Eine Kombination von Attributen und (funktionalen) Beziehungen, deren Werte-Kombination für alle Instanzen einer Entität eindeutig sind.
+
+Schlüssel sollten wo immer möglich natürlichen Schlüssel sein. D.h. Eigenschaften verwenden, die in der Realität vorkommen. Künstliche Schlüssel helfen nicht beim Auffinden einer Instanz eines Dings in der realen Welt.
+
+Beispiele:
+Land, Postleitzahl
+Produktname, Versionsnummer, BOM-Position
+Produktname
+GSC-Identifikation
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+A combination of attributes and (functional) relationships whose combination of values is unique for all instances of an entity.
+
+Keys should be natural keys wherever possible. I.e. use properties that occur in reality. Artificial keys do not help to find an instance of a thing in the real world.
+
+Examples:
+Country, Zipcode
+Product name, version number, BOM position
+Product name
+GSC identification
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>KEYS</shortName>
+<synonym>Key</synonym>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="DE_ENTI_NAME" value="Entitätsschlüssel"/>
+<property name="DE_ENTI_SYNONYM" value="Schlüssel"/>
+<property name="EN_ENTI_NAME" value="Entity key"/>
+<property name="EN_ENTI_SYNONYM" value="Key"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="535AE6A2-9084-B091-55AD-DDEE049BF6F0" name="Key_1">
+<createdBy>stb</createdBy>
+<createdTime>2020-08-09 08:47:01 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<newElementsIDs>7DFF44B9-D585-A3B7-7342-79EA825C4941</newElementsIDs>
+</identifier>
+</identifiers>
+</Entity>

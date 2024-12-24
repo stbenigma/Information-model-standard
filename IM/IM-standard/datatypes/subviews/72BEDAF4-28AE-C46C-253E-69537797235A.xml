@@ -1,0 +1,42 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.datatypes.DPVDataTypes" name="DataTypes" id="72BEDAF4-28AE-C46C-253E-69537797235A">
+<createdBy>stb</createdBy>
+<modifiedBy>stb</modifiedBy>
+<createdTime>2020-02-03 17:29:16 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>true</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.datatypes.TVStructuredType" oid="2ECB4A4E-1695-94D8-DC85-30D8F4DC72A2" otype="StructuredType" vid="8F08F255-E3A5-B806-9C71-3D46C0544358">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="519" y="185" width="182" height="67"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.datatypes.TVStructuredType" oid="47E390DE-0671-C4B1-8428-0F45CBEE18F8" otype="StructuredType" vid="51C2A6AD-1132-C7FE-8A73-85D9D440740E">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="20" y="20" width="100" height="100"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.datatypes.TVStructuredType" oid="5916D609-7BB8-1FA8-A75D-2316BF219334" otype="StructuredType" vid="D0B95240-F026-DB8F-D527-C4073EF5C177">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="451" y="508" width="170" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.datatypes.TVStructuredType" oid="9E98FE68-6681-1536-54CF-E737FA872285" otype="StructuredType" vid="86F4B4CF-AC82-7DC5-CC9F-76B485AD5EC0">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="124" y="488" width="168" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.datatypes.TVStructuredType" oid="B7E646DA-46EC-E983-76A2-A8F9A22A49AE" otype="StructuredType" vid="054DEDE4-1351-C6AE-6935-EB2B65AD3086">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="69" y="314" width="168" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.datatypes.TVStructuredType" oid="F72C39E0-D1CA-8821-2AD7-A1E95A37D3D1" otype="StructuredType" vid="CB86B6D1-C765-745F-9228-DB87B46CFC14">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="20" y="20" width="100" height="100"/>
+</OView>
+</objectViews>
+</Diagram>

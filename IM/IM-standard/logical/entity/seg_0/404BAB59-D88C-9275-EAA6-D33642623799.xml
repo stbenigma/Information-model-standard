@@ -1,0 +1,251 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="404BAB59-D88C-9275-EAA6-D33642623799" name="Relation End">
+<createdBy>stb</createdBy>
+<createdTime>2022-11-03 06:36:18 UTC</createdTime>
+<comment><![CDATA[End point of a relationship. Connection point of the relation to an entity.
+There are always exactly 2 end points in a relation.
+The relationship is to be read as follows
+1 instance of the entity <association-text> <optional/mandatory> <1/many> instances of the entity at the other end of the relation.
+
+Examples:
+An address must be in a postcode area.
+A postcode area can contain many addresses.
+A bus optionally travels several routes.
+A route is optionally travelled by many buses.
+]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Endpunkt einer Beziehung. Anknüpfungspunkt der Relation an eine Entität.
+Es gibt immer genau 2 Endpunkte in einer Relation.
+Die Beziehung ist wie folgt zu lesen:
+1 Instanz der Entität <assoziations-text> <optional/zwingend> <1/viele> Instanzen der Entität am anderen Ende der Relation.
+
+Beispiele:
+Eine Adresse muss liegen in einem Postleitzahlgebiet.
+Ein Postleitzahlgebiet kann enthalten viele Adressen.
+Ein Bus fährt optional mehre Strecken.
+Eine Strecke wird optional befahren von vielen Bussen.
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+End point of a relationship. Connection point of the relation to an entity.
+There are always exactly 2 end points in a relation.
+The relationship is to be read as follows
+1 instance of the entity <association-text> <optional/mandatory> <1/many> instances of the entity at the other end of the relation.
+
+Examples:
+An address must be in a postcode area.
+A postcode area can contain many addresses.
+A bus optionally travels several routes.
+A route is optionally travelled by many buses.
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>RELA</shortName>
+<propertyMap>
+<property name="DE_ENTI_NAME" value="Beziehungsende"/>
+<property name="EN_ENTI_NAME" value="Relation End"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Association [L]" id="8727B082-C624-C910-42AF-B51032928F62">
+<createdBy>stb</createdBy>
+<createdTime>2022-11-03 06:47:28 UTC</createdTime>
+<comment><![CDATA[Which verb connects the first entity with the second entity? What does the first entity have to do with the second entity?
+Associations should describe states. This means that either state verbs (lies on, stands next to) or past tense verbs (bought, produced) are used.
+
+Examples:
+bought
+lies on
+contains
+contained in]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Welches Verb verbindet die erste Entität mit der zweiten Entität? Was hat die erste Entität mit der zweiten zu tun?
+Assoziationen sollen Zustände beschreiben. D.h. entweder es werden Zustandsverben (liegt auf, steht neben) oder Vergangenheitsform (kaufte, erzeugte) verwendet.
+
+Beispiele:
+gekauft
+liegt auf
+enthält
+enthalten in
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Which verb connects the first entity with the second entity? What does the first entity have to do with the second entity?
+Associations should describe states. This means that either state verbs (lies on, stands next to) or past tense verbs (bought, produced) are used.
+
+Examples:
+bought
+lies on
+contains
+contained in
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>897B91BA-60B8-3A16-793A-97B535605E5E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Was verbindet die von-Entität mit der zu-Entität"/>
+<property name="DE_ATTR_NAME" value="Assoziation [L]"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Was verbindet die von-Entität mit der zu-Entität"/>
+<property name="EN_ATTR_NAME" value="Association [L]"/>
+<property name="isdescriptive" value="TRUE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="is mandatory" id="71CF8391-F518-DBCA-72D4-9B8DC99AD117">
+<createdBy>stb</createdBy>
+<createdTime>2022-11-03 06:47:28 UTC</createdTime>
+<comment><![CDATA[Does every instance of the first entity have to have a relationship to at least one instance in the second entity?]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Muss jede Instanz der ersten Entität eine Beziehung zu mindestens einer Instanz in der zweiten Entität haben?
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Does every instance of the first entity have to have a relationship to at least one instance in the second entity?
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>7F06A64B-0C00-1355-F863-DBD9FDE5B848</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="zu-Entität muss mind. 1 eine Verbindung zur von-Entität haben"/>
+<property name="DE_ATTR_NAME" value="ist obligatorisch"/>
+<property name="EN_ATTR_COMMENT" value="*DE* zu-Entität muss mind. 1 eine Verbindung zur von-Entität haben"/>
+<property name="EN_ATTR_NAME" value="is mandatory"/>
+<property name="isdescriptive" value="TRUE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Cardinality" id="16253B8A-8A27-7C6E-AB98-5DE1711A9D59">
+<createdBy>stb</createdBy>
+<createdTime>2022-11-03 06:47:28 UTC</createdTime>
+<comment><![CDATA[An instance of the first entity can have how many relationships to instances of the second entity. Only 1 (1) or many (M) are distinguished. 0 is expressed by the mandatory flag. Many is open at the top and also includes the possibility of 1.
+]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Eine Instanz der ersten Entität kann wie viele Beziehungen zu Instanzen der zweiten Entität haben. Es werden nur 1 (1) oder viele (M) unterschieden. 0 wird durch das obligatorisch Flag ausgedrückt. Viele ist nach oben offen und beinhaltet auch die Möglichkeit 1.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+An instance of the first entity can have how many relationships to instances of the second entity. Only 1 (1) or many (M) are distinguished. 0 is expressed by the mandatory flag. Many is open at the top and also includes the possibility of 1.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>58A81D94-A2AD-3DA7-4B9E-471B043185E0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="Kardinalität"/>
+<property name="EN_ATTR_NAME" value="Cardinality"/>
+<property name="isdescriptive" value="TRUE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="is historicized" id="408D42F2-512E-DAC9-FD84-30B536726B48">
+<createdBy>stb</createdBy>
+<createdTime>2022-11-03 06:47:28 UTC</createdTime>
+<comment><![CDATA[True -> Relationship can change over time. Only 1 relationship can exist between two instances of the entities at one specific time. System must keep history of changes. ]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Wahr -> Beziehung kann sich im Laufe der Zeit ändern. Es kann nur eine Beziehung zwischen zwei Instanzen der Entitäten zu einem bestimmten Zeitpunkt bestehen. Das System muss eine Historie der Änderungen führen. 
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+True -> Relationship can change over time. Only 1 relationship can exist between two instances of the entities at one specific time. System must keep history of changes. 
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>7F06A64B-0C00-1355-F863-DBD9FDE5B848</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="JA -&gt; Beziehung kann über die Zeit ändern. Zu einem Zeitpunkt kann nur 1 Beziehung gelten. System muss Historie der Änderungen führen. Über Extratabelle zu lösen."/>
+<property name="DE_ATTR_NAME" value="ist historisiert"/>
+<property name="EN_ATTR_COMMENT" value="*DE* JA -&gt; Beziehung kann über die Zeit ändern. Zu einem Zeitpunkt kann nur 1 Beziehung gelten. System muss Historie der Änderungen führen. Über Extratabelle zu lösen."/>
+<property name="EN_ATTR_NAME" value="is historicized"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Number" id="9A672BD7-A782-56C4-7CC2-F366486EFE99">
+<createdBy>stb</createdBy>
+<createdTime>2022-11-03 06:56:55 UTC</createdTime>
+<comment><![CDATA[Arbitrary naming to distinguish multiple exclusive relationships in an entity. If missing, generate as entity short name + run no.]]></comment>
+<generatorID>B712AF79-B1C9-F450-CD8F-BBDDE63E64B2</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+*EN* Arbitrary naming to distinguish multiple exclusive relationships in an entity. If missing, generate as entity short name + run no.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Arbitrary naming to distinguish multiple exclusive relationships in an entity. If missing, generate as entity short name + run no.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>C725A402-0ADC-7EBF-B98F-A9FEE6E7B79F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="Name"/>
+<property name="EN_ATTR_NAME" value="*Name"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+</attributes>
+</Entity>

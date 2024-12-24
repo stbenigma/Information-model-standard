@@ -1,0 +1,411 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D718E671-DE1C-59BC-9C74-A352687F07F5" name="Attribute">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:03:22 UTC</createdTime>
+<comment><![CDATA[Description of the container of a value. Also known as a property or characteristic.
+The attribute is the valid single source of truth for values in the conceptual model.
+
+According to the first normal form (1NF) of the relational model, an attribute value makes a statement about ONE aspect of ONE instance of the entity for which the attribute is a property. This means that multi-value attributes and combined attribute values are not permitted.
+
+The ‘repeated’, ‘historicised’ and ‘translated’ flags indicate multi-value attributes for special purposes. This is not a contradiction to 1NF, as these indicators and their meaning enable an algorithmic transformation into a 1NF model.
+
+Is either directly an attribute for an entity (entity attribute) or is an attribute/field in a group attribute (domain attribute).
+
+Examples
+Name
+Date of birth
+Geo-location
+Longitude]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Beschreibung des Behälters eines Wertes. Auch Eigenschaft oder Merkmal genannt.
+Das Attribut ist die gültige Single Source of Truth für Werte im Begriffsmodell.
+
+Nach der ersten Normalform (1NF) des relationalen Modells macht ein Attributwert eine Aussage über EINEN Aspekt EINER Instanz der Entität, für die das Attribut eine Eigenschaft ist. Dies bedeutet, dass mehrwertige Attribute und kombinierte Attributwerte nicht zulässig sind.
+
+Die Flags „repeated“ „historicised“ und „translated“ kennzeichnen mehrwertige Attribute für besondere Zwecke. Dies ist kein Widerspruch zur 1NF, da diese Indikatoren und ihre Bedeutung eine algorithmische Transformation in ein 1NF-Modell ermöglichen.
+
+Ist entweder direkt ein Attribut für eine Entität (Entity-Attribut) oder ist ein Attribut/Feld in einem Gruppenattribut (Domain-Attribut).
+
+Beispiele:
+Name
+Geburtsdatum
+Geo-Standort
+Längengrad
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Description of the container of a value. Also known as a property or characteristic.
+The attribute is the valid single source of truth for values in the conceptual model.
+
+According to the first normal form (1NF) of the relational model, an attribute value makes a statement about ONE aspect of ONE instance of the entity for which the attribute is a property. This means that multi-value attributes and combined attribute values are not permitted.
+
+The ‘repeated’, ‘historicised’ and ‘translated’ flags indicate multi-value attributes for special purposes. This is not a contradiction to 1NF, as these indicators and their meaning enable an algorithmic transformation into a 1NF model.
+
+Is either directly an attribute for an entity (entity attribute) or is an attribute/field in a group attribute (domain attribute).
+
+Examples
+Name
+Date of birth
+Geo-location
+Longitude
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>ATTR</shortName>
+<synonym>Characteristic,property</synonym>
+<generateDiscrimColumn>true</generateDiscrimColumn>
+<discriminatorColumnName>ATTR_TYPE</discriminatorColumnName>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="DE_ENTI_NAME" value="Attribut"/>
+<property name="DE_ENTI_SYNONYM" value="Merkmal,Eigenschaft"/>
+<property name="EN_ENTI_NAME" value="Attribute"/>
+<property name="EN_ENTI_SYNONYM" value="Characteristic,property"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Name" id="FD95360A-BA62-DA9C-BB95-FACB2DAA42D4">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:03:22 UTC</createdTime>
+<comment><![CDATA[Name that says something about the role, use of the property in the entity. Frequently = domain name]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Name, der etwas über die Rolle, Verwendung der Eigenschaft in der Entität aussagt. Häufig = Domänenname
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Name that says something about the role, use of the property in the entity. Frequently = domain name
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>EDEE919C-7C94-15E9-147C-57317A603D15</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Name, der etwas über die Rolle, Verwendung der Eigenschaft in der Entität aussagt. Häufig = Domänenname"/>
+<property name="DE_ATTR_NAME" value="Name"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Name, der etwas über die Rolle, Verwendung der Eigenschaft in der Entität aussagt. Häufig = Domänenname"/>
+<property name="EN_ATTR_NAME" value="Name"/>
+<property name="isdescriptive" value="TRUE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Description [L]" id="99E8BB00-BBEF-744D-71AC-51A096FBA509">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:03:22 UTC</createdTime>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>C4A32F25-630E-965E-C29A-27C4C6F29B16</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value=""/>
+<property name="DE_ATTR_NAME" value="Beschreibung [L]"/>
+<property name="EN_ATTR_COMMENT" value=""/>
+<property name="EN_ATTR_NAME" value="Description [L]"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Display name [L]" id="D671B7D6-E0E4-CEA8-D0AC-0176E92E398A">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:03:22 UTC</createdTime>
+<comment><![CDATA[Entity short name for use from heading, in references]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Kurzbezeichnung der Entität für die Verwendung aus Überschrift, in Referenzen
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Entity short name for use from heading, in references
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>5786D6AD-9848-D503-A7AE-9758E9D42223</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>0AD80E26-0F5C-D068-29EA-4740A04582AE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Kurzbezeichnung der Entität für die Verwendung aus Überschrift, in Referenzen "/>
+<property name="DE_ATTR_NAME" value="Anzeigename [L]"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Kurzbezeichnung der Entität für die Verwendung aus Überschrift, in Referenzen "/>
+<property name="EN_ATTR_NAME" value="Display name [L]"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Display sequence" id="C13DFCC3-15A3-5A60-B4D3-774EED4DB6D8">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:03:22 UTC</createdTime>
+<comment><![CDATA[Display sequence on diagrams, in reports. Empty-> attribute is sorted by name at the end of a list]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Riehenfolge der Anzeige auf Diagrammen, in Reports. Leer-> Attribut kommt nach Name sortiert an den Schluss einer Liste
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Display sequence on diagrams, in reports. Empty-> attribute is sorted by name at the end of a list
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>598275C8-6915-4D18-A03A-DDE739950A91</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>39B01BA7-C3D2-D42E-5518-83CB3845A63D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Riehenfolge der Anzeige auf Diagrammen, in Reports. Leer-&gt; Attribut kommt nach Name sortiert an den Schluss einer Liste"/>
+<property name="DE_ATTR_NAME" value="Anzeigereihenfolge"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Riehenfolge der Anzeige auf Diagrammen, in Reports. Leer-&gt; Attribut kommt nach Name sortiert an den Schluss einer Liste"/>
+<property name="EN_ATTR_NAME" value="Display sequence"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Tooltip [L]" id="0BBDE4F2-63A6-4791-B481-FD6B43F8832A">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:03:22 UTC</createdTime>
+<comment><![CDATA[Display in masks to explain the use, editing, and usage of the attribute value]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Anzeige in Masken für die Erläuterung der Nutzung, Bearbeitung, Verwendung des Attributwertes
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Display in masks to explain the use, editing, and usage of the attribute value
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>18044B2B-E9C9-F62B-A516-84B3A24746F4</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Anzeige in Masken für die Erläuterung der Nutzung, Bearbeitung, Verwendung des Attributwertes"/>
+<property name="DE_ATTR_NAME" value="Tooltip [L]"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Anzeige in Masken für die Erläuterung der Nutzung, Bearbeitung, Verwendung des Attributwertes"/>
+<property name="EN_ATTR_NAME" value="Tooltip [L]"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="is mandatory" id="83FD3270-5591-5C02-8C26-FC7D8F8A919C">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:03:22 UTC</createdTime>
+<comment><![CDATA[YES -> The field must contain a value.]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+JA -> Das Feld muss einen Wert enthalten.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+YES -> The field must contain a value.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>F73DAF6B-B2F9-9A75-F80C-24594970D8AA</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>7F06A64B-0C00-1355-F863-DBD9FDE5B848</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="JA -&gt; Das Feld muss einen Wert enthalten."/>
+<property name="DE_ATTR_NAME" value="ist obligatorisch"/>
+<property name="EN_ATTR_COMMENT" value="*DE* JA -&gt; Das Feld muss einen Wert enthalten."/>
+<property name="EN_ATTR_NAME" value="is mandatory"/>
+<property name="isdescriptive" value="TRUE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="is repeated" id="83723ADA-A469-11DC-EF3A-669B22D8B209">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:03:22 UTC</createdTime>
+<comment><![CDATA[YES -> The field can contain several values.  NO -> Field contains a maximum of one value. Can be solved via extra table.]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+JA -> Das Feld kann mehere Werte enthalten. 
+NEIN -> Feld enthält maximal einen Wert.
+Kann  über Extratabelle gelöst werden.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+YES -> The field can contain several values.  NO -> Field contains a maximum of one value. Can be solved via extra table.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>6A9298F2-7C16-0F9A-DF34-457287FFFC4F</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>7F06A64B-0C00-1355-F863-DBD9FDE5B848</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="JA -&gt; Das Feld kann mehere Werte enthalten.  NEIN -&gt; Feld enthält maximal einen Wert. Kann  über Extratabelle gelöst werden."/>
+<property name="DE_ATTR_NAME" value="ist wiederholt"/>
+<property name="EN_ATTR_COMMENT" value="*DE* JA -&gt; Das Feld kann mehere Werte enthalten.  NEIN -&gt; Feld enthält maximal einen Wert. Kann  über Extratabelle gelöst werden."/>
+<property name="EN_ATTR_NAME" value="is repeated"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="is language-dependent" id="DDCFCDB2-7AB7-412C-B51C-0AC394FB422E">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:03:22 UTC</createdTime>
+<comment><![CDATA[YES -> The field value can occur in several languages. Solve via extra table linked with languages]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+JA -> Der Feldwert kann in mehreren Sprachen vorkommen.
+Über Extratabelle die mit Sprachen verknüpft ist lösen
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+YES -> The field value can occur in several languages. Solve via extra table linked with languages
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>75E53EA7-9CD9-0AAE-6802-1E239D31EECA</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>7F06A64B-0C00-1355-F863-DBD9FDE5B848</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="JA -&gt; Der Feldwert kann in mehreren Sprachen vorkommen. Über Extratabelle die mit Sprachen verknüpft ist lösen"/>
+<property name="DE_ATTR_NAME" value="ist sprachabhängig"/>
+<property name="EN_ATTR_COMMENT" value="*DE* JA -&gt; Der Feldwert kann in mehreren Sprachen vorkommen. Über Extratabelle die mit Sprachen verknüpft ist lösen"/>
+<property name="EN_ATTR_NAME" value="is language-dependent"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="is encrypted" id="819A5993-997C-ECD2-FF4A-5E337B7D9CDB">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:03:22 UTC</createdTime>
+<comment><![CDATA[YES -> The field must be encrypted in storage and transport NO -> Field is not encrypted]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+JA -> Das Feld muss in Speicherung und Transport verschlüsselt werden
+NEIN -> Feld wird nicht verschlüsselt
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+YES -> The field must be encrypted in storage and transport NO -> Field is not encrypted
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>743343B0-7B01-8A4C-CDC6-45E8B72B3E2F</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>7F06A64B-0C00-1355-F863-DBD9FDE5B848</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="JA -&gt; Das Feld muss in Speicherung und Transport verschlüsselt werden NEIN -&gt; Feld wird nicht verschlüsselt "/>
+<property name="DE_ATTR_NAME" value="ist verschlüsselt"/>
+<property name="EN_ATTR_COMMENT" value="*DE* JA -&gt; Das Feld muss in Speicherung und Transport verschlüsselt werden NEIN -&gt; Feld wird nicht verschlüsselt "/>
+<property name="EN_ATTR_NAME" value="is encrypted"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D2B46163-1C70-5D7C-B106-C0D4A2089635" name="ATTR_UK">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:03:22 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<newElementsIDs>FD95360A-BA62-DA9C-BB95-FACB2DAA42D4,F1749DBB-E61F-885C-00D6-38610D00E567</newElementsIDs>
+<usedAttributes>
+<attributeRef>FD95360A-BA62-DA9C-BB95-FACB2DAA42D4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

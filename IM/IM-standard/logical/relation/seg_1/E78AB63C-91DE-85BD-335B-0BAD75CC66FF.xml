@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_319" directorySegmentName="seg_1" id="E78AB63C-91DE-85BD-335B-0BAD75CC66FF">
+<createdBy>stb</createdBy>
+<createdTime>2022-10-05 14:24:19 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="false"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<sourcePk>D2B46163-1C70-5D7C-B106-C0D4A2089635</sourcePk>
+<arc>F143F2B8-C0BF-AEEA-3077-8D896BFC5595</arc>
+<identifying>false</identifying>
+<nameOnSource>explained with</nameOnSource>
+<nameOnTarget>explains</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D718E671-DE1C-59BC-9C74-A352687F07F5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F2BCE2D9-EA23-5A44-B6FB-586967A5D0A9</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<propertyMap>
+<property name="DE_RELA_TEXT_FROM" value="erklärt mit"/>
+<property name="DE_RELA_TEXT_TO" value="erklärt"/>
+<property name="EN_RELA_TEXT_FROM" value="explained with"/>
+<property name="EN_RELA_TEXT_TO" value="explains"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Relation>

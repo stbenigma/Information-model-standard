@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6A5501D1-E3E1-1B35-7A7B-6C55C038DCC6" name="Example">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-10 14:19:37 UTC</createdTime>
+<comment><![CDATA[Examplevalue  for Entity, Attribute, Domain, Relationship
+
+Examples:
+0
+1
+99
+married
+divorced
+Peter is married to Jane]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Beispielwert für Entität, Attribut, Bereich, Beziehung
+
+Beispiele:
+0
+1
+99
+verheiratet
+geschieden
+Peter ist mit Jane verheiratet]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Examplevalue  for Entity, Attribute, Domain, Relationship
+
+Examples:
+0
+1
+99
+married
+divorced
+Peter is married to Jane
+
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>F2BCE2D9-EA23-5A44-B6FB-586967A5D0A9</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>EXPL</shortName>
+<propertyMap>
+<property name="DE_ENTI_NAME" value="Beispiel"/>
+<property name="EN_ENTI_NAME" value="Example"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Value" id="78178DFE-CAC7-A5AD-8621-76A30C566379">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-10 14:19:37 UTC</createdTime>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="Wert [L]"/>
+<property name="EN_ATTR_NAME" value="Value [L]"/>
+<property name="isdescriptive" value="TRUE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6C64AC80-E833-063B-EF8A-B29E6D964783" name="Key_1">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-11 14:44:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<newElementsIDs>78178DFE-CAC7-A5AD-8621-76A30C566379</newElementsIDs>
+<usedAttributes>
+<attributeRef>78178DFE-CAC7-A5AD-8621-76A30C566379</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

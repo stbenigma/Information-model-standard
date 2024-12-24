@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="7508B13D-A32D-4C04-D788-8F40843FC2CD" name="Exclusive relation">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<comment><![CDATA[Relationships that emanate from an entity can be exclusive. I.e. none or 1 of them is possible, but never several simultaneously.
+
+Example:
+a Person is reachable via Mobile-Phone or via Land-Line-Phone]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Beziehungen die von einer Entität ausgehen können exklusiv sein. D.h. keine oder 1 davon ist möglich, aber nie mehrere gleichzeitig
+
+Beispiel:
+	eine Person ist erreichbar über Mobil-Telefon oder über Festnetz-Telefon
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Relationships that emanate from an entity can be exclusive. I.e. none or 1 of them is possible, but never several simultaneously.
+
+Example:
+	a Person is reachable via Mobile-Phone or via Land-Line-Phone
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>ARCS</shortName>
+<synonym>Arc</synonym>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="DE_ENTI_NAME" value="Exklusivbeziehung"/>
+<property name="DE_ENTI_SYNONYM" value="Arc"/>
+<property name="EN_ENTI_NAME" value="Exclusive relation"/>
+<property name="EN_ENTI_SYNONYM" value="Arc"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Number" id="C725A402-0ADC-7EBF-B98F-A9FEE6E7B79F">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<comment><![CDATA[Number to distinguish multiple exclusive groups of relationships in an entity.  Making them an exclusive group of relationships]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Nummer zur Unterscheidung mehrerer exklusiver Gruppen von Beziehungen in einer Entität.  Sie zu einer exklusiven Gruppe von Beziehungen machen
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Number to distinguish multiple exclusive groups of relationships in an entity.  Making them an exclusive group of relationships
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>F8F374B8-F266-21F0-ADA1-DE808B4EF15F</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="willkürliche Nummerierung zur Untescheidung mehrere Exklusivbeziehungen in einer Entität"/>
+<property name="DE_ATTR_NAME" value="Nummer"/>
+<property name="EN_ATTR_COMMENT" value="*DE* willkürliche Nummerierung zur Untescheidung mehrere Exklusivbeziehungen in einer Entität"/>
+<property name="EN_ATTR_NAME" value="Number"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4D8D5B78-D54B-9763-65AC-95DAF7C593D5" name="Exklusivbeziehung PK">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<newElementsIDs>C725A402-0ADC-7EBF-B98F-A9FEE6E7B79F,8E8A6377-DF32-1C76-25A1-B458D76ECE51</newElementsIDs>
+<usedAttributes>
+<attributeRef>C725A402-0ADC-7EBF-B98F-A9FEE6E7B79F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

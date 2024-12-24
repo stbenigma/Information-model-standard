@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="ADD172EB-5BAA-9AE7-15A9-C272CB1E74EE" name="Text domain">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<comment><![CDATA[Text values are character strings. 
+
+The value rule is typically a regular expression that specifies the permitted characters and their order.
+
+Examples:
+Mountain name, 1-100 characters
+Mailadresse, ^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$
+]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Textwerte sind Zeichenfolgen. 
+
+Die Werteregel ist typischerweise ein regulärer Ausdruck, der die erlaubten Zeichen und ihre Anordnung vorgibt.
+
+Beispiele:
+Bergname, 1-100 Zeichen
+Mailadresse, ^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Text values are character strings. 
+
+The value rule is typically a regular expression that specifies the permitted characters and their order.
+
+Examples:
+Mountain name, 1-100 characters
+Mailadresse, ^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="false"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>1725C503-BB91-0A6D-6E10-6908B44EDA95</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>DOMA</shortName>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="DE_ENTI_NAME" value="Textlicher Wertebereich"/>
+<property name="EN_ENTI_NAME" value="Text domain"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Max length" id="E2F20100-F3E8-3E95-BA43-0EEE3EE63B36">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<comment><![CDATA[Maximum length of text in letters (CHAR)]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Maximale Länge des Textes in Buchstaben (CHAR)
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Maximum length of text in letters (CHAR)
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>FED80564-8043-573A-E431-31FE2706B7FF</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C9DBFF99-FC63-E2AC-8EB8-BE5A63AA7B61</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Maximale Länge des Textes in Buchstaben (CHAR)"/>
+<property name="DE_ATTR_NAME" value="Max Länge"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Maximale Länge des Textes in Buchstaben (CHAR)"/>
+<property name="EN_ATTR_NAME" value="Max length"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Value rule" id="CC367FCD-01E3-C3AF-28D1-CB4750AD7381">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<comment><![CDATA[Restrictive rule for the permitted characters of a text.]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Einschränkende Regel für die erlaubten Zeichen eines Textes.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Restrictive rule for the permitted characters of a text.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>A60F9702-1D1F-2326-5024-A280EAACBB9B</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Einschränkende Regel für die erlaubten Zeichen eines Textes."/>
+<property name="DE_ATTR_NAME" value="Werteregel"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Einschränkende Regel für die erlaubten Zeichen eines Textes."/>
+<property name="EN_ATTR_NAME" value="Value rule"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+</attributes>
+</Entity>

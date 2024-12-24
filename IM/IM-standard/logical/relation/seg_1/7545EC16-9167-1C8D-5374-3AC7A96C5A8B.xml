@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_335" directorySegmentName="seg_1" id="7545EC16-9167-1C8D-5374-3AC7A96C5A8B">
+<createdBy>Lea</createdBy>
+<createdTime>2022-01-20 13:00:23 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="17F5F16D-4CB1-2968-618E-D369CD8C5B93" value="true"/>
+<item key="BE22189E-C358-530C-6354-65FB4784079F" value="true"/>
+<item key="A91573EF-1254-1C9A-797A-A2AF60AC738D" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="1A90F064-D225-B8AB-AC38-0393157EE4FC" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>starts from</nameOnSource>
+<nameOnTarget>starting point of</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>B8E858B2-79F0-466B-AAFC-02AB5DA15F90</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>3FC4B92D-8DA9-4022-BEC1-4B6B0DD11BC4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<propertyMap>
+<property name="DE_RELA_TEXT_FROM" value="startet bei"/>
+<property name="DE_RELA_TEXT_TO" value="Ausgangspunkt für"/>
+<property name="EN_RELA_TEXT_FROM" value="starts from"/>
+<property name="EN_RELA_TEXT_TO" value="starting point of"/>
+</propertyMap>
+</Relation>
