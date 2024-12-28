@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A7BFEFBD-624C-D1F4-6C89-20991B0978F1" name="KEY_ELEMENTS">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<comment><![CDATA[Attribute or (functional) Relationship ID beeing part of a key for the entity.]]></comment>
+<generatorID>234A5520-6FC5-F97D-0838-A80335AEF71D</generatorID>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Attribut- oder (funktionale) Beziehung, die Teil eines Schlüssels für die Entität ist.
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Attribute or (functional) Relationship ID beeing part of a key for the entity.
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<ordsAlias>key_element</ordsAlias>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<abbreviation>KEYS</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="KEYE_ID" id="8A832083-CF71-2CE4-9A08-E9CC50E89022">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:22:34 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="KEYE_KEYS_ID" id="7E17188A-67E4-E3DD-BEEF-E6277974FA0D">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:21:28 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="32B2F9BE-2787-3B37-1821-4779000A976B" referredColumn="8F2479B8-9520-56B5-FFB2-AEEEE3EDA761"/>
+</associations>
+</Column>
+<Column name="KEYE_RELA_ID" id="80F9D2B8-F449-F09B-B424-E0179C97656E">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DFA4A8A5-2E41-C829-83EC-FC18C07186DB" referredColumn="D71E2A1E-F08B-697F-F68D-F7B080F737BD"/>
+</associations>
+</Column>
+<Column name="KEYE_ATTR_ID" id="7EA774F1-F9D5-6580-2B69-087726FFFC5B">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DD6BA312-1019-544D-A175-CF5CFF6D8DB3" referredColumn="8E2E8B96-3D63-4B8F-5A51-966F1A091F6C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="31EFA653-BB26-02D7-0D30-51079C2F06A3" name="KEY_ELEMENTS_PK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-28 14:20:34 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A832083-CF71-2CE4-9A08-E9CC50E89022"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E394E3D9-E4BA-7451-D9E1-634DAEBA3BC7" name="KEYE_UN">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<generatorID>C2B95893-B868-4796-8082-647021F7B382</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E17188A-67E4-E3DD-BEEF-E6277974FA0D"/>
+<colUsage columnID="80F9D2B8-F449-F09B-B424-E0179C97656E"/>
+<colUsage columnID="7EA774F1-F9D5-6580-2B69-087726FFFC5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6E334A54-0FEF-73AE-6A02-7ECECB4F9248" name="KEYE_RELA_FK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>9DA7BF28-D7AF-5C4A-9346-FA3FE87BC0CB</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="80F9D2B8-F449-F09B-B424-E0179C97656E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C0CA4A11-917B-9CA6-9389-CB5F784D1A81" name="KEYE_ATTR_FK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>872B80A8-6026-169F-A1E5-264E25EA7005</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EA774F1-F9D5-6580-2B69-087726FFFC5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A92D2D5-95C7-36AD-78A8-BE3FAD23095D" name="KEYE_KEYS_FK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:21:28 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E17188A-67E4-E3DD-BEEF-E6277974FA0D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

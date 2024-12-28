@@ -1,0 +1,575 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="493BB4AB-72DE-45BE-B7CC-8F79B5D6B218" name="DOMAINS">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<comment><![CDATA[Description of the value range of one (or more) attribute(s).
+It describes which technically relevant values a particular attribute may assume.
+The technical data type and display formats are defined in the implementation (software, databases) and are not of interest here.
+
+Group value ranges are several attributes that occur together. They are summarised under a new name for easier handling. Example: Telephone no. consisting of country code and telephone number. For the entity, the entire group is seen as one attribute, as the values belonging together must always occur together.
+
+Value lists are value ranges in which all permitted values are shown in a list.
+
+Examples
+Mountain name, 1-100 characters
+Mailadress, ^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$
+Integer 1..100
+Length, in mm, numeric(7,3) 
+Processing status (open, in progress, cancelled, completed)
+Geo coordinate (longitude, latitude)]]></comment>
+<generatorID>1725C503-BB91-0A6D-6E10-6908B44EDA95</generatorID>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Beschreibung des Wertebereichs eines (oder mehrerer) Attributs/e.
+Er beschreibt, welche fachlich relevanten Werte ein bestimmtes Attribut annehmen darf.
+Technischer Datentyp und Darstellungsformate werden in der Implementierung (Software, Datenbanken) festgelegt und interessieren hier nicht.
+
+Gruppenwertebereiche sind mehrere Attribute, die gemeinsam vorkommen. Sie werden für eine einfachere Handhabung unter einem neuen Namen zusammengefasst. Beispiel Telefon-Nr bestehend auf Landesvorwahl und Rufnummer. Für die Entität wird die gesamte Gruppe als ein Attribut gesehen, da die zusammgehörebnden Werte immer gemeinsam auftreten müssen.
+
+Wertelisten sind Wertebereiche, bei denen sämtliche erlaubten Werte in einer Liste aufgeführt werden.
+
+Beispiele:
+Bergname, 1-100 Zeichen
+Mailadresse, ^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$
+Ganzzahl 1..100
+Länge, in mm, numerisch(7,3) 
+Bearbeitungsstatus (Offen, inArbeit, abgebrochen, beendet)
+Geo-Koordinate (Längengrad, Breitengrad)
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Description of the value range of one (or more) attribute(s).
+It describes which technically relevant values a particular attribute may assume.
+The technical data type and display formats are defined in the implementation (software, databases) and are not of interest here.
+
+Group value ranges are several attributes that occur together. They are summarised under a new name for easier handling. Example: Telephone no. consisting of country code and telephone number. For the entity, the entire group is seen as one attribute, as the values belonging together must always occur together.
+
+Value lists are value ranges in which all permitted values are shown in a list.
+
+Examples
+Mountain name, 1-100 characters
+Mailadress, ^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$
+Integer 1..100
+Length, in mm, numeric(7,3) 
+Processing status (open, in progress, cancelled, completed)
+Geo coordinate (longitude, latitude)
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<ordsAlias>domain</ordsAlias>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<abbreviation>DOM</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DOM_ID" id="35C198EB-9FB4-07C8-CB8B-AFABF06D8AF8">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="DOM_DESCRIPTION" id="1641E0F4-935A-A828-636C-74ECCBC08FDF">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>709F8112-9493-4D2A-368C-D0CCE5B2472E</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOM_NAME" id="11FB6955-F87D-8FD1-F59D-B7C8CEAB24BE">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>F37D4DC4-1583-3120-48ED-3EAA1B9F8E78</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9F863ABC-24DD-005C-CAD8-B2976A961106" referredColumn="29540D25-BAAC-0EBE-948E-41717EEACC44"/>
+</associations>
+</Column>
+<Column name="DOMA_CONTENT_TYPE" id="26395B94-B1C3-04E7-76BE-790266526F9C">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>C5CA5BD0-DFBF-51B8-8719-DDA23703721E</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>23CFFE8F-D989-8ED0-93D0-C4BF59140074</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOMA_MIN_TIME" id="1D71E71A-E740-AA62-28D6-048E5C5D412F">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<comment><![CDATA[earliest time in this attribute. Empty -> there is no lower limit]]></comment>
+<generatorID>F8E42CB1-E43D-0D27-9900-D7A7BD67D0D6</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+frühestes Zeitpunkt in diesem Attribut. Leer -> es gibt keine Untergrenze
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+earliest time in this attribute. Empty -> there is no lower limit
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>0AD80E26-0F5C-D068-29EA-4740A04582AE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOMA_MAX_TIME" id="B5CBD15F-452B-3E40-E9A2-D471A113B078">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<comment><![CDATA[latest time in this attribute. Empty -> there is no upper limit]]></comment>
+<generatorID>7B927CAB-9C49-8F87-C70C-F980DF438F94</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+spätester Zeitpunkt in diesem Attribut. Leer -> es gibt keine Obergrenze
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+latest time in this attribute. Empty -> there is no upper limit
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>0AD80E26-0F5C-D068-29EA-4740A04582AE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOMA_GRANULARITY" id="FF82AA2B-F64D-428C-E838-8DF088C38EB2">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<comment><![CDATA[To which unit is the date rounded (day, minute, month, year)?]]></comment>
+<generatorID>6E889AC5-72FE-0BF0-A64F-E96B19560FAC</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Auf welche Einheit wird die Datumsangabe gerundet (Tag, Minute, Monat, Jahr)
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+To which unit is the date rounded (day, minute, month, year)?
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>802FD5C1-7C5B-0290-1F1C-F8FBB1AD2AA9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOMA_TOTAL_DIGITS_COUNT" id="294E3498-0E74-98C1-85A3-382AFB2D30B4">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<comment><![CDATA[Number of digits before the decimal point]]></comment>
+<generatorID>7E77D48A-823A-2E1C-12FB-94F9A785C501</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Anzahl der Stellen vor dem Komma
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Number of digits before the decimal point
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9CA83673-0453-9943-665C-CCB4497CF164</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOMA_DECIMAL_PLACES" id="AE53B6E8-8755-FDC5-1CE1-E351E6208FAD">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<comment><![CDATA[Number of digits after the decimal point]]></comment>
+<generatorID>D2115AAA-10BB-6729-053F-50CD98171F6C</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Anzahl der Stellen nach dem Komma
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Number of digits after the decimal point
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9CA83673-0453-9943-665C-CCB4497CF164</domain>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Decimal places# is NULL or Decimal places# &lt; Total Digits Count"/>
+</checkConstraint>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOMA_MIN_VALUE" id="388F83E0-D0C0-0EE3-D0BD-E8149DDB32F3">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<comment><![CDATA[Minimum value for a numeric field. Empty -> as small as the system allows]]></comment>
+<generatorID>E5CC6E75-E08C-C5ED-7AD2-5C644AC557AD</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Minimaler Wert für ein numerisches Feld. Leer -> so klein wie das System zulässt
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Minimum value for a numeric field. Empty -> as small as the system allows
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>656CA02F-3748-45E2-D2A6-08D930AAB75B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOMA_MAX_VALUE" id="9C52C1AD-11B4-EF7A-CF74-1EFF2FFFB278">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<comment><![CDATA[Maximum value for a numeric field. Empty -> as big as the system allows]]></comment>
+<generatorID>EBB0952C-C757-86BA-30FC-CF6002E22D95</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Maximaler Wert für ein numerisches Feld. Leer -> so gross wie das System zulässt
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Maximum value for a numeric field. Empty -> as big as the system allows
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>656CA02F-3748-45E2-D2A6-08D930AAB75B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOMA_ROUNDING_UNIT" id="B69FD979-C19A-DCC4-0BF9-4935B8E03E46">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<comment><![CDATA[A value that indicates the unit to which a numeric value is rounded for storage. (e.g. 0.5, 0.25, 1000) empty -> not rounded explicitly]]></comment>
+<generatorID>EB863265-2766-76A8-568E-EEFEA2D851F2</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Wert, der angibt, auf welche Einheit ein numerischer Wert für die Speicherung gerundet wird. (z.B. 0.5, 0.25, 1000) leer -> es wird nicht explizit gerundet
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+A value that indicates the unit to which a numeric value is rounded for storage. (e.g. 0.5, 0.25, 1000) empty -> not rounded explicitly
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9D57C5ED-8336-6617-9BC7-29B138AA6191</domain>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOMA_MAX_LENGTH" id="C43C0D64-1976-D1BD-4591-5B42FCE9BA2A">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<comment><![CDATA[Maximum length of text in letters (CHAR)]]></comment>
+<generatorID>E2F20100-F3E8-3E95-BA43-0EEE3EE63B36</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Maximale Länge des Textes in Buchstaben (CHAR)
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Maximum length of text in letters (CHAR)
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C9DBFF99-FC63-E2AC-8EB8-BE5A63AA7B61</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOMA_VALUE_RULE" id="000E33A1-89E1-C161-E8AD-DF3750D146B6">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<comment><![CDATA[Restrictive rule for the permitted characters of a text.]]></comment>
+<generatorID>CC367FCD-01E3-C3AF-28D1-CB4750AD7381</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Einschränkende Regel für die erlaubten Zeichen eines Textes.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Restrictive rule for the permitted characters of a text.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOMA_TYPE" id="7E8083F0-30D3-DF09-4C65-E5CC732AA6A3">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<constraintName>CH_INH_DOM</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<listOfValues>
+<valueDef value="DOM" description="entity Domain"/>
+<valueDef value="DOMA" description="entity Text domain"/>
+</listOfValues>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isDiscriminatorColumn>true</isDiscriminatorColumn>
+<dependentColumns>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>1641E0F4-935A-A828-636C-74ECCBC08FDF</columnID>
+<dependAsMandatory>false</dependAsMandatory>
+<dependOnValue>true</dependOnValue>
+<discriminatorValue>DOM</discriminatorValue>
+<id>0A340C37-D44C-0F09-43CB-30BF5CE64207</id>
+</dependentColumn>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>26395B94-B1C3-04E7-76BE-790266526F9C</columnID>
+<dependAsMandatory>true</dependAsMandatory>
+<dependOnValue>false</dependOnValue>
+<discriminatorValue>DOMA</discriminatorValue>
+<id>C284009F-C162-C170-F7E3-62526EB4FB52</id>
+</dependentColumn>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>1641E0F4-935A-A828-636C-74ECCBC08FDF</columnID>
+<dependAsMandatory>false</dependAsMandatory>
+<dependOnValue>true</dependOnValue>
+<discriminatorValue>DOMA</discriminatorValue>
+<id>ABF93A8C-510A-B58C-F293-CDE907784466</id>
+</dependentColumn>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>1D71E71A-E740-AA62-28D6-048E5C5D412F</columnID>
+<dependAsMandatory>false</dependAsMandatory>
+<dependOnValue>true</dependOnValue>
+<discriminatorValue>DOMA</discriminatorValue>
+<id>9F215089-AB07-417C-47D6-7971A2F3C9B0</id>
+</dependentColumn>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>B5CBD15F-452B-3E40-E9A2-D471A113B078</columnID>
+<dependAsMandatory>false</dependAsMandatory>
+<dependOnValue>true</dependOnValue>
+<discriminatorValue>DOMA</discriminatorValue>
+<id>9FEEEAB9-C0BD-2F25-A4C4-EAE5C22CDA6F</id>
+</dependentColumn>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>FF82AA2B-F64D-428C-E838-8DF088C38EB2</columnID>
+<dependAsMandatory>true</dependAsMandatory>
+<dependOnValue>false</dependOnValue>
+<discriminatorValue>DOMA</discriminatorValue>
+<id>BC29F3BB-4439-14B0-7F11-3B8CDC3E8CCA</id>
+</dependentColumn>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>294E3498-0E74-98C1-85A3-382AFB2D30B4</columnID>
+<dependAsMandatory>false</dependAsMandatory>
+<dependOnValue>true</dependOnValue>
+<discriminatorValue>DOMA</discriminatorValue>
+<id>81181076-CAA4-2D57-5059-110659533DD7</id>
+</dependentColumn>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>AE53B6E8-8755-FDC5-1CE1-E351E6208FAD</columnID>
+<dependAsMandatory>false</dependAsMandatory>
+<dependOnValue>true</dependOnValue>
+<discriminatorValue>DOMA</discriminatorValue>
+<id>1CED685A-7140-D73D-8A30-11D9B911FEF7</id>
+</dependentColumn>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>388F83E0-D0C0-0EE3-D0BD-E8149DDB32F3</columnID>
+<dependAsMandatory>false</dependAsMandatory>
+<dependOnValue>true</dependOnValue>
+<discriminatorValue>DOMA</discriminatorValue>
+<id>A37E4FC9-DFD9-049F-AAC9-2503A6B13F2F</id>
+</dependentColumn>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>9C52C1AD-11B4-EF7A-CF74-1EFF2FFFB278</columnID>
+<dependAsMandatory>false</dependAsMandatory>
+<dependOnValue>true</dependOnValue>
+<discriminatorValue>DOMA</discriminatorValue>
+<id>4F2E0B1A-B43A-10C7-0412-D4D4D43331AB</id>
+</dependentColumn>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>B69FD979-C19A-DCC4-0BF9-4935B8E03E46</columnID>
+<dependAsMandatory>false</dependAsMandatory>
+<dependOnValue>true</dependOnValue>
+<discriminatorValue>DOMA</discriminatorValue>
+<id>F9CDDC73-4E6F-3E51-6F9D-B8B1565187FC</id>
+</dependentColumn>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>C43C0D64-1976-D1BD-4591-5B42FCE9BA2A</columnID>
+<dependAsMandatory>false</dependAsMandatory>
+<dependOnValue>true</dependOnValue>
+<discriminatorValue>DOMA</discriminatorValue>
+<id>24889883-93B2-746C-B835-63D06D45EB78</id>
+</dependentColumn>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>000E33A1-89E1-C161-E8AD-DF3750D146B6</columnID>
+<dependAsMandatory>false</dependAsMandatory>
+<dependOnValue>true</dependOnValue>
+<discriminatorValue>DOMA</discriminatorValue>
+<id>1693C344-AFC0-D1DC-1A21-04555A1710ED</id>
+</dependentColumn>
+</dependentColumns>
+</Column>
+<Column name="DOMA_STFO_ID" id="5087333F-06D4-C845-DB41-B8BED4BB8677">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0E00A96F-BDFF-1F33-205D-B4DA687E6937" referredColumn="90531C0A-F9E7-03A7-3719-0F7B49315D86"/>
+</associations>
+</Column>
+<Column name="DOMA_CATG_ID" id="3AF9680A-1202-8122-26F9-320A7FD629F6">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6E1052DA-2C01-8890-D0E2-95F20EF113FA" referredColumn="2A461CC2-DB75-2D69-F586-92B2D5AE0581"/>
+</associations>
+</Column>
+<Column name="DOMA_PHYU_ID" id="360A03BE-8533-2F9A-3EB5-7C01C2D92A89">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="093A356B-8725-E9CE-F670-9A0F96F9A6D5" referredColumn="57EA64B1-54F0-68C3-06B9-735A7A147613"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9EB8AEBF-240E-2E86-02AB-857BA1402FAE" name="DOM_PK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="35C198EB-9FB4-07C8-CB8B-AFABF06D8AF8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BA67F3CE-AFA8-E7FE-98C9-58D786D4A886" name="DOMA_NAME_UN">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>C1A8A4D1-8B15-8026-055F-024571C59C67</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11FB6955-F87D-8FD1-F59D-B7C8CEAB24BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7F48E805-CA00-A478-9E26-9B0CF2405B25" name="DOMAIN_INFORMATION_MODEL_FK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>02B278BE-800C-F154-5470-FB778988EDED</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11FB6955-F87D-8FD1-F59D-B7C8CEAB24BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="45E61BF8-C67D-D0BD-B8AB-40B4DE849095" name="DOMAIN_STORAGE_FORMAT_FK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>9F5D7603-968F-E2B9-5A8F-88D9AA89F042</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5087333F-06D4-C845-DB41-B8BED4BB8677"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="197D06C1-6D5B-2E54-4981-6B134B50097C" name="DOMAIN_CATEGORY_FK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>60041B83-7287-F0AD-B4EC-C41AED3FEC26</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3AF9680A-1202-8122-26F9-320A7FD629F6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7FACD0A0-F384-CE2D-B94A-8C8F77E4DDE0" name="DOMAIN_PHYSICAL_UNIT_FK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>2E98179F-7C7E-87C6-935E-6646430FB708</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="360A03BE-8533-2F9A-3EB5-7C01C2D92A89"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

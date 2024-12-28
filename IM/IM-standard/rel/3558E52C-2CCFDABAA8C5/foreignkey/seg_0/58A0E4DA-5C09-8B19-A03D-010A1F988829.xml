@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="58A0E4DA-5C09-8B19-A03D-010A1F988829" containerWithKeyObject="F39F0427-5406-CB15-97E3-B5C0F0099E99" localFKIndex="E8024299-70F3-CC9C-6AF8-13338878536B" name="ATTR_DOMA_GRP_FK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>47320279-F806-BCA4-E784-F2E21DD6F853</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<referredTableLongName>DOMAINS</referredTableLongName>
+<arc>8757F9AB-60B1-D654-F1EA-A5D47600C143</arc>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>493BB4AB-72DE-45BE-B7CC-8F79B5D6B218</referredTableID>
+<keyObject>9EB8AEBF-240E-2E86-02AB-857BA1402FAE</keyObject>
+<referredKeyID>9EB8AEBF-240E-2E86-02AB-857BA1402FAE</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>DOM_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

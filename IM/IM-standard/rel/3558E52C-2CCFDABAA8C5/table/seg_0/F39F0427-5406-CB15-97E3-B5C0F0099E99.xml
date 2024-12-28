@@ -1,0 +1,462 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F39F0427-5406-CB15-97E3-B5C0F0099E99" name="ATTRIBUTES">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<comment><![CDATA[Description of the container of a value. Also known as a property or characteristic.
+The attribute is the valid single source of truth for values in the conceptual model.
+
+According to the first normal form (1NF) of the relational model, an attribute value makes a statement about ONE aspect of ONE instance of the entity for which the attribute is a property. This means that multi-value attributes and combined attribute values are not permitted.
+
+The ‘repeated’, ‘historicised’ and ‘translated’ flags indicate multi-value attributes for special purposes. This is not a contradiction to 1NF, as these indicators and their meaning enable an algorithmic transformation into a 1NF model.
+
+Is either directly an attribute for an entity (entity attribute) or is an attribute/field in a group attribute (domain attribute).
+
+Examples
+Name
+Date of birth
+Geo-location
+Longitude]]></comment>
+<generatorID>D718E671-DE1C-59BC-9C74-A352687F07F5</generatorID>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Beschreibung des Behälters eines Wertes. Auch Eigenschaft oder Merkmal genannt.
+Das Attribut ist die gültige Single Source of Truth für Werte im Begriffsmodell.
+
+Nach der ersten Normalform (1NF) des relationalen Modells macht ein Attributwert eine Aussage über EINEN Aspekt EINER Instanz der Entität, für die das Attribut eine Eigenschaft ist. Dies bedeutet, dass mehrwertige Attribute und kombinierte Attributwerte nicht zulässig sind.
+
+Die Flags „repeated“ „historicised“ und „translated“ kennzeichnen mehrwertige Attribute für besondere Zwecke. Dies ist kein Widerspruch zur 1NF, da diese Indikatoren und ihre Bedeutung eine algorithmische Transformation in ein 1NF-Modell ermöglichen.
+
+Ist entweder direkt ein Attribut für eine Entität (Entity-Attribut) oder ist ein Attribut/Feld in einem Gruppenattribut (Domain-Attribut).
+
+Beispiele:
+Name
+Geburtsdatum
+Geo-Standort
+Längengrad
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Description of the container of a value. Also known as a property or characteristic.
+The attribute is the valid single source of truth for values in the conceptual model.
+
+According to the first normal form (1NF) of the relational model, an attribute value makes a statement about ONE aspect of ONE instance of the entity for which the attribute is a property. This means that multi-value attributes and combined attribute values are not permitted.
+
+The ‘repeated’, ‘historicised’ and ‘translated’ flags indicate multi-value attributes for special purposes. This is not a contradiction to 1NF, as these indicators and their meaning enable an algorithmic transformation into a 1NF model.
+
+Is either directly an attribute for an entity (entity attribute) or is an attribute/field in a group attribute (domain attribute).
+
+Examples
+Name
+Date of birth
+Geo-location
+Longitude
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<ordsAlias>attribute</ordsAlias>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<abbreviation>ATTR</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ATTR_ID" id="8E2E8B96-3D63-4B8F-5A51-966F1A091F6C">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="ATTR_NAME" id="D6C6948E-E21E-19FC-1D65-59ACBF7A38C4">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<comment><![CDATA[Name that says something about the role, use of the property in the entity. Frequently = domain name]]></comment>
+<generatorID>FD95360A-BA62-DA9C-BB95-FACB2DAA42D4</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Name, der etwas über die Rolle, Verwendung der Eigenschaft in der Entität aussagt. Häufig = Domänenname
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Name that says something about the role, use of the property in the entity. Frequently = domain name
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTR_TYPE" id="E1C30442-E308-EBEB-56B5-9D73EB3FC04A">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<constraintName>ATTR_TYPE_CHK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<listOfValues>
+<valueDef value="ENTITY" description="Entity-Attribute"/>
+<valueDef value="GroupDomain" description="GroupDomain Attribute"/>
+</listOfValues>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isDiscriminatorColumn>true</isDiscriminatorColumn>
+<dependentColumns>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>06DD8024-50F0-11B6-7C23-1AF93EDFA4D8</columnID>
+<dependAsMandatory>false</dependAsMandatory>
+<dependOnValue>true</dependOnValue>
+<discriminatorValue>ATTR</discriminatorValue>
+<id>12172A39-F38B-AB4B-0650-CD1179B20759</id>
+</dependentColumn>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>DAFADA0D-F1D5-1CEC-7BEB-41A426395317</columnID>
+<dependAsMandatory>false</dependAsMandatory>
+<dependOnValue>true</dependOnValue>
+<discriminatorValue>ATTR</discriminatorValue>
+<id>1FEDAB55-1112-9B3A-A8FE-6D88EB9F42CE</id>
+</dependentColumn>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>981ED176-E62C-C570-A30F-AD69AFAE8785</columnID>
+<dependAsMandatory>false</dependAsMandatory>
+<dependOnValue>true</dependOnValue>
+<discriminatorValue>ATTR</discriminatorValue>
+<id>AE361861-0F88-C3EE-915E-6EBD192A0E7A</id>
+</dependentColumn>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>D1B28CFB-E563-6EA7-6AD0-5A9DF583ED17</columnID>
+<dependAsMandatory>false</dependAsMandatory>
+<dependOnValue>true</dependOnValue>
+<discriminatorValue>ATTR</discriminatorValue>
+<id>064328B0-23F7-A2F3-1BD7-7B87BEEC8666</id>
+</dependentColumn>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>A9DA4987-50F9-CEBC-2A14-84A7D433D1E1</columnID>
+<dependAsMandatory>true</dependAsMandatory>
+<dependOnValue>false</dependOnValue>
+<discriminatorValue>ATTR</discriminatorValue>
+<id>601F84E1-589F-537F-90DC-5ACEE072FB34</id>
+</dependentColumn>
+</dependentColumns>
+</Column>
+<Column name="ATTR_DISPLAY_SEQ" id="981ED176-E62C-C570-A30F-AD69AFAE8785">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<comment><![CDATA[Display sequence on diagrams, in reports. Empty-> attribute is sorted by name at the end of a list]]></comment>
+<generatorID>C13DFCC3-15A3-5A60-B4D3-774EED4DB6D8</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Riehenfolge der Anzeige auf Diagrammen, in Reports. Leer-> Attribut kommt nach Name sortiert an den Schluss einer Liste
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Display sequence on diagrams, in reports. Empty-> attribute is sorted by name at the end of a list
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>39B01BA7-C3D2-D42E-5518-83CB3845A63D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTR_DISPLAY_NAME" id="DAFADA0D-F1D5-1CEC-7BEB-41A426395317">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<comment><![CDATA[Entity short name for use from heading, in references]]></comment>
+<generatorID>D671B7D6-E0E4-CEA8-D0AC-0176E92E398A</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Kurzbezeichnung der Entität für die Verwendung aus Überschrift, in Referenzen
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Entity short name for use from heading, in references
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<collectionType>53EF0FEC-74CF-B5E7-3547-0E74F449ACA7</collectionType>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTR_DESCRIPTION" id="4129257D-80E1-771D-303A-EEDCAD0991F2">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<comment><![CDATA[Use, purpose of the attribute in the group
+Verwendung, Zweck des Attributs in der Gruppe]]></comment>
+<generatorID>651162DE-0996-9971-047A-99255D4DBA0B</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<dependOnForeignKeyID>58A0E4DA-5C09-8B19-A03D-010A1F988829</dependOnForeignKeyID>
+</Column>
+<Column name="ATTR_TOOLTIP" id="D1B28CFB-E563-6EA7-6AD0-5A9DF583ED17">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<comment><![CDATA[Display in masks to explain the use, editing, and usage of the attribute value]]></comment>
+<generatorID>0BBDE4F2-63A6-4791-B481-FD6B43F8832A</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Anzeige in Masken für die Erläuterung der Nutzung, Bearbeitung, Verwendung des Attributwertes
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Display in masks to explain the use, editing, and usage of the attribute value
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<collectionType>53EF0FEC-74CF-B5E7-3547-0E74F449ACA7</collectionType>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTR_IS_MANDATORY" id="77A5A215-B480-FA2E-553E-77A80BED347D">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<comment><![CDATA[YES -> The field must contain a value.]]></comment>
+<generatorID>83FD3270-5591-5C02-8C26-FC7D8F8A919C</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+JA -> Das Feld muss einen Wert enthalten.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+YES -> The field must contain a value.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>7F06A64B-0C00-1355-F863-DBD9FDE5B848</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTR_IS_REPEATED" id="B55C76D0-AFB5-2CD2-6CAD-D58E67240014">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<comment><![CDATA[YES -> The field can contain several values.  NO -> Field contains a maximum of one value. Can be solved via extra table.]]></comment>
+<generatorID>83723ADA-A469-11DC-EF3A-669B22D8B209</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+JA -> Das Feld kann mehere Werte enthalten. 
+NEIN -> Feld enthält maximal einen Wert.
+Kann  über Extratabelle gelöst werden.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+YES -> The field can contain several values.  NO -> Field contains a maximum of one value. Can be solved via extra table.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>7F06A64B-0C00-1355-F863-DBD9FDE5B848</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTR_IS_LANGUAGEDEP" id="91618333-475B-29A7-D459-AB7993399885">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<comment><![CDATA[YES -> The field value can occur in several languages. Solve via extra table linked with languages]]></comment>
+<generatorID>DDCFCDB2-7AB7-412C-B51C-0AC394FB422E</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+JA -> Der Feldwert kann in mehreren Sprachen vorkommen.
+Über Extratabelle die mit Sprachen verknüpft ist lösen
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+YES -> The field value can occur in several languages. Solve via extra table linked with languages
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>7F06A64B-0C00-1355-F863-DBD9FDE5B848</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTR_IS_ENCRYPTED" id="FEC4771F-6A09-1814-B65D-D82A73D964BA">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<comment><![CDATA[YES -> The field must be encrypted in storage and transport NO -> Field is not encrypted]]></comment>
+<generatorID>819A5993-997C-ECD2-FF4A-5E337B7D9CDB</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+JA -> Das Feld muss in Speicherung und Transport verschlüsselt werden
+NEIN -> Feld wird nicht verschlüsselt
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+YES -> The field must be encrypted in storage and transport NO -> Field is not encrypted
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>7F06A64B-0C00-1355-F863-DBD9FDE5B848</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTR_IS_DESCRIPTIVE" id="A9DA4987-50F9-CEBC-2A14-84A7D433D1E1">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<comment><![CDATA[The attribute characterizes the entity and is important for its understanding]]></comment>
+<generatorID>5C6A1A05-12EE-8D51-78E7-0EFC6416496C</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Das Attribut charakterisiert die Entität und ist wichtig für ihr Verständnis
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+The attribute characterizes the entity and is important for its understanding
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>7F06A64B-0C00-1355-F863-DBD9FDE5B848</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTR_DOMA_ID" id="ACC1EB69-50A9-F8B0-8271-55524445510F">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="35DF2D3E-85AA-4E3A-2E23-87FD88C067E9" referredColumn="35C198EB-9FB4-07C8-CB8B-AFABF06D8AF8"/>
+</associations>
+</Column>
+<Column name="ATTR_DOMA_GRP_ID" id="6B8DB538-5C16-E602-0F35-DBF47B3A754A">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="58A0E4DA-5C09-8B19-A03D-010A1F988829" referredColumn="35C198EB-9FB4-07C8-CB8B-AFABF06D8AF8"/>
+</associations>
+</Column>
+<Column name="ATTR_ENTI_ID" id="FA43C6FE-D9AA-4890-FA66-BCB98E8C9FB1">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3069C348-7CD0-3B07-732C-6A9EA66C43D7" referredColumn="DA0785FC-F343-31B3-2A65-DF1828CB5473"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="55CAB03B-86F0-634E-CB12-F8E6DA2A7874" name="ATTR_PK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="8E2E8B96-3D63-4B8F-5A51-966F1A091F6C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="265C855D-7DC7-A2C2-7A81-F5C858AB29A5" name="ATTR_NAME_ENTI_UN">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>D2B46163-1C70-5D7C-B106-C0D4A2089635</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6C6948E-E21E-19FC-1D65-59ACBF7A38C4"/>
+<colUsage columnID="FA43C6FE-D9AA-4890-FA66-BCB98E8C9FB1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2358C1A-AA07-0163-9E4C-1E7DF8BC4D3D" name="ATTR_NAME_DOMA_UN">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:45:10 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6C6948E-E21E-19FC-1D65-59ACBF7A38C4"/>
+<colUsage columnID="ACC1EB69-50A9-F8B0-8271-55524445510F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CE29A9B7-8292-D127-F174-3B8524FD7005" name="ATTR_DOMA_FK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>92B23CEC-A165-7A3F-9023-51819EC92BB6</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ACC1EB69-50A9-F8B0-8271-55524445510F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E8024299-70F3-CC9C-6AF8-13338878536B" name="ATTR_DOMA_GRP_FK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>47320279-F806-BCA4-E784-F2E21DD6F853</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B8DB538-5C16-E602-0F35-DBF47B3A754A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="53B061BC-00DF-7C00-8443-F14A24CE9824" name="ATTR_ENTI_FK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>F1749DBB-E61F-885C-00D6-38610D00E567</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA43C6FE-D9AA-4890-FA66-BCB98E8C9FB1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ATTR_TYPE_FK_CHK" directorySegmentName="seg_1" id="4D3C2F51-2600-BDF2-6D2B-AEE4BBB8F8FF">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:45:10 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<rule><![CDATA[(ATTR_TYPE = "ENTITY" AND ATTR_ENTI_ID IS NOT NULL AND ATTR_DOMA_ID IS NULL AND ATTR_DOMA_GRP_ID IS NULL
+)OR
+(ATTR_TYPE = "GroupDomain" AND ATTR_ENTI_ID IS NULL AND ATTR_DOMA_ID IS NOT NULL 
+)]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

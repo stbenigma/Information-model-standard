@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A4FABCC5-DA60-972D-1E92-ABF5DF770EEF" name="EXAMPLES">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<comment><![CDATA[Examplevalue  for Entity, Attribute, Domain, Relationship
+
+Examples:
+0
+1
+99
+married
+divorced
+Peter is married to Jane]]></comment>
+<generatorID>6A5501D1-E3E1-1B35-7A7B-6C55C038DCC6</generatorID>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Beispielwert für Entität, Attribut, Bereich, Beziehung
+
+Beispiele:
+0
+1
+99
+verheiratet
+geschieden
+Peter ist mit Jane verheiratet]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Examplevalue  for Entity, Attribute, Domain, Relationship
+
+Examples:
+0
+1
+99
+married
+divorced
+Peter is married to Jane
+
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<ordsAlias>example</ordsAlias>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<abbreviation>EXPL</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EXPL_ID" id="FD0A6293-46C0-90AB-EF1E-A1E256D09872">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-28 14:13:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXPL_VALUE" id="F5057D28-8661-F9E6-4731-232459349A97">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>78178DFE-CAC7-A5AD-8621-76A30C566379</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXPL_ELEMENT_ID" id="9EA60064-0D40-2F56-743E-F88C1A21D474">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D27334EE-38E5-F47D-B654-0899627C8E1F" name="EXPL_PK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-28 14:13:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD0A6293-46C0-90AB-EF1E-A1E256D09872"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="42D5CCCD-0700-4066-6825-AFF9DB086B35" name="EXPL_UN">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>6C64AC80-E833-063B-EF8A-B29E6D964783</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5057D28-8661-F9E6-4731-232459349A97"/>
+<colUsage columnID="9EA60064-0D40-2F56-743E-F88C1A21D474"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="EXAMPLE_CK_1" directorySegmentName="seg_1" id="8CAB518C-A371-A2FA-5836-3086C7E1F326">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:56:09 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<rule><![CDATA[(EXPL_ENTI_ID IS  NULL AND EXPL_DOMA_ID IS  NULL AND EXPL_RELA_ID IS  NULL AND EXPL_ATTR_ID IS  NULL AND)]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>
