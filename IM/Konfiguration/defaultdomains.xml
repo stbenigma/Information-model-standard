@@ -188,6 +188,19 @@
 <implementationDef dbType="Generic Constraint" definition="ISO Landcode 2 = lower(ISO Landcode 2)"/>
 </checkConstraint>
 </Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Relation End Type" id="D7358D01-5940-01DA-912E-C6AA71503BF2">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-29 15:20:09 UTC</createdTime>
+<ownerDesignName>System</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>7 CHAR</dataTypeSize>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<listOfValues>
+<valueDef value="FORWARD" description="Forward Relation"/>
+<valueDef value="REVERSE" description="Reverse Relation"/>
+</listOfValues>
+</Domain>
 <Domain class="oracle.dbtools.crest.model.design.Domain" name="Shortname" id="DF321C7C-26AB-AE86-F75B-320EE5F91E6D">
 <createdBy>stb</createdBy>
 <createdTime>2024-11-25 07:53:33 UTC</createdTime>

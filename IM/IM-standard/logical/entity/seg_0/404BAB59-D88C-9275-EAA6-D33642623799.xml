@@ -4,6 +4,9 @@
 <createdTime>2022-11-03 06:36:18 UTC</createdTime>
 <comment><![CDATA[End point of a relationship. Connection point of the relation to an entity.
 There are always exactly 2 end points in a relation.
+There is a direction of the relationship:  forward / reverse
+For ease of use the different types of the relation role, functional, many-2-many use specific relationship ends as forward and backward.
+
 The relationship is to be read as follows
 1 instance of the entity <association-text> <optional/mandatory> <1/many> instances of the entity at the other end of the relation.
 
@@ -16,6 +19,9 @@ A route is optionally travelled by many buses.
 <notes><![CDATA[[DE_ENTI_COMMENT[
 Endpunkt einer Beziehung. Anknüpfungspunkt der Relation an eine Entität.
 Es gibt immer genau 2 Endpunkte in einer Relation.
+Es gibt eine Richtung der Beziehung: vorwärts/rückwärts
+Zur Vereinfachung der Verwendung der verschiedenen Arten der Beziehung Rolle, funktional, viele-2-viele verwenden spezifische Beziehung endet als vorwärts und rückwärts.
+
 Die Beziehung ist wie folgt zu lesen:
 1 Instanz der Entität <assoziations-text> <optional/zwingend> <1/viele> Instanzen der Entität am anderen Ende der Relation.
 
@@ -28,6 +34,9 @@ Eine Strecke wird optional befahren von vielen Bussen.
 [EN_ENTI_COMMENT[
 End point of a relationship. Connection point of the relation to an entity.
 There are always exactly 2 end points in a relation.
+There is a direction of the relationship:  forward / reverse
+For ease of use the different types of the relation role, functional, many-2-many use specific relationship ends as forward and backward.
+
 The relationship is to be read as follows
 1 instance of the entity <association-text> <optional/mandatory> <1/many> instances of the entity at the other end of the relation.
 
@@ -62,6 +71,35 @@ A route is optionally travelled by many buses.
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Relation end type" id="DAA092E2-8804-8CBD-683E-330085B31F4C">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-29 15:21:28 UTC</createdTime>
+<comment><![CDATA[Direction of relationship.  (forward / reverse)
+For role- and functional relationships the relationships start with the child- resp. the many-side.
+For many-2-many relationships it is abitrary which end is which.
+]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Richtung der Beziehung.  (vorwärts / rückwärts)
+Bei Rollen- und Funktionsbeziehungen beginnen die Beziehungen mit der Child- bzw. Many-Seite.
+Bei Many-2-Many-Beziehungen ist es beliebig, welches Ende welches ist.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Direction of relationship.  (forward / reverse)
+For role- and functional relationships the relationships start with the child- resp. the many-side.
+For many-2-many relationships it is abitrary which end is which.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>D7358D01-5940-01DA-912E-C6AA71503BF2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="Association [L]" id="8727B082-C624-C910-42AF-B51032928F62">
 <createdBy>stb</createdBy>
 <createdTime>2022-11-03 06:47:28 UTC</createdTime>
@@ -117,6 +155,37 @@ contained in
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
+<Attribute name="Cardinality" id="16253B8A-8A27-7C6E-AB98-5DE1711A9D59">
+<createdBy>stb</createdBy>
+<createdTime>2022-11-03 06:47:28 UTC</createdTime>
+<comment><![CDATA[An instance of the first entity can have how many relationships to instances of the second entity. Only 1 (1) or many (M) are distinguished. 0 is expressed by the mandatory flag. Many is open at the top and also includes the possibility of 1.
+]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Eine Instanz der ersten Entität kann wie viele Beziehungen zu Instanzen der zweiten Entität haben. Es werden nur 1 (1) oder viele (M) unterschieden. 0 wird durch das obligatorisch Flag ausgedrückt. Viele ist nach oben offen und beinhaltet auch die Möglichkeit 1.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+An instance of the first entity can have how many relationships to instances of the second entity. Only 1 (1) or many (M) are distinguished. 0 is expressed by the mandatory flag. Many is open at the top and also includes the possibility of 1.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>58A81D94-A2AD-3DA7-4B9E-471B043185E0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="Kardinalität"/>
+<property name="EN_ATTR_NAME" value="Cardinality"/>
+<property name="isdescriptive" value="TRUE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
 <Attribute name="is mandatory" id="71CF8391-F518-DBCA-72D4-9B8DC99AD117">
 <createdBy>stb</createdBy>
 <createdTime>2022-11-03 06:47:28 UTC</createdTime>
@@ -144,37 +213,6 @@ Does every instance of the first entity have to have a relationship to at least 
 <property name="DE_ATTR_NAME" value="ist obligatorisch"/>
 <property name="EN_ATTR_COMMENT" value="*DE* zu-Entität muss mind. 1 eine Verbindung zur von-Entität haben"/>
 <property name="EN_ATTR_NAME" value="is mandatory"/>
-<property name="isdescriptive" value="TRUE"/>
-<property name="maxzoomlevel" value="4"/>
-<property name="minzoomlevel" value="0"/>
-<property name="publ_status" value="PUBL"/>
-</propertyMap>
-</Attribute>
-<Attribute name="Cardinality" id="16253B8A-8A27-7C6E-AB98-5DE1711A9D59">
-<createdBy>stb</createdBy>
-<createdTime>2022-11-03 06:47:28 UTC</createdTime>
-<comment><![CDATA[An instance of the first entity can have how many relationships to instances of the second entity. Only 1 (1) or many (M) are distinguished. 0 is expressed by the mandatory flag. Many is open at the top and also includes the possibility of 1.
-]]></comment>
-<notes><![CDATA[[DE_ATTR_COMMENT[
-Eine Instanz der ersten Entität kann wie viele Beziehungen zu Instanzen der zweiten Entität haben. Es werden nur 1 (1) oder viele (M) unterschieden. 0 wird durch das obligatorisch Flag ausgedrückt. Viele ist nach oben offen und beinhaltet auch die Möglichkeit 1.
-]DE_ATTR_COMMENT]
-[EN_ATTR_COMMENT[
-An instance of the first entity can have how many relationships to instances of the second entity. Only 1 (1) or many (M) are distinguished. 0 is expressed by the mandatory flag. Many is open at the top and also includes the possibility of 1.
-]EN_ATTR_COMMENT]
-]]></notes>
-<ownerDesignName>IM-standard</ownerDesignName>
-<engineerTo>
-<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
-<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
-</engineerTo>
-<use>0</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<domain>58A81D94-A2AD-3DA7-4B9E-471B043185E0</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<propertyMap>
-<property name="DE_ATTR_NAME" value="Kardinalität"/>
-<property name="EN_ATTR_NAME" value="Cardinality"/>
 <property name="isdescriptive" value="TRUE"/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
@@ -249,4 +287,20 @@ Arbitrary naming to distinguish multiple exclusive relationships in an entity. I
 </propertyMap>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8A008242-05FC-6204-B81E-EDE600884FE5" name="RELAEND_UK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-29 15:35:21 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<newElementsIDs>DAA092E2-8804-8CBD-683E-330085B31F4C,1671329E-C611-A1FF-9165-F003C1660352</newElementsIDs>
+<usedAttributes>
+<attributeRef>DAA092E2-8804-8CBD-683E-330085B31F4C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

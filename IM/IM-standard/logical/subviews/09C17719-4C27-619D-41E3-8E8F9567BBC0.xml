@@ -226,7 +226,7 @@ Relationships with [T] are temporal and have to be resolved in the data model wi
 </sourceLabel>
 <targetLabel class="oracle.dbtools.crest.model.design.Label">
 <site>2</site>
-<labelBounds x="1130" y="193" width="62" height="31"/>
+<labelBounds x="1129" y="193" width="63" height="25"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </targetLabel>
@@ -316,28 +316,6 @@ Relationships with [T] are temporal and have to be resolved in the data model wi
 <backgroundColor>-65536</backgroundColor>
 <lineWidth>1</lineWidth>
 </Connector>
-<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="4668B057-8AEF-DF53-93B3-D9D7775F2B30" otype="Relation" vid_source="EAF2D686-FFC8-01DA-814E-2A417D6584E4" vid_target="15FFDE07-1AD2-F9BA-D36C-610293C50A83">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<backgroundColor>-16777216</backgroundColor>
-<lineWidth>1</lineWidth>
-<sourceLabel class="oracle.dbtools.crest.model.design.Label">
-<site>0</site>
-<labelBounds x="1081" y="212" width="57" height="16"/>
-<noBackgroundColor>true</noBackgroundColor>
-<noForegroundColor>true</noForegroundColor>
-</sourceLabel>
-<targetLabel class="oracle.dbtools.crest.model.design.Label">
-<site>2</site>
-<labelBounds x="1141" y="231" width="51" height="34"/>
-<noBackgroundColor>true</noBackgroundColor>
-<noForegroundColor>true</noForegroundColor>
-</targetLabel>
-<points>
-<point x="1071" y="228"/>
-<point x="1083" y="228"/>
-<point x="1198" y="228"/>
-</points>
-</Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="47320279-F806-BCA4-E784-F2E21DD6F853" otype="Relation" vid_source="008EBC2B-D6F4-15C0-1522-C59DDBA7AF21" vid_target="51EB73EF-303A-E681-BE21-CE8282B708ED">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
@@ -389,7 +367,7 @@ Relationships with [T] are temporal and have to be resolved in the data model wi
 <points>
 <point x="370" y="445"/>
 <point x="370" y="396"/>
-<point x="211" y="394"/>
+<point x="215" y="396"/>
 <point x="213" y="488"/>
 <point x="279" y="488"/>
 </points>
@@ -500,20 +478,20 @@ Relationships with [T] are temporal and have to be resolved in the data model wi
 <lineWidth>1</lineWidth>
 <sourceLabel class="oracle.dbtools.crest.model.design.Label">
 <site>0</site>
-<labelBounds x="1378" y="367" width="87" height="26"/>
+<labelBounds x="1390" y="359" width="87" height="26"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </sourceLabel>
 <targetLabel class="oracle.dbtools.crest.model.design.Label">
 <site>2</site>
-<labelBounds x="1497" y="451" width="56" height="31"/>
+<labelBounds x="1497" y="450" width="56" height="31"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </targetLabel>
 <points>
-<point x="1378" y="319"/>
-<point x="1378" y="450"/>
-<point x="1559" y="450"/>
+<point x="1390" y="319"/>
+<point x="1390" y="447"/>
+<point x="1559" y="447"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="8E8A6377-DF32-1C76-25A1-B458D76ECE51" otype="Relation" vid_source="8CD0C4A5-1A00-239D-3F55-13B4522D1B78" vid_target="AA5CFF5F-2D3A-5556-A3CF-CACDF661A5B2">
@@ -649,13 +627,13 @@ Relationships with [T] are temporal and have to be resolved in the data model wi
 <lineWidth>1</lineWidth>
 <sourceLabel class="oracle.dbtools.crest.model.design.Label">
 <site>0</site>
-<labelBounds x="999" y="102" width="88" height="21"/>
+<labelBounds x="999" y="110" width="88" height="21"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </sourceLabel>
 <targetLabel class="oracle.dbtools.crest.model.design.Label">
 <site>2</site>
-<labelBounds x="906" y="76" width="99" height="29"/>
+<labelBounds x="906" y="76" width="65" height="29"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 <targetAboveTheLine>true</targetAboveTheLine>
@@ -811,10 +789,6 @@ Relationships with [T] are temporal and have to be resolved in the data model wi
 </Connector>
 </connectors>
 <arcs>
-<Arc class="oracle.dbtools.crest.swingui.logical.TVArc" oid="A1A8C26F-AAF9-C211-E675-7622B5E69B8B" otype="Arc" vid="C84423CC-AF48-5EC5-7626-5AC388E76BCF">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="912" y="133" width="179" height="178"/>
-</Arc>
 <Arc class="oracle.dbtools.crest.swingui.logical.TVArc" oid="E9668B3A-9622-F5BA-00D5-329C63AB1106" otype="Arc" vid="25AE60B0-D122-0A0C-18F3-0952FC99B3D0">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="259" y="425" width="210" height="160"/>
