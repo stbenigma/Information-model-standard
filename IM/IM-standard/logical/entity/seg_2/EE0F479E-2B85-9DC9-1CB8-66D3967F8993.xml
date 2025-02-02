@@ -1,13 +1,13 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_2" id="EE0F479E-2B85-9DC9-1CB8-66D3967F8993" name="Numeric domain">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_2" id="EE0F479E-2B85-9DC9-1CB8-66D3967F8993" name="Numerischer Wertebereich">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[Can record numerical values]]></comment>
+<comment><![CDATA[Beschreibung von Zahlenwerten.]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
-Kann Zahlenwerte aufnehmen
+Beschreibung von Zahlenwerten.
 ]DE_ENTI_COMMENT]
 [EN_ENTI_COMMENT[
-Can record numerical values
+Specification of numeric values.
 ]EN_ENTI_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
@@ -31,16 +31,18 @@ Can record numerical values
 <createSurrogateKey>true</createSurrogateKey>
 <propertyMap>
 <property name="DE_ENTI_NAME" value="Numerischer Wertebereich"/>
+<property name="DE_ENTI_SYNONYM" value=""/>
 <property name="EN_ENTI_NAME" value="Numeric domain"/>
+<property name="EN_ENTI_SYNONYM" value=""/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Total Digits Count" id="7E77D48A-823A-2E1C-12FB-94F9A785C501">
+<Attribute name="*Totalstellen" id="7E77D48A-823A-2E1C-12FB-94F9A785C501">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[Number of digits before the decimal point]]></comment>
+<comment><![CDATA[Anzahl der Stellen vor dem Komma]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
 Anzahl der Stellen vor dem Komma
 ]DE_ATTR_COMMENT]
@@ -63,19 +65,19 @@ Number of digits before the decimal point
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
 <property name="DE_ATTR_COMMENT" value="Anzahl der Stellen vor dem Komma"/>
-<property name="DE_ATTR_NAME" value="Totalstellen#"/>
+<property name="DE_ATTR_NAME" value="*Totalstellen"/>
 <property name="EN_ATTR_COMMENT" value="*DE* Anzahl der Stellen vor dem Komma"/>
-<property name="EN_ATTR_NAME" value="Total Digits Count"/>
+<property name="EN_ATTR_NAME" value="Total digits"/>
 <property name="isdescriptive" value="FALSE"/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="Decimal places#" id="D2115AAA-10BB-6729-053F-50CD98171F6C">
+<Attribute name="Nachkommastellen" id="D2115AAA-10BB-6729-053F-50CD98171F6C">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[Number of digits after the decimal point]]></comment>
+<comment><![CDATA[Anzahl der Stellen nach dem Komma]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
 Anzahl der Stellen nach dem Komma
 ]DE_ATTR_COMMENT]
@@ -102,19 +104,19 @@ Number of digits after the decimal point
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
 <property name="DE_ATTR_COMMENT" value="Anzahl der Stellen nach dem Komma"/>
-<property name="DE_ATTR_NAME" value="Nachkommastellen#"/>
+<property name="DE_ATTR_NAME" value="Nachkommastellen"/>
 <property name="EN_ATTR_COMMENT" value="*DE* Anzahl der Stellen nach dem Komma"/>
-<property name="EN_ATTR_NAME" value="Decimal places#"/>
+<property name="EN_ATTR_NAME" value="Fractional digits"/>
 <property name="isdescriptive" value="FALSE"/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="Min value" id="E5CC6E75-E08C-C5ED-7AD2-5C644AC557AD">
+<Attribute name="Min Wert" id="E5CC6E75-E08C-C5ED-7AD2-5C644AC557AD">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[Minimum value for a numeric field. Empty -> as small as the system allows]]></comment>
+<comment><![CDATA[Minimaler Wert für ein numerisches Feld. Leer -> so klein wie das System zulässt]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
 Minimaler Wert für ein numerisches Feld. Leer -> so klein wie das System zulässt
 ]DE_ATTR_COMMENT]
@@ -146,10 +148,10 @@ Minimum value for a numeric field. Empty -> as small as the system allows
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="Max value" id="EBB0952C-C757-86BA-30FC-CF6002E22D95">
+<Attribute name="Max Wert" id="EBB0952C-C757-86BA-30FC-CF6002E22D95">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[Maximum value for a numeric field. Empty -> as big as the system allows]]></comment>
+<comment><![CDATA[Maximaler Wert für ein numerisches Feld. Leer -> so gross wie das System zulässt]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
 Maximaler Wert für ein numerisches Feld. Leer -> so gross wie das System zulässt
 ]DE_ATTR_COMMENT]
@@ -181,15 +183,26 @@ Maximum value for a numeric field. Empty -> as big as the system allows
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="Rounding unit" id="EB863265-2766-76A8-568E-EEFEA2D851F2">
+<Attribute name="Rundungseinheit" id="EB863265-2766-76A8-568E-EEFEA2D851F2">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[A value that indicates the unit to which a numeric value is rounded for storage. (e.g. 0.5, 0.25, 1000) empty -> not rounded explicitly]]></comment>
+<comment><![CDATA[*Wert, der angibt, auf welche Einheit ein numerischer Wert für die Speicherung gerundet wird. 
+leer -> es wird nicht explizit gerundet
+Beispiele:
+0.5
+ 0.25
+1000]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
-Wert, der angibt, auf welche Einheit ein numerischer Wert für die Speicherung gerundet wird. (z.B. 0.5, 0.25, 1000) leer -> es wird nicht explizit gerundet
+*Wert, der angibt, auf welche Einheit ein numerischer Wert für die Speicherung gerundet wird. 
+leer -> es wird nicht explizit gerundet
+Beispiele:
+0.5
+ 0.25
+1000
 ]DE_ATTR_COMMENT]
 [EN_ATTR_COMMENT[
-A value that indicates the unit to which a numeric value is rounded for storage. (e.g. 0.5, 0.25, 1000) empty -> not rounded explicitly
+A value that indicates the unit to which a numeric value is rounded for storage. 
+(e.g. 0.5, 0.25, 1000) empty -> not rounded explicitly
 ]EN_ATTR_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>

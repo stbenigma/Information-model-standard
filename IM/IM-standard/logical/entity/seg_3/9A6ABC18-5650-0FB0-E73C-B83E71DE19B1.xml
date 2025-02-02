@@ -1,27 +1,35 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="9A6ABC18-5650-0FB0-E73C-B83E71DE19B1" name="Time domain">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="9A6ABC18-5650-0FB0-E73C-B83E71DE19B1" name="Zeitpunkt Wertebereich">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[Values that describe a point in time.
-The accuracy of the value (from millisecond to year) is determined by the granularity (millisecond, second, minute, hour, day, week, month, quarter, half-year, year).
-Neither the storage nor the representation of the point in time is part of the information model. This is handled in the database or UI specification.
+<comment><![CDATA[*Werte die einen Zeitpunkt beschreiben.
+Die Genauigkeit des Wertes  wird durch die Granularität festgelegt (Miliosekunde, Sekunde, Minute, Stunde, Tag, Woche, Monat, Quartal, Halbjahr, Jahr, Jahrhundert).
+Weder die Speicherung noch die textliche Darstellung des Zeitpunkts ist Teil des Informationsmodells. Dies wird in der Datenbank- oder UI-Spezifikation behandelt.
 
-Please note that a time of day such as 14:17 is not representable!
-]]></comment>
+Beispiele::
+2024-06-11 15:65:13.076
+Januar, 2025
+Isowoche 42 2023]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
-Werte die einen Zeitpunkt beschreiben.
-Die Genauigkeit des Wertes (von Milisekunde bis zu Jahr) wird durch die Granularität festgelegt (Miliosekunde, Sekunde, Minute, Stunde, Tag, Woche, Monat, Quartal, Halbjahr, Jahr).
-Weder die Speicherung noch die Darstellung des Zeitpunkts ist Teil des Informationsmodells. Dies wird in der Datenbank- oder UI-Spezifikation behandelt.
+*Werte die einen Zeitpunkt beschreiben.
+Die Genauigkeit des Wertes  wird durch die Granularität festgelegt (Miliosekunde, Sekunde, Minute, Stunde, Tag, Woche, Monat, Quartal, Halbjahr, Jahr, Jahrhundert).
+Weder die Speicherung noch die textliche Darstellung des Zeitpunkts ist Teil des Informationsmodells. Dies wird in der Datenbank- oder UI-Spezifikation behandelt.
 
-Achtung eine Tagesuhrzeit wie 14:17 ist damit nicht darstellar!
-
+Beispiele::
+2024-06-11 15:65:13.076
+Januar, 2025
+Isowoche 42 2023
 ]DE_ENTI_COMMENT]
 [EN_ENTI_COMMENT[
 Values that describe a point in time.
 The accuracy of the value (from millisecond to year) is determined by the granularity (millisecond, second, minute, hour, day, week, month, quarter, half-year, year).
 Neither the storage nor the representation of the point in time is part of the information model. This is handled in the database or UI specification.
 
-Please note that a time of day such as 14:17 is not representable!
+Examples:
+2024-06-11 15:65:13.076
+January, 2025
+Isoweek 42 2023
+
 ]EN_ENTI_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
@@ -45,21 +53,23 @@ Please note that a time of day such as 14:17 is not representable!
 <createSurrogateKey>true</createSurrogateKey>
 <propertyMap>
 <property name="DE_ENTI_NAME" value="Zeitpunkt Wertebereich"/>
+<property name="DE_ENTI_SYNONYM" value=""/>
 <property name="EN_ENTI_NAME" value="Time domain"/>
+<property name="EN_ENTI_SYNONYM" value=""/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Min Time" id="F8E42CB1-E43D-0D27-9900-D7A7BD67D0D6">
+<Attribute name="Min Zeitpunkt" id="F8E42CB1-E43D-0D27-9900-D7A7BD67D0D6">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[earliest time in this attribute. Empty -> there is no lower limit]]></comment>
+<comment><![CDATA[*frühestes Zeitpunkt in diesem Attribut. Leer -> es gibt keine Untergrenze]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
-frühestes Zeitpunkt in diesem Attribut. Leer -> es gibt keine Untergrenze
+*frühestes Zeitpunkt in diesem Attribut. Leer -> es gibt keine Untergrenze
 ]DE_ATTR_COMMENT]
 [EN_ATTR_COMMENT[
-earliest time in this attribute. Empty -> there is no lower limit
+earliest point in time in this attribute. Empty -> there is no lower limit
 ]EN_ATTR_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
@@ -86,15 +96,15 @@ earliest time in this attribute. Empty -> there is no lower limit
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="Max Time" id="7B927CAB-9C49-8F87-C70C-F980DF438F94">
+<Attribute name="Max Zeitpunkt" id="7B927CAB-9C49-8F87-C70C-F980DF438F94">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[latest time in this attribute. Empty -> there is no upper limit]]></comment>
+<comment><![CDATA[*spätester Zeitpunkt in diesem Attribut. Leer -> es gibt keine Obergrenze]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
-spätester Zeitpunkt in diesem Attribut. Leer -> es gibt keine Obergrenze
+*spätester Zeitpunkt in diesem Attribut. Leer -> es gibt keine Obergrenze
 ]DE_ATTR_COMMENT]
 [EN_ATTR_COMMENT[
-latest time in this attribute. Empty -> there is no upper limit
+latest point in time in this attribute. Empty -> there is no upper limit
 ]EN_ATTR_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
@@ -121,10 +131,10 @@ latest time in this attribute. Empty -> there is no upper limit
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="Granularity" id="6E889AC5-72FE-0BF0-A64F-E96B19560FAC">
+<Attribute name="Granularität" id="6E889AC5-72FE-0BF0-A64F-E96B19560FAC">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[To which unit is the date rounded (day, minute, month, year)?]]></comment>
+<comment><![CDATA[Auf welche Einheit wird die Datumsangabe gerundet (Tag, Minute, Monat, Jahr)]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
 Auf welche Einheit wird die Datumsangabe gerundet (Tag, Minute, Monat, Jahr)
 ]DE_ATTR_COMMENT]

@@ -201,6 +201,16 @@
 <valueDef value="REVERSE" description="Reverse Relation"/>
 </listOfValues>
 </Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Short Description" id="D8C19083-EC1D-27E7-A2FD-5091C2B48044">
+<createdBy>stb</createdBy>
+<createdTime>2025-02-02 10:03:33 UTC</createdTime>
+<comment><![CDATA[Short description e.g. for tooltips]]></comment>
+<ownerDesignName>System</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>150 CHAR</dataTypeSize>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+</Domain>
 <Domain class="oracle.dbtools.crest.model.design.Domain" name="Shortname" id="DF321C7C-26AB-AE86-F75B-320EE5F91E6D">
 <createdBy>stb</createdBy>
 <createdTime>2024-11-25 07:53:33 UTC</createdTime>

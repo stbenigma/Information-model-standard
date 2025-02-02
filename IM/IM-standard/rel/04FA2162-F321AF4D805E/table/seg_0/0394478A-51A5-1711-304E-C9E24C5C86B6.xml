@@ -60,7 +60,7 @@
 <property name="publ_status" value="GTOP"/>
 </propertyMap>
 </Column>
-<Column name="tooltip" id="D6D52359-AEBF-D841-57F4-8421E71BBE31">
+<Column name="shortdescr" id="D6D52359-AEBF-D841-57F4-8421E71BBE31">
 <sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
 <createdBy>stb</createdBy>
 <createdTime>2024-05-20 15:37:51 UTC</createdTime>

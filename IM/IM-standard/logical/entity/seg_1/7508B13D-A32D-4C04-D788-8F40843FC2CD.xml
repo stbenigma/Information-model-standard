@@ -1,13 +1,13 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="7508B13D-A32D-4C04-D788-8F40843FC2CD" name="Exclusive relation">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="7508B13D-A32D-4C04-D788-8F40843FC2CD" name="Exklusivbeziehung">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[Relationships that emanate from an entity can be exclusive. I.e. none or 1 of them is possible, but never several simultaneously.
+<comment><![CDATA[*Beziehungen die von einer Entität ausgehen können exklusiv sein. D.h. keine oder 1 davon ist möglich, aber nie mehrere gleichzeitig
 
-Example:
-a Person is reachable via Mobile-Phone or via Land-Line-Phone]]></comment>
+Beispiel:
+	eine Person ist erreichbar über Mobil-Telefon oder über Festnetz-Telefon]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
-Beziehungen die von einer Entität ausgehen können exklusiv sein. D.h. keine oder 1 davon ist möglich, aber nie mehrere gleichzeitig
+*Beziehungen die von einer Entität ausgehen können exklusiv sein. D.h. keine oder 1 davon ist möglich, aber nie mehrere gleichzeitig
 
 Beispiel:
 	eine Person ist erreichbar über Mobil-Telefon oder über Festnetz-Telefon
@@ -16,14 +16,14 @@ Beispiel:
 Relationships that emanate from an entity can be exclusive. I.e. none or 1 of them is possible, but never several simultaneously.
 
 Example:
-	a Person is reachable via Mobile-Phone or via Land-Line-Phone
+a Person is reachable via Mobile-Phone or via Land-Line-Phone
 ]EN_ENTI_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
 <typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
 <adequatelyNormalized>NO</adequatelyNormalized>
@@ -47,10 +47,10 @@ Example:
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Number" id="C725A402-0ADC-7EBF-B98F-A9FEE6E7B79F">
+<Attribute name="Nummer" id="C725A402-0ADC-7EBF-B98F-A9FEE6E7B79F">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[Number to distinguish multiple exclusive groups of relationships in an entity.  Making them an exclusive group of relationships]]></comment>
+<comment><![CDATA[Nummer zur Unterscheidung mehrerer exklusiver Gruppen von Beziehungen in einer Entität.  Sie zu einer exklusiven Gruppe von Beziehungen machen]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
 Nummer zur Unterscheidung mehrerer exklusiver Gruppen von Beziehungen in einer Entität.  Sie zu einer exklusiven Gruppe von Beziehungen machen
 ]DE_ATTR_COMMENT]
@@ -62,8 +62,8 @@ Number to distinguish multiple exclusive groups of relationships in an entity.  
 <importedID>F8F374B8-F266-21F0-ADA1-DE808B4EF15F</importedID>
 <engineerTo>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -80,6 +80,61 @@ Number to distinguish multiple exclusive groups of relationships in an entity.  
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
+<Attribute name="*EN* Name [L]" id="25050035-0805-311A-5A91-7EE6413DB9B1">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-31 10:21:30 UTC</createdTime>
+<comment><![CDATA[*EN* unique Name of the entity normally used in communication.]]></comment>
+<generatorID>8E8A6377-DF32-1C76-25A1-B458D76ECE51</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+*EN* unique Name of the entity normally used in communication.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+unique Name of the entity normally used in communication.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<referedAttribute>F1D0F128-7361-E0A9-E706-227C158FCD42</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="*EN* Name [L]"/>
+<property name="EN_ATTR_NAME" value="Name [L]"/>
+</propertyMap>
+</Attribute>
+<Attribute name="*Name" id="CAD538BA-B258-AC32-FA49-355A3788A0B7">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-31 10:21:30 UTC</createdTime>
+<generatorID>8E8A6377-DF32-1C76-25A1-B458D76ECE51</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<referedAttribute>970C26B8-4A9C-9B24-92F4-85B0E648E1F5</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="*EN* Name"/>
+<property name="EN_ATTR_NAME" value="*EN* Name"/>
+</propertyMap>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="4D8D5B78-D54B-9763-65AC-95DAF7C593D5" name="Exklusivbeziehung PK">
@@ -88,12 +143,14 @@ Number to distinguish multiple exclusive groups of relationships in an entity.  
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
 <newElementsIDs>C725A402-0ADC-7EBF-B98F-A9FEE6E7B79F,8E8A6377-DF32-1C76-25A1-B458D76ECE51</newElementsIDs>
 <usedAttributes>
 <attributeRef>C725A402-0ADC-7EBF-B98F-A9FEE6E7B79F</attributeRef>
+<attributeRef>25050035-0805-311A-5A91-7EE6413DB9B1</attributeRef>
+<attributeRef>CAD538BA-B258-AC32-FA49-355A3788A0B7</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

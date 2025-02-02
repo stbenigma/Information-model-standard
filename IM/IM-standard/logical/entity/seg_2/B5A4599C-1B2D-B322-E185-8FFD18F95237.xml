@@ -1,25 +1,24 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_2" id="B5A4599C-1B2D-B322-E185-8FFD18F95237" name="many-to-many Relation">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_2" id="B5A4599C-1B2D-B322-E185-8FFD18F95237" name="viele-zu-viele Beziehung">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[The many-to-many relationship links 1 instance of one entity with 0... many instances of the other entity in both directions.
-The cardinality must be ‘M’ at both ends. Association texts are mandatory in both directions.
-
-A many-to-many relationship always implies another entity that represents this type of link. In the information model, we refrain from representing this additional entity (with one connection to each of the two entities) in favour of a simpler representation. However, as soon as this additional entity has attributes or relationships, it must be documented as a normal entity.
-
-Examples:
-An order contains many items. - An item is ordered in many orders.
-One person is contacted by many people - One person contacts many people.
-]]></comment>
-<notes><![CDATA[[DE_ENTI_COMMENT[
-DIe many-to-many Beziehung verknüpft in beide Richung 1 Instanz der einen Entität mit 0.. vielen Instanzen der anderen Entität.
+<comment><![CDATA[*DIe many-to-many Beziehung verknüpft in beide Richung 1 Instanz der einen Entität mit 0.. vielen Instanzen der anderen Entität.
 Die Kardinalität muss bei beiden Enden "M" sein. Assoziationstexte sind in beide Richtungen Pflicht.
 
 Eine many-to-many Beziehung impliziert immer eine weitere Entität, die diese Art der Verknüpfung abbildet. Wir verzichten im Informationsmodell dzu Gunsten der einfacheren Darstellung darauf, diese zusätzliche Entität (mit je einer Verbindung zu den beiden Entitäten) darzustellen. Sobald dieses zusätzliche Entität aber Attribute oder Beziehungen hat, muss sie als normale Entität dokumentiert werden.
 
 Beispiele:
 Eine Bestellung enhält viele Artikel. - Ein Artikel wird in vielen Bestellung bestellt.
-Eine Person wird kontaktiert von vielen Personen - Eine Person kontaktier viele Personen. 
+Eine Person wird kontaktiert von vielen Personen - Eine Person kontaktier viele Personen.]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+*DIe many-to-many Beziehung verknüpft in beide Richung 1 Instanz der einen Entität mit 0.. vielen Instanzen der anderen Entität.
+Die Kardinalität muss bei beiden Enden "M" sein. Assoziationstexte sind in beide Richtungen Pflicht.
+
+Eine many-to-many Beziehung impliziert immer eine weitere Entität, die diese Art der Verknüpfung abbildet. Wir verzichten im Informationsmodell dzu Gunsten der einfacheren Darstellung darauf, diese zusätzliche Entität (mit je einer Verbindung zu den beiden Entitäten) darzustellen. Sobald dieses zusätzliche Entität aber Attribute oder Beziehungen hat, muss sie als normale Entität dokumentiert werden.
+
+Beispiele:
+Eine Bestellung enhält viele Artikel. - Ein Artikel wird in vielen Bestellung bestellt.
+Eine Person wird kontaktiert von vielen Personen - Eine Person kontaktier viele Personen.
 ]DE_ENTI_COMMENT]
 [EN_ENTI_COMMENT[
 The many-to-many relationship links 1 instance of one entity with 0... many instances of the other entity in both directions.
@@ -30,7 +29,7 @@ A many-to-many relationship always implies another entity that represents this t
 Examples:
 An order contains many items. - An item is ordered in many orders.
 One person is contacted by many people - One person contacts many people.
- 
+
 ]EN_ENTI_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
@@ -54,7 +53,9 @@ One person is contacted by many people - One person contacts many people.
 <createSurrogateKey>true</createSurrogateKey>
 <propertyMap>
 <property name="DE_ENTI_NAME" value="viele-zu-viele Beziehung"/>
+<property name="DE_ENTI_SYNONYM" value=""/>
 <property name="EN_ENTI_NAME" value="many-to-many Relation"/>
+<property name="EN_ENTI_SYNONYM" value=""/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>

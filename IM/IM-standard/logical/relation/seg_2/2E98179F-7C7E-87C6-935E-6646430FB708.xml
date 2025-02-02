@@ -5,13 +5,13 @@
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
 <useSurrogateKey>true</useSurrogateKey>
 <identifying>false</identifying>
-<nameOnSource>defines</nameOnSource>
-<nameOnTarget>measured in</nameOnTarget>
+<nameOnSource>*definiert</nameOnSource>
+<nameOnTarget>gemessen in</nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>true</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
@@ -21,9 +21,9 @@
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 <propertyMap>
-<property name="DE_RELA_TEXT_FROM" value="definiert"/>
+<property name="DE_RELA_TEXT_FROM" value="*definiert"/>
 <property name="DE_RELA_TEXT_TO" value="gemessen in"/>
-<property name="EN_RELA_TEXT_FROM" value="defined"/>
+<property name="EN_RELA_TEXT_FROM" value="defines"/>
 <property name="EN_RELA_TEXT_TO" value="measured in"/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>

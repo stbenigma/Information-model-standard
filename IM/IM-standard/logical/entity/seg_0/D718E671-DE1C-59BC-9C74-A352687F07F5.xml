@@ -1,21 +1,21 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D718E671-DE1C-59BC-9C74-A352687F07F5" name="Attribute">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D718E671-DE1C-59BC-9C74-A352687F07F5" name="Attribut">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:03:22 UTC</createdTime>
-<comment><![CDATA[Description of the container of a value. Also known as a property or characteristic.
-The attribute is the valid single source of truth for values in the conceptual model.
+<comment><![CDATA[Beschreibung des Behälters eines Wertes. Auch Eigenschaft oder Merkmal genannt.
+Das Attribut ist die gültige Single Source of Truth für Werte im Begriffsmodell.
 
-According to the first normal form (1NF) of the relational model, an attribute value makes a statement about ONE aspect of ONE instance of the entity for which the attribute is a property. This means that multi-value attributes and combined attribute values are not permitted.
+Nach der ersten Normalform (1NF) des relationalen Modells macht ein Attributwert eine Aussage über EINEN Aspekt EINER Instanz der Entität, für die das Attribut eine Eigenschaft ist. Dies bedeutet, dass mehrwertige Attribute und kombinierte Attributwerte nicht zulässig sind.
 
-The ‘repeated’, ‘historicised’ and ‘translated’ flags indicate multi-value attributes for special purposes. This is not a contradiction to 1NF, as these indicators and their meaning enable an algorithmic transformation into a 1NF model.
+Die Flags „repeated“ „historicised“ und „translated“ kennzeichnen mehrwertige Attribute für besondere Zwecke. Dies ist kein Widerspruch zur 1NF, da diese Indikatoren und ihre Bedeutung eine algorithmische Transformation in ein 1NF-Modell ermöglichen.
 
-Is either directly an attribute for an entity (entity attribute) or is an attribute/field in a group attribute (domain attribute).
+Ist entweder direkt ein Attribut für eine Entität (Entity-Attribut) oder ist ein Attribut/Feld in einem Gruppenattribut (Domain-Attribut).
 
-Examples
+Beispiele:
 Name
-Date of birth
-Geo-location
-Longitude]]></comment>
+Geburtsdatum
+Geo-Standort
+Längengrad]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
 Beschreibung des Behälters eines Wertes. Auch Eigenschaft oder Merkmal genannt.
 Das Attribut ist die gültige Single Source of Truth für Werte im Begriffsmodell.
@@ -65,7 +65,7 @@ Longitude
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <shortName>ATTR</shortName>
-<synonym>Characteristic,property</synonym>
+<synonym>Merkmal,Eigenschaft</synonym>
 <generateDiscrimColumn>true</generateDiscrimColumn>
 <discriminatorColumnName>ATTR_TYPE</discriminatorColumnName>
 <createSurrogateKey>true</createSurrogateKey>
@@ -82,7 +82,7 @@ Longitude
 <Attribute name="Name" id="FD95360A-BA62-DA9C-BB95-FACB2DAA42D4">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:03:22 UTC</createdTime>
-<comment><![CDATA[Name that says something about the role, use of the property in the entity. Frequently = domain name]]></comment>
+<comment><![CDATA[Name, der etwas über die Rolle, Verwendung der Eigenschaft in der Entität aussagt. Häufig = Domänenname]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
 Name, der etwas über die Rolle, Verwendung der Eigenschaft in der Entität aussagt. Häufig = Domänenname
 ]DE_ATTR_COMMENT]
@@ -112,7 +112,7 @@ Name that says something about the role, use of the property in the entity. Freq
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="Description [L]" id="99E8BB00-BBEF-744D-71AC-51A096FBA509">
+<Attribute name="Beschreibung [L]" id="99E8BB00-BBEF-744D-71AC-51A096FBA509">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:03:22 UTC</createdTime>
 <notes><![CDATA[[DE_ATTR_COMMENT[
@@ -146,10 +146,10 @@ Name that says something about the role, use of the property in the entity. Freq
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="Display name [L]" id="D671B7D6-E0E4-CEA8-D0AC-0176E92E398A">
+<Attribute name="Anzeigename [L]" id="D671B7D6-E0E4-CEA8-D0AC-0176E92E398A">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:03:22 UTC</createdTime>
-<comment><![CDATA[Entity short name for use from heading, in references]]></comment>
+<comment><![CDATA[Kurzbezeichnung der Entität für die Verwendung aus Überschrift, in Referenzen]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
 Kurzbezeichnung der Entität für die Verwendung aus Überschrift, in Referenzen
 ]DE_ATTR_COMMENT]
@@ -181,10 +181,45 @@ Entity short name for use from heading, in references
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="Display sequence" id="C13DFCC3-15A3-5A60-B4D3-774EED4DB6D8">
+<Attribute name="Kurzbeschrieb [L]" id="0BBDE4F2-63A6-4791-B481-FD6B43F8832A">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:03:22 UTC</createdTime>
-<comment><![CDATA[Display sequence on diagrams, in reports. Empty-> attribute is sorted by name at the end of a list]]></comment>
+<comment><![CDATA[Anzeige in Masken für die Erläuterung der Nutzung, Bearbeitung, Verwendung des Attributwertes]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Anzeige in Masken für die Erläuterung der Nutzung, Bearbeitung, Verwendung des Attributwertes
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Display in masks to explain the use, editing, and usage of the attribute value
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>18044B2B-E9C9-F62B-A516-84B3A24746F4</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Anzeige in Masken für die Erläuterung der Nutzung, Bearbeitung, Verwendung des Attributwertes"/>
+<property name="DE_ATTR_NAME" value="Kurzbeschrieb [L]"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Anzeige in Masken für die Erläuterung der Nutzung, Bearbeitung, Verwendung des Attributwertes"/>
+<property name="EN_ATTR_NAME" value="Short Description [L]"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Anzeigereihenfolge" id="C13DFCC3-15A3-5A60-B4D3-774EED4DB6D8">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:03:22 UTC</createdTime>
+<comment><![CDATA[Riehenfolge der Anzeige auf Diagrammen, in Reports. Leer-> Attribut kommt nach Name sortiert an den Schluss einer Liste]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
 Riehenfolge der Anzeige auf Diagrammen, in Reports. Leer-> Attribut kommt nach Name sortiert an den Schluss einer Liste
 ]DE_ATTR_COMMENT]
@@ -216,45 +251,10 @@ Display sequence on diagrams, in reports. Empty-> attribute is sorted by name at
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="Tooltip [L]" id="0BBDE4F2-63A6-4791-B481-FD6B43F8832A">
+<Attribute name="ist obligatorisch" id="83FD3270-5591-5C02-8C26-FC7D8F8A919C">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:03:22 UTC</createdTime>
-<comment><![CDATA[Display in masks to explain the use, editing, and usage of the attribute value]]></comment>
-<notes><![CDATA[[DE_ATTR_COMMENT[
-Anzeige in Masken für die Erläuterung der Nutzung, Bearbeitung, Verwendung des Attributwertes
-]DE_ATTR_COMMENT]
-[EN_ATTR_COMMENT[
-Display in masks to explain the use, editing, and usage of the attribute value
-]EN_ATTR_COMMENT]
-]]></notes>
-<ownerDesignName>IM-standard</ownerDesignName>
-<importedID>18044B2B-E9C9-F62B-A516-84B3A24746F4</importedID>
-<engineerTo>
-<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
-<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>0</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<propertyMap>
-<property name="DE_ATTR_COMMENT" value="Anzeige in Masken für die Erläuterung der Nutzung, Bearbeitung, Verwendung des Attributwertes"/>
-<property name="DE_ATTR_NAME" value="Tooltip [L]"/>
-<property name="EN_ATTR_COMMENT" value="*DE* Anzeige in Masken für die Erläuterung der Nutzung, Bearbeitung, Verwendung des Attributwertes"/>
-<property name="EN_ATTR_NAME" value="Tooltip [L]"/>
-<property name="isdescriptive" value="FALSE"/>
-<property name="maxzoomlevel" value="4"/>
-<property name="minzoomlevel" value="0"/>
-<property name="publ_status" value="PUBL"/>
-</propertyMap>
-</Attribute>
-<Attribute name="is mandatory" id="83FD3270-5591-5C02-8C26-FC7D8F8A919C">
-<createdBy>stb</createdBy>
-<createdTime>2020-02-03 20:03:22 UTC</createdTime>
-<comment><![CDATA[YES -> The field must contain a value.]]></comment>
+<comment><![CDATA[JA -> Das Feld muss einen Wert enthalten.]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
 JA -> Das Feld muss einen Wert enthalten.
 ]DE_ATTR_COMMENT]
@@ -286,10 +286,12 @@ YES -> The field must contain a value.
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="is repeated" id="83723ADA-A469-11DC-EF3A-669B22D8B209">
+<Attribute name="ist wiederholt" id="83723ADA-A469-11DC-EF3A-669B22D8B209">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:03:22 UTC</createdTime>
-<comment><![CDATA[YES -> The field can contain several values.  NO -> Field contains a maximum of one value. Can be solved via extra table.]]></comment>
+<comment><![CDATA[JA -> Das Feld kann mehere Werte enthalten. 
+NEIN -> Feld enthält maximal einen Wert.
+Kann  über Extratabelle gelöst werden.]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
 JA -> Das Feld kann mehere Werte enthalten. 
 NEIN -> Feld enthält maximal einen Wert.
@@ -324,10 +326,11 @@ YES -> The field can contain several values.  NO -> Field contains a maximum of 
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="is language-dependent" id="DDCFCDB2-7AB7-412C-B51C-0AC394FB422E">
+<Attribute name="ist sprachabhängig" id="DDCFCDB2-7AB7-412C-B51C-0AC394FB422E">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:03:22 UTC</createdTime>
-<comment><![CDATA[YES -> The field value can occur in several languages. Solve via extra table linked with languages]]></comment>
+<comment><![CDATA[JA -> Der Feldwert kann in mehreren Sprachen vorkommen.
+Über Extratabelle die mit Sprachen verknüpft ist lösen]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
 JA -> Der Feldwert kann in mehreren Sprachen vorkommen.
 Über Extratabelle die mit Sprachen verknüpft ist lösen
@@ -361,10 +364,11 @@ YES -> The field value can occur in several languages. Solve via extra table lin
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="is encrypted" id="819A5993-997C-ECD2-FF4A-5E337B7D9CDB">
+<Attribute name="ist verschlüsselt" id="819A5993-997C-ECD2-FF4A-5E337B7D9CDB">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:03:22 UTC</createdTime>
-<comment><![CDATA[YES -> The field must be encrypted in storage and transport NO -> Field is not encrypted]]></comment>
+<comment><![CDATA[JA -> Das Feld muss in Speicherung und Transport verschlüsselt werden
+NEIN -> Feld wird nicht verschlüsselt]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
 JA -> Das Feld muss in Speicherung und Transport verschlüsselt werden
 NEIN -> Feld wird nicht verschlüsselt

@@ -1,31 +1,34 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C2AD7328-2E70-C424-A9DD-5DC855F3EDE8" name="Additional property">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C2AD7328-2E70-C424-A9DD-5DC855F3EDE8" name="Zusätzliche Eigenschaft">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:03:22 UTC</createdTime>
-<comment><![CDATA[For project- or environment-specific extensions, separate properties can be defined for each model element.  
+<comment><![CDATA[*Für projekt- oder umgebungsspezifische Erweiterungen, können für jedes Modellelement eigene Eigenschaften definiert werden.
 
-Examples: 
-Quality requirement level
-Security level
-
-]]></comment>
+Beispiel:
+- Qualitätsanspruch-Level
+- Sicherheitsstufe]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
-Für projekt- oder umgebungsspezifische Erweiterungen, können für jedes Modellelement eigene Eigenschaften definiert werden.
+*Für projekt- oder umgebungsspezifische Erweiterungen, können für jedes Modellelement eigene Eigenschaften definiert werden.
 
 Beispiel:
 - Qualitätsanspruch-Level
 - Sicherheitsstufe
 ]DE_ENTI_COMMENT]
 [EN_ENTI_COMMENT[
-For project- or environment-specific extensions, separate properties can be defined for each model element.
-Examples: - Quality requirement level - Security level
+For project- or environment-specific extensions, separate properties can be defined for each model element.  
+
+Examples: 
+Quality requirement level
+Security level
+
+
 ]EN_ENTI_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="false"/>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
 <typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
 <adequatelyNormalized>NO</adequatelyNormalized>
@@ -41,7 +44,9 @@ Examples: - Quality requirement level - Security level
 <createSurrogateKey>true</createSurrogateKey>
 <propertyMap>
 <property name="DE_ENTI_NAME" value="Zusätzliche Eigenschaft"/>
+<property name="DE_ENTI_SYNONYM" value=""/>
 <property name="EN_ENTI_NAME" value="Additional property"/>
+<property name="EN_ENTI_SYNONYM" value=""/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>
@@ -61,8 +66,8 @@ Examples: - Quality requirement level - Security level
 <importedID>2A1A6E68-D38D-9101-ABF5-633C9DAFCFEC</importedID>
 <engineerTo>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="false"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
@@ -79,7 +84,7 @@ Examples: - Quality requirement level - Security level
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="Value" id="4A7B398E-26D2-68A3-B252-6D7F75EBB6A0">
+<Attribute name="*Standardwert" id="4A7B398E-26D2-68A3-B252-6D7F75EBB6A0">
 <createdBy>stb</createdBy>
 <createdTime>2021-03-23 13:57:30 UTC</createdTime>
 <notes><![CDATA[[EN_ATTR_COMMENT[
@@ -92,8 +97,8 @@ Examples: - Quality requirement level - Security level
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -101,8 +106,8 @@ Examples: - Quality requirement level - Security level
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="Standardwert"/>
-<property name="EN_ATTR_NAME" value="Default Value"/>
+<property name="DE_ATTR_NAME" value="*Standardwert"/>
+<property name="EN_ATTR_NAME" value="Value"/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>
@@ -116,8 +121,8 @@ Examples: - Quality requirement level - Security level
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
 <newElementsIDs>41CD85F5-88E3-F509-4545-3308BEF8D46F</newElementsIDs>
 <usedAttributes>

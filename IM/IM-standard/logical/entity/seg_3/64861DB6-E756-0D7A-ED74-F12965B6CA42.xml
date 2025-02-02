@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="64861DB6-E756-0D7A-ED74-F12965B6CA42" name="Value list">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="64861DB6-E756-0D7A-ED74-F12965B6CA42" name="Werteliste">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[A list (final enumeration) of valid values]]></comment>
+<comment><![CDATA[Eine Liste (abschliessende Aufzählung) von gültigen Werten]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
 Eine Liste (abschliessende Aufzählung) von gültigen Werten 
 ]DE_ENTI_COMMENT]
@@ -28,13 +28,13 @@ A list (final enumeration) of valid values
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <shortName>DOMA</shortName>
-<synonym>LOV,Enumeration</synonym>
+<synonym>*LOV,Enumeration</synonym>
 <createSurrogateKey>true</createSurrogateKey>
 <propertyMap>
 <property name="DE_ENTI_NAME" value="Werteliste"/>
 <property name="DE_ENTI_SYNONYM" value="*LOV,Enumeration"/>
 <property name="EN_ENTI_NAME" value="Value list"/>
-<property name="EN_ENTI_SYNONYM" value="*LoV,Enumeration"/>
+<property name="EN_ENTI_SYNONYM" value="LOV,Enumeration"/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>

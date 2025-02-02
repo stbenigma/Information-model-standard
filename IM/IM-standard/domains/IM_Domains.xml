@@ -62,16 +62,17 @@
 <fileName>IM_Domains</fileName>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <listOfValues>
-<valueDef value="DAY" description="Tag"/>
-<valueDef value="HOUR" description="Stunde"/>
-<valueDef value="MILlISECOND" description="Millisekunde"/>
+<valueDef value="CENTURY" description="Century"/>
+<valueDef value="DAY" description="Day"/>
+<valueDef value="HOUR" description="Hour"/>
+<valueDef value="MILlISECOND" description="Millisecond"/>
 <valueDef value="MINUTE" description="Minute"/>
-<valueDef value="MONTH" description="Monat"/>
+<valueDef value="MONTH" description="Month"/>
 <valueDef value="QUARTER" description="Quartal"/>
-<valueDef value="SECOND" description="Sekunde"/>
-<valueDef value="SEMESTER" description="Semester"/>
-<valueDef value="WEEK" description="Woche"/>
-<valueDef value="YEAR" description="Jahr"/>
+<valueDef value="SECOND" description="Second"/>
+<valueDef value="SEMESTER" description="Semestre "/>
+<valueDef value="WEEK" description="Week"/>
+<valueDef value="YEAR" description="Year"/>
 </listOfValues>
 </Domain>
 <Domain class="oracle.dbtools.crest.model.design.Domain" name="Designation" id="897B91BA-60B8-3A16-793A-97B535605E5E">

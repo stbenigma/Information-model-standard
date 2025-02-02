@@ -57,27 +57,6 @@ unique Name of the entity normally used in communication.
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ENTI_PREFIX" id="EE15FDFB-6DF2-5317-3A77-FB1E689ED6B3">
-<createdBy>stb</createdBy>
-<createdTime>2024-12-24 13:09:16 UTC</createdTime>
-<comment><![CDATA[Abbreviated name (3-5 characters, usually capital letters) that can be used as a prefix for implementation names.]]></comment>
-<generatorID>7EC6D9A7-E9AA-F77D-4FAF-CF5E57BD58E7</generatorID>
-<notes><![CDATA[[DE_ATTR_COMMENT[
-Kürzestname (3-5 Zeichen, Normalerweise Grossbuchstaben) der als Präfix für  Implementierungsnamen verwendet werden kann.
-]DE_ATTR_COMMENT]
-[EN_ATTR_COMMENT[
-Abbreviated name (3-5 characters, usually capital letters) that can be used as a prefix for implementation names.
-]EN_ATTR_COMMENT]
-]]></notes>
-<ownerDesignName>IM-standard</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>0</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<domain>4134D0C7-BB61-4182-3736-8DE33C572E80</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="ENTI_DESCRIPTION" id="FD88CD92-77E0-C4C3-2458-9B33B194776D">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-24 13:09:16 UTC</createdTime>
@@ -142,7 +121,7 @@ List of synonym names for this thing beeing used in old systems or out of habit.
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ENTI_TOOLTIP" id="A56BC973-2DC0-9AA3-1AE7-3DCF0615481E">
+<Column name="ENTI_SHORT_DESCR" id="A56BC973-2DC0-9AA3-1AE7-3DCF0615481E">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-24 13:09:16 UTC</createdTime>
 <comment><![CDATA[Short text explaining the meaning for the user în the user interface.]]></comment>
@@ -160,7 +139,7 @@ Short text explaining the meaning for the user în the user interface.
 <use>0</use>
 <collectionType>53EF0FEC-74CF-B5E7-3547-0E74F449ACA7</collectionType>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<domain>D8C19083-EC1D-27E7-A2FD-5091C2B48044</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>

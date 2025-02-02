@@ -10,8 +10,8 @@
 </engineerTo>
 <targetPk>4D8D5B78-D54B-9763-65AC-95DAF7C593D5</targetPk>
 <identifying>false</identifying>
-<nameOnSource>restricted by</nameOnSource>
-<nameOnTarget>restricts</nameOnTarget>
+<nameOnSource>*eingeschränkt durch</nameOnSource>
+<nameOnTarget>schränkt ein</nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>*</sourceCardinality>
@@ -21,9 +21,9 @@
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 <propertyMap>
-<property name="DE_RELA_TEXT_FROM" value="eingeschränkt durch"/>
+<property name="DE_RELA_TEXT_FROM" value="*eingeschränkt durch"/>
 <property name="DE_RELA_TEXT_TO" value="schränkt ein"/>
-<property name="EN_RELA_TEXT_FROM" value="limited by"/>
+<property name="EN_RELA_TEXT_FROM" value="restricted by"/>
 <property name="EN_RELA_TEXT_TO" value="restricts"/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>

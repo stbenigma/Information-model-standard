@@ -5,13 +5,13 @@
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
-<sourcePk>0DCB8532-B1E4-BF67-1F61-05895B0E758E</sourcePk>
+<sourcePk>F6B24D56-DDB2-B367-9B4B-AA7C9F990041</sourcePk>
 <identifying>false</identifying>
-<nameOnSource>restricted by</nameOnSource>
-<nameOnTarget>restricts</nameOnTarget>
+<nameOnSource>*eingeschränkt durch</nameOnSource>
+<nameOnTarget>*schänkt ein</nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
@@ -21,10 +21,10 @@
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 <propertyMap>
-<property name="DE_RELA_TEXT_FROM" value="eingeschränkt durch"/>
-<property name="DE_RELA_TEXT_TO" value="schänkt ein"/>
-<property name="EN_RELA_TEXT_FROM" value="limited by"/>
-<property name="EN_RELA_TEXT_TO" value="limits"/>
+<property name="DE_RELA_TEXT_FROM" value="*eingeschränkt durch"/>
+<property name="DE_RELA_TEXT_TO" value="*schänkt ein"/>
+<property name="EN_RELA_TEXT_FROM" value="restricted by"/>
+<property name="EN_RELA_TEXT_TO" value="restricts"/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>

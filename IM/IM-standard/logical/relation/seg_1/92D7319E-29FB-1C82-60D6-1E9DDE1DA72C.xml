@@ -10,8 +10,8 @@
 </engineerTo>
 <useSurrogateKey>true</useSurrogateKey>
 <identifying>false</identifying>
-<nameOnSource>built from</nameOnSource>
-<nameOnTarget>builds</nameOnTarget>
+<nameOnSource>aufgebaut aus</nameOnSource>
+<nameOnTarget>bildet</nameOnTarget>
 <optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>

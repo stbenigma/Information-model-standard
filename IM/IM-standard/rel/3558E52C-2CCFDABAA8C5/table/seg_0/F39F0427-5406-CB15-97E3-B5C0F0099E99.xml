@@ -204,7 +204,7 @@ Verwendung, Zweck des Attributs in der Gruppe]]></comment>
 <isRelationshipColumn>true</isRelationshipColumn>
 <dependOnForeignKeyID>58A0E4DA-5C09-8B19-A03D-010A1F988829</dependOnForeignKeyID>
 </Column>
-<Column name="ATTR_TOOLTIP" id="D1B28CFB-E563-6EA7-6AD0-5A9DF583ED17">
+<Column name="ATTR_SHORT_DESCR" id="D1B28CFB-E563-6EA7-6AD0-5A9DF583ED17">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-24 13:09:17 UTC</createdTime>
 <comment><![CDATA[Display in masks to explain the use, editing, and usage of the attribute value]]></comment>
@@ -222,7 +222,7 @@ Display in masks to explain the use, editing, and usage of the attribute value
 <use>0</use>
 <collectionType>53EF0FEC-74CF-B5E7-3547-0E74F449ACA7</collectionType>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<domain>D8C19083-EC1D-27E7-A2FD-5091C2B48044</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>

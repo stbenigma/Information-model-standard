@@ -1,28 +1,28 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A8EA854F-1E9B-5C2F-E5B7-770235FC1669" name="Information model">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A8EA854F-1E9B-5C2F-E5B7-770235FC1669" name="Informationsmodell">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-13 10:38:30 UTC</createdTime>
-<comment><![CDATA[An information model describes the relevant things (entities), their properties (attributes) and relationships in a target environment (shpere of influence). It defines the names to be used in communication as well as the meaning and purpose they have in this environment.
-Thanks to its mathematical basis (relational model), it provides a verifiable model that describes all possible true statements (facts/predicates in the sense of predicate logic) for the environment. 
-For the management of knowledge in the form of data, the information model provides the exact description of the information requirements as well as the desired interpretation of the data content for its use
-
-]]></comment>
+<comment><![CDATA[*Ein Informationmodell beschreibt die in einer Zielumgebung (Wirkungswelt) relevanten Dinge (Entitäten), deren Eigenschaften (Attribute) und Beziehungen. Es legt die in der Kommunikation zu verwendenden Namen fest sowie die Bedeutung, den Zweck, den sie in dieser Umgebung haben.
+Dank seiner mathematischen Grundlage (relationales Modell) liefert es ein nachprüfbares Modell, das alle möglichen wahren Aussagen (Fakten / Prädikate im Sinne der Prädikatenlogik) für die Umgebung beschreibt. 
+Für die Verwaltung von Wissen in Form von Daten, liefert das Informationsmodell die exakte Beschreibung der Informationsanforderungen sowie die erwünschte Interpretation der Dateninhalte für deren Nutzung.]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
-Ein Informationmodell beschreibt die in einer Zielumgebung (Wirkungswelt) relevanten Dinge (Entitäten), deren Eigenschaften (Attribute) und Beziehungen. Es legt die in der Kommunikation zu verwendenden Namen fest sowie die Bedeutung, den Zweck, den sie in dieser Umgebung haben.
+*Ein Informationmodell beschreibt die in einer Zielumgebung (Wirkungswelt) relevanten Dinge (Entitäten), deren Eigenschaften (Attribute) und Beziehungen. Es legt die in der Kommunikation zu verwendenden Namen fest sowie die Bedeutung, den Zweck, den sie in dieser Umgebung haben.
 Dank seiner mathematischen Grundlage (relationales Modell) liefert es ein nachprüfbares Modell, das alle möglichen wahren Aussagen (Fakten / Prädikate im Sinne der Prädikatenlogik) für die Umgebung beschreibt. 
 Für die Verwaltung von Wissen in Form von Daten, liefert das Informationsmodell die exakte Beschreibung der Informationsanforderungen sowie die erwünschte Interpretation der Dateninhalte für deren Nutzung.
 ]DE_ENTI_COMMENT]
 [EN_ENTI_COMMENT[
-An information model describes the relevant things (entities), their properties (attributes) and relationships in a target environment (shpere of influence). It defines the names to be used  in communication as well as the meaning and purpose they have in this environment.
+An information model describes the relevant things (entities), their properties (attributes) and relationships in a target environment (sphere of influence). It defines the names to be used in communication as well as the meaning and purpose they have in this environment.
 Thanks to its mathematical basis (relational model), it provides a verifiable model that describes all possible true statements (facts/predicates in the sense of predicate logic) for the environment. 
 For the management of knowledge in the form of data, the information model provides the exact description of the information requirements as well as the desired interpretation of the data content for its use.
+
+
 ]EN_ENTI_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
 <typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
 <adequatelyNormalized>NO</adequatelyNormalized>
@@ -36,116 +36,149 @@ For the management of knowledge in the form of data, the information model provi
 <shortName>INFM</shortName>
 <propertyMap>
 <property name="DE_ENTI_NAME" value="Informationsmodell"/>
+<property name="DE_ENTI_SYNONYM" value=""/>
 <property name="EN_ENTI_NAME" value="Information model"/>
+<property name="EN_ENTI_SYNONYM" value=""/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Name" id="AB6554AF-DFFF-EA79-99CF-84D5586888C1">
+<Attribute name="*Name" id="AB6554AF-DFFF-EA79-99CF-84D5586888C1">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-13 10:44:41 UTC</createdTime>
+<comment><![CDATA[*EN* Name of the information model. Unique in the environment it exists in]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
-
-
+Name des Informationsmodells. Eindeutig in der Umgebung in der es existiert.
 ]DE_ENTI_COMMENT]
 [EN_ENTI_COMMENT[
-
+Name of the information model. Unique in the environment it exists in.
 ]EN_ENTI_COMMENT]
+[DE_ATTR_COMMENT[
+*EN* Name of the information model. Unique in the environment it exists in
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Name of the information model. Unique in the environment it exists in
+]EN_ATTR_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="Name"/>
+<property name="DE_ATTR_NAME" value="*Name"/>
+<property name="EN_ATTR_NAME" value="Name"/>
 <property name="isdescriptive" value="TRUE"/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="Target environment" id="EAA8D3CB-A4AF-2841-A552-193F9D08D24A">
+<Attribute name="*Zielumgebung" id="EAA8D3CB-A4AF-2841-A552-193F9D08D24A">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-13 10:46:24 UTC</createdTime>
-<comment><![CDATA[The target environment (also known as the sphere of influence) is the group of people who want, should or must communicate with each other as clearly as possible using the exact language described in the information model.]]></comment>
+<comment><![CDATA[*EN* The target environment (also known as the sphere of influence) is the group of people who want, should or must communicate and work with each other using an well defined language described in the information model.]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
-Die Zielumgebung (auch Wirkungswelt genannt) ist die Gruppe von Leuten, die mittels der im Informationsmodell beschriebenen exakten Sprache möglichst unmissverständlich miteinander kommunizieren wollen, sollen oder müssen.
+Die Zielumgebung (auch als Wirkungswelt bezeichnet) ist die Gruppe von Personen, die miteinander kommunizieren und arbeiten wollen, sollen oder müssen und dabei eine genau definierte Sprache verwenden, die im Informationsmodell beschrieben ist.
 ]DE_ENTI_COMMENT]
 [EN_ENTI_COMMENT[
-The target environment (also known as the sphere of influence) is the group of people who want, should or must communicate with each other as clearly as possible using the exact language described in the information model.
+The target environment (also known as the sphere of influence) is the group of people who want, should or must communicate and work with each other using an well defined language described in the information model.
 ]EN_ENTI_COMMENT]
+[DE_ATTR_COMMENT[
+*EN* The target environment (also known as the sphere of influence) is the group of people who want, should or must communicate and work with each other using an well defined language described in the information model.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+The target environment (also known as the sphere of influence) is the group of people who want, should or must communicate and work with each other using an well defined language described in the information model.
+]EN_ATTR_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
 <domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="Zielumgebung"/>
+<property name="DE_ATTR_NAME" value="*Zielumgebung"/>
+<property name="EN_ATTR_NAME" value="Target environment"/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="Version" id="5C2D56B1-16E3-2893-2071-10856311963A">
+<Attribute name="*Version" id="5C2D56B1-16E3-2893-2071-10856311963A">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-13 10:46:12 UTC</createdTime>
-<comment><![CDATA[Version of the model in for form.
-major.minor.release]]></comment>
+<comment><![CDATA[*EN* Version number of the information model documented in this file.
+In the form: major.minor[.release]]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
-
+Versionsnummer des in dieser Datei dokumentierten Informationsmodells.
+In der Form: major.minor[.release]
 ]DE_ENTI_COMMENT]
 [EN_ENTI_COMMENT[
-
+Version number of the information model documented in this file.
+In the form: major.minor[.release]
 ]EN_ENTI_COMMENT]
+[DE_ATTR_COMMENT[
+*EN* Version number of the information model documented in this file.
+In the form: major.minor[.release]
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Version number of the information model documented in this file.
+In the form: major.minor[.release]
+]EN_ATTR_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
 <domain>A3FB4AF0-BF96-9DD8-9659-03CA5AD21EA9</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="Version"/>
+<property name="DE_ATTR_NAME" value="*Version"/>
+<property name="EN_ATTR_NAME" value="Version"/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="Description" id="9CB59C50-707B-94CF-8683-C483BAC19A27">
+<Attribute name="*Beschreibung" id="9CB59C50-707B-94CF-8683-C483BAC19A27">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-13 10:45:40 UTC</createdTime>
-<comment><![CDATA[Description of purpose, usage, audience of the information model.
-]]></comment>
+<comment><![CDATA[*EN* Description of purpose, usage, audience of this information model.]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
-Beschreibung von Zweck, Nutzung und Publikum für dieses Modell
+Beschreibung von Zweck, Verwendung und Zielgruppe dieses Informationsmodells.
 ]DE_ENTI_COMMENT]
 [EN_ENTI_COMMENT[
 Description of purpose, usage, audience of the information model.
 ]EN_ENTI_COMMENT]
+[DE_ATTR_COMMENT[
+*EN* Description of purpose, usage, audience of this information model.
+
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Description of purpose, usage, audience of this information model.
+
+]EN_ATTR_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
@@ -153,7 +186,86 @@ Description of purpose, usage, audience of the information model.
 <domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="Beschreibung"/>
+<property name="DE_ATTR_NAME" value="*Beschreibung"/>
+<property name="EN_ATTR_NAME" value="Description"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="*Hauptsprache" id="8DED7F39-4D98-E8A3-6220-901D2BAB17AF">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-30 10:58:28 UTC</createdTime>
+<comment><![CDATA[*EN* Main (and possibly only) language of the models textelements. Serves as default language in multilingual strings, whenever for any of the languages a translation is missing.]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Hauptsprache (und möglicherweise einzige Sprache) der Textelemente des Modells. 
+Dient als Standardsprache in mehrsprachigen Strings, wenn für eine der Sprachen eine Übersetzung fehlt.
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Main (and possibly only) language of the models textelements. 
+Serves as default language in multilingual strings, whenever for any of the languages a translation is missing.
+]EN_ENTI_COMMENT]
+[DE_ATTR_COMMENT[
+*EN* Main (and possibly only) language of the models textelements. Serves as default language in multilingual strings, whenever for any of the languages a translation is missing.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Main (and possibly only) language of the models textelements. Serves as default language in multilingual strings, whenever for any of the languages a translation is missing.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>3CFAACDE-10D2-A99A-844A-975DA633F49B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="*Hauptsprache"/>
+<property name="EN_ATTR_NAME" value="Main language"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="*Sprachen" id="A6DB630F-FB36-F940-9F7A-86945D8BEDB7">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-30 11:01:54 UTC</createdTime>
+<comment><![CDATA[*EN* List of languages, model textelements can be translated to. 
+Defaults to the main language. If there is more than one language, the main language must be in this list and must be present in every multilingual string.]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Liste der Sprachen, in die Modelltextelemente übersetzt werden können. 
+Die Standardeinstellung ist die Hauptsprache. Wenn es mehr als eine Sprache gibt, muss die Hauptsprache in dieser Liste stehen und in jeder mehrsprachigen Zeichenkette vorhanden sein.
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+List of languages, model textelements can be translated to. 
+Defaults to the main language. If there is more than one language, the main language must be in this list and must be present in every multilingual string.
+]EN_ENTI_COMMENT]
+[DE_ATTR_COMMENT[
+*EN* List of languages, model textelements can be translated to. 
+Defaults to the main language. If there is more than one language, the main language must be in this list and must be present in every multilingual string.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+List of languages, model textelements can be translated to. 
+Defaults to the main language. If there is more than one language, the main language must be in this list and must be present in every multilingual string.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>3CFAACDE-10D2-A99A-844A-975DA633F49B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="*Sprachen"/>
+<property name="EN_ATTR_NAME" value="Languages [N]"/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>
@@ -167,8 +279,8 @@ Description of purpose, usage, audience of the information model.
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
 <newElementsIDs>AB6554AF-DFFF-EA79-99CF-84D5586888C1</newElementsIDs>
 <usedAttributes>

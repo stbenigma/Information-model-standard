@@ -8,9 +8,10 @@
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
 <item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
+<sourcePk>F6B24D56-DDB2-B367-9B4B-AA7C9F990041</sourcePk>
 <identifying>false</identifying>
-<nameOnSource>restricted by</nameOnSource>
-<nameOnTarget>restricts</nameOnTarget>
+<nameOnSource>*eingeschränkt durch</nameOnSource>
+<nameOnTarget>schränkt ein</nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
@@ -20,9 +21,9 @@
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 <propertyMap>
-<property name="DE_RELA_TEXT_FROM" value="eingeschränkt durch"/>
+<property name="DE_RELA_TEXT_FROM" value="*eingeschränkt durch"/>
 <property name="DE_RELA_TEXT_TO" value="schränkt ein"/>
-<property name="EN_RELA_TEXT_FROM" value="limited by"/>
+<property name="EN_RELA_TEXT_FROM" value="restricted by"/>
 <property name="EN_RELA_TEXT_TO" value="restricts"/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>

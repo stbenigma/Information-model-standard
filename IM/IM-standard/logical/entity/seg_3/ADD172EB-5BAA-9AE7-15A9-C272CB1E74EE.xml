@@ -1,17 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="ADD172EB-5BAA-9AE7-15A9-C272CB1E74EE" name="Text domain">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="ADD172EB-5BAA-9AE7-15A9-C272CB1E74EE" name="Textlicher Wertebereich">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[Text values are character strings. 
+<comment><![CDATA[*Textwerte sind Zeichenfolgen. 
 
-The value rule is typically a regular expression that specifies the permitted characters and their order.
+Die Werteregel ist typischerweise ein regulärer Ausdruck, der die erlaubten Zeichen und ihre Anordnung vorgibt.
 
-Examples:
-Mountain name, 1-100 characters
-Mailadresse, ^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$
-]]></comment>
+Beispiele:
+Bergname, 1-100 Zeichen
+Mailadresse, ^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
-Textwerte sind Zeichenfolgen. 
+*Textwerte sind Zeichenfolgen. 
 
 Die Werteregel ist typischerweise ein regulärer Ausdruck, der die erlaubten Zeichen und ihre Anordnung vorgibt.
 
@@ -26,7 +25,8 @@ The value rule is typically a regular expression that specifies the permitted ch
 
 Examples:
 Mountain name, 1-100 characters
-Mailadresse, ^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$
+Mailaddress, ^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$
+
 ]EN_ENTI_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
@@ -50,21 +50,58 @@ Mailadresse, ^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$
 <createSurrogateKey>true</createSurrogateKey>
 <propertyMap>
 <property name="DE_ENTI_NAME" value="Textlicher Wertebereich"/>
+<property name="DE_ENTI_SYNONYM" value=""/>
 <property name="EN_ENTI_NAME" value="Text domain"/>
+<property name="EN_ENTI_SYNONYM" value=""/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Max length" id="E2F20100-F3E8-3E95-BA43-0EEE3EE63B36">
+<Attribute name="*Min Länge" id="3BF3C2D8-5E06-475B-BF12-3A7610F5D0E8">
 <createdBy>stb</createdBy>
-<createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[Maximum length of text in letters (CHAR)]]></comment>
+<createdTime>2025-01-02 17:11:04 UTC</createdTime>
+<comment><![CDATA[*Miniimale Länge des Textes in Buchstaben]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
-Maximale Länge des Textes in Buchstaben (CHAR)
+*Miniimale Länge des Textes in Buchstaben
 ]DE_ATTR_COMMENT]
 [EN_ATTR_COMMENT[
-Maximum length of text in letters (CHAR)
+Minimum length of text (charactercount).
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C9DBFF99-FC63-E2AC-8EB8-BE5A63AA7B61</domain>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Maximale Länge des Textes in Buchstaben (CHAR)"/>
+<property name="DE_ATTR_NAME" value="*Min Länge"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Maximale Länge des Textes in Buchstaben (CHAR)"/>
+<property name="EN_ATTR_NAME" value="Min length"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Max Länge" id="E2F20100-F3E8-3E95-BA43-0EEE3EE63B36">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<comment><![CDATA[Maximale Länge des Textes (Anzahl Buchstaben)]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Maximale Länge des Textes (Anzahl Buchstaben)
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Maximum length of text (charactercount).
 ]EN_ATTR_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
@@ -91,10 +128,10 @@ Maximum length of text in letters (CHAR)
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="Value rule" id="CC367FCD-01E3-C3AF-28D1-CB4750AD7381">
+<Attribute name="Werteregel" id="CC367FCD-01E3-C3AF-28D1-CB4750AD7381">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[Restrictive rule for the permitted characters of a text.]]></comment>
+<comment><![CDATA[Einschränkende Regel für die erlaubten Zeichen eines Textes.]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
 Einschränkende Regel für die erlaubten Zeichen eines Textes.
 ]DE_ATTR_COMMENT]

@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DCBD002B-2410-0DBF-8213-73D67DAE0011" name="Element linkage">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DCBD002B-2410-0DBF-8213-73D67DAE0011" name="Elementverknüpfung">
 <createdBy>stb</createdBy>
 <createdTime>2020-10-08 15:56:33 UTC</createdTime>
 <notes><![CDATA[[DE_ENTI_COMMENT[
@@ -12,8 +12,8 @@
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -34,7 +34,7 @@
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="type of relation+E158" id="1E4D2790-2B56-2413-7AD3-2208F2E3DFFF">
+<Attribute name="Verknüpfungsart" id="1E4D2790-2B56-2413-7AD3-2208F2E3DFFF">
 <createdBy>stb</createdBy>
 <createdTime>2020-10-08 15:56:51 UTC</createdTime>
 <notes><![CDATA[[DE_ATTR_COMMENT[
@@ -47,8 +47,8 @@
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
@@ -62,7 +62,7 @@
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="Meaning" id="036BD82A-F3E9-DB4F-CC50-A576F3E3D76C">
+<Attribute name="Bedeutung" id="036BD82A-F3E9-DB4F-CC50-A576F3E3D76C">
 <createdBy>stb</createdBy>
 <createdTime>2020-10-08 15:57:03 UTC</createdTime>
 <notes><![CDATA[[DE_ATTR_COMMENT[
@@ -75,8 +75,8 @@
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
@@ -90,7 +90,7 @@
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="Representation" id="7B01FAB1-B40B-3176-E208-9F8FCBB400E5">
+<Attribute name="Darstellung" id="7B01FAB1-B40B-3176-E208-9F8FCBB400E5">
 <createdBy>stb</createdBy>
 <createdTime>2020-10-08 15:57:06 UTC</createdTime>
 <notes><![CDATA[[DE_ATTR_COMMENT[
@@ -103,8 +103,8 @@
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>

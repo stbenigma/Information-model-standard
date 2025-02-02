@@ -1,20 +1,20 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F740632B-7914-7B81-BBB6-4D51E8EE9FA5" name="Category">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F740632B-7914-7B81-BBB6-4D51E8EE9FA5" name="Kategorie">
 <createdBy>stb</createdBy>
 <createdTime>2021-03-31 09:07:07 UTC</createdTime>
-<comment><![CDATA[Group of domains, entities or categories. Categorizing elements for ease of communication, display and finding.]]></comment>
+<comment><![CDATA[*Gruppierung von Wertebereichen, Entitäten oder Kategorien für eine einfache Kommunikation, Anzeige oder Suche]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
-Gruppierung von Wertebereichen, Entitäten oder Kategorien für eine einfache Kommunikation, Anzeige oder Suche
+*Gruppierung von Wertebereichen, Entitäten oder Kategorien für eine einfache Kommunikation, Anzeige oder Suche
 ]DE_ENTI_COMMENT]
 [EN_ENTI_COMMENT[
-Group of domains, entities or categories. Categorizing elements for ease of communication, display and finding
+Group of domains, entities or categories. Categorizing elements for ease of communication, display and finding.
 ]EN_ENTI_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
 <typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
 <adequatelyNormalized>NO</adequatelyNormalized>
@@ -29,28 +29,30 @@ Group of domains, entities or categories. Categorizing elements for ease of comm
 <createSurrogateKey>true</createSurrogateKey>
 <propertyMap>
 <property name="DE_ENTI_NAME" value="Kategorie"/>
+<property name="DE_ENTI_SYNONYM" value=""/>
 <property name="EN_ENTI_NAME" value="Category"/>
+<property name="EN_ENTI_SYNONYM" value=""/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Name [L]" id="89B43D0C-F2AB-FFF0-355B-DC6EBFB3632D">
+<Attribute name="*Name" id="89B43D0C-F2AB-FFF0-355B-DC6EBFB3632D">
 <createdBy>stb</createdBy>
 <createdTime>2021-03-31 09:12:08 UTC</createdTime>
-<comment><![CDATA[Name of the category if it is not a reference to any other elements]]></comment>
+<comment><![CDATA[Name der Kategorie. Eindeutig innerhalt seiner Vater-Kategorie]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
-Name der Kategorie, wenn es sich nicht um einen Verweis auf ein anderes Element handelt
+Name der Kategorie. Eindeutig innerhalt seiner Vater-Kategorie
 ]DE_ATTR_COMMENT]
 [EN_ATTR_COMMENT[
-Name of the category if it is not a reference to any other elements
+Name of the category. Unique within its parent category
 ]EN_ATTR_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
 <use>0</use>
 <collectionType>D0BA98F4-3336-C58C-0438-638949E28E04</collectionType>
@@ -58,30 +60,30 @@ Name of the category if it is not a reference to any other elements
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="Name"/>
-<property name="EN_ATTR_NAME" value="Name"/>
+<property name="DE_ATTR_NAME" value="*Name"/>
+<property name="EN_ATTR_NAME" value="Name [L]"/>
 <property name="isdescriptive" value="TRUE"/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="Description [L]" id="7DD01FB7-0C60-2AC8-C0ED-36977D532927">
+<Attribute name="*Standard IE" id="7DD01FB7-0C60-2AC8-C0ED-36977D532927">
 <createdBy>stb</createdBy>
 <createdTime>2021-03-31 09:34:35 UTC</createdTime>
-<comment><![CDATA[default IU representation of an entity]]></comment>
+<comment><![CDATA[Grund, Bildungskriterien für diese Kategorie.]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
-Standard-IE-Darstellung einer Entität
+Grund, Bildungskriterien für diese Kategorie.
 ]DE_ATTR_COMMENT]
 [EN_ATTR_COMMENT[
-default IU representation of an entity
+Reason, building aspect for this category.
 ]EN_ATTR_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -91,45 +93,30 @@ default IU representation of an entity
 <domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="Standard IE"/>
-<property name="EN_ATTR_NAME" value="default IU"/>
+<property name="DE_ATTR_NAME" value="*Standard IE"/>
+<property name="EN_ATTR_NAME" value="Description [L]"/>
 <property name="isdescriptive" value="FALSE"/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="Name [L]1" id="90FC2E04-9B95-54B5-6ABB-F0A0E934F96E">
-<createdBy>stb</createdBy>
-<createdTime>2024-12-13 10:35:51 UTC</createdTime>
-<comment><![CDATA[Name of the category if it is not a reference to any other elements]]></comment>
-<generatorID>5991481B-E4FB-922B-F841-B6D8088109B1</generatorID>
-<ownerDesignName>IM-standard</ownerDesignName>
-<engineerTo>
-<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
-<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
-</engineerTo>
-<referedAttribute>89B43D0C-F2AB-FFF0-355B-DC6EBFB3632D</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<propertyMap>
-<property name="maxzoomlevel" value="4"/>
-<property name="minzoomlevel" value="0"/>
-<property name="publ_status" value="PUBL"/>
-</propertyMap>
-</Attribute>
-<Attribute name="Name" id="0B72657C-3011-1E6B-9580-B6B8CDBC8660">
+<Attribute name="*Name1" id="0B72657C-3011-1E6B-9580-B6B8CDBC8660">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-22 12:47:02 UTC</createdTime>
 <generatorID>F25D2523-2AC9-A8C9-613A-D59FA866413B</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
 <referedAttribute>AB6554AF-DFFF-EA79-99CF-84D5586888C1</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -138,10 +125,58 @@ default IU representation of an entity
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
+<property name="DE_ATTR_NAME" value="*EN* Name"/>
+<property name="EN_ATTR_NAME" value="Name"/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
+<Attribute name="*EN* *Name1" id="19AE8284-EC15-B650-419C-675BB2A24B8B">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-31 11:41:37 UTC</createdTime>
+<comment><![CDATA[*EN* Name of the category. Unique within its parent category]]></comment>
+<generatorID>5991481B-E4FB-922B-F841-B6D8088109B1</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+*EN* Name of the category. Unique within its parent category
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Name of the category. Unique within its parent category
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>89B43D0C-F2AB-FFF0-355B-DC6EBFB3632D</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="*EN* *Name1"/>
+<property name="EN_ATTR_NAME" value="*Name1"/>
+</propertyMap>
+</Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6ACD2C2C-682D-48D8-3B7E-F86D9209CEEA" name="Key_1">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-31 11:30:45 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<newElementsIDs>89B43D0C-F2AB-FFF0-355B-DC6EBFB3632D,5991481B-E4FB-922B-F841-B6D8088109B1</newElementsIDs>
+<usedAttributes>
+<attributeRef>89B43D0C-F2AB-FFF0-355B-DC6EBFB3632D</attributeRef>
+<attributeRef>19AE8284-EC15-B650-419C-675BB2A24B8B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="234A5520-6FC5-F97D-0838-A80335AEF71D" name="Key element">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="234A5520-6FC5-F97D-0838-A80335AEF71D" name="Schlüsselelement">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-09 14:48:30 UTC</createdTime>
-<comment><![CDATA[Attribute or (functional) Relationship ID beeing part of a key for the entity.]]></comment>
+<comment><![CDATA[Attribut- oder (funktionale) Beziehung, die Teil eines Schlüssels für die Entität ist.]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
 Attribut- oder (funktionale) Beziehung, die Teil eines Schlüssels für die Entität ist.
 ]DE_ENTI_COMMENT]
@@ -13,8 +13,8 @@ Attribute or (functional) Relationship ID beeing part of a key for the entity.
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
 <typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
 <adequatelyNormalized>NO</adequatelyNormalized>
@@ -28,11 +28,70 @@ Attribute or (functional) Relationship ID beeing part of a key for the entity.
 <shortName>KEYS</shortName>
 <propertyMap>
 <property name="DE_ENTI_NAME" value="Schlüsselelement"/>
+<property name="DE_ENTI_SYNONYM" value=""/>
 <property name="EN_ENTI_NAME" value="Key element"/>
+<property name="EN_ENTI_SYNONYM" value=""/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="*EN* Name [L]" id="009CEC47-0A35-0125-14EE-4843BB3294DD">
+<createdBy>stb</createdBy>
+<createdTime>2025-02-02 09:59:13 UTC</createdTime>
+<comment><![CDATA[*EN* unique Name of the entity normally used in communication.]]></comment>
+<generatorID>F509F179-4B45-A8E5-8C1E-27F318F8132B</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+*EN* unique Name of the entity normally used in communication.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+unique Name of the entity normally used in communication.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<referedAttribute>D09FA426-80FC-17E6-C0D7-FE5B2E397F26</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="*EN* Name [L]"/>
+<property name="EN_ATTR_NAME" value="*EN* Name [L]"/>
+</propertyMap>
+</Attribute>
+<Attribute name="*EN* *Name" id="9EF1DE80-14DF-7C83-0608-356FAFC0A2FD">
+<createdBy>stb</createdBy>
+<createdTime>2025-02-02 09:59:13 UTC</createdTime>
+<generatorID>F509F179-4B45-A8E5-8C1E-27F318F8132B</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<referedAttribute>5E6D0E19-FD6C-49F8-EB61-11F789F01DDF</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="*EN* *Name"/>
+<property name="EN_ATTR_NAME" value="*Name"/>
+</propertyMap>
+</Attribute>
+</attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="C2B95893-B868-4796-8082-647021F7B382" name="keyelem_uk">
 <createdBy>stb</createdBy>
@@ -40,10 +99,14 @@ Attribute or (functional) Relationship ID beeing part of a key for the entity.
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
 <newElementsIDs>F509F179-4B45-A8E5-8C1E-27F318F8132B,9DA7BF28-D7AF-5C4A-9346-FA3FE87BC0CB,872B80A8-6026-169F-A1E5-264E25EA7005</newElementsIDs>
+<usedAttributes>
+<attributeRef>009CEC47-0A35-0125-14EE-4843BB3294DD</attributeRef>
+<attributeRef>9EF1DE80-14DF-7C83-0608-356FAFC0A2FD</attributeRef>
+</usedAttributes>
 </identifier>
 </identifiers>
 </Entity>

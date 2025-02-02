@@ -5,13 +5,13 @@
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
 <arc>F037F331-CA82-3CB6-DF30-CEFF6D8B4971</arc>
 <identifying>false</identifying>
-<nameOnSource>serves as</nameOnSource>
-<nameOnTarget>is a</nameOnTarget>
+<nameOnSource>ist</nameOnSource>
+<nameOnTarget>*dient als</nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
@@ -22,9 +22,9 @@
 <deleteRule>NO ACTION</deleteRule>
 <propertyMap>
 <property name="DE_RELA_TEXT_FROM" value="ist"/>
-<property name="DE_RELA_TEXT_TO" value="dient als"/>
+<property name="DE_RELA_TEXT_TO" value="*dient als"/>
 <property name="EN_RELA_TEXT_FROM" value="serves as"/>
-<property name="EN_RELA_TEXT_TO" value="is"/>
+<property name="EN_RELA_TEXT_TO" value="is a"/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>

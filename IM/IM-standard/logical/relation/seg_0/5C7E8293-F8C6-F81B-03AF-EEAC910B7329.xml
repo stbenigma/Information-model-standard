@@ -5,14 +5,13 @@
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
-<sourcePk>0DCB8532-B1E4-BF67-1F61-05895B0E758E</sourcePk>
 <targetPk>A68A1B80-2EB2-814C-270C-7F92491C6CDB</targetPk>
 <identifying>false</identifying>
-<nameOnSource>contributes to</nameOnSource>
-<nameOnTarget>constructed from </nameOnTarget>
+<nameOnSource>trägt bei zu</nameOnSource>
+<nameOnTarget>*aufgebaut aus</nameOnTarget>
 <optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>*</sourceCardinality>
@@ -23,9 +22,9 @@
 <deleteRule>NO ACTION</deleteRule>
 <propertyMap>
 <property name="DE_RELA_TEXT_FROM" value="trägt bei zu"/>
-<property name="DE_RELA_TEXT_TO" value="aufgebaut aus"/>
+<property name="DE_RELA_TEXT_TO" value="*aufgebaut aus"/>
 <property name="EN_RELA_TEXT_FROM" value="contributes to"/>
-<property name="EN_RELA_TEXT_TO" value="constructed from"/>
+<property name="EN_RELA_TEXT_TO" value="constructed from "/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>

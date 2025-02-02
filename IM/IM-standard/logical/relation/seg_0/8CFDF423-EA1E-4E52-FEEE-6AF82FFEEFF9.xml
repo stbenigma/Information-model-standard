@@ -10,8 +10,8 @@
 </engineerTo>
 <arc>F143F2B8-C0BF-AEEA-3077-8D896BFC5595</arc>
 <identifying>false</identifying>
-<nameOnSource>explained with</nameOnSource>
-<nameOnTarget>explains</nameOnTarget>
+<nameOnSource>erklärt</nameOnSource>
+<nameOnTarget>erklärt mit</nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>

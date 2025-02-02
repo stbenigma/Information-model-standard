@@ -1,30 +1,30 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="1725C503-BB91-0A6D-6E10-6908B44EDA95" name="Domain">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="1725C503-BB91-0A6D-6E10-6908B44EDA95" name="Wertebereich">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:03:22 UTC</createdTime>
-<comment><![CDATA[Description of the value range of one (or more) attribute(s).
-It describes which technically relevant values a particular attribute may assume.
-The technical data type and display formats are defined in the implementation (software, databases) and are not of interest here.
+<comment><![CDATA[*Beschreibung der zulässigen Werte für ein oder mehrere Attribute.
+Die Typen Numerisch, Text, Zeit oder Aufzählung sind begrifflich zu verstehen.
+Reale Datentypen und ggf. Anzeigeformate und Speicherung werden in der Implementierung festgelegt.
 
-Group value ranges are several attributes that occur together. They are summarised under a new name for easier handling. Example: Telephone no. consisting of country code and telephone number. For the entity, the entire group is seen as one attribute, as the values belonging together must always occur together.
+Wertegruppen sind Attributgruppen, d.h. mehrere Attribute, die mehrfach zusammen vorkommen. Sie werden unter einem neuen Namen zusammengefasst, um die Handhabung zu erleichtern. 
 
-Value lists are value ranges in which all permitted values are shown in a list.
+List of Values (LOVs) sind explizite Aufzählungen aller erlaubten Werte.
 
-Examples
-Mountain name, 1-100 characters
-Mailadress, ^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$
-Integer 1..100
-Length, in mm, numeric(7,3) 
-Processing status (open, in progress, cancelled, completed)
-Geo coordinate (longitude, latitude)]]></comment>
+Beispiele:
+Bergname, 1-100 Zeichen
+Mailadresse, ^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$
+Ganzzahl 1..100
+Länge, in mm, numerisch(7,3) 
+Bearbeitungsstatus (Offen, inArbeit, abgebrochen, beendet)
+Geo-Koordinate (Längengrad, Breitengrad)]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
-Beschreibung des Wertebereichs eines (oder mehrerer) Attributs/e.
-Er beschreibt, welche fachlich relevanten Werte ein bestimmtes Attribut annehmen darf.
-Technischer Datentyp und Darstellungsformate werden in der Implementierung (Software, Datenbanken) festgelegt und interessieren hier nicht.
+*Beschreibung der zulässigen Werte für ein oder mehrere Attribute.
+Die Typen Numerisch, Text, Zeit oder Aufzählung sind begrifflich zu verstehen.
+Reale Datentypen und ggf. Anzeigeformate und Speicherung werden in der Implementierung festgelegt.
 
-Gruppenwertebereiche sind mehrere Attribute, die gemeinsam vorkommen. Sie werden für eine einfachere Handhabung unter einem neuen Namen zusammengefasst. Beispiel Telefon-Nr bestehend auf Landesvorwahl und Rufnummer. Für die Entität wird die gesamte Gruppe als ein Attribut gesehen, da die zusammgehörebnden Werte immer gemeinsam auftreten müssen.
+Wertegruppen sind Attributgruppen, d.h. mehrere Attribute, die mehrfach zusammen vorkommen. Sie werden unter einem neuen Namen zusammengefasst, um die Handhabung zu erleichtern. 
 
-Wertelisten sind Wertebereiche, bei denen sämtliche erlaubten Werte in einer Liste aufgeführt werden.
+List of Values (LOVs) sind explizite Aufzählungen aller erlaubten Werte.
 
 Beispiele:
 Bergname, 1-100 Zeichen
@@ -35,21 +35,22 @@ Bearbeitungsstatus (Offen, inArbeit, abgebrochen, beendet)
 Geo-Koordinate (Längengrad, Breitengrad)
 ]DE_ENTI_COMMENT]
 [EN_ENTI_COMMENT[
-Description of the value range of one (or more) attribute(s).
-It describes which technically relevant values a particular attribute may assume.
-The technical data type and display formats are defined in the implementation (software, databases) and are not of interest here.
+Description of the allowed values  of one or several attribute(s).
+The types numerical, text, time or enumeration are to be understood conceptually.
+Real data types and, if applicable, display formats and storage are defined in the implementation.
 
-Group value ranges are several attributes that occur together. They are summarised under a new name for easier handling. Example: Telephone no. consisting of country code and telephone number. For the entity, the entire group is seen as one attribute, as the values belonging together must always occur together.
+Value groups are attribute groups, i.e. several attributes that occur more than once together. They  are combined under a new name for ease of handling. 
 
-Value lists are value ranges in which all permitted values are shown in a list.
+List of Values (LOVs) are explicit enumerations of all allowed values.
 
-Examples
+Examples:
 Mountain name, 1-100 characters
 Mailadress, ^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$
 Integer 1..100
 Length, in mm, numeric(7,3) 
 Processing status (open, in progress, cancelled, completed)
 Geo coordinate (longitude, latitude)
+Telephone number (country code, connection number)
 ]EN_ENTI_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
@@ -68,7 +69,7 @@ Geo coordinate (longitude, latitude)
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <shortName>DOM</shortName>
-<synonym>Value Range</synonym>
+<synonym>Domäne</synonym>
 <generateDiscrimColumn>true</generateDiscrimColumn>
 <discriminatorColumnName>DOMA_TYPE</discriminatorColumnName>
 <createSurrogateKey>true</createSurrogateKey>
@@ -85,11 +86,12 @@ Geo coordinate (longitude, latitude)
 <Attribute name="Name [L]" id="59DD8C2A-74AA-122C-8E66-8E203419DBF9">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:03:22 UTC</createdTime>
+<comment><![CDATA[Eindeutiger Name des Wertebereichs]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
-
+Eindeutiger Name des Wertebereichs
 ]DE_ATTR_COMMENT]
 [EN_ATTR_COMMENT[
-
+Unique name of the domain
 ]EN_ATTR_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
@@ -114,14 +116,15 @@ Geo coordinate (longitude, latitude)
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="Description [L]" id="709F8112-9493-4D2A-368C-D0CCE5B2472E">
+<Attribute name="Beschreibung [L]" id="709F8112-9493-4D2A-368C-D0CCE5B2472E">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:03:22 UTC</createdTime>
+<comment><![CDATA[Zweck, Verwendung und verbale Beschreibung der zulässigen Werte, die in diesem Bereich definiert sind.]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
-
+Zweck, Verwendung und verbale Beschreibung der zulässigen Werte, die in diesem Bereich definiert sind.
 ]DE_ATTR_COMMENT]
 [EN_ATTR_COMMENT[
-
+Purpose, usage and verbal description of the allowable values defined by this domain.
 ]EN_ATTR_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
@@ -148,10 +151,17 @@ Geo coordinate (longitude, latitude)
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="Name" id="F37D4DC4-1583-3120-48ED-3EAA1B9F8E78">
+<Attribute name="*Name" id="F37D4DC4-1583-3120-48ED-3EAA1B9F8E78">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-16 07:16:15 UTC</createdTime>
 <generatorID>02B278BE-800C-F154-5470-FB778988EDED</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
@@ -165,9 +175,69 @@ Geo coordinate (longitude, latitude)
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
+<property name="DE_ATTR_NAME" value="*EN* Name"/>
+<property name="EN_ATTR_NAME" value="Name"/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="*EN* *Name11" id="3ABE44F0-F1BB-7734-CA9A-C2D821C16ED9">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-31 11:31:00 UTC</createdTime>
+<comment><![CDATA[*EN* Name of the category if it is not a reference to any other elements]]></comment>
+<generatorID>60041B83-7287-F0AD-B4EC-C41AED3FEC26</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+*EN* Name of the category if it is not a reference to any other elements
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Name of the category if it is not a reference to any other elements
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>89B43D0C-F2AB-FFF0-355B-DC6EBFB3632D</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="*EN* *Name1"/>
+<property name="EN_ATTR_NAME" value="*Name1"/>
+</propertyMap>
+</Attribute>
+<Attribute name="*EN* *Name1" id="D7017C1A-CAA3-2DC9-3739-7C4182F867CB">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-31 11:41:37 UTC</createdTime>
+<comment><![CDATA[*EN* Name of the category. Unique within its parent category]]></comment>
+<generatorID>60041B83-7287-F0AD-B4EC-C41AED3FEC26</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+*EN* Name of the category. Unique within its parent category
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Name of the category. Unique within its parent category
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>19AE8284-EC15-B650-419C-675BB2A24B8B</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="*EN* *Name1"/>
+<property name="EN_ATTR_NAME" value="*EN* *Name1"/>
 </propertyMap>
 </Attribute>
 </attributes>

@@ -5,14 +5,14 @@
 <ownerDesignName>IM-standard</ownerDesignName>
 <engineerTo>
 <item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
-<sourcePk>CA5A0928-7C2C-CE42-7A56-68EA1E3D8D41</sourcePk>
+<sourcePk>6ACD2C2C-682D-48D8-3B7E-F86D9209CEEA</sourcePk>
 <arc>E9668B3A-9622-F5BA-00D5-329C63AB1106</arc>
 <identifying>false</identifying>
-<nameOnSource>groups</nameOnSource>
-<nameOnTarget>grouped in</nameOnTarget>
+<nameOnSource>*gruppiert</nameOnSource>
+<nameOnTarget>*gruppiert in</nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>true</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
@@ -22,8 +22,10 @@
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 <propertyMap>
-<property name="DE_RELA_TEXT_FROM" value="gruppiert"/>
-<property name="DE_RELA_TEXT_TO" value="gruppiert in"/>
+<property name="DE_RELA_TEXT_FROM" value="*gruppiert"/>
+<property name="DE_RELA_TEXT_TO" value="*gruppiert in"/>
+<property name="EN_RELA_TEXT_FROM" value="groups"/>
+<property name="EN_RELA_TEXT_TO" value="grouped in"/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>

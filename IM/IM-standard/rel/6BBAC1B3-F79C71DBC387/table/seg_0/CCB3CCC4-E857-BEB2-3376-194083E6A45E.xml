@@ -51,21 +51,6 @@
 <property name="publ_status" value="GTOP"/>
 </propertyMap>
 </Column>
-<Column name="prefix" id="3E390812-07B1-94C5-0F06-65C8A6E93F68">
-<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
-<createdBy>stb</createdBy>
-<createdTime>2024-11-25 08:26:30 UTC</createdTime>
-<ownerDesignName>IM-standard</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<domain>4134D0C7-BB61-4182-3736-8DE33C572E80</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<propertyMap>
-<property name="publ_status" value="GTOP"/>
-</propertyMap>
-</Column>
 <Column name="description" id="F83E098A-AFF4-573D-E668-B604098662FC">
 <sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
 <createdBy>stb</createdBy>
@@ -81,7 +66,7 @@
 <property name="publ_status" value="GTOP"/>
 </propertyMap>
 </Column>
-<Column name="tooltip" id="177B67F9-80E2-823F-FEA5-8191910CBB00">
+<Column name="shortdescr" id="177B67F9-80E2-823F-FEA5-8191910CBB00">
 <sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
 <createdBy>stb</createdBy>
 <createdTime>2024-11-25 08:26:30 UTC</createdTime>
@@ -89,7 +74,7 @@
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<domain>D8C19083-EC1D-27E7-A2FD-5091C2B48044</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <propertyMap>
@@ -192,6 +177,7 @@
 <createdBy>stb</createdBy>
 <createdTime>2024-11-25 08:42:59 UTC</createdTime>
 <ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>

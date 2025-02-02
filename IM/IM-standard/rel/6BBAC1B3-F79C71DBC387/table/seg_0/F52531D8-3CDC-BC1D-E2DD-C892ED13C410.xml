@@ -90,7 +90,7 @@
 <property name="publ_status" value="GTOP"/>
 </propertyMap>
 </Column>
-<Column name="tooltip" id="871A2EB2-2659-534F-A09E-74649209531A">
+<Column name="shortdescr" id="871A2EB2-2659-534F-A09E-74649209531A">
 <sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
 <createdBy>stb</createdBy>
 <createdTime>2024-11-25 08:26:06 UTC</createdTime>
@@ -98,6 +98,8 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>D8C19083-EC1D-27E7-A2FD-5091C2B48044</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <propertyMap>
