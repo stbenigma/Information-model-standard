@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C2AD7328-2E70-C424-A9DD-5DC855F3EDE8" name="Zusätzliche Eigenschaft">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:03:22 UTC</createdTime>
-<comment><![CDATA[*Für projekt- oder umgebungsspezifische Erweiterungen, können für jedes Modellelement eigene Eigenschaften definiert werden.
+<comment><![CDATA[Für projekt- oder umgebungsspezifische Erweiterungen, können für jedes Modellelement eigene Eigenschaften definiert werden.
 
 Beispiel:
 - Qualitätsanspruch-Level
@@ -20,8 +20,6 @@ For project- or environment-specific extensions, separate properties can be defi
 Examples: 
 Quality requirement level
 Security level
-
-
 ]EN_ENTI_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
@@ -84,7 +82,7 @@ Security level
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="*Standardwert" id="4A7B398E-26D2-68A3-B252-6D7F75EBB6A0">
+<Attribute name="Standardwert" id="4A7B398E-26D2-68A3-B252-6D7F75EBB6A0">
 <createdBy>stb</createdBy>
 <createdTime>2021-03-23 13:57:30 UTC</createdTime>
 <notes><![CDATA[[EN_ATTR_COMMENT[

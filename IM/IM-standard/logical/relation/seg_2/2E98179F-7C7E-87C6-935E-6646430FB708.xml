@@ -10,7 +10,7 @@
 </engineerTo>
 <useSurrogateKey>true</useSurrogateKey>
 <identifying>false</identifying>
-<nameOnSource>*definiert</nameOnSource>
+<nameOnSource>definiert</nameOnSource>
 <nameOnTarget>gemessen in</nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>true</optionalTarget>
@@ -21,7 +21,7 @@
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 <propertyMap>
-<property name="DE_RELA_TEXT_FROM" value="*definiert"/>
+<property name="DE_RELA_TEXT_FROM" value="definiert"/>
 <property name="DE_RELA_TEXT_TO" value="gemessen in"/>
 <property name="EN_RELA_TEXT_FROM" value="defines"/>
 <property name="EN_RELA_TEXT_TO" value="measured in"/>

@@ -11,7 +11,7 @@
 <arc>F037F331-CA82-3CB6-DF30-CEFF6D8B4971</arc>
 <identifying>false</identifying>
 <nameOnSource>ist</nameOnSource>
-<nameOnTarget>*dient als</nameOnTarget>
+<nameOnTarget>dient als</nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
@@ -22,7 +22,7 @@
 <deleteRule>NO ACTION</deleteRule>
 <propertyMap>
 <property name="DE_RELA_TEXT_FROM" value="ist"/>
-<property name="DE_RELA_TEXT_TO" value="*dient als"/>
+<property name="DE_RELA_TEXT_TO" value="dient als"/>
 <property name="EN_RELA_TEXT_FROM" value="serves as"/>
 <property name="EN_RELA_TEXT_TO" value="is a"/>
 <property name="maxzoomlevel" value="4"/>

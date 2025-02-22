@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="404BAB59-D88C-9275-EAA6-D33642623799" name="Beziehungsende">
 <createdBy>stb</createdBy>
 <createdTime>2022-11-03 06:36:18 UTC</createdTime>
-<comment><![CDATA[*Endpunkt einer Beziehung. Anknüpfungspunkt der Relation an eine Entität.
+<comment><![CDATA[Endpunkt einer Beziehung. Anknüpfungspunkt der Relation an eine Entität.
 Es gibt immer genau 2 Endpunkte in einer Relation.
 Es gibt eine Richtung der Beziehung: vorwärts/rückwärts
 Zur Vereinfachung der Verwendung der verschiedenen Arten der Beziehung Rolle, funktional, viele-2-viele verwenden spezifische Beziehung endet als vorwärts und rückwärts.
@@ -44,7 +44,6 @@ An address must be in a postcode area.
 A postcode area can contain many addresses.
 A bus optionally travels several routes.
 A route is optionally travelled by many buses.
-
 ]EN_ENTI_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
@@ -73,10 +72,10 @@ A route is optionally travelled by many buses.
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="*EN* Relation end type" id="DAA092E2-8804-8CBD-683E-330085B31F4C">
+<Attribute name="Relationsendetyp" id="DAA092E2-8804-8CBD-683E-330085B31F4C">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-29 15:21:28 UTC</createdTime>
-<comment><![CDATA[*Richtung der Beziehung.  (vorwärts / rückwärts)
+<comment><![CDATA[Richtung der Beziehung.  (vorwärts / rückwärts)
 Bei Rollen- und Funktionsbeziehungen beginnen die Beziehungen mit der Child- bzw. Many-Seite.
 Bei Many-2-Many-Beziehungen ist es beliebig, welches Ende welches ist.]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
@@ -88,7 +87,6 @@ Bei Many-2-Many-Beziehungen ist es beliebig, welches Ende welches ist.
 Direction of relationship.  (forward / reverse)
 For role- and functional relationships the relationships start with the child- resp. the many-side.
 For many-2-many relationships it is abitrary which end is which.
-
 ]EN_ATTR_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
@@ -102,7 +100,7 @@ For many-2-many relationships it is abitrary which end is which.
 <domain>D7358D01-5940-01DA-912E-C6AA71503BF2</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="*EN* Relation end type"/>
+<property name="DE_ATTR_NAME" value="Relationsendetyp"/>
 <property name="EN_ATTR_NAME" value="Relation end type"/>
 </propertyMap>
 </Attribute>
@@ -164,13 +162,12 @@ contained in
 <Attribute name="Kardinalität" id="16253B8A-8A27-7C6E-AB98-5DE1711A9D59">
 <createdBy>stb</createdBy>
 <createdTime>2022-11-03 06:47:28 UTC</createdTime>
-<comment><![CDATA[*Eine Instanz der ersten Entität kann wie viele Beziehungen zu Instanzen der zweiten Entität haben. Es werden nur 1 (1) oder viele (M) unterschieden. 0 wird durch das obligatorisch Flag ausgedrückt. Viele ist nach oben offen und beinhaltet auch die Möglichkeit 1.]]></comment>
+<comment><![CDATA[Eine Instanz der ersten Entität kann wie viele Beziehungen zu Instanzen der zweiten Entität haben. Es werden nur 1 (1) oder viele (M) unterschieden. 0 wird durch das obligatorisch Flag ausgedrückt. Viele ist nach oben offen und beinhaltet auch die Möglichkeit 1.]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
 *Eine Instanz der ersten Entität kann wie viele Beziehungen zu Instanzen der zweiten Entität haben. Es werden nur 1 (1) oder viele (M) unterschieden. 0 wird durch das obligatorisch Flag ausgedrückt. Viele ist nach oben offen und beinhaltet auch die Möglichkeit 1.
 ]DE_ATTR_COMMENT]
 [EN_ATTR_COMMENT[
 An instance of the first entity can have how many relationships to instances of the second entity. Only 1 (1) or many (M) are distinguished. 0 is expressed by the mandatory flag. Many is open at the top and also includes the possibility of 1.
-
 ]EN_ATTR_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
@@ -228,12 +225,12 @@ Does every instance of the first entity have to have a relationship to at least 
 <Attribute name="ist historisiert" id="408D42F2-512E-DAC9-FD84-30B536726B48">
 <createdBy>stb</createdBy>
 <createdTime>2022-11-03 06:47:28 UTC</createdTime>
-<comment><![CDATA[*Wahr -> Beziehung kann sich im Laufe der Zeit ändern. Es kann nur eine Beziehung zwischen zwei Instanzen der Entitäten zu einem bestimmten Zeitpunkt bestehen. Das System muss eine Historie der Änderungen führen.]]></comment>
+<comment><![CDATA[Wahr -> Beziehung kann sich im Laufe der Zeit ändern. Es kann nur eine Beziehung zwischen zwei Instanzen der Entitäten zu einem bestimmten Zeitpunkt bestehen. Das System muss eine Historie der Änderungen führen.]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
 *Wahr -> Beziehung kann sich im Laufe der Zeit ändern. Es kann nur eine Beziehung zwischen zwei Instanzen der Entitäten zu einem bestimmten Zeitpunkt bestehen. Das System muss eine Historie der Änderungen führen.
 ]DE_ATTR_COMMENT]
 [EN_ATTR_COMMENT[
-True -> Relationship can change over time. Only 1 relationship can exist between two instances of the entities at one specific time. System must keep history of changes. 
+True -> Relationship can change over time. Only 1 relationship can exist between two instances of the entities at one specific time. System must keep history of changes.
 ]EN_ATTR_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
@@ -292,13 +289,13 @@ Arbitrary naming to distinguish multiple exclusive relationships in an entity. I
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="*EN* Name [L]1" id="5D2CFC9F-C295-BAC2-7516-68742C3DA7B3">
+<Attribute name="Name1 [L]" id="5D2CFC9F-C295-BAC2-7516-68742C3DA7B3">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-31 10:21:30 UTC</createdTime>
-<comment><![CDATA[*EN* unique Name of the entity normally used in communication.]]></comment>
+<comment><![CDATA[Eindeutiger Name, normalerweise in Kommunikation genutzt.]]></comment>
 <generatorID>3140D369-7F42-15FD-F0B1-8F385B6A588C</generatorID>
 <notes><![CDATA[[DE_ATTR_COMMENT[
-*EN* unique Name of the entity normally used in communication.
+Eindeutiger Name, normalerweise in Kommunikation genutzt.
 ]DE_ATTR_COMMENT]
 [EN_ATTR_COMMENT[
 unique Name of the entity normally used in communication.
@@ -316,11 +313,11 @@ unique Name of the entity normally used in communication.
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="*EN* Name [L]"/>
-<property name="EN_ATTR_NAME" value="Name [L]"/>
+<property name="DE_ATTR_NAME" value="Name1 [L]"/>
+<property name="EN_ATTR_NAME" value="Name1 [L]"/>
 </propertyMap>
 </Attribute>
-<Attribute name="*EN* *Name" id="0A192539-2B66-FE85-3E07-5D2054737040">
+<Attribute name="Name3" id="0A192539-2B66-FE85-3E07-5D2054737040">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-31 10:21:30 UTC</createdTime>
 <generatorID>3140D369-7F42-15FD-F0B1-8F385B6A588C</generatorID>
@@ -343,17 +340,17 @@ unique Name of the entity normally used in communication.
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="*EN* *Name"/>
-<property name="EN_ATTR_NAME" value="*Name"/>
+<property name="DE_ATTR_NAME" value="Name"/>
+<property name="EN_ATTR_NAME" value="Name"/>
 </propertyMap>
 </Attribute>
-<Attribute name="*EN* Name [L]" id="BB4CC15D-E044-B91D-BA4C-A6F2ED768F1F">
+<Attribute name="Name [L]" id="BB4CC15D-E044-B91D-BA4C-A6F2ED768F1F">
 <createdBy>stb</createdBy>
 <createdTime>2025-02-02 09:59:13 UTC</createdTime>
-<comment><![CDATA[*EN* unique Name of the entity normally used in communication.]]></comment>
+<comment><![CDATA[Eindeutiger Name, normalerweise in Kommunikation genutzt.]]></comment>
 <generatorID>B712AF79-B1C9-F450-CD8F-BBDDE63E64B2</generatorID>
 <notes><![CDATA[[DE_ATTR_COMMENT[
-*EN* unique Name of the entity normally used in communication.
+Eindeutiger Name, normalerweise in Kommunikation genutzt.
 ]DE_ATTR_COMMENT]
 [EN_ATTR_COMMENT[
 unique Name of the entity normally used in communication.
@@ -372,11 +369,11 @@ unique Name of the entity normally used in communication.
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="*EN* Name [L]"/>
-<property name="EN_ATTR_NAME" value="*EN* Name [L]"/>
+<property name="DE_ATTR_NAME" value="Name [L]"/>
+<property name="EN_ATTR_NAME" value="Name [L]"/>
 </propertyMap>
 </Attribute>
-<Attribute name="*EN* *Name1" id="21AD8D88-29C0-B3D9-5AEF-51E80B095BC4">
+<Attribute name="Name2" id="21AD8D88-29C0-B3D9-5AEF-51E80B095BC4">
 <createdBy>stb</createdBy>
 <createdTime>2025-02-02 09:59:13 UTC</createdTime>
 <generatorID>B712AF79-B1C9-F450-CD8F-BBDDE63E64B2</generatorID>
@@ -400,8 +397,8 @@ unique Name of the entity normally used in communication.
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="*EN* *Name1"/>
-<property name="EN_ATTR_NAME" value="*Name1"/>
+<property name="DE_ATTR_NAME" value="Name1"/>
+<property name="EN_ATTR_NAME" value="Name1"/>
 </propertyMap>
 </Attribute>
 </attributes>

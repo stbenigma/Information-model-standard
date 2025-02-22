@@ -2,11 +2,11 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="A23E6C38-310F-4379-F953-0B04C1A4B16F" name="Entität">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:03:22 UTC</createdTime>
-<comment><![CDATA[*Bezeichnet eine Sache von Interesse in diesem Einflussbereich (Zielumgebung). Ein Wesen, ein materielles oder immaterielles (abstraktes) Objekt mit Eigenschaften und Beziehungen.
+<comment><![CDATA[Bezeichnet eine Sache von Interesse in diesem Einflussbereich (Zielumgebung). Ein Wesen, ein materielles oder immaterielles (abstraktes) Objekt mit Eigenschaften und Beziehungen.
 Es handelt sich um eine konsolidierte Beschreibung der Struktur und Bedeutung der Sache von Interesse. Die Beschreibung ist unabhängig von der Verwendung dieser Entität in Geschäfts- oder IT-Prozessen. Sie ist ferner unabhängig von jeder Art der Implementierung als Daten oder Programmcode in einem beliebigen IT-System.
 Ein Entitätsname ist in der betrachteten Umgebung eindeutig. Die Definition der Entität (Attribute, Beschreibung, Regeln, Beziehungen, ...) ist die einzig gültige Interpretation, die mit ihrem Namen ausgedrückt wird.]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
-*Bezeichnet eine Sache von Interesse in diesem Einflussbereich (Zielumgebung). Ein Wesen, ein materielles oder immaterielles (abstraktes) Objekt mit Eigenschaften und Beziehungen.
+Bezeichnet eine Sache von Interesse in diesem Einflussbereich (Zielumgebung). Ein Wesen, ein materielles oder immaterielles (abstraktes) Objekt mit Eigenschaften und Beziehungen.
 Es handelt sich um eine konsolidierte Beschreibung der Struktur und Bedeutung der Sache von Interesse. Die Beschreibung ist unabhängig von der Verwendung dieser Entität in Geschäfts- oder IT-Prozessen. Sie ist ferner unabhängig von jeder Art der Implementierung als Daten oder Programmcode in einem beliebigen IT-System.
 Ein Entitätsname ist in der betrachteten Umgebung eindeutig. Die Definition der Entität (Attribute, Beschreibung, Regeln, Beziehungen, ...) ist die einzig gültige Interpretation, die mit ihrem Namen ausgedrückt wird.
 ]DE_ENTI_COMMENT]
@@ -46,9 +46,7 @@ Means of transport
 <createSurrogateKey>true</createSurrogateKey>
 <propertyMap>
 <property name="DE_ENTI_NAME" value="Entität"/>
-<property name="DE_ENTI_SYNONYM" value=""/>
 <property name="EN_ENTI_NAME" value="Entity"/>
-<property name="EN_ENTI_SYNONYM" value=""/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>
@@ -123,10 +121,10 @@ Meaning, benefits, usage  of the Entity
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="*Kurzbeschrieb [L]" id="09BFD6A9-516C-6EA2-95BC-6189D7482BFC">
+<Attribute name="Kurzbeschrieb [L]" id="09BFD6A9-516C-6EA2-95BC-6189D7482BFC">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:03:22 UTC</createdTime>
-<comment><![CDATA[*Kurze Beschreibng der Bedeutung. Z.B. für Anzeige als Tooltip für Bediener:innen in der Benutzerschnittstelle.]]></comment>
+<comment><![CDATA[Kurze Beschreibng der Bedeutung. Z.B. für Anzeige als Tooltip für Bediener:innen in der Benutzerschnittstelle.]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
 *Kurze Beschreibng der Bedeutung. Z.B. für Anzeige als Tooltip für Bediener:innen in der Benutzerschnittstelle.
 ]DE_ATTR_COMMENT]
@@ -192,16 +190,15 @@ List of synonym names for this thing beeing used in old systems or out of habit.
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="*Kurzname [L]" id="5E305761-9FBD-94B3-D12B-A0811406A63D">
+<Attribute name="Kurzname [L]" id="5E305761-9FBD-94B3-D12B-A0811406A63D">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:03:22 UTC</createdTime>
-<comment><![CDATA[*nicht leerer Kurztext, der häufig für Referenzen verwendet wird. Verwendung von Buchstaben, Ziffern und ' ',-,:,$,_]]></comment>
+<comment><![CDATA[nicht leerer Kurztext, der häufig für Referenzen verwendet wird. Verwendung von Buchstaben, Ziffern und ' ',-,:,$,_]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
 *nicht leerer Kurztext, der häufig für Referenzen verwendet wird. Verwendung von Buchstaben, Ziffern und ' ',-,:,$,_
 ]DE_ATTR_COMMENT]
 [EN_ATTR_COMMENT[
-nonempty short text for often used for references. Using letters, digits and ' ',-,:,$,_ 
-
+nonempty short text for often used for references. Using letters, digits and ' ',-,:,$,_
 ]EN_ATTR_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
@@ -228,7 +225,7 @@ nonempty short text for often used for references. Using letters, digits and ' '
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="*Name" id="970C26B8-4A9C-9B24-92F4-85B0E648E1F5">
+<Attribute name="Name" id="970C26B8-4A9C-9B24-92F4-85B0E648E1F5">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-13 15:57:07 UTC</createdTime>
 <generatorID>5C7E8293-F8C6-F81B-03AF-EEAC910B7329</generatorID>
@@ -252,7 +249,7 @@ nonempty short text for often used for references. Using letters, digits and ' '
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="*EN* Name"/>
+<property name="DE_ATTR_NAME" value="*Name"/>
 <property name="EN_ATTR_NAME" value="Name"/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>

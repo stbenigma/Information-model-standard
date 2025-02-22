@@ -11,8 +11,8 @@
 <sourcePk>6ACD2C2C-682D-48D8-3B7E-F86D9209CEEA</sourcePk>
 <arc>E9668B3A-9622-F5BA-00D5-329C63AB1106</arc>
 <identifying>false</identifying>
-<nameOnSource>*gruppiert</nameOnSource>
-<nameOnTarget>*gruppiert in</nameOnTarget>
+<nameOnSource>gruppiert</nameOnSource>
+<nameOnTarget>gruppiert in</nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>true</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
@@ -22,8 +22,8 @@
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 <propertyMap>
-<property name="DE_RELA_TEXT_FROM" value="*gruppiert"/>
-<property name="DE_RELA_TEXT_TO" value="*gruppiert in"/>
+<property name="DE_RELA_TEXT_FROM" value="gruppiert"/>
+<property name="DE_RELA_TEXT_TO" value="gruppiert in"/>
 <property name="EN_RELA_TEXT_FROM" value="groups"/>
 <property name="EN_RELA_TEXT_TO" value="grouped in"/>
 <property name="maxzoomlevel" value="4"/>

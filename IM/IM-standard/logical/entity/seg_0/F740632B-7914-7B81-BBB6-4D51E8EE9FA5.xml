@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F740632B-7914-7B81-BBB6-4D51E8EE9FA5" name="Kategorie">
 <createdBy>stb</createdBy>
 <createdTime>2021-03-31 09:07:07 UTC</createdTime>
-<comment><![CDATA[*Gruppierung von Wertebereichen, Entitäten oder Kategorien für eine einfache Kommunikation, Anzeige oder Suche]]></comment>
+<comment><![CDATA[Gruppierung von Wertebereichen, Entitäten oder Kategorien für eine einfache Kommunikation, Anzeige oder Suche]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
 *Gruppierung von Wertebereichen, Entitäten oder Kategorien für eine einfache Kommunikation, Anzeige oder Suche
 ]DE_ENTI_COMMENT]
@@ -37,7 +37,7 @@ Group of domains, entities or categories. Categorizing elements for ease of comm
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="*Name" id="89B43D0C-F2AB-FFF0-355B-DC6EBFB3632D">
+<Attribute name="Name [L]" id="89B43D0C-F2AB-FFF0-355B-DC6EBFB3632D">
 <createdBy>stb</createdBy>
 <createdTime>2021-03-31 09:12:08 UTC</createdTime>
 <comment><![CDATA[Name der Kategorie. Eindeutig innerhalt seiner Vater-Kategorie]]></comment>
@@ -68,7 +68,7 @@ Name of the category. Unique within its parent category
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="*Standard IE" id="7DD01FB7-0C60-2AC8-C0ED-36977D532927">
+<Attribute name="Beschreibung [L]" id="7DD01FB7-0C60-2AC8-C0ED-36977D532927">
 <createdBy>stb</createdBy>
 <createdTime>2021-03-31 09:34:35 UTC</createdTime>
 <comment><![CDATA[Grund, Bildungskriterien für diese Kategorie.]]></comment>
@@ -101,7 +101,7 @@ Reason, building aspect for this category.
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="*Name1" id="0B72657C-3011-1E6B-9580-B6B8CDBC8660">
+<Attribute name="Name1" id="0B72657C-3011-1E6B-9580-B6B8CDBC8660">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-22 12:47:02 UTC</createdTime>
 <generatorID>F25D2523-2AC9-A8C9-613A-D59FA866413B</generatorID>
@@ -125,17 +125,17 @@ Reason, building aspect for this category.
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="*EN* Name"/>
+<property name="DE_ATTR_NAME" value="Name"/>
 <property name="EN_ATTR_NAME" value="Name"/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="*EN* *Name1" id="19AE8284-EC15-B650-419C-675BB2A24B8B">
+<Attribute name="Name2" id="19AE8284-EC15-B650-419C-675BB2A24B8B">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-31 11:41:37 UTC</createdTime>
-<comment><![CDATA[*EN* Name of the category. Unique within its parent category]]></comment>
+<comment><![CDATA[Name der Kategorie. Eindeutig innerhalt seiner Vater-Kategorie]]></comment>
 <generatorID>5991481B-E4FB-922B-F841-B6D8088109B1</generatorID>
 <notes><![CDATA[[DE_ATTR_COMMENT[
 *EN* Name of the category. Unique within its parent category
@@ -157,8 +157,8 @@ Name of the category. Unique within its parent category
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="*EN* *Name1"/>
-<property name="EN_ATTR_NAME" value="*Name1"/>
+<property name="DE_ATTR_NAME" value="Name [L]1"/>
+<property name="EN_ATTR_NAME" value="Name2"/>
 </propertyMap>
 </Attribute>
 </attributes>

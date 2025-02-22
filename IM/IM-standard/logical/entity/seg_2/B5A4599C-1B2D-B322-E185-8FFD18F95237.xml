@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_2" id="B5A4599C-1B2D-B322-E185-8FFD18F95237" name="viele-zu-viele Beziehung">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[*DIe many-to-many Beziehung verknüpft in beide Richung 1 Instanz der einen Entität mit 0.. vielen Instanzen der anderen Entität.
+<comment><![CDATA[Die many-to-many Beziehung verknüpft in beide Richung 1 Instanz der einen Entität mit 0.. vielen Instanzen der anderen Entität.
 Die Kardinalität muss bei beiden Enden "M" sein. Assoziationstexte sind in beide Richtungen Pflicht.
 
 Eine many-to-many Beziehung impliziert immer eine weitere Entität, die diese Art der Verknüpfung abbildet. Wir verzichten im Informationsmodell dzu Gunsten der einfacheren Darstellung darauf, diese zusätzliche Entität (mit je einer Verbindung zu den beiden Entitäten) darzustellen. Sobald dieses zusätzliche Entität aber Attribute oder Beziehungen hat, muss sie als normale Entität dokumentiert werden.
@@ -29,7 +29,6 @@ A many-to-many relationship always implies another entity that represents this t
 Examples:
 An order contains many items. - An item is ordered in many orders.
 One person is contacted by many people - One person contacts many people.
-
 ]EN_ENTI_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>

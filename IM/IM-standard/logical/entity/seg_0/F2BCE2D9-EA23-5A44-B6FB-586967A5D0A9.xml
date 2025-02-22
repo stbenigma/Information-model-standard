@@ -2,14 +2,13 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F2BCE2D9-EA23-5A44-B6FB-586967A5D0A9" name="Generisches Element">
 <createdBy>stb</createdBy>
 <createdTime>2022-10-05 14:17:42 UTC</createdTime>
-<comment><![CDATA[*Generisches Element. Beispiel oder user defined property die zur Beschreibung eines Elements beitragen.]]></comment>
+<comment><![CDATA[Generisches Element. Beispiel oder user defined property die zur Beschreibung eines Elements beitragen.]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
 *Generisches Element. Beispiel oder user defined property die zur Beschreibung eines Elements beitragen.
 ]DE_ENTI_COMMENT]
 [EN_ENTI_COMMENT[
 Generic expansion of elements
 Example or user defined property adding to the documentation of an element.
-
 ]EN_ENTI_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
@@ -72,7 +71,7 @@ Name that says something about the role, use of the property in the entity. Freq
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="*EN* Name [L]" id="1DA0BEE6-62A0-9F07-67FB-053FAAFCE598">
+<Attribute name="Name [L]" id="1DA0BEE6-62A0-9F07-67FB-053FAAFCE598">
 <createdBy>stb</createdBy>
 <createdTime>2024-11-25 08:08:10 UTC</createdTime>
 <generatorID>1C57893A-ED27-EB0B-98EC-F1C0508D2E80</generatorID>
@@ -103,7 +102,7 @@ Name that says something about the role, use of the property in the entity. Freq
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="*EN* Name [L]1" id="4790401F-8731-2A98-A4C2-26036EA7EF8A">
+<Attribute name="Name [L]1" id="4790401F-8731-2A98-A4C2-26036EA7EF8A">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-31 10:21:30 UTC</createdTime>
 <comment><![CDATA[*EN* unique Name of the entity normally used in communication.]]></comment>
@@ -131,7 +130,7 @@ unique Name of the entity normally used in communication.
 <property name="EN_ATTR_NAME" value="Name [L]1"/>
 </propertyMap>
 </Attribute>
-<Attribute name="*Name" id="0295C5D8-4492-DD4A-6FE5-300AC05D8BA3">
+<Attribute name="Name" id="0295C5D8-4492-DD4A-6FE5-300AC05D8BA3">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-31 10:21:30 UTC</createdTime>
 <generatorID>DAC25E4B-D658-59E0-E516-81E0449DBBA0</generatorID>
@@ -154,8 +153,8 @@ unique Name of the entity normally used in communication.
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="*EN* Name"/>
-<property name="EN_ATTR_NAME" value="*EN* Name"/>
+<property name="DE_ATTR_NAME" value="Name"/>
+<property name="EN_ATTR_NAME" value="Name"/>
 </propertyMap>
 </Attribute>
 </attributes>

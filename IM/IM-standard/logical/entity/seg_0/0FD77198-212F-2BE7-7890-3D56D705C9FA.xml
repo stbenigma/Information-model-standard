@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0FD77198-212F-2BE7-7890-3D56D705C9FA" name="*Entitätsttribut">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0FD77198-212F-2BE7-7890-3D56D705C9FA" name="Entitätsttribut">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-02 12:36:48 UTC</createdTime>
-<comment><![CDATA[*Beschreibung eines Behälters eines Wertes eines Entität in der Wirklichkeit (Ding/Objekt).
+<comment><![CDATA[Beschreibung eines Behälters eines Wertes eines Entität in der Wirklichkeit (Ding/Objekt).
 
 Beispiele:
 Name
@@ -43,10 +43,10 @@ Geo-Coordinate
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
-<shortName>ATTR</shortName>
+<shortName>EATT</shortName>
 <synonym>Merkmal,Eigenschaft</synonym>
 <propertyMap>
-<property name="DE_ENTI_NAME" value="*Entitätsttribut"/>
+<property name="DE_ENTI_NAME" value="Entitätsttribut"/>
 <property name="DE_ENTI_SYNONYM" value="Merkmal,Eigenschaft"/>
 <property name="EN_ENTI_NAME" value="Entity Attribute"/>
 <property name="EN_ENTI_SYNONYM" value="Characteristic,property"/>
@@ -88,10 +88,10 @@ The attribute characterizes the entity and is important for its understanding
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="*EN* Name [L]" id="AFCEE916-C7E0-CAB1-C582-586BD224D031">
+<Attribute name="Name [L]" id="AFCEE916-C7E0-CAB1-C582-586BD224D031">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-31 10:21:30 UTC</createdTime>
-<comment><![CDATA[*EN* unique Name of the entity normally used in communication.]]></comment>
+<comment><![CDATA[Eindeutiger Name, normalerweise in Kommunikation genutzt.]]></comment>
 <generatorID>F1749DBB-E61F-885C-00D6-38610D00E567</generatorID>
 <notes><![CDATA[[DE_ATTR_COMMENT[
 *EN* unique Name of the entity normally used in communication.
@@ -116,7 +116,7 @@ unique Name of the entity normally used in communication.
 <property name="EN_ATTR_NAME" value="Name [L]"/>
 </propertyMap>
 </Attribute>
-<Attribute name="*Name" id="164CD9CB-0AF4-4606-4351-D82BF2B145CE">
+<Attribute name="Name" id="164CD9CB-0AF4-4606-4351-D82BF2B145CE">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-31 10:21:30 UTC</createdTime>
 <generatorID>F1749DBB-E61F-885C-00D6-38610D00E567</generatorID>
@@ -139,8 +139,8 @@ unique Name of the entity normally used in communication.
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="*EN* Name"/>
-<property name="EN_ATTR_NAME" value="*EN* Name"/>
+<property name="DE_ATTR_NAME" value="*Name"/>
+<property name="EN_ATTR_NAME" value="Name"/>
 </propertyMap>
 </Attribute>
 </attributes>

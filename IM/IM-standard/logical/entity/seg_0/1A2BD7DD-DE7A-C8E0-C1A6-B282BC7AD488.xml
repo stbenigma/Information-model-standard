@@ -47,8 +47,6 @@ Ein Planet umkreist einen Stern. - Ein Stern wird umkreist von 0 - vielen Planet
 Ein Bus ist ein Verkehrsmittel. - Ein Verkehrsmittel kann ein Bus sein.
 Ein Zug ist ein Verkehrsmittel.- Ein Verkehrsmittel kann ein Zug sein.
 Ein Kunde kaufte 0 - viele Produkte.  -  Ein Produkt kann gekauft werden von 0 - vielen Kunden.
-
-
 ]DE_ENTI_COMMENT]
 [EN_ENTI_COMMENT[
 A relationship always connects one entity (start entity) with exactly one second entity (end/reverse entity). 

@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="9A6ABC18-5650-0FB0-E73C-B83E71DE19B1" name="Zeitpunkt Wertebereich">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[*Werte die einen Zeitpunkt beschreiben.
+<comment><![CDATA[Werte die einen Zeitpunkt beschreiben.
 Die Genauigkeit des Wertes  wird durch die Granularität festgelegt (Miliosekunde, Sekunde, Minute, Stunde, Tag, Woche, Monat, Quartal, Halbjahr, Jahr, Jahrhundert).
 Weder die Speicherung noch die textliche Darstellung des Zeitpunkts ist Teil des Informationsmodells. Dies wird in der Datenbank- oder UI-Spezifikation behandelt.
 
@@ -29,7 +29,6 @@ Examples:
 2024-06-11 15:65:13.076
 January, 2025
 Isoweek 42 2023
-
 ]EN_ENTI_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
@@ -64,7 +63,7 @@ Isoweek 42 2023
 <Attribute name="Min Zeitpunkt" id="F8E42CB1-E43D-0D27-9900-D7A7BD67D0D6">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[*frühestes Zeitpunkt in diesem Attribut. Leer -> es gibt keine Untergrenze]]></comment>
+<comment><![CDATA[frühestes Zeitpunkt in diesem Attribut. Leer -> es gibt keine Untergrenze]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
 *frühestes Zeitpunkt in diesem Attribut. Leer -> es gibt keine Untergrenze
 ]DE_ATTR_COMMENT]
@@ -99,7 +98,7 @@ earliest point in time in this attribute. Empty -> there is no lower limit
 <Attribute name="Max Zeitpunkt" id="7B927CAB-9C49-8F87-C70C-F980DF438F94">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[*spätester Zeitpunkt in diesem Attribut. Leer -> es gibt keine Obergrenze]]></comment>
+<comment><![CDATA[spätester Zeitpunkt in diesem Attribut. Leer -> es gibt keine Obergrenze]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
 *spätester Zeitpunkt in diesem Attribut. Leer -> es gibt keine Obergrenze
 ]DE_ATTR_COMMENT]

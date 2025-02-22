@@ -13,7 +13,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Business rule type</title>
+    <title>Digits#</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="../../../image/imicon.png">
@@ -37,7 +37,7 @@
 			<div class="describtion">
 				 
 						<p>Domain</p>
-						<h1>Business rule type
+						<h1>Digits#
 						
 						</h1>
 						<h3>  
@@ -46,7 +46,7 @@
                         </h3>
 			<table style="width:100%">
 			  <tr>
-			  	<th style="width:70%">Type of business rule</th>
+			  	<th style="width:70%">Number of digits before and after the decimal point for a number</th>
 			      
 			      
 			  </tr>
@@ -64,75 +64,78 @@
 								<tr>
 									<th>Datentyp</th>
 									
-										<th>Max. Länge</th>
-										<th>Syntaxregel</th>
+										
+											<th>Vorkommast.</th>
+											<th>Nachkommast.</th>
+											<th>Rundungseinh.</th>
+											<th>Einheit</th>
+										
+										<th>Min. Wert</th>
+										<th>Max. Wert</th>
 									
 									<th>geändert</th>
 								</tr>
 								<tr>
-									<td class="attribute">Werteliste</td>
+									<td class="attribute">Numerisch</td>
 									
-									<td class="attribute">10</td>
-									<td class="attribute"></td>
+										
+											<td class="attribute">3</td>
+											<td class="attribute">0</td>
+											<td class="attribute"></td>
+											<td class="attribute"></td>
+										
+											<td class="attribute"></td>
+											<td class="attribute"></td>
 									
-									<td class="attribute">stb, 2020-10-23 14:13:38 UTC</td>
+									<td class="attribute">stb, 2019-03-10 11:09:09 UTC</td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
 
 					
-						<div class="panel"  id="#DOMA24valuelist">
-						<div class="panel-heading collapsed" data-toggle="collapse"  data-target="#DOMA24valuelist">
-							<img class="icon-chevron-up" alt="minus" src="../../../infra/images/icons/chevron-up.svg">
-							<img class="icon-chevron-down" alt="plus" src="../../../infra/images/icons/chevron-down.svg">
-							<label class="label1">Werteliste</label>
-						</div>
-					</div>
-					<div class="collapse" id="DOMA24valuelist">
-						
-						<div class="table-responsive">
-							<table class="table borderless" >
-								<tbody>
-								<tr>
-									<th>Nr</th>
-									<th>Wert</th>
-									<th>Anzeige</th>
-									<th>Beschreibung</th>
-								</tr>
-								
-								<tr>
-									<td class="attribute">1</td>
-									<td class="attribute">CALC</td>
-									<td class="attribute">Berechne einen Wert</td>
-									<td class="attribute"></td>
-								</tr>
-								
-								<tr>
-									<td class="attribute">2</td>
-									<td class="attribute">CHECK</td>
-									<td class="attribute">Prüfe eine Bedingung (liefert TRUE oder FALSE)</td>
-									<td class="attribute"></td>
-								</tr>
-								
-								<tr>
-									<td class="attribute">3</td>
-									<td class="attribute">TRIGGER</td>
-									<td class="attribute">Löst etwas aus</td>
-									<td class="attribute"></td>
-								</tr>
-								
-								</tbody>
-							</table>
-						</div>
-						
-					</div>
-					
 
 					<!--used in domainGroups-->
 										
 					
 					<!--used in attrs-->
+					
+					<div class="panel"  id="#DOMA24inattr">
+						<div class="panel-heading collapsed" data-toggle="collapse"  data-target="#DOMA24inattr">
+							<img class="icon-chevron-up" alt="minus" src="../../../infra/images/icons/chevron-up.svg">
+							<img class="icon-chevron-down" alt="plus" src="../../../infra/images/icons/chevron-down.svg">
+							<label class="label1">Verwendet für Attribute</label>
+						</div>
+					</div>
+					<div class="collapse" id="DOMA24inattr">
+						
+						<div class="table-responsive">
+						<table class="table borderless" >
+							<tbody>
+								<tr>
+									<th>Entity</th>
+									<th>Attribute</th>
+								</tr>
+								
+								
+								
+								<tr>
+									<td>Numerischer Wertebereich</td>
+									<td><a href="../../../de/elements/attributes/ATTR204.html" target="contentIframe">*Totalstellen</a></td>
+								</tr>
+								
+								
+								
+								<tr>
+									<td>Numerischer Wertebereich</td>
+									<td><a href="../../../de/elements/attributes/ATTR205.html" target="contentIframe">Nachkommastellen</a></td>
+								</tr>
+								
+							</tbody>
+						</table>
+					</div>
+					
+					</div>
 					
 
 					<!--used in columns-->
@@ -158,9 +161,33 @@
 								
 								
 								<tr>
-									<td>modelmodel</td>
-									<td>BUSINESS_RULES</td>
-									<td><a href="../../../datamodels/modelmodel/index.html#COLU535" target="_self">BURU_TYPE</a></td>
+									<td>sql model</td>
+									<td>DOMAINS</td>
+									<td><a href="../../../datamodels/sql model/index.html#COLU365" target="_self">DOMA_DECIMAL_PLACES</a></td>
+								</tr>
+								
+								
+								
+								<tr>
+									<td>sql model</td>
+									<td>DOMAINS</td>
+									<td><a href="../../../datamodels/sql model/index.html#COLU375" target="_self">DOMA_TOTAL_DIGITS_COUNT</a></td>
+								</tr>
+								
+								
+								
+								<tr>
+									<td>OpenApi model</td>
+									<td>domains</td>
+									<td><a href="../../../datamodels/OpenApi model/index.html#COLU703" target="_self">num.fractdigits</a></td>
+								</tr>
+								
+								
+								
+								<tr>
+									<td>OpenApi model</td>
+									<td>domains</td>
+									<td><a href="../../../datamodels/OpenApi model/index.html#COLU707" target="_self">num.totaldigits</a></td>
 								</tr>
 								
 							</tbody>

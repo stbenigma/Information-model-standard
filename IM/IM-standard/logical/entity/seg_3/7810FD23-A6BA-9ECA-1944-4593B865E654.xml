@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="7810FD23-A6BA-9ECA-1944-4593B865E654" name="Entitätsschlüssel">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[*Liste von Schlüsseln, die alle dazu dienen, eine Instanz dieser Entität in der Realität zu identifizieren.
+<comment><![CDATA[Liste von Schlüsseln, die alle dazu dienen, eine Instanz dieser Entität in der Realität zu identifizieren.
 Ein Schlüssel besteht aus einem oder mehreren Attributen und funktionalen Beziehungen, deren Werte in Kombination eine eindeutige Gesamtinstanz darstellen. Es kann eine beliebige Anzahl von Schlüsseln für eine Entität geben.
 Schlüssel sollten nach Möglichkeit natürliche Schlüssel sein. D.h. Eigenschaften, die in der Realität vorkommen. Künstliche Schlüssel helfen nicht dabei, eine Instanz einer Sache in der realen Welt zu finden.
 
@@ -32,7 +32,6 @@ Country, Zipcode
 Product name, version number, BOM position
 Product name
 GSC identification
-
 ]EN_ENTI_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
@@ -63,10 +62,10 @@ GSC identification
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="*EN* Name [L]" id="D09FA426-80FC-17E6-C0D7-FE5B2E397F26">
+<Attribute name="Name [L]" id="D09FA426-80FC-17E6-C0D7-FE5B2E397F26">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-31 10:21:30 UTC</createdTime>
-<comment><![CDATA[*EN* unique Name of the entity normally used in communication.]]></comment>
+<comment><![CDATA[Eindeutiger Name, normalerweise in Kommunikation genutzt.]]></comment>
 <generatorID>7DFF44B9-D585-A3B7-7342-79EA825C4941</generatorID>
 <notes><![CDATA[[DE_ATTR_COMMENT[
 *EN* unique Name of the entity normally used in communication.
@@ -91,7 +90,7 @@ unique Name of the entity normally used in communication.
 <property name="EN_ATTR_NAME" value="Name [L]"/>
 </propertyMap>
 </Attribute>
-<Attribute name="*Name" id="5E6D0E19-FD6C-49F8-EB61-11F789F01DDF">
+<Attribute name="Name" id="5E6D0E19-FD6C-49F8-EB61-11F789F01DDF">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-31 10:21:30 UTC</createdTime>
 <generatorID>7DFF44B9-D585-A3B7-7342-79EA825C4941</generatorID>
@@ -114,8 +113,8 @@ unique Name of the entity normally used in communication.
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="*EN* Name"/>
-<property name="EN_ATTR_NAME" value="*EN* Name"/>
+<property name="DE_ATTR_NAME" value="Name"/>
+<property name="EN_ATTR_NAME" value="Name"/>
 </propertyMap>
 </Attribute>
 </attributes>

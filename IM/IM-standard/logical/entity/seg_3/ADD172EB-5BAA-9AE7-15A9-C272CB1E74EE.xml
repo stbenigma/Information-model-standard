@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="ADD172EB-5BAA-9AE7-15A9-C272CB1E74EE" name="Textlicher Wertebereich">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[*Textwerte sind Zeichenfolgen. 
+<comment><![CDATA[Textwerte sind Zeichenfolgen. 
 
 Die Werteregel ist typischerweise ein regulärer Ausdruck, der die erlaubten Zeichen und ihre Anordnung vorgibt.
 
@@ -26,7 +26,6 @@ The value rule is typically a regular expression that specifies the permitted ch
 Examples:
 Mountain name, 1-100 characters
 Mailaddress, ^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$
-
 ]EN_ENTI_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
@@ -58,10 +57,10 @@ Mailaddress, ^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="*Min Länge" id="3BF3C2D8-5E06-475B-BF12-3A7610F5D0E8">
+<Attribute name="Min Länge" id="3BF3C2D8-5E06-475B-BF12-3A7610F5D0E8">
 <createdBy>stb</createdBy>
 <createdTime>2025-01-02 17:11:04 UTC</createdTime>
-<comment><![CDATA[*Miniimale Länge des Textes in Buchstaben]]></comment>
+<comment><![CDATA[Minimale Länge des Textes in Buchstaben]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
 *Miniimale Länge des Textes in Buchstaben
 ]DE_ATTR_COMMENT]

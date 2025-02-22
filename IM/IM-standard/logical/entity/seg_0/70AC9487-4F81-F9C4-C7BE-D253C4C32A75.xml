@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="70AC9487-4F81-F9C4-C7BE-D253C4C32A75" name="Rollenbeziehung">
 <createdBy>stb</createdBy>
 <createdTime>2020-07-30 13:03:21 UTC</createdTime>
-<comment><![CDATA[*1:1 Beziehung die eine Rolle darstellt.
+<comment><![CDATA[1:1 Beziehung die eine Rolle darstellt.
 Analogon: Ein:e Schauspieler:in (Person) spielt eine Rolle um eine andere Person (mit anderen Merkmalen) zu repräsentieren.
 
 Eine Rolle hat immer eine Grundentität, die sie erweitert. 

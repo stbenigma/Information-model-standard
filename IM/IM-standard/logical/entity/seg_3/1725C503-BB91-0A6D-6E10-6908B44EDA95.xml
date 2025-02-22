@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="1725C503-BB91-0A6D-6E10-6908B44EDA95" name="Wertebereich">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:03:22 UTC</createdTime>
-<comment><![CDATA[*Beschreibung der zulässigen Werte für ein oder mehrere Attribute.
+<comment><![CDATA[Beschreibung der zulässigen Werte für ein oder mehrere Attribute.
 Die Typen Numerisch, Text, Zeit oder Aufzählung sind begrifflich zu verstehen.
 Reale Datentypen und ggf. Anzeigeformate und Speicherung werden in der Implementierung festgelegt.
 
@@ -175,17 +175,17 @@ Purpose, usage and verbal description of the allowable values defined by this do
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="*EN* Name"/>
+<property name="DE_ATTR_NAME" value="Name"/>
 <property name="EN_ATTR_NAME" value="Name"/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="*EN* *Name11" id="3ABE44F0-F1BB-7734-CA9A-C2D821C16ED9">
+<Attribute name="Name [L]2" id="3ABE44F0-F1BB-7734-CA9A-C2D821C16ED9">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-31 11:31:00 UTC</createdTime>
-<comment><![CDATA[*EN* Name of the category if it is not a reference to any other elements]]></comment>
+<comment><![CDATA[Name der Kategorie. Eindeutig innerhalt seiner Vater-Kategorie]]></comment>
 <generatorID>60041B83-7287-F0AD-B4EC-C41AED3FEC26</generatorID>
 <notes><![CDATA[[DE_ATTR_COMMENT[
 *EN* Name of the category if it is not a reference to any other elements
@@ -207,17 +207,17 @@ Name of the category if it is not a reference to any other elements
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="*EN* *Name1"/>
-<property name="EN_ATTR_NAME" value="*Name1"/>
+<property name="DE_ATTR_NAME" value="Name [L]2"/>
+<property name="EN_ATTR_NAME" value="Name1"/>
 </propertyMap>
 </Attribute>
-<Attribute name="*EN* *Name1" id="D7017C1A-CAA3-2DC9-3739-7C4182F867CB">
+<Attribute name="Name1 [L]" id="D7017C1A-CAA3-2DC9-3739-7C4182F867CB">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-31 11:41:37 UTC</createdTime>
-<comment><![CDATA[*EN* Name of the category. Unique within its parent category]]></comment>
+<comment><![CDATA[Name der Kategorie. Eindeutig innerhalt seiner Vater-Kategorie]]></comment>
 <generatorID>60041B83-7287-F0AD-B4EC-C41AED3FEC26</generatorID>
 <notes><![CDATA[[DE_ATTR_COMMENT[
-*EN* Name of the category. Unique within its parent category
+Name der Kategorie. Eindeutig innerhalt seiner Vater-Kategorie
 ]DE_ATTR_COMMENT]
 [EN_ATTR_COMMENT[
 Name of the category. Unique within its parent category
@@ -236,8 +236,8 @@ Name of the category. Unique within its parent category
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="*EN* *Name1"/>
-<property name="EN_ATTR_NAME" value="*EN* *Name1"/>
+<property name="DE_ATTR_NAME" value="*Name1"/>
+<property name="EN_ATTR_NAME" value="Name [L]1"/>
 </propertyMap>
 </Attribute>
 </attributes>

@@ -20,7 +20,8 @@ Beispiele:
 99
 verheiratet
 geschieden
-Peter ist mit Jane verheiratet]DE_ENTI_COMMENT]
+Peter ist mit Jane verheiratet
+]DE_ENTI_COMMENT]
 [EN_ENTI_COMMENT[
 Examplevalue  for Entity, Attribute, Domain, Relationship
 
@@ -60,7 +61,7 @@ Peter is married to Jane
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="*Wert [L]" id="78178DFE-CAC7-A5AD-8621-76A30C566379">
+<Attribute name="Wert [L]" id="78178DFE-CAC7-A5AD-8621-76A30C566379">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-10 14:19:37 UTC</createdTime>
 <notes><![CDATA[[DE_ATTR_COMMENT[

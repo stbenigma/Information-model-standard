@@ -36,14 +36,13 @@ Attribute or (functional) Relationship ID beeing part of a key for the entity.
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="*EN* Name [L]" id="009CEC47-0A35-0125-14EE-4843BB3294DD">
+<Attribute name="Name [L]" id="009CEC47-0A35-0125-14EE-4843BB3294DD">
 <createdBy>stb</createdBy>
 <createdTime>2025-02-02 09:59:13 UTC</createdTime>
-<comment><![CDATA[*EN* unique Name of the entity normally used in communication.]]></comment>
+<comment><![CDATA[eindeutiger Name der Entität der in der Kommunikation normalerweise gebraucht wird.]]></comment>
 <generatorID>F509F179-4B45-A8E5-8C1E-27F318F8132B</generatorID>
 <notes><![CDATA[[DE_ATTR_COMMENT[
-*EN* unique Name of the entity normally used in communication.
-]DE_ATTR_COMMENT]
+eindeutiger Name der Entität der in der Kommunikation normalerweise gebraucht wird.]DE_ATTR_COMMENT]
 [EN_ATTR_COMMENT[
 unique Name of the entity normally used in communication.
 ]EN_ATTR_COMMENT]
@@ -60,11 +59,11 @@ unique Name of the entity normally used in communication.
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="*EN* Name [L]"/>
-<property name="EN_ATTR_NAME" value="*EN* Name [L]"/>
+<property name="DE_ATTR_NAME" value="Name [L]"/>
+<property name="EN_ATTR_NAME" value="Name [L]"/>
 </propertyMap>
 </Attribute>
-<Attribute name="*EN* *Name" id="9EF1DE80-14DF-7C83-0608-356FAFC0A2FD">
+<Attribute name="Name" id="9EF1DE80-14DF-7C83-0608-356FAFC0A2FD">
 <createdBy>stb</createdBy>
 <createdTime>2025-02-02 09:59:13 UTC</createdTime>
 <generatorID>F509F179-4B45-A8E5-8C1E-27F318F8132B</generatorID>
@@ -87,7 +86,7 @@ unique Name of the entity normally used in communication.
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="*EN* *Name"/>
+<property name="DE_ATTR_NAME" value="Name"/>
 <property name="EN_ATTR_NAME" value="*Name"/>
 </propertyMap>
 </Attribute>

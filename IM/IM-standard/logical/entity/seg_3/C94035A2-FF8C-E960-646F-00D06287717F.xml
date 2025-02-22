@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="C94035A2-FF8C-E960-646F-00D06287717F" name="Wertebereichgruppe">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[*Es gibt Attribute, die aus mehreren Bestandteilen bestehen, aber für eine Entität wie ein Attribut angesehen werden können.
+<comment><![CDATA[Es gibt Attribute, die aus mehreren Bestandteilen bestehen, aber für eine Entität wie ein Attribut angesehen werden können.
 Die Bestandteile dieser Attributgruppe treten immer gemeinsam auf.
 Dass ein Attribut Teilwerte enthält, für die man sich separat interessiert, verletzt im Grundsatz die 1. Normalform. Wenn aber die Elemente einer Attributgruppe selber Attribute sind und die Gruppe als Platzhalter von mehreren Attributen verstanden werden kann, ist diese Verletzung auflösbar.
 

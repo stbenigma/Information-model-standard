@@ -11,8 +11,8 @@
 <sourcePk>C1A8A4D1-8B15-8026-055F-024571C59C67</sourcePk>
 <arc>F143F2B8-C0BF-AEEA-3077-8D896BFC5595</arc>
 <identifying>false</identifying>
-<nameOnSource>*EN* explained with</nameOnSource>
-<nameOnTarget>*EN* explains</nameOnTarget>
+<nameOnSource>erklärt mit</nameOnSource>
+<nameOnTarget>erklärt</nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
@@ -22,8 +22,8 @@
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 <propertyMap>
-<property name="DE_RELA_TEXT_FROM" value="*EN* explained with"/>
-<property name="DE_RELA_TEXT_TO" value="*EN* explains"/>
+<property name="DE_RELA_TEXT_FROM" value="erklärt mit"/>
+<property name="DE_RELA_TEXT_TO" value="erklärt"/>
 <property name="EN_RELA_TEXT_FROM" value="explained with"/>
 <property name="EN_RELA_TEXT_TO" value="explains"/>
 <property name="maxzoomlevel" value="4"/>

@@ -2,12 +2,12 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="7508B13D-A32D-4C04-D788-8F40843FC2CD" name="Exklusivbeziehung">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[*Beziehungen die von einer Entität ausgehen können exklusiv sein. D.h. keine oder 1 davon ist möglich, aber nie mehrere gleichzeitig
+<comment><![CDATA[Beziehungen die von einer Entität ausgehen können exklusiv sein. D.h. keine oder 1 davon ist möglich, aber nie mehrere gleichzeitig
 
 Beispiel:
 	eine Person ist erreichbar über Mobil-Telefon oder über Festnetz-Telefon]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
-*Beziehungen die von einer Entität ausgehen können exklusiv sein. D.h. keine oder 1 davon ist möglich, aber nie mehrere gleichzeitig
+Beziehungen die von einer Entität ausgehen können exklusiv sein. D.h. keine oder 1 davon ist möglich, aber nie mehrere gleichzeitig
 
 Beispiel:
 	eine Person ist erreichbar über Mobil-Telefon oder über Festnetz-Telefon
@@ -80,10 +80,10 @@ Number to distinguish multiple exclusive groups of relationships in an entity.  
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
-<Attribute name="*EN* Name [L]" id="25050035-0805-311A-5A91-7EE6413DB9B1">
+<Attribute name="Name [L]" id="25050035-0805-311A-5A91-7EE6413DB9B1">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-31 10:21:30 UTC</createdTime>
-<comment><![CDATA[*EN* unique Name of the entity normally used in communication.]]></comment>
+<comment><![CDATA[Eindeutiger Name, normalerweise in Kommunikation genutzt.]]></comment>
 <generatorID>8E8A6377-DF32-1C76-25A1-B458D76ECE51</generatorID>
 <notes><![CDATA[[DE_ATTR_COMMENT[
 *EN* unique Name of the entity normally used in communication.
@@ -104,11 +104,11 @@ unique Name of the entity normally used in communication.
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="*EN* Name [L]"/>
+<property name="DE_ATTR_NAME" value="Name [L]"/>
 <property name="EN_ATTR_NAME" value="Name [L]"/>
 </propertyMap>
 </Attribute>
-<Attribute name="*Name" id="CAD538BA-B258-AC32-FA49-355A3788A0B7">
+<Attribute name="Name" id="CAD538BA-B258-AC32-FA49-355A3788A0B7">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-31 10:21:30 UTC</createdTime>
 <generatorID>8E8A6377-DF32-1C76-25A1-B458D76ECE51</generatorID>
@@ -131,8 +131,8 @@ unique Name of the entity normally used in communication.
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="*EN* Name"/>
-<property name="EN_ATTR_NAME" value="*EN* Name"/>
+<property name="DE_ATTR_NAME" value="Name"/>
+<property name="EN_ATTR_NAME" value="Name"/>
 </propertyMap>
 </Attribute>
 </attributes>

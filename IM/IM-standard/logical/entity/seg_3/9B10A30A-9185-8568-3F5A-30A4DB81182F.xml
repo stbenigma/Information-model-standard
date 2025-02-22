@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="9B10A30A-9185-8568-3F5A-30A4DB81182F" name="Vorgabewert">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:06:23 UTC</createdTime>
-<comment><![CDATA[*Wert, der für eine Aufzählungs-Werteliste ein gültiger Wert ist.
+<comment><![CDATA[Wert, der für eine Aufzählungs-Werteliste ein gültiger Wert ist.
 Das Attribut "Wert ist der physikalische (sprachunabhängige) Wert, der als eigentlicher Wert im konzeptionellen Modell gilt.
 
 Beispiele:

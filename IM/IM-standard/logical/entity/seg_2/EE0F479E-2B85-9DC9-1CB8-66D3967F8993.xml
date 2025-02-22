@@ -39,7 +39,7 @@ Specification of numeric values.
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="*Totalstellen" id="7E77D48A-823A-2E1C-12FB-94F9A785C501">
+<Attribute name="Totalstellen" id="7E77D48A-823A-2E1C-12FB-94F9A785C501">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
 <comment><![CDATA[Anzahl der Stellen vor dem Komma]]></comment>
@@ -186,7 +186,7 @@ Maximum value for a numeric field. Empty -> as big as the system allows
 <Attribute name="Rundungseinheit" id="EB863265-2766-76A8-568E-EEFEA2D851F2">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[*Wert, der angibt, auf welche Einheit ein numerischer Wert für die Speicherung gerundet wird. 
+<comment><![CDATA[Wert, der angibt, auf welche Einheit ein numerischer Wert für die Speicherung gerundet wird. 
 leer -> es wird nicht explizit gerundet
 Beispiele:
 0.5

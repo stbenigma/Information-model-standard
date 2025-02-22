@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DDA70D9B-F8A6-0860-C557-CC433CE3B059" name="Domainattribut">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-02 12:43:12 UTC</createdTime>
-<comment><![CDATA[*Beschreibung eines Feldes in einer Gruppendomäne.
+<comment><![CDATA[Beschreibung eines Feldes in einer Gruppendomäne.
 Ist einerseits Teil einer Wertebereichgruppe (trägt bei zu) und hat anderer seit selber einen Wertebereich für seine Werte (eingeschränkt durch).
 
 Beispiele:
@@ -23,7 +23,6 @@ Is on the one hand part of a value range group (contributes to) and on the other
 Examples:
 Longitude
 Lattitude
-
 ]EN_ENTI_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
@@ -43,12 +42,10 @@ Lattitude
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
-<shortName>ATTR</shortName>
+<shortName>DATT</shortName>
 <propertyMap>
 <property name="DE_ENTI_NAME" value="Domainattribut"/>
-<property name="DE_ENTI_SYNONYM" value=""/>
 <property name="EN_ENTI_NAME" value="Domain Attribute"/>
-<property name="EN_ENTI_SYNONYM" value=""/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>
