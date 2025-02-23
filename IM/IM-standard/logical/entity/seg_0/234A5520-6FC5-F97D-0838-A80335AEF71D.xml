@@ -16,7 +16,7 @@ Attribute or (functional) Relationship ID beeing part of a key for the entity.
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
 <item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
-<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<typeID>77D381F5-7647-2CBC-11A1-08B38B65FA57</typeID>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -42,7 +42,8 @@ Attribute or (functional) Relationship ID beeing part of a key for the entity.
 <comment><![CDATA[eindeutiger Name der Entität der in der Kommunikation normalerweise gebraucht wird.]]></comment>
 <generatorID>F509F179-4B45-A8E5-8C1E-27F318F8132B</generatorID>
 <notes><![CDATA[[DE_ATTR_COMMENT[
-eindeutiger Name der Entität der in der Kommunikation normalerweise gebraucht wird.]DE_ATTR_COMMENT]
+eindeutiger Name der Entität der in der Kommunikation normalerweise gebraucht wird.
+]DE_ATTR_COMMENT]
 [EN_ATTR_COMMENT[
 unique Name of the entity normally used in communication.
 ]EN_ATTR_COMMENT]
@@ -90,6 +91,61 @@ unique Name of the entity normally used in communication.
 <property name="EN_ATTR_NAME" value="*Name"/>
 </propertyMap>
 </Attribute>
+<Attribute name="Name [L]1" id="3F762E16-0BEF-C484-D10A-B066944922C4">
+<createdBy>stb</createdBy>
+<createdTime>2025-02-22 11:14:45 UTC</createdTime>
+<comment><![CDATA[Eindeutiger Name, normalerweise in Kommunikation genutzt.]]></comment>
+<generatorID>872B80A8-6026-169F-A1E5-264E25EA7005</generatorID>
+<notes><![CDATA[[EN_ATTR_COMMENT[
+*DE* Eindeutiger Name, normalerweise in Kommunikation genutzt.
+]EN_ATTR_COMMENT]
+[DE_ATTR_COMMENT[
+Eindeutiger Name, normalerweise in Kommunikation genutzt.
+]DE_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<referedAttribute>AFCEE916-C7E0-CAB1-C582-586BD224D031</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="Name [L]1"/>
+<property name="EN_ATTR_NAME" value="*DE* Name [L]1"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Name1" id="1FB61B99-07D8-80D8-002A-C59103185E4C">
+<createdBy>stb</createdBy>
+<createdTime>2025-02-22 11:14:45 UTC</createdTime>
+<generatorID>872B80A8-6026-169F-A1E5-264E25EA7005</generatorID>
+<notes><![CDATA[[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<referedAttribute>164CD9CB-0AF4-4606-4351-D82BF2B145CE</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="Name1"/>
+<property name="EN_ATTR_NAME" value="*DE* Name1"/>
+</propertyMap>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="C2B95893-B868-4796-8082-647021F7B382" name="keyelem_uk">
@@ -105,6 +161,8 @@ unique Name of the entity normally used in communication.
 <usedAttributes>
 <attributeRef>009CEC47-0A35-0125-14EE-4843BB3294DD</attributeRef>
 <attributeRef>9EF1DE80-14DF-7C83-0608-356FAFC0A2FD</attributeRef>
+<attributeRef>3F762E16-0BEF-C484-D10A-B066944922C4</attributeRef>
+<attributeRef>1FB61B99-07D8-80D8-002A-C59103185E4C</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

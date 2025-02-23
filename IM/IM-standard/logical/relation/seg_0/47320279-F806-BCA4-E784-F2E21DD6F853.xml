@@ -9,7 +9,7 @@
 <item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
 <useSurrogateKey>true</useSurrogateKey>
-<identifying>false</identifying>
+<identifying>true</identifying>
 <nameOnSource>umfasst</nameOnSource>
 <nameOnTarget>trägt bei zu</nameOnTarget>
 <optionalSource>false</optionalSource>
@@ -26,7 +26,7 @@
 <property name="EN_RELA_TEXT_FROM" value="includes"/>
 <property name="EN_RELA_TEXT_TO" value="contributes to"/>
 <property name="maxzoomlevel" value="4"/>
-<property name="minzoomlevel" value="0"/>
+<property name="minzoomlevel" value="2"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">

@@ -11,7 +11,7 @@ Beispiele::
 Januar, 2025
 Isowoche 42 2023]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
-*Werte die einen Zeitpunkt beschreiben.
+Werte die einen Zeitpunkt beschreiben.
 Die Genauigkeit des Wertes  wird durch die Granularität festgelegt (Miliosekunde, Sekunde, Minute, Stunde, Tag, Woche, Monat, Quartal, Halbjahr, Jahr, Jahrhundert).
 Weder die Speicherung noch die textliche Darstellung des Zeitpunkts ist Teil des Informationsmodells. Dies wird in der Datenbank- oder UI-Spezifikation behandelt.
 
@@ -38,7 +38,7 @@ Isoweek 42 2023
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
 <item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="false"/>
 </engineerTo>
-<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<typeID>77D381F5-7647-2CBC-11A1-08B38B65FA57</typeID>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -60,12 +60,46 @@ Isoweek 42 2023
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Granularität" id="6E889AC5-72FE-0BF0-A64F-E96B19560FAC">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<comment><![CDATA[Auf welche Einheit wird die Datumsangabe gerundet (Tag, Minute, Monat, Jahr)]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Auf welche Einheit wird die Datumsangabe gerundet (Tag, Minute, Monat, Jahr)
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+To which unit is the date rounded (day, minute, month, year)?
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>CB8DB002-CFDF-5208-AAF5-348E49AF3F17</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>802FD5C1-7C5B-0290-1F1C-F8FBB1AD2AA9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value="Auf welche Einheit wird die Datumsangabe gerundet (Tag, Minute, Monat, Jahr)"/>
+<property name="DE_ATTR_NAME" value="Granularität"/>
+<property name="EN_ATTR_COMMENT" value="*DE* Auf welche Einheit wird die Datumsangabe gerundet (Tag, Minute, Monat, Jahr)"/>
+<property name="EN_ATTR_NAME" value="Granularity"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
 <Attribute name="Min Zeitpunkt" id="F8E42CB1-E43D-0D27-9900-D7A7BD67D0D6">
 <createdBy>stb</createdBy>
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
 <comment><![CDATA[frühestes Zeitpunkt in diesem Attribut. Leer -> es gibt keine Untergrenze]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
-*frühestes Zeitpunkt in diesem Attribut. Leer -> es gibt keine Untergrenze
+frühestes Zeitpunkt in diesem Attribut. Leer -> es gibt keine Untergrenze
 ]DE_ATTR_COMMENT]
 [EN_ATTR_COMMENT[
 earliest point in time in this attribute. Empty -> there is no lower limit
@@ -100,7 +134,7 @@ earliest point in time in this attribute. Empty -> there is no lower limit
 <createdTime>2020-02-03 20:04:00 UTC</createdTime>
 <comment><![CDATA[spätester Zeitpunkt in diesem Attribut. Leer -> es gibt keine Obergrenze]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
-*spätester Zeitpunkt in diesem Attribut. Leer -> es gibt keine Obergrenze
+spätester Zeitpunkt in diesem Attribut. Leer -> es gibt keine Obergrenze
 ]DE_ATTR_COMMENT]
 [EN_ATTR_COMMENT[
 latest point in time in this attribute. Empty -> there is no upper limit
@@ -124,40 +158,6 @@ latest point in time in this attribute. Empty -> there is no upper limit
 <property name="DE_ATTR_NAME" value="Max Zeitpunkt"/>
 <property name="EN_ATTR_COMMENT" value="*DE* spätester Zeitpunkt in diesem Attribut. Leer -&gt; es gibt keine Obergrenze"/>
 <property name="EN_ATTR_NAME" value="Max Time"/>
-<property name="isdescriptive" value="FALSE"/>
-<property name="maxzoomlevel" value="4"/>
-<property name="minzoomlevel" value="0"/>
-<property name="publ_status" value="PUBL"/>
-</propertyMap>
-</Attribute>
-<Attribute name="Granularität" id="6E889AC5-72FE-0BF0-A64F-E96B19560FAC">
-<createdBy>stb</createdBy>
-<createdTime>2020-02-03 20:04:00 UTC</createdTime>
-<comment><![CDATA[Auf welche Einheit wird die Datumsangabe gerundet (Tag, Minute, Monat, Jahr)]]></comment>
-<notes><![CDATA[[DE_ATTR_COMMENT[
-Auf welche Einheit wird die Datumsangabe gerundet (Tag, Minute, Monat, Jahr)
-]DE_ATTR_COMMENT]
-[EN_ATTR_COMMENT[
-To which unit is the date rounded (day, minute, month, year)?
-]EN_ATTR_COMMENT]
-]]></notes>
-<ownerDesignName>IM-standard</ownerDesignName>
-<importedID>CB8DB002-CFDF-5208-AAF5-348E49AF3F17</importedID>
-<engineerTo>
-<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
-<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
-<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<domain>802FD5C1-7C5B-0290-1F1C-F8FBB1AD2AA9</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<propertyMap>
-<property name="DE_ATTR_COMMENT" value="Auf welche Einheit wird die Datumsangabe gerundet (Tag, Minute, Monat, Jahr)"/>
-<property name="DE_ATTR_NAME" value="Granularität"/>
-<property name="EN_ATTR_COMMENT" value="*DE* Auf welche Einheit wird die Datumsangabe gerundet (Tag, Minute, Monat, Jahr)"/>
-<property name="EN_ATTR_NAME" value="Granularity"/>
 <property name="isdescriptive" value="FALSE"/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>

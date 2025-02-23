@@ -17,7 +17,7 @@ Specification of numeric values.
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
 <item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="false"/>
 </engineerTo>
-<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<typeID>77D381F5-7647-2CBC-11A1-08B38B65FA57</typeID>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -65,7 +65,7 @@ Number of digits before the decimal point
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
 <property name="DE_ATTR_COMMENT" value="Anzahl der Stellen vor dem Komma"/>
-<property name="DE_ATTR_NAME" value="*Totalstellen"/>
+<property name="DE_ATTR_NAME" value="Totalstellen"/>
 <property name="EN_ATTR_COMMENT" value="*DE* Anzahl der Stellen vor dem Komma"/>
 <property name="EN_ATTR_NAME" value="Total digits"/>
 <property name="isdescriptive" value="FALSE"/>
@@ -193,7 +193,7 @@ Beispiele:
  0.25
 1000]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
-*Wert, der angibt, auf welche Einheit ein numerischer Wert für die Speicherung gerundet wird. 
+Wert, der angibt, auf welche Einheit ein numerischer Wert für die Speicherung gerundet wird. 
 leer -> es wird nicht explizit gerundet
 Beispiele:
 0.5

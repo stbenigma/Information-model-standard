@@ -11,7 +11,7 @@ Beispiele:
 Eine Bestellung enhält viele Artikel. - Ein Artikel wird in vielen Bestellung bestellt.
 Eine Person wird kontaktiert von vielen Personen - Eine Person kontaktier viele Personen.]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
-*DIe many-to-many Beziehung verknüpft in beide Richung 1 Instanz der einen Entität mit 0.. vielen Instanzen der anderen Entität.
+Die many-to-many Beziehung verknüpft in beide Richung 1 Instanz der einen Entität mit 0.. vielen Instanzen der anderen Entität.
 Die Kardinalität muss bei beiden Enden "M" sein. Assoziationstexte sind in beide Richtungen Pflicht.
 
 Eine many-to-many Beziehung impliziert immer eine weitere Entität, die diese Art der Verknüpfung abbildet. Wir verzichten im Informationsmodell dzu Gunsten der einfacheren Darstellung darauf, diese zusätzliche Entität (mit je einer Verbindung zu den beiden Entitäten) darzustellen. Sobald dieses zusätzliche Entität aber Attribute oder Beziehungen hat, muss sie als normale Entität dokumentiert werden.
@@ -38,7 +38,7 @@ One person is contacted by many people - One person contacts many people.
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
 <item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="false"/>
 </engineerTo>
-<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<typeID>77D381F5-7647-2CBC-11A1-08B38B65FA57</typeID>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>

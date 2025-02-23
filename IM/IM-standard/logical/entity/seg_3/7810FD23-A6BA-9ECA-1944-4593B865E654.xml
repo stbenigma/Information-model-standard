@@ -12,7 +12,7 @@ Produktname, Versionsnummer, BOM-Position
 Produktname
 GSC-Identifikation]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
-*Liste von Schlüsseln, die alle dazu dienen, eine Instanz dieser Entität in der Realität zu identifizieren.
+Liste von Schlüsseln, die alle dazu dienen, eine Instanz dieser Entität in der Realität zu identifizieren.
 Ein Schlüssel besteht aus einem oder mehreren Attributen und funktionalen Beziehungen, deren Werte in Kombination eine eindeutige Gesamtinstanz darstellen. Es kann eine beliebige Anzahl von Schlüsseln für eine Entität geben.
 Schlüssel sollten nach Möglichkeit natürliche Schlüssel sein. D.h. Eigenschaften, die in der Realität vorkommen. Künstliche Schlüssel helfen nicht dabei, eine Instanz einer Sache in der realen Welt zu finden.
 
@@ -40,7 +40,7 @@ GSC identification
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
 <item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
-<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<typeID>77D381F5-7647-2CBC-11A1-08B38B65FA57</typeID>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -68,7 +68,7 @@ GSC identification
 <comment><![CDATA[Eindeutiger Name, normalerweise in Kommunikation genutzt.]]></comment>
 <generatorID>7DFF44B9-D585-A3B7-7342-79EA825C4941</generatorID>
 <notes><![CDATA[[DE_ATTR_COMMENT[
-*EN* unique Name of the entity normally used in communication.
+Eindeutiger Name, normalerweise in Kommunikation genutzt.
 ]DE_ATTR_COMMENT]
 [EN_ATTR_COMMENT[
 unique Name of the entity normally used in communication.
@@ -86,7 +86,7 @@ unique Name of the entity normally used in communication.
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="*EN* Name [L]"/>
+<property name="DE_ATTR_NAME" value="Name [L]"/>
 <property name="EN_ATTR_NAME" value="Name [L]"/>
 </propertyMap>
 </Attribute>

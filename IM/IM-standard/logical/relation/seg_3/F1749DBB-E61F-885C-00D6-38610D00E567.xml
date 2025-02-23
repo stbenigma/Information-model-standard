@@ -9,7 +9,7 @@
 <item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
 <sourcePk>F6B24D56-DDB2-B367-9B4B-AA7C9F990041</sourcePk>
-<identifying>false</identifying>
+<identifying>true</identifying>
 <nameOnSource>beschrieben durch</nameOnSource>
 <nameOnTarget>beschreibt</nameOnTarget>
 <optionalSource>true</optionalSource>

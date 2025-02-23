@@ -30,7 +30,7 @@ Means of transport
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
 <item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
-<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<typeID>77D381F5-7647-2CBC-11A1-08B38B65FA57</typeID>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -46,7 +46,9 @@ Means of transport
 <createSurrogateKey>true</createSurrogateKey>
 <propertyMap>
 <property name="DE_ENTI_NAME" value="Entität"/>
+<property name="DE_ENTI_SYNONYM" value=""/>
 <property name="EN_ENTI_NAME" value="Entity"/>
+<property name="EN_ENTI_SYNONYM" value=""/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>
@@ -126,7 +128,7 @@ Meaning, benefits, usage  of the Entity
 <createdTime>2020-02-03 20:03:22 UTC</createdTime>
 <comment><![CDATA[Kurze Beschreibng der Bedeutung. Z.B. für Anzeige als Tooltip für Bediener:innen in der Benutzerschnittstelle.]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
-*Kurze Beschreibng der Bedeutung. Z.B. für Anzeige als Tooltip für Bediener:innen in der Benutzerschnittstelle.
+Kurze Beschreibng der Bedeutung. Z.B. für Anzeige als Tooltip für Bediener:innen in der Benutzerschnittstelle.
 ]DE_ATTR_COMMENT]
 [EN_ATTR_COMMENT[
 Short text explaining the meaning for the user în the user interface. Used e.g. as tooltips in UI
@@ -147,7 +149,7 @@ Short text explaining the meaning for the user în the user interface. Used e.g.
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
 <property name="DE_ATTR_COMMENT" value="Anzeige der Bedeutung für Bediener auf einer Maske."/>
-<property name="DE_ATTR_NAME" value="*Kurzbeschrieb [L]"/>
+<property name="DE_ATTR_NAME" value="Kurzbeschrieb [L]"/>
 <property name="EN_ATTR_COMMENT" value="*DE* Anzeige der Bedeutung für Bediener auf einer Maske."/>
 <property name="EN_ATTR_NAME" value="Short Description [L]"/>
 <property name="isdescriptive" value="FALSE"/>
@@ -195,7 +197,7 @@ List of synonym names for this thing beeing used in old systems or out of habit.
 <createdTime>2020-02-03 20:03:22 UTC</createdTime>
 <comment><![CDATA[nicht leerer Kurztext, der häufig für Referenzen verwendet wird. Verwendung von Buchstaben, Ziffern und ' ',-,:,$,_]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
-*nicht leerer Kurztext, der häufig für Referenzen verwendet wird. Verwendung von Buchstaben, Ziffern und ' ',-,:,$,_
+nicht leerer Kurztext, der häufig für Referenzen verwendet wird. Verwendung von Buchstaben, Ziffern und ' ',-,:,$,_
 ]DE_ATTR_COMMENT]
 [EN_ATTR_COMMENT[
 nonempty short text for often used for references. Using letters, digits and ' ',-,:,$,_
@@ -216,7 +218,7 @@ nonempty short text for often used for references. Using letters, digits and ' '
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
 <property name="DE_ATTR_COMMENT" value="Kurzbezeichnung der Entität für die Verwendung aus Überschrift, in Referenzen "/>
-<property name="DE_ATTR_NAME" value="*Kurzname [L]"/>
+<property name="DE_ATTR_NAME" value="Kurzname [L]"/>
 <property name="EN_ATTR_COMMENT" value="*DE* Kurzbezeichnung der Entität für die Verwendung aus Überschrift, in Referenzen "/>
 <property name="EN_ATTR_NAME" value="Short name"/>
 <property name="isdescriptive" value="FALSE"/>
@@ -249,7 +251,7 @@ nonempty short text for often used for references. Using letters, digits and ' '
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="*Name"/>
+<property name="DE_ATTR_NAME" value="Name"/>
 <property name="EN_ATTR_NAME" value="Name"/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>

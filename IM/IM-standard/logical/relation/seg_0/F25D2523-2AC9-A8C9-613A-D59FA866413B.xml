@@ -26,7 +26,7 @@
 <property name="EN_RELA_TEXT_FROM" value="constructed from"/>
 <property name="EN_RELA_TEXT_TO" value="contributes to"/>
 <property name="maxzoomlevel" value="4"/>
-<property name="minzoomlevel" value="0"/>
+<property name="minzoomlevel" value="2"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Relation>

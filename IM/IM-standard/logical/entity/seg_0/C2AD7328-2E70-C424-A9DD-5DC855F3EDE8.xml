@@ -8,7 +8,7 @@ Beispiel:
 - Qualitätsanspruch-Level
 - Sicherheitsstufe]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
-*Für projekt- oder umgebungsspezifische Erweiterungen, können für jedes Modellelement eigene Eigenschaften definiert werden.
+Für projekt- oder umgebungsspezifische Erweiterungen, können für jedes Modellelement eigene Eigenschaften definiert werden.
 
 Beispiel:
 - Qualitätsanspruch-Level
@@ -28,7 +28,7 @@ Security level
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
 <item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
-<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<typeID>E0CC5767-562C-A871-BD70-DA70B40552A8</typeID>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -46,7 +46,7 @@ Security level
 <property name="EN_ENTI_NAME" value="Additional property"/>
 <property name="EN_ENTI_SYNONYM" value=""/>
 <property name="maxzoomlevel" value="4"/>
-<property name="minzoomlevel" value="0"/>
+<property name="minzoomlevel" value="2"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
@@ -78,7 +78,7 @@ Security level
 <property name="EN_ATTR_NAME" value="Name"/>
 <property name="isdescriptive" value="FALSE"/>
 <property name="maxzoomlevel" value="4"/>
-<property name="minzoomlevel" value="0"/>
+<property name="minzoomlevel" value="2"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
@@ -104,10 +104,10 @@ Security level
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="*Standardwert"/>
+<property name="DE_ATTR_NAME" value="Standardwert"/>
 <property name="EN_ATTR_NAME" value="Value"/>
 <property name="maxzoomlevel" value="4"/>
-<property name="minzoomlevel" value="0"/>
+<property name="minzoomlevel" value="2"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>

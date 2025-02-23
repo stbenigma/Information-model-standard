@@ -4,7 +4,7 @@
 <createdTime>2021-03-31 09:07:07 UTC</createdTime>
 <comment><![CDATA[Gruppierung von Wertebereichen, Entitäten oder Kategorien für eine einfache Kommunikation, Anzeige oder Suche]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
-*Gruppierung von Wertebereichen, Entitäten oder Kategorien für eine einfache Kommunikation, Anzeige oder Suche
+Gruppierung von Wertebereichen, Entitäten oder Kategorien für eine einfache Kommunikation, Anzeige oder Suche
 ]DE_ENTI_COMMENT]
 [EN_ENTI_COMMENT[
 Group of domains, entities or categories. Categorizing elements for ease of communication, display and finding.
@@ -16,7 +16,7 @@ Group of domains, entities or categories. Categorizing elements for ease of comm
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
 <item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
-<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<typeID>E0CC5767-562C-A871-BD70-DA70B40552A8</typeID>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -33,7 +33,7 @@ Group of domains, entities or categories. Categorizing elements for ease of comm
 <property name="EN_ENTI_NAME" value="Category"/>
 <property name="EN_ENTI_SYNONYM" value=""/>
 <property name="maxzoomlevel" value="4"/>
-<property name="minzoomlevel" value="0"/>
+<property name="minzoomlevel" value="2"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
@@ -60,11 +60,11 @@ Name of the category. Unique within its parent category
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="*Name"/>
+<property name="DE_ATTR_NAME" value="Name [L]"/>
 <property name="EN_ATTR_NAME" value="Name [L]"/>
 <property name="isdescriptive" value="TRUE"/>
 <property name="maxzoomlevel" value="4"/>
-<property name="minzoomlevel" value="0"/>
+<property name="minzoomlevel" value="2"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
@@ -93,11 +93,11 @@ Reason, building aspect for this category.
 <domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="*Standard IE"/>
+<property name="DE_ATTR_NAME" value="Beschreibung [L]"/>
 <property name="EN_ATTR_NAME" value="Description [L]"/>
 <property name="isdescriptive" value="FALSE"/>
 <property name="maxzoomlevel" value="4"/>
-<property name="minzoomlevel" value="0"/>
+<property name="minzoomlevel" value="2"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
@@ -125,10 +125,10 @@ Reason, building aspect for this category.
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="Name"/>
-<property name="EN_ATTR_NAME" value="Name"/>
+<property name="DE_ATTR_NAME" value="Name1"/>
+<property name="EN_ATTR_NAME" value="*Name"/>
 <property name="maxzoomlevel" value="4"/>
-<property name="minzoomlevel" value="0"/>
+<property name="minzoomlevel" value="2"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
@@ -138,7 +138,7 @@ Reason, building aspect for this category.
 <comment><![CDATA[Name der Kategorie. Eindeutig innerhalt seiner Vater-Kategorie]]></comment>
 <generatorID>5991481B-E4FB-922B-F841-B6D8088109B1</generatorID>
 <notes><![CDATA[[DE_ATTR_COMMENT[
-*EN* Name of the category. Unique within its parent category
+Name der Kategorie. Eindeutig innerhalt seiner Vater-Kategorie
 ]DE_ATTR_COMMENT]
 [EN_ATTR_COMMENT[
 Name of the category. Unique within its parent category
@@ -157,8 +157,8 @@ Name of the category. Unique within its parent category
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="Name [L]1"/>
-<property name="EN_ATTR_NAME" value="Name2"/>
+<property name="DE_ATTR_NAME" value="Name2"/>
+<property name="EN_ATTR_NAME" value="*Name2"/>
 </propertyMap>
 </Attribute>
 </attributes>

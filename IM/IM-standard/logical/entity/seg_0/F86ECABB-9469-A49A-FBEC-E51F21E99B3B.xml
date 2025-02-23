@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F86ECABB-9469-A49A-FBEC-E51F21E99B3B" name="Geschäftsregel">
+<createdBy>stb</createdBy>
+<createdTime>2025-02-23 09:57:24 UTC</createdTime>
+<comment><![CDATA[Eine geschäftliche Regel, die mit den Standardelementen des Informationsmodells nicht beschrieben werden kann.
+Eine Regel muss mindestens 1 Element betreffen.
+
+Beispiele:
+Das Startdatum muss kleiner als das Endedatum sein.
+Eine Mischung muss aus mindestens 2 Substanzen bestehen.
+Für eine Person muss Telefonnummer oder Mailadresse (oder beide) ausgefüllt sein.]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Eine geschäftliche Regel, die mit den Standardelementen des Informationsmodells nicht beschrieben werden kann.
+Eine Regel muss mindestens 1 Element betreffen.
+
+Beispiele:
+Das Startdatum muss kleiner als das Endedatum sein.
+Eine Mischung muss aus mindestens 2 Substanzen bestehen.
+Für eine Person muss Telefonnummer oder Mailadresse (oder beide) ausgefüllt sein.
+
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+*A business rule that cannot be described with the standard elements of the information model.
+
+Examples:
+The start date must be less than the end date.
+A mixture must consist of at least 2 substances.
+Telephone number or e-mail address (or both) must be filled in for a person.
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<typeID>E0CC5767-562C-A871-BD70-DA70B40552A8</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<propertyMap>
+<property name="DE_ENTI_NAME" value="Geschäftsregel"/>
+<property name="DE_ENTI_SYNONYM" value=""/>
+<property name="EN_ENTI_NAME" value="Business rule"/>
+<property name="EN_ENTI_SYNONYM" value=""/>
+<property name="maxzoomlevel" value="2"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Regel" id="75CF00A9-380F-3E99-1FE4-80F66375EFD2">
+<createdBy>stb</createdBy>
+<createdTime>2025-02-23 10:31:15 UTC</createdTime>
+<comment><![CDATA[Regel die beschreibt, wie die verknüpften Elemente voneinander abhängen.]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Regel die beschreibt, wie die verknüpften Elemente voneinander abhängen.
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Rule that describes how the linked elements depend on each other.
+]EN_ENTI_COMMENT]
+[EN_ATTR_COMMENT[
+*DE* Regel die beschreibt, wie die verknüpften Elemente voneinander abhängen.
+]EN_ATTR_COMMENT]
+[DE_ATTR_COMMENT[
+Regel die beschreibt, wie die verknüpften Elemente voneinander abhängen.
+]DE_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="Regel"/>
+<property name="EN_ATTR_NAME" value="Rule"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="2"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EDA51E9A-4F84-458F-2AC2-293D6058E558" name="Key_1">
+<createdBy>stb</createdBy>
+<createdTime>2025-02-23 10:56:38 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<newElementsIDs>75CF00A9-380F-3E99-1FE4-80F66375EFD2,162440B2-12E9-9B27-6ED9-7ABA2239B783,4D010F04-01D6-B4F7-BEBE-C31B3E0C0BC5,BED2A9B8-EEDE-57E2-E384-6DC4F5D7A03C</newElementsIDs>
+<usedAttributes>
+<attributeRef>75CF00A9-380F-3E99-1FE4-80F66375EFD2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

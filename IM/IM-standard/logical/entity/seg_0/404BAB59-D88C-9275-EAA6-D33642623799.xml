@@ -16,7 +16,7 @@ Ein Postleitzahlgebiet kann enthalten viele Adressen.
 Ein Bus fährt optional mehre Strecken.
 Eine Strecke wird optional befahren von vielen Bussen.]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
-*Endpunkt einer Beziehung. Anknüpfungspunkt der Relation an eine Entität.
+Endpunkt einer Beziehung. Anknüpfungspunkt der Relation an eine Entität.
 Es gibt immer genau 2 Endpunkte in einer Relation.
 Es gibt eine Richtung der Beziehung: vorwärts/rückwärts
 Zur Vereinfachung der Verwendung der verschiedenen Arten der Beziehung Rolle, funktional, viele-2-viele verwenden spezifische Beziehung endet als vorwärts und rückwärts.
@@ -52,7 +52,7 @@ A route is optionally travelled by many buses.
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
 <item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
-<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<typeID>77D381F5-7647-2CBC-11A1-08B38B65FA57</typeID>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -79,7 +79,7 @@ A route is optionally travelled by many buses.
 Bei Rollen- und Funktionsbeziehungen beginnen die Beziehungen mit der Child- bzw. Many-Seite.
 Bei Many-2-Many-Beziehungen ist es beliebig, welches Ende welches ist.]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
-*Richtung der Beziehung.  (vorwärts / rückwärts)
+Richtung der Beziehung.  (vorwärts / rückwärts)
 Bei Rollen- und Funktionsbeziehungen beginnen die Beziehungen mit der Child- bzw. Many-Seite.
 Bei Many-2-Many-Beziehungen ist es beliebig, welches Ende welches ist.
 ]DE_ATTR_COMMENT]
@@ -164,7 +164,7 @@ contained in
 <createdTime>2022-11-03 06:47:28 UTC</createdTime>
 <comment><![CDATA[Eine Instanz der ersten Entität kann wie viele Beziehungen zu Instanzen der zweiten Entität haben. Es werden nur 1 (1) oder viele (M) unterschieden. 0 wird durch das obligatorisch Flag ausgedrückt. Viele ist nach oben offen und beinhaltet auch die Möglichkeit 1.]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
-*Eine Instanz der ersten Entität kann wie viele Beziehungen zu Instanzen der zweiten Entität haben. Es werden nur 1 (1) oder viele (M) unterschieden. 0 wird durch das obligatorisch Flag ausgedrückt. Viele ist nach oben offen und beinhaltet auch die Möglichkeit 1.
+Eine Instanz der ersten Entität kann wie viele Beziehungen zu Instanzen der zweiten Entität haben. Es werden nur 1 (1) oder viele (M) unterschieden. 0 wird durch das obligatorisch Flag ausgedrückt. Viele ist nach oben offen und beinhaltet auch die Möglichkeit 1.
 ]DE_ATTR_COMMENT]
 [EN_ATTR_COMMENT[
 An instance of the first entity can have how many relationships to instances of the second entity. Only 1 (1) or many (M) are distinguished. 0 is expressed by the mandatory flag. Many is open at the top and also includes the possibility of 1.
@@ -227,10 +227,11 @@ Does every instance of the first entity have to have a relationship to at least 
 <createdTime>2022-11-03 06:47:28 UTC</createdTime>
 <comment><![CDATA[Wahr -> Beziehung kann sich im Laufe der Zeit ändern. Es kann nur eine Beziehung zwischen zwei Instanzen der Entitäten zu einem bestimmten Zeitpunkt bestehen. Das System muss eine Historie der Änderungen führen.]]></comment>
 <notes><![CDATA[[DE_ATTR_COMMENT[
-*Wahr -> Beziehung kann sich im Laufe der Zeit ändern. Es kann nur eine Beziehung zwischen zwei Instanzen der Entitäten zu einem bestimmten Zeitpunkt bestehen. Das System muss eine Historie der Änderungen führen.
+Wahr -> Beziehung kann sich im Laufe der Zeit ändern. Es kann nur eine Beziehung zwischen zwei Instanzen der Entitäten zu einem bestimmten Zeitpunkt bestehen. Das System muss eine Historie der Änderungen führen.
 ]DE_ATTR_COMMENT]
 [EN_ATTR_COMMENT[
-True -> Relationship can change over time. Only 1 relationship can exist between two instances of the entities at one specific time. System must keep history of changes.
+*YES -> This relationship (resp. its respective foreign key attribut value) is managed with their entire (busines semantic) change history
+NO -> Only the current value for this relationship is managed.
 ]EN_ATTR_COMMENT]
 ]]></notes>
 <ownerDesignName>IM-standard</ownerDesignName>
@@ -253,7 +254,7 @@ True -> Relationship can change over time. Only 1 relationship can exist between
 <property name="EN_ATTR_NAME" value="is historicized"/>
 <property name="isdescriptive" value="FALSE"/>
 <property name="maxzoomlevel" value="4"/>
-<property name="minzoomlevel" value="0"/>
+<property name="minzoomlevel" value="2"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Attribute>
@@ -340,8 +341,8 @@ unique Name of the entity normally used in communication.
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="Name"/>
-<property name="EN_ATTR_NAME" value="Name"/>
+<property name="DE_ATTR_NAME" value="Name3"/>
+<property name="EN_ATTR_NAME" value="*Name"/>
 </propertyMap>
 </Attribute>
 <Attribute name="Name [L]" id="BB4CC15D-E044-B91D-BA4C-A6F2ED768F1F">
@@ -397,8 +398,8 @@ unique Name of the entity normally used in communication.
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="Name1"/>
-<property name="EN_ATTR_NAME" value="Name1"/>
+<property name="DE_ATTR_NAME" value="Name2"/>
+<property name="EN_ATTR_NAME" value="*Name1"/>
 </propertyMap>
 </Attribute>
 </attributes>
@@ -412,9 +413,12 @@ unique Name of the entity normally used in communication.
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
 <item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
-<newElementsIDs>DAA092E2-8804-8CBD-683E-330085B31F4C,1671329E-C611-A1FF-9165-F003C1660352</newElementsIDs>
+<pk>true</pk>
+<newElementsIDs>DAA092E2-8804-8CBD-683E-330085B31F4C,1671329E-C611-A1FF-9165-F003C1660352,3140D369-7F42-15FD-F0B1-8F385B6A588C</newElementsIDs>
 <usedAttributes>
 <attributeRef>DAA092E2-8804-8CBD-683E-330085B31F4C</attributeRef>
+<attributeRef>5D2CFC9F-C295-BAC2-7516-68742C3DA7B3</attributeRef>
+<attributeRef>0A192539-2B66-FE85-3E07-5D2054737040</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

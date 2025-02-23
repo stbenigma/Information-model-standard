@@ -18,7 +18,7 @@ Länge, in mm, numerisch(7,3)
 Bearbeitungsstatus (Offen, inArbeit, abgebrochen, beendet)
 Geo-Koordinate (Längengrad, Breitengrad)]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
-*Beschreibung der zulässigen Werte für ein oder mehrere Attribute.
+Beschreibung der zulässigen Werte für ein oder mehrere Attribute.
 Die Typen Numerisch, Text, Zeit oder Aufzählung sind begrifflich zu verstehen.
 Reale Datentypen und ggf. Anzeigeformate und Speicherung werden in der Implementierung festgelegt.
 
@@ -59,7 +59,7 @@ Telephone number (country code, connection number)
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
 <item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
 </engineerTo>
-<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<typeID>77D381F5-7647-2CBC-11A1-08B38B65FA57</typeID>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -175,8 +175,8 @@ Purpose, usage and verbal description of the allowable values defined by this do
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="Name"/>
-<property name="EN_ATTR_NAME" value="Name"/>
+<property name="DE_ATTR_NAME" value="*Name"/>
+<property name="EN_ATTR_NAME" value="*Name"/>
 <property name="maxzoomlevel" value="4"/>
 <property name="minzoomlevel" value="0"/>
 <property name="publ_status" value="PUBL"/>
@@ -188,7 +188,7 @@ Purpose, usage and verbal description of the allowable values defined by this do
 <comment><![CDATA[Name der Kategorie. Eindeutig innerhalt seiner Vater-Kategorie]]></comment>
 <generatorID>60041B83-7287-F0AD-B4EC-C41AED3FEC26</generatorID>
 <notes><![CDATA[[DE_ATTR_COMMENT[
-*EN* Name of the category if it is not a reference to any other elements
+Name der Kategorie. Eindeutig innerhalt seiner Vater-Kategorie
 ]DE_ATTR_COMMENT]
 [EN_ATTR_COMMENT[
 Name of the category if it is not a reference to any other elements
@@ -211,7 +211,7 @@ Name of the category if it is not a reference to any other elements
 <property name="EN_ATTR_NAME" value="Name1"/>
 </propertyMap>
 </Attribute>
-<Attribute name="Name1 [L]" id="D7017C1A-CAA3-2DC9-3739-7C4182F867CB">
+<Attribute name="*Name2" id="D7017C1A-CAA3-2DC9-3739-7C4182F867CB">
 <createdBy>stb</createdBy>
 <createdTime>2024-12-31 11:41:37 UTC</createdTime>
 <comment><![CDATA[Name der Kategorie. Eindeutig innerhalt seiner Vater-Kategorie]]></comment>
@@ -236,8 +236,8 @@ Name of the category. Unique within its parent category
 <domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
-<property name="DE_ATTR_NAME" value="*Name1"/>
-<property name="EN_ATTR_NAME" value="Name [L]1"/>
+<property name="DE_ATTR_NAME" value="*Name2"/>
+<property name="EN_ATTR_NAME" value="Name2"/>
 </propertyMap>
 </Attribute>
 </attributes>

@@ -12,7 +12,7 @@ Koordinaten (Westliche länge und nördliche Breite)
 Hotelzimmer-Nr (Stockwerk, ZimmerNr)
 Flugkennung (Fluggesellschaft Kürzel ,Flugnummer (LX1247))]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
-*Es gibt Attribute, die aus mehreren Bestandteilen bestehen, aber für eine Entität wie ein Attribut angesehen werden können.
+Es gibt Attribute, die aus mehreren Bestandteilen bestehen, aber für eine Entität wie ein Attribut angesehen werden können.
 Die Bestandteile dieser Attributgruppe treten immer gemeinsam auf.
 Dass ein Attribut Teilwerte enthält, für die man sich separat interessiert, verletzt im Grundsatz die 1. Normalform. Wenn aber die Elemente einer Attributgruppe selber Attribute sind und die Gruppe als Platzhalter von mehreren Attributen verstanden werden kann, ist diese Verletzung auflösbar.
 
@@ -41,7 +41,7 @@ Flight identification (airline codeand, flight number (LX 247))
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
 <item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="false"/>
 </engineerTo>
-<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<typeID>E0CC5767-562C-A871-BD70-DA70B40552A8</typeID>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -60,7 +60,7 @@ Flight identification (airline codeand, flight number (LX 247))
 <property name="EN_ENTI_NAME" value="Group domain"/>
 <property name="EN_ENTI_SYNONYM" value="Group attribute"/>
 <property name="maxzoomlevel" value="4"/>
-<property name="minzoomlevel" value="0"/>
+<property name="minzoomlevel" value="2"/>
 <property name="publ_status" value="PUBL"/>
 </propertyMap>
 </Entity>

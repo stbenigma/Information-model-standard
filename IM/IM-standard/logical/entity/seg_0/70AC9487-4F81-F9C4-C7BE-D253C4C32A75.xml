@@ -27,7 +27,7 @@ Ein Artikel ist entweder ein virtueller Artikel oder ein physischer Artikel
 Ein virtueller Artikel ist ein Artikel
 Ein physikalischer Artikel ist ein Artikel]]></comment>
 <notes><![CDATA[[DE_ENTI_COMMENT[
-*1:1 Beziehung die eine Rolle darstellt.
+1:1 Beziehung die eine Rolle darstellt.
 Analogon: Ein:e Schauspieler:in (Person) spielt eine Rolle um eine andere Person (mit anderen Merkmalen) zu repräsentieren.
 
 Eine Rolle hat immer eine Grundentität, die sie erweitert. 
@@ -71,7 +71,7 @@ Person IsA
 <item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
 <item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="false"/>
 </engineerTo>
-<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<typeID>E0CC5767-562C-A871-BD70-DA70B40552A8</typeID>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
