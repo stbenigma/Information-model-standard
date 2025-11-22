@@ -1,0 +1,347 @@
+{
+  "$id": "Domain-schema.json",
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "version": "0.9",
+  "type": "object",
+  "description": "Description of the value range of one (or several) attribute(s) or column(s).  \nThe types numerical, text, time or enumeration are to be understood conceptually. \nThe real data types and, if applicable, formats (for numbers dates and times) and for storage are defined in the implementation. \nValue groups are attribute groups, i.e. several attributes that occur more than once together are combined under a new name for easier handling. Example telephone number consisting of country code and telephone number",
+  "unevaluatedProperties": false,
+  "allOf": [
+    {
+      "properties": {
+        "elementid": {
+          "description": "unique ID of the domain for reference purposes",
+          "$ref": "#/components/$defs/DomainId"
+        },
+        "name": {
+          "description": "unique name of the domain.",
+          "$ref": "GeneralTypes-schema.json#/components/$defs/SomeName"
+        },
+        "technicalname": {
+          "description": "unique technical name of the domain, as e.g. used in the database schema",
+          "$ref": "GeneralTypes-schema.json#/components/$defs/TechnicalName"
+        },
+        "description": {
+          "description": "purpose, usage and verbal description of the range of values defined by this domain",
+          "$ref": "GeneralTypes-schema.json#/components/$defs/SomeText"
+        },
+        "categoryid": {
+          "description": "Category the domain is grouped in",
+          "$ref": "Category-schema.json#/components/$defs/CategoryId"
+        },
+        "examples": {
+          "description": "some example values which are valid for this domain",
+          "$ref": "GeneralStructures-schema.json#/components/schemas/Examples"
+        },
+        "additionalProps": {
+          "description": "additional properties (aka user defined properties udp) are  any properties of an this element  added by the current modeller. They serve as an extension to the predfefined element properties.",
+          "$ref": "GeneralStructures-schema.json#/components/schemas/AdditionalProperties"
+        }
+      },
+      "required": [
+        "elementid",
+        "name"
+      ]
+    },
+    {
+      "oneOf": [
+        {
+          "$ref": "#/components/schemas/NumericDomain"
+        },
+        {
+          "$ref": "#/components/schemas/TextDomain"
+        },
+        {
+          "$ref": "#/components/schemas/DatetimeDomain"
+        },
+        {
+          "$ref": "#/components/schemas/BinaryDomain"
+        },
+        {
+          "$ref": "#/components/schemas/LOVDomain"
+        },
+        {
+          "$ref": "#/components/schemas/GroupDomain"
+        },
+        {
+          "$ref": "#/components/schemas/BooleanDomain"
+        }
+      ]
+    }
+  ],
+  "components": {
+    "schemas": {
+      "DatetimeDomain": {
+        "type": "object",
+        "properties": {
+          "domaintype": {
+            "const": "DatetimeDomain"
+          },
+          "mindate": {
+            "description": "minimum datetime value",
+            "type": "string",
+            "anyOf":[
+              {
+                "format": "date-time"
+              },
+              {
+                "format":"date"
+              }]
+          },
+          "maxdate": {
+            "description": "maximum datetime value",
+            "type": "string",
+            "anyOf":[
+              {
+                "format": "date-time"
+              },
+              {
+                "format":"date"
+              }]
+          },
+          "granularity": {
+            "description": "Granularity of datetime value (Month, Day, hour, second ...)",
+            "$ref": "#/components/$defs/TimeGranularity",
+            "default": "MINUTE"
+          }
+        },
+        "required": [
+          "granularity"
+        ]
+      },
+      "TextDomain": {
+        "type": "object",
+        "properties": {
+          "domaintype": {
+            "const": "TextDomain"
+          },
+          "minlength": {
+            "type": "integer",
+            "default": 0
+          },
+          "maxlength": {
+            "type": "integer"
+          },
+          "syntaxrule": {
+            "$ref": "#/components/$defs/SyntaxRule"
+          }
+        }
+      },
+      "NumericDomain": {
+        "type": "object",
+        "properties": {
+          "domaintype": {
+            "const": "NumericDomain"
+          },
+          "minvalue": {
+            "description": "minimum numeric value",
+            "type": "number"
+          },
+          "maxvalue": {
+            "description": "maximum numeric value",
+            "type": "number"
+          },
+          "totaldigits": {
+            "description": "maximum number of overall digits allowed to express the numeric value ",
+            "type": "integer"
+          },
+          "fractdigits": {
+            "description": "number of digits after the decimal point. Part of the totaldigits number",
+            "type": "integer"
+          },
+          "roundvalue": {
+            "description": "value to round the numeric value to\n1 : to the next integer\n10: to the next tenfold of the value\n100: to the next hundredfold\n0.1: to the 1 tenth of the value\n0.05: to the five hundreth of the value",
+            "type": "number"
+          },
+          "unit": {
+            "description": "short name of the physical unit the numeric value expresses",
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "$ref": "#/components/$defs/Unit"
+              }
+            ]
+          }
+        }
+      },
+      "BinaryDomain": {
+        "type": "object",
+        "properties": {
+          "domaintype": {
+            "const": "BinaryDomain"
+          },
+          "contenttype": {
+            "description": "Kind of content in binary data",
+            "type": "string",
+            "examples": [
+              "video",
+              "picture",
+              "sound",
+              "MS-word",
+              "Keynote"
+            ]
+          },
+          "binaryfiletype": {
+            "description": "Kind of binary data, typically the fileextension of the data",
+            "type": "string",
+            "examples": [
+              "pdf",
+              "gif",
+              "mp4",
+              "tif"
+            ]
+          }
+        }
+      },
+      "BooleanDomain": {
+        "type": "object",
+        "properties": {
+          "domaintype": {
+            "const": "BooleanDomain"
+          }
+        }
+      },
+      "GroupDomain": {
+        "type": "object",
+        "description": "Group domains have several (>1) domain attributes (which reference their own domain\nAttributes of a  group domain are defined in \"Attributes\" with a reference do my domainId",
+        "properties": {
+          "domaintype": {
+            "const": "GroupDomain"
+          }
+        }
+      },
+      "LOVDomain": {
+        "type": "object",
+        "properties": {
+          "domaintype": {
+            "const": "LOVDomain"
+          },
+          "values": {
+            "description": "List of unique pairs of strings  (value,display).",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/$defs/LOVValue"
+            }
+          }
+        }
+      }
+    },
+    "$defs": {
+      "DomainId": {
+        "description": "typed ID unique over all domains in this schema",
+        "allOf": [
+          {
+            "$ref": "GeneralTypes-schema.json#/components/$defs/ElementId"
+          },
+          {
+            "pattern": "^DOMA[0-9]+$"
+          }
+        ]
+      },
+      "TimeGranularity": {
+        "description": "Granularity of a DateTime entry. Describes to what detail level a datetime-value is rounded. ",
+        "type": "string",
+        "enum": [
+          "NANOSECOND",
+          "MICROSECOND",
+          "MILLISECOND",
+          "SECOND",
+          "MINUTE",
+          "HOUR",
+          "DAY",
+          "WEEK",
+          "MONTH",
+          "QUARTER",
+          "SEMESTER",
+          "YEAR",
+          "DECADE",
+          "CENTURY"
+        ]
+      },
+      "SyntaxRule": {
+        "description": "Rule (usually regexppattern) for the rule a string must adhere to",
+        "type": "string"
+      },
+      "Unit": {
+        "description": "Physical unit describing a typed integer value",
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "description": "value used for the naming of the unit. Can contain more than just a SI unit.",
+            "type": "string",
+            "examples": [
+              "10^6 km",
+              "mm",
+              "mile",
+              "quantity in kilo ",
+              "MB",
+              "kWh"
+            ]
+          },
+          "description": {
+            "type": "string"
+          },
+          "siunit": {
+            "description": "units as defined in https://en.wikipedia.org/wiki/International_System_of_Units",
+            "type": "string",
+            "examples": [
+              "kg",
+              "km",
+              "mile",
+              "quantity",
+              "kWh"
+            ]
+          }
+        },
+        "required": [
+          "symbol"
+        ]
+      },
+      "LOVValue": {
+        "description": "Value in a list of predefined values for a LOV/enumeration-domain",
+        "type": "object",
+        "properties": {
+          "value": {
+            "description": "Code as it is stored or transmitted. Unique value within the value list",
+            "$ref": "GeneralTypes-schema.json#/components/$defs/Name"
+          },
+          "displayvalue": {
+            "description": "The value displayed for users. Can be multilingual",
+            "$ref": "GeneralTypes-schema.json#/components/$defs/SomeText"
+          },
+          "description": {
+            "description": "Meaning, explanation of the value",
+            "$ref": "GeneralTypes-schema.json#/components/$defs/SomeText"
+          },
+          "sortorder": {
+            "description": "Ascending sort number of this value in this enumeration",
+            "type": "integer"
+          },
+          "additionalProps": {
+            "description": "additional properties (aka user defined properties udp) are  any properties of an this element  added by the current modeller. They serve as an extension to the predfefined element properties.",
+            "$ref": "GeneralStructures-schema.json#/components/schemas/AdditionalProperties"
+          }
+        },
+        "required": [
+          "value"
+        ],
+        "examples": [
+          {
+            "value": "CH",
+            "displayvalue": {
+              "de": "Schweiz",
+              "fr": "Suisse",
+              "it": "Svizzera",
+              "en": "Switzerland"
+            },
+            "sortorder": 1
+          },
+          {
+            "value": "working"
+          }
+        ]
+      }
+    }
+  }
+}

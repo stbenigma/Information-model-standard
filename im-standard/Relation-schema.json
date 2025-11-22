@@ -1,0 +1,113 @@
+{
+  "$id": "Relation-schema.json",
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "version": "0.9",
+  "type": "object",
+  "description": "Relationships always link exactly 2 entities with each other. They are an important part for understanding a model. \nWe distinguish between 5 types of relationships\n\nM:1 Functional / ‘many to 1’ relationship\n      is a relationship that is unique in one direction. This means that an entity on the many side is assigned exactly one instance of the entity on the 1 side.\nExample: an employee works for an company, in a company work many employees\n\nM:N ‘many to many’ relationship\nis a relationship that is not unique in any direction. Each of the two entities can have assigned 1 or many  instances of the entity on the other side. This relationships have to be resolved as intersections tables in the data model.\nExample: an employee works on many projects, in a project work many employees\n\nROLE role / 'is a' relationship\nA 1:1 relationship with one side optional, the other mandatory. The entity on the mandatory end is a role (a  variant) of the entity at the optinal side. It inherits all attributes, key, and relationships of its parent-entity but has attributes or relationships of its own. \nExample: Employee is a Person, a bus is a means of transport\n\nSUBTYPE subtype / 'is either or' relationship\nA 1:1 relationship with both sides mandatory, but one side an arc ('either or' relationships). The child is a mandatory extension of the parent. The parent must be exactly one of its childrenb.\nEvery child inherits all attributes, key, and relationships of its parent-entity but can have attributes or relationships of its own. \nExample: Planet is a celestial body, an asteriod is a celestial body, a moon is a celestial body,  \na celestial body is either a planet or a asteriod or a moon\n\n1:1 identity relationship, ‘one to one’ relationship\nis a 1:1 relationship which is neither a ROLE nor a SUBTYPE. Either both sides are optional or both sides are mandatory but without the arc. \nExample: a shipment is extended with one customs declaration, a customs declaration extends one shipment",
+        "properties": {
+          "elementid": {
+            "description": "unique ID of the relation for reference purposes",
+            "$ref": "#/components/$defs/RelationId"
+          },
+          "relationtype": {
+            "description": "type of relationship M:1, M:N, 1:1, ROLE, SUBTYPE",
+            "$ref": "#/components/$defs/RelationType"
+          },
+          "fwd": {
+            "description": "forward: relationship end whrere we see relation starting. fwd and rev is arbitraray, i.e. carries no semantic. Both ends can point to the same entity, forming a recursive, self-referential relationship.\nThe relationtype influences the rules for the relationiship ends. See RelationEnd for details",
+            "$ref": "#/components/$defs/RelationEnd"
+          },
+          "bwd": {
+            "description": "backward: relationship end where we see relation ending. fwd and bwd are arbitraray. See RelationEnd for details",
+            "$ref": "#/components/$defs/RelationEnd"
+          },
+          "examples": {
+            "$ref": "GeneralStructures-schema.json#/components/schemas/Examples"
+          },
+          "additionalProps": {
+            "description": "additional properties (aka user defined properties) are any properties of an element  added by the current modeller. They serve as an extension to the predfefined element properties.",
+            "$ref": "GeneralStructures-schema.json#/components/schemas/AdditionalProperties"
+          }
+        },
+        "required": [
+          "elementid",
+          "relationtype",
+          "fwd",
+          "bwd"
+        ],
+        "additionalProperties": false,
+        "examples": [
+          "1 Person lives in 1 city, 1 city hosts many people"
+        ],
+  "components": {
+    "$defs": {
+      "RelationId": {
+        "description": "typed ID unique over all relations in this schema",
+        "allOf": [
+          {
+            "$ref": "GeneralTypes-schema.json#/components/$defs/ElementId"
+          },
+          {
+            "pattern": "^RELA[0-9]+$"
+          }
+        ]
+      },
+      "RelationEnd": {
+        "description": "one side of a relation starting or ending a relationship.",
+        "type": "object",
+        "properties": {
+          "entityid": {
+            "description": "ID of the entity, this relationshipend is attached to.",
+            "$ref": "Entity-schema.json#/components/$defs/EntityId"
+          },
+          "arcnumber": {
+            "description": "exclusive relationship ends are grouped in a arc. All relationship ending in an arc must be attached to the same entity. An entity has at a given time only one of the relationships out of the grouped relationships.\nAre there several groups, an entity can have a relationship out of every group.\nIn a group all relationshipends must be mandataory or all must be optional. This means, an entity must or can have exactly one of the relationships",
+            "type": "integer"
+          },
+          "assoctext": {
+            "description": "Verb (with or without a preposition), expressing, what this entity has to do with the entity on the other end.\nThis association expresses the meaning (semantic) of the relation from this entity to the other.\nMandatory for all relation types M:N, 1:1, M:1. Defaults to 'is' for ROLE and SUBTYPE ",
+            "$ref": "GeneralTypes-schema.json#/components/$defs/SomeText",
+            "examples": [
+              "bought",
+              "consists of",
+              "leads to"
+            ]
+          },
+          "cardinality": {
+            "description": "how many instances of the entity at the other end can be connected with one instace of this entitiy. Any number (M) or at most 1 (1)",
+            "type": "string",
+            "pattern": "^1|M$"
+          },
+          "mandatory": {
+            "description": "Is a relationship to the other entity mandatory, meaning there is at least one relationship from the instance of this entity to an instance of the other one",
+            "type": "boolean"
+          },
+          "historicised": {
+            "description": "is the relationship temporal. Meaning, we have to keep track of all older relationhips from this entity to the other one.\nHas to be resolved with a list of foreign keys or a extra  (intersection) table",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "entityid",
+          "cardinality",
+          "mandatory"
+        ],
+        "examples": [
+          "ENTI0001 (Adress) lies in mandatorily 1 other entity-instance (ENTI007 (zip code area))",
+          "ENTI007 (zip code area) contains optionally M other entity-instances (ENTI0001 (Adress))"
+        ]
+      },
+      "RelationType": {
+        "description": "M:1 / functional / ‘many to 1’\n is a relationship that is unique in one direction. This means that an entity on the many side is assigned exactly one instance of the entity on the 1 side.\nExample: an employee works for an company, in a company work many employees\n\nM:N / many-to -many\n     is a relationship that is not unique in any direction. Each of the two entities can have assigned 1 or many  instances of the entity on the other side. This relationships hase to be resolved as intersections tables in the data model.\nExample: an employee works on many projects, in a project work many employees\n\nROLE / is a\n     A 1:1 relationship with one side optional, the other mandatory. The entity on the mandatory end is a role (a variant) of the entity at the optinal side. It inherits all attributes, key, and relationships of its parent-entity but has attributes or relationships of its own.\nExample: Employee is a Person, a bus is a means of transport\n\nSUBTYPE / is either or\n\n     A 1:1 relationship with both sides mandatory, but one side an arc ('either or' relationship). The child is a mandatory extension of the parent. The parent must be exactly one of its children.\nEvery child inherits all attributes, key, and relationships of its parent-entity but can have attributes or relationships of its own.\n\n1:1 / identity /  one to one relationship\nis a 1:1 relationship which is neither a ROLE nor a SUBTYPE. Either both sides are optional or both sides are mandatory but without the arc. \nExample: a shipment can be is extended with one customs declaration, a customs declaration can extend one shipment",
+        "type": "string",
+        "enum": [
+          "1:1",
+          "ROLE",
+          "SUBTYPE",
+          "M:1",
+          "M:N"
+        ]
+      }
+    }
+  }
+}

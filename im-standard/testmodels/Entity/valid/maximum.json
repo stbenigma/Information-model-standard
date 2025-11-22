@@ -1,0 +1,35 @@
+{
+  "elementid": "ENTI0",
+  "name": "Entity1",
+  "categoryid": "CATG001",
+  "description": {
+    "en": "Purpose, usage, meaning of an attribute value hold by this attribute."
+  },
+  "shortdescr": "Short text to be displayed as help to understand the purpose of this attribute in user interfaces.",
+  "additionalProps": [
+    {
+      "$comment": "Entity, ..."
+    }
+  ],
+  "shortname": "ENTIABC",
+  "categoryid": "CATG001",
+  "synonyms": [
+    "synonym1",
+    "another syno"
+  ],
+  "examples": [
+    "example1",
+    {
+      "en": "dict example."
+    }
+  ],
+  "keys": [
+    [
+      "ATTR001",
+      "RELA0"
+    ],
+    [
+      "RELA0"
+    ]
+  ]
+}

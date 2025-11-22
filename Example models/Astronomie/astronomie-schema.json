@@ -2,14 +2,13 @@
   "ModelInfo": {
     "modelname": "Beispielmodell Astronomie",
     "modeltype": "Information model",
-    "mainlanguage": "de",
     "modelversion": "0.9",
+    "mainlanguage": "de",
     "languages": [
-      "de",
       "en"
     ],
     "targetenvironment": "Informatiosmodell Standard",
-    "origintool": "dataspot"
+    "description": "manually created schema representin the dataspot information model of the astronomy example.\nFor testing and reference purposes"
   },
   "Categories": [
     {
@@ -1039,7 +1038,6 @@
         "Triton",
         "Charon"
       ],
-      "attributes": [],
       "keys": [
         [
           "RELA2",
@@ -1063,21 +1061,6 @@
         "LHS 1140 b",
         "Proxima Centauri b",
         "Kepler-186f"
-      ],
-      "attributes": [
-        {
-          "elementid": "ATTR17",
-          "name": "Oberfl\u00e4chentyp",
-          "mandatory": false,
-          "domainid": "DOMA27",
-          "description": "Material, das die \u00e4usserste Schicht des Himmelsk\u00f6pers bildet.",
-          "shortdescr": "Zustandsform der Oberfl\u00e4che",
-          "examples": [
-            "Feststoff",
-            "Gas",
-            "Eis"
-          ]
-        }
       ],
       "keys": [
         [
@@ -1107,94 +1090,6 @@
         "Proxima Centauri",
         "Kepler-186"
       ],
-      "attributes": [
-        {
-          "elementid": "ATTR18",
-          "name": "Bezeichnung",
-          "mandatory": false,
-          "domainid": "DOMA23",
-          "displayseq": 1,
-          "description": "Bezeichnung gem\u00e4ss Henry-Draper-Katalog (HD-Katalog)",
-          "shortdescr": "Bezeichnung des Sterns im Katalog",
-          "examples": [
-            "HD 209458"
-          ],
-          "descriptive": true,
-          "repeated": true
-        },
-        {
-          "elementid": "ATTR19",
-          "name": "Durchmesser",
-          "mandatory": false,
-          "domainid": "DOMA2",
-          "displayseq": 5,
-          "description": "Der Durchmesser kann in 3 Werten angegeben werden. (Pol-, \u00c4quator- und mittlerer Durchmesser)",
-          "shortdescr": "Durchmesser eines Sterns",
-          "examples": [
-            "3000 km",
-            "15000 km",
-            "12412 - 12472 km"
-          ]
-        },
-        {
-          "elementid": "ATTR20",
-          "name": "Entdeckungsjahr",
-          "mandatory": false,
-          "domainid": "DOMA3",
-          "displayseq": 6,
-          "description": "Jahr, in dem dieser Stern entdeckt wurde.",
-          "examples": [
-            "1752",
-            "512 vuz",
-            "2009"
-          ]
-        },
-        {
-          "elementid": "ATTR21",
-          "name": "Entfernung",
-          "mandatory": false,
-          "domainid": "DOMA1",
-          "displayseq": 4,
-          "description": "Distanz in Lichtjahren",
-          "shortdescr": "Distanz eines Sterns von unserer Sonne",
-          "examples": [
-            "1.3 Mio LJ",
-            "365 lj"
-          ],
-          "descriptive": true
-        },
-        {
-          "elementid": "ATTR22",
-          "name": "Leuchtklasse",
-          "mandatory": false,
-          "domainid": "DOMA26",
-          "displayseq": 3,
-          "description": "Die\u00a0Leuchtkraftklasse\u00a0eines Sterns ist durch Eigenschaften bestimmt, die von seiner\u00a0Leuchtkraft\u00a0abh\u00e4ngen; dies sind insbesondere die\u00a0Breite\u00a0und die St\u00e4rke (H\u00f6he) der\u00a0Spektrallinien. So haben Riesensterne eine geringere\u00a0Schwerebeschleunigung\u00a0in ihrer\u00a0Photosph\u00e4re\u00a0als Zwergsterne gleicher Temperatur, was eine geringere\u00a0Druckverbreiterung\u00a0der Linien bewirkt, wogegen die\u00a0Spektralklasse\u00a0Eigenschaften ber\u00fccksichtigt, die prim\u00e4r von seiner Oberfl\u00e4chentemperatur abh\u00e4ngen.\n\nQuelle: https://de.wikipedia.org/wiki/Klassifizierung_der_Sterne#Leuchtkraftklassen_(Entwicklungszustand)",
-          "shortdescr": "Leuchtkraftklasse",
-          "examples": [
-            "I",
-            "V",
-            "III",
-            "D"
-          ],
-          "descriptive": true
-        },
-        {
-          "elementid": "ATTR23",
-          "name": "Name",
-          "mandatory": true,
-          "domainid": "DOMA23",
-          "displayseq": 2,
-          "description": "ca 500 Sterne haben eigene Namen, vergeben durch die Internationale Astronomische Union (IAU)",
-          "shortdescr": "Eigenname eines Sterns",
-          "examples": [
-            "Alpha Centauri",
-            "Beta Orionis",
-            "Sol"
-          ],
-          "descriptive": false
-        }
-      ],
       "keys": [
         [
           "ATTR18"
@@ -1216,21 +1111,6 @@
         "Eris",
         "Haumea",
         "Makemake"
-      ],
-      "attributes": [
-        {
-          "elementid": "ATTR24",
-          "name": "Oberfl\u00e4chentyp",
-          "mandatory": false,
-          "domainid": "DOMA27",
-          "description": "Material, das die \u00e4usserste Schicht des Himmelsk\u00f6pers bildet.",
-          "shortdescr": "Zustandsform der Oberfl\u00e4che",
-          "examples": [
-            "Feststoff",
-            "Gas",
-            "Eis"
-          ]
-        }
       ],
       "keys": [
         [
@@ -1254,7 +1134,6 @@
         "Romulus",
         "Remus"
       ],
-      "attributes": [],
       "keys": [
         [
           "RELA1",
@@ -1277,7 +1156,6 @@
         "NEOWISE (2020)",
         "67P/Churyumov-Gerasimenko"
       ],
-      "attributes": [],
       "keys": [
         [
           "RELA4"
@@ -1294,104 +1172,232 @@
         "de": "Irgend ein Himmelsobjekt, das uns bekannt ist und einen anderes Himmelsobjekt umkreist",
         "en": "Any celestial object that is known to us and that orbits another celestial object"
       },
-      "attributes": [
-        {
-          "elementid": "ATTR10",
-          "name": "Aphel",
-          "mandatory": false,
-          "domainid": "DOMA4",
-          "displayseq": 6,
-          "description": "Der am weitesten enfernte Punkt einer Umlaufbahn eines Begleiters um sein Mutterobjekt\n\nDie H\u00e4lfte des l\u00e4nsten Durchmessers einer Ellipse",
-          "shortdescr": "Der enternteste Punkt der Umlaufbahn eines Begleiters"
-        },
-        {
-          "elementid": "ATTR11",
-          "name": "Durchmesser",
-          "mandatory": false,
-          "domainid": "DOMA2",
-          "displayseq": 2,
-          "description": "Der Durchmesser kann in 3 Werten angegeben werden. (Pol-, \u00c4quator- und mittlerer Durchmesser)",
-          "shortdescr": "Durchmesser der Kugel eines grossen Objektes",
-          "examples": [
-            "6112 km"
-          ],
-          "descriptive": true
-        },
-        {
-          "elementid": "ATTR12",
-          "name": "Entdeckungsjahr",
-          "mandatory": false,
-          "domainid": "DOMA3",
-          "displayseq": 7,
-          "description": "Jahr, in dem dieser Begleiter entdeckt wurde.",
-          "examples": [
-            "1752",
-            "512 vuz",
-            "2009"
-          ]
-        },
-        {
-          "elementid": "ATTR13",
-          "name": "mittlerer Abstand",
-          "mandatory": false,
-          "domainid": "DOMA4",
-          "displayseq": 4,
-          "description": "Mittlerer Abstand des Himmelsk\u00f6rpers vom Mutterobjekt. W\u00e4re der Kreisradius, wenn die Umlaufbahn kreisf\u00f6rmig w\u00e4re.",
-          "examples": [
-            "1 AE",
-            "150Mio km",
-            "386000 km"
-          ],
-          "descriptive": true
-        },
-        {
-          "elementid": "ATTR14",
-          "name": "Name",
-          "mandatory": false,
-          "domainid": "DOMA23",
-          "displayseq": 1,
-          "examples": [
-            "(Erd-)Mond",
-            "Phobos",
-            "Deimos",
-            "Io",
-            "Europa",
-            "Ganymed",
-            "Triton",
-            "LHS 1140 b",
-            "Proxima Centauri b",
-            "Kepler-186f"
-          ],
-          "descriptive": true
-        },
-        {
-          "elementid": "ATTR15",
-          "name": "Perihel",
-          "mandatory": false,
-          "domainid": "DOMA4",
-          "displayseq": 5,
-          "description": "Der n\u00e4chste Punkt der Umlaufbahn eines Begleiters um sein Mutterobjekt.\n\nDie kleine Halbachse der Ellipse",
-          "shortdescr": "Der am n\u00e4chsten liegende Punkt der Umlaufbahn eines Begleiters"
-        },
-        {
-          "elementid": "ATTR16",
-          "name": "Umlaufdauer",
-          "mandatory": false,
-          "domainid": "DOMA5",
-          "displayseq": 3,
-          "description": "Zeit die ein Begleiter braucht um das Mutterobjekt zu umkreisen. (Wert + Zeiteinheit)",
-          "examples": [
-            "1 Jahr",
-            "23 Tage",
-            "3.1 Stunden"
-          ],
-          "descriptive": true
-        }
-      ],
       "keys": [
         [
           "ATTR14"
         ]
+      ]
+    }
+  ],
+  "Attributes": [
+    {
+      "elementid": "ATTR18",
+      "name": "Bezeichnung",
+      "mandatory": false,
+      "parentid": "ENTI3",
+      "domainid": "DOMA23",
+      "displayseq": 1,
+      "description": "Bezeichnung gem\u00e4ss Henry-Draper-Katalog (HD-Katalog)",
+      "shortdescr": "Bezeichnung des Sterns im Katalog",
+      "examples": [
+        "HD 209458"
+      ],
+      "descriptive": true,
+      "repeated": true
+    },
+    {
+      "elementid": "ATTR19",
+      "name": "Durchmesser",
+      "mandatory": false,
+      "parentid": "ENTI3",
+      "domainid": "DOMA2",
+      "displayseq": 5,
+      "description": "Der Durchmesser kann in 3 Werten angegeben werden. (Pol-, \u00c4quator- und mittlerer Durchmesser)",
+      "shortdescr": "Durchmesser eines Sterns",
+      "examples": [
+        "3000 km",
+        "15000 km",
+        "12412 - 12472 km"
+      ]
+    },
+    {
+      "elementid": "ATTR20",
+      "name": "Entdeckungsjahr",
+      "mandatory": false,
+      "parentid": "ENTI3",
+      "domainid": "DOMA3",
+      "displayseq": 6,
+      "description": "Jahr, in dem dieser Stern entdeckt wurde.",
+      "examples": [
+        "1752",
+        "512 vuz",
+        "2009"
+      ]
+    },
+    {
+      "elementid": "ATTR21",
+      "name": "Entfernung",
+      "mandatory": false,
+      "parentid": "ENTI3",
+      "domainid": "DOMA1",
+      "displayseq": 4,
+      "description": "Distanz in Lichtjahren",
+      "shortdescr": "Distanz eines Sterns von unserer Sonne",
+      "examples": [
+        "1.3 Mio LJ",
+        "365 lj"
+      ],
+      "descriptive": true
+    },
+    {
+      "elementid": "ATTR22",
+      "name": "Leuchtklasse",
+      "mandatory": false,
+      "parentid": "ENTI3",
+      "domainid": "DOMA26",
+      "displayseq": 3,
+      "description": "Die\u00a0Leuchtkraftklasse\u00a0eines Sterns ist durch Eigenschaften bestimmt, die von seiner\u00a0Leuchtkraft\u00a0abh\u00e4ngen; dies sind insbesondere die\u00a0Breite\u00a0und die St\u00e4rke (H\u00f6he) der\u00a0Spektrallinien. So haben Riesensterne eine geringere\u00a0Schwerebeschleunigung\u00a0in ihrer\u00a0Photosph\u00e4re\u00a0als Zwergsterne gleicher Temperatur, was eine geringere\u00a0Druckverbreiterung\u00a0der Linien bewirkt, wogegen die\u00a0Spektralklasse\u00a0Eigenschaften ber\u00fccksichtigt, die prim\u00e4r von seiner Oberfl\u00e4chentemperatur abh\u00e4ngen.\n\nQuelle: https://de.wikipedia.org/wiki/Klassifizierung_der_Sterne#Leuchtkraftklassen_(Entwicklungszustand)",
+      "shortdescr": "Leuchtkraftklasse",
+      "examples": [
+        "I",
+        "V",
+        "III",
+        "D"
+      ],
+      "descriptive": true
+    },
+    {
+      "elementid": "ATTR23",
+      "name": "Name",
+      "mandatory": true,
+      "parentid": "ENTI3",
+      "domainid": "DOMA23",
+      "displayseq": 2,
+      "description": "ca 500 Sterne haben eigene Namen, vergeben durch die Internationale Astronomische Union (IAU)",
+      "shortdescr": "Eigenname eines Sterns",
+      "examples": [
+        "Alpha Centauri",
+        "Beta Orionis",
+        "Sol"
+      ],
+      "descriptive": false
+    },
+    {
+      "elementid": "ATTR17",
+      "name": "Oberfl\u00e4chentyp",
+      "mandatory": false,
+      "parentid": "ENTI3",
+      "domainid": "DOMA27",
+      "description": "Material, das die \u00e4usserste Schicht des Himmelsk\u00f6pers bildet.",
+      "shortdescr": "Zustandsform der Oberfl\u00e4che",
+      "examples": [
+        "Feststoff",
+        "Gas",
+        "Eis"
+      ]
+    },
+    {
+      "elementid": "ATTR10",
+      "name": "Aphel",
+      "mandatory": false,
+      "parentid": "ENTI7",
+      "domainid": "DOMA4",
+      "displayseq": 6,
+      "description": "Der am weitesten enfernte Punkt einer Umlaufbahn eines Begleiters um sein Mutterobjekt\n\nDie H\u00e4lfte des l\u00e4nsten Durchmessers einer Ellipse",
+      "shortdescr": "Der enternteste Punkt der Umlaufbahn eines Begleiters"
+    },
+    {
+      "elementid": "ATTR11",
+      "name": "Durchmesser",
+      "mandatory": false,
+      "parentid": "ENTI7",
+      "domainid": "DOMA2",
+      "displayseq": 2,
+      "description": "Der Durchmesser kann in 3 Werten angegeben werden. (Pol-, \u00c4quator- und mittlerer Durchmesser)",
+      "shortdescr": "Durchmesser der Kugel eines grossen Objektes",
+      "examples": [
+        "6112 km"
+      ],
+      "descriptive": true
+    },
+    {
+      "elementid": "ATTR12",
+      "name": "Entdeckungsjahr",
+      "mandatory": false,
+      "parentid": "ENTI7",
+      "domainid": "DOMA3",
+      "displayseq": 7,
+      "description": "Jahr, in dem dieser Begleiter entdeckt wurde.",
+      "examples": [
+        "1752",
+        "512 vuz",
+        "2009"
+      ]
+    },
+    {
+      "elementid": "ATTR13",
+      "name": "mittlerer Abstand",
+      "mandatory": false,
+      "parentid": "ENTI7",
+      "domainid": "DOMA4",
+      "displayseq": 4,
+      "description": "Mittlerer Abstand des Himmelsk\u00f6rpers vom Mutterobjekt. W\u00e4re der Kreisradius, wenn die Umlaufbahn kreisf\u00f6rmig w\u00e4re.",
+      "examples": [
+        "1 AE",
+        "150Mio km",
+        "386000 km"
+      ],
+      "descriptive": true
+    },
+    {
+      "elementid": "ATTR14",
+      "name": "Name",
+      "parentid": "ENTI7",
+      "mandatory": false,
+      "domainid": "DOMA23",
+      "displayseq": 1,
+      "examples": [
+        "(Erd-)Mond",
+        "Phobos",
+        "Deimos",
+        "Io",
+        "Europa",
+        "Ganymed",
+        "Triton",
+        "LHS 1140 b",
+        "Proxima Centauri b",
+        "Kepler-186f"
+      ],
+      "descriptive": true
+    },
+    {
+      "elementid": "ATTR15",
+      "name": "Perihel",
+      "mandatory": false,
+      "parentid": "ENTI7",
+      "domainid": "DOMA4",
+      "displayseq": 5,
+      "description": "Der n\u00e4chste Punkt der Umlaufbahn eines Begleiters um sein Mutterobjekt.\n\nDie kleine Halbachse der Ellipse",
+      "shortdescr": "Der am n\u00e4chsten liegende Punkt der Umlaufbahn eines Begleiters"
+    },
+    {
+      "elementid": "ATTR16",
+      "name": "Umlaufdauer",
+      "parentid": "ENTI7",
+      "mandatory": false,
+      "parentid": "ENTI7",
+      "domainid": "DOMA5",
+      "displayseq": 3,
+      "description": "Zeit die ein Begleiter braucht um das Mutterobjekt zu umkreisen. (Wert + Zeiteinheit)",
+      "examples": [
+        "1 Jahr",
+        "23 Tage",
+        "3.1 Stunden"
+      ],
+      "descriptive": true
+    },
+    {
+      "elementid": "ATTR24",
+      "name": "Oberfl\u00e4chentyp",
+      "mandatory": false,
+      "parentid": "ENTI4",
+      "domainid": "DOMA27",
+      "description": "Material, das die \u00e4usserste Schicht des Himmelsk\u00f6pers bildet.",
+      "shortdescr": "Zustandsform der Oberfl\u00e4che",
+      "examples": [
+        "Feststoff",
+        "Gas",
+        "Eis"
       ]
     }
   ],
@@ -1702,14 +1708,14 @@
   "BusinessRules": [
     {
       "elementid": "BURU3",
-      "restrictedElements": [
+      "restrictedelements": [
         "ENTI5"
       ],
       "description": "Ein Asteriod umkreist immer genau einen Stern oder einen Asteroiden (aber nicht sich selbst)"
     },
     {
       "elementid": "BURU4",
-      "restrictedElements": [
+      "restrictedelements": [
         "ENTI1"
       ],
       "description": "Ein Mond umkreist zwingend einen Planeten oder Zwergplaneten.",
