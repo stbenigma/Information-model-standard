@@ -8,7 +8,7 @@
       "en"
     ],
     "targetenvironment": "Informatiosmodell Standard",
-    "description": "manually created schema representin the dataspot information model of the astronomy example.\nFor testing and reference purposes"
+    "description": "manually created schema representing the dataspot information model of the astronomy example.\nFor testing and reference purposes\nAuthor: Stefan Berner\nDatetime created: 2025-11-23T15:22:41"
   },
   "Categories": [
     {

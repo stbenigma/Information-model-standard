@@ -70,9 +70,9 @@
         ]
       },
       "Name": {
-        "description": "Nonempty name  to name somethins not starting or ending in whitespace. Maximum length is 100",
+        "description": "Nonempty name  to name somethins not starting or ending in whitespace. Maximum length is 150",
         "type": "string",
-        "pattern": "^\\S$|^\\S.{0,99}\\S$",
+        "pattern": "^\\S$|^\\S.{0,149}\\S$",
         "examples": [
           "Product of a special kind (?)",
           "Customers-address",
