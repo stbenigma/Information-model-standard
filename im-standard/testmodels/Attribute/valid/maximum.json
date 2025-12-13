@@ -1,5 +1,6 @@
 {
-  "elementid": "ATTR0",
+  "$id": "://www.xyz.com/collection1/collection%2F2-3/Entity1",
+   "elementid": "ATTR0",
   "name": "Attr1",
   "parentid": "ENTI0",
   "displayseq": 2,
@@ -18,9 +19,8 @@
   "mandatory": true,
   "repeated": true,
   "encrypted": false,
-  "additionalProps": [
+  "additionalProps":
     {
       "$comment": "Entityattribute, see parent"
     }
-  ]
 }

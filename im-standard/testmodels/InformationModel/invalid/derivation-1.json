@@ -1,0 +1,27 @@
+{
+  "ModelInfo": {
+    "modelname": "Beispielmodell Astronomie",
+    "modeltype": "Information model",
+    "mainlanguage": "de",
+    "modelversion": "0.9",
+    "languages": [
+      "en"
+    ],
+    "targetenvironment": "Informatiosmodell Standard",
+    "origintool": "dataspot"
+  },
+  "Domains": [
+  ],
+  "Attributes": [
+
+  ],
+  "Relations": [
+  ],
+  "Derivations": [
+    {
+      "derivationtype": "restrict",
+      "targetelement": "RELA1287",
+      "additionalProps": {"sourceelement": "/modelx/elementy"}
+    }
+  ]
+}

@@ -79,24 +79,26 @@
           "mindate": {
             "description": "minimum datetime value",
             "type": "string",
-            "anyOf":[
+            "anyOf": [
               {
                 "format": "date-time"
               },
               {
-                "format":"date"
-              }]
+                "format": "date"
+              }
+            ]
           },
           "maxdate": {
             "description": "maximum datetime value",
             "type": "string",
-            "anyOf":[
+            "anyOf": [
               {
                 "format": "date-time"
               },
               {
-                "format":"date"
-              }]
+                "format": "date"
+              }
+            ]
           },
           "granularity": {
             "description": "Granularity of datetime value (Month, Day, hour, second ...)",
@@ -204,7 +206,7 @@
       },
       "GroupDomain": {
         "type": "object",
-        "description": "Group domains have several (>1) domain attributes (which reference their own domain\nAttributes of a  group domain are defined in \"Attributes\" with a reference do my domainId",
+        "description": "Group domains have several (>1) domain attributes\nAttributes of a group domain are defined in \"Attributes\" with a reference do my domainId",
         "properties": {
           "domaintype": {
             "const": "GroupDomain"
@@ -235,7 +237,7 @@
             "$ref": "GeneralTypes-schema.json#/components/$defs/ElementId"
           },
           {
-            "pattern": "^DOMA[0-9]+$"
+            "pattern": ".*DOMA[0-9]+$"
           }
         ]
       },
@@ -299,12 +301,12 @@
         ]
       },
       "LOVValue": {
-        "description": "Value in a list of predefined values for a LOV/enumeration-domain",
+        "description": "Value that is a valid value for an enumerated value list. The attribute value is the physical (language-independent) value, which is the actual value in the conceptual model\n\nDefault values, also known as reference data, are values that belong to the model. They are typically used to control processes (status, type, category). They are stable; any change to a default value must be considered a model change and, accordingly, checked for effects throughout the entire software that uses this model.",
         "type": "object",
         "properties": {
           "value": {
             "description": "Code as it is stored or transmitted. Unique value within the value list",
-            "$ref": "GeneralTypes-schema.json#/components/$defs/Name"
+            "$ref": "#/components/$defs/LOVValueCode"
           },
           "displayvalue": {
             "description": "The value displayed for users. Can be multilingual",
@@ -341,6 +343,10 @@
             "value": "working"
           }
         ]
+      },
+      "LOVValueCode": {
+        "description": "Value (as used in database) for a LOV-entry",
+        "$ref": "GeneralTypes-schema.json#/components/$defs/Name"
       }
     }
   }

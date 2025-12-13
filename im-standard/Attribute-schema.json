@@ -109,7 +109,7 @@
             "$ref": "GeneralTypes-schema.json#/components/$defs/ElementId"
           },
           {
-            "pattern": "^ATTR[0-9]+$"
+            "pattern": ".*ATTR[0-9]+$"
           }
         ]
       }

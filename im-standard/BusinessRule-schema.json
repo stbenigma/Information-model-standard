@@ -79,7 +79,7 @@
             "$ref": "GeneralTypes-schema.json#/components/$defs/ElementId"
           },
           {
-            "pattern": "^BURU[0-9]+$"
+            "pattern": ".*BURU[0-9]+$"
           }
         ]
       }

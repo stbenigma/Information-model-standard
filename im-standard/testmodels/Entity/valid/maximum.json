@@ -1,16 +1,14 @@
 {
+  "$id": "://www.xyz.com/collection1/collection%2F2-3/Entity1",
   "elementid": "ENTI0",
   "name": "Entity1",
-  "categoryid": "CATG001",
   "description": {
     "en": "Purpose, usage, meaning of an attribute value hold by this attribute."
   },
   "shortdescr": "Short text to be displayed as help to understand the purpose of this attribute in user interfaces.",
-  "additionalProps": [
-    {
-      "$comment": "Entity, ..."
-    }
-  ],
+  "additionalProps": {
+    "$comment": "Entity, ..."
+  },
   "shortname": "ENTIABC",
   "categoryid": "CATG001",
   "synonyms": [

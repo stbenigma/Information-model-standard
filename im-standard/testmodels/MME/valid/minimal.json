@@ -1,0 +1,8 @@
+{
+  "MetaModelInfo": {
+    "modelname": "Test model",
+    "targetenvironment": "test infomodel",
+    "modelversion": "0.1",
+    "modeltype": "Meta model"
+  }
+}

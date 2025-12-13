@@ -8,35 +8,33 @@
     "schemas": {
       "AdditionalProperties": {
         "description": "additional properties (aka user defined properties udp) are any properties of an element added by the current modeller. They serve as an extension to the predfefined element properties.",
-        "type": "array",
-        "items": {
-          "type": "object",
-          "minProperties": 1,
-          "maxProperties": 1,
-          "additionalProperties": {
-            "type": [
-              "integer",
-              "string",
-              "number",
-              "array",
-              "object",
-              "boolean",
-              "null"
-            ]
-          }
+        "type": "object",
+        "additionalProperties": {
+          "type": [
+            "integer",
+            "string",
+            "number",
+            "array",
+            "object",
+            "boolean",
+            "null"
+          ]
         },
         "examples": [
           {
-            "businessrule-id": "1134"
+            "businessrule-id": 1134,
+            "status": "over",
+            "sources": [
+              "a",
+              "b",
+              "c"
+            ]
           },
           {
             "release-level": "published"
           },
           {
             "author": "Jon Doe"
-          },
-          {
-            "secrecy level": "top secret"
           }
         ]
       },
@@ -58,14 +56,16 @@
         "type": "object",
         "properties": {
           "modelname": {
-            "description": "Name of the model. Unique in the environment it exists",
+            "description": "Name of the model. Unique in the environment of related models",
             "$ref": "GeneralTypes-schema.json#/components/$defs/Name"
           },
           "targetenvironment": {
             "description": "Name of environment, world of influence this model is meant for.",
-            "$ref": "GeneralTypes-schema.json#/components/$defs/Name",
-            "examples": ["Firma GutesProdukt",
-                        "Association of Swiss Energy Suppliers"]
+            "$ref": "GeneralTypes-schema.json#/components/$defs/Uri",
+            "examples": [
+              "https://mycompany.com/GutesProdukt",
+              "urn:vse:CommonModel"
+            ]
           },
           "description": {
             "description": "Information about the model, its origin, its applicable environment",
@@ -74,6 +74,7 @@
           "modeltype": {
             "type": "string",
             "enum": [
+              "Meta model",
               "Information model",
               "Data model",
               "Mapping model",

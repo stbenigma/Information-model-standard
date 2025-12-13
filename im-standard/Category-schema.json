@@ -26,7 +26,7 @@
       "description": "Reason, building aspect for this category.",
       "$ref": "GeneralTypes-schema.json#/components/$defs/SomeText"
     },
-    "parent": {
+    "parentid": {
       "description": "ElementId of parent of current category, null for root categories",
       "$ref": "#/components/$defs/CategoryId"
     },
@@ -55,7 +55,7 @@
             "$ref": "GeneralTypes-schema.json#/components/$defs/ElementId"
           },
           {
-            "pattern": "^CATG[0-9]+$"
+            "pattern": ".*CATG[0-9]+$"
           }
         ]
       },

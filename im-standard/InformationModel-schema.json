@@ -100,11 +100,33 @@
         "$ref": "Category-schema.json"
       }
     },
+    "Derivations":{
+      "description": "List derivations, an element of this model is a target in.",
+      "type": "array",
+      "items": {
+        "$ref": "MetaModel-schema.json#/components/schemas/Derivation"
+      }
+    },
+    "Mappings":{
+      "description": "List Mappings, linking LOV-values of different LOV's together. The source or target LOV-domain must me in this model.",
+      "type": "array",
+      "items": {
+        "$ref": "MetaModel-schema.json#/components/schemas/Mapping"
+      }
+    },
+    "Transformations":{
+      "description": "List transformations from some dataelements to other dataelements. At least one source or target dataelement  must me in this model.",
+      "type": "array",
+      "items": {
+        "$ref": "MetaModel-schema.json#/components/schemas/Transformation"
+      }
+    },
     "additionalProps": {
       "description": "additional properties (aka user defined properties udp) are  any properties of an this element  added by the current modeller. They serve as an extension to the predfefined element properties.",
       "$ref": "GeneralStructures-schema.json#/components/schemas/AdditionalProperties"
     }
   },
+  "additionalProperties": false,
   "unevaluatedProperties": false,
   "required": [
     "ModelInfo"

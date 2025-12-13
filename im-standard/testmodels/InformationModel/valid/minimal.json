@@ -1,7 +1,7 @@
 {
   "ModelInfo": {
-    "modelname": "Test model",
-    "targetenvironment": "test infomodel",
+    "modelname": "Information model",
+    "targetenvironment": "information model standard",
     "modelversion": "0.1",
     "modeltype": "Information model"
   }

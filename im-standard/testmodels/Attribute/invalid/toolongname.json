@@ -5,12 +5,9 @@
   "parentid": "ENTI101",
   "domainid": "DOMA195",
   "displayseq": 6,
-  "additionalProps": [
+  "additionalProps":
     {
-      "SOURCE-ID": "058019ba-4422-4571-b8c6-01130b4fb52e"
-    },
-    {
+      "SOURCE-ID": "058019ba-4422-4571-b8c6-01130b4fb52e",
       "SOURCE-MODEL": "DMP Definition"
     }
-  ]
 }

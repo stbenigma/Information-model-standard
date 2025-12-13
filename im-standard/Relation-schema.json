@@ -48,7 +48,7 @@
             "$ref": "GeneralTypes-schema.json#/components/$defs/ElementId"
           },
           {
-            "pattern": "^RELA[0-9]+$"
+            "pattern": ".*RELA[0-9]+$"
           }
         ]
       },

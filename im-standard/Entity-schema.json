@@ -5,8 +5,12 @@
   "description": "Designates something that exists, a being, a tangible or abstract object with properties and relationships.\nThing of interest in the considered environment / mini-world.\nIt is an IT-system- and technology-independent and consolidated description of the structure and meaning of the thing of interest.\nAn entity  consist of individual parts (attributes, subentities, etc.).\nAn entity name is unique in the considered environment and the definition of the entity (attributes, description, rules, relationships,...) is the only valid definition expressed with this name.",
   "type": "object",
   "properties": {
+    "$id": {
+      "description": "full identification path of the element",
+      "$ref": "GeneralTypes-schema.json#/components/$defs/Uri"
+    },
     "elementid": {
-      "description": "unique ID of the entity for reference purposes",
+      "description": "unique ID of the entity for reference purposes within the model or mme-environment",
       "$ref": "#/components/$defs/EntityId"
     },
     "name": {
@@ -96,7 +100,7 @@
             "$ref": "GeneralTypes-schema.json#/components/$defs/ElementId"
           },
           {
-            "pattern": "^ENTI[0-9]+$"
+            "pattern": ".*ENTI[0-9]+$"
           }
         ]
       }

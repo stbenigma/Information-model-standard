@@ -1,37 +1,26 @@
 {
   "ModelInfo": {
-    "modelname": "Beispielmodell Astronomie",
+    "modelname": "Astronomie Beispiel",
     "modeltype": "Information model",
-    "modelversion": "0.9",
     "mainlanguage": "de",
+    "modelversion": "0.9",
     "languages": [
       "en"
     ],
-    "targetenvironment": "Informatiosmodell Standard",
-    "description": "manually created schema representing the dataspot information model of the astronomy example.\nFor testing and reference purposes\nAuthor: Stefan Berner\nDatetime created: 2025-11-23T15:22:41"
+    "targetenvironment": "Astronomie Beispiel",
+    "origintool": "dataspot"
   },
   "Categories": [
-    {
-      "elementid": "CATG10",
-      "name": {
-        "de": "Astronomie Wertebereiche"
-      },
-      "categorytype": "DOMAIN"
-    },
-    {
-      "elementid": "CATG11",
-      "name": {
-        "de": "Astronomie Referenzdaten"
-      },
-      "categorytype": "DOMAIN"
-    },
     {
       "elementid": "CATG1",
       "name": {
         "de": "Astronomische Wertebereiche"
       },
       "categorytype": "DOMAIN",
-      "parent": "CATG10"
+      "description": {
+        "de": "Datentypen, die f\u00fcr ein astronomisches Modell verwendbar sind.",
+        "en": "Data types that can be used for an astronomical model."
+      }
     },
     {
       "elementid": "CATG2",
@@ -40,7 +29,10 @@
         "en": "Standard data domains"
       },
       "categorytype": "DOMAIN",
-      "parent": "CATG10"
+      "description": {
+        "de": "Datentypen die allgemeiner Art oder Standards  sind.",
+        "en": "Data types that are of a general nature or standards."
+      }
     },
     {
       "elementid": "CATG3",
@@ -49,7 +41,11 @@
         "en": "Base data domains"
       },
       "categorytype": "DOMAIN",
-      "parent": "CATG2"
+      "parentid": "CATG2",
+      "description": {
+        "de": "Basisdatentypen sind nur zu verwenden f\u00fcr Attribute, bei denen den Werte keine spezfiische semantische Bedeutung zukommt. \n\nSie legen nur fest, in welcher Kodierung (text, zahl, datum) Werte abgelegt werden. Sie geben keine Auskunft \u00fcber eine spezfische fachliche Nutzung der Werte.",
+        "en": "Basic data types are only to be used for attributes for which the values have no specific semantic meaning. \n\nThey only define the coding (text, number, date) in which values are stored. They do not provide any information about a specific functional use of the values."
+      }
     },
     {
       "elementid": "CATG4",
@@ -58,14 +54,11 @@
         "en": "Physical datatypes"
       },
       "categorytype": "DOMAIN",
-      "parent": "CATG2"
-    },
-    {
-      "elementid": "CATG10",
-      "name": {
-        "de": "Astronomie Wertebereiche"
-      },
-      "categorytype": "DOMAIN"
+      "parentid": "CATG2",
+      "description": {
+        "de": "Datentypen f\u00fcr physikalische Attribute",
+        "en": "Data types for physical attributes"
+      }
     },
     {
       "elementid": "CATG5",
@@ -74,20 +67,15 @@
         "en": "Astronomical reference values"
       },
       "categorytype": "DOMAIN",
-      "parent": "CATG11"
+      "description": {
+        "de": "Referenzwerte (List of values) f\u00fcr astonomische Attribute",
+        "en": "Reference values (list of values) for astronomical attributes"
+      }
     },
     {
       "elementid": "CATG6",
       "name": {
         "de": "Standard Referenzwerte"
-      },
-      "categorytype": "DOMAIN",
-      "parent": "CATG11"
-    },
-    {
-      "elementid": "CATG11",
-      "name": {
-        "de": "Astronomie Referenzdaten"
       },
       "categorytype": "DOMAIN"
     },
@@ -97,7 +85,11 @@
         "de": "Sternsystem",
         "en": "Star system"
       },
-      "categorytype": "ENTITY"
+      "categorytype": "ENTITY",
+      "description": {
+        "de": "Gruppe der Himmelsk\u00f6rper die zu einem Sonnensystem geh\u00f6ren, die einander umkreisen.",
+        "en": "Group of celestial bodies that belong to a solar system and orbit each other"
+      }
     },
     {
       "elementid": "CATG8",
@@ -106,7 +98,11 @@
         "en": "Large objects"
       },
       "categorytype": "ENTITY",
-      "parent": "CATG7"
+      "parentid": "CATG7",
+      "description": {
+        "de": "Grosse Objekte haben eine Masse die wegen der Gravitation dazu f\u00fchrt, dass das Objekt kugelf\u00f6rmig wird und normalerweise um eine Achse rotiert.",
+        "en": "Large objects have a mass which, due to gravity, causes the object to become spherical and normally rotate around an axis."
+      }
     },
     {
       "elementid": "CATG9",
@@ -115,22 +111,348 @@
         "en": "Small objects"
       },
       "categorytype": "ENTITY",
-      "parent": "CATG7"
+      "parentid": "CATG7",
+      "description": {
+        "de": "Kleine Objekte haben eine Masse die nicht zu einer Kugelform f\u00fchrt.",
+        "en": "Small objects have a mass that does not result in a spherical shape."
+      }
     }
   ],
   "Domains": [
+    {
+      "elementid": "DOMA1",
+      "name": {
+        "de": "Galaktische Entfernung",
+        "en": "Galactical distance"
+      },
+      "domaintype": "NumericDomain",
+      "categoryid": "CATG1",
+      "description": {
+        "de": "Abstand zwischen 2 Objekten im galaktischen Umfeld\n \nEinheit sind Lichtjahre. Ein LJ entspricht 63241 AE oder \u2248 9.46 Billionen km",
+        "en": "Distance between 2 objects in the galactic neighbourhood\n \nThe unit is light years. One LJ corresponds to 63241 AU or \u2248 9.46 trillion kilometres"
+      },
+      "minvalue": 0,
+      "maxvalue": 150000,
+      "totaldigits": 9,
+      "fractdigits": 3,
+      "unit": "LJ"
+    },
+    {
+      "elementid": "DOMA2",
+      "name": {
+        "de": "Himmelsk\u00f6rper Durchmesser",
+        "en": "Celestial body diameter"
+      },
+      "domaintype": "GroupDomain",
+      "categoryid": "CATG1"
+    },
+    {
+      "elementid": "DOMA3",
+      "name": {
+        "de": "Jahrzahl",
+        "en": "Year"
+      },
+      "domaintype": "NumericDomain",
+      "categoryid": "CATG1",
+      "description": {
+        "de": "Bei Berechnungen mit Jahrzahlen (Anzahl Jahre zwischen 2 Jahrzahlen) ist zu ber\u00fccksichtigen, dass es die Jahrzahl 0 nicht gibt",
+        "en": "When calculating with year numbers (number of years between 2 year numbers), it must be taken into account that the year 0 does not exist"
+      },
+      "minvalue": -5000,
+      "maxvalue": 5000,
+      "totaldigits": 4
+    },
+    {
+      "elementid": "DOMA4",
+      "name": {
+        "de": "Sternsystem Entfernung",
+        "en": "Startsystem distance"
+      },
+      "domaintype": "NumericDomain",
+      "categoryid": "CATG1",
+      "description": {
+        "de": "Abstand zwischen 2 Punkten oder Objekten innerhalb eines Sternensystems\n\nDie Einheit ist 1000km. \n\nDie Abst\u00e4nde sind in der Gr\u00f6ssenordnung des Durchmessers eines Sternensystems. D.h. bis ca 200 Astronomsiche Einheiten (AE) (=30*10^9km)\n\nEine AE entspricht ca 150Mio Km (genau 149.597.870,7) (entspricht 8,317\u00a0Lichtminuten",
+        "en": "Distance between 2 points or objects within a star system\n\nThe unit is 1000km.\n\nThe distances are in the order of magnitude of the diameter of a star system. I.e. up to approx. 200 astronomical units (AU) (=30*10^9km)\n\nOne AU corresponds to approx. 150 million kilometres (exactly 149,597,870.7) (corresponds to 8.317 light minutes\")."
+      },
+      "minvalue": 0,
+      "maxvalue": 10000000,
+      "unit": "10^3 km"
+    },
+    {
+      "elementid": "DOMA5",
+      "name": {
+        "de": "Umlaufdauer",
+        "en": "Cycle time"
+      },
+      "domaintype": "GroupDomain",
+      "categoryid": "CATG1",
+      "description": {
+        "de": "Dauer die ein Begleiter braucht um sein Mutterobjekt zu umkreisen.\nGruppenattribut mit Wert und Einheit (Stunde, Tag, Jahr).",
+        "en": "Duration that a companion needs to orbit its parent object.\nGroup attribute with value and unit (hour, day, year)."
+      }
+    },
+    {
+      "elementid": "DOMA6",
+      "name": {
+        "de": "Booelan",
+        "en": "Boolean"
+      },
+      "domaintype": "BooleanDomain",
+      "categoryid": "CATG3"
+    },
+    {
+      "elementid": "DOMA7",
+      "name": {
+        "de": "Datum",
+        "en": "Date"
+      },
+      "domaintype": "DatetimeDomain",
+      "categoryid": "CATG3",
+      "description": {
+        "de": "Negative Daten (vor unserer Zeit) werden mit VUZ markiert",
+        "en": "Negative dates (before our time) are marked with VUZ"
+      },
+      "granularity": "DAY"
+    },
+    {
+      "elementid": "DOMA8",
+      "name": {
+        "de": "Dezimalzahl",
+        "en": "Decimal"
+      },
+      "domaintype": "NumericDomain",
+      "categoryid": "CATG3"
+    },
+    {
+      "elementid": "DOMA9",
+      "name": {
+        "de": "Integer",
+        "en": "Ganzzahl"
+      },
+      "domaintype": "NumericDomain",
+      "categoryid": "CATG3"
+    },
+    {
+      "elementid": "DOMA10",
+      "name": {
+        "de": "String",
+        "en": "String"
+      },
+      "domaintype": "TextDomain",
+      "categoryid": "CATG3"
+    },
+    {
+      "elementid": "DOMA11",
+      "name": {
+        "de": "Text",
+        "en": "Text"
+      },
+      "domaintype": "TextDomain",
+      "categoryid": "CATG3"
+    },
+    {
+      "elementid": "DOMA12",
+      "name": {
+        "de": "Uhrzeit",
+        "en": "Time of day"
+      },
+      "domaintype": "TextDomain",
+      "categoryid": "CATG3",
+      "description": {
+        "de": "Zeit innerhalb des Tages\n00:00:00 - 23:59:59",
+        "en": "Time within the day\n00:00:00 - 23:59:59"
+      },
+      "syntaxrule": "^[0-1][0-9]:[0-5][0-9]$"
+    },
+    {
+      "elementid": "DOMA13",
+      "name": {
+        "de": "Zeitstempel",
+        "en": "Timestamp"
+      },
+      "domaintype": "DatetimeDomain",
+      "categoryid": "CATG3",
+      "description": {
+        "de": "Punkt auf der Zeitachse auf die Milisekunde genau",
+        "en": "Point on the time axis accurate to the millisecond"
+      },
+      "granularity": "MINUTE"
+    },
+    {
+      "elementid": "DOMA14",
+      "name": {
+        "de": "Distanz [km]",
+        "en": "Distance [km]"
+      },
+      "domaintype": "NumericDomain",
+      "categoryid": "CATG4",
+      "minvalue": 0,
+      "totaldigits": 13,
+      "fractdigits": 3,
+      "unit": "km"
+    },
+    {
+      "elementid": "DOMA15",
+      "name": {
+        "de": "Distanz [m]",
+        "en": "Distance [m]"
+      },
+      "domaintype": "NumericDomain",
+      "categoryid": "CATG4",
+      "minvalue": 0,
+      "totaldigits": 9,
+      "fractdigits": 3,
+      "unit": "m"
+    },
+    {
+      "elementid": "DOMA16",
+      "name": {
+        "de": "Distanz [mm]",
+        "en": "Distance [m]"
+      },
+      "domaintype": "NumericDomain",
+      "categoryid": "CATG4",
+      "minvalue": 0,
+      "totaldigits": 9,
+      "fractdigits": 3,
+      "unit": "mm"
+    },
+    {
+      "elementid": "DOMA17",
+      "name": {
+        "de": "Distanz [nm]",
+        "en": "Distance [nm]"
+      },
+      "domaintype": "NumericDomain",
+      "categoryid": "CATG4",
+      "description": {
+        "de": "1 Nanometer = 10^-9 Meter",
+        "en": "1 Nanometer = 10^-9 meter"
+      },
+      "minvalue": 0,
+      "totaldigits": 9,
+      "fractdigits": 3,
+      "unit": "nm"
+    },
+    {
+      "elementid": "DOMA18",
+      "name": {
+        "de": "Einheitsmenge",
+        "en": "Unit quantity"
+      },
+      "domaintype": "GroupDomain",
+      "categoryid": "CATG4",
+      "description": {
+        "de": "Menge von Einheiten als Gruppenattribut mit Menge und (physikalischer) Einheit, in der diese Menge gemessen wurde.",
+        "en": "Group attribute: Quantity together with the (physical) unit in which this quantity was measured."
+      }
+    },
+    {
+      "elementid": "DOMA19",
+      "name": {
+        "de": "Masse",
+        "en": "Mass"
+      },
+      "domaintype": "NumericDomain",
+      "categoryid": "CATG4",
+      "minvalue": 0,
+      "unit": "kg"
+    },
+    {
+      "elementid": "DOMA20",
+      "name": {
+        "de": "Menge",
+        "en": "Quantity"
+      },
+      "domaintype": "NumericDomain",
+      "categoryid": "CATG4",
+      "description": {
+        "de": "decimal"
+      }
+    },
+    {
+      "elementid": "DOMA21",
+      "name": {
+        "de": "Messwert",
+        "en": "Measured value"
+      },
+      "domaintype": "GroupDomain",
+      "categoryid": "CATG4",
+      "description": {
+        "de": "Gemessene oder erhobene Werte werden h\u00e4ufig mit einem Vertrauensintervall angegeben, das die maximale Abweichung nach oben oder unten in % angibt.",
+        "en": "Measured or collected values are often specified with a confidence interval, which indicates the maximum deviation upwards or downwards in %."
+      }
+    },
+    {
+      "elementid": "DOMA22",
+      "name": {
+        "de": "ISO Zeitpunkt",
+        "en": "ISO Datetime"
+      },
+      "domaintype": "DatetimeDomain",
+      "categoryid": "CATG2",
+      "description": {
+        "de": "Die Universal Coordinate Time ist die Zeit am Nullmeridian in der N\u00e4he von Greenwich, England. UTC ist ein Datumswert, der die ISO 8601-Grundform yyyymmddThhmmss+|-hhmm oder die erweiterte ISO 8601-Form yyyy-mm-ddThh:mm:ss+|-hh:mm verwendet.",
+        "en": "Universal Coordinate Time is the time at the zero meridian, near Greenwich, England. UTC is a datetime value that uses the ISO 8601 basic form yyyymmddThhmmss+|\u2013hhmm or the ISO 8601 extended form yyyy-mm-ddThh:mm:ss+|\u2013hh:mm."
+      },
+      "granularity": "MINUTE"
+    },
+    {
+      "elementid": "DOMA23",
+      "name": {
+        "de": "Name",
+        "en": "Name"
+      },
+      "domaintype": "TextDomain",
+      "categoryid": "CATG2",
+      "description": {
+        "de": "Nichtleere Zeichenfolge, benutzt um etwas zu benennen",
+        "en": "Nonempty sequence of arbitrary chaeracters, used to name a thing."
+      }
+    },
+    {
+      "elementid": "DOMA24",
+      "name": {
+        "de": "Prozent (dezimal)",
+        "en": "Percentage (decimal)"
+      },
+      "domaintype": "NumericDomain",
+      "categoryid": "CATG2",
+      "description": {
+        "de": "Prozentzahl,gerundet auf 3 Nachkommastellen",
+        "en": "Percentage, rounded to 3 fractional digits"
+      },
+      "totaldigits": 7,
+      "fractdigits": 3,
+      "unit": "%"
+    },
+    {
+      "elementid": "DOMA25",
+      "name": {
+        "de": "Prozent (integer)",
+        "en": "Percentage (integer)"
+      },
+      "domaintype": "NumericDomain",
+      "categoryid": "CATG2",
+      "description": {
+        "de": "Prozentzahl, auf ganze Zahl gerundet.",
+        "en": "Percentage, rounded to a whole number."
+      },
+      "totaldigits": 4,
+      "unit": "%"
+    },
     {
       "elementid": "DOMA26",
       "name": {
         "de": "Leuchtklasse",
         "en": "Luminosity class"
       },
+      "domaintype": "LOVDomain",
+      "categoryid": "CATG5",
       "description": {
         "de": "Leuchtkraftklassen (Helligkeitstypen) \nI\t\u00dcberriesen\tBetelgeuse (M1I)\nII\tHelle Riesen\t\nIII\tRiesen\tAldebaran (K5III)\nIV\tUnterriesen\t\nV\tHauptreihe (normale Sterne)\tSonne (G2V)\nVI\tUnterzwerge\t\nD\tWei\u00dfe Zwerge\tSirius B",
         "en": "Luminosity classes (brightness types)\nI Supergiant Betelgeuse (M1I)\nII Bright giants\nIII Giants Aldebaran (K5III)\nIV Subgiants\nV Main sequence (normal stars) Sun (G2V)\nVI Subdwarfs\nD White dwarfs Sirius B"
       },
-      "categoryid": "CATG5",
-      "domaintype": "LOVDomain",
       "values": [
         {
           "value": "VI",
@@ -214,12 +536,12 @@
         "de": "Oberfl\u00e4chenbeschaffenheit",
         "en": "Surface composition"
       },
+      "domaintype": "LOVDomain",
+      "categoryid": "CATG5",
       "description": {
         "de": "Beschaffenheit der Oberl\u00e4che eines Planeten.\nFest, Gas, Eis",
         "en": "Nature of the surface of a planet.\nSolid, gas, ice"
       },
-      "categoryid": "CATG5",
-      "domaintype": "LOVDomain",
       "values": [
         {
           "value": "Eis",
@@ -246,11 +568,11 @@
       "name": {
         "de": "Unterleuchtklasse"
       },
+      "domaintype": "LOVDomain",
+      "categoryid": "CATG5",
       "description": {
         "de": "Unterteilung der \u00dcberriesen nach abnehmender Leuchtkraft"
       },
-      "categoryid": "CATG5",
-      "domaintype": "LOVDomain",
       "values": [
         {
           "value": "ab",
@@ -284,11 +606,11 @@
         "de": "Zeitangabe",
         "en": "Time indication"
       },
+      "domaintype": "LOVDomain",
+      "categoryid": "CATG5",
       "description": {
         "de": "Liste der Zeitangaben f\u00fcr Umlaufdauern \nStunde, Tag, Jahr"
       },
-      "categoryid": "CATG5",
-      "domaintype": "LOVDomain",
       "values": [
         {
           "value": "tag",
@@ -316,11 +638,11 @@
         "de": "Kalender Einheiten",
         "en": "Physical unit"
       },
+      "domaintype": "LOVDomain",
+      "categoryid": "CATG6",
       "description": {
         "en": "Standardised (SI) physical units"
       },
-      "categoryid": "CATG6",
-      "domaintype": "LOVDomain",
       "values": [
         {
           "value": "year",
@@ -435,11 +757,11 @@
         "de": "Physikalische Einheit",
         "en": "Physical unit"
       },
+      "domaintype": "LOVDomain",
+      "categoryid": "CATG6",
       "description": {
         "en": "Standardised (SI) physical units"
       },
-      "categoryid": "CATG6",
-      "domaintype": "LOVDomain",
       "values": [
         {
           "value": "mol",
@@ -530,491 +852,6 @@
           }
         }
       ]
-    },
-    {
-      "elementid": "DOMA1",
-      "name": {
-        "de": "Galaktische Entfernung",
-        "en": "Galactical distance"
-      },
-      "description": {
-        "de": "Abstand zwischen 2 Objekten im galaktischen Umfeld\n \nEinheit sind Lichtjahre. Ein LJ entspricht 63241 AE oder \u2248 9.46 Billionen km",
-        "en": "Distance between 2 objects in the galactic neighbourhood\n \nThe unit is light years. One LJ corresponds to 63241 AU or \u2248 9.46 trillion kilometres"
-      },
-      "categoryid": "CATG1",
-      "domaintype": "NumericDomain",
-      "minvalue": 0,
-      "maxvalue": 150000,
-      "totaldigits": 9,
-      "fractdigits": 3,
-      "unit": "LJ"
-    },
-    {
-      "elementid": "DOMA2",
-      "name": {
-        "de": "Himmelsk\u00f6rper Durchmesser",
-        "en": "Celestial body diameter"
-      },
-      "categoryid": "CATG1",
-      "domaintype": "GroupDomain",
-      "elements": [
-        {
-          "elementid": "ATTR3",
-          "name": {
-            "de": "\u00c4quatordurchmesser",
-            "en": "Equator diameter"
-          },
-          "mandatory": false,
-          "displayseq": 3,
-          "description": {
-            "de": "Typischerweise der l\u00e4ngste Durchmesser.\nWegen der Rotation sind kugelf\u00f6rmige Himmelsk\u00f6per am \u00c4quator *ausgebeult*",
-            "en": "Typically the longest diameter.\nDue to rotation, spherical celestial bodies are *dent out* at the equator"
-          },
-          "shortdescr": {
-            "de": "Durchmesser 90\u00ba zur Rotationsaches",
-            "en": "Diameter 90\u00ba to the axis of rotation"
-          },
-          "repeated": false
-        },
-        {
-          "elementid": "ATTR4",
-          "name": {
-            "de": "Mittlerer Durchmesser",
-            "en": "Average diameter"
-          },
-          "mandatory": true,
-          "displayseq": 1,
-          "description": {
-            "de": "Der Durchmesser, den man bei nicht sehr genauen angaben oder einfachen astronomischen / pyhsikalischen Berechnungen verwendet",
-            "en": "The diameter used for not very precise specifications or simple astronomical / physical calculations"
-          },
-          "shortdescr": {
-            "de": "Mittlerer Durchmesser einer idealen Kugel",
-            "en": "Average diameter of an ideal sphere"
-          },
-          "repeated": false
-        },
-        {
-          "elementid": "ATTR5",
-          "name": {
-            "de": "Poldurchmesser",
-            "en": "Pole diameter"
-          },
-          "mandatory": false,
-          "displayseq": 2,
-          "description": {
-            "de": "Typischerweise der kleinste Durchmesser.\nWegen der Rotation sind kugelf\u00f6rmige Himmelsk\u00f6per am \u00c4quator *ausgebeult*",
-            "en": "Typically the smallest diameter.\nDue to rotation, spherical celestial bodies are *dent out* at the equator"
-          },
-          "shortdescr": {
-            "de": "Durchmesser entlang der Rotationsachse",
-            "en": "Diameter along the axis of rotation"
-          },
-          "repeated": false
-        }
-      ]
-    },
-    {
-      "elementid": "DOMA3",
-      "name": {
-        "de": "Jahrzahl",
-        "en": "Year"
-      },
-      "description": {
-        "de": "Bei Berechnungen mit Jahrzahlen (Anzahl Jahre zwischen 2 Jahrzahlen) ist zu ber\u00fccksichtigen, dass es die Jahrzahl 0 nicht gibt",
-        "en": "When calculating with year numbers (number of years between 2 year numbers), it must be taken into account that the year 0 does not exist"
-      },
-      "categoryid": "CATG1",
-      "domaintype": "NumericDomain",
-      "minvalue": -5000,
-      "maxvalue": 5000,
-      "totaldigits": 4
-    },
-    {
-      "elementid": "DOMA4",
-      "name": {
-        "de": "Sternsystem Entfernung",
-        "en": "Startsystem distance"
-      },
-      "description": {
-        "de": "Abstand zwischen 2 Punkten oder Objekten innerhalb eines Sternensystems\n\nDie Einheit ist 1000km. \n\nDie Abst\u00e4nde sind in der Gr\u00f6ssenordnung des Durchmessers eines Sternensystems. D.h. bis ca 200 Astronomsiche Einheiten (AE) (=30*10^9km)\n\nEine AE entspricht ca 150Mio Km (genau 149.597.870,7) (entspricht 8,317\u00a0Lichtminuten",
-        "en": "Distance between 2 points or objects within a star system\n\nThe unit is 1000km.\n\nThe distances are in the order of magnitude of the diameter of a star system. I.e. up to approx. 200 astronomical units (AU) (=30*10^9km)\n\nOne AU corresponds to approx. 150 million kilometres (exactly 149,597,870.7) (corresponds to 8.317 light minutes\")."
-      },
-      "categoryid": "CATG1",
-      "domaintype": "NumericDomain",
-      "minvalue": 0,
-      "maxvalue": 10000000,
-      "unit": "10^3 km"
-    },
-    {
-      "elementid": "DOMA5",
-      "name": {
-        "de": "Umlaufdauer",
-        "en": "Cycle time"
-      },
-      "description": {
-        "de": "Dauer die ein Begleiter braucht um sein Mutterobjekt zu umkreisen.\nGruppenattribut mit Wert und Einheit (Stunde, Tag, Jahr).",
-        "en": "Duration that a companion needs to orbit its parent object.\nGroup attribute with value and unit (hour, day, year)."
-      },
-      "categoryid": "CATG1",
-      "domaintype": "GroupDomain",
-      "elements": [
-        {
-          "elementid": "ATTR8",
-          "name": {
-            "de": "Dauer",
-            "en": "Duration"
-          },
-          "mandatory": true,
-          "domainid": "DOMA8",
-          "displayseq": 1,
-          "description": {
-            "de": "Anzahl der Einheiten, die im Schwesterfeld definiert ist",
-            "en": "Number of units defined in the sister field"
-          },
-          "shortdescr": {
-            "de": "Anzahl Zeiteinheiten",
-            "en": "Number of time units"
-          },
-          "repeated": false,
-          "minvalue": 1.0
-        },
-        {
-          "elementid": "ATTR9",
-          "name": {
-            "de": "Einheit"
-          },
-          "mandatory": true,
-          "domainid": "DOMA29",
-          "displayseq": 2,
-          "description": {
-            "de": "Zeiteinheit als Stunde, Tag oder Jahr"
-          },
-          "shortdescr": {
-            "de": "Zeiteinheit"
-          },
-          "repeated": false
-        }
-      ]
-    },
-    {
-      "elementid": "DOMA6",
-      "name": {
-        "de": "Booelan",
-        "en": "Boolean"
-      },
-      "categoryid": "CATG3",
-      "domaintype": "BooleanDomain"
-    },
-    {
-      "elementid": "DOMA7",
-      "name": {
-        "de": "Datum",
-        "en": "Date"
-      },
-      "description": {
-        "de": "Negative Daten (vor unserer Zeit) werden mit VUZ markiert",
-        "en": "Negative dates (before our time) are marked with VUZ"
-      },
-      "categoryid": "CATG3",
-      "domaintype": "DatetimeDomain",
-      "granularity": "DAY"
-    },
-    {
-      "elementid": "DOMA8",
-      "name": {
-        "de": "Dezimalzahl",
-        "en": "Decimal"
-      },
-      "categoryid": "CATG3",
-      "domaintype": "NumericDomain"
-    },
-    {
-      "elementid": "DOMA9",
-      "name": {
-        "de": "Integer",
-        "en": "Ganzzahl"
-      },
-      "categoryid": "CATG3",
-      "domaintype": "NumericDomain"
-    },
-    {
-      "elementid": "DOMA10",
-      "name": {
-        "de": "String",
-        "en": "String"
-      },
-      "categoryid": "CATG3",
-      "domaintype": "TextDomain"
-    },
-    {
-      "elementid": "DOMA11",
-      "name": {
-        "de": "Text",
-        "en": "Text"
-      },
-      "categoryid": "CATG3",
-      "domaintype": "TextDomain"
-    },
-    {
-      "elementid": "DOMA12",
-      "name": {
-        "de": "Uhrzeit",
-        "en": "Time of day"
-      },
-      "description": {
-        "de": "Zeit innerhalb des Tages\n00:00:00 - 23:59:59",
-        "en": "Time within the day\n00:00:00 - 23:59:59"
-      },
-      "categoryid": "CATG3",
-      "domaintype": "TextDomain",
-      "syntaxrule": "^[0-1][0-9]:[0-5][0-9]$"
-    },
-    {
-      "elementid": "DOMA13",
-      "name": {
-        "de": "Zeitstempel",
-        "en": "Timestamp"
-      },
-      "description": {
-        "de": "Punkt auf der Zeitachse auf die Milisekunde genau",
-        "en": "Point on the time axis accurate to the millisecond"
-      },
-      "categoryid": "CATG3",
-      "domaintype": "DatetimeDomain",
-      "granularity": "MINUTE"
-    },
-    {
-      "elementid": "DOMA14",
-      "name": {
-        "de": "Distanz [km]",
-        "en": "Distance [km]"
-      },
-      "categoryid": "CATG4",
-      "domaintype": "NumericDomain",
-      "minvalue": 0,
-      "totaldigits": 13,
-      "fractdigits": 3,
-      "unit": "km"
-    },
-    {
-      "elementid": "DOMA15",
-      "name": {
-        "de": "Distanz [m]",
-        "en": "Distance [m]"
-      },
-      "categoryid": "CATG4",
-      "domaintype": "NumericDomain",
-      "minvalue": 0,
-      "totaldigits": 9,
-      "fractdigits": 3,
-      "unit": "m"
-    },
-    {
-      "elementid": "DOMA16",
-      "name": {
-        "de": "Distanz [mm]",
-        "en": "Distance [m]"
-      },
-      "categoryid": "CATG4",
-      "domaintype": "NumericDomain",
-      "minvalue": 0,
-      "totaldigits": 9,
-      "fractdigits": 3,
-      "unit": "mm"
-    },
-    {
-      "elementid": "DOMA17",
-      "name": {
-        "de": "Distanz [nm]",
-        "en": "Distance [nm]"
-      },
-      "description": {
-        "de": "1 Nanometer = 10^-9 Meter",
-        "en": "1 Nanometer = 10^-9 meter"
-      },
-      "categoryid": "CATG4",
-      "domaintype": "NumericDomain",
-      "minvalue": 0,
-      "totaldigits": 9,
-      "fractdigits": 3,
-      "unit": "nm"
-    },
-    {
-      "elementid": "DOMA18",
-      "name": {
-        "de": "Einheitsmenge",
-        "en": "Unit quantity"
-      },
-      "description": {
-        "de": "Menge von Einheiten als Gruppenattribut mit Menge und (physikalischer) Einheit, in der diese Menge gemessen wurde.",
-        "en": "Group attribute: Quantity together with the (physical) unit in which this quantity was measured."
-      },
-      "categoryid": "CATG4",
-      "domaintype": "GroupDomain",
-      "elements": [
-        {
-          "elementid": "ATTR1",
-          "name": {
-            "de": "Einheit",
-            "en": "Unit"
-          },
-          "mandatory": true,
-          "domainid": "DOMA31",
-          "displayseq": 2,
-          "shortdescr": {
-            "de": "Physikalische Einheit",
-            "en": "physical unit"
-          },
-          "repeated": false
-        },
-        {
-          "elementid": "ATTR2",
-          "name": {
-            "de": "Menge",
-            "en": "Quantity"
-          },
-          "mandatory": true,
-          "domainid": "DOMA20",
-          "displayseq": 1,
-          "shortdescr": {
-            "de": "Anzahl der Einheiten",
-            "en": "Number of units"
-          },
-          "repeated": false
-        }
-      ]
-    },
-    {
-      "elementid": "DOMA19",
-      "name": {
-        "de": "Masse",
-        "en": "Mass"
-      },
-      "categoryid": "CATG4",
-      "domaintype": "NumericDomain",
-      "minvalue": 0,
-      "unit": "kg"
-    },
-    {
-      "elementid": "DOMA20",
-      "name": {
-        "de": "Menge",
-        "en": "Quantity"
-      },
-      "description": {
-        "de": "decimal"
-      },
-      "categoryid": "CATG4",
-      "domaintype": "NumericDomain"
-    },
-    {
-      "elementid": "DOMA21",
-      "name": {
-        "de": "Messwert",
-        "en": "Measured value"
-      },
-      "description": {
-        "de": "Gemessene oder erhobene Werte werden h\u00e4ufig mit einem Vertrauensintervall angegeben, das die maximale Abweichung nach oben oder unten in % angibt.",
-        "en": "Measured or collected values are often specified with a confidence interval, which indicates the maximum deviation upwards or downwards in %."
-      },
-      "categoryid": "CATG4",
-      "domaintype": "GroupDomain",
-      "elements": [
-        {
-          "elementid": "ATTR6",
-          "name": {
-            "de": "Vertrauensintervall",
-            "en": "Confidence interval"
-          },
-          "mandatory": false,
-          "domainid": "DOMA24",
-          "displayseq": 5,
-          "description": {
-            "de": "Bereich (als Prozent des Messwertes) um den der gemessene Wert nach oben oder unten abweichen kann.",
-            "en": "Range (as a percentage of the measured value) by which the measured value can deviate upwards or downwards."
-          },
-          "shortdescr": {
-            "de": "vermutete relative/r Abweichung / Fehlerbereich",
-            "en": "Presumed relative deviation / error range"
-          },
-          "repeated": false,
-          "minvalue": 0.0
-        },
-        {
-          "elementid": "ATTR7",
-          "name": {
-            "de": "Wert",
-            "en": "Value"
-          },
-          "mandatory": true,
-          "domainid": "DOMA18",
-          "displayseq": 1,
-          "shortdescr": {
-            "de": "der gemessene Wert (mit Einheit)",
-            "en": "measured value (with unit)"
-          },
-          "repeated": false
-        }
-      ]
-    },
-    {
-      "elementid": "DOMA22",
-      "name": {
-        "de": "ISO Zeitpunkt",
-        "en": "ISO Datetime"
-      },
-      "description": {
-        "de": "Die Universal Coordinate Time ist die Zeit am Nullmeridian in der N\u00e4he von Greenwich, England. UTC ist ein Datumswert, der die ISO 8601-Grundform yyyymmddThhmmss+|-hhmm oder die erweiterte ISO 8601-Form yyyy-mm-ddThh:mm:ss+|-hh:mm verwendet.",
-        "en": "Universal Coordinate Time is the time at the zero meridian, near Greenwich, England. UTC is a datetime value that uses the ISO 8601 basic form yyyymmddThhmmss+|\u2013hhmm or the ISO 8601 extended form yyyy-mm-ddThh:mm:ss+|\u2013hh:mm."
-      },
-      "categoryid": "CATG2",
-      "domaintype": "DatetimeDomain",
-      "granularity": "MINUTE"
-    },
-    {
-      "elementid": "DOMA23",
-      "name": {
-        "de": "Name",
-        "en": "Name"
-      },
-      "description": {
-        "de": "Nichtleere Zeichenfolge, benutzt um etwas zu benennen",
-        "en": "Nonempty sequence of arbitrary chaeracters, used to name a thing."
-      },
-      "categoryid": "CATG2",
-      "domaintype": "TextDomain"
-    },
-    {
-      "elementid": "DOMA24",
-      "name": {
-        "de": "Prozent (dezimal)",
-        "en": "Percentage (decimal)"
-      },
-      "description": {
-        "de": "Prozentzahl,gerundet auf 3 Nachkommastellen",
-        "en": "Percentage, rounded to 3 fractional digits"
-      },
-      "categoryid": "CATG2",
-      "domaintype": "NumericDomain",
-      "totaldigits": 7,
-      "fractdigits": 3,
-      "unit": "%"
-    },
-    {
-      "elementid": "DOMA25",
-      "name": {
-        "de": "Prozent (integer)",
-        "en": "Percentage (integer)"
-      },
-      "description": {
-        "de": "Prozentzahl, auf ganze Zahl gerundet.",
-        "en": "Percentage, rounded to a whole number."
-      },
-      "categoryid": "CATG2",
-      "domaintype": "NumericDomain",
-      "totaldigits": 4,
-      "unit": "%"
     }
   ],
   "Entities": [
@@ -1024,6 +861,7 @@
         "de": "Mond",
         "en": "Planets Moon"
       },
+      "categoryid": "CATG8",
       "shortdescr": {
         "de": "Fester Himmelsk\u00f6rper der um einen Planeten kreist",
         "en": "Fixed celestial body orbiting a planet"
@@ -1050,6 +888,7 @@
       "name": {
         "de": "Planet"
       },
+      "categoryid": "CATG8",
       "shortdescr": {
         "de": "Fester oder gasf\u00f6rmiger Himmelsk\u00f6rper der um einen Stern kreist",
         "en": "Solid or gaseous celestial body orbiting a star"
@@ -1074,10 +913,15 @@
         "de": "Stern",
         "en": "Star"
       },
+      "categoryid": "CATG8",
       "synonyms": [
         "astronomisches Objekt",
         "Sonne"
       ],
+      "description": {
+        "de": "Massereicher, selbstleuchtender Himmelsk\u00f6rper aus sehr hei\u00dfem Gas und Plasma.\n\n\nHauptreihensterne: Sterne wie unsere Sonne, die Wasserstoff zu Helium fusionieren.\nRote Riesen: Sterne, die ihren Wasserstoffvorrat aufgebraucht haben und sich ausdehnen, w\u00e4hrend sie schwerere Elemente fusionieren.\nWei\u00dfe Zwerge: Die \u00dcberreste von Sternen mit geringer bis mittlerer Masse, die ihren Brennstoff aufgebraucht haben und langsam abk\u00fchlen.\nSupernovae: Massereiche Sterne, die am Ende ihres Lebens in einer gewaltigen Explosion sterben und dabei Neutronensterne oder Schwarze L\u00f6cher hinterlassen k\u00f6nnen.",
+        "en": "Massive, self-luminous celestial body made of very hot gas and plasma.\n\n\nMain sequence stars: Stars like our sun that fuse hydrogen into helium.\nRed giants: Stars that have used up their supply of hydrogen and are expanding as they fuse heavier elements.\nWhite dwarfs: The remnants of low to intermediate mass stars that have used up their fuel and are slowly cooling.\nSupernovae: Massive stars that die in a massive explosion at the end of their lives, leaving behind neutron stars or black holes."
+      },
       "shortdescr": {
         "de": "Am Himmel sichtbarer, selbstleuchtender Gasball. (Stern, Sonne)",
         "en": "Self-luminous ball of gas visible in the sky. (star, sun)"
@@ -1089,11 +933,6 @@
         "LHS 1140",
         "Proxima Centauri",
         "Kepler-186"
-      ],
-      "keys": [
-        [
-          "ATTR18"
-        ]
       ]
     },
     {
@@ -1101,6 +940,11 @@
       "name": {
         "de": "Zwergplanet",
         "en": "Dwarf planet"
+      },
+      "categoryid": "CATG8",
+      "description": {
+        "de": "Zwergplaneten sind kleiner als Planeten. Sie sind gross genug, dass sie eine Runde Form (und meist eine Eigenrotatio) haben.\nAber nicht gross genug, dass sie ihre Sonnenumlaufbahn von anderen Objektren befreit haben.",
+        "en": "Dwarf planets are smaller than planets. They are large enough to have a round shape (and usually a rotation of their own).\nBut not big enough to have cleared their solar orbit of other objects."
       },
       "shortdescr": {
         "de": "Feste Himmelsk\u00f6rper, kleiner als Planeten",
@@ -1123,6 +967,11 @@
       "name": {
         "de": "Asteroid",
         "en": "Asteroid"
+      },
+      "categoryid": "CATG9",
+      "description": {
+        "de": "Asteroiden sind kleine, felsige Objekte, die die Sonne oder einen anderen Asteroiden umkreisen.\n\nSind nicht gross genug dass sie eine Runde Form (und meist auch eine Eigenrotation) haben\n\nAsteroiden k\u00f6nnen Monde haben. \nDiese Monde sind oft kleinere Asteroiden, die den gr\u00f6\u00dferen Asteroiden umkreisen. Solche Systeme werden als bin\u00e4re Asteroiden bezeichnet, wenn ein Asteroid einen Mond hat, oder als tern\u00e4re Systeme, wenn ein Asteroid zwei Monde hat.\n\nIda und Dactyl:\nIda: Ein Asteroid im Asteroideng\u00fcrtel zwischen Mars und Jupiter.\nDactyl: Der Mond von Ida, der 1993 von der Galileo-Sonde entdeckt wurde. Dactyl ist der erste best\u00e4tigte Mond eines Asteroiden.\n\nEugenia und Petit-Prince:\nEugenia: Ein gro\u00dfer Asteroid im Asteroideng\u00fcrtel.\nPetit-Prince: Der gr\u00f6\u00dfere der beiden Monde von Eugenia, der 1998 entdeckt wurde. Eugenia hat auch einen zweiten, kleineren Mond namens S/2004 (45) 1.\n\nSylvia und ihre Monde Romulus und Remus:\nSylvia: Ein gro\u00dfer Asteroid im Asteroideng\u00fcrtel.\nRomulus und Remus: Zwei Monde, die Sylvia umkreisen. Romulus wurde 2001 und Remus 2005 entdeckt.\nDidymos und Dimorphos:",
+        "en": "Asteroids are small, rocky objects that orbit the sun or another asteroid.\n\nThey are not large enough to have a round shape (and usually also a rotation of their own)\n\nAsteroids can have moons.\nThese moons are often smaller asteroids orbiting the larger asteroid. Such systems are called binary asteroids if an asteroid has one moon, or ternary systems if an asteroid has two moons.\n\nIda and Dactyl:\nIda: An asteroid in the asteroid belt between Mars and Jupiter.\nDactyl: The moon of Ida, which was discovered by the Galileo probe in 1993. Dactyl is the first confirmed moon of an asteroid.\n\nEugenia and Petit-Prince:\nEugenia: A large asteroid in the asteroid belt.\nPetit-Prince: The larger of Eugenia's two moons, discovered in 1998. Eugenia also has a second, smaller moon called S/2004 (45) 1.\n\nSylvia and its moons Romulus and Remus:\nSylvia: A large asteroid in the asteroid belt.\nRomulus and Remus: Two moons orbiting Sylvia. Romulus was discovered in 2001 and Remus in 2005.\nDidymos and Dimorphos:"
       },
       "examples": [
         "Ida",
@@ -1147,6 +996,11 @@
         "de": "Komet",
         "en": "Comet"
       },
+      "categoryid": "CATG9",
+      "description": {
+        "de": "Ein Komet ist ein Himmelsk\u00f6rper, der haupts\u00e4chlich aus Eis, Staub und Gestein besteht. Er stammt meist aus den \u00e4u\u00dferen Bereichen unseres Sonnensystems, zum Beispiel der Oortschen Wolke oder dem Kuiperg\u00fcrtel.\n\n**Merkmale eines Kometen:**\n*Kern*: Der feste, zentrale Teil, meist nur einige Kilometer gro\u00df. Besteht aus Eis (Wasser, CO\u2082, Methan usw.) und Staub \u2013 man spricht oft von einem \u201eschmutzigen Schneeball\u201c.\n\n*Koma*: Wenn ein Komet sich der Sonne n\u00e4hert, erw\u00e4rmen sich die Eisteile, verdampfen, und bilden mit dem ausgesto\u00dfenen Staub eine leuchtende H\u00fclle um den Kern.\n\n*Schweif*: Der Sonnenwind und die Strahlung dr\u00fccken die Koma nach hinten, sodass ein Schweif entsteht, der immer von der Sonne weg zeigt. Es gibt oft zwei Schweife:\nStaubschweif (gebogen)\nIonenschweif (gerade, bl\u00e4ulich)",
+        "en": "A comet is a celestial body that consists mainly of ice, dust and rock. It usually originates from the outer regions of our solar system, for example the Oort cloud or the Kuiper belt.\n\n**Characteristics of a comet:**\n*Nucleus*: The solid, central part, usually only a few kilometres in size. Consists of ice (water, CO\u2082, methane, etc.) and dust - often referred to as a \"dirty snowball\".\n\n*Coma*: When a comet approaches the sun, the icy parts heat up, vaporise and form a luminous shell around the nucleus together with the ejected dust.\n\n*Tail*: The solar wind and radiation push the coma backwards, creating a tail that always points away from the sun. There are often two tails:\nDust tail (curved)\nIon tail (straight, bluish)"
+      },
       "shortdescr": {
         "de": "Komet im Sonnensystem",
         "en": "Comet in the solar system"
@@ -1168,237 +1022,15 @@
         "de": "Begleiter",
         "en": "Companion"
       },
+      "categoryid": "CATG7",
+      "description": {
+        "de": "Himmelsk\u00f6rper, der in einer regelm\u00e4ssigen Umlaufbahn um einen anderen Himmelsk\u00f6per kreist.\nMond um Planet, oder Zwergplanet\nPlanet, Zwergplanet um Sonne\nAsteroid, Komet um Sonne\nAsteroid um Asteroid",
+        "en": "A celestial body orbiting another celestial body in a regular orbit.\nMoon around planet, or dwarf planet\nPlanet, dwarf planet around the sun\nAsteroid, comet around the sun\nAsteroid around asteroid"
+      },
       "shortdescr": {
         "de": "Irgend ein Himmelsobjekt, das uns bekannt ist und einen anderes Himmelsobjekt umkreist",
         "en": "Any celestial object that is known to us and that orbits another celestial object"
-      },
-      "keys": [
-        [
-          "ATTR14"
-        ]
-      ]
-    }
-  ],
-  "Attributes": [
-    {
-      "elementid": "ATTR18",
-      "name": "Bezeichnung",
-      "mandatory": false,
-      "parentid": "ENTI3",
-      "domainid": "DOMA23",
-      "displayseq": 1,
-      "description": "Bezeichnung gem\u00e4ss Henry-Draper-Katalog (HD-Katalog)",
-      "shortdescr": "Bezeichnung des Sterns im Katalog",
-      "examples": [
-        "HD 209458"
-      ],
-      "descriptive": true,
-      "repeated": true
-    },
-    {
-      "elementid": "ATTR19",
-      "name": "Durchmesser",
-      "mandatory": false,
-      "parentid": "ENTI3",
-      "domainid": "DOMA2",
-      "displayseq": 5,
-      "description": "Der Durchmesser kann in 3 Werten angegeben werden. (Pol-, \u00c4quator- und mittlerer Durchmesser)",
-      "shortdescr": "Durchmesser eines Sterns",
-      "examples": [
-        "3000 km",
-        "15000 km",
-        "12412 - 12472 km"
-      ]
-    },
-    {
-      "elementid": "ATTR20",
-      "name": "Entdeckungsjahr",
-      "mandatory": false,
-      "parentid": "ENTI3",
-      "domainid": "DOMA3",
-      "displayseq": 6,
-      "description": "Jahr, in dem dieser Stern entdeckt wurde.",
-      "examples": [
-        "1752",
-        "512 vuz",
-        "2009"
-      ]
-    },
-    {
-      "elementid": "ATTR21",
-      "name": "Entfernung",
-      "mandatory": false,
-      "parentid": "ENTI3",
-      "domainid": "DOMA1",
-      "displayseq": 4,
-      "description": "Distanz in Lichtjahren",
-      "shortdescr": "Distanz eines Sterns von unserer Sonne",
-      "examples": [
-        "1.3 Mio LJ",
-        "365 lj"
-      ],
-      "descriptive": true
-    },
-    {
-      "elementid": "ATTR22",
-      "name": "Leuchtklasse",
-      "mandatory": false,
-      "parentid": "ENTI3",
-      "domainid": "DOMA26",
-      "displayseq": 3,
-      "description": "Die\u00a0Leuchtkraftklasse\u00a0eines Sterns ist durch Eigenschaften bestimmt, die von seiner\u00a0Leuchtkraft\u00a0abh\u00e4ngen; dies sind insbesondere die\u00a0Breite\u00a0und die St\u00e4rke (H\u00f6he) der\u00a0Spektrallinien. So haben Riesensterne eine geringere\u00a0Schwerebeschleunigung\u00a0in ihrer\u00a0Photosph\u00e4re\u00a0als Zwergsterne gleicher Temperatur, was eine geringere\u00a0Druckverbreiterung\u00a0der Linien bewirkt, wogegen die\u00a0Spektralklasse\u00a0Eigenschaften ber\u00fccksichtigt, die prim\u00e4r von seiner Oberfl\u00e4chentemperatur abh\u00e4ngen.\n\nQuelle: https://de.wikipedia.org/wiki/Klassifizierung_der_Sterne#Leuchtkraftklassen_(Entwicklungszustand)",
-      "shortdescr": "Leuchtkraftklasse",
-      "examples": [
-        "I",
-        "V",
-        "III",
-        "D"
-      ],
-      "descriptive": true
-    },
-    {
-      "elementid": "ATTR23",
-      "name": "Name",
-      "mandatory": true,
-      "parentid": "ENTI3",
-      "domainid": "DOMA23",
-      "displayseq": 2,
-      "description": "ca 500 Sterne haben eigene Namen, vergeben durch die Internationale Astronomische Union (IAU)",
-      "shortdescr": "Eigenname eines Sterns",
-      "examples": [
-        "Alpha Centauri",
-        "Beta Orionis",
-        "Sol"
-      ],
-      "descriptive": false
-    },
-    {
-      "elementid": "ATTR17",
-      "name": "Oberfl\u00e4chentyp",
-      "mandatory": false,
-      "parentid": "ENTI3",
-      "domainid": "DOMA27",
-      "description": "Material, das die \u00e4usserste Schicht des Himmelsk\u00f6pers bildet.",
-      "shortdescr": "Zustandsform der Oberfl\u00e4che",
-      "examples": [
-        "Feststoff",
-        "Gas",
-        "Eis"
-      ]
-    },
-    {
-      "elementid": "ATTR10",
-      "name": "Aphel",
-      "mandatory": false,
-      "parentid": "ENTI7",
-      "domainid": "DOMA4",
-      "displayseq": 6,
-      "description": "Der am weitesten enfernte Punkt einer Umlaufbahn eines Begleiters um sein Mutterobjekt\n\nDie H\u00e4lfte des l\u00e4nsten Durchmessers einer Ellipse",
-      "shortdescr": "Der enternteste Punkt der Umlaufbahn eines Begleiters"
-    },
-    {
-      "elementid": "ATTR11",
-      "name": "Durchmesser",
-      "mandatory": false,
-      "parentid": "ENTI7",
-      "domainid": "DOMA2",
-      "displayseq": 2,
-      "description": "Der Durchmesser kann in 3 Werten angegeben werden. (Pol-, \u00c4quator- und mittlerer Durchmesser)",
-      "shortdescr": "Durchmesser der Kugel eines grossen Objektes",
-      "examples": [
-        "6112 km"
-      ],
-      "descriptive": true
-    },
-    {
-      "elementid": "ATTR12",
-      "name": "Entdeckungsjahr",
-      "mandatory": false,
-      "parentid": "ENTI7",
-      "domainid": "DOMA3",
-      "displayseq": 7,
-      "description": "Jahr, in dem dieser Begleiter entdeckt wurde.",
-      "examples": [
-        "1752",
-        "512 vuz",
-        "2009"
-      ]
-    },
-    {
-      "elementid": "ATTR13",
-      "name": "mittlerer Abstand",
-      "mandatory": false,
-      "parentid": "ENTI7",
-      "domainid": "DOMA4",
-      "displayseq": 4,
-      "description": "Mittlerer Abstand des Himmelsk\u00f6rpers vom Mutterobjekt. W\u00e4re der Kreisradius, wenn die Umlaufbahn kreisf\u00f6rmig w\u00e4re.",
-      "examples": [
-        "1 AE",
-        "150Mio km",
-        "386000 km"
-      ],
-      "descriptive": true
-    },
-    {
-      "elementid": "ATTR14",
-      "name": "Name",
-      "parentid": "ENTI7",
-      "mandatory": false,
-      "domainid": "DOMA23",
-      "displayseq": 1,
-      "examples": [
-        "(Erd-)Mond",
-        "Phobos",
-        "Deimos",
-        "Io",
-        "Europa",
-        "Ganymed",
-        "Triton",
-        "LHS 1140 b",
-        "Proxima Centauri b",
-        "Kepler-186f"
-      ],
-      "descriptive": true
-    },
-    {
-      "elementid": "ATTR15",
-      "name": "Perihel",
-      "mandatory": false,
-      "parentid": "ENTI7",
-      "domainid": "DOMA4",
-      "displayseq": 5,
-      "description": "Der n\u00e4chste Punkt der Umlaufbahn eines Begleiters um sein Mutterobjekt.\n\nDie kleine Halbachse der Ellipse",
-      "shortdescr": "Der am n\u00e4chsten liegende Punkt der Umlaufbahn eines Begleiters"
-    },
-    {
-      "elementid": "ATTR16",
-      "name": "Umlaufdauer",
-      "parentid": "ENTI7",
-      "mandatory": false,
-      "parentid": "ENTI7",
-      "domainid": "DOMA5",
-      "displayseq": 3,
-      "description": "Zeit die ein Begleiter braucht um das Mutterobjekt zu umkreisen. (Wert + Zeiteinheit)",
-      "examples": [
-        "1 Jahr",
-        "23 Tage",
-        "3.1 Stunden"
-      ],
-      "descriptive": true
-    },
-    {
-      "elementid": "ATTR24",
-      "name": "Oberfl\u00e4chentyp",
-      "mandatory": false,
-      "parentid": "ENTI4",
-      "domainid": "DOMA27",
-      "description": "Material, das die \u00e4usserste Schicht des Himmelsk\u00f6pers bildet.",
-      "shortdescr": "Zustandsform der Oberfl\u00e4che",
-      "examples": [
-        "Feststoff",
-        "Gas",
-        "Eis"
-      ]
+      }
     }
   ],
   "Relations": [
@@ -1408,8 +1040,8 @@
       "fwd": {
         "entityid": "ENTI7",
         "assoctext": {
-          "de": "ist",
-          "en": "is"
+          "en": "is",
+          "de": "ist"
         },
         "cardinality": "1",
         "mandatory": true
@@ -1417,8 +1049,8 @@
       "bwd": {
         "entityid": "ENTI1",
         "assoctext": {
-          "de": "ist",
-          "en": "is"
+          "en": "is",
+          "de": "ist"
         },
         "cardinality": "1",
         "mandatory": true,
@@ -1431,8 +1063,8 @@
       "fwd": {
         "entityid": "ENTI7",
         "assoctext": {
-          "de": "ist",
-          "en": "is"
+          "en": "is",
+          "de": "ist"
         },
         "cardinality": "1",
         "mandatory": true
@@ -1440,8 +1072,8 @@
       "bwd": {
         "entityid": "ENTI2",
         "assoctext": {
-          "de": "ist",
-          "en": "is"
+          "en": "is",
+          "de": "ist"
         },
         "cardinality": "1",
         "mandatory": true,
@@ -1454,8 +1086,8 @@
       "fwd": {
         "entityid": "ENTI7",
         "assoctext": {
-          "de": "ist",
-          "en": "is"
+          "en": "is",
+          "de": "ist"
         },
         "cardinality": "1",
         "mandatory": true
@@ -1463,8 +1095,8 @@
       "bwd": {
         "entityid": "ENTI4",
         "assoctext": {
-          "de": "ist",
-          "en": "is"
+          "en": "is",
+          "de": "ist"
         },
         "cardinality": "1",
         "mandatory": true,
@@ -1477,8 +1109,8 @@
       "fwd": {
         "entityid": "ENTI7",
         "assoctext": {
-          "de": "ist",
-          "en": "is"
+          "en": "is",
+          "de": "ist"
         },
         "cardinality": "1",
         "mandatory": true
@@ -1486,8 +1118,8 @@
       "bwd": {
         "entityid": "ENTI5",
         "assoctext": {
-          "de": "ist",
-          "en": "is"
+          "en": "is",
+          "de": "ist"
         },
         "cardinality": "1",
         "mandatory": true,
@@ -1500,8 +1132,8 @@
       "fwd": {
         "entityid": "ENTI7",
         "assoctext": {
-          "de": "ist",
-          "en": "is"
+          "en": "is",
+          "de": "ist"
         },
         "cardinality": "1",
         "mandatory": true
@@ -1509,8 +1141,8 @@
       "bwd": {
         "entityid": "ENTI6",
         "assoctext": {
-          "de": "ist",
-          "en": "is"
+          "en": "is",
+          "de": "ist"
         },
         "cardinality": "1",
         "mandatory": true,
@@ -1705,6 +1337,498 @@
       ]
     }
   ],
+  "Attributes": [
+    {
+      "elementid": "ATTR10",
+      "name": {
+        "de": "Aphel",
+        "en": "Aphel"
+      },
+      "mandatory": false,
+      "parentid": "ENTI7",
+      "domainid": "DOMA4",
+      "displayseq": 6,
+      "description": {
+        "de": "Der am weitesten enfernte Punkt einer Umlaufbahn eines Begleiters um sein Mutterobjekt\n\nDie H\u00e4lfte des l\u00e4nsten Durchmessers einer Ellipse",
+        "en": "The furthest point of a companion's orbit around its parent object\n\nHalf of the longest diameter of an ellipse"
+      },
+      "shortdescr": {
+        "de": "Der enternteste Punkt der Umlaufbahn eines Begleiters",
+        "en": "The innermost point of a companion's orbit"
+      }
+    },
+    {
+      "elementid": "ATTR11",
+      "name": {
+        "de": "Durchmesser",
+        "en": "Diameter"
+      },
+      "mandatory": false,
+      "parentid": "ENTI7",
+      "domainid": "DOMA2",
+      "displayseq": 2,
+      "description": {
+        "de": "Der Durchmesser kann in 3 Werten angegeben werden. (Pol-, \u00c4quator- und mittlerer Durchmesser)",
+        "en": "The diameter can be specified in 3 values. (polar, equatorial and mean diameter)"
+      },
+      "shortdescr": {
+        "de": "Durchmesser der Kugel eines grossen Objektes",
+        "en": "Diameter of the sphere of a large object"
+      },
+      "examples": [
+        "6112 km"
+      ],
+      "descriptive": true
+    },
+    {
+      "elementid": "ATTR12",
+      "name": {
+        "de": "Entdeckungsjahr",
+        "en": "Discovery year"
+      },
+      "mandatory": false,
+      "parentid": "ENTI7",
+      "domainid": "DOMA3",
+      "displayseq": 7,
+      "description": {
+        "de": "Jahr, in dem dieser Begleiter entdeckt wurde.",
+        "en": "Year in which this companion was discovered."
+      },
+      "examples": [
+        "1752",
+        "512 vuz",
+        "2009"
+      ]
+    },
+    {
+      "elementid": "ATTR13",
+      "name": {
+        "de": "mittlerer Abstand",
+        "en": "Average distance"
+      },
+      "mandatory": false,
+      "parentid": "ENTI7",
+      "domainid": "DOMA4",
+      "displayseq": 4,
+      "description": {
+        "de": "Mittlerer Abstand des Himmelsk\u00f6rpers vom Mutterobjekt. W\u00e4re der Kreisradius, wenn die Umlaufbahn kreisf\u00f6rmig w\u00e4re.",
+        "en": "Mean distance of the celestial body from the parent object. Would be the circle radius if the orbit were circular."
+      },
+      "examples": [
+        "1 AE",
+        "150Mio km",
+        "386000 km"
+      ],
+      "descriptive": true
+    },
+    {
+      "elementid": "ATTR14",
+      "name": {
+        "de": "Name"
+      },
+      "mandatory": false,
+      "parentid": "ENTI7",
+      "domainid": "DOMA23",
+      "displayseq": 1,
+      "examples": [
+        "(Erd-)Mond",
+        "Phobos",
+        "Deimos",
+        "Io",
+        "Europa",
+        "Ganymed",
+        "Triton",
+        "LHS 1140 b",
+        "Proxima Centauri b",
+        "Kepler-186f"
+      ],
+      "descriptive": true
+    },
+    {
+      "elementid": "ATTR15",
+      "name": {
+        "de": "Perihel",
+        "en": "Perihel"
+      },
+      "mandatory": false,
+      "parentid": "ENTI7",
+      "domainid": "DOMA4",
+      "displayseq": 5,
+      "description": {
+        "de": "Der n\u00e4chste Punkt der Umlaufbahn eines Begleiters um sein Mutterobjekt.\n\nDie kleine Halbachse der Ellipse",
+        "en": "The closest point of a companion's orbit around its parent object.\n\nThe minor semi-axis of the ellipse"
+      },
+      "shortdescr": {
+        "de": "Der am n\u00e4chsten liegende Punkt der Umlaufbahn eines Begleiters",
+        "en": "The closest point of a companion's orbit"
+      }
+    },
+    {
+      "elementid": "ATTR16",
+      "name": {
+        "de": "Umlaufdauer",
+        "en": "Cycle time"
+      },
+      "mandatory": false,
+      "parentid": "ENTI7",
+      "domainid": "DOMA5",
+      "displayseq": 3,
+      "description": {
+        "de": "Zeit die ein Begleiter braucht um das Mutterobjekt zu umkreisen. (Wert + Zeiteinheit)",
+        "en": "Time a companion needs to orbit the parent object. (value + time unit)"
+      },
+      "examples": [
+        "1 Jahr",
+        "23 Tage",
+        "3.1 Stunden"
+      ],
+      "descriptive": true
+    },
+    {
+      "elementid": "ATTR17",
+      "name": {
+        "de": "Oberfl\u00e4chentyp",
+        "en": "Surface type"
+      },
+      "mandatory": false,
+      "parentid": "ENTI2",
+      "domainid": "DOMA27",
+      "description": {
+        "de": "Material, das die \u00e4usserste Schicht des Himmelsk\u00f6pers bildet.",
+        "en": "Material that forms the outermost layer of the celestial body."
+      },
+      "shortdescr": {
+        "de": "Zustandsform der Oberfl\u00e4che",
+        "en": "State form of the surface"
+      },
+      "examples": [
+        "Feststoff",
+        "Gas",
+        "Eis"
+      ]
+    },
+    {
+      "elementid": "ATTR18",
+      "name": {
+        "de": "Bezeichnung",
+        "en": "Designation"
+      },
+      "mandatory": false,
+      "parentid": "ENTI3",
+      "domainid": "DOMA23",
+      "displayseq": 1,
+      "description": {
+        "de": "Bezeichnung gem\u00e4ss Henry-Draper-Katalog (HD-Katalog)",
+        "en": "Designation according to the Henry Draper Catalogue (HD Catalogue)"
+      },
+      "shortdescr": {
+        "de": "Bezeichnung des Sterns im Katalog",
+        "en": "Name of the star in the catalogue"
+      },
+      "examples": [
+        "HD 209458"
+      ],
+      "descriptive": true,
+      "repeated": true
+    },
+    {
+      "elementid": "ATTR19",
+      "name": {
+        "de": "Durchmesser",
+        "en": "Diameter"
+      },
+      "mandatory": false,
+      "parentid": "ENTI3",
+      "domainid": "DOMA2",
+      "displayseq": 5,
+      "description": {
+        "de": "Der Durchmesser kann in 3 Werten angegeben werden. (Pol-, \u00c4quator- und mittlerer Durchmesser)",
+        "en": "The diameter can be specified in 3 values. (polar, equatorial and mean diameter)"
+      },
+      "shortdescr": {
+        "de": "Durchmesser eines Sterns",
+        "en": "Diameter of the star"
+      },
+      "examples": [
+        "3000 km",
+        "15000 km",
+        "12412 - 12472 km"
+      ]
+    },
+    {
+      "elementid": "ATTR20",
+      "name": {
+        "de": "Entdeckungsjahr",
+        "en": "Discovery year"
+      },
+      "mandatory": false,
+      "parentid": "ENTI3",
+      "domainid": "DOMA3",
+      "displayseq": 6,
+      "description": {
+        "de": "Jahr, in dem dieser Stern entdeckt wurde.",
+        "en": "Year in which this star was discovered."
+      },
+      "examples": [
+        "1752",
+        "512 vuz",
+        "2009"
+      ]
+    },
+    {
+      "elementid": "ATTR21",
+      "name": {
+        "de": "Entfernung",
+        "en": "Distance"
+      },
+      "mandatory": false,
+      "parentid": "ENTI3",
+      "domainid": "DOMA1",
+      "displayseq": 4,
+      "description": {
+        "de": "Distanz in Lichtjahren",
+        "en": "distance in lightyears"
+      },
+      "shortdescr": {
+        "de": "Distanz eines Sterns von unserer Sonne",
+        "en": "Distance of star from our sun"
+      },
+      "examples": [
+        "1.3 Mio LJ",
+        "365 lj"
+      ],
+      "descriptive": true
+    },
+    {
+      "elementid": "ATTR22",
+      "name": {
+        "de": "Leuchtklasse",
+        "en": "Luminosity class"
+      },
+      "mandatory": false,
+      "parentid": "ENTI3",
+      "domainid": "DOMA26",
+      "displayseq": 3,
+      "description": {
+        "de": "Die\u00a0Leuchtkraftklasse\u00a0eines Sterns ist durch Eigenschaften bestimmt, die von seiner\u00a0Leuchtkraft\u00a0abh\u00e4ngen; dies sind insbesondere die\u00a0Breite\u00a0und die St\u00e4rke (H\u00f6he) der\u00a0Spektrallinien. So haben Riesensterne eine geringere\u00a0Schwerebeschleunigung\u00a0in ihrer\u00a0Photosph\u00e4re\u00a0als Zwergsterne gleicher Temperatur, was eine geringere\u00a0Druckverbreiterung\u00a0der Linien bewirkt, wogegen die\u00a0Spektralklasse\u00a0Eigenschaften ber\u00fccksichtigt, die prim\u00e4r von seiner Oberfl\u00e4chentemperatur abh\u00e4ngen.\n\nQuelle: https://de.wikipedia.org/wiki/Klassifizierung_der_Sterne#Leuchtkraftklassen_(Entwicklungszustand)",
+        "en": "The luminosity class of a star is determined by properties that depend on its luminosity; these are in particular the width and strength (height) of the spectral lines. For example, giant stars have a lower gravitational acceleration in their photosphere than dwarf stars of the same temperature, which results in a lower pressure broadening of the lines, whereas the spectral class takes into account properties that primarily depend on its surface temperature.\n\nSource: https://de.wikipedia.org/wiki/Klassifizierung_der_Sterne#Leuchtkraftklassen_(evolutionary state)"
+      },
+      "shortdescr": {
+        "de": "Leuchtkraftklasse"
+      },
+      "examples": [
+        "I",
+        "V",
+        "III",
+        "D"
+      ],
+      "descriptive": true
+    },
+    {
+      "elementid": "ATTR23",
+      "name": {
+        "de": "Name",
+        "en": "Eigenname eines Sterns"
+      },
+      "mandatory": true,
+      "parentid": "ENTI3",
+      "domainid": "DOMA23",
+      "displayseq": 2,
+      "description": {
+        "de": "ca 500 Sterne haben eigene Namen, vergeben durch die Internationale Astronomische Union (IAU)",
+        "en": "Name, designation of the star according to the directory of the International Astronomical Union (IAU)\n\nSome 500 stars have a proper name"
+      },
+      "shortdescr": {
+        "de": "Eigenname eines Sterns",
+        "en": "Proper name of planet"
+      },
+      "examples": [
+        "Alpha Centauri",
+        "Beta Orionis",
+        "Sol"
+      ],
+      "descriptive": false
+    },
+    {
+      "elementid": "ATTR24",
+      "name": {
+        "de": "Oberfl\u00e4chentyp",
+        "en": "Dwarf planet"
+      },
+      "mandatory": false,
+      "parentid": "ENTI4",
+      "domainid": "DOMA27",
+      "description": {
+        "de": "Material, das die \u00e4usserste Schicht des Himmelsk\u00f6pers bildet.",
+        "en": "Material that forms the outermost layer of the celestial body."
+      },
+      "shortdescr": {
+        "de": "Zustandsform der Oberfl\u00e4che",
+        "en": "State form of the surface"
+      },
+      "examples": [
+        "Feststoff",
+        "Gas",
+        "Eis"
+      ]
+    },
+    {
+      "elementid": "ATTR1",
+      "name": {
+        "de": "Einheit",
+        "en": "Unit"
+      },
+      "mandatory": true,
+      "parentid": "DOMA18",
+      "domainid": "DOMA31",
+      "displayseq": 2,
+      "shortdescr": {
+        "de": "Physikalische Einheit",
+        "en": "physical unit"
+      }
+    },
+    {
+      "elementid": "ATTR2",
+      "name": {
+        "de": "Menge",
+        "en": "Quantity"
+      },
+      "mandatory": true,
+      "parentid": "DOMA18",
+      "domainid": "DOMA20",
+      "displayseq": 1,
+      "shortdescr": {
+        "de": "Anzahl der Einheiten",
+        "en": "Number of units"
+      }
+    },
+    {
+      "elementid": "ATTR3",
+      "name": {
+        "de": "\u00c4quatordurchmesser",
+        "en": "Equator diameter"
+      },
+      "mandatory": false,
+      "parentid": "DOMA2",
+      "domainid": "DOMA14",
+      "displayseq": 3,
+      "description": {
+        "de": "Typischerweise der l\u00e4ngste Durchmesser.\nWegen der Rotation sind kugelf\u00f6rmige Himmelsk\u00f6per am \u00c4quator *ausgebeult*",
+        "en": "Typically the longest diameter.\nDue to rotation, spherical celestial bodies are *dent out* at the equator"
+      },
+      "shortdescr": {
+        "de": "Durchmesser 90\u00ba zur Rotationsaches",
+        "en": "Diameter 90\u00ba to the axis of rotation"
+      }
+    },
+    {
+      "elementid": "ATTR4",
+      "name": {
+        "de": "Mittlerer Durchmesser",
+        "en": "Average diameter"
+      },
+      "mandatory": true,
+      "parentid": "DOMA2",
+      "domainid": "DOMA14",
+      "displayseq": 1,
+      "description": {
+        "de": "Der Durchmesser, den man bei nicht sehr genauen angaben oder einfachen astronomischen / pyhsikalischen Berechnungen verwendet",
+        "en": "The diameter used for not very precise specifications or simple astronomical / physical calculations"
+      },
+      "shortdescr": {
+        "de": "Mittlerer Durchmesser einer idealen Kugel",
+        "en": "Average diameter of an ideal sphere"
+      }
+    },
+    {
+      "elementid": "ATTR5",
+      "name": {
+        "de": "Poldurchmesser",
+        "en": "Pole diameter"
+      },
+      "mandatory": false,
+      "parentid": "DOMA2",
+      "domainid": "DOMA14",
+      "displayseq": 2,
+      "description": {
+        "de": "Typischerweise der kleinste Durchmesser.\nWegen der Rotation sind kugelf\u00f6rmige Himmelsk\u00f6per am \u00c4quator *ausgebeult*",
+        "en": "Typically the smallest diameter.\nDue to rotation, spherical celestial bodies are *dent out* at the equator"
+      },
+      "shortdescr": {
+        "de": "Durchmesser entlang der Rotationsachse",
+        "en": "Diameter along the axis of rotation"
+      }
+    },
+    {
+      "elementid": "ATTR6",
+      "name": {
+        "de": "Vertrauensintervall",
+        "en": "Confidence interval"
+      },
+      "mandatory": false,
+      "parentid": "DOMA21",
+      "domainid": "DOMA24",
+      "displayseq": 5,
+      "description": {
+        "de": "Bereich (als Prozent des Messwertes) um den der gemessene Wert nach oben oder unten abweichen kann.",
+        "en": "Range (as a percentage of the measured value) by which the measured value can deviate upwards or downwards."
+      },
+      "shortdescr": {
+        "de": "vermutete relative/r Abweichung / Fehlerbereich",
+        "en": "Presumed relative deviation / error range"
+      }
+    },
+    {
+      "elementid": "ATTR7",
+      "name": {
+        "de": "Wert",
+        "en": "Value"
+      },
+      "mandatory": true,
+      "parentid": "DOMA21",
+      "domainid": "DOMA18",
+      "displayseq": 1,
+      "shortdescr": {
+        "de": "der gemessene Wert (mit Einheit)",
+        "en": "measured value (with unit)"
+      }
+    },
+    {
+      "elementid": "ATTR8",
+      "name": {
+        "de": "Dauer",
+        "en": "Duration"
+      },
+      "mandatory": true,
+      "parentid": "DOMA5",
+      "domainid": "DOMA8",
+      "displayseq": 1,
+      "description": {
+        "de": "Anzahl der Einheiten, die im Schwesterfeld definiert ist",
+        "en": "Number of units defined in the sister field"
+      },
+      "shortdescr": {
+        "de": "Anzahl Zeiteinheiten",
+        "en": "Number of time units"
+      }
+    },
+    {
+      "elementid": "ATTR9",
+      "name": {
+        "de": "Einheit"
+      },
+      "mandatory": true,
+      "parentid": "DOMA5",
+      "domainid": "DOMA29",
+      "displayseq": 2,
+      "description": {
+        "de": "Zeiteinheit als Stunde, Tag oder Jahr"
+      },
+      "shortdescr": {
+        "de": "Zeiteinheit"
+      }
+    }
+  ],
   "BusinessRules": [
     {
       "elementid": "BURU3",
@@ -1718,7 +1842,7 @@
       "restrictedelements": [
         "ENTI1"
       ],
-      "description": "Ein Mond umkreist zwingend einen Planeten oder Zwergplaneten.",
+      "description": "Ein Mond umkreist zwingend einen Planeten oder einen Zwergplaneten.",
       "rule": "Mond berehchnet"
     }
   ]

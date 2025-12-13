@@ -15,7 +15,7 @@
       "elementid": "CATG0",
       "name": "myname",
       "categorytype": "ENTITY",
-      "parent": "CATG1"
+      "parentid": "CATG1"
     }
   ],
   "Domains": [
@@ -159,11 +159,10 @@
       "mandatory": true,
       "repeated": true,
       "encrypted": false,
-      "additionalProps": [
+      "additionalProps":
         {
           "$comment": "Entityattribute, see parent"
         }
-      ]
     }
   ],
   "Relations": [
@@ -200,9 +199,8 @@
       "description": "Ein Asteriod umkreist immer genau einen Stern oder einen Asteroiden (aber nicht sich selbst)"
     }
   ],
-  "additionalProps": [
+  "additionalProps":
     {
       "Who": "me"
     }
-  ]
 }

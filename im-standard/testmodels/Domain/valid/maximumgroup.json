@@ -2,11 +2,10 @@
   "elementid": "DOMA2",
   "name": "myname",
   "domaintype": "GroupDomain",
-  "additionalProps": [
+  "additionalProps":
     {
       "$comment": "this is a domain"
-    }
-  ],
+    },
   "examples": [
     "integer",
     "mountain-name"

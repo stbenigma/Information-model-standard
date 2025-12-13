@@ -17,12 +17,9 @@
       3
     ]
   ],
-  "additionalProps": [
+  "additionalProps":
     {
-      "p1": "prop 1"
-    },
-    {
+      "p1": "prop 1",
       "p2": "any property"
     }
-  ]
 }

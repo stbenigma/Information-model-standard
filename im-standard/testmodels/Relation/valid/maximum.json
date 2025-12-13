@@ -22,9 +22,8 @@
   "examples": [
     "von 1 zu viele / von viele zu 1"
   ],
-  "additionalProps": [
+  "additionalProps":
     {
       "fkattribute": "CUST-ID"
     }
-  ]
 }
