@@ -33,11 +33,14 @@
     },
     "Models": {
       "description": "List of all models building up the meta model",
-      "type": "object",
+      "type": "array",
       "additionalProperties": {
         "oneOf": [
           {
             "$ref": "InformationModel-schema.json"
+          },
+          {
+            "$ref": "DataModel-schema.json"
           }
         ]
       },

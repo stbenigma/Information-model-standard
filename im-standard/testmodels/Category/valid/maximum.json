@@ -2,5 +2,5 @@
   "elementid": "CATG0",
   "name": "myname",
   "categorytype": "ENTITY",
-  "parentid": "CATG1"
+  "categoryid": "CATG1"
 }

@@ -41,7 +41,7 @@
         "en": "Base data domains"
       },
       "categorytype": "DOMAIN",
-      "parentid": "CATG2",
+      "categoryid": "CATG2",
       "description": {
         "de": "Basisdatentypen sind nur zu verwenden f\u00fcr Attribute, bei denen den Werte keine spezfiische semantische Bedeutung zukommt. \n\nSie legen nur fest, in welcher Kodierung (text, zahl, datum) Werte abgelegt werden. Sie geben keine Auskunft \u00fcber eine spezfische fachliche Nutzung der Werte.",
         "en": "Basic data types are only to be used for attributes for which the values have no specific semantic meaning. \n\nThey only define the coding (text, number, date) in which values are stored. They do not provide any information about a specific functional use of the values."
@@ -54,7 +54,7 @@
         "en": "Physical datatypes"
       },
       "categorytype": "DOMAIN",
-      "parentid": "CATG2",
+      "categoryid": "CATG2",
       "description": {
         "de": "Datentypen f\u00fcr physikalische Attribute",
         "en": "Data types for physical attributes"
@@ -98,7 +98,7 @@
         "en": "Large objects"
       },
       "categorytype": "ENTITY",
-      "parentid": "CATG7",
+      "categoryid": "CATG7",
       "description": {
         "de": "Grosse Objekte haben eine Masse die wegen der Gravitation dazu f\u00fchrt, dass das Objekt kugelf\u00f6rmig wird und normalerweise um eine Achse rotiert.",
         "en": "Large objects have a mass which, due to gravity, causes the object to become spherical and normally rotate around an axis."
@@ -111,7 +111,7 @@
         "en": "Small objects"
       },
       "categorytype": "ENTITY",
-      "parentid": "CATG7",
+      "categoryid": "CATG7",
       "description": {
         "de": "Kleine Objekte haben eine Masse die nicht zu einer Kugelform f\u00fchrt.",
         "en": "Small objects have a mass that does not result in a spherical shape."

@@ -33,6 +33,12 @@
           },
           {
             "$ref": "Domain-schema.json#/components/$defs/DomainId"
+          },
+          {
+            "$ref": "DataModel-schema.json#/components/$defs/DataObjectId"
+          },
+          {
+            "$ref": "DataModel-schema.json#/components/$defs/DataAttributeId"
           }
         ],
         "uniqueItems": true,

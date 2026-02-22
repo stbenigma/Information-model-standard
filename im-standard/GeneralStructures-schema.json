@@ -60,7 +60,7 @@
             "$ref": "GeneralTypes-schema.json#/components/$defs/Name"
           },
           "targetenvironment": {
-            "description": "Name of environment, world of influence this model is meant for.",
+            "description": "Name of environment, world of influence this model is applicable in.",
             "$ref": "GeneralTypes-schema.json#/components/$defs/Uri",
             "examples": [
               "https://mycompany.com/GutesProdukt",
@@ -107,7 +107,7 @@
             ]
           },
           "originref": {
-            "description": "uri, directory, file where the source was loaded from",
+            "description": "uri, directory, file where the origin is located",
             "type": "string",
             "examples": [
               "./myproject/ODM",
