@@ -10,7 +10,7 @@
       "$ref": "GeneralTypes-schema.json#/components/$defs/Uri"
     },
     "elementid": {
-      "description": "unique ID of the entity for reference purposes within the model or mme-environment",
+      "description": "unique ID of the entity for reference purposes within the model or mme-environment\nOnly used (and stable) in current version of model. Can change over time, as it is only used",
       "$ref": "#/components/$defs/EntityId"
     },
     "name": {

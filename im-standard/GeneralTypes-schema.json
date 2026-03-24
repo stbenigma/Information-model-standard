@@ -81,6 +81,26 @@
           "X"
         ]
       },
+      "Position": {
+        "type": "object",
+        "description": "x and y position of an element, the unit depends on the usage of the position ",
+        "patternProperties": {
+          "^x|y$": {
+            "type": "number",
+            "multipleOf": 0.001
+          }
+        }
+      },
+      "Size": {
+        "type": "object",
+        "description": "width and height of a area, the unit depends on the usage of the size",
+        "patternProperties": {
+          "^width|height$": {
+            "type": "number",
+            "multipleOf": 0.001
+          }
+        }
+      },
       "Prefix": {
         "description": "nonempty very short name text used typically as prefixes only letters and numbers and _,-,:,$",
         "type": "string",

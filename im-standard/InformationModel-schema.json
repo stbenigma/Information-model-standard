@@ -121,6 +121,13 @@
         "$ref": "MetaModel-schema.json#/components/schemas/Transformation"
       }
     },
+    "Diagramss":{
+      "description": "List of diagrams, combining model elements into a view of chosen elements",
+      "type": "array",
+      "items": {
+        "$ref": "MetaModel-schema.json#/components/schemas/Diagram"
+      }
+    },
     "additionalProps": {
       "description": "additional properties (aka user defined properties udp) are  any properties of an this element  added by the current modeller. They serve as an extension to the predfefined element properties.",
       "$ref": "GeneralStructures-schema.json#/components/schemas/AdditionalProperties"
