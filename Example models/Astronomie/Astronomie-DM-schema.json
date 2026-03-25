@@ -1,0 +1,232 @@
+{
+  "ModelInfo": {
+    "modelname": "Astronomie",
+    "modeltype": "Data model",
+    "mainlanguage": "en",
+    "modelversion": "0.0",
+    "origintool": "EXCEL",
+    "originref": "/Users/stb/Documents/Projekte/IM-Standard/python-Projekt/im-standard-python/INTERFACES/EXCEL/tests/testfiles/datafiles/Astronomie.xlsx",
+    "targetenvironment": "Test"
+  },
+  "DataObjects": [
+    {
+      "elementid": "DATO1",
+      "name": "Stern",
+      "technicalname": "star",
+      "additionalProps": {
+        "Stern:A1": "Stern",
+        "Stern:C1": "Selbstleuchtender Gasball",
+        "EXCELSOURCE": "Stern"
+      }
+    },
+    {
+      "elementid": "DATO2",
+      "name": "Begleiter",
+      "references": [{"mandatory" : true,
+          "refdataobjectid": "DATO1",
+          "attributeref":["DATA8","DATA1"]
+      },
+      {"mandatory" : false,
+        "maxcardinality": 1,
+          "refdataobjectid": "DATO2",
+          "attributeref":[["DATA9","DATA6"]]
+      }],
+      "additionalProps": {
+        "Begleiter:A1": "Begleiter",
+        "Begleiter:C1": "Begleiter eines Sterns oder Planeten",
+        "EXCELSOURCE": "Begleiter"
+      }
+    }
+  ],
+  "DataAttributes": [
+    {
+      "elementid": "DATA1",
+      "name": "Name",
+      "mandatory": null,
+      "displayseq": 1,
+      "description": "any descricption",
+      "dataobjectid": "DATO1",
+      "technicalname": "star_name",
+      "technicaldatatype": "s",
+      "basedatatype": "Text",
+      "examples": [
+        "Sonne"
+      ],
+      "additionalProps": {
+        "EXCELSOURCE": "Stern:A2"
+      }
+    },
+    {
+      "elementid": "DATA2",
+      "name": "Leuchtklasse",
+      "mandatory": null,
+      "displayseq": 2,
+      "dataobjectid": "DATO1",
+      "technicaldatatype": "s",
+      "basedatatype": "Text",
+      "examples": [
+        "V"
+      ],
+      "additionalProps": {
+        "EXCELSOURCE": "Stern:B2"
+      }
+    },
+    {
+      "elementid": "DATA3",
+      "name": "Entfernung",
+      "mandatory": null,
+      "displayseq": 3,
+      "dataobjectid": "DATO1",
+      "technicaldatatype": "n",
+      "basedatatype": "Number",
+      "examples": [
+        0
+      ],
+      "additionalProps": {
+        "EXCELSOURCE": "Stern:C2"
+      }
+    },
+    {
+      "elementid": "DATA4",
+      "name": "Durchmesser",
+      "mandatory": null,
+      "displayseq": 4,
+      "dataobjectid": "DATO1",
+      "technicaldatatype": "n",
+      "basedatatype": "Number",
+      "examples": [
+        15000
+      ],
+      "additionalProps": {
+        "EXCELSOURCE": "Stern:D2"
+      }
+    },
+    {
+      "elementid": "DATA5",
+      "name": "Entdeckungsjahr",
+      "mandatory": null,
+      "displayseq": 5,
+      "dataobjectid": "DATO1",
+      "technicaldatatype": "n",
+      "basedatatype": "Number",
+      "examples": [
+        null
+      ],
+      "additionalProps": {
+        "EXCELSOURCE": "Stern:E2"
+      }
+    },
+    {
+      "elementid": "DATA6",
+      "name": "Name",
+      "mandatory": null,
+      "dataobjectid": "DATO2",
+      "technicaldatatype": "s",
+      "basedatatype": "Text",
+      "examples": [
+        "Erde"
+      ],
+      "additionalProps": {
+        "EXCELSOURCE": "Begleiter:A2"
+      }
+    },
+    {
+      "elementid": "DATA7",
+      "name": "Typ",
+      "mandatory": null,
+      "dataobjectid": "DATO2",
+      "technicaldatatype": "s",
+      "basedatatype": "Text",
+      "examples": [
+        "Planet"
+      ],
+      "additionalProps": {
+        "EXCELSOURCE": "Begleiter:B2"
+      }
+    },
+    {
+      "elementid": "DATA8",
+      "name": "Stern",
+      "mandatory": null,
+      "dataobjectid": "DATO2",
+      "technicaldatatype": "s",
+      "basedatatype": "Text",
+      "examples": [
+        "Sonne"
+      ],
+      "additionalProps": {
+        "EXCELSOURCE": "Begleiter:C2"
+      }
+    },
+    {
+      "elementid": "DATA9",
+      "name": "Begleiter",
+      "mandatory": null,
+      "dataobjectid": "DATO2",
+      "technicaldatatype": "n",
+      "basedatatype": "Number",
+      "examples": [
+        null
+      ],
+      "additionalProps": {
+        "EXCELSOURCE": "Begleiter:D2"
+      }
+    },
+    {
+      "elementid": "DATA10",
+      "name": "Durchmesser",
+      "mandatory": null,
+      "dataobjectid": "DATO2",
+      "technicaldatatype": "n",
+      "basedatatype": "Number",
+      "examples": [
+        13632
+      ],
+      "additionalProps": {
+        "EXCELSOURCE": "Begleiter:E2"
+      }
+    },
+    {
+      "elementid": "DATA11",
+      "name": "Unlaufdauer",
+      "mandatory": null,
+      "dataobjectid": "DATO2",
+      "technicaldatatype": "n",
+      "basedatatype": "Number",
+      "examples": [
+        1.001
+      ],
+      "additionalProps": {
+        "EXCELSOURCE": "Begleiter:F2"
+      }
+    },
+    {
+      "elementid": "DATA12",
+      "name": "Mittlerer Abstand",
+      "mandatory": null,
+      "dataobjectid": "DATO2",
+      "technicaldatatype": "n",
+      "basedatatype": "Number",
+      "examples": [
+        1
+      ],
+      "additionalProps": {
+        "EXCELSOURCE": "Begleiter:G2"
+      }
+    },
+    {
+      "elementid": "DATA13",
+      "name": "Oberfl\u00e4chentyp",
+      "mandatory": null,
+      "dataobjectid": "DATO2",
+      "technicaldatatype": "s",
+      "basedatatype": "Text",
+      "examples": [
+        "fest"
+      ],
+      "additionalProps": {
+        "EXCELSOURCE": "Begleiter:H2"
+      }
+    }
+  ]
+}
