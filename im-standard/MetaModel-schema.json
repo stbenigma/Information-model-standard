@@ -99,6 +99,11 @@
         "description": "A transformation describes how data values from a source are transformed into data values in the target (or vice versa).",
         "type": "object",
         "properties": {
+          "name": {
+            "description": "Name of the transformation.",
+            "$ref": "GeneralTypes-schema.json#/components/$defs/Name",
+            "examples": ["Order data", "erp2pim transform"]
+          },
           "is1to1": {
             "description": "1:1 transformations do not require a rule.",
             "type": "boolean",
@@ -118,10 +123,19 @@
             "items": {
               "anyOf": [
                 {
+                  "$ref": "Entity-schema.json#/components/$defs/EntityId"
+                },
+                {
                   "$ref": "Attribute-schema.json#/components/$defs/AttributeId"
                 },
                 {
                   "$ref": "Relation-schema.json#/components/$defs/RelationId"
+                },
+                {
+                  "$ref": "DataModel-schema.json#/components/$defs/DataAttributeId"
+                },
+                {
+                  "$ref": "DataModel-schema.json#/components/$defs/DataObjectId"
                 },
                 {
                   "$ref": "Domain-schema.json#/components/$defs/DomainId"
@@ -180,7 +194,7 @@
           },
           "organsiation": {
             "description": "Organisation managing the source",
-            "$ref": "#/components/schemas/Organisation",
+            "$ref": "#/components/schemas/Organisations",
             "examples": ["ISO", "Schweizer Zoll"]
           },
         "description": {
@@ -296,11 +310,11 @@
         ]
       },
       "OneDirectionTransformation": {
-        "description": "Rule and conditition, specifying the the transformation in one direction",
+        "description": "Rule and conditition, specifying the transformation in one direction",
         "type": "object",
         "properties": {
           "rule": {
-            "description": "formula, algorithm transformtin source values into target values",
+            "description": "formula, algorithm transformation source values into target values",
             "$ref": "GeneralTypes-schema.json#/components/$defs/SomeText"
           },
           "condition": {
