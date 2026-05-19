@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Information Model Standard Schema",
+  "description": "JSON Schema derived from im-standard-ddl-sqlite.sql",
+
+  "$defs": {
+    "isoDatetime": {
+      "type": "string",
+      "description": "ISO-8601 datetime string (YYYY-MM-DD HH:MM:SS)",
+      "pattern": "^[0-9]{4}-[0-1][0-9]-[0-3][0-9]( [0-2][0-9]:[0-5][0-9]:[0-5][0-9])?$"
+    },
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+
+  "type": "object",
+  "properties": {
+
+    "modelelement": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "elementid":  { "type": "integer" },
+          "dc":         { "$ref": "#/$defs/isoDatetime" },
+          "dm":         { "$ref": "#/$defs/isoDatetime" },
+          "uc":         { "$ref": "#/$defs/nonEmptyString" },
+          "um":         { "type": "string" }
+        },
+        "required": ["elementid", "dc", "uc"]
+      }
+    },
+
+    "entity_categories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "elementid": { "type": "integer" },
+          "name":      { "$ref": "#/$defs/nonEmptyString" },
+          "descr":     { "$ref": "#/$defs/nonEmptyString" }
+        },
+        "required": ["elementid", "name", "descr"]
+      }
+    },
+
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "description": "Entity shares its PK with modelelement (table inheritance). FK to entity_categories is an optional reference.",
+        "properties": {
+          "elementid":   { "type": "integer" },
+          "name":        { "$ref": "#/$defs/nonEmptyString" },
+          "descr":       { "type": "string" },
+          "enca_id":     { "type": "integer", "description": "FK reference to entity_categories.elementid" },
+          "prefix":      { "type": "string" },
+          "short_name":  { "type": "string" },
+          "tooltip":     { "type": "string" },
+          "examples": {
+            "type": "array",
+            "description": "Embedded because expl_enti_id is mandatory (NOT NULL check), part of the unique key (value, enti_id), and cascades on delete.",
+            "items": {
+              "type": "object",
+              "properties": {
+                "elementid": { "type": "integer" },
+                "value":     { "$ref": "#/$defs/nonEmptyString" }
+              },
+              "required": ["elementid", "value"]
+            }
+          }
+        },
+        "required": ["elementid", "name"]
+      }
+    }
+
+  }
+}
