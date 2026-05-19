@@ -121,7 +121,7 @@
         "$ref": "MetaModel-schema.json#/components/schemas/Transformation"
       }
     },
-    "Diagramss":{
+    "Diagrams":{
       "description": "List of diagrams, combining model elements into a view of chosen elements",
       "type": "array",
       "items": {

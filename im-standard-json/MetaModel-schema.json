@@ -102,7 +102,10 @@
           "name": {
             "description": "Name of the transformation.",
             "$ref": "GeneralTypes-schema.json#/components/$defs/Name",
-            "examples": ["Order data", "erp2pim transform"]
+            "examples": [
+              "Order data",
+              "erp2pim transform"
+            ]
           },
           "is1to1": {
             "description": "1:1 transformations do not require a rule.",
@@ -184,26 +187,35 @@
         "type": "object",
         "properties": {
           "elementid": {
-      "description": "unique ID of the source for reference purposes",
-      "$ref": "#/components/$defs/SourceId"
-    },
+            "description": "unique ID of the source for reference purposes",
+            "$ref": "#/components/$defs/SourceId"
+          },
           "name": {
             "description": "Name of the source. unique within the MME",
             "$ref": "GeneralTypes-schema.json#/components/$defs/Name",
-            "examples": ["ISO-Standard 3166", "Schweizer Zoll Tarifseite"]
+            "examples": [
+              "ISO-Standard 3166",
+              "Schweizer Zoll Tarifseite"
+            ]
           },
           "organsiation": {
             "description": "Organisation managing the source",
             "$ref": "#/components/schemas/Organisations",
-            "examples": ["ISO", "Schweizer Zoll"]
+            "examples": [
+              "ISO",
+              "Schweizer Zoll"
+            ]
           },
-        "description": {
-          "$ref": "GeneralTypes-schema.json#/components/$defs/SomeText"
-        },
+          "description": {
+            "$ref": "GeneralTypes-schema.json#/components/$defs/SomeText"
+          },
           "uri": {
             "description": "worldwide uniqe reference where to find the documentation ",
             "$ref": "GeneralTypes-schema.json#/components/$defs/Uri",
-            "examples": ["https://www.iso.org/iso-3166-country-codes.html", "https://xtares.admin.ch/tares/login/loginFormFiller.do?l=de"]
+            "examples": [
+              "https://www.iso.org/iso-3166-country-codes.html",
+              "https://xtares.admin.ch/tares/login/loginFormFiller.do?l=de"
+            ]
           },
           "additionalProps": {
             "description": "additional properties (aka user defined properties udp) are  any properties of an this element  added by the current modeller. They serve as an extension to the predfefined element properties.",
@@ -211,7 +223,8 @@
           }
         },
         "required": [
-          "elementid","name"
+          "elementid",
+          "name"
         ],
         "additionalProperties": false
       },
@@ -220,26 +233,35 @@
         "type": "object",
         "properties": {
           "elementid": {
-        "description": "unique ID of the organisation for reference purposes",
-        "$ref": "#/components/$defs/OrganisationId"
-    },
+            "description": "unique ID of the organisation for reference purposes",
+            "$ref": "#/components/$defs/OrganisationId"
+          },
           "name": {
             "description": "Name of the source. unique within the MME",
             "$ref": "GeneralTypes-schema.json#/components/$defs/Name",
-            "examples": ["ISO-Standard 3166", "Schweizer Zoll Tarifseite"]
+            "examples": [
+              "ISO-Standard 3166",
+              "Schweizer Zoll Tarifseite"
+            ]
           },
-        "description": {
-          "$ref": "GeneralTypes-schema.json#/components/$defs/SomeText"
-        },
+          "description": {
+            "$ref": "GeneralTypes-schema.json#/components/$defs/SomeText"
+          },
           "email": {
             "description": "main email address of the organisation",
             "$ref": "GeneralTypes-schema.json#/components/$defs/Email",
-            "examples": ["ISO", "Schweizer Zoll"]
+            "examples": [
+              "ISO",
+              "Schweizer Zoll"
+            ]
           },
           "url": {
             "description": "worldwide uniqe reference where to find the documentation ",
             "$ref": "GeneralTypes-schema.json#/components/$defs/Url",
-            "examples": ["https://www.iso.org/iso-3166-country-codes.html", "https://xtares.admin.ch/tares/login/loginFormFiller.do?l=de"]
+            "examples": [
+              "https://www.iso.org/iso-3166-country-codes.html",
+              "https://xtares.admin.ch/tares/login/loginFormFiller.do?l=de"
+            ]
           },
           "additionalProps": {
             "description": "additional properties (aka user defined properties udp) are  any properties of an this element  added by the current modeller. They serve as an extension to the predfefined element properties.",
@@ -247,7 +269,8 @@
           }
         },
         "required": [
-          "elementid","name"
+          "elementid",
+          "name"
         ],
         "additionalProperties": false
       },
@@ -256,30 +279,46 @@
         "type": "object",
         "properties": {
           "elementid": {
-        "description": "unique ID of the organisation for reference purposes",
-        "$ref": "#/components/$defs/OrganisationId"
-    },
+            "description": "unique ID of the organisation for reference purposes",
+            "$ref": "#/components/$defs/DiagramId"
+          },
           "name": {
             "description": "Name of the source. unique within the MME",
             "$ref": "GeneralTypes-schema.json#/components/$defs/Name",
-            "examples": ["ISO-Standard 3166", "Schweizer Zoll Tarifseite"]
+            "examples": [
+              "ISO-Standard 3166",
+              "Schweizer Zoll Tarifseite"
+            ]
           },
           "description": {
-          "$ref": "GeneralTypes-schema.json#/components/$defs/SomeText"
-        },
+            "$ref": "GeneralTypes-schema.json#/components/$defs/SomeText"
+          },
           "position": {
-          "$ref": "GeneralTypes-schema.json#/components/$defs/Position"
-        },
+            "$ref": "GeneralTypes-schema.json#/components/$defs/Position"
+          },
           "size": {
-          "$ref": "GeneralTypes-schema.json#/components/$defs/Size"
-        },
+            "$ref": "GeneralTypes-schema.json#/components/$defs/Size"
+          },
+          "elements": {
+            "type": "array",
+            "items": {
+              "type": [
+                "string"
+              ]
+            },
+            "additionalProps": {
+              "description": "additional properties (aka user defined properties udp) are  any properties of an this element  added by the current modeller. They serve as an extension to the predfefined element properties.",
+              "$ref": "GeneralStructures-schema.json#/components/schemas/AdditionalProperties"
+            }
+          },
           "additionalProps": {
             "description": "additional properties (aka user defined properties udp) are  any properties of an this element  added by the current modeller. They serve as an extension to the predfefined element properties.",
             "$ref": "GeneralStructures-schema.json#/components/schemas/AdditionalProperties"
           }
         },
         "required": [
-          "elementid","name"
+          "elementid",
+          "name"
         ],
         "additionalProperties": false
       }
@@ -359,6 +398,17 @@
           },
           {
             "pattern": ".*ORGA[0-9]+$"
+          }
+        ]
+      },
+      "DiagramId": {
+        "description": "typed ID unique over all sources in this MME",
+        "allOf": [
+          {
+            "$ref": "GeneralTypes-schema.json#/components/$defs/ElementId"
+          },
+          {
+            "pattern": ".*DIAG[0-9]+$"
           }
         ]
       },
