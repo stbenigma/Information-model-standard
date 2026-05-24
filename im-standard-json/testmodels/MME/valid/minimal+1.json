@@ -5,7 +5,7 @@
     "modelversion": "0.1",
     "modeltype": "Meta model"
   },
-  "Models": {
+  "Models": [{
     "Informationsmodell": {
       "ModelInfo": {
         "modelname": "Informationsmodell",
@@ -14,7 +14,7 @@
         "modeltype": "Information model"
       }
     }
-  },
+  }],
   "Derivations": [],
   "Mappings": [],
   "Transformations": []

@@ -32,18 +32,36 @@ CREATE TABLE languages
     FOREIGN KEY (lang_lang_id) REFERENCES languages (lang_id) ON DELETE SET NULL
 );
 
-
+BEGIN TRANSACTION;
+-- recursive FK need transaction
 CREATE TABLE modelelements
 (
     mode_id   INTEGER primary key autoincrement, -- [K4]
     mode_type TEXT NOT NULL,
+    mode_modl_id INTEGER,
     mode_dc   TEXT NOT NULL,                     -- [K5] DATETIME → TEXT (ISO-8601)
     mode_dm   TEXT,                              -- [K5]
     mode_uc   TEXT NOT NULL,                     -- [K6]
     mode_um   TEXT,
-    CONSTRAINT CHK_mode_type CHECK (mode_type in ('ENTI', 'ECAT', 'ATTR', 'RELA','DOMA'))
-
+    constraint chk_modl_notnull check (not (mode_modl_id is null and (mode_type in ('ENTI','DOMA','BURU','ECAT')))),
+    constraint chk_model_recursive check (mode_modl_id is null or mode_type != 'MODL'),
+        CONSTRAINT Check_mode_type CHECK (mode_type IN ('ATTR', 'BURU', 'DOMA', 'ECAT', 'ENTI', 'MODL', 'RELA')),
+    CONSTRAINT fk_mode_modl FOREIGN KEY (mode_modl_id)
+        REFERENCES models (modl_id) ON DELETE RESTRICT
 );
+
+CREATE TABLE models (
+    modl_id INTEGER PRIMARY KEY,
+    modl_descr TEXT,
+    modl_name TEXT NOT NULL,
+    modl_targetenvironment TEXT,
+    modl_type TEXT NOT NULL,
+    constraint uk_models unique (modl_name),
+    CONSTRAINT Check_modl_type CHECK (modl_type IN ('AM', 'DM', 'IM')),
+    CONSTRAINT FK_fk_mode_modls FOREIGN KEY (modl_id)
+        REFERENCES modelelements (mode_id) ON DELETE RESTRICT
+);
+COMMIT;
 
 CREATE TABLE lang_texts
 (
@@ -52,11 +70,24 @@ CREATE TABLE lang_texts
     lgtx_lang_id  INTEGER NOT NULL,
     lgtx_mode_id  INTEGER NOT NULL,
     lgtx_text     TEXT    NOT NULL,
-    constraint UK_lgtx unique (lgtx_attrname, lgtx_mode_id, lgtx_lang_id),
+    constraint UK_lgtx unique (lgtx_text,lgtx_attrname, lgtx_mode_id, lgtx_lang_id),
     FOREIGN KEY (lgtx_lang_id) REFERENCES languages (lang_id) ON DELETE CASCADE,
     FOREIGN KEY (lgtx_mode_id) REFERENCES modelelements (mode_id) ON DELETE CASCADE
 );
 
+
+CREATE TABLE model_languages (
+    mola_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    mola_lang_id INTEGER NOT NULL,
+    mola_modl_id INTEGER NOT NULL,
+    mola_mainlanguage TEXT NOT NULL default 'FALSE',
+    CONSTRAINT UQ_model_languages UNIQUE (mola_lang_id, mola_modl_id),
+    CONSTRAINT Check_mola_boolean CHECK (mola_mainlanguage IN ('TRUE', 'FALSE')),
+    CONSTRAINT FK_fk_mola_lang FOREIGN KEY (mola_lang_id)
+        REFERENCES languages (lang_id) ON DELETE CASCADE,
+    CONSTRAINT FK_fk_mola_modl FOREIGN KEY (mola_modl_id)
+        REFERENCES models (modl_id) ON DELETE CASCADE
+);
 
 CREATE TABLE user_defined_props
 (
@@ -137,6 +168,22 @@ CREATE TABLE domains (
         CHECK (doma_type IN ('BIN', 'BOO', 'DAT', 'GRP', 'LOV', 'NUM', 'TXT'))
 );
 
+CREATE TABLE lov_values
+(
+    lovv_id         INTEGER primary key autoincrement,
+    lovv_value      TEXT NOT NULL,
+    lovv_displ      TEXT,
+    lovv_descr      TEXT,
+    lovv_sort_order INTEGER,
+    lovv_doma_id    INTEGER,
+
+    CONSTRAINT FK_lovv_doma_fk FOREIGN KEY (lovv_doma_id)
+        REFERENCES domains (doma_id) ON DELETE CASCADE,
+    constraint UK_lovv_value unique (lovv_doma_id, lovv_value),
+    constraint UK_lovv_displ unique (lovv_doma_id, lovv_displ),
+    constraint UK_lovv_sort unique (lovv_doma_id, lovv_sort_order)
+);
+
 -- Tabelle: attributes
 CREATE TABLE attributes (
     attr_id INTEGER PRIMARY KEY,
@@ -146,12 +193,12 @@ CREATE TABLE attributes (
     attr_doma_group_id INTEGER,
     attr_doma_id INTEGER,
     attr_enti_id INTEGER,
-    attr_is_descriptive TEXT NOT NULL CHECK (attr_is_descriptive IN ('TRUE', 'FALSE')) DEFAULT 'FALSE',
-    attr_is_encrypted TEXT NOT NULL CHECK (attr_is_encrypted IN ('TRUE', 'FALSE')) DEFAULT 'FALSE',
-    attr_is_historicised TEXT NOT NULL CHECK (attr_is_historicised IN ('TRUE', 'FALSE')) DEFAULT 'FALSE',
+    attr_is_descriptive TEXT  CHECK (attr_is_descriptive IN ('TRUE', 'FALSE')) ,
+    attr_is_encrypted TEXT  CHECK (attr_is_encrypted IN ('TRUE', 'FALSE')) ,
+    attr_is_historicised TEXT CHECK (attr_is_historicised IN ('TRUE', 'FALSE')) ,
     attr_is_mandatory TEXT NOT NULL CHECK (attr_is_mandatory IN ('TRUE', 'FALSE')) DEFAULT 'FALSE',
-    attr_is_repeated TEXT NOT NULL CHECK (attr_is_repeated IN ('TRUE', 'FALSE')) DEFAULT 'FALSE',
-    attr_is_translated TEXT NOT NULL CHECK (attr_is_translated IN ('TRUE', 'FALSE')) DEFAULT 'FALSE',
+    attr_is_repeated TEXT  CHECK (attr_is_repeated IN ('TRUE', 'FALSE')) ,
+    attr_is_translated TEXT  CHECK (attr_is_translated IN ('TRUE', 'FALSE')) ,
     attr_tech_name TEXT NOT NULL,
     attr_tooltip TEXT,
     CONSTRAINT CHK_fkexcl CHECK ((attr_enti_id is not null and attr_doma_group_id is null)
@@ -169,34 +216,11 @@ CREATE TABLE examples
 (
     expl_id      INTEGER primary key autoincrement,      -- [K4]
     expl_value   TEXT NOT NULL,
-    expl_enti_id INTEGER,                                -- [K4]
-    expl_rela_id INTEGER,                                -- [K4]
-    expl_attr_id INTEGER,                                -- [K4]
-    expl_doma_id INTEGER,                                -- [K4]
+    expl_mode_id INTEGER NOT NULL,
 
-    CONSTRAINT FK_expl_enti_fk FOREIGN KEY (expl_enti_id)
-        REFERENCES entities (enti_id) ON DELETE CASCADE, -- [K8]
-    constraint UK_expl unique (expl_value, expl_enti_id, expl_rela_id, expl_attr_id),
-    CONSTRAINT CHK_expl_fkarc CHECK ((expl_enti_id is not null
-        and expl_attr_id is null
-        and expl_rela_id is null
-        and expl_doma_id is null)
-        OR
-                                     (expl_enti_id is null
-                                         and expl_attr_id is not null
-                                         and expl_rela_id is null
-        and expl_doma_id is null)
-        OR
-                                     (expl_enti_id is null
-                                         and expl_attr_id is null
-                                         and expl_rela_id is not null
-        and expl_doma_id is null)
-        OR
-                                     (expl_enti_id is null
-                                         and expl_attr_id is null
-                                         and expl_rela_id is null
-        and expl_doma_id is not null)
-        )
+    CONSTRAINT FK_expl_enti_fk FOREIGN KEY (expl_mode_id)
+        REFERENCES modelelements (mode_id) ON DELETE CASCADE,
+    constraint UK_expl unique (expl_value, expl_mode_id)
 );
 
 CREATE TABLE synonyms
@@ -210,8 +234,81 @@ CREATE TABLE synonyms
     constraint UK_syno unique (syno_name, syno_enti_id)
 );
 
+CREATE TABLE keys
+(
+    keys_id       INTEGER PRIMARY KEY AUTOINCREMENT,
+    keys_name TEXT    NOT NULL,
+    keys_enti_id  INTEGER NOT NULL,
+    keys_attr_id  INTEGER ,
+    keys_rela_id  INTEGER ,
+    constraint UK_keys unique (keys_enti_id, keys_name, keys_attr_id, keys_rela_id),
+    constraint chk_arc check ((keys_attr_id is null and keys_rela_id is not null)
+                            or (keys_attr_id is not null and keys_rela_id is null)
+                              ),
+    --FOREIGN KEY (keys_rela_id) REFERENCES relations (rela_id) ON DELETE CASCADE,
+    FOREIGN KEY (keys_attr_id) REFERENCES attributes (attr_id) ON DELETE CASCADE
+);
 
+-- Tabelle: business_rules
+CREATE TABLE business_rules (
+    buru_id INTEGER PRIMARY KEY,
+    buru_descr TEXT,
+    buru_errormsg TEXT,
+    buru_level TEXT NOT NULL CHECK (buru_level IN ('ATTR', 'DB', 'ENTI', 'TUPL')),
+    buru_name TEXT NOT NULL,
+    buru_rule TEXT NOT NULL,
+    buru_type TEXT NOT NULL CHECK (buru_type IN ('CALC', 'CHECK', 'TRIGGER')),
+    constraint UK_buru unique (buru_name),
+    FOREIGN KEY (buru_id) REFERENCES modelelements (mode_id)
 
+);
+
+CREATE TABLE relations
+(
+    rela_id                INTEGER PRIMARY KEY AUTOINCREMENT,
+    rela_name              TEXT    NOT NULL,
+    rela_type              TEXT    NOT NULL CHECK (rela_type IN ('1:1', 'M:1', 'M:N', 'ROLE', 'SUBTYPE')),
+    rela_arc_no_from       INTEGER,
+    rela_arc_no_to         INTEGER,
+    rela_assoc_from_to     TEXT,
+    rela_assoc_to_from     TEXT,
+    rela_enti_id_from      INTEGER NOT NULL,
+    rela_enti_id_to        INTEGER NOT NULL,
+    rela_hist_from_to      TEXT    NOT NULL CHECK (rela_hist_from_to IN ('TRUE', 'FALSE')) DEFAULT 'FALSE',
+    rela_hist_to_from      TEXT    NOT NULL CHECK (rela_hist_to_from IN ('TRUE', 'FALSE')) DEFAULT 'FALSE',
+    rela_mandatory_from_to TEXT    NOT NULL CHECK (rela_mandatory_from_to IN ('TRUE', 'FALSE')) DEFAULT 'FALSE',
+    rela_mandatory_to_from TEXT    NOT NULL CHECK (rela_mandatory_to_from IN ('TRUE', 'FALSE')) DEFAULT 'FALSE',
+    rela_maptype_from_to   TEXT    NOT NULL CHECK (rela_maptype_from_to IN ('1', 'M')),
+    rela_maptype_to_from   TEXT    NOT NULL CHECK (rela_maptype_to_from IN ('1', 'M')),
+    constraint UK_relaname unique (rela_name),
+    constraint UK_rela unique (rela_enti_id_from,rela_enti_id_to,rela_assoc_from_to,rela_assoc_to_from),
+    constraint chk_type11 check(rela_type != '1:1' or (rela_maptype_to_from='1' and rela_maptype_from_to='1')),
+    constraint chk_typem1 check(rela_type != 'M:1' or rela_maptype_to_from != rela_maptype_from_to),
+    constraint chk_typemn check(rela_type != 'M:N' or (rela_maptype_to_from='M' and rela_maptype_from_to='M')),
+    constraint chk_typerole check(rela_type != 'ROLE' or
+                    (rela_maptype_to_from='1' and rela_maptype_from_to='1' and
+                        (rela_mandatory_from_to = 'FALSE' or rela_mandatory_to_from = 'FALSE'))
+                ),
+    constraint chk_typesubtype check(rela_type != 'SUBTYPE' or
+                    (rela_maptype_to_from='1' and rela_maptype_from_to='1' and
+                     rela_mandatory_from_to = 'TRUE' and rela_mandatory_to_from = 'TRUE' and
+                     (rela_arc_no_from is not null or rela_arc_no_to is not null)
+                    )
+                ),
+    FOREIGN KEY (rela_enti_id_from) REFERENCES entities (enti_id),
+    FOREIGN KEY (rela_enti_id_to) REFERENCES entities (enti_id),
+    FOREIGN KEY (rela_id) REFERENCES modelelements (mode_id)
+);
+
+-- Tabelle: businessrule_elements
+CREATE TABLE businessrule_elements (
+    bure_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    bure_buru_id INTEGER NOT NULL,
+    bure_mode_id INTEGER NOT NULL,
+    bure_writeable TEXT NOT NULL CHECK (bure_writeable IN ('TRUE', 'FALSE')) DEFAULT 'FALSE',
+    constraint UK_bure unique (bure_mode_id,bure_buru_id),
+    FOREIGN KEY (bure_buru_id) REFERENCES business_rules (buru_id) ON DELETE CASCADE
+);
 PRAGMA foreign_keys = ON;
 
 
