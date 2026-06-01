@@ -1,0 +1,145 @@
+{
+  "$id": "InformationModel-schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Information Model.\n  Based on the relational model and described in the book Information Modelling.",
+  "contact": {
+    "email": "stefan@stefanberner.ch"
+  },
+  "license": {
+    "name": "Apache 2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+  },
+  "servers": [
+    {
+      "url": "https:"
+    }
+  ],
+  "version": "0.9",
+  "externalDocs": [
+    {
+      "title": "Information modelling - A method for improving understanding and accuracy in your collaboration",
+      "description": "Original book written by Stefan Berner, describing the information model",
+      "url": "https://vdf.ch/information-modelling.html"
+    }
+  ],
+  "type": "object",
+  "components": {
+    "schemas": {},
+    "$defs": {}
+  },
+  "properties": {
+    "ModelInfo": {
+      "description": "",
+      "allOf": [
+        {
+          "$ref": "GeneralStructures-schema.json#/components/schemas/BaseModelInfo"
+        },
+        {
+          "type": "object",
+          "description": "Attributes specific for an information model",
+          "properties": {
+            "modeltype": {
+              "const": "Information Model"
+            },
+            "mainlanguage": {
+              "description": "Main (and possibly only) language of the models textelements. Serves as default language in multilingual strings, whenever for any of the languages a translation is missing.",
+              "$ref": "GeneralTypes-schema.json#/components/$defs/LanguageIso2"
+            },
+            "languages": {
+              "description": "List of languages, model textelements can be translated to. Excluding mainLanguage. The mainlanguage must be present in every multilingual string.",
+              "type": "array",
+              "items": {
+                "$ref": "GeneralTypes-schema.json#/components/$defs/LanguageIso2"
+              },
+              "uniqueItems": true
+            },
+            "additionalProps": {
+      "description": "additional properties (aka user defined properties udp) are  any properties of an this element  added by the current modeller. They serve as an extension to the predfefined element properties.",
+      "$ref": "GeneralStructures-schema.json#/components/schemas/AdditionalProperties"
+    }
+          }
+        }
+      ]
+    },
+    "Entities": {
+      "description": "List of entities making up this model",
+      "type": "array",
+      "items": {
+        "$ref": "Entity-schema.json"
+      },
+      "uniqueItems": true
+    },
+    "Attributes": {
+      "description": "List of attributes of entities and groupdomains. The names of all attributes within one entity (or within one domain) must be unique",
+      "type": "array",
+      "items": {
+        "$ref": "Attribute-schema.json"
+      }
+    },
+    "Domains": {
+      "description": "List of domain used in this model",
+      "type": "array",
+      "items": {
+        "$ref": "Domain-schema.json"
+      }
+    },
+    "Relations": {
+      "description": "List of relations in this model",
+      "type": "array",
+      "items": {
+        "$ref": "Relation-schema.json"
+      }
+    },
+    "BusinessRules": {
+      "description": "List of business rules.",
+      "type": "array",
+      "items": {
+        "$ref": "BusinessRule-schema.json"
+      }
+    },
+    "Categories": {
+      "description": "List of categories, used to group elements in this model.",
+      "type": "array",
+      "items": {
+        "$ref": "Category-schema.json"
+      }
+    },
+    "Derivations":{
+      "description": "List derivations, an element of this model is a target in.",
+      "type": "array",
+      "items": {
+        "$ref": "MetaModel-schema.json#/components/schemas/Derivation"
+      }
+    },
+    "Mappings":{
+      "description": "List Mappings, linking LOV-values of different LOV's together. The source or target LOV-domain must me in this model.",
+      "type": "array",
+      "items": {
+        "$ref": "MetaModel-schema.json#/components/schemas/Mapping"
+      }
+    },
+    "Transformations":{
+      "description": "List transformations from some dataelements to other dataelements. At least one source or target dataelement  must me in this model.",
+      "type": "array",
+      "items": {
+        "$ref": "MetaModel-schema.json#/components/schemas/Transformation"
+      }
+    },
+    "Diagrams":{
+      "description": "List of diagrams, combining model elements into a view of chosen elements",
+      "type": "array",
+      "items": {
+        "$ref": "MetaModel-schema.json#/components/schemas/Diagram"
+      }
+    },
+    "additionalProps": {
+      "description": "additional properties (aka user defined properties udp) are  any properties of an this element  added by the current modeller. They serve as an extension to the predfefined element properties.",
+      "$ref": "GeneralStructures-schema.json#/components/schemas/AdditionalProperties"
+    }
+  },
+  "additionalProperties": false,
+  "unevaluatedProperties": false,
+  "required": [
+    "ModelInfo"
+  ]
+}

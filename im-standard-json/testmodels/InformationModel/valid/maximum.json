@@ -1,0 +1,206 @@
+{
+  "ModelInfo": {
+    "modelname": "Beispielmodell Astronomie",
+    "modeltype": "Information model",
+    "mainlanguage": "de",
+    "modelversion": "0.9",
+    "languages": [
+      "en"
+    ],
+    "targetenvironment": "Informatiosmodell Standard",
+    "origintool": "dataspot"
+  },
+  "Categories": [
+    {
+      "elementid": "CATG0",
+      "name": "myname",
+      "categorytype": "ENTITY",
+      "categoryid": "CATG1"
+    }
+  ],
+  "Domains": [
+    {
+      "elementid": "DOMA26",
+      "name": {
+        "de": "Leuchtklasse",
+        "en": "Luminosity class"
+      },
+      "description": {
+        "de": "Leuchtkraftklassen (Helligkeitstypen) \nI\t\u00dcberriesen\tBetelgeuse (M1I)\nII\tHelle Riesen\t\nIII\tRiesen\tAldebaran (K5III)\nIV\tUnterriesen\t\nV\tHauptreihe (normale Sterne)\tSonne (G2V)\nVI\tUnterzwerge\t\nD\tWei\u00dfe Zwerge\tSirius B",
+        "en": "Luminosity classes (brightness types)\nI Supergiant Betelgeuse (M1I)\nII Bright giants\nIII Giants Aldebaran (K5III)\nIV Subgiants\nV Main sequence (normal stars) Sun (G2V)\nVI Subdwarfs\nD White dwarfs Sirius B"
+      },
+      "categoryid": "CATG5",
+      "domaintype": "LOVDomain",
+      "values": [
+        {
+          "value": "VI",
+          "displayvalue": {
+            "de": "Unterzwerge",
+            "en": "Subdwarfs"
+          },
+          "description": {
+            "de": "auch sd, Betelgeuse (M1I)"
+          }
+        },
+        {
+          "value": "III",
+          "displayvalue": {
+            "de": "Riesen",
+            "en": "Giants"
+          },
+          "description": {
+            "de": "Aldebaran (K5III)"
+          }
+        },
+        {
+          "value": "I",
+          "displayvalue": {
+            "de": "\u00dcberriese",
+            "en": "Supergiant"
+          },
+          "description": {
+            "de": "Unterteilung der \u00dcberriesen nach abnehmender Leuchtkraft Ia-0, Ia, Iab, Ib"
+          }
+        },
+        {
+          "value": "V",
+          "displayvalue": {
+            "de": "Hauptreihe",
+            "en": "Main sequence"
+          },
+          "description": {
+            "de": "normale Stern, Sonne (G2V)"
+          }
+        },
+        {
+          "value": "0",
+          "displayvalue": {
+            "de": "Hyperriese",
+            "en": "Supergiant"
+          },
+          "description": {
+            "de": "Deneb, S Doradus"
+          }
+        },
+        {
+          "value": "VII",
+          "displayvalue": {
+            "de": "Wei\u00dfe Zwerge",
+            "en": "White dwarf"
+          },
+          "description": {
+            "de": "Auch D,  Sirius B"
+          }
+        },
+        {
+          "value": "IV",
+          "displayvalue": {
+            "de": "Unterriesen",
+            "en": "Subgiants"
+          }
+        },
+        {
+          "value": "II",
+          "displayvalue": {
+            "de": "Helle Riesen",
+            "en": "Bright Giants"
+          }
+        }
+      ]
+    }
+  ],
+  "Entities": [
+    {
+      "elementid": "ENTI1",
+      "name": {
+        "de": "Mond",
+        "en": "Planets Moon"
+      },
+      "shortdescr": {
+        "de": "Fester Himmelsk\u00f6rper der um einen Planeten kreist",
+        "en": "Fixed celestial body orbiting a planet"
+      },
+      "examples": [
+        "(Erd-)Mond",
+        "Phobos",
+        "Deimos",
+        "Io",
+        "Europa",
+        "Ganymed",
+        "Triton",
+        "Charon"
+      ],
+      "keys": [
+        [
+          "RELA2",
+          "ATTR27"
+        ]
+      ]
+    }
+  ],
+  "Attributes": [
+    {
+      "elementid": "ATTR0",
+      "name": "Attr1",
+      "parentid": "ENTI0",
+      "displayseq": 2,
+      "domainid": "DOMA001",
+      "descriptive": true,
+      "historicised": false,
+      "translated": true,
+      "examples": [
+        "Farbe",
+        "Koordinate"
+      ],
+      "description": {
+        "en": "Purpose, usage, meaning of an attribute value hold by this attribute."
+      },
+      "shortdescr": "Short text to be displayed as help to understand the purpose of this attribute in user interfaces.",
+      "mandatory": true,
+      "repeated": true,
+      "encrypted": false,
+      "additionalProps":
+        {
+          "$comment": "Entityattribute, see parent"
+        }
+    }
+  ],
+  "Relations": [
+    {
+      "elementid": "RELA8",
+      "relationtype": "SUBTYPE",
+      "fwd": {
+        "entityid": "ENTI7",
+        "assoctext": {
+          "de": "ist",
+          "en": "is"
+        },
+        "cardinality": "1",
+        "mandatory": true
+      },
+      "bwd": {
+        "entityid": "ENTI1",
+        "assoctext": {
+          "de": "ist",
+          "en": "is"
+        },
+        "cardinality": "1",
+        "mandatory": true,
+        "arcnumber": 0
+      }
+    }
+  ],
+  "BusinessRules": [
+    {
+      "elementid": "BURU3",
+      "restrictedelements": [
+        "ENTI5"
+      ],
+      "description": "Ein Asteriod umkreist immer genau einen Stern oder einen Asteroiden (aber nicht sich selbst)"
+    }
+  ],
+  "additionalProps":
+    {
+      "Who": "me"
+    }
+}

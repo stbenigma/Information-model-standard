@@ -1,0 +1,387 @@
+{
+  "$id": "DataModel-schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "",
+  "contact": {
+    "email": "stefan@stefanberner.ch"
+  },
+  "license": {
+    "name": "Apache 2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+  },
+  "servers": [
+    {
+      "url": "https:"
+    }
+  ],
+  "version": "0.9",
+  "externalDocs": [
+    {
+      "title": "Information modelling - A method for improving understanding and accuracy in your collaboration",
+      "description": "Original book written by Stefan Berner, describing the information model",
+      "url": "https://vdf.ch/information-modelling.html"
+    }
+  ],
+  "type": "object",
+  "components": {
+    "schemas": {
+      "DataObject": {
+        "type": "object",
+        "properties": {
+          "$id": {
+            "description": "full identification path of the element",
+            "$ref": "GeneralTypes-schema.json#/components/$defs/Uri"
+          },
+          "elementid": {
+            "description": "unique ID of the entity for reference purposes within the model or mme-environment",
+            "$ref": "#/components/$defs/DataObjectId"
+          },
+          "name": {
+            "description": "uniuque (within this model) 'official' name for the thing of consideration",
+            "$ref": "GeneralTypes-schema.json#/components/$defs/SomeName"
+          },
+          "shortname": {
+            "description": "unique short name of the entity to be used for short references in text.\n must be unique in the environment",
+            "$ref": "GeneralTypes-schema.json#/components/$defs/ShortName"
+          },
+          "objectprefix": {
+            "description": "unique short name of the entity to be used for short references in text.\n must be unique in the environment",
+            "$ref": "GeneralTypes-schema.json#/components/$defs/ShortName"
+          },
+          "description": {
+            "description": "Meaning, Benefits, Use of the Entity",
+            "$ref": "GeneralTypes-schema.json#/components/$defs/SomeText"
+          },
+          "shortdescr": {
+            "description": "Short text explaining the meaning for the user în the user interface (hint, tooltip).",
+            "$ref": "GeneralTypes-schema.json#/components/$defs/SomeText"
+          },
+          "technicalname": {
+            "description": "Name as it used in the target data definition language",
+            "$ref": "GeneralTypes-schema.json#/components/$defs/TechnicalName"
+          },
+          "categoryid": {
+            "description": "Category the dataobject belongs to",
+            "$ref": "Category-schema.json#/components/$defs/CategoryId"
+          },
+          "references": {
+            "description": "List of reference constraint, linking sets of dataattributes to dataattributes in other dataobjects",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DataReference"
+            },
+            "uniqueItems": true
+          },
+          "keys": {
+            "description": "List of keys containing information to identify one instance of this dataobject.\n",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DataKey"
+            },
+            "uniqueItems": true
+          },
+          "additionalProps": {
+            "description": "additional properties (aka user defined properties udp) are  any properties of an this element  added by the current modeller. They serve as an extension to the predfefined element properties.",
+            "$ref": "GeneralStructures-schema.json#/components/schemas/AdditionalProperties"
+          }
+        },
+        "required": [
+          "name",
+          "elementid"
+        ],
+        "additionalProperties": false
+      },
+      "AtomicDataAttribute": {
+        "description": "Bearer of a single value, column, datafield, cell, datapoint",
+        "type": "object",
+        "properties": {
+          "logicaldatatype": {
+            "$ref": "Domain-schema.json#/components/$defs/DomainId"
+          },
+          "technicaldatatype": {
+            "$ref": "#/components/$defs/DataType"
+          },
+          "basedatatype": {
+            "$ref": "#/components/$defs/BaseDataType"
+          },
+          "examples": {
+            "descriptions": "some example values which are typical for this dataattribute",
+            "$ref": "GeneralStructures-schema.json#/components/schemas/Examples"
+          }
+        }
+      },
+      "DataAttributeArray": {
+        "type": "array",
+        "items": {
+          "$ref": "#/components/$defs/DataAttributeId"
+        },
+        "uniqueItems": true
+      },
+      "DataAttribute": {
+        "type": "object",
+        "properties": {
+          "$id": {
+            "description": "full identification path of the element",
+            "$ref": "GeneralTypes-schema.json#/components/$defs/Uri"
+          },
+          "elementid": {
+            "description": "unique ID of the entity for reference purposes within the model or mme-environment",
+            "$ref": "#/components/$defs/DataAttributeId"
+          },
+          "name": {
+            "description": "uniuque (within its dataobject) 'official' name for the thing of consideration",
+            "$ref": "GeneralTypes-schema.json#/components/$defs/SomeName"
+          },
+          "dataobjectid": {
+            "description": "dataobject, this attribute is a property of",
+            "$ref": "#/components/$defs/DataObjectId"
+          },
+          "mandatory": {
+            "type": "boolean"
+          },
+          "displayseq": {
+            "description": "sequence number used to sort the dataattribute for display in an dataobject.",
+            "type": "integer"
+          },
+          "shortname": {
+            "description": "unique short name of the entity to be used for short references in text.\n must be unique in the environment",
+            "$ref": "GeneralTypes-schema.json#/components/$defs/ShortName"
+          },
+          "description": {
+            "description": "Meaning, Benefits, Use of the Entity",
+            "$ref": "GeneralTypes-schema.json#/components/$defs/SomeText"
+          },
+          "shortdescr": {
+            "description": "Short text explaining the meaning for the user în the user interface (hint, tooltip).",
+            "$ref": "GeneralTypes-schema.json#/components/$defs/SomeText"
+          },
+          "technicalname": {
+            "description": "Name as it used in the target data definition language",
+            "$ref": "GeneralTypes-schema.json#/components/$defs/TechnicalName"
+          },
+          "oneOf": [
+            {
+              "$ref": "#/components/schemas/DataObject"
+            },
+            {
+              "$ref": "#/components/schemas/AtomicDataAttribute"
+            },
+            {
+              "$ref": "#/components/schemas/DataAttributeArray"
+            }
+          ],
+          "additionalProps": {
+            "description": "additional properties (aka user defined properties udp) are  any properties of an this element  added by the current modeller. They serve as an extension to the predfefined element properties.",
+            "$ref": "GeneralStructures-schema.json#/components/schemas/AdditionalProperties"
+          }
+        },
+        "required": [
+          "name",
+          "elementid",
+          "dataobjectid"
+        ],
+        "unevaluatedProperties": false
+      },
+      "DataKey": {
+        "description": "combination of dataattributes whose combined values are unique over all instances of a data object",
+        "oneOf": [
+          {
+            "$ref": "#/components/$defs/DataAttributeId"
+          },
+          {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/$defs/DataAttributeId"
+            },
+            "uniqueItems": true
+          }
+        ]
+      },
+      "DataReference": {
+        "description": "list of dataattributs linked to dataattributes in another dataobject",
+        "type": "object",
+        "properties": {
+          "name": {
+            "$ref": "GeneralTypes-schema.json#/components/$defs/Name"
+          },
+          "mandatory": {
+            "description": "mandatory other end = minimum 1 reference",
+            "type": "boolean",
+            "default": false
+          },
+          "maxcardinality": {
+            "description": "max number of instances at the other end. ",
+            "type": "integer",
+            "minimum": 1,
+            "default": 1
+          },
+          "refdataobjectid": {
+            "$ref": "#/components/$defs/DataObjectId"
+          },
+          "attributeref": {
+            "description": "mapping of 2 elements to each other.the first dataattribute must be in my dataobject, the second must be in the referenced datapobject",
+            "oneOf": [
+              {
+                "$ref": "#/components/$defs/AttributeIdPair"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/$defs/AttributeIdPair"
+                }
+              }
+            ]
+          }
+        },
+        "required": [
+          "refdataobjectid",
+          "mandatory"
+        ]
+      }
+    },
+    "$defs": {
+      "DataObjectId": {
+        "description": "typed ID unique over all dataobjects in this model",
+        "allOf": [
+          {
+            "$ref": "GeneralTypes-schema.json#/components/$defs/ElementId"
+          },
+          {
+            "pattern": ".*DATO[0-9]+$"
+          }
+        ]
+      },
+      "DataType": {
+        "description": "Technical type definition",
+        "type": "object",
+        "properties": {
+          "oneOf": [
+            {
+              "description": "complete string of technical typedefinition (consisting of name and restrictions",
+              "properties": {
+                "typestring": {
+                  "$ref": "GeneralTypes-schema.json#/components/$defs/Text"
+                }
+              },
+              "examples": [
+                "integer",
+                "string(15)",
+                "float(12,3)",
+                "varchar2(150)"
+              ]
+            },
+            {
+              "properties": {
+                "typename": {
+                  "$ref": "GeneralTypes-schema.json#/components/$defs/TechnicalName"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "BaseDataType": {
+        "description": "Basic standard datatype",
+        "type": "string",
+        "enum": [
+          "Number",
+          "Boolean",
+          "DateTime",
+          "Date",
+          "Text",
+          "Time"
+        ]
+      },
+      "DataAttributeId": {
+        "description": "typed ID unique over all dataattributes in this model",
+        "allOf": [
+          {
+            "$ref": "GeneralTypes-schema.json#/components/$defs/ElementId"
+          },
+          {
+            "pattern": ".*DATA[0-9]+$"
+          }
+        ]
+      },
+      "AttributeIdPair": {
+        "description": "",
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": [
+          {
+            "$ref": "#/components/$defs/DataAttributeId"
+          },
+          {
+            "$ref": "#/components/$defs/DataAttributeId"
+          }
+        ],
+        "additionalItems": false
+      }
+    }
+  },
+  "properties": {
+    "ModelInfo": {
+      "description": "",
+      "allOf": [
+        {
+          "$ref": "GeneralStructures-schema.json#/components/schemas/BaseModelInfo"
+        },
+        {
+          "type": "object",
+          "description": "Attributes specific for a data model",
+          "properties": {
+            "modeltype": {
+              "const": "Data model"
+            }
+          }
+        }
+      ]
+    },
+    "DataObjects": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "#/components/schemas/DataObject"
+      },
+      "uniqueItems": true
+    },
+    "DataAttributes": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "#/components/schemas/DataAttribute"
+      }
+    },
+    "Domains": {
+      "description": "List of domain used in this model",
+      "type": "array",
+      "items": {
+        "$ref": "Domain-schema.json"
+      }
+    },
+    "BusinessRules": {
+      "description": "List of business rules.",
+      "type": "array",
+      "items": {
+        "$ref": "BusinessRule-schema.json"
+      }
+    },
+    "Categories": {
+      "description": "List of categories, used to group elements in this model.",
+      "type": "array",
+      "items": {
+        "$ref": "Category-schema.json"
+      }
+    },
+    "additionalProps": {
+      "description": "additional properties (aka user defined properties udp) are  any properties of an this element  added by the current modeller. They serve as an extension to the predfefined element properties.",
+      "$ref": "GeneralStructures-schema.json#/components/schemas/AdditionalProperties"
+    }
+  },
+  "additionalProperties": false,
+  "unevaluatedProperties": false,
+  "required": [
+    "ModelInfo"
+  ]
+}
