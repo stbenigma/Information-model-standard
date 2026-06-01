@@ -33,6 +33,10 @@
       "description": "Category the entity belongs to",
       "$ref": "Category-schema.json#/components/$defs/CategoryId"
     },
+    "modelid": {
+      "description": "refrences the model it belongs to",
+      "$ref": "GeneralStructures-schema.json#/components/$defs/ModelId"
+    },
     "synonyms": {
       "description": "List of synonym names for this thing beeing used in old systems or out of habit. Not unique.",
       "type": "array",
@@ -68,28 +72,38 @@
     "schemas": {
       "Key": {
         "description": "combination of attributes and (functional or 1:1) relationships whose combined values are unique over all instances of an entity",
-        "type": "array",
-        "items": {
-          "anyOf": [
-            {
-              "$ref": "Attribute-schema.json#/components/$defs/AttributeId"
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "name, identifying the key within the entity",
+            "$ref": "GeneralTypes-schema.json#/components/$defs/Name"
+          },
+          "elements": {
+            "description": "List of examplevalues for this entity, attribute, domain or relationship",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "Attribute-schema.json#/components/$defs/AttributeId"
+                },
+                {
+                  "$ref": "Relation-schema.json#/components/$defs/RelationId"
+                }
+              ]
             },
-            {
-              "$ref": "Relation-schema.json#/components/$defs/RelationId"
-            }
-          ]
+            "uniqueItems": true,
+            "examples": [
+              [
+                "ATTR123",
+                "RELA1"
+              ],
+              [
+                "ATTR1"
+              ]
+            ]
+          }
         },
-        "uniqueItems": true,
-        "examples": [
-          [
-            "name",
-            "birthdate"
-          ],
-          [
-            "is in country",
-            "zip-code"
-          ]
-        ]
+        "additionalProperties": false
       }
     },
     "$defs": {

@@ -274,8 +274,8 @@ CREATE TABLE relations
     rela_assoc_to_from     TEXT,
     rela_enti_id_from      INTEGER NOT NULL,
     rela_enti_id_to        INTEGER NOT NULL,
-    rela_hist_from_to      TEXT    NOT NULL CHECK (rela_hist_from_to IN ('TRUE', 'FALSE')) DEFAULT 'FALSE',
-    rela_hist_to_from      TEXT    NOT NULL CHECK (rela_hist_to_from IN ('TRUE', 'FALSE')) DEFAULT 'FALSE',
+    rela_hist_from_to      TEXT    CHECK (rela_hist_from_to IN ('TRUE', 'FALSE')) ,
+    rela_hist_to_from      TEXT    CHECK (rela_hist_to_from IN ('TRUE', 'FALSE')) ,
     rela_mandatory_from_to TEXT    NOT NULL CHECK (rela_mandatory_from_to IN ('TRUE', 'FALSE')) DEFAULT 'FALSE',
     rela_mandatory_to_from TEXT    NOT NULL CHECK (rela_mandatory_to_from IN ('TRUE', 'FALSE')) DEFAULT 'FALSE',
     rela_maptype_from_to   TEXT    NOT NULL CHECK (rela_maptype_from_to IN ('1', 'M')),
@@ -311,4 +311,22 @@ CREATE TABLE businessrule_elements (
 );
 PRAGMA foreign_keys = ON;
 
-
+-------- VIEWS are maintained manually ----------------
+--- in dataspot as VIEW ... tables
+------------------------------------------------------
+-- create values for every language (use default-language if missing)
+create view translatedvalues as
+    select lang_id,lang_iso_code2,
+       entries.lgtx_attrname,entries.lgtx_mode_id
+    , lg2.lgtx_text as realvalue -- real value found in model
+    ,case  when lg2.lgtx_text is null then lg3.lgtx_text else lg2.lgtx_text end as defaultvalue -- real or defaultvalue
+from languages
+    cross join  (select distinct lgtx_attrname,lgtx_mode_id from lang_texts
+        ) entries
+    left outer join lang_texts lg2 on lg2.lgtx_lang_id=lang_id
+                                    and  lg2.lgtx_attrname=entries.lgtx_attrname
+                                    and lg2.lgtx_mode_id=entries.lgtx_mode_id
+    left outer join lang_texts lg3 on lg3.lgtx_lang_id=lang_lang_id
+                                    and  lg3.lgtx_attrname=entries.lgtx_attrname
+                                    and lg3.lgtx_mode_id=entries.lgtx_mode_id
+;

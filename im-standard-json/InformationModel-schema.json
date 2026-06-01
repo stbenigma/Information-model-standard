@@ -39,7 +39,7 @@
           "description": "Attributes specific for an information model",
           "properties": {
             "modeltype": {
-              "const": "Information model"
+              "const": "Information Model"
             },
             "mainlanguage": {
               "description": "Main (and possibly only) language of the models textelements. Serves as default language in multilingual strings, whenever for any of the languages a translation is missing.",
@@ -52,7 +52,11 @@
                 "$ref": "GeneralTypes-schema.json#/components/$defs/LanguageIso2"
               },
               "uniqueItems": true
-            }
+            },
+            "additionalProps": {
+      "description": "additional properties (aka user defined properties udp) are  any properties of an this element  added by the current modeller. They serve as an extension to the predfefined element properties.",
+      "$ref": "GeneralStructures-schema.json#/components/schemas/AdditionalProperties"
+    }
           }
         }
       ]

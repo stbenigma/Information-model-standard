@@ -30,6 +30,10 @@
       "description": "ElementId of parent of current category, null for root categories",
       "$ref": "#/components/$defs/CategoryId"
     },
+    "modelid": {
+      "description": "refrences the model it belongs to",
+      "$ref": "GeneralStructures-schema.json#/components/$defs/ModelId"
+    },
     "additionalProps": {
       "description": "additional properties (aka user defined properties udp) are  any properties of an this element  added by the current modeller. They serve as an extension to the predfefined element properties.",
       "$ref": "GeneralStructures-schema.json#/components/schemas/AdditionalProperties"

@@ -28,6 +28,10 @@
           "description": "Category the domain is grouped in",
           "$ref": "Category-schema.json#/components/$defs/CategoryId"
         },
+    "modelid": {
+      "description": "refrences the model it belongs to",
+      "$ref": "GeneralStructures-schema.json#/components/$defs/ModelId"
+    },
         "examples": {
           "description": "some example values which are valid for this domain",
           "$ref": "GeneralStructures-schema.json#/components/schemas/Examples"

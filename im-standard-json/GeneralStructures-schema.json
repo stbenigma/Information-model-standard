@@ -55,6 +55,10 @@
       "BaseModelInfo": {
         "type": "object",
         "properties": {
+          "elementid": {
+            "description": "unique ID of the model for reference purposes within the mme-environment\nOnly used (and stable) in current . Can change over time",
+            "$ref": "#/components/$defs/ModelId"
+          },
           "modelname": {
             "description": "Name of the model. Unique in the environment of related models",
             "$ref": "GeneralTypes-schema.json#/components/$defs/Name"
@@ -75,21 +79,13 @@
             "type": "string",
             "enum": [
               "Meta model",
-              "Information model",
+              "Information Model",
               "Data model",
               "System model"
             ]
           },
-          "datetimecreated": {
-            "description": "Timestamp when this version of the model was generated",
-            "type": "string",
-            "format": "date-time",
-            "examples": [
-              "2024-11-11T13:04:1Z"
-            ]
-          },
           "modelversion": {
-            "description": "Version number of the information model documented in this file",
+            "description": "Version number of the information Model documented in this file",
             "$ref": "GeneralTypes-schema.json#/components/$defs/VersionNo",
             "examples": [
               "1.0.1",
@@ -119,6 +115,19 @@
           "targetenvironment",
           "modelversion",
           "modeltype"
+        ]
+      }
+    },
+    "$defs": {
+      "ModelId": {
+        "description": "typed ID unique over all models in this schema",
+        "allOf": [
+          {
+            "$ref": "GeneralTypes-schema.json#/components/$defs/ElementId"
+          },
+          {
+            "pattern": ".*MODL[0-9]+$"
+          }
         ]
       }
     }

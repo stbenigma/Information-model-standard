@@ -13,6 +13,14 @@
       "description": "name for textual references of the busiess rule",
       "$ref": "GeneralTypes-schema.json#/components/$defs/Name"
     },
+    "level": {
+      "description": "level of elements the busiess rule acts on",
+      "$ref": "#/components/$defs/BusinessRulelevel"
+    },
+    "type": {
+      "description": "Kind of businessrule, acting, checking, triggering",
+      "$ref": "#/components/$defs/BusinessRuleType"
+    },
     "description": {
       "description": "Explanation of the rule, its application and consequenses.",
       "$ref": "GeneralTypes-schema.json#/components/$defs/SomeText"
@@ -45,9 +53,41 @@
         "minItems": 1
       }
     },
+    "affectedelements": {
+      "description": "Elements that are affected, meaning can be changed by this business rule.",
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "Attribute-schema.json#/components/$defs/AttributeId"
+          },
+          {
+            "$ref": "Relation-schema.json#/components/$defs/RelationId"
+          },
+          {
+            "$ref": "Entity-schema.json#/components/$defs/EntityId"
+          },
+          {
+            "$ref": "Domain-schema.json#/components/$defs/DomainId"
+          },
+          {
+            "$ref": "DataModel-schema.json#/components/$defs/DataObjectId"
+          },
+          {
+            "$ref": "DataModel-schema.json#/components/$defs/DataAttributeId"
+          }
+        ],
+        "uniqueItems": true,
+        "minItems": 1
+      }
+    },
     "rule": {
       "description": "Expression, rule, formula stating how the linked elements depend on each other.",
       "$ref": "GeneralTypes-schema.json#/components/$defs/Text"
+    },
+    "modelid": {
+      "description": "refrences the model it belongs to",
+      "$ref": "GeneralStructures-schema.json#/components/$defs/ModelId"
     },
     "additionalProps": {
       "description": "additional properties (aka user defined properties udp) are  any properties of this element, added by the current modeller. They serve as an extension to the predfefined element properties.",
@@ -87,6 +127,25 @@
           {
             "pattern": ".*BURU[0-9]+$"
           }
+        ]
+      },
+      "BusinessRuleType": {
+        "description": "Kind of businessrule, acting, checking, triggering",
+        "type": "string",
+        "enum": [
+          "calculation",
+          "check",
+          "trigger"
+        ]
+      },
+      "BusinessRulelevel": {
+        "description": "Level of db elements the business rule acts on",
+        "type": "string",
+        "enum": [
+          "database",
+          "entity",
+          "tuple",
+          "attribute"
         ]
       }
     }
