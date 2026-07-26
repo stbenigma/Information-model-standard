@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<CollectionType class="oracle.dbtools.crest.model.design.datatypes.CollectionType" name="namelist" directorySegmentName="seg_0" id="D0BA98F4-3336-C58C-0438-638949E28E04">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 13:25:06 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<predefined>false</predefined>
+<dataTypeDescr class="oracle.dbtools.crest.model.design.datatypes.CollectionType$DataTypeWrapper">
+<size></size>
+<type>874CA941-0FD3-8BB4-AA0F-9770697B8F8E</type>
+<isreference>false</isreference>
+</dataTypeDescr>
+<maxElement>1</maxElement>
+<type>ARRAY</type>
+</CollectionType>

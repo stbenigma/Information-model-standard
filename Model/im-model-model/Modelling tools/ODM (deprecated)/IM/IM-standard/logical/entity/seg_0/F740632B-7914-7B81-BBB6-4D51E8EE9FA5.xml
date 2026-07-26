@@ -1,0 +1,182 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F740632B-7914-7B81-BBB6-4D51E8EE9FA5" name="Kategorie">
+<createdBy>stb</createdBy>
+<createdTime>2021-03-31 09:07:07 UTC</createdTime>
+<comment><![CDATA[Gruppierung von Wertebereichen, Entitäten oder Kategorien für eine einfache Kommunikation, Anzeige oder Suche]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Gruppierung von Wertebereichen, Entitäten oder Kategorien für eine einfache Kommunikation, Anzeige oder Suche
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Group of domains, entities or categories. Categorizing elements for ease of communication, display and finding.
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<typeID>E0CC5767-562C-A871-BD70-DA70B40552A8</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>CATG</shortName>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="DE_ENTI_NAME" value="Kategorie"/>
+<property name="DE_ENTI_SYNONYM" value=""/>
+<property name="EN_ENTI_NAME" value="Category"/>
+<property name="EN_ENTI_SYNONYM" value=""/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="2"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Name [L]" id="89B43D0C-F2AB-FFF0-355B-DC6EBFB3632D">
+<createdBy>stb</createdBy>
+<createdTime>2021-03-31 09:12:08 UTC</createdTime>
+<comment><![CDATA[Name der Kategorie. Eindeutig innerhalt seiner Vater-Kategorie]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Name der Kategorie. Eindeutig innerhalt seiner Vater-Kategorie
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Name of the category. Unique within its parent category
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<use>0</use>
+<collectionType>D0BA98F4-3336-C58C-0438-638949E28E04</collectionType>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="Name [L]"/>
+<property name="EN_ATTR_NAME" value="Name [L]"/>
+<property name="isdescriptive" value="TRUE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="2"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Beschreibung [L]" id="7DD01FB7-0C60-2AC8-C0ED-36977D532927">
+<createdBy>stb</createdBy>
+<createdTime>2021-03-31 09:34:35 UTC</createdTime>
+<comment><![CDATA[Grund, Bildungskriterien für diese Kategorie.]]></comment>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Grund, Bildungskriterien für diese Kategorie.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Reason, building aspect for this category.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<collectionType>53EF0FEC-74CF-B5E7-3547-0E74F449ACA7</collectionType>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="Beschreibung [L]"/>
+<property name="EN_ATTR_NAME" value="Description [L]"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="2"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Name1" id="0B72657C-3011-1E6B-9580-B6B8CDBC8660">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-22 12:47:02 UTC</createdTime>
+<generatorID>F25D2523-2AC9-A8C9-613A-D59FA866413B</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<referedAttribute>AB6554AF-DFFF-EA79-99CF-84D5586888C1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="Name1"/>
+<property name="EN_ATTR_NAME" value="*Name"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="2"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Name2" id="19AE8284-EC15-B650-419C-675BB2A24B8B">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-31 11:41:37 UTC</createdTime>
+<comment><![CDATA[Name der Kategorie. Eindeutig innerhalt seiner Vater-Kategorie]]></comment>
+<generatorID>5991481B-E4FB-922B-F841-B6D8088109B1</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Name der Kategorie. Eindeutig innerhalt seiner Vater-Kategorie
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Name of the category. Unique within its parent category
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>89B43D0C-F2AB-FFF0-355B-DC6EBFB3632D</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="Name2"/>
+<property name="EN_ATTR_NAME" value="*Name2"/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6ACD2C2C-682D-48D8-3B7E-F86D9209CEEA" name="Key_1">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-31 11:30:45 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<newElementsIDs>89B43D0C-F2AB-FFF0-355B-DC6EBFB3632D,5991481B-E4FB-922B-F841-B6D8088109B1</newElementsIDs>
+<usedAttributes>
+<attributeRef>89B43D0C-F2AB-FFF0-355B-DC6EBFB3632D</attributeRef>
+<attributeRef>19AE8284-EC15-B650-419C-675BB2A24B8B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

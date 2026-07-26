@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_307" directorySegmentName="seg_1" id="ED579609-8798-B754-7581-4BB01DB2F43C">
+<createdBy>stb</createdBy>
+<createdTime>2022-01-26 10:29:36 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="17F5F16D-4CB1-2968-618E-D369CD8C5B93" value="true"/>
+<item key="BE22189E-C358-530C-6354-65FB4784079F" value="true"/>
+<item key="A91573EF-1254-1C9A-797A-A2AF60AC738D" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="1A90F064-D225-B8AB-AC38-0393157EE4FC" value="true"/>
+</engineerTo>
+<sourcePk>8A89F2A6-4610-E4EC-281B-D559F640CD41</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>concerned with</nameOnSource>
+<nameOnTarget>is for</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>15C54599-0177-3F97-C2CF-1921234C4499</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>052790BB-4C26-3963-4E02-C52A72538E6C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<propertyMap>
+<property name="DE_RELA_TEXT_FROM" value="beschäftigt mit"/>
+<property name="DE_RELA_TEXT_TO" value="ist für"/>
+<property name="EN_RELA_TEXT_FROM" value="concerned with"/>
+<property name="EN_RELA_TEXT_TO" value="is for"/>
+<property name="maxzoomlevel" value="2"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Relation>

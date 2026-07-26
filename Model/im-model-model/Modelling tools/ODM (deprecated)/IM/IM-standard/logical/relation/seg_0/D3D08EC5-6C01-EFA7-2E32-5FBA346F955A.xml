@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_109" directorySegmentName="seg_0" id="D3D08EC5-6C01-EFA7-2E32-5FBA346F955A">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:05:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="false"/>
+<item key="17F5F16D-4CB1-2968-618E-D369CD8C5B93" value="true"/>
+<item key="BE22189E-C358-530C-6354-65FB4784079F" value="true"/>
+<item key="A91573EF-1254-1C9A-797A-A2AF60AC738D" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="1A90F064-D225-B8AB-AC38-0393157EE4FC" value="true"/>
+</engineerTo>
+<identifying>true</identifying>
+<nameOnSource>represented in</nameOnSource>
+<nameOnTarget>represents</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8CDBEDF4-5478-6F12-0D46-E7BCD9A40CD3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F4419578-EE98-3BAC-50A3-1E4C66917575</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<propertyMap>
+<property name="DE_RELA_TEXT_FROM" value="dargestellt in"/>
+<property name="DE_RELA_TEXT_TO" value="stellt dar"/>
+<property name="EN_RELA_TEXT_FROM" value="represented in"/>
+<property name="EN_RELA_TEXT_TO" value="represents"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Relation>

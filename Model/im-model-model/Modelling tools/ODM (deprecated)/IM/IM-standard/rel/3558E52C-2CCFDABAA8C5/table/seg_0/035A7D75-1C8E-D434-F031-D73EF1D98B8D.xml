@@ -1,0 +1,213 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="035A7D75-1C8E-D434-F031-D73EF1D98B8D" name="ENTITIES">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<comment><![CDATA[Designates a thing of interest in this shere of influence (targetenvironment). A being, a tangible or intangible (abstract) object with properties and relationships.
+It is an IT-system- and technology-independent and consolidated description of the structure and meaning of the thing of interest.
+An entity name is unique in the considered environment and the definition of the entity (attributes, description, rules, relationships,...) is the only valid interpretation expressed with this name.
+]]></comment>
+<generatorID>A23E6C38-310F-4379-F953-0B04C1A4B16F</generatorID>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Bezeichnet eine Sache von Interesse in diesem Einflussbereich (Zielumwelt). Ein Wesen, ein materielles oder immaterielles (abstraktes) Objekt mit Eigenschaften und Beziehungen.
+Es handelt sich um eine IT-System- und Technologie-unabhängige und konsolidierte Beschreibung der Struktur und Bedeutung des interessierenden Dings.
+Ein Entitätsname ist in der betrachteten Umgebung eindeutig und die Definition der Entität (Attribute, Beschreibung, Regeln, Beziehungen,...) ist die einzig gültige Interpretation, die mit diesem Namen ausgedrückt wird.
+Eine Entität kann wiederum aus einzelnen Teilen (Attributen, Unterentitäten, Beziehungen, etc.) bestehen ; entsprechend dem Begriff Holon oder Ganzes/Teil.
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Designates a thing of interest in this shere of influence (targetenvironment). A being, a tangible or intangible (abstract) object with properties and relationships.
+It is an IT-system- and technology-independent and consolidated description of the structure and meaning of the thing of interest.
+An entity name is unique in the considered environment and the definition of the entity (attributes, description, rules, relationships,...) is the only valid interpretation expressed with this name.
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<ordsAlias>entity</ordsAlias>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<abbreviation>ENTI</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ENTI_ID" id="DA0785FC-F343-31B3-2A65-DF1828CB5473">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:19:06 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENTI_NAME" id="FDE9BB5A-27F3-98B8-C720-3FDBE5F28DB8">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<comment><![CDATA[unique Name of the entity normally used in communication.]]></comment>
+<generatorID>F1D0F128-7361-E0A9-E706-227C158FCD42</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+eindeutiger Name der Entität der in der Kommunikation normalerweise gebraucht wird.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+unique Name of the entity normally used in communication.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<use>0</use>
+<collectionType>874CA941-0FD3-8BB4-AA0F-9770697B8F8E</collectionType>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENTI_DESCRIPTION" id="FD88CD92-77E0-C4C3-2458-9B33B194776D">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<comment><![CDATA[Meaning, benefits, usage  of the Entity]]></comment>
+<generatorID>8AE86DAB-876D-4996-6150-123B705AB4AA</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Bedeutung, Nutzen, Nutzung der Entität
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Meaning, benefits, usage  of the Entity
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<collectionType>53EF0FEC-74CF-B5E7-3547-0E74F449ACA7</collectionType>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENTI_SHORT_NAME" id="A78D733D-6D65-97E1-2E44-C0C1C450E452">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<comment><![CDATA[nonempty short text for often used for references. Using letters, digits and ' ',-,:,$,_ 
+]]></comment>
+<generatorID>5E305761-9FBD-94B3-D12B-A0811406A63D</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+nicht leerer Kurztext, der häufig für Referenzen verwendet wird. Verwendung von Buchstaben, Ziffern und ' ',-,:,$,_ 
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+nonempty short text for often used for references. Using letters, digits and ' ',-,:,$,_ 
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>DF321C7C-26AB-AE86-F75B-320EE5F91E6D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENTI_SYNONYM" id="ECB4F6AF-70C6-48FC-86A6-0FBB36A1A943">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<comment><![CDATA[List of synonym names for this thing beeing used in old systems or out of habit. Not unique.]]></comment>
+<generatorID>A95649D8-C7D7-F752-DF78-460367ECD340</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Liste von Synonymen für dieses Ding, die in alten Systemen oder aus Gewohnheit verwendet werden. Nicht eindeutig.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+List of synonym names for this thing beeing used in old systems or out of habit. Not unique.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>4</use>
+<collectionType>D0BA98F4-3336-C58C-0438-638949E28E04</collectionType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENTI_SHORT_DESCR" id="A56BC973-2DC0-9AA3-1AE7-3DCF0615481E">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<comment><![CDATA[Short text explaining the meaning for the user în the user interface.]]></comment>
+<generatorID>09BFD6A9-516C-6EA2-95BC-6189D7482BFC</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Anzeige der Bedeutung für Bediener:innen in der Benutzerschnittstelle..
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Short text explaining the meaning for the user în the user interface.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<collectionType>53EF0FEC-74CF-B5E7-3547-0E74F449ACA7</collectionType>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>D8C19083-EC1D-27E7-A2FD-5091C2B48044</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENTI_INFM_ID" id="EDE65E2E-EBBF-011E-B509-3F7CFCB5B4DE">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<generatorID>970C26B8-4A9C-9B24-92F4-85B0E648E1F5</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C2E9A31C-37FD-A4F8-7F51-FB14C94B047A" referredColumn="29540D25-BAAC-0EBE-948E-41717EEACC44"/>
+</associations>
+</Column>
+<Column name="ENTI_CATG_ID" id="B67F03CF-4368-0BB6-1C28-E343100DB067">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="61218BAE-E11D-F60D-0E73-5DEBB3ECEA2B" referredColumn="2A461CC2-DB75-2D69-F586-92B2D5AE0581"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FF7075FA-EB04-1F68-C716-238A497DCFF1" name="ENTI_PK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="DA0785FC-F343-31B3-2A65-DF1828CB5473"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1C00557F-D741-56CF-5EC2-E30D5CE782C8" name="ENTITY_INFORMATION_MODEL_FK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>5C7E8293-F8C6-F81B-03AF-EEAC910B7329</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EDE65E2E-EBBF-011E-B509-3F7CFCB5B4DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="60DCAB70-AF28-92F1-5A66-A96A0C33AA40" name="ENTITY_CATEGORY_FK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>EDA96E4B-C864-19B0-E4FF-96C1D06DD5B2</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B67F03CF-4368-0BB6-1C28-E343100DB067"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

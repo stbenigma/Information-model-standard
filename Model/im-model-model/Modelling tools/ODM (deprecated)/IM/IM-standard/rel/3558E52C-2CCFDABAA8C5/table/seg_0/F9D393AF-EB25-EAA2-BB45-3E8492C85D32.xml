@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F9D393AF-EB25-EAA2-BB45-3E8492C85D32" name="EXCLUSIVE_RELATIONS">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<comment><![CDATA[Relationships that emanate from an entity can be exclusive. I.e. none or 1 of them is possible, but never several simultaneously.
+
+Example:
+a Person is reachable via Mobile-Phone or via Land-Line-Phone]]></comment>
+<generatorID>7508B13D-A32D-4C04-D788-8F40843FC2CD</generatorID>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Beziehungen die von einer Entität ausgehen können exklusiv sein. D.h. keine oder 1 davon ist möglich, aber nie mehrere gleichzeitig
+
+Beispiel:
+	eine Person ist erreichbar über Mobil-Telefon oder über Festnetz-Telefon
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Relationships that emanate from an entity can be exclusive. I.e. none or 1 of them is possible, but never several simultaneously.
+
+Example:
+	a Person is reachable via Mobile-Phone or via Land-Line-Phone
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<ordsAlias>exclusive_relation</ordsAlias>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<abbreviation>ARCS</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ARCS_ID" id="ED35672E-B35E-19F8-6D29-F7D0D93B4BFD">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="ARCS_NUMBER" id="5FC02398-54DB-F07F-5305-BF1364796B53">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<comment><![CDATA[Number to distinguish multiple exclusive groups of relationships in an entity.  Making them an exclusive group of relationships]]></comment>
+<generatorID>C725A402-0ADC-7EBF-B98F-A9FEE6E7B79F</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Nummer zur Unterscheidung mehrerer exklusiver Gruppen von Beziehungen in einer Entität.  Sie zu einer exklusiven Gruppe von Beziehungen machen
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Number to distinguish multiple exclusive groups of relationships in an entity.  Making them an exclusive group of relationships
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ARCS_ENTI_ID" id="BB1EC51F-5E40-D85E-5111-D9E4597ACE1E">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="501A00AE-965B-4833-140A-0E8B8064F84E" referredColumn="DA0785FC-F343-31B3-2A65-DF1828CB5473"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D430BBF2-DB61-C738-A561-D16FCB9486E4" name="ARCS_PK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="ED35672E-B35E-19F8-6D29-F7D0D93B4BFD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B8DE3ADE-3D40-5350-03BE-1C01D7F88BB6" name="ARCS_UN">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<generatorID>4D8D5B78-D54B-9763-65AC-95DAF7C593D5</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB1EC51F-5E40-D85E-5111-D9E4597ACE1E"/>
+<colUsage columnID="5FC02398-54DB-F07F-5305-BF1364796B53"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FDCA223F-F5E2-FCC3-D626-B340502A5418" name="ARCD_ENTI_FK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>8E8A6377-DF32-1C76-25A1-B458D76ECE51</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB1EC51F-5E40-D85E-5111-D9E4597ACE1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

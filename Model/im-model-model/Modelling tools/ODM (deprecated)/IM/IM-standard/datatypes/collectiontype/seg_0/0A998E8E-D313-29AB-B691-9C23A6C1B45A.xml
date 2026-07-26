@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<CollectionType class="oracle.dbtools.crest.model.design.datatypes.CollectionType" name="coordinate_Array" directorySegmentName="seg_0" id="0A998E8E-D313-29AB-B691-9C23A6C1B45A">
+<createdBy>stb</createdBy>
+<createdTime>2021-03-31 09:31:47 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<predefined>false</predefined>
+<dataTypeDescr class="oracle.dbtools.crest.model.design.datatypes.CollectionType$DataTypeWrapper">
+<size></size>
+<type>DOM3000004</type>
+<isreference>false</isreference>
+</dataTypeDescr>
+<maxElement>10</maxElement>
+<type>ARRAY</type>
+</CollectionType>

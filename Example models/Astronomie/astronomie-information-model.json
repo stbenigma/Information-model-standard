@@ -1,0 +1,2832 @@
+{
+  "ModelInfo": {
+    "modelName": "Astronomie Beispiel",
+    "modelType": "Information model",
+    "mainLanguage": "de",
+    "modelVersion": "0.9",
+    "languages": [
+      "en"
+    ],
+    "targetEnvironment": "Astronomie Beispiel",
+    "originTool": "dataspot",
+    "additionalProps": {
+      "dc": "2026-06-05T14:36:49",
+      "FULLPATH": "Astronomie Beispiel:Information model:Astronomie Beispiel",
+      "SOURCE-SERVER": "https://myserver.io",
+      "SOURCE-TENANT": "Sandbox Stefan",
+      "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/tenants/b078e6f7-70dd-4caa-acd3-af36d825537d"
+    }
+  },
+  "Categories": [
+    {
+      "elementId": "CATG1",
+      "name": "Astronomische Wertebereiche",
+      "categoryType": "DOMAIN"
+    },
+    {
+      "elementId": "CATG2",
+      "name": "Standard Datatypen",
+      "categoryType": "DOMAIN"
+    },
+    {
+      "elementId": "CATG3",
+      "name": "Basis Wertebereiche",
+      "categoryType": "DOMAIN"
+    },
+    {
+      "elementId": "CATG4",
+      "name": "Physikalische Datentypen",
+      "categoryType": "DOMAIN"
+    },
+    {
+      "elementId": "CATG5",
+      "name": "Astronomische Referenzwerte",
+      "categoryType": "DOMAIN"
+    },
+    {
+      "elementId": "CATG6",
+      "name": "Standard Referenzwerte",
+      "categoryType": "DOMAIN"
+    },
+    {
+      "elementId": "CATG7",
+      "name": "Raum Ereignisse",
+      "categoryType": "ENTITY"
+    },
+    {
+      "elementId": "CATG8",
+      "name": "Sternsystem",
+      "categoryType": "ENTITY"
+    },
+    {
+      "elementId": "CATG9",
+      "name": "Grosse Objekte",
+      "categoryType": "ENTITY"
+    },
+    {
+      "elementId": "CATG10",
+      "name": "Kleine Objekte",
+      "categoryType": "ENTITY"
+    }
+  ],
+  "Domains": [
+    {
+      "elementId": "DOMA1",
+      "name": {
+        "de": "Galaktische Entfernung",
+        "en": "Galactical distance"
+      },
+      "domainType": "NumericDomain",
+      "categoryId": "CATG1",
+      "description": {
+        "de": "Abstand zwischen 2 Objekten im galaktischen Umfeld\n \nEinheit sind Lichtjahre. Ein LJ entspricht 63241 AE oder \u2248 9.46 Billionen km",
+        "en": "Distance between 2 objects in the galactic neighbourhood\n \nThe unit is light years. One LJ corresponds to 63241 AU or \u2248 9.46 trillion kilometres"
+      },
+      "minValue": 0,
+      "maxValue": 150000,
+      "totalDigits": 9,
+      "fractDigits": 3,
+      "unit": "LJ",
+      "additionalProps": {
+        "Title:en": "Distance between objects in the galaxy",
+        "FULLPATH": "Astronomie Wertebereiche:Astronomische Wertebereiche/Galaktische Entfernung",
+        "SOURCE-ID": "5a0d15d6-ab52-470f-ad77-1187613bc0ca",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/datatypes/5a0d15d6-ab52-470f-ad77-1187613bc0ca",
+        "SOURCE-DATATYPE": "DECIMAL"
+      }
+    },
+    {
+      "elementId": "DOMA2",
+      "name": {
+        "de": "Himmelsk\u00f6rper Durchmesser",
+        "en": "Celestial body diameter"
+      },
+      "domainType": "GroupDomain",
+      "categoryId": "CATG1",
+      "additionalProps": {
+        "Title:en": "Diameter as group attribute with deviations from pole and equator diameter",
+        "FULLPATH": "Astronomie Wertebereiche:Astronomische Wertebereiche/Himmelsk\u00f6rper Durchmesser",
+        "SOURCE-ID": "3d7d43ee-1cff-4eee-95be-28adef08622f",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/datatypes/3d7d43ee-1cff-4eee-95be-28adef08622f"
+      }
+    },
+    {
+      "elementId": "DOMA3",
+      "name": {
+        "de": "Jahrzahl",
+        "en": "Year"
+      },
+      "domainType": "NumericDomain",
+      "categoryId": "CATG1",
+      "description": {
+        "de": "Bei Berechnungen mit Jahrzahlen (Anzahl Jahre zwischen 2 Jahrzahlen) ist zu ber\u00fccksichtigen, dass es die Jahrzahl 0 nicht gibt",
+        "en": "When calculating with year numbers (number of years between 2 year numbers), it must be taken into account that the year 0 does not exist"
+      },
+      "minValue": -5000,
+      "maxValue": 5000,
+      "totalDigits": 4,
+      "additionalProps": {
+        "Title:en": "Calendar year",
+        "FULLPATH": "Astronomie Wertebereiche:Astronomische Wertebereiche/Jahrzahl",
+        "SOURCE-ID": "ac7a81d6-80d1-46f3-bcd5-039d496a3dd2",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/datatypes/ac7a81d6-80d1-46f3-bcd5-039d496a3dd2",
+        "SOURCE-DATATYPE": "INTEGER"
+      }
+    },
+    {
+      "elementId": "DOMA4",
+      "name": {
+        "de": "Rotationsdauer",
+        "en": "Rotation time"
+      },
+      "domainType": "NumericDomain",
+      "categoryId": "CATG1",
+      "description": {
+        "de": "Dauer die ein Begleiter braucht um sein Mutterobjekt zu umkreisen.\nGruppenattribut mit Wert und Einheit (Stunde, Tag, Jahr).",
+        "en": "Duration that a space object needs to rotate  around one's own axis"
+      },
+      "totalDigits": 7,
+      "fractDigits": 3,
+      "unit": "Tag",
+      "additionalProps": {
+        "Title:en": "Time to rotate 360\u00ba",
+        "FULLPATH": "Astronomie Wertebereiche:Astronomische Wertebereiche/Rotationsdauer",
+        "SOURCE-ID": "ae832c41-8c50-4bc7-8428-5d4549be728d",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/datatypes/ae832c41-8c50-4bc7-8428-5d4549be728d",
+        "SOURCE-DATATYPE": "DECIMAL"
+      }
+    },
+    {
+      "elementId": "DOMA5",
+      "name": {
+        "de": "Sternsystem Entfernung",
+        "en": "Startsystem distance"
+      },
+      "domainType": "NumericDomain",
+      "categoryId": "CATG1",
+      "description": {
+        "de": "Abstand zwischen 2 Punkten oder Objekten innerhalb eines Sternensystems\n\nDie Einheit ist 1000km. \n\nDie Abst\u00e4nde sind in der Gr\u00f6ssenordnung des Durchmessers eines Sternensystems. D.h. bis ca 200 Astronomsiche Einheiten (AE) (=30*10^9km)\n\nEine AE entspricht ca 150Mio Km (genau 149.597.870,7) (entspricht 8,317\u00a0Lichtminuten",
+        "en": "Distance between 2 points or objects within a star system\n\nThe unit is 1000km.\n\nThe distances are in the order of magnitude of the diameter of a star system. I.e. up to approx. 200 astronomical units (AU) (=30*10^9km)\n\nOne AU corresponds to approx. 150 million kilometres (exactly 149,597,870.7) (corresponds to 8.317 light minutes\")."
+      },
+      "minValue": 0,
+      "maxValue": 10000000,
+      "unit": "10^3 km",
+      "additionalProps": {
+        "Title:en": "Distance within a star system",
+        "FULLPATH": "Astronomie Wertebereiche:Astronomische Wertebereiche/Sternsystem Entfernung",
+        "SOURCE-ID": "5a183b99-c7a8-428d-a798-13cc5289fef1",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/datatypes/5a183b99-c7a8-428d-a798-13cc5289fef1",
+        "SOURCE-DATATYPE": "DECIMAL"
+      }
+    },
+    {
+      "elementId": "DOMA6",
+      "name": {
+        "de": "Umlaufdauer",
+        "en": "Cycle time"
+      },
+      "domainType": "GroupDomain",
+      "categoryId": "CATG1",
+      "description": {
+        "de": "Dauer die ein Begleiter braucht um sein Mutterobjekt zu umkreisen.\nGruppenattribut mit Wert und Einheit (Stunde, Tag, Jahr).",
+        "en": "Duration that a companion needs to orbit its parent object.\nGroup attribute with value and unit (hour, day, year)."
+      },
+      "additionalProps": {
+        "Title:en": "The time a companion needs to orbit its parent object.",
+        "FULLPATH": "Astronomie Wertebereiche:Astronomische Wertebereiche/Umlaufdauer",
+        "SOURCE-ID": "7a053008-0ae4-4345-8ea3-872291f895f9",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/datatypes/7a053008-0ae4-4345-8ea3-872291f895f9",
+        "SOURCE-DATATYPE": "DECIMAL"
+      }
+    },
+    {
+      "elementId": "DOMA7",
+      "name": {
+        "de": "Booelan",
+        "en": "Boolean"
+      },
+      "domainType": "BooleanDomain",
+      "categoryId": "CATG3",
+      "additionalProps": {
+        "Title:en": "true / false",
+        "FULLPATH": "Astronomie Wertebereiche:Standard Datatypen/Basis Wertebereiche/Booelan",
+        "SOURCE-ID": "072f6802-1138-43df-a9e7-fd2dbd301bcc",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/datatypes/072f6802-1138-43df-a9e7-fd2dbd301bcc",
+        "SOURCE-DATATYPE": "BOOLEAN"
+      }
+    },
+    {
+      "elementId": "DOMA8",
+      "name": {
+        "de": "Datum",
+        "en": "Date"
+      },
+      "domainType": "DatetimeDomain",
+      "categoryId": "CATG3",
+      "description": {
+        "de": "Negative Daten (vor unserer Zeit) werden mit VUZ markiert",
+        "en": "Negative dates (before our time) are marked with VUZ"
+      },
+      "granularity": "DAY",
+      "additionalProps": {
+        "Title:en": "Calendar day",
+        "FULLPATH": "Astronomie Wertebereiche:Standard Datatypen/Basis Wertebereiche/Datum",
+        "SOURCE-ID": "bde90ee7-8008-4c13-9724-e1f87d8a97c3",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/datatypes/bde90ee7-8008-4c13-9724-e1f87d8a97c3",
+        "SOURCE-DATATYPE": "DATE"
+      }
+    },
+    {
+      "elementId": "DOMA9",
+      "name": {
+        "de": "Dezimalzahl",
+        "en": "Decimal"
+      },
+      "domainType": "NumericDomain",
+      "categoryId": "CATG3",
+      "additionalProps": {
+        "Title:en": "Number with decimal places",
+        "FULLPATH": "Astronomie Wertebereiche:Standard Datatypen/Basis Wertebereiche/Dezimalzahl",
+        "SOURCE-ID": "7e596b16-8386-4d9f-be42-209758ed104a",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/datatypes/7e596b16-8386-4d9f-be42-209758ed104a",
+        "SOURCE-DATATYPE": "DECIMAL"
+      }
+    },
+    {
+      "elementId": "DOMA10",
+      "name": {
+        "de": "Integer",
+        "en": "Ganzzahl"
+      },
+      "domainType": "NumericDomain",
+      "categoryId": "CATG3",
+      "additionalProps": {
+        "Title:en": "Number without decimal places",
+        "FULLPATH": "Astronomie Wertebereiche:Standard Datatypen/Basis Wertebereiche/Integer",
+        "SOURCE-ID": "10d54677-2e1e-4727-95a6-a4a8a1bdf132",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/datatypes/10d54677-2e1e-4727-95a6-a4a8a1bdf132",
+        "SOURCE-DATATYPE": "INTEGER"
+      }
+    },
+    {
+      "elementId": "DOMA11",
+      "name": {
+        "de": "String",
+        "en": "String"
+      },
+      "domainType": "TextDomain",
+      "categoryId": "CATG3",
+      "additionalProps": {
+        "Title:en": "String without formatting",
+        "FULLPATH": "Astronomie Wertebereiche:Standard Datatypen/Basis Wertebereiche/String",
+        "SOURCE-ID": "a59d8706-282e-4f16-a9ef-2647aefc9215",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/datatypes/a59d8706-282e-4f16-a9ef-2647aefc9215",
+        "SOURCE-DATATYPE": "STRING"
+      }
+    },
+    {
+      "elementId": "DOMA12",
+      "name": {
+        "de": "Text",
+        "en": "Text"
+      },
+      "domainType": "TextDomain",
+      "categoryId": "CATG3",
+      "additionalProps": {
+        "Title:en": "Character string with formatting (lines, font attributes, etc.).",
+        "FULLPATH": "Astronomie Wertebereiche:Standard Datatypen/Basis Wertebereiche/Text",
+        "SOURCE-ID": "11d67dc1-3085-4e20-a3aa-8af51675f9eb",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/datatypes/11d67dc1-3085-4e20-a3aa-8af51675f9eb",
+        "SOURCE-DATATYPE": "TEXT"
+      }
+    },
+    {
+      "elementId": "DOMA13",
+      "name": {
+        "de": "Uhrzeit",
+        "en": "Time of day"
+      },
+      "domainType": "TextDomain",
+      "categoryId": "CATG3",
+      "description": {
+        "de": "Zeit innerhalb des Tages\n00:00:00 - 23:59:59",
+        "en": "Time within the day\n00:00:00 - 23:59:59"
+      },
+      "syntaxRule": "^[0-1][0-9]:[0-5][0-9]$",
+      "additionalProps": {
+        "FULLPATH": "Astronomie Wertebereiche:Standard Datatypen/Basis Wertebereiche/Uhrzeit",
+        "SOURCE-ID": "f33e4679-bf34-421f-a8bc-ff5f7e95a35f",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/datatypes/f33e4679-bf34-421f-a8bc-ff5f7e95a35f",
+        "SOURCE-DATATYPE": "TIME"
+      }
+    },
+    {
+      "elementId": "DOMA14",
+      "name": {
+        "de": "Zeitstempel",
+        "en": "Timestamp"
+      },
+      "domainType": "DatetimeDomain",
+      "categoryId": "CATG3",
+      "description": {
+        "de": "Punkt auf der Zeitachse auf die Milisekunde genau",
+        "en": "Point on the time axis accurate to the millisecond"
+      },
+      "granularity": "MINUTE",
+      "additionalProps": {
+        "Title:en": "Timing accurate to the millisecond",
+        "FULLPATH": "Astronomie Wertebereiche:Standard Datatypen/Basis Wertebereiche/Zeitstempel",
+        "SOURCE-ID": "284f86ad-b979-4175-b85b-9669925b5e86",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/datatypes/284f86ad-b979-4175-b85b-9669925b5e86",
+        "SOURCE-DATATYPE": "DATETIME"
+      }
+    },
+    {
+      "elementId": "DOMA15",
+      "name": {
+        "de": "Distanz [km]",
+        "en": "Distance [km]"
+      },
+      "domainType": "NumericDomain",
+      "categoryId": "CATG4",
+      "minValue": 0,
+      "totalDigits": 13,
+      "fractDigits": 3,
+      "unit": "km",
+      "additionalProps": {
+        "Title:en": "Distance between two points in kilometer",
+        "FULLPATH": "Astronomie Wertebereiche:Standard Datatypen/Physikalische Datentypen/Distanz [km]",
+        "SOURCE-ID": "554ef1be-2fd3-48ca-8fe8-2bbe898de65f",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/datatypes/554ef1be-2fd3-48ca-8fe8-2bbe898de65f",
+        "SOURCE-DATATYPE": "DECIMAL"
+      }
+    },
+    {
+      "elementId": "DOMA16",
+      "name": {
+        "de": "Distanz [m]",
+        "en": "Distance [m]"
+      },
+      "domainType": "NumericDomain",
+      "categoryId": "CATG4",
+      "minValue": 0,
+      "totalDigits": 9,
+      "fractDigits": 3,
+      "unit": "m",
+      "additionalProps": {
+        "Title:en": "Distance between two points in meter",
+        "FULLPATH": "Astronomie Wertebereiche:Standard Datatypen/Physikalische Datentypen/Distanz [m]",
+        "SOURCE-ID": "045c84a4-6b1b-49d2-be27-99127b948007",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/datatypes/045c84a4-6b1b-49d2-be27-99127b948007",
+        "SOURCE-DATATYPE": "DECIMAL"
+      }
+    },
+    {
+      "elementId": "DOMA17",
+      "name": {
+        "de": "Distanz [mm]",
+        "en": "Distance [m]"
+      },
+      "domainType": "NumericDomain",
+      "categoryId": "CATG4",
+      "minValue": 0,
+      "totalDigits": 9,
+      "fractDigits": 3,
+      "unit": "mm",
+      "additionalProps": {
+        "Title:en": "Distance between two points in milimeter",
+        "FULLPATH": "Astronomie Wertebereiche:Standard Datatypen/Physikalische Datentypen/Distanz [mm]",
+        "SOURCE-ID": "fc41f631-8ddb-4377-a32c-53eb864bcdaa",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/datatypes/fc41f631-8ddb-4377-a32c-53eb864bcdaa",
+        "SOURCE-DATATYPE": "DECIMAL"
+      }
+    },
+    {
+      "elementId": "DOMA18",
+      "name": {
+        "de": "Distanz [nm]",
+        "en": "Distance [nm]"
+      },
+      "domainType": "NumericDomain",
+      "categoryId": "CATG4",
+      "description": {
+        "de": "1 Nanometer = 10^-9 Meter",
+        "en": "1 Nanometer = 10^-9 meter"
+      },
+      "minValue": 0,
+      "totalDigits": 9,
+      "fractDigits": 3,
+      "unit": "nm",
+      "additionalProps": {
+        "Title:en": "Distance between two points in Nanometer",
+        "FULLPATH": "Astronomie Wertebereiche:Standard Datatypen/Physikalische Datentypen/Distanz [nm]",
+        "SOURCE-ID": "810a7bb0-12b8-4d6c-a475-3020eeadefc7",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/datatypes/810a7bb0-12b8-4d6c-a475-3020eeadefc7",
+        "SOURCE-DATATYPE": "DECIMAL"
+      }
+    },
+    {
+      "elementId": "DOMA19",
+      "name": {
+        "de": "Einheitsmenge",
+        "en": "Unit quantity"
+      },
+      "domainType": "GroupDomain",
+      "categoryId": "CATG4",
+      "description": {
+        "de": "Menge von Einheiten als Gruppenattribut mit Menge und (physikalischer) Einheit, in der diese Menge gemessen wurde.",
+        "en": "Group attribute: Quantity together with the (physical) unit in which this quantity was measured."
+      },
+      "additionalProps": {
+        "Title:en": "Quantity with physical unit",
+        "FULLPATH": "Astronomie Wertebereiche:Standard Datatypen/Physikalische Datentypen/Einheitsmenge",
+        "SOURCE-ID": "3ac25454-0e33-4b84-85c2-378b9ea4e5e5",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/datatypes/3ac25454-0e33-4b84-85c2-378b9ea4e5e5"
+      }
+    },
+    {
+      "elementId": "DOMA20",
+      "name": {
+        "de": "Masse",
+        "en": "Mass"
+      },
+      "domainType": "NumericDomain",
+      "categoryId": "CATG4",
+      "minValue": 0,
+      "unit": "kg",
+      "additionalProps": {
+        "Title:en": "Mass value in kg",
+        "FULLPATH": "Astronomie Wertebereiche:Standard Datatypen/Physikalische Datentypen/Masse",
+        "SOURCE-ID": "d9b62c9e-cdaa-440f-869a-5fdf17abc21f",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/datatypes/d9b62c9e-cdaa-440f-869a-5fdf17abc21f",
+        "SOURCE-DATATYPE": "DECIMAL"
+      }
+    },
+    {
+      "elementId": "DOMA21",
+      "name": {
+        "de": "Menge",
+        "en": "Quantity"
+      },
+      "domainType": "NumericDomain",
+      "categoryId": "CATG4",
+      "description": {
+        "de": "decimal"
+      },
+      "additionalProps": {
+        "FULLPATH": "Astronomie Wertebereiche:Standard Datatypen/Physikalische Datentypen/Menge",
+        "SOURCE-ID": "a5d9f6c2-6b58-4eb8-9763-8f84aea25989",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/datatypes/a5d9f6c2-6b58-4eb8-9763-8f84aea25989",
+        "SOURCE-DATATYPE": "DECIMAL"
+      }
+    },
+    {
+      "elementId": "DOMA22",
+      "name": {
+        "de": "Messwert",
+        "en": "Measured value"
+      },
+      "domainType": "GroupDomain",
+      "categoryId": "CATG4",
+      "description": {
+        "de": "Gemessene oder erhobene Werte werden h\u00e4ufig mit einem Vertrauensintervall angegeben, das die maximale Abweichung nach oben oder unten in % angibt.",
+        "en": "Measured or collected values are often specified with a confidence interval, which indicates the maximum deviation upwards or downwards in %."
+      },
+      "additionalProps": {
+        "Title:en": "A measured variable with a confidence interval",
+        "FULLPATH": "Astronomie Wertebereiche:Standard Datatypen/Physikalische Datentypen/Messwert",
+        "SOURCE-ID": "ee749870-7ecc-44fe-b7bd-9cedabbae571",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/datatypes/ee749870-7ecc-44fe-b7bd-9cedabbae571"
+      }
+    },
+    {
+      "elementId": "DOMA23",
+      "name": {
+        "de": "ISO Zeitpunkt",
+        "en": "ISO Datetime"
+      },
+      "domainType": "DatetimeDomain",
+      "categoryId": "CATG2",
+      "description": {
+        "de": "Die Universal Coordinate Time ist die Zeit am Nullmeridian in der N\u00e4he von Greenwich, England. UTC ist ein Datumswert, der die ISO 8601-Grundform yyyymmddThhmmss+|-hhmm oder die erweiterte ISO 8601-Form yyyy-mm-ddThh:mm:ss+|-hh:mm verwendet.",
+        "en": "Universal Coordinate Time is the time at the zero meridian, near Greenwich, England. UTC is a datetime value that uses the ISO 8601 basic form yyyymmddThhmmss+|\u2013hhmm or the ISO 8601 extended form yyyy-mm-ddThh:mm:ss+|\u2013hh:mm."
+      },
+      "granularity": "MINUTE",
+      "additionalProps": {
+        "FULLPATH": "Astronomie Wertebereiche:Standard Datatypen/ISO Zeitpunkt",
+        "SOURCE-ID": "1534336f-88dc-416a-ad72-652c68cc0fac",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/datatypes/1534336f-88dc-416a-ad72-652c68cc0fac",
+        "SOURCE-DATATYPE": "DATETIME"
+      }
+    },
+    {
+      "elementId": "DOMA24",
+      "name": {
+        "de": "Name",
+        "en": "Name"
+      },
+      "domainType": "TextDomain",
+      "categoryId": "CATG2",
+      "description": {
+        "de": "Nichtleere Zeichenfolge, benutzt um etwas zu benennen",
+        "en": "Nonempty sequence of arbitrary chaeracters, used to name a thing."
+      },
+      "additionalProps": {
+        "FULLPATH": "Astronomie Wertebereiche:Standard Datatypen/Name",
+        "SOURCE-ID": "6b44e913-7048-4ac6-8fd1-9d6717926e08",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/datatypes/6b44e913-7048-4ac6-8fd1-9d6717926e08",
+        "SOURCE-DATATYPE": "STRING"
+      }
+    },
+    {
+      "elementId": "DOMA25",
+      "name": {
+        "de": "Prozent (dezimal)",
+        "en": "Percentage (decimal)"
+      },
+      "domainType": "NumericDomain",
+      "categoryId": "CATG2",
+      "description": {
+        "de": "Prozentzahl,gerundet auf 3 Nachkommastellen",
+        "en": "Percentage, rounded to 3 fractional digits"
+      },
+      "totalDigits": 7,
+      "fractDigits": 3,
+      "unit": "%",
+      "additionalProps": {
+        "Title:en": "Percentage with fractional digits",
+        "FULLPATH": "Astronomie Wertebereiche:Standard Datatypen/Prozent (dezimal)",
+        "SOURCE-ID": "da05f1a7-61ec-4cb0-be5c-f1aee40b6953",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/datatypes/da05f1a7-61ec-4cb0-be5c-f1aee40b6953",
+        "SOURCE-DATATYPE": "DECIMAL"
+      }
+    },
+    {
+      "elementId": "DOMA26",
+      "name": {
+        "de": "Prozent (integer)",
+        "en": "Percentage (integer)"
+      },
+      "domainType": "NumericDomain",
+      "categoryId": "CATG2",
+      "description": {
+        "de": "Prozentzahl, auf ganze Zahl gerundet.",
+        "en": "Percentage, rounded to a whole number."
+      },
+      "totalDigits": 4,
+      "unit": "%",
+      "additionalProps": {
+        "Title:en": "Whole number percentages",
+        "FULLPATH": "Astronomie Wertebereiche:Standard Datatypen/Prozent (integer)",
+        "SOURCE-ID": "0a3c5742-3a66-40b3-8dd3-0ce32549fdf5",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/datatypes/0a3c5742-3a66-40b3-8dd3-0ce32549fdf5",
+        "SOURCE-DATATYPE": "INTEGER"
+      }
+    },
+    {
+      "elementId": "DOMA27",
+      "name": {
+        "de": "Leuchtklasse",
+        "en": "Luminosity class"
+      },
+      "domainType": "LOVDomain",
+      "categoryId": "CATG5",
+      "description": {
+        "de": "Leuchtkraftklassen (Helligkeitstypen) \nI\t\u00dcberriesen\tBetelgeuse (M1I)\nII\tHelle Riesen\t\nIII\tRiesen\tAldebaran (K5III)\nIV\tUnterriesen\t\nV\tHauptreihe (normale Sterne)\tSonne (G2V)\nVI\tUnterzwerge\t\nD\tWei\u00dfe Zwerge\tSirius B",
+        "en": "Luminosity classes (brightness types)\nI Supergiant Betelgeuse (M1I)\nII Bright giants\nIII Giants Aldebaran (K5III)\nIV Subgiants\nV Main sequence (normal stars) Sun (G2V)\nVI Subdwarfs\nD White dwarfs Sirius B"
+      },
+      "values": [
+        {
+          "value": "VI",
+          "displayValue": {
+            "de": "Unterzwerge"
+          },
+          "description": {
+            "de": "Betelgeuse (M1I)"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Leuchtklasse/VI",
+            "SOURCE-ID": "23d1aae5-3a56-450b-9b48-6ec9a9a79ed7",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "D",
+          "displayValue": {
+            "de": "Wei\u00dfe Zwerge"
+          },
+          "description": {
+            "de": "Sirius B"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Leuchtklasse/D",
+            "SOURCE-ID": "2ddeba44-7c15-40d7-b045-2f6498d48ad0",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "III",
+          "displayValue": {
+            "de": "Riesen"
+          },
+          "description": {
+            "de": "Aldebaran (K5III)"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Leuchtklasse/III",
+            "SOURCE-ID": "474e3a70-b714-4b69-ad5f-14196daafe7c",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "I",
+          "displayValue": {
+            "de": "\u00dcberriese"
+          },
+          "description": {
+            "de": "Unterteilung der \u00dcberriesen nach abnehmender Leuchtkraft Ia-0, Ia, Iab, Ib"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Leuchtklasse/I",
+            "SOURCE-ID": "556aa5d9-c816-4743-951c-3fbe3bc6b808",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "V",
+          "displayValue": {
+            "de": "Hauptreihe"
+          },
+          "description": {
+            "de": "normale Stern, Sonne (G2V)"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Leuchtklasse/V",
+            "SOURCE-ID": "7e42e56b-e101-4cbd-a5a3-e311d6ea1fd6",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "IV",
+          "displayValue": {
+            "de": "Unterriesen"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Leuchtklasse/IV",
+            "SOURCE-ID": "d7590937-08d0-41e3-a62b-c5787700793e",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "II",
+          "displayValue": {
+            "de": "Helle Riesen"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Leuchtklasse/II",
+            "SOURCE-ID": "ea8e0e38-4cb1-4510-9967-544a9b4839af",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        }
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Referenzdaten:Astronomische Referenzwerte/Leuchtklasse",
+        "SOURCE-ID": "03315db9-6cdd-47fc-b479-2eb9cd62a569",
+        "SOURCE-MODEL": "Astronomie Referenzdaten",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/enumerations/03315db9-6cdd-47fc-b479-2eb9cd62a569"
+      }
+    },
+    {
+      "elementId": "DOMA28",
+      "name": {
+        "de": "Mission Status"
+      },
+      "domainType": "LOVDomain",
+      "categoryId": "CATG5",
+      "values": [
+        {
+          "value": "cancelled",
+          "description": {
+            "de": "abgebrochen"
+          },
+          "additionalProps": {
+            "order": 4,
+            "FULLPATH": "Astronomie Referenzdaten:Mission Status/cancelled",
+            "SOURCE-ID": "41b371f7-ade3-4697-bf2d-ab0da037f59d",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "done",
+          "description": {
+            "de": "erf\u00fcllt"
+          },
+          "additionalProps": {
+            "order": 3,
+            "FULLPATH": "Astronomie Referenzdaten:Mission Status/done",
+            "SOURCE-ID": "671f21ec-599b-4c23-8541-08d75d400c41",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "awaited",
+          "description": {
+            "de": "erwartet"
+          },
+          "additionalProps": {
+            "order": 1,
+            "FULLPATH": "Astronomie Referenzdaten:Mission Status/awaited",
+            "SOURCE-ID": "7500d73d-745c-47ca-a120-8d5ba3708c6d",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "ongoing",
+          "description": {
+            "de": "laufend"
+          },
+          "additionalProps": {
+            "order": 2,
+            "FULLPATH": "Astronomie Referenzdaten:Mission Status/ongoing",
+            "SOURCE-ID": "abfd136a-fb8e-496f-b4c7-b726805921db",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        }
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Referenzdaten:Astronomische Referenzwerte/Mission Status",
+        "SOURCE-ID": "4cbb5ce5-fbc9-40d7-89f1-e0d6b6f0e2e8",
+        "SOURCE-MODEL": "Astronomie Referenzdaten",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/enumerations/4cbb5ce5-fbc9-40d7-89f1-e0d6b6f0e2e8"
+      }
+    },
+    {
+      "elementId": "DOMA29",
+      "name": {
+        "de": "Mission Typ"
+      },
+      "domainType": "LOVDomain",
+      "categoryId": "CATG5",
+      "values": [
+        {
+          "value": "landing",
+          "description": {
+            "de": "Landung"
+          },
+          "additionalProps": {
+            "order": 3,
+            "FULLPATH": "Astronomie Referenzdaten:Mission Typ/landing",
+            "SOURCE-ID": "44c7caad-c7e7-452d-96ca-11dc61a7cbb8",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "circumnavigation",
+          "description": {
+            "de": "Umrundung"
+          },
+          "additionalProps": {
+            "order": 4,
+            "FULLPATH": "Astronomie Referenzdaten:Mission Typ/circumnavigation",
+            "SOURCE-ID": "5dfd1611-9dc7-46fe-bb99-2ab7e2de8c2b",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "flyby",
+          "description": {
+            "de": "Vorbeiflug"
+          },
+          "additionalProps": {
+            "order": 1,
+            "FULLPATH": "Astronomie Referenzdaten:Mission Typ/flyby",
+            "SOURCE-ID": "9e81977b-1fc6-4020-be87-c9524158c932",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        }
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Referenzdaten:Astronomische Referenzwerte/Mission Typ",
+        "SOURCE-ID": "402d4735-aaf2-455a-9d25-3e5737ca0007",
+        "SOURCE-MODEL": "Astronomie Referenzdaten",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/enumerations/402d4735-aaf2-455a-9d25-3e5737ca0007"
+      }
+    },
+    {
+      "elementId": "DOMA30",
+      "name": {
+        "de": "Oberfl\u00e4chenbeschaffenheit",
+        "en": "Surface composition"
+      },
+      "domainType": "LOVDomain",
+      "categoryId": "CATG5",
+      "description": {
+        "de": "Beschaffenheit der Oberl\u00e4che eines Planeten.\nFest, Gas, Eis",
+        "en": "Nature of the surface of a planet.\nSolid, gas, ice"
+      },
+      "values": [
+        {
+          "value": "Eis",
+          "description": {
+            "de": "Wasser, Ammoniak und Methan in Form von Eis, keine feste Oberfl\u00e4che."
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Oberfl\u00e4chenbeschaffenheit/Eis",
+            "SOURCE-ID": "a89a6e04-8d91-4577-bff2-64c958f8d570",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "Gestein",
+          "description": {
+            "de": "Gestein und Metallen, feste Oberfl\u00e4che."
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Oberfl\u00e4chenbeschaffenheit/Gestein",
+            "SOURCE-ID": "e38df9b2-2f94-42e1-89fc-16c10b3d1788",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "Gas",
+          "description": {
+            "de": "Wasserstoff und Helium, keine feste Oberfl\u00e4che."
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Oberfl\u00e4chenbeschaffenheit/Gas",
+            "SOURCE-ID": "f88d4830-75c0-42d5-812e-ac122b3223f4",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        }
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Referenzdaten:Astronomische Referenzwerte/Oberfl\u00e4chenbeschaffenheit",
+        "SOURCE-ID": "c2d10bd2-da5d-462e-a1a5-181ddda446e8",
+        "SOURCE-MODEL": "Astronomie Referenzdaten",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/enumerations/c2d10bd2-da5d-462e-a1a5-181ddda446e8"
+      }
+    },
+    {
+      "elementId": "DOMA31",
+      "name": {
+        "de": "Zeitangabe",
+        "en": "Time indication"
+      },
+      "domainType": "LOVDomain",
+      "categoryId": "CATG5",
+      "description": {
+        "de": "Liste der Zeitangaben f\u00fcr Umlaufdauern \nStunde, Tag, Jahr"
+      },
+      "values": [
+        {
+          "value": "tag",
+          "displayValue": {
+            "de": "Tag"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Zeitangabe/tag",
+            "SOURCE-ID": "4488ad4f-e3d5-49f6-bab6-52022c250f1a",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "std",
+          "displayValue": {
+            "de": "Stunde"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Zeitangabe/std",
+            "SOURCE-ID": "acc73c79-bf1e-4ceb-9bed-29071b1241fb",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "jahr",
+          "displayValue": {
+            "de": "Jahr"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Zeitangabe/jahr",
+            "SOURCE-ID": "b3920e70-1359-488d-8291-b242690c011e",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        }
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Referenzdaten:Astronomische Referenzwerte/Zeitangabe",
+        "SOURCE-ID": "52b3b83d-77c8-414b-aec6-c43e119e10c7",
+        "SOURCE-MODEL": "Astronomie Referenzdaten",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/enumerations/52b3b83d-77c8-414b-aec6-c43e119e10c7"
+      }
+    },
+    {
+      "elementId": "DOMA32",
+      "name": {
+        "de": "Kalender Einheiten",
+        "en": "Physical unit"
+      },
+      "domainType": "LOVDomain",
+      "categoryId": "CATG6",
+      "description": {
+        "en": "Standardised (SI) physical units"
+      },
+      "values": [
+        {
+          "value": "year",
+          "displayValue": {
+            "de": "Jahr"
+          },
+          "description": {
+            "de": "Kalenderjahr (365, 366 Tage)"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Kalender Einheiten/year",
+            "SOURCE-ID": "0ab16fe1-6e0a-47fa-9f6e-058f90da979f",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "sem",
+          "displayValue": {
+            "de": "Semester"
+          },
+          "description": {
+            "de": "2 Quartale, 6 Monate"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Kalender Einheiten/sem",
+            "SOURCE-ID": "24238e86-50b7-455d-a6f9-8ec99adc4a97",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "min",
+          "displayValue": {
+            "de": "Minute"
+          },
+          "description": {
+            "de": "60 Sekunden"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Kalender Einheiten/min",
+            "SOURCE-ID": "247c0f67-0ecb-4a2a-9bbd-410e2abae9a8",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "week",
+          "displayValue": {
+            "de": "Woche"
+          },
+          "description": {
+            "de": "7 Tage (604800 Sekunden)"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Kalender Einheiten/week",
+            "SOURCE-ID": "323c9f8c-9f0f-4300-9bcd-95a607cbc3f2",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "s",
+          "displayValue": {
+            "de": "Sekunde"
+          },
+          "description": {
+            "de": "Zeitdauer"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Kalender Einheiten/s",
+            "SOURCE-ID": "41c5a641-caf4-48da-b328-65f237327a30",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "day",
+          "displayValue": {
+            "de": "Tag"
+          },
+          "description": {
+            "de": "24 Stunden (24*3600 = 86400 Sekunden)"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Kalender Einheiten/day",
+            "SOURCE-ID": "4a62243e-ea11-4b41-8f58-234c15d6c226",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "mon",
+          "displayValue": {
+            "de": "Monat"
+          },
+          "description": {
+            "de": "Kalendermonat mit 28-31 Tagen"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Kalender Einheiten/mon",
+            "SOURCE-ID": "4e8fe537-4075-4e77-818f-545401c0a5a1",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "hour",
+          "displayValue": {
+            "de": "Stunde"
+          },
+          "description": {
+            "de": "60 * Minuten (3600 Sekunden)"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Kalender Einheiten/hour",
+            "SOURCE-ID": "4f3a13bd-1ed0-4556-8156-424aa149bf5f",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "q",
+          "displayValue": {
+            "de": "Quartal"
+          },
+          "description": {
+            "de": "3 Monate"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Kalender Einheiten/q",
+            "SOURCE-ID": "536471f2-b6ad-4788-98a1-7cb1be82963b",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "ns",
+          "displayValue": {
+            "de": "Nanosekunde"
+          },
+          "description": {
+            "de": "10^-9 s"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Kalender Einheiten/ns",
+            "SOURCE-ID": "b4e5d61a-1da4-42ac-9299-0a23833cfd34",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "ms",
+          "displayValue": {
+            "de": "Millisekunde"
+          },
+          "description": {
+            "de": "1/1000 s"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Kalender Einheiten/ms",
+            "SOURCE-ID": "f9d4b98e-e894-4dcc-9533-da020edfca1e",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        }
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Referenzdaten:Standard Referenzwerte/Kalender Einheiten",
+        "SOURCE-ID": "749e0ad4-44b5-4b3b-816b-43d02b778e89",
+        "SOURCE-MODEL": "Astronomie Referenzdaten",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/enumerations/749e0ad4-44b5-4b3b-816b-43d02b778e89"
+      }
+    },
+    {
+      "elementId": "DOMA33",
+      "name": {
+        "de": "Physikalische Einheit",
+        "en": "Physical unit"
+      },
+      "domainType": "LOVDomain",
+      "categoryId": "CATG6",
+      "description": {
+        "en": "Standardised (SI) physical units"
+      },
+      "values": [
+        {
+          "value": "mol",
+          "displayValue": {
+            "de": "Mol"
+          },
+          "description": {
+            "de": "Stoffmenge"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Physikalische Einheit/mol",
+            "SOURCE-ID": "2103907f-c7b8-4b80-82b5-ee9edc9975af",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "K",
+          "displayValue": {
+            "de": "Kelvin"
+          },
+          "description": {
+            "de": "Temperatur"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Physikalische Einheit/K",
+            "SOURCE-ID": "2314b793-a127-4006-85f7-d3024ad0a6e0",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "kg",
+          "displayValue": {
+            "de": "Kilogramm"
+          },
+          "description": {
+            "de": "Masse"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Physikalische Einheit/kg",
+            "SOURCE-ID": "48474c96-ee65-440c-b830-9bab5253d05b",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "A",
+          "displayValue": {
+            "de": "Ampere"
+          },
+          "description": {
+            "de": "Elektrische Stromst\u00e4rke"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Physikalische Einheit/A",
+            "SOURCE-ID": "70450a54-53b2-4386-8e0d-660561a8fc63",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "t",
+          "displayValue": {
+            "de": "Tonne"
+          },
+          "description": {
+            "de": "1000 kg"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Physikalische Einheit/t",
+            "SOURCE-ID": "9076a044-4818-444b-90b6-80e9e5f0a77a",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "s",
+          "displayValue": {
+            "de": "Sekunde"
+          },
+          "description": {
+            "de": "Zeitdauer"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Physikalische Einheit/s",
+            "SOURCE-ID": "a2dfc4f3-0933-4ffd-af07-453b37c1888f",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "cd",
+          "displayValue": {
+            "de": "Candela"
+          },
+          "description": {
+            "de": "Lichtst\u00e4rke"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Physikalische Einheit/cd",
+            "SOURCE-ID": "da94b558-11f1-47b9-ae98-ca04107a3263",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        },
+        {
+          "value": "m",
+          "displayValue": {
+            "de": "Meter"
+          },
+          "description": {
+            "de": "L\u00e4nge, Distanz"
+          },
+          "additionalProps": {
+            "FULLPATH": "Astronomie Referenzdaten:Physikalische Einheit/m",
+            "SOURCE-ID": "e75115c2-0491-4c78-b3bc-2dad5b39c58c",
+            "SOURCE-MODEL": "Astronomie Referenzdaten"
+          }
+        }
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Referenzdaten:Standard Referenzwerte/Physikalische Einheit",
+        "SOURCE-ID": "0c45b99a-6734-42dc-bbd6-6165d5c16a36",
+        "SOURCE-MODEL": "Astronomie Referenzdaten",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/enumerations/0c45b99a-6734-42dc-bbd6-6165d5c16a36"
+      }
+    }
+  ],
+  "Entities": [
+    {
+      "elementId": "ENTI1",
+      "name": {
+        "de": "Mond",
+        "en": "Planets Moon"
+      },
+      "categoryId": "CATG9",
+      "shortDescr": {
+        "de": "Fester Himmelsk\u00f6rper der um einen Planeten kreist",
+        "en": "Fixed celestial body orbiting a planet"
+      },
+      "examples": [
+        "(Erd-)Mond",
+        "Phobos",
+        "Deimos",
+        "Io",
+        "Europa",
+        "Ganymed",
+        "Triton",
+        "Charon"
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Sternsystem/Grosse Objekte/Mond",
+        "SOURCE-ID": "4b01b20c-0ed4-4aa3-80dd-b1c11eb14a9d",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "favorite": true,
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/classifiers/4b01b20c-0ed4-4aa3-80dd-b1c11eb14a9d"
+      },
+      "keys": [
+        {
+          "name": "key1",
+          "elements": [
+            "RELA8",
+            "RELA16"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "ENTI2",
+      "name": {
+        "de": "Planet"
+      },
+      "categoryId": "CATG9",
+      "shortDescr": {
+        "de": "Fester oder gasf\u00f6rmiger Himmelsk\u00f6rper der um einen Stern kreist",
+        "en": "Solid or gaseous celestial body orbiting a star"
+      },
+      "examples": [
+        "Jupiter",
+        "Mars",
+        "Neptun",
+        "LHS 1140 b",
+        "Proxima Centauri b",
+        "Kepler-186f"
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Sternsystem/Grosse Objekte/Planet",
+        "SOURCE-ID": "82edb111-5467-4e74-902d-ead720f36b82",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "favorite": true,
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/classifiers/82edb111-5467-4e74-902d-ead720f36b82"
+      },
+      "keys": [
+        {
+          "name": "key1",
+          "elements": [
+            "RELA11"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "ENTI3",
+      "name": {
+        "de": "Stern",
+        "en": "Star"
+      },
+      "categoryId": "CATG9",
+      "synonyms": [
+        "astronomisches Objekt",
+        "Sonne"
+      ],
+      "description": {
+        "de": "Massereicher, selbstleuchtender Himmelsk\u00f6rper aus sehr hei\u00dfem Gas und Plasma.\n\n\nHauptreihensterne: Sterne wie unsere Sonne, die Wasserstoff zu Helium fusionieren.\nRote Riesen: Sterne, die ihren Wasserstoffvorrat aufgebraucht haben und sich ausdehnen, w\u00e4hrend sie schwerere Elemente fusionieren.\nWei\u00dfe Zwerge: Die \u00dcberreste von Sternen mit geringer bis mittlerer Masse, die ihren Brennstoff aufgebraucht haben und langsam abk\u00fchlen.\nSupernovae: Massereiche Sterne, die am Ende ihres Lebens in einer gewaltigen Explosion sterben und dabei Neutronensterne oder Schwarze L\u00f6cher hinterlassen k\u00f6nnen.",
+        "en": "Massive, self-luminous celestial body made of very hot gas and plasma.\n\n\nMain sequence stars: Stars like our sun that fuse hydrogen into helium.\nRed giants: Stars that have used up their supply of hydrogen and are expanding as they fuse heavier elements.\nWhite dwarfs: The remnants of low to intermediate mass stars that have used up their fuel and are slowly cooling.\nSupernovae: Massive stars that die in a massive explosion at the end of their lives, leaving behind neutron stars or black holes."
+      },
+      "shortDescr": {
+        "de": "Am Himmel sichtbarer, selbstleuchtender Gasball. (Stern, Sonne)",
+        "en": "Self-luminous ball of gas visible in the sky. (star, sun)"
+      },
+      "examples": [
+        "Sonne",
+        "Polarstern",
+        "Ursae Minoris",
+        "LHS 1140",
+        "Proxima Centauri",
+        "Kepler-186"
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Sternsystem/Grosse Objekte/Stern",
+        "SOURCE-ID": "99386ea7-0e43-469c-b9a4-cdd30b624d6b",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "favorite": true,
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/classifiers/99386ea7-0e43-469c-b9a4-cdd30b624d6b"
+      },
+      "keys": [
+        {
+          "name": "key1",
+          "elements": [
+            "ATTR27"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "ENTI4",
+      "name": {
+        "de": "Zwergplanet",
+        "en": "Dwarf planet"
+      },
+      "categoryId": "CATG9",
+      "description": {
+        "de": "Zwergplaneten sind kleiner als Planeten. Sie sind gross genug, dass sie eine Runde Form (und meist eine Eigenrotation) haben.\nAber nicht gross genug, dass sie ihre Sonnenumlaufbahn von anderen Objektren befreit haben.",
+        "en": "Dwarf planets are smaller than planets. They are large enough to have a round shape (and usually a rotation of their own).\nBut not big enough to have cleared their solar orbit of other objects."
+      },
+      "shortDescr": {
+        "de": "Feste Himmelsk\u00f6rper, kleiner als Planeten",
+        "en": "Solid celestial bodies, smaller than planets"
+      },
+      "examples": [
+        "Pluto",
+        "Eris",
+        "Haumea",
+        "Makemake"
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Sternsystem/Grosse Objekte/Zwergplanet",
+        "SOURCE-ID": "3ef9dd2a-af38-461e-80d1-383b48352cb4",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "favorite": false,
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/classifiers/3ef9dd2a-af38-461e-80d1-383b48352cb4"
+      },
+      "keys": [
+        {
+          "name": "key1",
+          "elements": [
+            "RELA13"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "ENTI5",
+      "name": {
+        "de": "Asteroid",
+        "en": "Asteroid"
+      },
+      "categoryId": "CATG10",
+      "description": {
+        "de": "Asteroiden sind kleine, felsige Objekte, die die Sonne oder einen anderen Asteroiden umkreisen.\n\nSind nicht gross genug dass sie eine Runde Form (und meist auch eine Eigenrotation) haben\n\nAsteroiden k\u00f6nnen Monde haben. \nDiese Monde sind oft kleinere Asteroiden, die den gr\u00f6\u00dferen Asteroiden umkreisen. Solche Systeme werden als bin\u00e4re Asteroiden bezeichnet, wenn ein Asteroid einen Mond hat, oder als tern\u00e4re Systeme, wenn ein Asteroid zwei Monde hat.\n\nIda und Dactyl:\nIda: Ein Asteroid im Asteroideng\u00fcrtel zwischen Mars und Jupiter.\nDactyl: Der Mond von Ida, der 1993 von der Galileo-Sonde entdeckt wurde. Dactyl ist der erste best\u00e4tigte Mond eines Asteroiden.\n\nEugenia und Petit-Prince:\nEugenia: Ein gro\u00dfer Asteroid im Asteroideng\u00fcrtel.\nPetit-Prince: Der gr\u00f6\u00dfere der beiden Monde von Eugenia, der 1998 entdeckt wurde. Eugenia hat auch einen zweiten, kleineren Mond namens S/2004 (45) 1.\n\nSylvia und ihre Monde Romulus und Remus:\nSylvia: Ein gro\u00dfer Asteroid im Asteroideng\u00fcrtel.\nRomulus und Remus: Zwei Monde, die Sylvia umkreisen. Romulus wurde 2001 und Remus 2005 entdeckt.\nDidymos und Dimorphos:",
+        "en": "Asteroids are small, rocky objects that orbit the sun or another asteroid.\n\nThey are not large enough to have a round shape (and usually also a rotation of their own)\n\nAsteroids can have moons.\nThese moons are often smaller asteroids orbiting the larger asteroid. Such systems are called binary asteroids if an asteroid has one moon, or ternary systems if an asteroid has two moons.\n\nIda and Dactyl:\nIda: An asteroid in the asteroid belt between Mars and Jupiter.\nDactyl: The moon of Ida, which was discovered by the Galileo probe in 1993. Dactyl is the first confirmed moon of an asteroid.\n\nEugenia and Petit-Prince:\nEugenia: A large asteroid in the asteroid belt.\nPetit-Prince: The larger of Eugenia's two moons, discovered in 1998. Eugenia also has a second, smaller moon called S/2004 (45) 1.\n\nSylvia and its moons Romulus and Remus:\nSylvia: A large asteroid in the asteroid belt.\nRomulus and Remus: Two moons orbiting Sylvia. Romulus was discovered in 2001 and Remus in 2005.\nDidymos and Dimorphos:"
+      },
+      "examples": [
+        "Ida",
+        "Eugenia",
+        "Sylvia",
+        "Didymos",
+        "Dactyl",
+        "Petit-Prince",
+        "Romulus",
+        "Remus"
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Sternsystem/Kleine Objekte/Asteroid",
+        "SOURCE-ID": "098ee8cb-2225-4724-a625-e85dec5dbfb8",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "favorite": true,
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/classifiers/098ee8cb-2225-4724-a625-e85dec5dbfb8"
+      },
+      "keys": [
+        {
+          "name": "key1",
+          "elements": [
+            "RELA2",
+            "RELA14"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "ENTI6",
+      "name": {
+        "de": "Komet",
+        "en": "Comet"
+      },
+      "categoryId": "CATG10",
+      "description": {
+        "de": "Ein Komet ist ein Himmelsk\u00f6rper, der haupts\u00e4chlich aus Eis, Staub und Gestein besteht. Er stammt meist aus den \u00e4u\u00dferen Bereichen unseres Sonnensystems, zum Beispiel der Oortschen Wolke oder dem Kuiperg\u00fcrtel.\n\n**Merkmale eines Kometen:**\n*Kern*: Der feste, zentrale Teil, meist nur einige Kilometer gro\u00df. Besteht aus Eis (Wasser, CO\u2082, Methan usw.) und Staub \u2013 man spricht oft von einem \u201eschmutzigen Schneeball\u201c.\n\n*Koma*: Wenn ein Komet sich der Sonne n\u00e4hert, erw\u00e4rmen sich die Eisteile, verdampfen, und bilden mit dem ausgesto\u00dfenen Staub eine leuchtende H\u00fclle um den Kern.\n\n*Schweif*: Der Sonnenwind und die Strahlung dr\u00fccken die Koma nach hinten, sodass ein Schweif entsteht, der immer von der Sonne weg zeigt. Es gibt oft zwei Schweife:\nStaubschweif (gebogen)\nIonenschweif (gerade, bl\u00e4ulich)",
+        "en": "A comet is a celestial body that consists mainly of ice, dust and rock. It usually originates from the outer regions of our solar system, for example the Oort cloud or the Kuiper belt.\n\n**Characteristics of a comet:**\n*Nucleus*: The solid, central part, usually only a few kilometres in size. Consists of ice (water, CO\u2082, methane, etc.) and dust - often referred to as a \"dirty snowball\".\n\n*Coma*: When a comet approaches the sun, the icy parts heat up, vaporise and form a luminous shell around the nucleus together with the ejected dust.\n\n*Tail*: The solar wind and radiation push the coma backwards, creating a tail that always points away from the sun. There are often two tails:\nDust tail (curved)\nIon tail (straight, bluish)"
+      },
+      "shortDescr": {
+        "de": "Komet im Sonnensystem",
+        "en": "Comet in the solar system"
+      },
+      "examples": [
+        "Halleyscher Komet",
+        "NEOWISE (2020)",
+        "67P/Churyumov-Gerasimenko"
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Sternsystem/Kleine Objekte/Komet",
+        "SOURCE-ID": "99cb4655-700f-4505-9543-551d421dd8e7",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "favorite": true,
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/classifiers/99cb4655-700f-4505-9543-551d421dd8e7"
+      },
+      "keys": [
+        {
+          "name": "key1",
+          "elements": [
+            "RELA12"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "ENTI7",
+      "name": {
+        "de": "Mission Ziel"
+      },
+      "categoryId": "CATG7",
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Raum Ereignisse/Mission Ziel",
+        "SOURCE-ID": "c59e2a49-ceec-4290-aff4-3c45e5daffd1",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "favorite": null,
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/classifiers/c59e2a49-ceec-4290-aff4-3c45e5daffd1"
+      }
+    },
+    {
+      "elementId": "ENTI8",
+      "name": {
+        "de": "Raumfahrt Mission",
+        "en": "Space mission"
+      },
+      "categoryId": "CATG7",
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Raum Ereignisse/Raumfahrt Mission",
+        "SOURCE-ID": "027d9715-96c4-46bb-bf00-6b88805a2fdd",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "favorite": null,
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/classifiers/027d9715-96c4-46bb-bf00-6b88805a2fdd"
+      }
+    },
+    {
+      "elementId": "ENTI9",
+      "name": {
+        "de": "Raumfahrt Unternehmen",
+        "en": "Space mission"
+      },
+      "categoryId": "CATG7",
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Raum Ereignisse/Raumfahrt Unternehmen",
+        "SOURCE-ID": "369095ed-9da7-4c16-9165-70b6cd7782f1",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "favorite": null,
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/classifiers/369095ed-9da7-4c16-9165-70b6cd7782f1"
+      }
+    },
+    {
+      "elementId": "ENTI10",
+      "name": {
+        "de": "Begleiter",
+        "en": "Companion"
+      },
+      "categoryId": "CATG8",
+      "synonyms": [
+        "https://miro.com/app/board/uXjVMx6gvuQ=/?moveToWidget=3458764661002299935&cot=14"
+      ],
+      "description": {
+        "de": "Himmelsk\u00f6rper, der in einer regelm\u00e4ssigen Umlaufbahn um einen anderen Himmelsk\u00f6per kreist.\nMond um Planet, oder Zwergplanet\nPlanet, Zwergplanet um Sonne\nAsteroid, Komet um Sonne\nAsteroid um Asteroid",
+        "en": "A celestial body orbiting another celestial body in a regular orbit.\nMoon around planet, or dwarf planet\nPlanet, dwarf planet around the sun\nAsteroid, comet around the sun\nAsteroid around asteroid"
+      },
+      "shortDescr": {
+        "de": "Irgend ein Himmelsobjekt, das uns bekannt ist und einen anderes Himmelsobjekt umkreist",
+        "en": "Any celestial object that is known to us and that orbits another celestial object"
+      },
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Sternsystem/Begleiter",
+        "SOURCE-ID": "3482ee88-dc3d-40c9-8df6-4c53802a6e1d",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "favorite": true,
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/classifiers/3482ee88-dc3d-40c9-8df6-4c53802a6e1d"
+      },
+      "keys": [
+        {
+          "name": "key1",
+          "elements": [
+            "ATTR14"
+          ]
+        }
+      ]
+    }
+  ],
+  "Relations": [
+    {
+      "elementId": "RELA1",
+      "relationType": "1:1",
+      "fwd": {
+        "entityId": "ENTI5",
+        "assocText": {
+          "de": "ist"
+        },
+        "cardinality": "1",
+        "mandatory": true
+      },
+      "bwd": {
+        "entityId": "ENTI10",
+        "assocText": null,
+        "cardinality": "1",
+        "mandatory": true
+      },
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Asteroid->ist->Begleiter",
+        "SOURCE-ID": "21400965-216b-49f4-8329-114654a3545e",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/associations/21400965-216b-49f4-8329-114654a3545e"
+      }
+    },
+    {
+      "elementId": "RELA2",
+      "relationType": "M:1",
+      "fwd": {
+        "entityId": "ENTI5",
+        "assocText": {
+          "de": "umkreist von",
+          "en": "orbited by"
+        },
+        "cardinality": "M",
+        "mandatory": false
+      },
+      "bwd": {
+        "entityId": "ENTI5",
+        "assocText": {
+          "de": "umkreist",
+          "en": "orbits"
+        },
+        "cardinality": "1",
+        "mandatory": true,
+        "arcNumber": 1
+      },
+      "examples": [
+        "Remus umkreist Sylvia",
+        "Romulus umkreist Sylvia"
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Asteroid->umkreist von->Asteroid",
+        "SOURCE-ID": "3f115561-2fcf-4176-ac2a-3c7c62355be3",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/associations/3f115561-2fcf-4176-ac2a-3c7c62355be3"
+      }
+    },
+    {
+      "elementId": "RELA3",
+      "relationType": "1:1",
+      "fwd": {
+        "entityId": "ENTI6",
+        "assocText": {
+          "de": "ist"
+        },
+        "cardinality": "1",
+        "mandatory": true
+      },
+      "bwd": {
+        "entityId": "ENTI10",
+        "assocText": null,
+        "cardinality": "1",
+        "mandatory": true
+      },
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Komet->ist->Begleiter",
+        "SOURCE-ID": "66818cbf-cba4-4ed0-b36b-410901149d17",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/associations/66818cbf-cba4-4ed0-b36b-410901149d17"
+      }
+    },
+    {
+      "elementId": "RELA4",
+      "relationType": "M:1",
+      "fwd": {
+        "entityId": "ENTI7",
+        "assocText": {
+          "de": "ist"
+        },
+        "cardinality": "1",
+        "mandatory": true,
+        "arcNumber": 1
+      },
+      "bwd": {
+        "entityId": "ENTI3",
+        "assocText": {
+          "de": "dient als"
+        },
+        "cardinality": "M",
+        "mandatory": false
+      },
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Mission Ziel->ist->Stern",
+        "SOURCE-ID": "06b892fa-ddd8-4a19-a59d-f36a334cc943",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/associations/06b892fa-ddd8-4a19-a59d-f36a334cc943"
+      }
+    },
+    {
+      "elementId": "RELA5",
+      "relationType": "M:1",
+      "fwd": {
+        "entityId": "ENTI7",
+        "assocText": {
+          "de": "ist"
+        },
+        "cardinality": "1",
+        "mandatory": true,
+        "arcNumber": 1
+      },
+      "bwd": {
+        "entityId": "ENTI10",
+        "assocText": {
+          "de": "dient als"
+        },
+        "cardinality": "M",
+        "mandatory": false
+      },
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Mission Ziel->ist->Begleiter",
+        "SOURCE-ID": "755de6b5-d945-4b7e-9940-d409c19bde02",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/associations/755de6b5-d945-4b7e-9940-d409c19bde02"
+      }
+    },
+    {
+      "elementId": "RELA6",
+      "relationType": "M:N",
+      "fwd": {
+        "entityId": "ENTI7",
+        "assocText": {
+          "de": "geplant f\u00fcr"
+        },
+        "cardinality": "M",
+        "mandatory": false
+      },
+      "bwd": {
+        "entityId": "ENTI8",
+        "assocText": {
+          "de": "ber\u00fccksichtigt in"
+        },
+        "cardinality": "M",
+        "mandatory": false
+      },
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Mission Ziel->geplant f\u00fcr->Raumfahrt Mission",
+        "SOURCE-ID": "b38f64b2-1887-4499-a477-75fd60b02581",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/associations/b38f64b2-1887-4499-a477-75fd60b02581"
+      }
+    },
+    {
+      "elementId": "RELA7",
+      "relationType": "1:1",
+      "fwd": {
+        "entityId": "ENTI1",
+        "assocText": {
+          "de": "ist"
+        },
+        "cardinality": "1",
+        "mandatory": true
+      },
+      "bwd": {
+        "entityId": "ENTI10",
+        "assocText": null,
+        "cardinality": "1",
+        "mandatory": true
+      },
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Mond->ist->Begleiter",
+        "SOURCE-ID": "07c95c40-08c6-42b9-825d-54ebd9d0babf",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/associations/07c95c40-08c6-42b9-825d-54ebd9d0babf"
+      }
+    },
+    {
+      "elementId": "RELA8",
+      "relationType": "M:1",
+      "fwd": {
+        "entityId": "ENTI2",
+        "assocText": {
+          "de": "umkreist von",
+          "en": "orbited by"
+        },
+        "cardinality": "M",
+        "mandatory": false
+      },
+      "bwd": {
+        "entityId": "ENTI1",
+        "assocText": {
+          "de": "umkreist",
+          "en": "orbits"
+        },
+        "cardinality": "1",
+        "mandatory": false,
+        "arcNumber": 1
+      },
+      "examples": [
+        "Triton umkreisst Neptun",
+        "Io umkreist Jupiter",
+        "Europa umkreist Jupiter",
+        "(Erd-)Mond umkreist Erde"
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Planet->umkreist von->Mond",
+        "SOURCE-ID": "2047ad47-11a7-436d-b1cf-54f7c9bfa77e",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/associations/2047ad47-11a7-436d-b1cf-54f7c9bfa77e"
+      }
+    },
+    {
+      "elementId": "RELA9",
+      "relationType": "1:1",
+      "fwd": {
+        "entityId": "ENTI2",
+        "assocText": {
+          "de": "ist"
+        },
+        "cardinality": "1",
+        "mandatory": true
+      },
+      "bwd": {
+        "entityId": "ENTI10",
+        "assocText": null,
+        "cardinality": "1",
+        "mandatory": true
+      },
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Planet->ist->Begleiter",
+        "SOURCE-ID": "7116ba4c-e13d-4503-92b4-84005ffbb239",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/associations/7116ba4c-e13d-4503-92b4-84005ffbb239"
+      }
+    },
+    {
+      "elementId": "RELA10",
+      "relationType": "M:N",
+      "fwd": {
+        "entityId": "ENTI8",
+        "assocText": {
+          "de": "durchgef\u00fchrt von"
+        },
+        "cardinality": "M",
+        "mandatory": true
+      },
+      "bwd": {
+        "entityId": "ENTI9",
+        "assocText": {
+          "de": "f\u00fchrt durch"
+        },
+        "cardinality": "M",
+        "mandatory": false
+      },
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Raumfahrt Mission->durchgef\u00fchrt von->Raumfahrt Unternehmen",
+        "SOURCE-ID": "c5e652b8-92f1-41b7-a366-6e82d9288902",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/associations/c5e652b8-92f1-41b7-a366-6e82d9288902"
+      }
+    },
+    {
+      "elementId": "RELA11",
+      "relationType": "M:1",
+      "fwd": {
+        "entityId": "ENTI3",
+        "assocText": {
+          "de": "umkreist von",
+          "en": "orbited by"
+        },
+        "cardinality": "M",
+        "mandatory": false
+      },
+      "bwd": {
+        "entityId": "ENTI2",
+        "assocText": {
+          "de": "umkreist",
+          "en": "orbits"
+        },
+        "cardinality": "1",
+        "mandatory": true
+      },
+      "examples": [
+        "Erde umkreist Sonne",
+        "Jupiter umrkeist Sonne",
+        "LHS 1140 b umkreist LHS 1140",
+        "Proxima Centauri b umkreist Proxima Centauri"
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Stern->umkreist von->Planet",
+        "SOURCE-ID": "7ca53501-4770-43cf-85bc-13f7ffed1596",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/associations/7ca53501-4770-43cf-85bc-13f7ffed1596"
+      }
+    },
+    {
+      "elementId": "RELA12",
+      "relationType": "M:1",
+      "fwd": {
+        "entityId": "ENTI3",
+        "assocText": {
+          "de": "umkreist von",
+          "en": "orbited by"
+        },
+        "cardinality": "M",
+        "mandatory": false
+      },
+      "bwd": {
+        "entityId": "ENTI6",
+        "assocText": {
+          "de": "umkreist",
+          "en": "orbits"
+        },
+        "cardinality": "1",
+        "mandatory": true
+      },
+      "examples": [
+        "Halleyscher Komet umkreist Sonne"
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Stern->umkreist von->Komet",
+        "SOURCE-ID": "a4853032-ccc0-4422-bd3f-674e753d92dd",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/associations/a4853032-ccc0-4422-bd3f-674e753d92dd"
+      }
+    },
+    {
+      "elementId": "RELA13",
+      "relationType": "M:1",
+      "fwd": {
+        "entityId": "ENTI3",
+        "assocText": {
+          "de": "umkreist von",
+          "en": "orbited by"
+        },
+        "cardinality": "M",
+        "mandatory": false
+      },
+      "bwd": {
+        "entityId": "ENTI4",
+        "assocText": {
+          "de": "umkreist",
+          "en": "orbits"
+        },
+        "cardinality": "1",
+        "mandatory": true
+      },
+      "examples": [
+        "Pluto umkreist Sonne"
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Stern->umkreist von->Zwergplanet",
+        "SOURCE-ID": "d609a722-c8e4-443c-8b06-91c0cb5ce6f4",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/associations/d609a722-c8e4-443c-8b06-91c0cb5ce6f4"
+      }
+    },
+    {
+      "elementId": "RELA14",
+      "relationType": "M:1",
+      "fwd": {
+        "entityId": "ENTI3",
+        "assocText": {
+          "de": "umkreist von",
+          "en": "orbited by"
+        },
+        "cardinality": "M",
+        "mandatory": false
+      },
+      "bwd": {
+        "entityId": "ENTI5",
+        "assocText": {
+          "de": "umkreist",
+          "en": "orbits"
+        },
+        "cardinality": "1",
+        "mandatory": true,
+        "arcNumber": 1
+      },
+      "examples": [
+        "Ida umkreist Sonne",
+        "Eugenia umkreist Sonne"
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Stern->umkreist von->Asteroid",
+        "SOURCE-ID": "fed15b68-b426-45d0-b6a8-c95dd88adb7b",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/associations/fed15b68-b426-45d0-b6a8-c95dd88adb7b"
+      }
+    },
+    {
+      "elementId": "RELA15",
+      "relationType": "1:1",
+      "fwd": {
+        "entityId": "ENTI4",
+        "assocText": {
+          "de": "ist"
+        },
+        "cardinality": "1",
+        "mandatory": true
+      },
+      "bwd": {
+        "entityId": "ENTI10",
+        "assocText": null,
+        "cardinality": "1",
+        "mandatory": true
+      },
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Zwergplanet->ist->Begleiter",
+        "SOURCE-ID": "daf9476e-54ee-46e4-b070-e18ad99f345c",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/associations/daf9476e-54ee-46e4-b070-e18ad99f345c"
+      }
+    },
+    {
+      "elementId": "RELA16",
+      "relationType": "M:1",
+      "fwd": {
+        "entityId": "ENTI4",
+        "assocText": {
+          "de": "umkreist von",
+          "en": "orbited by"
+        },
+        "cardinality": "M",
+        "mandatory": false
+      },
+      "bwd": {
+        "entityId": "ENTI1",
+        "assocText": {
+          "de": "umkreist",
+          "en": "orbits"
+        },
+        "cardinality": "1",
+        "mandatory": false,
+        "arcNumber": 1
+      },
+      "examples": [
+        "Charon umkreist Pluto"
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Zwergplanet->umkreist von->Mond",
+        "SOURCE-ID": "e8855922-2a79-45f9-88aa-2e1122f9a9e7",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/associations/e8855922-2a79-45f9-88aa-2e1122f9a9e7"
+      }
+    }
+  ],
+  "Attributes": [
+    {
+      "elementId": "ATTR10",
+      "name": {
+        "de": "Aphel",
+        "en": "Aphel"
+      },
+      "mandatory": false,
+      "parentId": "ENTI10",
+      "domainId": "DOMA5",
+      "displaySeq": 7,
+      "description": {
+        "de": "Der am weitesten enfernte Punkt einer Umlaufbahn eines Begleiters um sein Mutterobjekt\n\nDie H\u00e4lfte des l\u00e4nsten Durchmessers einer Ellipse",
+        "en": "The furthest point of a companion's orbit around its parent object\n\nHalf of the longest diameter of an ellipse"
+      },
+      "shortDescr": {
+        "de": "Der enternteste Punkt der Umlaufbahn eines Begleiters",
+        "en": "The innermost point of a companion's orbit"
+      },
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Begleiter/Aphel",
+        "SOURCE-ID": "8098edc1-15c8-408f-967a-b78425d125f4",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/8098edc1-15c8-408f-967a-b78425d125f4"
+      }
+    },
+    {
+      "elementId": "ATTR11",
+      "name": {
+        "de": "Durchmesser",
+        "en": "Diameter"
+      },
+      "mandatory": false,
+      "parentId": "ENTI10",
+      "domainId": "DOMA2",
+      "displaySeq": 2,
+      "description": {
+        "de": "Der Durchmesser kann in 3 Werten angegeben werden. (Pol-, \u00c4quator- und mittlerer Durchmesser)",
+        "en": "The diameter can be specified in 3 values. (polar, equatorial and mean diameter)"
+      },
+      "shortDescr": {
+        "de": "Durchmesser der Kugel eines grossen Objektes",
+        "en": "Diameter of the sphere of a large object"
+      },
+      "examples": [
+        "6112 km"
+      ],
+      "descriptive": true,
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Begleiter/Durchmesser",
+        "SOURCE-ID": "6918f1cf-d0bf-4fbd-a266-dc7d2d79b2a0",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/6918f1cf-d0bf-4fbd-a266-dc7d2d79b2a0"
+      }
+    },
+    {
+      "elementId": "ATTR12",
+      "name": {
+        "de": "Entdeckungsjahr",
+        "en": "Discovery year"
+      },
+      "mandatory": false,
+      "parentId": "ENTI10",
+      "domainId": "DOMA3",
+      "displaySeq": 3,
+      "description": {
+        "de": "Jahr, in dem dieser Begleiter entdeckt wurde.",
+        "en": "Year in which this companion was discovered."
+      },
+      "examples": [
+        "1752",
+        "512 vuz",
+        "2009"
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Begleiter/Entdeckungsjahr",
+        "SOURCE-ID": "92e83a24-4da0-4652-a4df-1d3db3bda02b",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/92e83a24-4da0-4652-a4df-1d3db3bda02b"
+      }
+    },
+    {
+      "elementId": "ATTR13",
+      "name": {
+        "de": "mittlerer Abstand",
+        "en": "Average distance"
+      },
+      "mandatory": false,
+      "parentId": "ENTI10",
+      "domainId": "DOMA5",
+      "displaySeq": 5,
+      "description": {
+        "de": "Mittlerer Abstand des Himmelsk\u00f6rpers vom Mutterobjekt. W\u00e4re der Kreisradius, wenn die Umlaufbahn kreisf\u00f6rmig w\u00e4re.",
+        "en": "Mean distance of the celestial body from the parent object. Would be the circle radius if the orbit were circular."
+      },
+      "examples": [
+        "1 AE",
+        "150Mio km",
+        "386000 km"
+      ],
+      "descriptive": true,
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Begleiter/mittlerer Abstand",
+        "SOURCE-ID": "319e4035-9bb4-463a-b89a-64aa0f9ccdb3",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/319e4035-9bb4-463a-b89a-64aa0f9ccdb3"
+      }
+    },
+    {
+      "elementId": "ATTR14",
+      "name": {
+        "de": "Name"
+      },
+      "mandatory": false,
+      "parentId": "ENTI10",
+      "domainId": "DOMA24",
+      "displaySeq": 1,
+      "examples": [
+        "(Erd-)Mond",
+        "Phobos",
+        "Deimos",
+        "Io",
+        "Europa",
+        "Ganymed",
+        "Triton",
+        "LHS 1140 b",
+        "Proxima Centauri b",
+        "Kepler-186f"
+      ],
+      "descriptive": true,
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Begleiter/Name",
+        "SOURCE-ID": "15eb4bae-1dfb-49b4-b2f0-ea1462a9998e",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/15eb4bae-1dfb-49b4-b2f0-ea1462a9998e"
+      }
+    },
+    {
+      "elementId": "ATTR15",
+      "name": {
+        "de": "Periphel",
+        "en": "Periphel"
+      },
+      "mandatory": false,
+      "parentId": "ENTI10",
+      "domainId": "DOMA5",
+      "displaySeq": 6,
+      "description": {
+        "de": "Der n\u00e4chste Punkt der Umlaufbahn eines Begleiters um sein Mutterobjekt.\n\nDie kleine Halbachse der Ellipse",
+        "en": "The closest point of a companion's orbit around its parent object.\n\nThe minor semi-axis of the ellipse"
+      },
+      "shortDescr": {
+        "de": "Der am n\u00e4chsten liegende Punkt der Umlaufbahn eines Begleiters",
+        "en": "The closest point of a companion's orbit"
+      },
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Begleiter/Periphel",
+        "SOURCE-ID": "d53fdfea-e80f-4bda-8663-56c889e8091e",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/d53fdfea-e80f-4bda-8663-56c889e8091e"
+      }
+    },
+    {
+      "elementId": "ATTR16",
+      "name": {
+        "de": "Umlaufdauer",
+        "en": "Cycle time"
+      },
+      "mandatory": false,
+      "parentId": "ENTI10",
+      "domainId": "DOMA6",
+      "displaySeq": 4,
+      "description": {
+        "de": "Zeit die ein Begleiter braucht um das Mutterobjekt zu umkreisen. (Wert + Zeiteinheit)",
+        "en": "Time a companion needs to orbit the parent object. (value + time unit)"
+      },
+      "examples": [
+        "1 Jahr",
+        "23 Tage",
+        "3.1 Stunden"
+      ],
+      "descriptive": true,
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Begleiter/Umlaufdauer",
+        "SOURCE-ID": "49b5f6a4-d155-450a-a990-4616e5ffece9",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/49b5f6a4-d155-450a-a990-4616e5ffece9"
+      }
+    },
+    {
+      "elementId": "ATTR17",
+      "name": {
+        "de": "Besuchsjahr"
+      },
+      "mandatory": false,
+      "parentId": "ENTI7",
+      "domainId": "DOMA3",
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Mission Ziel/Besuchsjahr",
+        "SOURCE-ID": "96b5f6e1-b4e6-42e7-983e-e8bdae6fa3b5",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/96b5f6e1-b4e6-42e7-983e-e8bdae6fa3b5"
+      }
+    },
+    {
+      "elementId": "ATTR18",
+      "name": {
+        "de": "Missionstyp"
+      },
+      "mandatory": true,
+      "parentId": "ENTI7",
+      "domainId": "DOMA29",
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Mission Ziel/Missionstyp",
+        "SOURCE-ID": "f87d6eb3-7998-439a-bcf2-908382b9d587",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/f87d6eb3-7998-439a-bcf2-908382b9d587"
+      }
+    },
+    {
+      "elementId": "ATTR19",
+      "name": {
+        "de": "Status"
+      },
+      "mandatory": false,
+      "parentId": "ENTI7",
+      "domainId": "DOMA28",
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Mission Ziel/Status",
+        "SOURCE-ID": "ea9eb4a3-7cba-4bc7-92d7-ee697f2776bb",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/ea9eb4a3-7cba-4bc7-92d7-ee697f2776bb"
+      }
+    },
+    {
+      "elementId": "ATTR20",
+      "name": {
+        "de": "Oberfl\u00e4chentyp",
+        "en": "Surface type"
+      },
+      "mandatory": false,
+      "parentId": "ENTI2",
+      "domainId": "DOMA30",
+      "description": {
+        "de": "Material, das die \u00e4usserste Schicht des Himmelsk\u00f6pers bildet.",
+        "en": "Material that forms the outermost layer of the celestial body."
+      },
+      "shortDescr": {
+        "de": "Zustandsform der Oberfl\u00e4che",
+        "en": "State form of the surface"
+      },
+      "examples": [
+        "Feststoff",
+        "Gas",
+        "Eis"
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Planet/Oberfl\u00e4chentyp",
+        "SOURCE-ID": "ccd57081-32a1-4d2f-969b-823bbc226fa6",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/ccd57081-32a1-4d2f-969b-823bbc226fa6"
+      }
+    },
+    {
+      "elementId": "ATTR21",
+      "name": {
+        "de": "Rotationsdauer"
+      },
+      "mandatory": false,
+      "parentId": "ENTI2",
+      "domainId": "DOMA4",
+      "shortDescr": {
+        "de": "Dauer der Rotation um die eigene Achse"
+      },
+      "examples": [
+        "1 Tag",
+        ".123 Tag",
+        "245.5 Tag"
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Planet/Rotationsdauer",
+        "SOURCE-ID": "3a371e44-fc49-4329-a1d1-fe220d53f164",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/3a371e44-fc49-4329-a1d1-fe220d53f164"
+      }
+    },
+    {
+      "elementId": "ATTR22",
+      "name": {
+        "de": "Bezeichnung"
+      },
+      "mandatory": false,
+      "parentId": "ENTI8",
+      "domainId": "DOMA24",
+      "displaySeq": 1,
+      "description": {
+        "de": "JUICE (ESA): Seit 2023 unterwegs, um speziell die Eismonde Ganymed und Kallisto zu untersuchen."
+      },
+      "examples": [
+        "JUICE",
+        "Apollo-11"
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Raumfahrt Mission/Bezeichnung",
+        "SOURCE-ID": "1d9ce275-3b2f-4697-bac3-90d08d092ffa",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/1d9ce275-3b2f-4697-bac3-90d08d092ffa"
+      }
+    },
+    {
+      "elementId": "ATTR23",
+      "name": {
+        "de": "Endedatum"
+      },
+      "mandatory": false,
+      "parentId": "ENTI8",
+      "domainId": "DOMA8",
+      "displaySeq": 3,
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Raumfahrt Mission/Endedatum",
+        "SOURCE-ID": "e6b1614a-6c55-4e61-a29d-f2f04e15acf2",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/e6b1614a-6c55-4e61-a29d-f2f04e15acf2"
+      }
+    },
+    {
+      "elementId": "ATTR24",
+      "name": {
+        "de": "Startdatum"
+      },
+      "mandatory": false,
+      "parentId": "ENTI8",
+      "domainId": "DOMA8",
+      "displaySeq": 2,
+      "examples": [
+        "14. April 2023",
+        "16. Juli 1969"
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Raumfahrt Mission/Startdatum",
+        "SOURCE-ID": "c9417dbe-12eb-421f-b38a-fd6fc120c516",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/c9417dbe-12eb-421f-b38a-fd6fc120c516"
+      }
+    },
+    {
+      "elementId": "ATTR25",
+      "name": {
+        "de": "Status"
+      },
+      "mandatory": false,
+      "parentId": "ENTI8",
+      "domainId": "DOMA28",
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Raumfahrt Mission/Status",
+        "SOURCE-ID": "ceae0d0a-069b-40ea-887e-3a4a08feda29",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/ceae0d0a-069b-40ea-887e-3a4a08feda29"
+      }
+    },
+    {
+      "elementId": "ATTR26",
+      "name": {
+        "de": "Name"
+      },
+      "mandatory": false,
+      "parentId": "ENTI9",
+      "domainId": "DOMA24",
+      "examples": [
+        "ESA",
+        "NASA"
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Raumfahrt Unternehmen/Name",
+        "SOURCE-ID": "aaef4fde-6786-4067-b356-a7a7ca042660",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/aaef4fde-6786-4067-b356-a7a7ca042660"
+      }
+    },
+    {
+      "elementId": "ATTR27",
+      "name": {
+        "de": "Bezeichnung",
+        "en": "Designation"
+      },
+      "mandatory": false,
+      "parentId": "ENTI3",
+      "domainId": "DOMA24",
+      "displaySeq": 1,
+      "description": {
+        "de": "Bezeichnung gem\u00e4ss Henry-Draper-Katalog (HD-Katalog)",
+        "en": "Designation according to the Henry Draper Catalogue (HD Catalogue)"
+      },
+      "shortDescr": {
+        "de": "Bezeichnung des Sterns im Katalog",
+        "en": "Name of the star in the catalogue"
+      },
+      "examples": [
+        "HD 209458"
+      ],
+      "descriptive": true,
+      "repeated": true,
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Stern/Bezeichnung",
+        "SOURCE-ID": "291ce2e3-5fad-4da0-a911-caca7fea27e4",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/291ce2e3-5fad-4da0-a911-caca7fea27e4"
+      }
+    },
+    {
+      "elementId": "ATTR28",
+      "name": {
+        "de": "Durchmesser",
+        "en": "Diameter"
+      },
+      "mandatory": false,
+      "parentId": "ENTI3",
+      "domainId": "DOMA2",
+      "displaySeq": 5,
+      "description": {
+        "de": "Der Durchmesser kann in 3 Werten angegeben werden. (Pol-, \u00c4quator- und mittlerer Durchmesser)",
+        "en": "The diameter can be specified in 3 values. (polar, equatorial and mean diameter)"
+      },
+      "shortDescr": {
+        "de": "Durchmesser eines Sterns",
+        "en": "Diameter of the star"
+      },
+      "examples": [
+        "3000 km",
+        "15000 km",
+        "12412 - 12472 km"
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Stern/Durchmesser",
+        "SOURCE-ID": "7a67efcc-5c07-4caa-901e-7931b1a96939",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/7a67efcc-5c07-4caa-901e-7931b1a96939"
+      }
+    },
+    {
+      "elementId": "ATTR29",
+      "name": {
+        "de": "Entdeckungsjahr",
+        "en": "Discovery year"
+      },
+      "mandatory": false,
+      "parentId": "ENTI3",
+      "domainId": "DOMA3",
+      "displaySeq": 6,
+      "description": {
+        "de": "Jahr, in dem dieser Stern entdeckt wurde.",
+        "en": "Year in which this star was discovered."
+      },
+      "examples": [
+        "1752",
+        "512 vuz",
+        "2009"
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Stern/Entdeckungsjahr",
+        "SOURCE-ID": "2c577d91-0b75-4a64-bac0-cfe57d4e8394",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/2c577d91-0b75-4a64-bac0-cfe57d4e8394"
+      }
+    },
+    {
+      "elementId": "ATTR30",
+      "name": {
+        "de": "Entfernung",
+        "en": "Distance"
+      },
+      "mandatory": false,
+      "parentId": "ENTI3",
+      "domainId": "DOMA1",
+      "displaySeq": 4,
+      "description": {
+        "de": "Distanz in Lichtjahren",
+        "en": "distance in lightyears"
+      },
+      "shortDescr": {
+        "de": "Distanz eines Sterns von unserer Sonne",
+        "en": "Distance of star from our sun"
+      },
+      "examples": [
+        "1.3 Mio LJ",
+        "365 lj"
+      ],
+      "descriptive": true,
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Stern/Entfernung",
+        "SOURCE-ID": "55819bad-88c6-4fbf-9813-91a304afe954",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/55819bad-88c6-4fbf-9813-91a304afe954"
+      }
+    },
+    {
+      "elementId": "ATTR31",
+      "name": {
+        "de": "Leuchtklasse",
+        "en": "Luminosity class"
+      },
+      "mandatory": false,
+      "parentId": "ENTI3",
+      "domainId": "DOMA27",
+      "displaySeq": 3,
+      "description": {
+        "de": "Die\u00a0Leuchtkraftklasse\u00a0eines Sterns ist durch Eigenschaften bestimmt, die von seiner\u00a0Leuchtkraft\u00a0abh\u00e4ngen; dies sind insbesondere die\u00a0Breite\u00a0und die St\u00e4rke (H\u00f6he) der\u00a0Spektrallinien. So haben Riesensterne eine geringere\u00a0Schwerebeschleunigung\u00a0in ihrer\u00a0Photosph\u00e4re\u00a0als Zwergsterne gleicher Temperatur, was eine geringere\u00a0Druckverbreiterung\u00a0der Linien bewirkt, wogegen die\u00a0Spektralklasse\u00a0Eigenschaften ber\u00fccksichtigt, die prim\u00e4r von seiner Oberfl\u00e4chentemperatur abh\u00e4ngen.\n\nQuelle: https://de.wikipedia.org/wiki/Klassifizierung_der_Sterne#Leuchtkraftklassen_(Entwicklungszustand)",
+        "en": "The luminosity class of a star is determined by properties that depend on its luminosity; these are in particular the width and strength (height) of the spectral lines. For example, giant stars have a lower gravitational acceleration in their photosphere than dwarf stars of the same temperature, which results in a lower pressure broadening of the lines, whereas the spectral class takes into account properties that primarily depend on its surface temperature.\n\nSource: https://de.wikipedia.org/wiki/Klassifizierung_der_Sterne#Leuchtkraftklassen_(evolutionary state)"
+      },
+      "shortDescr": {
+        "de": "Leuchtkraftklasse"
+      },
+      "examples": [
+        "I",
+        "V",
+        "III",
+        "D"
+      ],
+      "descriptive": true,
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Stern/Leuchtklasse",
+        "SOURCE-ID": "1bf9d355-e578-47e9-ac28-0c81c7ffc26a",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/1bf9d355-e578-47e9-ac28-0c81c7ffc26a"
+      }
+    },
+    {
+      "elementId": "ATTR32",
+      "name": {
+        "de": "Name",
+        "en": "Eigenname eines Sterns"
+      },
+      "mandatory": true,
+      "parentId": "ENTI3",
+      "domainId": "DOMA24",
+      "displaySeq": 2,
+      "description": {
+        "de": "ca 500 Sterne haben eigene Namen, vergeben durch die Internationale Astronomische Union (IAU)",
+        "en": "Name, designation of the star according to the directory of the International Astronomical Union (IAU)\n\nSome 500 stars have a proper name"
+      },
+      "shortDescr": {
+        "de": "Eigenname eines Sterns",
+        "en": "Proper name of planet"
+      },
+      "examples": [
+        "Alpha Centauri",
+        "Beta Orionis",
+        "Sol"
+      ],
+      "descriptive": false,
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Stern/Name",
+        "SOURCE-ID": "9960dcf4-cd15-4cce-8a9d-330a53b442df",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/9960dcf4-cd15-4cce-8a9d-330a53b442df"
+      }
+    },
+    {
+      "elementId": "ATTR33",
+      "name": {
+        "de": "Oberfl\u00e4chentyp",
+        "en": "Dwarf planet"
+      },
+      "mandatory": false,
+      "parentId": "ENTI4",
+      "domainId": "DOMA30",
+      "description": {
+        "de": "Material, das die \u00e4usserste Schicht des Himmelsk\u00f6pers bildet.",
+        "en": "Material that forms the outermost layer of the celestial body."
+      },
+      "shortDescr": {
+        "de": "Zustandsform der Oberfl\u00e4che",
+        "en": "State form of the surface"
+      },
+      "examples": [
+        "Feststoff",
+        "Gas",
+        "Eis"
+      ],
+      "additionalProps": {
+        "FULLPATH": "Astronomie Informationsmodell:Zwergplanet/Oberfl\u00e4chentyp",
+        "SOURCE-ID": "f84c3712-2a05-4db2-85b4-ca22a30553a6",
+        "SOURCE-MODEL": "Astronomie Informationsmodell",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/f84c3712-2a05-4db2-85b4-ca22a30553a6"
+      }
+    },
+    {
+      "elementId": "ATTR1",
+      "name": {
+        "de": "Einheit",
+        "en": "Unit"
+      },
+      "mandatory": true,
+      "parentId": "DOMA19",
+      "domainId": "DOMA33",
+      "displaySeq": 2,
+      "shortDescr": {
+        "de": "Physikalische Einheit",
+        "en": "physical unit"
+      },
+      "additionalProps": {
+        "FULLPATH": "Astronomie Wertebereiche:Einheitsmenge/Einheit",
+        "SOURCE-ID": "a2cb2474-23ba-4b64-9968-15bec08c1177",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/a2cb2474-23ba-4b64-9968-15bec08c1177"
+      }
+    },
+    {
+      "elementId": "ATTR2",
+      "name": {
+        "de": "Menge",
+        "en": "Quantity"
+      },
+      "mandatory": true,
+      "parentId": "DOMA19",
+      "domainId": "DOMA21",
+      "displaySeq": 1,
+      "shortDescr": {
+        "de": "Anzahl der Einheiten",
+        "en": "Number of units"
+      },
+      "additionalProps": {
+        "FULLPATH": "Astronomie Wertebereiche:Einheitsmenge/Menge",
+        "SOURCE-ID": "9cc30a84-d4dd-45db-91fb-bc07b38eb6ee",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/9cc30a84-d4dd-45db-91fb-bc07b38eb6ee"
+      }
+    },
+    {
+      "elementId": "ATTR3",
+      "name": {
+        "de": "\u00c4quatordurchmesser",
+        "en": "Equator diameter"
+      },
+      "mandatory": false,
+      "parentId": "DOMA2",
+      "domainId": "DOMA15",
+      "displaySeq": 3,
+      "description": {
+        "de": "Typischerweise der l\u00e4ngste Durchmesser.\nWegen der Rotation sind kugelf\u00f6rmige Himmelsk\u00f6per am \u00c4quator *ausgebeult*",
+        "en": "Typically the longest diameter.\nDue to rotation, spherical celestial bodies are *dent out* at the equator"
+      },
+      "shortDescr": {
+        "de": "Durchmesser 90\u00ba zur Rotationsaches",
+        "en": "Diameter 90\u00ba to the axis of rotation"
+      },
+      "additionalProps": {
+        "FULLPATH": "Astronomie Wertebereiche:Himmelsk\u00f6rper Durchmesser/\u00c4quatordurchmesser",
+        "SOURCE-ID": "94f54d19-b40d-4b99-959d-d5f8a9655446",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/94f54d19-b40d-4b99-959d-d5f8a9655446"
+      }
+    },
+    {
+      "elementId": "ATTR4",
+      "name": {
+        "de": "Mittlerer Durchmesser",
+        "en": "Average diameter"
+      },
+      "mandatory": true,
+      "parentId": "DOMA2",
+      "domainId": "DOMA15",
+      "displaySeq": 1,
+      "description": {
+        "de": "Der Durchmesser, den man bei nicht sehr genauen angaben oder einfachen astronomischen / pyhsikalischen Berechnungen verwendet",
+        "en": "The diameter used for not very precise specifications or simple astronomical / physical calculations"
+      },
+      "shortDescr": {
+        "de": "Mittlerer Durchmesser einer idealen Kugel",
+        "en": "Average diameter of an ideal sphere"
+      },
+      "additionalProps": {
+        "FULLPATH": "Astronomie Wertebereiche:Himmelsk\u00f6rper Durchmesser/Mittlerer Durchmesser",
+        "SOURCE-ID": "99e6ffee-f0d1-471f-8e5c-134bfb3dab4e",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/99e6ffee-f0d1-471f-8e5c-134bfb3dab4e"
+      }
+    },
+    {
+      "elementId": "ATTR5",
+      "name": {
+        "de": "Poldurchmesser",
+        "en": "Pole diameter"
+      },
+      "mandatory": false,
+      "parentId": "DOMA2",
+      "domainId": "DOMA15",
+      "displaySeq": 2,
+      "description": {
+        "de": "Typischerweise der kleinste Durchmesser.\nWegen der Rotation sind kugelf\u00f6rmige Himmelsk\u00f6per am \u00c4quator *ausgebeult*",
+        "en": "Typically the smallest diameter.\nDue to rotation, spherical celestial bodies are *dent out* at the equator"
+      },
+      "shortDescr": {
+        "de": "Durchmesser entlang der Rotationsachse",
+        "en": "Diameter along the axis of rotation"
+      },
+      "additionalProps": {
+        "FULLPATH": "Astronomie Wertebereiche:Himmelsk\u00f6rper Durchmesser/Poldurchmesser",
+        "SOURCE-ID": "805e0369-8e6d-44a6-83da-c8656662b8b0",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/805e0369-8e6d-44a6-83da-c8656662b8b0"
+      }
+    },
+    {
+      "elementId": "ATTR6",
+      "name": {
+        "de": "Vertrauensintervall",
+        "en": "Confidence interval"
+      },
+      "mandatory": false,
+      "parentId": "DOMA22",
+      "domainId": "DOMA25",
+      "displaySeq": 5,
+      "description": {
+        "de": "Bereich (als Prozent des Messwertes) um den der gemessene Wert nach oben oder unten abweichen kann.",
+        "en": "Range (as a percentage of the measured value) by which the measured value can deviate upwards or downwards."
+      },
+      "shortDescr": {
+        "de": "vermutete relative/r Abweichung / Fehlerbereich",
+        "en": "Presumed relative deviation / error range"
+      },
+      "additionalProps": {
+        "FULLPATH": "Astronomie Wertebereiche:Messwert/Vertrauensintervall",
+        "SOURCE-ID": "ca860616-cd26-4970-a097-5ea25fcc1c5c",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/ca860616-cd26-4970-a097-5ea25fcc1c5c"
+      }
+    },
+    {
+      "elementId": "ATTR7",
+      "name": {
+        "de": "Wert",
+        "en": "Value"
+      },
+      "mandatory": true,
+      "parentId": "DOMA22",
+      "domainId": "DOMA19",
+      "displaySeq": 1,
+      "shortDescr": {
+        "de": "der gemessene Wert (mit Einheit)",
+        "en": "measured value (with unit)"
+      },
+      "additionalProps": {
+        "FULLPATH": "Astronomie Wertebereiche:Messwert/Wert",
+        "SOURCE-ID": "08f56e28-173c-491c-bb55-8a4afbd302b1",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/08f56e28-173c-491c-bb55-8a4afbd302b1"
+      }
+    },
+    {
+      "elementId": "ATTR8",
+      "name": {
+        "de": "Dauer",
+        "en": "Duration"
+      },
+      "mandatory": true,
+      "parentId": "DOMA6",
+      "domainId": "DOMA9",
+      "displaySeq": 1,
+      "description": {
+        "de": "Anzahl der Einheiten, die im Schwesterfeld definiert ist",
+        "en": "Number of units defined in the sister field"
+      },
+      "shortDescr": {
+        "de": "Anzahl Zeiteinheiten",
+        "en": "Number of time units"
+      },
+      "additionalProps": {
+        "FULLPATH": "Astronomie Wertebereiche:Umlaufdauer/Dauer",
+        "SOURCE-ID": "743c3233-7996-4bd3-a3ec-7ca35a788466",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/743c3233-7996-4bd3-a3ec-7ca35a788466"
+      }
+    },
+    {
+      "elementId": "ATTR9",
+      "name": {
+        "de": "Einheit"
+      },
+      "mandatory": true,
+      "parentId": "DOMA6",
+      "domainId": "DOMA31",
+      "displaySeq": 2,
+      "description": {
+        "de": "Zeiteinheit als Stunde, Tag oder Jahr"
+      },
+      "shortDescr": {
+        "de": "Zeiteinheit"
+      },
+      "additionalProps": {
+        "FULLPATH": "Astronomie Wertebereiche:Umlaufdauer/Einheit",
+        "SOURCE-ID": "a0351b15-f31a-43d8-bd9b-7cc3314628e1",
+        "SOURCE-MODEL": "Astronomie Wertebereiche",
+        "SOURCE-HREF": "https://myserver.io/rest/foryouandyourcustomers/attributes/a0351b15-f31a-43d8-bd9b-7cc3314628e1"
+      }
+    }
+  ],
+  "BusinessRules": [
+    {
+      "elementId": "BURU3",
+      "restrictedElements": [
+        "ENTI5"
+      ],
+      "description": "Ein Asteriod umkreist immer genau einen Stern oder einen Asteroiden (aber nicht sich selbst)"
+    },
+    {
+      "elementId": "BURU4",
+      "restrictedElements": [
+        "ENTI1"
+      ],
+      "description": "Ein Mond umkreist zwingend einen Planeten oder einen Zwergplaneten.",
+      "rule": "Mond berehchnet"
+    }
+  ]
+}

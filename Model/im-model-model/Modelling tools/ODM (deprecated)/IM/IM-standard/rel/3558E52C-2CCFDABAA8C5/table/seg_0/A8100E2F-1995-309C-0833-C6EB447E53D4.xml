@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A8100E2F-1995-309C-0833-C6EB447E53D4" name="ENTITY_KEYS">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<comment><![CDATA[A combination of attributes and (functional) relationships whose combination of values is unique for all instances of an entity.
+
+Keys should be natural keys wherever possible. I.e. use properties that occur in reality. Artificial keys do not help to find an instance of a thing in the real world.
+
+Examples:
+Country, Zipcode
+Product name, version number, BOM position
+Product name
+GSC identification
+]]></comment>
+<generatorID>7810FD23-A6BA-9ECA-1944-4593B865E654</generatorID>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Eine Kombination von Attributen und (funktionalen) Beziehungen, deren Werte-Kombination für alle Instanzen einer Entität eindeutig sind.
+
+Schlüssel sollten wo immer möglich natürlichen Schlüssel sein. D.h. Eigenschaften verwenden, die in der Realität vorkommen. Künstliche Schlüssel helfen nicht beim Auffinden einer Instanz eines Dings in der realen Welt.
+
+Beispiele:
+Land, Postleitzahl
+Produktname, Versionsnummer, BOM-Position
+Produktname
+GSC-Identifikation
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+A combination of attributes and (functional) relationships whose combination of values is unique for all instances of an entity.
+
+Keys should be natural keys wherever possible. I.e. use properties that occur in reality. Artificial keys do not help to find an instance of a thing in the real world.
+
+Examples:
+Country, Zipcode
+Product name, version number, BOM position
+Product name
+GSC identification
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<ordsAlias>entity_key</ordsAlias>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<abbreviation>KEYS</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="KEYS_ID" id="8F2479B8-9520-56B5-FFB2-AEEEE3EDA761">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="KEYS_ENTI_ID" id="D47BCE66-1E0A-6CDF-6126-CD0B4FA18E05">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8FB13B27-2D49-9C5D-E355-47DE7644710C" referredColumn="DA0785FC-F343-31B3-2A65-DF1828CB5473"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CED27DB5-7C43-14AA-812D-37B40C0AB05F" name="KEYS_PK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="8F2479B8-9520-56B5-FFB2-AEEEE3EDA761"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8A6C5F74-A25C-97AC-54F2-8E0EA215EFA1" name="KEYS_ENTI_FK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>7DFF44B9-D585-A3B7-7342-79EA825C4941</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D47BCE66-1E0A-6CDF-6126-CD0B4FA18E05"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

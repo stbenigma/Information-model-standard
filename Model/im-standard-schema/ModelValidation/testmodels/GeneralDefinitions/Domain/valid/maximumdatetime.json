@@ -1,0 +1,8 @@
+{
+  "elementId": "DOMA9",
+  "name": "myname",
+  "domainType": "DatetimeDomain",
+  "minDate": "2025-12-01T00:00:00Z",
+  "maxDate": "2025-12-02",
+  "granularity": "MINUTE"
+}

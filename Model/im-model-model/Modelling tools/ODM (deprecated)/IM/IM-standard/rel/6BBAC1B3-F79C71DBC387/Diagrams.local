@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="D6038C85-D5FF-4D7B-2CEE-5B4119EDD28D" name="OpenApi model" visible="true"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

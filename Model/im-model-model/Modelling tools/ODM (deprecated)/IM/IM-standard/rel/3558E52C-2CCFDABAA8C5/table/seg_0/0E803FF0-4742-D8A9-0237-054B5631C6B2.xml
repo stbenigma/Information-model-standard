@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0E803FF0-4742-D8A9-0237-054B5631C6B2" name="LANGUAGE_TEXTS">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-28 13:50:36 UTC</createdTime>
+<comment><![CDATA[Examplevalue  for Entity, Attribute, Domain, Relationship
+
+Examples:
+0
+1
+99
+married
+divorced
+Peter is married to Jane]]></comment>
+<generatorID>6A5501D1-E3E1-1B35-7A7B-6C55C038DCC6</generatorID>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Beispielwert für Entität, Attribut, Bereich, Beziehung
+
+Beispiele:
+0
+1
+99
+verheiratet
+geschieden
+Peter ist mit Jane verheiratet]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Examplevalue  for Entity, Attribute, Domain, Relationship
+
+Examples:
+0
+1
+99
+married
+divorced
+Peter is married to Jane
+
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<ordsAlias>examplev1</ordsAlias>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<abbreviation>LGTX</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LGTX_ID" id="0FA65011-D5D2-7BA4-C225-DC298878C7C0">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-28 13:52:43 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LGTX_TEXT" id="874BF135-E56D-0940-A99B-C9028652B89A">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-28 13:50:36 UTC</createdTime>
+<generatorID>78178DFE-CAC7-A5AD-8621-76A30C566379</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LGTX_ATTR_NAME" id="B1671029-B68E-F911-BBE9-752B7C642511">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-28 13:52:43 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LGTX_ELEMENT_ID" id="C0647F54-9328-3357-7805-B6852091BCB2">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-28 13:50:36 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LGTX_LANG_ID" id="340CBDE6-64ED-059E-811E-92EB28649A15">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-28 13:52:43 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="90D43B89-7CB6-6530-CAFF-C830EFBA732F" referredColumn="A7EA39A0-8F45-86FA-C748-6C8AE232C7D8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D8AB7E3F-CFD6-483D-B8EA-B5CB80FFB57A" name="LGTX_PK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-28 13:52:43 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0FA65011-D5D2-7BA4-C225-DC298878C7C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="851A7ECA-0D46-0C18-88B0-908C371FE9E1" name="LGTX_UN">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-28 13:50:36 UTC</createdTime>
+<generatorID>6C64AC80-E833-063B-EF8A-B29E6D964783</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0647F54-9328-3357-7805-B6852091BCB2"/>
+<colUsage columnID="B1671029-B68E-F911-BBE9-752B7C642511"/>
+<colUsage columnID="340CBDE6-64ED-059E-811E-92EB28649A15"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7594813A-4235-3703-A3AB-EBF72E0BCD80" name="LGTX_LANG_FK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-28 13:55:30 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="340CBDE6-64ED-059E-811E-92EB28649A15"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="EXAMPLEv1_CK" directorySegmentName="seg_1" id="D00F2810-C236-CB14-47AC-17E93FDD06BB">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-28 13:50:36 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<rule><![CDATA[(EXPL_ENTI_ID IS  NULL AND EXPL_DOMA_ID IS  NULL AND EXPL_RELA_ID IS  NULL AND EXPL_ATTR_ID IS  NULL AND)]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

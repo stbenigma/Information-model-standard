@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<CollectionType class="oracle.dbtools.crest.model.design.datatypes.CollectionType" name="languagelist" directorySegmentName="seg_0" id="7F9D9B77-9B22-B782-2810-35744CC7140D">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 08:35:53 UTC</createdTime>
+<comment><![CDATA[List of languages for multilingual texts]]></comment>
+<ownerDesignName>IM-standard</ownerDesignName>
+<predefined>false</predefined>
+<dataTypeDescr class="oracle.dbtools.crest.model.design.datatypes.CollectionType$DataTypeWrapper">
+<size></size>
+<type>DOM3000004</type>
+<isreference>false</isreference>
+</dataTypeDescr>
+<maxElement>1</maxElement>
+<type>ARRAY</type>
+</CollectionType>

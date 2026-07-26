@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A6E16240-76F3-1F83-BC8A-14BB9E6B3AFC" name="categories">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 08:26:12 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="elementid" id="6E57D1D3-E69C-ED36-EC6B-D5C4965EB579">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 08:45:36 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>95EF892F-DD50-79ED-90F5-D7FEFFD0CDFB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="F5CE5F5F-1469-4DC2-480B-D2C046B5D4C7">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 08:26:12 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="color" id="CA5D370B-4DA0-A10B-1744-ABBF92467A88">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 08:26:12 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>06269521-C0BC-78CB-FBC8-656101307358</domain>
+<defaultValue>000000</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="modelname" id="4412E9A7-4251-43D5-1257-582BE37E7CFB">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 08:40:03 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E951F3DA-726F-72A7-07A1-A5B165957075" referredColumn="3B050B85-3A8A-779F-8AEA-ABCEE62F3404"/>
+</associations>
+</Column>
+<Column name="parent" id="705B8C4B-0D5A-2664-1164-581AD85E16DD">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 09:53:02 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>95EF892F-DD50-79ED-90F5-D7FEFFD0CDFB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B4B5036F-58C8-B2B5-0B50-D29731ACD6F5" referredColumn="6E57D1D3-E69C-ED36-EC6B-D5C4965EB579"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5291F7B6-00D4-7687-E844-5A7AE17D7F38" name="categories_PK">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 08:45:36 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E57D1D3-E69C-ED36-EC6B-D5C4965EB579"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7CD7BDF7-1744-A58C-CAA8-63DAA62CCF85" name="categories__UN">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 08:46:02 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5CE5F5F-1469-4DC2-480B-D2C046B5D4C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="530EF74D-DF06-E54E-06D3-E208BAB499AD" name="categories_model_FK">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 08:40:03 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4412E9A7-4251-43D5-1257-582BE37E7CFB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A1B4AB50-074F-65BF-A896-164BD136D269" name="categories_categories_FK">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 09:53:02 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="705B8C4B-0D5A-2664-1164-581AD85E16DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

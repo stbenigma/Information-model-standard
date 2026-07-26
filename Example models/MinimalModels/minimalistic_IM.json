@@ -1,0 +1,55 @@
+{
+  "ModelInfo": {
+    "modelName": "Information model",
+    "targetEnvironment": "information model standard",
+    "modelVersion": "0.1",
+    "modelType": "Information model",
+    "description": "show 2 entities with 1 relationship and some attributes, no details, just names"
+  },
+  "Entities": [
+    {
+      "elementId": "ENTI1",
+      "name": "Something",
+      "examples": [
+        "This",
+        "That"
+      ]
+    },
+    {
+      "elementId": "ENTI2",
+      "name": "Another Thing"
+    }
+  ],
+  "Relations": [
+    {
+      "elementId": "RELA1",
+      "relationType": "M:1",
+      "fwd": {
+        "entityId": "ENTI1",
+        "assocText": "linked to",
+        "cardinality": "1",
+        "mandatory": true
+      },
+      "bwd": {
+        "entityId": "ENTI2",
+        "cardinality": "M",
+        "mandatory": false
+      }
+    }
+  ],
+  "Attributes": [
+    {
+      "elementId": "ATTR1",
+      "name": "Name",
+      "mandatory": false,
+      "parentId": "ENTI1"
+    },
+    {
+      "elementId": "ATTR2",
+      "name": "Status",
+      "mandatory": true,
+      "parentId": "ENTI2",
+      "examples":["on", "off"]
+    }
+  ]
+}

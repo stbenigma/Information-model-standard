@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9F9FECDD-38CF-CAB9-20B1-2C87A81074D9" name="ADDITIONAL_PROPERTIES">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<comment><![CDATA[For project- or environment-specific extensions, separate properties can be defined for each model element.  
+
+Examples: 
+Quality requirement level
+Security level
+
+]]></comment>
+<generatorID>C2AD7328-2E70-C424-A9DD-5DC855F3EDE8</generatorID>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Für projekt- oder umgebungsspezifische Erweiterungen, können für jedes Modellelement eigene Eigenschaften definiert werden.
+
+Beispiel:
+- Qualitätsanspruch-Level
+- Sicherheitsstufe
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+For project- or environment-specific extensions, separate properties can be defined for each model element.
+Examples: - Quality requirement level - Security level
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<ordsAlias>additional_property</ordsAlias>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<abbreviation>ADPR</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ADPR_ID" id="A7ADC5B9-2FE9-3842-9778-608DA990307C">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="ADPR_NAME" id="B4F6EFD1-70EB-B6CF-427E-5F4BD853D022">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>41CD85F5-88E3-F509-4545-3308BEF8D46F</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADPR_VALUE" id="5D20C6EC-9329-FAEF-CC1C-D3E72B567A36">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>4A7B398E-26D2-68A3-B252-6D7F75EBB6A0</generatorID>
+<notes><![CDATA[[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADPR_ELEMENT_ID" id="C816B84C-08B0-3311-78ED-CC0B8FC5A1E7">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-28 13:49:43 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3F232BE3-B927-034B-D4BE-E8E5548C239C" name="ADPR_PK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="A7ADC5B9-2FE9-3842-9778-608DA990307C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="74EE03B9-9FDE-B5C0-66ED-DCBEDC00B9AB" name="ADPR_NAME_UN">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>65AA54E8-2C0B-0ADF-711F-83E6CFDEF5B2</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4F6EFD1-70EB-B6CF-427E-5F4BD853D022"/>
+<colUsage columnID="C816B84C-08B0-3311-78ED-CC0B8FC5A1E7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

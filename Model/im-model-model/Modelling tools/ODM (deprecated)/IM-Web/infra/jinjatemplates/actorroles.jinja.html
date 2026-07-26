@@ -1,0 +1,12 @@
+		{% call blocks.mainblock(type=webmodel.gettransltext("Akteurrolle"), id=elemid, name=elem["name"],
+		            descr=elem["descr"], lbc=elemid ~ "main",basedirec=basedirec,singlefile=webmodel.export.singlefile) %}
+
+			<!--references-->
+			{% if elem|count > 0 %}
+			{% call blocks.subblock(header=webmodel.gettransltext("Referenziert"), lbc=elemid ~ "element",
+                            basedirec=basedirec) %}
+				{{ blocks.referencelist(webmodel,elemid,elem["concerns"],basedirec=basedirec) }}
+			{% endcall %}
+			{% endif %}
+
+		{% endcall%}

@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_108" directorySegmentName="seg_0" id="8115C0B0-4FC8-CD20-4F12-D34B6A399B58">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:05:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="false"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>contains</nameOnSource>
+<nameOnTarget>is on</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>EB926ECD-A9BA-A4AF-EB8D-57CA12013575</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F4419578-EE98-3BAC-50A3-1E4C66917575</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<propertyMap>
+<property name="DE_RELA_TEXT_FROM" value="enthält"/>
+<property name="DE_RELA_TEXT_TO" value="ist auf"/>
+<property name="EN_RELA_TEXT_FROM" value="contains"/>
+<property name="EN_RELA_TEXT_TO" value="is on"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Relation>

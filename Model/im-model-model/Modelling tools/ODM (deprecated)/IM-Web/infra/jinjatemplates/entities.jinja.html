@@ -1,0 +1,261 @@
+		{% call blocks.mainblock(type = webmodel.gettransltext("Entität"), id=elemid, name = webmodel.getlangstr(elem["name"])
+									, descr = webmodel.getlangstr(elem["descr"]), lbc=elemid ~ "main"
+									,icon=webmodel.getentiicon(entielem=elem),environ=webmodel.getentienviron(elemid)
+                                    , basedirec=basedirec,singlefile=webmodel.export.singlefile) %}
+
+            <h2>Information</h2>
+            <div class="table-responsive">
+                <table class="table borderless">
+                    <tbody>
+                        <tr>
+                            <th>{{ webmodel.gettransltext('Synonyme') }}</th>
+                            <th>{{ webmodel.gettransltext('Superentitäten') }}</th>
+                            <th>{{ webmodel.gettransltext('Subentitäten') }}</th>
+                            <th>{{ webmodel.gettransltext('Rollen') }}</th>
+                            <th>{{ webmodel.gettransltext('Klassifikation') }}</th>
+                            <th>Zoom levels</th>
+                            <th>Publ.Status</th>
+                            <th>{{ webmodel.gettransltext('auf Diagramm(en)') }}</th>
+                            <th> {{ webmodel.gettransltext('geändert') }}</th>
+                        </tr>
+                        <tr>
+                            <td class="attribute">
+                                {% for syno in elem["synonyms"] %}
+                                {% if loop.index > 1 %} {{ ', ' }} {% endif %}
+                                {{ webmodel.getlangstr(syno) }}
+                                {% endfor %}
+                            </td>
+                            <td class="attribute">
+                                {{ blocks.elementlist(webmodel=webmodel, elems=elem["supertypes+"],basedirec=basedirec) }}
+                            </td>
+                            <td class="attribute">
+                                {{ blocks.elementlist(webmodel=webmodel, elems=elem["subtypes+"],basedirec=basedirec) }}
+                            </td>
+                            <td class="attribute">
+                                {{ blocks.elementlist(webmodel=webmodel, elems=elem["roles+"],basedirec=basedirec) }}
+                            </td>
+
+                            <td class="attribute">{{ webmodel.getelem(elem['category'])["name"] }}</td>
+                            <td class="attribute">{{ '{} - {}'.format(elem['minzoomlevel'],elem['maxzoomlevel']) }}</td>
+                            <td class="attribute">{{ getnvl(webmodel.gettransltext(elem['publstatus'])) }}</td> {# Modelelement.longpublstatus( #}
+                            <td class="attribute">
+                                {% for diagid in elem["diagrams+"] %}
+                                {% set diag = webmodel.getelem(diagid) %}
+                                {% if loop.index > 1 %} {{ ', ' }} {% endif %}
+                                {{ webmodel.getreflink(name= diag["name"],destid=diagid,
+                                        desttype="diagrams",basedirec=basedirec)|safe }}
+                                {% endfor %}
+                            </td>
+                            <td class="attribute">{{ '{}, {}'.format(elem['uc'],elem['dc']) }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!--attributes-->
+            {% call blocks.subblock(header=webmodel.gettransltext("Attribute"), lbc=elemid ~ "attr"
+                            , basedirec=basedirec) %}
+                {{ blocks.attrlist(webmodel=webmodel,elem=elem,title="Eigene Attribute",attrtype="attributes+",
+                                    basedirec=basedirec) }}
+                {% if "inheritedattributes+" in elem and elem["inheritedattributes+"]|count > 0 %}
+                    {{ blocks.attrlist(webmodel=webmodel,elem=elem,title="Geerbte Attribute",attrtype="inheritedattributes+",
+                                    basedirec=basedirec) }}
+                {% endif %}
+            {% endcall %}
+
+            <!--examples-->
+            {% if elem["examples"]|count > 0 %}
+            {% call blocks.subblock(header=webmodel.gettransltext("Beispiele"), lbc=elemid ~ "expl"
+                            , basedirec=basedirec) %}
+                <div class="table-responsive">
+                    <table class="table borderless" >
+                        <tbody>
+                            {% for expl in elem["examples"] %}
+                            <tr>
+                                <td>{{ expl[webmodel.curlanguage] | safe}} </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            {% endcall %}
+            {% endif %}
+
+            <!--keys-->
+            {% call blocks.subblock(header=webmodel.gettransltext("Schlüssel"), lbc=elemid ~ "keys"
+                            , basedirec=basedirec) %}
+                <div class="table-responsive">
+                    <table class="table borderless" >
+                        <tbody>
+                            <tr>
+                                <th>{{ webmodel.gettransltext('Name') }}</th>
+                                <th>{{ webmodel.gettransltext('Attribute(e)') }}</th>
+                                <th>{{ webmodel.gettransltext('Beziehung(en)') }}</th>
+                            </tr>
+                            {% for keysid in elem["keys+"] %}
+                            {% set key = webmodel.getelem(keysid) %}
+                            <tr>
+                                <td>{{ key["name"] }}</td>
+                                <td>
+                                    {% for attrid in key["key-elements"]["attributes"] %}
+                                    {% set attr = webmodel.getelem(attrid)%}
+                                    {% if loop.index > 1 %} {{ ', ' }} {% endif %}
+                                    {{ webmodel.getreflink(name= webmodel.getlangstr(attr["name"]),destid=attrid,
+                                        desttype='attributes',basedirec=basedirec)|safe }}
+                                    {% endfor %}
+
+                                </td>
+                                <td>
+                                    {% for relaid in key["key-elements"]["relations"] %}
+                                    {% set rela = webmodel.getelem(relaid)%}
+                                    {% if loop.index > 1 %} {{ ', ' }} {% endif %}
+                                    {{ rela["name"] }}
+                                    {% endfor %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            {% endcall %}
+
+            <!-- relationships-->
+            {% call blocks.subblock(header=webmodel.gettransltext("Beziehungen"), lbc=elemid ~ "rela"
+                            , basedirec=basedirec) %}
+                {{ webmodel.getentienviron(elemid)|safe }}
+                {% if "relations+" in elem and elem["relations+"]|count > 0 %}
+                    {{ blocks.relalist(webmodel=webmodel,elem=elem,title="Eigene Beziehungen",relatype="relations+",
+                                    basedirec=basedirec) }}
+                {% endif %}
+
+                {% if "inheritedrelations+" in elem and elem["inheritedrelations+"]|count > 0 %}
+                    {{ blocks.relalist(webmodel=webmodel,elem=elem,title="Geerbte Beziehungen",relatype="inheritedrelations+",
+                                    basedirec=basedirec) }}
+                {% endif %}
+
+            {% endcall %}
+
+            <!--businessrules-->
+            {% if elem["businessrules+"]|count > 0 %}
+            {% call blocks.subblock(header=webmodel.gettransltext("Business Rules"), lbc=elemid ~ "refburu"
+                            , basedirec=basedirec) %}
+                {{ blocks.reflist(webmodel,elemid,elem["businessrules+"],
+                                    basedirec=basedirec) }}
+            {% endcall %}
+            {% endif %}
+
+            <!--actorroles-->
+            {% if elem["raci+"]|count > 0 %}
+            {% call blocks.subblock(header=webmodel.gettransltext("Akteurrollen"), lbc=elemid ~ "refraci"
+                            , basedirec=basedirec) %}
+                {{ blocks.reflist(webmodel,elemid,elem["raci+"],basedirec=basedirec) }}
+            {% endcall %}
+            {% endif %}
+
+
+            <!--referencedby-->
+            {% if elem["referencedby"]|count > 0 %}
+            {% call blocks.subblock(header=webmodel.gettransltext("Referenziert von"), lbc=elemid ~ "element"
+                            , basedirec=basedirec) %}
+                {{ blocks.refbylist(webmodel,elemid,elem,basedirec=basedirec) }}
+            {% endcall %}
+            {% endif %}
+
+            <!--user defined properties-->
+            {% if elem["userdefprops"]|count > 0 %}
+            {% call blocks.subblock(header=webmodel.gettransltext("Benutzerdefinerte Eigenschaften"), lbc=elemid ~ "udp"
+                            , basedirec=basedirec) %}
+            {{ blocks.userdefproperties(udprs=elem["userdefprops"]) }}
+            {% endcall %}
+            {% endif %}
+
+            <!--mappings-->
+            {% if (elem["tablesmapped+"]|count) > 0 %}
+            {% call blocks.subblock(header="Mappings", lbc=elemid ~ "map"
+                            , basedirec=basedirec) %}
+                <div class="table-responsive">
+                    <table class="table borderless" >
+                        <tbody>
+                            <tr>
+                                <th>{{ webmodel.gettransltext('System') }}</th>
+                                <th>{{ webmodel.gettransltext('Tabellen') }}</th>
+                            </tr>
+                            {% for datmid,val in elem["tablesmapped+"].items() %}
+                            {% set datm = webmodel.getelem(datmid)%}
+                            <tr>
+                                <td>{{ datm["name"] }}</td>
+                                <td>
+                                    {% for tablid in val %}
+                                        {% set tabl = webmodel.getelem(tablid)%}
+                                        {% if loop.index > 1 %} {{ ', ' }} {% endif %}
+                                        {{ webmodel.getreflink(name= tabl["name"],destid=tablid,destdatmid = datmid,
+                                                               desttype="tables",basedirec=basedirec) |safe
+                                             + " (" +tabl["CRUD"] +")" }} {# + " ({})".format(''.join(mapping)) #}
+                                    {% endfor %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            {% endcall %}
+            {% endif %}
+
+            <!--translations-->
+            {% set otherlangs = webmodel.getlanguages(all=False) %}
+            {% if (otherlangs|count) > 0 %}
+            {% set synonyms = elem["synonyms"] %}
+            {% call blocks.subblock(header=webmodel.gettransltext("Übersetzungen"), lbc=elemid ~ "transl"
+                            , basedirec=basedirec) %}
+                <div class="table-responsive">
+                    <table class="table borderless" >
+                        <tbody>
+                            <tr>
+                                <th>{{ webmodel.gettransltext('Element') }} </th>
+                                {% for lang in otherlangs %}
+                                    <th>{{ lang }}</th>
+                                {% endfor %}
+                            </tr>
+                            <tr>
+                                <td>{{ webmodel.gettransltext('Name') }}</td>
+                                {% for lang in otherlangs %}
+                                    <td>{{ webmodel.getreflink(name=elem["name"][lang], destid=elemid
+                                        ,desttype="entities", destlang=lang,basedirec=basedirec)|safe }}</td>
+                                {% endfor %}
+                            </tr>
+                            <tr>
+                                <td>{{ webmodel.gettransltext('Synonym') }}</td>
+                                {% for lang in otherlangs %}
+                                    <td>
+                                        {% for syn in synonyms %}
+                                        {% if loop.index > 1 %} {{ ', ' }} {% endif %}
+                                            {{ syn[lang] }}
+                                        {% endfor %}
+                                    </td>
+                                {% endfor %}
+                            </tr>
+                            <tr>
+                                <td>{{ webmodel.gettransltext('Beschreibung') }}</td>
+                                {% for lang in otherlangs %}
+                                    <td>{{ getnvl(elem["descr"][lang]) }}</td>
+                                {% endfor %}
+                            </tr>
+                            <tr>
+                                <td>{{ webmodel.gettransltext('Beispiele') }}</td>
+                                {% for lang in otherlangs %}
+                                    {% set otherlangs = [] %}
+                                    {% for e in elem["examples"] %}
+                                    {% set otherlangs = otherlangs.append(e[lang]) %}
+                                    {% endfor %}
+                                    <td>{{ '\n'.join(otherlangs)|nvl|formattext|safe }}</td>
+                                {% endfor %}
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            {% endcall %}
+            {% endif %}
+					
+		{% endcall %}
+
+

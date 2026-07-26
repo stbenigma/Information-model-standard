@@ -1,0 +1,29 @@
+{
+  "elementId": "DOMA9",
+  "name": "myname",
+  "domainType": "NumericDomain",
+  "minValue": -0.1,
+  "maxValue": 999,
+  "totalDigits": 4,
+  "fractDigits": 2,
+  "unit": "kg",
+  "roundValue": 0.01,
+  "technicalName": "AB_YX$",
+  "description": {
+    "de": "deutsch"
+  },
+  "categoryId": "CATG123",
+  "examples": [
+    "bsp1",
+    [
+      1,
+      2,
+      3
+    ]
+  ],
+  "additionalProps":
+    {
+      "p1": "prop 1",
+      "p2": "any property"
+    }
+}

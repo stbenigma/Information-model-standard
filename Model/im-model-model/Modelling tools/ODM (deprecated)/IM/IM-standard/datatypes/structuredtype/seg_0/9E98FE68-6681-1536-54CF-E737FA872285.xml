@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StructuredType class="oracle.dbtools.crest.model.design.datatypes.StructuredType" name="languagetext" directorySegmentName="seg_0" id="9E98FE68-6681-1536-54CF-E737FA872285">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 09:54:59 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<predefined>false</predefined>
+<final>false</final>
+<instantiable>true</instantiable>
+<attributes itemClass="oracle.dbtools.crest.model.design.datatypes.TypeElement">
+<Attribute name="lang" id="9E7903A6-C4E1-476C-E44F-2127C8D486AA">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 09:55:10 UTC</createdTime>
+<ownerDesignName>ModellModell_neu</ownerDesignName>
+<mandatory>false</mandatory>
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<type>3CFAACDE-10D2-A99A-844A-975DA633F49B</type>
+</Attribute>
+<Attribute name="text" id="6686F8CA-2782-F597-53F2-069F6BA4794C">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 09:55:21 UTC</createdTime>
+<ownerDesignName>ModellModell_neu</ownerDesignName>
+<mandatory>false</mandatory>
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<type>A3A3C77D-0366-9768-FF89-1C25E56881C8</type>
+</Attribute>
+</attributes>
+</StructuredType>

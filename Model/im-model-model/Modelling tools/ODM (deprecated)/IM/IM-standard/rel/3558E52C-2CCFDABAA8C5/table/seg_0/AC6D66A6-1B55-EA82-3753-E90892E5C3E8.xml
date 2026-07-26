@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AC6D66A6-1B55-EA82-3753-E90892E5C3E8" name="PHYSICAL_UNITS">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<comment><![CDATA[Physical measuring unit . See also e.g. https://en.wikipedia.org/wiki/International_unit #IU-basic sizes and - unities]]></comment>
+<generatorID>23D800D2-69D7-19A7-A112-599DD4855100</generatorID>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Physikalische Messeinheit.
+Siehe dazu z.B. https://de.wikipedia.org/wiki/Liste_physikalischer_Größen #SI-Basisgrößen_und_-einheiten
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Physical measuring unit . See also e.g. https://en.wikipedia.org/wiki/International_unit #IU-basic sizes and - unities
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<ordsAlias>physical_unit</ordsAlias>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<abbreviation>PHYU</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PHYU_ID" id="57EA64B1-54F0-68C3-06B9-735A7A147613">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="PHYU_SYMBOL" id="AFDCD0BA-189B-33DB-BE95-2AE7FEE068F6">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<generatorID>D110C56D-0639-36A9-856A-F50A0DB6F0FE</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>DF321C7C-26AB-AE86-F75B-320EE5F91E6D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHYU_DESCRIPTION" id="7E2B2644-3F7A-453D-77F1-4DD9DC261993">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<generatorID>BE51FA69-1EC3-E4EF-DAE1-0C1845EA613C</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<collectionType>53EF0FEC-74CF-B5E7-3547-0E74F449ACA7</collectionType>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHYU_SI_UNIT" id="BAF7FE53-D5A8-D1D3-7375-FBF07CC1F41F">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<comment><![CDATA[Unit according to SI specification]]></comment>
+<generatorID>10B2F6C3-9A2A-78A2-C064-EB3522695570</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Einheit gemäss SI-Vorgabe
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Unit according to SI specification
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DD765D8A-B6DE-C725-89D4-5A0AE9EEB09A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D38DD59B-029F-827B-CC0D-4A031A31A193" name="PHYU_PK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="57EA64B1-54F0-68C3-06B9-735A7A147613"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="407A3B91-836C-CD7E-3BD6-8BC0EEBB4C2E" name="PHYU_SYMBOL_UN">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<generatorID>9B15D3A7-BD3D-E2D3-FC7E-A3CD772A71A1</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AFDCD0BA-189B-33DB-BE95-2AE7FEE068F6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

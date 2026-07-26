@@ -1,0 +1,45 @@
+{# expected parameters:
+	webmodel
+	elemtype
+	elemid
+#}
+{% set company =  webmodel.metainfo.company  %}
+{% set modelname = webmodel.metainfo.modelname  %}
+{% set interfacename = webmodel.metainfo.interfacename  %}
+{% set title = webmodel.metainfo.modelname  %}
+{% set mylang = webmodel.curlanguage %}
+{% set basedirec = '../../../' %} {# basedirec for all subfiles relative from myfile #}
+{% set dummy =  webmodel.setbasedirec(basedirec) %}
+
+{% import 'macros.jinja.html' as blocks %}
+{% set elem = webmodel.getelem (elemid) %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ webmodel.getlangstr(elem["name"]) }}</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="{{ basedirec }}image/imicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ basedirec }}infra/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="{{ basedirec }}infra/js/jscode.js"></script>
+    <script src="{{ basedirec }}infra/js/IM.js"></script>
+	<script src="{{ basedirec }}infra/js/svg-pan-zoom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="{{ basedirec }}infra/images/icons/favicon/favicon-16x16.png?v=2" sizes="16x16">
+	<link rel="icon" type="image/png" href="{{ basedirec }}infra/images/icons/favicon/favicon-32x32.png?v=2" sizes="32x32">
+	<link rel="icon" type="image/png" href="{{ basedirec }}infra/images/icons/favicon/favicon-96x96.png?v=2" sizes="96x96">
+	<link rel="shortcut icon" type="image/x-icon" href="{{ basedirec }}infra/images/icons/favicon/favicon.ico?v=2">
+</head>
+
+<body>
+    {% include  elemtype + '.jinja.html' %}
+	{% if elemtype=='diagrams' %}
+        {{ blocks.zoomfinish1(elem) }}
+    {% endif %}
+</body>
+</html>

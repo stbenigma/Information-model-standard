@@ -1,0 +1,23 @@
+{# diagrams (in column elem) have a prerendered structure #}
+    <div id="{{ elem["id"] }}-container">
+        <h3 id="{{ elem["id"] }}">{{ elem["name"] }}</h3>
+        {% if elem["svg"] %}
+                {% if webmodel.export.singlefile %}
+                    <div class="diagram">
+                {% else  %}
+                    <div class="diagramfix">
+                {% endif  %}
+
+                {{ elem["svg"]|safe }}
+                <div class="print-button-container">
+                    <button class="print-button" onclick="printElem(this)">print</button>
+                </div>
+            </div>
+        {% elif elem["pdf"] %}
+            <iframe src="{{ elem["pdf"] }}" height="800" width="1800">
+                <div class="print-button-container">
+                    <button class="print-button" onclick="printElem(this)">print</button>
+                </div>
+            </iframe>
+        {% endif %}
+    </div>

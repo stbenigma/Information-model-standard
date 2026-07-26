@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="C94035A2-FF8C-E960-646F-00D06287717F" name="Wertebereichgruppe">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<comment><![CDATA[Es gibt Attribute, die aus mehreren Bestandteilen bestehen, aber für eine Entität wie ein Attribut angesehen werden können.
+Die Bestandteile dieser Attributgruppe treten immer gemeinsam auf.
+Dass ein Attribut Teilwerte enthält, für die man sich separat interessiert, verletzt im Grundsatz die 1. Normalform. Wenn aber die Elemente einer Attributgruppe selber Attribute sind und die Gruppe als Platzhalter von mehreren Attributen verstanden werden kann, ist diese Verletzung auflösbar.
+
+Beispiele:
+Telefon-Nr: (Landesvorwahl , Rufnummer)
+Koordinaten (Westliche länge und nördliche Breite)
+Hotelzimmer-Nr (Stockwerk, ZimmerNr)
+Flugkennung (Fluggesellschaft Kürzel ,Flugnummer (LX1247))]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Es gibt Attribute, die aus mehreren Bestandteilen bestehen, aber für eine Entität wie ein Attribut angesehen werden können.
+Die Bestandteile dieser Attributgruppe treten immer gemeinsam auf.
+Dass ein Attribut Teilwerte enthält, für die man sich separat interessiert, verletzt im Grundsatz die 1. Normalform. Wenn aber die Elemente einer Attributgruppe selber Attribute sind und die Gruppe als Platzhalter von mehreren Attributen verstanden werden kann, ist diese Verletzung auflösbar.
+
+Beispiele:
+Telefon-Nr: (Landesvorwahl , Rufnummer)
+Koordinaten (Westliche länge und nördliche Breite)
+Hotelzimmer-Nr (Stockwerk, ZimmerNr)
+Flugkennung (Fluggesellschaft Kürzel ,Flugnummer (LX1247))
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+There are attributes that consist of several components, but can be regarded as one attribute for an entity. 
+The components of this attribute group always occur together. 
+The fact that an attribute contains partial values in which one is interested separately basically violates the 1st normal form. However, if the elements of an attribute group are attributes themselves and the group can be understood as a placeholder for several attributes, this violation can be resolved.  
+
+Examples:
+Telefon-Nr ( country-code, number within country)
+Geo-localisation (longitude,latttude)
+Hotel room no (floor,room no.)
+Flight identification (airline codeand, flight number (LX 247))
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="false"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="false"/>
+</engineerTo>
+<typeID>E0CC5767-562C-A871-BD70-DA70B40552A8</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>1725C503-BB91-0A6D-6E10-6908B44EDA95</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>DOMA</shortName>
+<synonym>Gruppenattribut</synonym>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="DE_ENTI_NAME" value="Wertebereichgruppe"/>
+<property name="DE_ENTI_SYNONYM" value="Gruppenattribut"/>
+<property name="EN_ENTI_NAME" value="Group domain"/>
+<property name="EN_ENTI_SYNONYM" value="Group attribute"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="2"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Entity>

@@ -1,0 +1,408 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0EF344F2-8BC1-9242-0A06-278A039DAF25" name="RELATIONS">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<comment><![CDATA[A relationship always connects one entity (start entity) with exactly one second entity (end/reverse entity). 
+
+The two ends can link an entity to themselves. This is called a recursive relationship. It typically represents a hierarchy. The two ends of a recursive relationship must be optional.
+
+A distinction is made between 3 types of relationship.
+
+Functional relationships 
+form a clear mapping from the first to the second entity. This means that there is a relationship from one instance of the first entity to a maximum of 1 instance of the second entity. (or none for optional relationships).
+
+Role relationship
+form a specialisation of an entity. Roles of an entity *are* the entity supplemented by additional relationships or attributes.  This means that roles always inherit all the properties of the entity of which they are a role and extend them with properties that are necessary for their use.
+
+Many-to-many relationships
+An instance of one side can be related to many instances of the other side. And vice versa.
+This type of relationship is not provided for in the relational model and must be resolved in the technical implementation by means of an additional entity/table. This resolution is clearly defined algorithmically so that the many-to-many relationship does not violate the rules of the relational model.
+The relationship makes sense for the information model, as it represents a fact in a simpler and therefore more readable way.
+
+Examples
+A planet orbits a star. - A star is orbited by 0 - many planets.
+A bus is a means of transport. - A means of transport can be a bus.
+A train is a means of transport - A means of transport can be a train.
+A customer bought 0 - many products.  - A product can be bought by 0 - many customers.]]></comment>
+<generatorID>1A2BD7DD-DE7A-C8E0-C1A6-B282BC7AD488</generatorID>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Eine Beziehung verbindet immer eine Entität (Startentität) mit genau einer zweiten Entität (End-/Reversentität). 
+
+Die beiden Enden können einen Entität mit sich selber verknüpfen. Man nennt dies rekursive Beziehung. Sie repräsentiert typischerweise eine Hierarchie. Die beiden Enden einer rekursiven Beziehung müssen optional sein.
+
+Es werden 3 Typen von Beziehung unterschieden.
+
+Funktionale Beziehungen 
+bilden eine eindeutige Abbildung von der ersten zur zweiten Entität. D.h. von einer Instanz der ersten Entität gibt es eine Beziehung zu maxmal 1 Instanz der 2 Entität. (oder auch keine für optionale Beziehungen).
+
+Rollenbeziehung
+bilden eine Spezialisierung einer Entität. Rollen einer Entität *sind" die Entität ergänzt um zusätzliche Beziehungen oder Attribute.  D.h. Rollen erben immer alle Eigenschaften der Entität von der sie eine Rolle sind und erweiteren sie um Eigenschaften, die für ihre Nutzung notwendig sind.
+
+Viele-zu-viele Beziehungen
+Eine Instanz der einen Seite kann mit vielen Instanzen der anderen Seite in Beziehung stehen. Und umgekehrt.
+Diese Beziehungsart ist im relationalen Modell nicht vorgesehen und muss in der technischen Umsetzung mittels einer zusätlichen Entität / Tabelle aufgelöst werden. Diese Auflösung ist algorithmisch klar definiert, so dass die viele-zu-viele Beziehung die Regeln des relationalen Modells nicht verletzt.
+Für das Informationsmodell macht die Beziehung Sinn, da sie einen Sachverhalt einfacher und damit lesbarer darstellt.
+
+Beispiele:
+Ein Planet umkreist einen Stern. - Ein Stern wird umkreist von 0 - vielen Planeten.
+Ein Bus ist ein Verkehrsmittel. - Ein Verkehrsmittel kann ein Bus sein.
+Ein Zug ist ein Verkehrsmittel.- Ein Verkehrsmittel kann ein Zug sein.
+Ein Kunde kaufte 0 - viele Produkte.  -  Ein Produkt kann gekauft werden von 0 - vielen Kunden.
+
+
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+A relationship always connects one entity (start entity) with exactly one second entity (end/reverse entity). 
+
+The two ends can link an entity to themselves. This is called a recursive relationship. It typically represents a hierarchy. The two ends of a recursive relationship must be optional.
+
+A distinction is made between 3 types of relationship.
+
+Functional relationships 
+form a clear mapping from the first to the second entity. This means that there is a relationship from one instance of the first entity to a maximum of 1 instance of the second entity. (or none for optional relationships).
+
+Role relationship
+form a specialisation of an entity. Roles of an entity *are* the entity supplemented by additional relationships or attributes.  This means that roles always inherit all the properties of the entity of which they are a role and extend them with properties that are necessary for their use.
+
+Many-to-many relationships
+An instance of one side can be related to many instances of the other side. And vice versa.
+This type of relationship is not provided for in the relational model and must be resolved in the technical implementation by means of an additional entity/table. This resolution is clearly defined algorithmically so that the many-to-many relationship does not violate the rules of the relational model.
+The relationship makes sense for the information model, as it represents a fact in a simpler and therefore more readable way.
+
+Examples
+A planet orbits a star. - A star is orbited by 0 - many planets.
+A bus is a means of transport. - A means of transport can be a bus.
+A train is a means of transport - A means of transport can be a train.
+A customer bought 0 - many products.  - A product can be bought by 0 - many customers.
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<ordsAlias>relation</ordsAlias>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<abbreviation>RELA</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RELA_ID" id="D71E2A1E-F08B-697F-F68D-F7B080F737BD">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="RELA_TYPE" id="4BE7B218-4DB1-C0E4-60C2-19FFEEFEDB3A">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<constraintName>CH_INH_RELA</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<listOfValues>
+<valueDef value="RELA" description="entity many-to-many Relation"/>
+</listOfValues>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isDiscriminatorColumn>true</isDiscriminatorColumn>
+</Column>
+<Column name="RELA_ENTI_ID" id="72A3C5A5-B9D7-A7FD-2968-D61C5EEB9855">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:27:19 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="53663B80-1F09-98ED-36C0-08E137C9E7C2" referredColumn="DA0785FC-F343-31B3-2A65-DF1828CB5473"/>
+</associations>
+</Column>
+<Column name="RELA_ARCS_ID" id="75CB99B6-A91E-0F97-DBE0-2EC72916F55C">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:27:19 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0094192B-46F0-119E-9D57-9F3198D31E4E" referredColumn="ED35672E-B35E-19F8-6D29-F7D0D93B4BFD"/>
+</associations>
+</Column>
+<Column name="RELA_ASSOCIATION" id="21209077-1D06-0AC4-95AF-D98A15800978">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:27:19 UTC</createdTime>
+<comment><![CDATA[Which verb connects the first entity with the second entity? What does the first entity have to do with the second entity?
+Associations should describe states. This means that either state verbs (lies on, stands next to) or past tense verbs (bought, produced) are used.
+
+Examples:
+bought
+lies on
+contains
+contained in]]></comment>
+<generatorID>8727B082-C624-C910-42AF-B51032928F62</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Welches Verb verbindet die erste Entität mit der zweiten Entität? Was hat die erste Entität mit der zweiten zu tun?
+Assoziationen sollen Zustände beschreiben. D.h. entweder es werden Zustandsverben (liegt auf, steht neben) oder Vergangenheitsform (kaufte, erzeugte) verwendet.
+
+Beispiele:
+gekauft
+liegt auf
+enthält
+enthalten in
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Which verb connects the first entity with the second entity? What does the first entity have to do with the second entity?
+Associations should describe states. This means that either state verbs (lies on, stands next to) or past tense verbs (bought, produced) are used.
+
+Examples:
+bought
+lies on
+contains
+contained in
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<collectionType>53EF0FEC-74CF-B5E7-3547-0E74F449ACA7</collectionType>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RELA_IS_MANDATORY" id="DC4D9B68-38E4-C674-4DEF-380F43D4BF74">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:27:19 UTC</createdTime>
+<comment><![CDATA[Does every instance of the first entity have to have a relationship to at least one instance in the second entity?]]></comment>
+<generatorID>71CF8391-F518-DBCA-72D4-9B8DC99AD117</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Muss jede Instanz der ersten Entität eine Beziehung zu mindestens einer Instanz in der zweiten Entität haben?
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Does every instance of the first entity have to have a relationship to at least one instance in the second entity?
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>7F06A64B-0C00-1355-F863-DBD9FDE5B848</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RELA_CARDINALITY" id="D282094D-ADF1-4284-F163-17A22442E1FA">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:27:19 UTC</createdTime>
+<comment><![CDATA[An instance of the first entity can have how many relationships to instances of the second entity. Only 1 (1) or many (M) are distinguished. 0 is expressed by the mandatory flag. Many is open at the top and also includes the possibility of 1.
+]]></comment>
+<generatorID>16253B8A-8A27-7C6E-AB98-5DE1711A9D59</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Eine Instanz der ersten Entität kann wie viele Beziehungen zu Instanzen der zweiten Entität haben. Es werden nur 1 (1) oder viele (M) unterschieden. 0 wird durch das obligatorisch Flag ausgedrückt. Viele ist nach oben offen und beinhaltet auch die Möglichkeit 1.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+An instance of the first entity can have how many relationships to instances of the second entity. Only 1 (1) or many (M) are distinguished. 0 is expressed by the mandatory flag. Many is open at the top and also includes the possibility of 1.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>58A81D94-A2AD-3DA7-4B9E-471B043185E0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RELA_IS_HISTORICIZED" id="E5B76D32-306B-5AAE-4BFC-37AB25694775">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:27:19 UTC</createdTime>
+<comment><![CDATA[True -> Relationship can change over time. Only 1 relationship can exist between two instances of the entities at one specific time. System must keep history of changes. ]]></comment>
+<generatorID>408D42F2-512E-DAC9-FD84-30B536726B48</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Wahr -> Beziehung kann sich im Laufe der Zeit ändern. Es kann nur eine Beziehung zwischen zwei Instanzen der Entitäten zu einem bestimmten Zeitpunkt bestehen. Das System muss eine Historie der Änderungen führen. 
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+True -> Relationship can change over time. Only 1 relationship can exist between two instances of the entities at one specific time. System must keep history of changes. 
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>7F06A64B-0C00-1355-F863-DBD9FDE5B848</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RELA_ENTI_REV_ID" id="6B97B9AC-6E8B-59E4-2C47-43A05AFB26B3">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:29:28 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B0732B92-5A2D-E1B6-CDD2-6AA40249281C" referredColumn="DA0785FC-F343-31B3-2A65-DF1828CB5473"/>
+</associations>
+</Column>
+<Column name="RELA_ARCS_REV_ID" id="558E6F10-F638-A21D-78BD-867650B590A8">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:32:00 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F7660A59-66CD-5DD5-9FDD-0861A9F4A9E5" referredColumn="ED35672E-B35E-19F8-6D29-F7D0D93B4BFD"/>
+</associations>
+</Column>
+<Column name="RELA_REV_ASSOCIATION" id="F2875A79-4DB4-A116-865D-5EE457304460">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:35:35 UTC</createdTime>
+<generatorID>8727B082-C624-C910-42AF-B51032928F62</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RELA_IS_REV_MANDATORY" id="76E2A9F3-3314-2EBD-8D22-AC96D2391A7C">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:35:35 UTC</createdTime>
+<comment><![CDATA[Does every instance of the first entity have to have a relationship to at least one instance in the second entity?]]></comment>
+<generatorID>71CF8391-F518-DBCA-72D4-9B8DC99AD117</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Muss jede Instanz der ersten Entität eine Beziehung zu mindestens einer Instanz in der zweiten Entität haben?
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Does every instance of the first entity have to have a relationship to at least one instance in the second entity?
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>7F06A64B-0C00-1355-F863-DBD9FDE5B848</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RELA_REV_CARDINALITY" id="BADF9825-CFAD-9EEE-ECEE-8BA1656FB90A">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:35:35 UTC</createdTime>
+<comment><![CDATA[An instance of the first entity can have how many relationships to instances of the second entity. Only 1 (1) or many (M) are distinguished. 0 is expressed by the mandatory flag. Many is open at the top and also includes the possibility of 1.
+]]></comment>
+<generatorID>16253B8A-8A27-7C6E-AB98-5DE1711A9D59</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Eine Instanz der ersten Entität kann wie viele Beziehungen zu Instanzen der zweiten Entität haben. Es werden nur 1 (1) oder viele (M) unterschieden. 0 wird durch das obligatorisch Flag ausgedrückt. Viele ist nach oben offen und beinhaltet auch die Möglichkeit 1.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+An instance of the first entity can have how many relationships to instances of the second entity. Only 1 (1) or many (M) are distinguished. 0 is expressed by the mandatory flag. Many is open at the top and also includes the possibility of 1.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>58A81D94-A2AD-3DA7-4B9E-471B043185E0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RELA_IS_REV_HISTORICIZED" id="1F4EE59B-E3E4-A904-1029-90B44F55381A">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:35:35 UTC</createdTime>
+<comment><![CDATA[True -> Relationship can change over time. Only 1 relationship can exist between two instances of the entities at one specific time. System must keep history of changes. ]]></comment>
+<generatorID>408D42F2-512E-DAC9-FD84-30B536726B48</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Wahr -> Beziehung kann sich im Laufe der Zeit ändern. Es kann nur eine Beziehung zwischen zwei Instanzen der Entitäten zu einem bestimmten Zeitpunkt bestehen. Das System muss eine Historie der Änderungen führen. 
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+True -> Relationship can change over time. Only 1 relationship can exist between two instances of the entities at one specific time. System must keep history of changes. 
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>7F06A64B-0C00-1355-F863-DBD9FDE5B848</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C8010EBF-365E-FF9A-9CA6-54A82999E9E0" name="RELA_PK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="D71E2A1E-F08B-697F-F68D-F7B080F737BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EED3A9FB-A941-A3CE-26E2-9C9F118C51B3" name="RELATION_ENTITY_FK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:29:28 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B97B9AC-6E8B-59E4-2C47-43A05AFB26B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B7B9AA98-69CD-0F9E-B966-98BBFC677618" name="RELA_ARCS_FK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:31:18 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75CB99B6-A91E-0F97-DBE0-2EC72916F55C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B312BF3A-CB23-CFA4-C148-9DC60EBC5280" name="RELA_ARCS_REV_FK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:32:00 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="558E6F10-F638-A21D-78BD-867650B590A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F1AC4EE1-7683-894B-B596-9D761B3FF94F" name="RELA_ENTI_REV_FK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:32:54 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72A3C5A5-B9D7-A7FD-2968-D61C5EEB9855"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

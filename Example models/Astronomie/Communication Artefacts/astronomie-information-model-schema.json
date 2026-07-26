@@ -1,0 +1,260 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "urn": "urn:IMSTD:Sternsystem:0.9#Sternsystem",
+  "sourcelink": "https://myserver.io/rest/foryouandyourcustomers/tenants/b078e6f7-70dd-4caa-acd3-af36d825537d",
+  "type": "object",
+  "components": {
+    "schemas": {
+      "Begleiter": {
+        "description": {
+          "de": "Himmelsk\u00f6rper, der in einer regelm\u00e4ssigen Umlaufbahn um einen anderen Himmelsk\u00f6per kreist.\nMond um Planet, oder Zwergplanet\nPlanet, Zwergplanet um Sonne\nAsteroid, Komet um Sonne\nAsteroid um Asteroid",
+          "en": "A celestial body orbiting another celestial body in a regular orbit.\nMoon around planet, or dwarf planet\nPlanet, dwarf planet around the sun\nAsteroid, comet around the sun\nAsteroid around asteroid"
+        },
+        "$id": "IMSTD:3482ee88-dc3d-40c9-8df6-4c53802a6e1d",
+        "urn": "urn:IMSTD:Sternsystem:0.9#Begleiter",
+        "sourcelink": "https://myserver.io/rest/foryouandyourcustomers/classifiers/3482ee88-dc3d-40c9-8df6-4c53802a6e1d",
+        "type": "object",
+        "allOf": [
+          {
+            "properties": {
+              "name": {
+                "$id": "IMSTD:15eb4bae-1dfb-49b4-b2f0-ea1462a9998e",
+                "examples": [
+                  "(Erd-)Mond",
+                  "Phobos",
+                  "Deimos",
+                  "Io",
+                  "Europa",
+                  "Ganymed",
+                  "Triton",
+                  "LHS 1140 b",
+                  "Proxima Centauri b",
+                  "Kepler-186f"
+                ],
+                "type": {
+                  "$ref": "#/components/$defs/Name"
+                }
+              },
+              "durchmesser": {
+                "description": {
+                  "de": "Der Durchmesser kann in 3 Werten angegeben werden. (Pol-, \u00c4quator- und mittlerer Durchmesser)",
+                  "en": "The diameter can be specified in 3 values. (polar, equatorial and mean diameter)"
+                },
+                "$id": "IMSTD:6918f1cf-d0bf-4fbd-a266-dc7d2d79b2a0",
+                "examples": [
+                  "6112 km"
+                ],
+                "type": {
+                  "$ref": "#/components/$defs/HimmelskorperDurchmesser"
+                }
+              },
+              "entdeckungsjahr": {
+                "description": {
+                  "de": "Jahr, in dem dieser Begleiter entdeckt wurde.",
+                  "en": "Year in which this companion was discovered."
+                },
+                "$id": "IMSTD:92e83a24-4da0-4652-a4df-1d3db3bda02b",
+                "examples": [
+                  "1752",
+                  "512 vuz",
+                  "2009"
+                ],
+                "type": {
+                  "$ref": "#/components/$defs/Jahrzahl"
+                }
+              },
+              "umlaufdauer": {
+                "description": {
+                  "de": "Zeit die ein Begleiter braucht um das Mutterobjekt zu umkreisen. (Wert + Zeiteinheit)",
+                  "en": "Time a companion needs to orbit the parent object. (value + time unit)"
+                },
+                "$id": "IMSTD:49b5f6a4-d155-450a-a990-4616e5ffece9",
+                "examples": [
+                  "1 Jahr",
+                  "23 Tage",
+                  "3.1 Stunden"
+                ],
+                "type": {
+                  "$ref": "#/components/$defs/Umlaufdauer"
+                }
+              },
+              "mittlererAbstand": {
+                "description": {
+                  "de": "Mittlerer Abstand des Himmelsk\u00f6rpers vom Mutterobjekt. W\u00e4re der Kreisradius, wenn die Umlaufbahn kreisf\u00f6rmig w\u00e4re.",
+                  "en": "Mean distance of the celestial body from the parent object. Would be the circle radius if the orbit were circular."
+                },
+                "$id": "IMSTD:319e4035-9bb4-463a-b89a-64aa0f9ccdb3",
+                "examples": [
+                  "1 AE",
+                  "150Mio km",
+                  "386000 km"
+                ],
+                "type": {
+                  "$ref": "#/components/$defs/SternsystemEntfernung"
+                }
+              },
+              "periphel": {
+                "description": {
+                  "de": "Der n\u00e4chste Punkt der Umlaufbahn eines Begleiters um sein Mutterobjekt.\n\nDie kleine Halbachse der Ellipse",
+                  "en": "The closest point of a companion's orbit around its parent object.\n\nThe minor semi-axis of the ellipse"
+                },
+                "$id": "IMSTD:d53fdfea-e80f-4bda-8663-56c889e8091e",
+                "type": {
+                  "$ref": null
+                }
+              },
+              "aphel": {
+                "description": {
+                  "de": "Der am weitesten enfernte Punkt einer Umlaufbahn eines Begleiters um sein Mutterobjekt\n\nDie H\u00e4lfte des l\u00e4nsten Durchmessers einer Ellipse",
+                  "en": "The furthest point of a companion's orbit around its parent object\n\nHalf of the longest diameter of an ellipse"
+                },
+                "$id": "IMSTD:8098edc1-15c8-408f-967a-b78425d125f4",
+                "type": {
+                  "$ref": null
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "$defs": {
+      "Name": {
+        "description": {
+          "de": "Nichtleere Zeichenfolge, benutzt um etwas zu benennen",
+          "en": "Nonempty sequence of arbitrary chaeracters, used to name a thing."
+        },
+        "$id": "IMSTD:6b44e913-7048-4ac6-8fd1-9d6717926e08",
+        "urn": "urn:IMSTD:Sternsystem:0.9#Name",
+        "type": "string"
+      },
+      "Distanz[km]": {
+        "$id": "IMSTD:554ef1be-2fd3-48ca-8fe8-2bbe898de65f",
+        "urn": "urn:IMSTD:Sternsystem:0.9#Distanz[km]",
+        "type": "decimal",
+        "unit": "km"
+      },
+      "HimmelskorperDurchmesser": {
+        "$id": "IMSTD:3d7d43ee-1cff-4eee-95be-28adef08622f",
+        "urn": "urn:IMSTD:Sternsystem:0.9#HimmelskorperDurchmesser",
+        "type": "object",
+        "properties": {
+          "mittlererDurchmesser": {
+            "description": {
+              "de": "Der Durchmesser, den man bei nicht sehr genauen angaben oder einfachen astronomischen / pyhsikalischen Berechnungen verwendet",
+              "en": "The diameter used for not very precise specifications or simple astronomical / physical calculations"
+            },
+            "$id": "IMSTD:99e6ffee-f0d1-471f-8e5c-134bfb3dab4e",
+            "type": {
+              "$ref": "#/components/$defs/Distanz[km]"
+            }
+          },
+          "poldurchmesser": {
+            "description": {
+              "de": "Typischerweise der kleinste Durchmesser.\nWegen der Rotation sind kugelf\u00f6rmige Himmelsk\u00f6per am \u00c4quator *ausgebeult*",
+              "en": "Typically the smallest diameter.\nDue to rotation, spherical celestial bodies are *dent out* at the equator"
+            },
+            "$id": "IMSTD:805e0369-8e6d-44a6-83da-c8656662b8b0",
+            "type": {
+              "$ref": null
+            }
+          },
+          "aquatordurchmesser": {
+            "description": {
+              "de": "Typischerweise der l\u00e4ngste Durchmesser.\nWegen der Rotation sind kugelf\u00f6rmige Himmelsk\u00f6per am \u00c4quator *ausgebeult*",
+              "en": "Typically the longest diameter.\nDue to rotation, spherical celestial bodies are *dent out* at the equator"
+            },
+            "$id": "IMSTD:94f54d19-b40d-4b99-959d-d5f8a9655446",
+            "type": {
+              "$ref": null
+            }
+          }
+        }
+      },
+      "Jahrzahl": {
+        "description": {
+          "de": "Bei Berechnungen mit Jahrzahlen (Anzahl Jahre zwischen 2 Jahrzahlen) ist zu ber\u00fccksichtigen, dass es die Jahrzahl 0 nicht gibt",
+          "en": "When calculating with year numbers (number of years between 2 year numbers), it must be taken into account that the year 0 does not exist"
+        },
+        "$id": "IMSTD:ac7a81d6-80d1-46f3-bcd5-039d496a3dd2",
+        "urn": "urn:IMSTD:Sternsystem:0.9#Jahrzahl",
+        "type": "integer"
+      },
+      "Dezimalzahl": {
+        "$id": "IMSTD:7e596b16-8386-4d9f-be42-209758ed104a",
+        "urn": "urn:IMSTD:Sternsystem:0.9#Dezimalzahl",
+        "type": "integer"
+      },
+      "Zeitangabe": {
+        "description": {
+          "de": "Liste der Zeitangaben f\u00fcr Umlaufdauern \nStunde, Tag, Jahr"
+        },
+        "$id": "IMSTD:52b3b83d-77c8-414b-aec6-c43e119e10c7",
+        "urn": "urn:IMSTD:Sternsystem:0.9#Zeitangabe",
+        "type": "string",
+        "enum": [
+          "tag",
+          "std",
+          "jahr"
+        ]
+      },
+      "Umlaufdauer": {
+        "description": {
+          "de": "Dauer die ein Begleiter braucht um sein Mutterobjekt zu umkreisen.\nGruppenattribut mit Wert und Einheit (Stunde, Tag, Jahr).",
+          "en": "Duration that a companion needs to orbit its parent object.\nGroup attribute with value and unit (hour, day, year)."
+        },
+        "$id": "IMSTD:7a053008-0ae4-4345-8ea3-872291f895f9",
+        "urn": "urn:IMSTD:Sternsystem:0.9#Umlaufdauer",
+        "type": "object",
+        "properties": {
+          "dauer": {
+            "description": {
+              "de": "Anzahl der Einheiten, die im Schwesterfeld definiert ist",
+              "en": "Number of units defined in the sister field"
+            },
+            "$id": "IMSTD:743c3233-7996-4bd3-a3ec-7ca35a788466",
+            "type": {
+              "$ref": "#/components/$defs/Dezimalzahl"
+            }
+          },
+          "einheit": {
+            "description": {
+              "de": "Zeiteinheit als Stunde, Tag oder Jahr"
+            },
+            "$id": "IMSTD:a0351b15-f31a-43d8-bd9b-7cc3314628e1",
+            "type": {
+              "$ref": "#/components/$defs/Zeitangabe"
+            }
+          }
+        }
+      },
+      "SternsystemEntfernung": {
+        "description": {
+          "de": "Abstand zwischen 2 Punkten oder Objekten innerhalb eines Sternensystems\n\nDie Einheit ist 1000km. \n\nDie Abst\u00e4nde sind in der Gr\u00f6ssenordnung des Durchmessers eines Sternensystems. D.h. bis ca 200 Astronomsiche Einheiten (AE) (=30*10^9km)\n\nEine AE entspricht ca 150Mio Km (genau 149.597.870,7) (entspricht 8,317\u00a0Lichtminuten",
+          "en": "Distance between 2 points or objects within a star system\n\nThe unit is 1000km.\n\nThe distances are in the order of magnitude of the diameter of a star system. I.e. up to approx. 200 astronomical units (AU) (=30*10^9km)\n\nOne AU corresponds to approx. 150 million kilometres (exactly 149,597,870.7) (corresponds to 8.317 light minutes\")."
+        },
+        "$id": "IMSTD:5a183b99-c7a8-428d-a798-13cc5289fef1",
+        "urn": "urn:IMSTD:Sternsystem:0.9#SternsystemEntfernung",
+        "type": "integer",
+        "unit": "10^3 km"
+      }
+    }
+  },
+  "description": "Group of elements",
+  "properties": {
+    "Begleiter": {
+      "description": {
+        "de": "Himmelsk\u00f6rper, der in einer regelm\u00e4ssigen Umlaufbahn um einen anderen Himmelsk\u00f6per kreist.\nMond um Planet, oder Zwergplanet\nPlanet, Zwergplanet um Sonne\nAsteroid, Komet um Sonne\nAsteroid um Asteroid",
+        "en": "A celestial body orbiting another celestial body in a regular orbit.\nMoon around planet, or dwarf planet\nPlanet, dwarf planet around the sun\nAsteroid, comet around the sun\nAsteroid around asteroid"
+      },
+      "type": "array",
+      "items": {
+        "$ref": "#/components/schemas/Begleiter"
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "Begleiter"
+  ]
+}

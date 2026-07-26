@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1A2BD7DD-DE7A-C8E0-C1A6-B282BC7AD488" name="Beziehung">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:03:22 UTC</createdTime>
+<comment><![CDATA[Eine Beziehung verbindet immer eine Entität (Startentität) mit genau einer zweiten Entität (End-/Reversentität). 
+
+Die beiden Enden können einen Entität mit sich selber verknüpfen. Man nennt dies rekursive Beziehung. Sie repräsentiert typischerweise eine Hierarchie. Die beiden Enden einer rekursiven Beziehung müssen optional sein.
+
+Es werden 3 Typen von Beziehung unterschieden.
+
+Funktionale Beziehungen 
+bilden eine eindeutige Abbildung von der ersten zur zweiten Entität. D.h. von einer Instanz der ersten Entität gibt es eine Beziehung zu maxmal 1 Instanz der 2 Entität. (oder auch keine für optionale Beziehungen).
+
+Rollenbeziehung
+bilden eine Spezialisierung einer Entität. Rollen einer Entität *sind" die Entität ergänzt um zusätzliche Beziehungen oder Attribute.  D.h. Rollen erben immer alle Eigenschaften der Entität von der sie eine Rolle sind und erweiteren sie um Eigenschaften, die für ihre Nutzung notwendig sind.
+
+Viele-zu-viele Beziehungen
+Eine Instanz der einen Seite kann mit vielen Instanzen der anderen Seite in Beziehung stehen. Und umgekehrt.
+Diese Beziehungsart ist im relationalen Modell nicht vorgesehen und muss in der technischen Umsetzung mittels einer zusätlichen Entität / Tabelle aufgelöst werden. Diese Auflösung ist algorithmisch klar definiert, so dass die viele-zu-viele Beziehung die Regeln des relationalen Modells nicht verletzt.
+Für das Informationsmodell macht die Beziehung Sinn, da sie einen Sachverhalt einfacher und damit lesbarer darstellt.
+
+Beispiele:
+Ein Planet umkreist einen Stern. - Ein Stern wird umkreist von 0 - vielen Planeten.
+Ein Bus ist ein Verkehrsmittel. - Ein Verkehrsmittel kann ein Bus sein.
+Ein Zug ist ein Verkehrsmittel.- Ein Verkehrsmittel kann ein Zug sein.
+Ein Kunde kaufte 0 - viele Produkte.  -  Ein Produkt kann gekauft werden von 0 - vielen Kunden.]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Eine Beziehung verbindet immer eine Entität (Startentität) mit genau einer zweiten Entität (End-/Reversentität). 
+
+Die beiden Enden können einen Entität mit sich selber verknüpfen. Man nennt dies rekursive Beziehung. Sie repräsentiert typischerweise eine Hierarchie. Die beiden Enden einer rekursiven Beziehung müssen optional sein.
+
+Es werden 3 Typen von Beziehung unterschieden.
+
+Funktionale Beziehungen 
+bilden eine eindeutige Abbildung von der ersten zur zweiten Entität. D.h. von einer Instanz der ersten Entität gibt es eine Beziehung zu maxmal 1 Instanz der 2 Entität. (oder auch keine für optionale Beziehungen).
+
+Rollenbeziehung
+bilden eine Spezialisierung einer Entität. Rollen einer Entität *sind" die Entität ergänzt um zusätzliche Beziehungen oder Attribute.  D.h. Rollen erben immer alle Eigenschaften der Entität von der sie eine Rolle sind und erweiteren sie um Eigenschaften, die für ihre Nutzung notwendig sind.
+
+Viele-zu-viele Beziehungen
+Eine Instanz der einen Seite kann mit vielen Instanzen der anderen Seite in Beziehung stehen. Und umgekehrt.
+Diese Beziehungsart ist im relationalen Modell nicht vorgesehen und muss in der technischen Umsetzung mittels einer zusätlichen Entität / Tabelle aufgelöst werden. Diese Auflösung ist algorithmisch klar definiert, so dass die viele-zu-viele Beziehung die Regeln des relationalen Modells nicht verletzt.
+Für das Informationsmodell macht die Beziehung Sinn, da sie einen Sachverhalt einfacher und damit lesbarer darstellt.
+
+Beispiele:
+Ein Planet umkreist einen Stern. - Ein Stern wird umkreist von 0 - vielen Planeten.
+Ein Bus ist ein Verkehrsmittel. - Ein Verkehrsmittel kann ein Bus sein.
+Ein Zug ist ein Verkehrsmittel.- Ein Verkehrsmittel kann ein Zug sein.
+Ein Kunde kaufte 0 - viele Produkte.  -  Ein Produkt kann gekauft werden von 0 - vielen Kunden.
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+A relationship always connects one entity (start entity) with exactly one second entity (end/reverse entity). 
+
+The two ends can link an entity to themselves. This is called a recursive relationship. It typically represents a hierarchy. The two ends of a recursive relationship must be optional.
+
+A distinction is made between 3 types of relationship.
+
+Functional relationships 
+form a clear mapping from the first to the second entity. This means that there is a relationship from one instance of the first entity to a maximum of 1 instance of the second entity. (or none for optional relationships).
+
+Role relationship
+form a specialisation of an entity. Roles of an entity *are* the entity supplemented by additional relationships or attributes.  This means that roles always inherit all the properties of the entity of which they are a role and extend them with properties that are necessary for their use.
+
+Many-to-many relationships
+An instance of one side can be related to many instances of the other side. And vice versa.
+This type of relationship is not provided for in the relational model and must be resolved in the technical implementation by means of an additional entity/table. This resolution is clearly defined algorithmically so that the many-to-many relationship does not violate the rules of the relational model.
+The relationship makes sense for the information model, as it represents a fact in a simpler and therefore more readable way.
+
+Examples
+A planet orbits a star. - A star is orbited by 0 - many planets.
+A bus is a means of transport. - A means of transport can be a bus.
+A train is a means of transport - A means of transport can be a train.
+A customer bought 0 - many products.  - A product can be bought by 0 - many customers.
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<typeID>77D381F5-7647-2CBC-11A1-08B38B65FA57</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>RELA</shortName>
+<generateDiscrimColumn>true</generateDiscrimColumn>
+<discriminatorColumnName>RELA_TYPE</discriminatorColumnName>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="DE_ENTI_NAME" value="Beziehung"/>
+<property name="DE_ENTI_SYNONYM" value=""/>
+<property name="EN_ENTI_NAME" value="Relation"/>
+<property name="EN_ENTI_SYNONYM" value=""/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Entity>

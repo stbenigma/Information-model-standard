@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="3401066E-1544-12C3-5E94-65A87865D6E4" name="SPOD json" visible="false"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

@@ -1,0 +1,131 @@
+{
+  "$id": "../GeneralDefinitions/GeneralStructures-schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "General (meta) information elements.\nUsed for Informationmodel, and other models",
+  "version": "0.9",
+  "type": "object",
+    "$defs": {
+      "ModelId": {
+        "description": "typed ID unique over all models in this schema",
+        "allOf": [
+          {
+            "$ref": "GeneralTypes-schema.json#/$defs/ElementId"
+          },
+          {
+            "pattern": ".*MODL[0-9]+$"
+          }
+        ]
+      },
+      "AdditionalProperties": {
+        "description": "additional properties (aka user defined properties udp) are any properties of an element added by the current modeller. They serve as an extension to the predfefined element properties.",
+        "type": "object",
+        "additionalProperties": {
+          "type": [
+            "integer",
+            "string",
+            "number",
+            "array",
+            "object",
+            "boolean",
+            "null"
+          ]
+        },
+        "examples": [
+          {
+            "businessrule-id": 1134,
+            "status": "over",
+            "sources": [
+              "a",
+              "b",
+              "c"
+            ]
+          },
+          {
+            "release-level": "published"
+          },
+          {
+            "author": "Jon Doe"
+          }
+        ]
+      },
+      "Examples": {
+        "description": "List of examplevalues for this entity, attribute, domain or relationship",
+        "type": "array",
+        "items": {
+          "type": [
+            "array",
+            "object",
+            "integer",
+            "string",
+            "number",
+            "boolean"
+          ]
+        }
+      },
+      "BaseModelInfo": {
+        "type": "object",
+        "properties": {
+          "elementId": {
+            "description": "unique ID of the model for reference purposes within the mme-environment\nOnly used (and stable) in current . Can change over time",
+            "$ref": "#/$defs/ModelId"
+          },
+          "modelName": {
+            "description": "Name of the model. Unique in the environment of related models",
+            "$ref": "GeneralTypes-schema.json#/$defs/Name"
+          },
+          "targetEnvironment": {
+            "description": "Name of environment, world of influence this model is applicable in.",
+            "$ref": "GeneralTypes-schema.json#/$defs/Uri",
+            "examples": [
+              "https://mycompany.com/GutesProdukt",
+              "urn:vse:CommonModel"
+            ]
+          },
+          "description": {
+            "description": "Information about the model, its origin, its applicable environment",
+            "$ref": "GeneralTypes-schema.json#/$defs/SomeText"
+          },
+          "modelType": {
+            "type": "string",
+            "enum": [
+              "Meta model",
+              "Information model",
+              "Data model",
+              "System model"
+            ]
+          },
+          "modelVersion": {
+            "description": "Version number of the information Model documented in this file",
+            "$ref": "GeneralTypes-schema.json#/$defs/VersionNo",
+            "examples": [
+              "1.0.1",
+              "0.9"
+            ]
+          },
+          "originTool": {
+            "description": "Name of the tool / environment this model was originally managed",
+            "$ref": "GeneralTypes-schema.json#/$defs/Name",
+            "examples": [
+              "dataspot",
+              "VisualParadigm",
+              "SPOD"
+            ]
+          },
+          "originRef": {
+            "description": "uri, directory, file where the origin is located",
+            "type": "string",
+            "examples": [
+              "./myproject/ODM",
+              "dataspot.io/web/foryou/"
+            ]
+          }
+        },
+        "required": [
+          "modelName",
+          "targetEnvironment",
+          "modelVersion",
+          "modelType"
+        ]
+      }
+    }
+}

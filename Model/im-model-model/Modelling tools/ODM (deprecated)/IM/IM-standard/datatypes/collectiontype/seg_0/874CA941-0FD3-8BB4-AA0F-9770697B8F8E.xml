@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<CollectionType class="oracle.dbtools.crest.model.design.datatypes.CollectionType" name="multilangname" directorySegmentName="seg_0" id="874CA941-0FD3-8BB4-AA0F-9770697B8F8E">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 10:32:03 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<predefined>false</predefined>
+<dataTypeDescr class="oracle.dbtools.crest.model.design.datatypes.CollectionType$DataTypeWrapper">
+<size></size>
+<type>B7E646DA-46EC-E983-76A2-A8F9A22A49AE</type>
+<isreference>false</isreference>
+</dataTypeDescr>
+<maxElement>1</maxElement>
+<type>ARRAY</type>
+</CollectionType>

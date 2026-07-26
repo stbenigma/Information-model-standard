@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_138" directorySegmentName="seg_0" id="162440B2-12E9-9B27-6ED9-7ABA2239B783">
+<createdBy>stb</createdBy>
+<createdTime>2025-02-23 10:46:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>eingeschränkt durch</nameOnSource>
+<nameOnTarget>schänkt ein</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>1A2BD7DD-DE7A-C8E0-C1A6-B282BC7AD488</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F86ECABB-9469-A49A-FBEC-E51F21E99B3B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<propertyMap>
+<property name="DE_RELA_TEXT_FROM" value="eingeschränkt durch"/>
+<property name="DE_RELA_TEXT_TO" value="schänkt ein"/>
+<property name="EN_RELA_TEXT_FROM" value="restricted by"/>
+<property name="EN_RELA_TEXT_TO" value="*restricts"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="2"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Relation>

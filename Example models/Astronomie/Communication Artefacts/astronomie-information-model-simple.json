@@ -1,0 +1,1035 @@
+{
+  "ModelInfo": {
+    "modelName": "Astronomie Beispiel",
+    "modelType": "Information model",
+    "mainLanguage": "de",
+    "modelVersion": "0.9",
+    "languages": [
+      "en"
+    ],
+    "targetEnvironment": "Astronomie Beispiel",
+    "originTool": "dataspot"
+  },
+  "Categories": [
+    {
+      "elementId": "CATG8",
+      "name": "Sternsystem",
+      "categoryType": "ENTITY"
+    },
+    {
+      "elementId": "CATG9",
+      "name": "Grosse Objekte",
+      "categoryType": "ENTITY"
+    },
+    {
+      "elementId": "CATG10",
+      "name": "Kleine Objekte",
+      "categoryType": "ENTITY"
+    }
+  ],
+  "Domains": [
+    {
+      "elementId": "DOMA2",
+      "name": {
+        "de": "Himmelsk\u00f6rper Durchmesser",
+        "en": "Celestial body diameter"
+      },
+      "domainType": "GroupDomain",
+      "categoryId": "CATG1"
+    },
+    {
+      "elementId": "DOMA6",
+      "name": {
+        "de": "Umlaufdauer",
+        "en": "Cycle time"
+      },
+      "domainType": "GroupDomain",
+      "description": {
+        "de": "Dauer die ein Begleiter braucht um sein Mutterobjekt zu umkreisen.\nGruppenattribut mit Wert und Einheit (Stunde, Tag, Jahr).",
+        "en": "Duration that a companion needs to orbit its parent object.\nGroup attribute with value and unit (hour, day, year)."
+      }
+    },
+    {
+      "elementId": "DOMA19",
+      "name": {
+        "de": "Einheitsmenge",
+        "en": "Unit quantity"
+      },
+      "domainType": "GroupDomain",
+      "description": {
+        "de": "Menge von Einheiten als Gruppenattribut mit Menge und (physikalischer) Einheit, in der diese Menge gemessen wurde.",
+        "en": "Group attribute: Quantity together with the (physical) unit in which this quantity was measured."
+      }
+    }
+  ],
+  "Entities": [
+    {
+      "elementId": "ENTI1",
+      "name": {
+        "de": "Mond",
+        "en": "Planets Moon"
+      },
+      "categoryId": "CATG9",
+      "shortDescr": {
+        "de": "Fester Himmelsk\u00f6rper der um einen Planeten kreist",
+        "en": "Fixed celestial body orbiting a planet"
+      },
+      "examples": [
+        "(Erd-)Mond",
+        "Phobos",
+        "Deimos",
+        "Io",
+        "Europa",
+        "Ganymed",
+        "Triton",
+        "Charon"
+      ],
+      "keys": [
+        {
+          "name": "key1",
+          "elements": [
+            "RELA8",
+            "RELA16"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "ENTI2",
+      "name": {
+        "de": "Planet"
+      },
+      "categoryId": "CATG9",
+      "shortDescr": {
+        "de": "Fester oder gasf\u00f6rmiger Himmelsk\u00f6rper der um einen Stern kreist",
+        "en": "Solid or gaseous celestial body orbiting a star"
+      },
+      "examples": [
+        "Jupiter",
+        "Mars",
+        "Neptun",
+        "LHS 1140 b",
+        "Proxima Centauri b",
+        "Kepler-186f"
+      ],
+      "keys": [
+        {
+          "name": "key1",
+          "elements": [
+            "RELA11"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "ENTI3",
+      "name": {
+        "de": "Stern",
+        "en": "Star"
+      },
+      "categoryId": "CATG9",
+      "synonyms": [
+        "astronomisches Objekt",
+        "Sonne"
+      ],
+      "description": {
+        "de": "Massereicher, selbstleuchtender Himmelsk\u00f6rper aus sehr hei\u00dfem Gas und Plasma.\n\n\nHauptreihensterne: Sterne wie unsere Sonne, die Wasserstoff zu Helium fusionieren.\nRote Riesen: Sterne, die ihren Wasserstoffvorrat aufgebraucht haben und sich ausdehnen, w\u00e4hrend sie schwerere Elemente fusionieren.\nWei\u00dfe Zwerge: Die \u00dcberreste von Sternen mit geringer bis mittlerer Masse, die ihren Brennstoff aufgebraucht haben und langsam abk\u00fchlen.\nSupernovae: Massereiche Sterne, die am Ende ihres Lebens in einer gewaltigen Explosion sterben und dabei Neutronensterne oder Schwarze L\u00f6cher hinterlassen k\u00f6nnen.",
+        "en": "Massive, self-luminous celestial body made of very hot gas and plasma.\n\n\nMain sequence stars: Stars like our sun that fuse hydrogen into helium.\nRed giants: Stars that have used up their supply of hydrogen and are expanding as they fuse heavier elements.\nWhite dwarfs: The remnants of low to intermediate mass stars that have used up their fuel and are slowly cooling.\nSupernovae: Massive stars that die in a massive explosion at the end of their lives, leaving behind neutron stars or black holes."
+      },
+      "shortDescr": {
+        "de": "Am Himmel sichtbarer, selbstleuchtender Gasball. (Stern, Sonne)",
+        "en": "Self-luminous ball of gas visible in the sky. (star, sun)"
+      },
+      "examples": [
+        "Sonne",
+        "Polarstern",
+        "Ursae Minoris",
+        "LHS 1140",
+        "Proxima Centauri",
+        "Kepler-186"
+      ],
+      "keys": [
+        {
+          "name": "key1",
+          "elements": [
+            "ATTR27"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "ENTI4",
+      "name": {
+        "de": "Zwergplanet",
+        "en": "Dwarf planet"
+      },
+      "categoryId": "CATG9",
+      "description": {
+        "de": "Zwergplaneten sind kleiner als Planeten. Sie sind gross genug, dass sie eine Runde Form (und meist eine Eigenrotation) haben.\nAber nicht gross genug, dass sie ihre Sonnenumlaufbahn von anderen Objektren befreit haben.",
+        "en": "Dwarf planets are smaller than planets. They are large enough to have a round shape (and usually a rotation of their own).\nBut not big enough to have cleared their solar orbit of other objects."
+      },
+      "shortDescr": {
+        "de": "Feste Himmelsk\u00f6rper, kleiner als Planeten",
+        "en": "Solid celestial bodies, smaller than planets"
+      },
+      "examples": [
+        "Pluto",
+        "Eris",
+        "Haumea",
+        "Makemake"
+      ],
+      "keys": [
+        {
+          "name": "key1",
+          "elements": [
+            "RELA13"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "ENTI5",
+      "name": {
+        "de": "Asteroid",
+        "en": "Asteroid"
+      },
+      "categoryId": "CATG10",
+      "description": {
+        "de": "Asteroiden sind kleine, felsige Objekte, die die Sonne oder einen anderen Asteroiden umkreisen.\n\nSind nicht gross genug dass sie eine Runde Form (und meist auch eine Eigenrotation) haben\n\nAsteroiden k\u00f6nnen Monde haben. \nDiese Monde sind oft kleinere Asteroiden, die den gr\u00f6\u00dferen Asteroiden umkreisen. Solche Systeme werden als bin\u00e4re Asteroiden bezeichnet, wenn ein Asteroid einen Mond hat, oder als tern\u00e4re Systeme, wenn ein Asteroid zwei Monde hat.\n\nIda und Dactyl:\nIda: Ein Asteroid im Asteroideng\u00fcrtel zwischen Mars und Jupiter.\nDactyl: Der Mond von Ida, der 1993 von der Galileo-Sonde entdeckt wurde. Dactyl ist der erste best\u00e4tigte Mond eines Asteroiden.\n\nEugenia und Petit-Prince:\nEugenia: Ein gro\u00dfer Asteroid im Asteroideng\u00fcrtel.\nPetit-Prince: Der gr\u00f6\u00dfere der beiden Monde von Eugenia, der 1998 entdeckt wurde. Eugenia hat auch einen zweiten, kleineren Mond namens S/2004 (45) 1.\n\nSylvia und ihre Monde Romulus und Remus:\nSylvia: Ein gro\u00dfer Asteroid im Asteroideng\u00fcrtel.\nRomulus und Remus: Zwei Monde, die Sylvia umkreisen. Romulus wurde 2001 und Remus 2005 entdeckt.\nDidymos und Dimorphos:",
+        "en": "Asteroids are small, rocky objects that orbit the sun or another asteroid.\n\nThey are not large enough to have a round shape (and usually also a rotation of their own)\n\nAsteroids can have moons.\nThese moons are often smaller asteroids orbiting the larger asteroid. Such systems are called binary asteroids if an asteroid has one moon, or ternary systems if an asteroid has two moons.\n\nIda and Dactyl:\nIda: An asteroid in the asteroid belt between Mars and Jupiter.\nDactyl: The moon of Ida, which was discovered by the Galileo probe in 1993. Dactyl is the first confirmed moon of an asteroid.\n\nEugenia and Petit-Prince:\nEugenia: A large asteroid in the asteroid belt.\nPetit-Prince: The larger of Eugenia's two moons, discovered in 1998. Eugenia also has a second, smaller moon called S/2004 (45) 1.\n\nSylvia and its moons Romulus and Remus:\nSylvia: A large asteroid in the asteroid belt.\nRomulus and Remus: Two moons orbiting Sylvia. Romulus was discovered in 2001 and Remus in 2005.\nDidymos and Dimorphos:"
+      },
+      "examples": [
+        "Ida",
+        "Eugenia",
+        "Sylvia",
+        "Didymos",
+        "Dactyl",
+        "Petit-Prince",
+        "Romulus",
+        "Remus"
+      ],
+      "keys": [
+        {
+          "name": "key1",
+          "elements": [
+            "RELA2",
+            "RELA14"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "ENTI6",
+      "name": {
+        "de": "Komet",
+        "en": "Comet"
+      },
+      "categoryId": "CATG10",
+      "description": {
+        "de": "Ein Komet ist ein Himmelsk\u00f6rper, der haupts\u00e4chlich aus Eis, Staub und Gestein besteht. Er stammt meist aus den \u00e4u\u00dferen Bereichen unseres Sonnensystems, zum Beispiel der Oortschen Wolke oder dem Kuiperg\u00fcrtel.\n\n**Merkmale eines Kometen:**\n*Kern*: Der feste, zentrale Teil, meist nur einige Kilometer gro\u00df. Besteht aus Eis (Wasser, CO\u2082, Methan usw.) und Staub \u2013 man spricht oft von einem \u201eschmutzigen Schneeball\u201c.\n\n*Koma*: Wenn ein Komet sich der Sonne n\u00e4hert, erw\u00e4rmen sich die Eisteile, verdampfen, und bilden mit dem ausgesto\u00dfenen Staub eine leuchtende H\u00fclle um den Kern.\n\n*Schweif*: Der Sonnenwind und die Strahlung dr\u00fccken die Koma nach hinten, sodass ein Schweif entsteht, der immer von der Sonne weg zeigt. Es gibt oft zwei Schweife:\nStaubschweif (gebogen)\nIonenschweif (gerade, bl\u00e4ulich)",
+        "en": "A comet is a celestial body that consists mainly of ice, dust and rock. It usually originates from the outer regions of our solar system, for example the Oort cloud or the Kuiper belt.\n\n**Characteristics of a comet:**\n*Nucleus*: The solid, central part, usually only a few kilometres in size. Consists of ice (water, CO\u2082, methane, etc.) and dust - often referred to as a \"dirty snowball\".\n\n*Coma*: When a comet approaches the sun, the icy parts heat up, vaporise and form a luminous shell around the nucleus together with the ejected dust.\n\n*Tail*: The solar wind and radiation push the coma backwards, creating a tail that always points away from the sun. There are often two tails:\nDust tail (curved)\nIon tail (straight, bluish)"
+      },
+      "shortDescr": {
+        "de": "Komet im Sonnensystem",
+        "en": "Comet in the solar system"
+      },
+      "examples": [
+        "Halleyscher Komet",
+        "NEOWISE (2020)",
+        "67P/Churyumov-Gerasimenko"
+      ],
+      "keys": [
+        {
+          "name": "key1",
+          "elements": [
+            "RELA12"
+          ]
+        }
+      ]
+    },
+    {
+      "elementId": "ENTI7",
+      "name": {
+        "de": "Mission Ziel"
+      },
+      "categoryId": "CATG7"
+    },
+    {
+      "elementId": "ENTI8",
+      "name": {
+        "de": "Raumfahrt Mission",
+        "en": "Space mission"
+      },
+      "categoryId": "CATG7"
+    },
+    {
+      "elementId": "ENTI9",
+      "name": {
+        "de": "Raumfahrt Unternehmen",
+        "en": "Space mission"
+      },
+      "categoryId": "CATG7"
+    },
+    {
+      "elementId": "ENTI10",
+      "name": {
+        "de": "Begleiter",
+        "en": "Companion"
+      },
+      "categoryId": "CATG8",
+      "synonyms": [
+        "https://miro.com/app/board/uXjVMx6gvuQ=/?moveToWidget=3458764661002299935&cot=14"
+      ],
+      "description": {
+        "de": "Himmelsk\u00f6rper, der in einer regelm\u00e4ssigen Umlaufbahn um einen anderen Himmelsk\u00f6per kreist.\nMond um Planet, oder Zwergplanet\nPlanet, Zwergplanet um Sonne\nAsteroid, Komet um Sonne\nAsteroid um Asteroid",
+        "en": "A celestial body orbiting another celestial body in a regular orbit.\nMoon around planet, or dwarf planet\nPlanet, dwarf planet around the sun\nAsteroid, comet around the sun\nAsteroid around asteroid"
+      },
+      "shortDescr": {
+        "de": "Irgend ein Himmelsobjekt, das uns bekannt ist und einen anderes Himmelsobjekt umkreist",
+        "en": "Any celestial object that is known to us and that orbits another celestial object"
+      },
+      "keys": [
+        {
+          "name": "key1",
+          "elements": [
+            "ATTR14"
+          ]
+        }
+      ]
+    }
+  ],
+  "Relations": [
+    {
+      "elementId": "RELA1",
+      "relationType": "1:1",
+      "fwd": {
+        "entityId": "ENTI5",
+        "assocText": {
+          "de": "ist"
+        },
+        "cardinality": "1",
+        "mandatory": true
+      },
+      "bwd": {
+        "entityId": "ENTI10",
+        "assocText": null,
+        "cardinality": "1",
+        "mandatory": true
+      }
+    },
+    {
+      "elementId": "RELA2",
+      "relationType": "M:1",
+      "fwd": {
+        "entityId": "ENTI5",
+        "assocText": {
+          "de": "umkreist von",
+          "en": "orbited by"
+        },
+        "cardinality": "M",
+        "mandatory": false
+      },
+      "bwd": {
+        "entityId": "ENTI5",
+        "assocText": {
+          "de": "umkreist",
+          "en": "orbits"
+        },
+        "cardinality": "1",
+        "mandatory": true,
+        "arcNumber": 1
+      },
+      "examples": [
+        "Remus umkreist Sylvia",
+        "Romulus umkreist Sylvia"
+      ]
+    },
+    {
+      "elementId": "RELA3",
+      "relationType": "1:1",
+      "fwd": {
+        "entityId": "ENTI6",
+        "assocText": {
+          "de": "ist"
+        },
+        "cardinality": "1",
+        "mandatory": true
+      },
+      "bwd": {
+        "entityId": "ENTI10",
+        "assocText": null,
+        "cardinality": "1",
+        "mandatory": true
+      }
+    },
+    {
+      "elementId": "RELA4",
+      "relationType": "M:1",
+      "fwd": {
+        "entityId": "ENTI7",
+        "assocText": {
+          "de": "ist"
+        },
+        "cardinality": "1",
+        "mandatory": true,
+        "arcNumber": 1
+      },
+      "bwd": {
+        "entityId": "ENTI3",
+        "assocText": {
+          "de": "dient als"
+        },
+        "cardinality": "M",
+        "mandatory": false
+      }
+    },
+    {
+      "elementId": "RELA5",
+      "relationType": "M:1",
+      "fwd": {
+        "entityId": "ENTI7",
+        "assocText": {
+          "de": "ist"
+        },
+        "cardinality": "1",
+        "mandatory": true,
+        "arcNumber": 1
+      },
+      "bwd": {
+        "entityId": "ENTI10",
+        "assocText": {
+          "de": "dient als"
+        },
+        "cardinality": "M",
+        "mandatory": false
+      }
+    },
+    {
+      "elementId": "RELA6",
+      "relationType": "M:N",
+      "fwd": {
+        "entityId": "ENTI7",
+        "assocText": {
+          "de": "geplant f\u00fcr"
+        },
+        "cardinality": "M",
+        "mandatory": false
+      },
+      "bwd": {
+        "entityId": "ENTI8",
+        "assocText": {
+          "de": "ber\u00fccksichtigt in"
+        },
+        "cardinality": "M",
+        "mandatory": false
+      }
+    },
+    {
+      "elementId": "RELA7",
+      "relationType": "1:1",
+      "fwd": {
+        "entityId": "ENTI1",
+        "assocText": {
+          "de": "ist"
+        },
+        "cardinality": "1",
+        "mandatory": true
+      },
+      "bwd": {
+        "entityId": "ENTI10",
+        "assocText": null,
+        "cardinality": "1",
+        "mandatory": true
+      }
+    },
+    {
+      "elementId": "RELA8",
+      "relationType": "M:1",
+      "fwd": {
+        "entityId": "ENTI2",
+        "assocText": {
+          "de": "umkreist von",
+          "en": "orbited by"
+        },
+        "cardinality": "M",
+        "mandatory": false
+      },
+      "bwd": {
+        "entityId": "ENTI1",
+        "assocText": {
+          "de": "umkreist",
+          "en": "orbits"
+        },
+        "cardinality": "1",
+        "mandatory": false,
+        "arcNumber": 1
+      },
+      "examples": [
+        "Triton umkreisst Neptun",
+        "Io umkreist Jupiter",
+        "Europa umkreist Jupiter",
+        "(Erd-)Mond umkreist Erde"
+      ]
+    },
+    {
+      "elementId": "RELA9",
+      "relationType": "1:1",
+      "fwd": {
+        "entityId": "ENTI2",
+        "assocText": {
+          "de": "ist"
+        },
+        "cardinality": "1",
+        "mandatory": true
+      },
+      "bwd": {
+        "entityId": "ENTI10",
+        "assocText": null,
+        "cardinality": "1",
+        "mandatory": true
+      }
+    },
+    {
+      "elementId": "RELA10",
+      "relationType": "M:N",
+      "fwd": {
+        "entityId": "ENTI8",
+        "assocText": {
+          "de": "durchgef\u00fchrt von"
+        },
+        "cardinality": "M",
+        "mandatory": true
+      },
+      "bwd": {
+        "entityId": "ENTI9",
+        "assocText": {
+          "de": "f\u00fchrt durch"
+        },
+        "cardinality": "M",
+        "mandatory": false
+      }
+    },
+    {
+      "elementId": "RELA11",
+      "relationType": "M:1",
+      "fwd": {
+        "entityId": "ENTI3",
+        "assocText": {
+          "de": "umkreist von",
+          "en": "orbited by"
+        },
+        "cardinality": "M",
+        "mandatory": false
+      },
+      "bwd": {
+        "entityId": "ENTI2",
+        "assocText": {
+          "de": "umkreist",
+          "en": "orbits"
+        },
+        "cardinality": "1",
+        "mandatory": true
+      },
+      "examples": [
+        "Erde umkreist Sonne",
+        "Jupiter umrkeist Sonne",
+        "LHS 1140 b umkreist LHS 1140",
+        "Proxima Centauri b umkreist Proxima Centauri"
+      ]
+    },
+    {
+      "elementId": "RELA12",
+      "relationType": "M:1",
+      "fwd": {
+        "entityId": "ENTI3",
+        "assocText": {
+          "de": "umkreist von",
+          "en": "orbited by"
+        },
+        "cardinality": "M",
+        "mandatory": false
+      },
+      "bwd": {
+        "entityId": "ENTI6",
+        "assocText": {
+          "de": "umkreist",
+          "en": "orbits"
+        },
+        "cardinality": "1",
+        "mandatory": true
+      },
+      "examples": [
+        "Halleyscher Komet umkreist Sonne"
+      ]
+    },
+    {
+      "elementId": "RELA13",
+      "relationType": "M:1",
+      "fwd": {
+        "entityId": "ENTI3",
+        "assocText": {
+          "de": "umkreist von",
+          "en": "orbited by"
+        },
+        "cardinality": "M",
+        "mandatory": false
+      },
+      "bwd": {
+        "entityId": "ENTI4",
+        "assocText": {
+          "de": "umkreist",
+          "en": "orbits"
+        },
+        "cardinality": "1",
+        "mandatory": true
+      },
+      "examples": [
+        "Pluto umkreist Sonne"
+      ]
+    },
+    {
+      "elementId": "RELA14",
+      "relationType": "M:1",
+      "fwd": {
+        "entityId": "ENTI3",
+        "assocText": {
+          "de": "umkreist von",
+          "en": "orbited by"
+        },
+        "cardinality": "M",
+        "mandatory": false
+      },
+      "bwd": {
+        "entityId": "ENTI5",
+        "assocText": {
+          "de": "umkreist",
+          "en": "orbits"
+        },
+        "cardinality": "1",
+        "mandatory": true,
+        "arcNumber": 1
+      },
+      "examples": [
+        "Ida umkreist Sonne",
+        "Eugenia umkreist Sonne"
+      ]
+    },
+    {
+      "elementId": "RELA15",
+      "relationType": "1:1",
+      "fwd": {
+        "entityId": "ENTI4",
+        "assocText": {
+          "de": "ist"
+        },
+        "cardinality": "1",
+        "mandatory": true
+      },
+      "bwd": {
+        "entityId": "ENTI10",
+        "assocText": null,
+        "cardinality": "1",
+        "mandatory": true
+      }
+    },
+    {
+      "elementId": "RELA16",
+      "relationType": "M:1",
+      "fwd": {
+        "entityId": "ENTI4",
+        "assocText": {
+          "de": "umkreist von",
+          "en": "orbited by"
+        },
+        "cardinality": "M",
+        "mandatory": false
+      },
+      "bwd": {
+        "entityId": "ENTI1",
+        "assocText": {
+          "de": "umkreist",
+          "en": "orbits"
+        },
+        "cardinality": "1",
+        "mandatory": false,
+        "arcNumber": 1
+      },
+      "examples": [
+        "Charon umkreist Pluto"
+      ]
+    }
+  ],
+  "Attributes": [
+    {
+      "elementId": "ATTR10",
+      "name": {
+        "de": "Aphel",
+        "en": "Aphel"
+      },
+      "mandatory": false,
+      "parentId": "ENTI10"
+    },
+    {
+      "elementId": "ATTR11",
+      "name": {
+        "de": "Durchmesser",
+        "en": "Diameter"
+      },
+      "mandatory": false,
+      "parentId": "ENTI10",
+      "examples": [
+        "6112 km"
+      ]
+    },
+    {
+      "elementId": "ATTR12",
+      "name": {
+        "de": "Entdeckungsjahr",
+        "en": "Discovery year"
+      },
+      "mandatory": false,
+      "parentId": "ENTI10",
+      "examples": [
+        "1752",
+        "512 vuz",
+        "2009"
+      ]
+    },
+    {
+      "elementId": "ATTR13",
+      "name": {
+        "de": "mittlerer Abstand",
+        "en": "Average distance"
+      },
+      "mandatory": false,
+      "parentId": "ENTI10",
+      "examples": [
+        "1 AE",
+        "150Mio km",
+        "386000 km"
+      ]     
+    },
+    {
+      "elementId": "ATTR14",
+      "name": {
+        "de": "Name"
+      },
+      "mandatory": false,
+      "parentId": "ENTI10",
+      "examples": [
+        "(Erd-)Mond",
+        "Phobos",
+        "Deimos",
+        "Io",
+        "Europa",
+        "Ganymed",
+        "Triton",
+        "LHS 1140 b",
+        "Proxima Centauri b",
+        "Kepler-186f"
+      ]
+    },
+    {
+      "elementId": "ATTR15",
+      "name": {
+        "de": "Periphel",
+        "en": "Periphel"
+      },
+      "mandatory": false,
+      "parentId": "ENTI10"
+    },
+    {
+      "elementId": "ATTR16",
+      "name": {
+        "de": "Umlaufdauer",
+        "en": "Cycle time"
+      },
+      "mandatory": false,
+      "parentId": "ENTI10",
+      "examples": [
+        "1 Jahr",
+        "23 Tage",
+        "3.1 Stunden"
+      ]
+    },
+    {
+      "elementId": "ATTR17",
+      "name": {
+        "de": "Besuchsjahr"
+      },
+      "mandatory": false,
+      "parentId": "ENTI7"
+    },
+    {
+      "elementId": "ATTR18",
+      "name": {
+        "de": "Missionstyp"
+      },
+      "mandatory": true,
+      "parentId": "ENTI7"
+    },
+    {
+      "elementId": "ATTR19",
+      "name": {
+        "de": "Status"
+      },
+      "mandatory": false,
+      "parentId": "ENTI7"
+    },
+    {
+      "elementId": "ATTR20",
+      "name": {
+        "de": "Oberfl\u00e4chentyp",
+        "en": "Surface type"
+      },
+      "mandatory": false,
+      "parentId": "ENTI2",
+      "examples": [
+        "Feststoff",
+        "Gas",
+        "Eis"
+      ]
+    },
+    {
+      "elementId": "ATTR21",
+      "name": {
+        "de": "Rotationsdauer"
+      },
+      "mandatory": false,
+      "parentId": "ENTI2",
+      "examples": [
+        "1 Tag",
+        ".123 Tag",
+        "245.5 Tag"
+      ]
+    },
+    {
+      "elementId": "ATTR22",
+      "name": {
+        "de": "Bezeichnung"
+      },
+      "mandatory": false,
+      "parentId": "ENTI8",
+      "examples": [
+        "JUICE",
+        "Apollo-11"
+      ]
+    },
+    {
+      "elementId": "ATTR23",
+      "name": {
+        "de": "Endedatum"
+      },
+      "mandatory": false,
+      "parentId": "ENTI8"
+    },
+    {
+      "elementId": "ATTR24",
+      "name": {
+        "de": "Startdatum"
+      },
+      "mandatory": false,
+      "parentId": "ENTI8",
+      "examples": [
+        "14. April 2023",
+        "16. Juli 1969"
+      ]
+    },
+    {
+      "elementId": "ATTR25",
+      "name": {
+        "de": "Status"
+      },
+      "mandatory": false,
+      "parentId": "ENTI8"
+    },
+    {
+      "elementId": "ATTR26",
+      "name": {
+        "de": "Name"
+      },
+      "mandatory": false,
+      "parentId": "ENTI9",
+      "examples": [
+        "ESA",
+        "NASA"
+      ]
+    },
+    {
+      "elementId": "ATTR27",
+      "name": {
+        "de": "Bezeichnung",
+        "en": "Designation"
+      },
+      "mandatory": false,
+      "parentId": "ENTI3",
+      "examples": [
+        "HD 209458"
+      ]
+    },
+    {
+      "elementId": "ATTR28",
+      "name": {
+        "de": "Durchmesser",
+        "en": "Diameter"
+      },
+      "mandatory": false,
+      "parentId": "ENTI3",
+      "examples": [
+        "3000 km",
+        "15000 km",
+        "12412 - 12472 km"
+      ]
+    },
+    {
+      "elementId": "ATTR29",
+      "name": {
+        "de": "Entdeckungsjahr",
+        "en": "Discovery year"
+      },
+      "mandatory": false,
+      "parentId": "ENTI3",
+      "examples": [
+        "1752",
+        "512 vuz",
+        "2009"
+      ]
+    },
+    {
+      "elementId": "ATTR30",
+      "name": {
+        "de": "Entfernung",
+        "en": "Distance"
+      },
+      "mandatory": false,
+      "parentId": "ENTI3",
+      "examples": [
+        "1.3 Mio LJ",
+        "365 lj"
+      ]
+    },
+    {
+      "elementId": "ATTR31",
+      "name": {
+        "de": "Leuchtklasse",
+        "en": "Luminosity class"
+      },
+      "mandatory": false,
+      "parentId": "ENTI3",
+      "examples": [
+        "I",
+        "V",
+        "III",
+        "D"
+      ]
+    },
+    {
+      "elementId": "ATTR32",
+      "name": {
+        "de": "Name",
+        "en": "Eigenname eines Sterns"
+      },
+      "mandatory": true,
+      "parentId": "ENTI3",
+      "examples": [
+        "Alpha Centauri",
+        "Beta Orionis",
+        "Sol"
+      ]
+    },
+    {
+      "elementId": "ATTR33",
+      "name": {
+        "de": "Oberfl\u00e4chentyp",
+        "en": "Dwarf planet"
+      },
+      "mandatory": false,
+      "parentId": "ENTI4",
+      "examples": [
+        "Feststoff",
+        "Gas",
+        "Eis"
+      ]
+    },
+    {
+      "elementId": "ATTR1",
+      "name": {
+        "de": "Einheit",
+        "en": "Unit"
+      },
+      "mandatory": true,
+      "parentId": "DOMA19"
+    },
+    {
+      "elementId": "ATTR2",
+      "name": {
+        "de": "Menge",
+        "en": "Quantity"
+      },
+      "mandatory": true,
+      "parentId": "DOMA19"
+    },
+    {
+      "elementId": "ATTR3",
+      "name": {
+        "de": "\u00c4quatordurchmesser",
+        "en": "Equator diameter"
+      },
+      "mandatory": false,
+      "parentId": "DOMA2"
+    },
+    {
+      "elementId": "ATTR4",
+      "name": {
+        "de": "Mittlerer Durchmesser",
+        "en": "Average diameter"
+      },
+      "mandatory": true,
+      "parentId": "DOMA2"
+    },
+    {
+      "elementId": "ATTR5",
+      "name": {
+        "de": "Poldurchmesser",
+        "en": "Pole diameter"
+      },
+      "mandatory": false,
+      "parentId": "DOMA2"
+    },
+    {
+      "elementId": "ATTR6",
+      "name": {
+        "de": "Vertrauensintervall",
+        "en": "Confidence interval"
+      },
+      "mandatory": false,
+      "parentId": "DOMA22",
+    },
+    {
+      "elementId": "ATTR7",
+      "name": {
+        "de": "Wert",
+        "en": "Value"
+      },
+      "mandatory": true,
+      "parentId": "DOMA22"
+    },
+    {
+      "elementId": "ATTR8",
+      "name": {
+        "de": "Dauer",
+        "en": "Duration"
+      },
+      "mandatory": true,
+      "parentId": "DOMA6"
+    },
+    {
+      "elementId": "ATTR9",
+      "name": {
+        "de": "Einheit"
+      },
+      "mandatory": true,
+      "parentId": "DOMA6"
+    }
+  ]
+}
