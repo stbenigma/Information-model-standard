@@ -1,0 +1,709 @@
+
+
+
+
+
+
+ 
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rollenbeziehung</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../../../image/imicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../infra/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../../infra/js/jscode.js"></script>
+    <script src="../../../infra/js/IM.js"></script>
+	<script src="../../../infra/js/svg-pan-zoom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="../../../infra/images/icons/favicon/favicon-16x16.png?v=2" sizes="16x16">
+	<link rel="icon" type="image/png" href="../../../infra/images/icons/favicon/favicon-32x32.png?v=2" sizes="32x32">
+	<link rel="icon" type="image/png" href="../../../infra/images/icons/favicon/favicon-96x96.png?v=2" sizes="96x96">
+	<link rel="shortcut icon" type="image/x-icon" href="../../../infra/images/icons/favicon/favicon.ico?v=2">
+</head>
+
+<body>
+    		<div class="entity" id="ENTI84">
+			<div class="describtion">
+				 
+						<p>Entität</p>
+						<h1>Rollenbeziehung
+						
+						</h1>
+						<h3>  
+                            
+                            
+                        </h3>
+			<table style="width:100%">
+			  <tr>
+			  	<th style="width:70%">*1:1 Beziehung die eine Rolle darstellt.<br>
+Analogon: Ein:e Schauspieler:in (Person) spielt eine Rolle um eine andere Person (mit anderen Merkmalen) zu repräsentieren.<br>
+<br>
+Eine Rolle hat immer eine Grundentität, die sie erweitert. <br>
+Ein physikalischer Artikel ist ein Artikel mit Abmessungen und Gewicht.<br>
+Alle Eigenschaften (Attribute, Beziehungen, Schlüssel, Regeln,... ) der Grundentität gelten auch für die Rolle. Die Rolle *ist* die Grundentität, erweitert umd eigene Eigenschaften, für spezielle Nutzungen.<br>
+<br>
+Eine spezielle Art von Rolle sind exklusive / "entweder-oder" Rollen sog. Subentitäten. Eine Gruppe von exkusiven Rollen wird in einem Arc zusammengefasst. Die Grundentität (in dem Fall genannt Superentität) muss genau eine der Rollen aus der Gruppe annehmen. Bsp: Ein öffentliches Verkehrsmittel ist entweder ein Bus oder ein Zug oder ein Schiff.<br>
+<br>
+Bei Rollenbeziehungen sind die Kardinalitäten auf beiden Seiten "1".<br>
+Die Beziehung von der Rolle zur Grundentität ist obligatorisch, von der Grundentität zur Rolle ist optional.<br>
+Bei Subentitäten ist die Beziehung der Subentität zur Grundentität (Superentität) immer obligatorisch, von der Superentität zur Grundentität ist die Beziehunge obligatorisch und in einem  "entweder-oder", d.h. in einem Arc zusammengefasst. <br>
+Der Assoziationstext ist immer "ist". Darum wäre der Text redundant und er kann zu Gunsten der Einfachheit, weggelassen werden.</th>
+			      
+			    
+					<th style="width:20%"><div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                version="1.1" viewBox="0 0 600.0 90" width="600.0" height="90">
+    <g  stroke="blue" fill-opacity="0.3" stroke-opacity="0.8" 
+            transform="translate(0,5.0)" >
+            <rect fill="#efa09f" x="0" y="0" width="160" height="20" rx="10" ry="10" ><title>Eine Beziehung verbindet immer eine Entität (Startentität) mit genau einer zweiten Entität (End-/Reversentität). 
+
+Die beiden Enden können einen Entität mit sich selber verknüpfen. Man nennt dies reku
+
+Ein Planet umkreist einen Stern. - Ein Stern wird umkreist von 0 - vielen Planeten.
+Ein Bus ist ein Verkehrsmittel. - Ein Verkehrsmittel kann ein Bus sein.
+Ein Zug ist ein Verkehrsmittel.- Ein Verkehrsmittel kann ein Zug sein.</title></rect>
+            <a href="../../../de/elements/entities/ENTI71.html" target="contentIframe" >
+            <text x="6" y="13" fill="blue" font-weight="bold"  fill-opacity="1.0" font-size="9" stroke="none">
+            Beziehung </text><title>Eine Beziehung verbindet immer eine Entität (Startentität) mit genau einer zweiten Entität (End-/Reversentität). 
+
+Die beiden Enden können einen Entität mit sich selber verknüpfen. Man nennt dies reku
+
+Ein Planet umkreist einen Stern. - Ein Stern wird umkreist von 0 - vielen Planeten.
+Ein Bus ist ein Verkehrsmittel. - Ein Verkehrsmittel kann ein Bus sein.
+Ein Zug ist ein Verkehrsmittel.- Ein Verkehrsmittel kann ein Zug sein.</title>
+            </a>
+            </g>
+            <g stroke-linecap="butt" >
+              <path stroke="rgb(0,0,0)" fill="none" stroke-opacity="100"  stroke-width="1" 
+                    d="M160 15.0 L200.0 15.0" />
+                </g>
+            <g  stroke="blue" fill-opacity="0.3" stroke-opacity="0.8" 
+            transform="translate(200.0,5.0)" >
+            <rect fill="#efa09f" x="0" y="0" width="160" height="20" rx="10" ry="10" ><title></title></rect>
+            <a href="../../../de/elements/entities/ENTI84.html" target="contentIframe" >
+            <text x="6" y="13" fill="black" font-weight="bold"  fill-opacity="1.0" font-size="9" stroke="none">
+            Rollenbeziehung </text><title></title>
+            </a>
+            </g>
+            <g  fill="white" stroke="blue" fill-opacity="80" stroke-opacity="80" 
+            transform="translate(245.0,35.0)" >
+            <text x="2" y="4" fill="black" font-weight="bold"  fill-opacity="1.0" font-size="9" stroke="none">
+            abgeschlossen mit </text></g><g  stroke="blue" fill-opacity="0.3" stroke-opacity="0.8" 
+            transform="translate(400.0,35.0)" >
+            <rect fill="#efa09f" x="0" y="0" width="160" height="20" rx="10" ry="10" ><title>*Endpunkt einer Beziehung. Anknüpfungspunkt der Relation an eine Entität.
+Es gibt immer genau 2 Endpunkte in einer Relation.
+Es gibt eine Richtung der Beziehung: vorwärts/rückwärts
+Zur Vereinfachung d
+
+Eine Adresse muss liegen in einem Postleitzahlgebiet.
+Ein Postleitzahlgebiet kann enthalten viele Adressen.
+Ein Bus fährt optional mehre Strecken.</title></rect>
+            <a href="../../../de/elements/entities/ENTI72.html" target="contentIframe" >
+            <text x="6" y="13" fill="blue" font-weight="bold"  fill-opacity="1.0" font-size="9" stroke="none">
+            Beziehungsende </text><title>*Endpunkt einer Beziehung. Anknüpfungspunkt der Relation an eine Entität.
+Es gibt immer genau 2 Endpunkte in einer Relation.
+Es gibt eine Richtung der Beziehung: vorwärts/rückwärts
+Zur Vereinfachung d
+
+Eine Adresse muss liegen in einem Postleitzahlgebiet.
+Ein Postleitzahlgebiet kann enthalten viele Adressen.
+Ein Bus fährt optional mehre Strecken.</title>
+            </a>
+            </g>
+            <g stroke-linecap="butt" >
+              <path stroke="rgb(160,160,160)" fill="none" stroke-opacity="100"  stroke-width="1" 
+                    d="M400.0 45.0 L240.0 45.0" />
+                </g>
+            <g  fill="white" stroke="blue" fill-opacity="80" stroke-opacity="80" 
+            transform="translate(245.0,65.0)" >
+            <text x="2" y="4" fill="black" font-weight="bold"  fill-opacity="1.0" font-size="9" stroke="none">
+            erklärt </text></g><g  stroke="blue" fill-opacity="0.3" stroke-opacity="0.8" 
+            transform="translate(400.0,65.0)" >
+            <rect fill="#efa09f" x="0" y="0" width="160" height="20" rx="10" ry="10" ><title>*Generisches Element. Beispiel oder user defined property die zur Beschreibung eines Elements beitragen.
+
+</title></rect>
+            <a href="../../../de/elements/entities/ENTI80.html" target="contentIframe" >
+            <text x="6" y="13" fill="blue" font-weight="bold"  fill-opacity="1.0" font-size="9" stroke="none">
+            Generisches Element </text><title>*Generisches Element. Beispiel oder user defined property die zur Beschreibung eines Elements beitragen.
+
+</title>
+            </a>
+            </g>
+            <g stroke-linecap="butt" >
+              <path stroke="rgb(160,160,160)" fill="none" stroke-opacity="100"  stroke-width="1" 
+                    d="M400.0 75.0 L240.0 75.0" />
+                </g>
+            <g stroke-linecap="butt" >
+              <path stroke="rgb(0,0,0)" fill="none" stroke-opacity="100"  stroke-width="1" 
+                    d="M240.0 25.0 L240.0 75.0" />
+                </g>
+            
+        </svg>
+    
+</div></th>
+				  
+			  </tr>
+			</table>
+                
+			</div>
+			
+			<div class="panel-body">
+    			
+		    		   
+
+            <h2>Information</h2>
+            <div class="table-responsive">
+                <table class="table borderless">
+                    <tbody>
+                        <tr>
+                            <th>Synonyme</th>
+                            <th>Superentitäten</th>
+                            <th>Subentitäten</th>
+                            <th>Rollen</th>
+                            <th>Klassifikation</th>
+                            <th>Zoom levels</th>
+                            <th>Publ.Status</th>
+                            <th>auf Diagramm(en)</th>
+                            <th> geändert</th>
+                        </tr>
+                        <tr>
+                            <td class="attribute">
+                                
+                            </td>
+                            <td class="attribute">
+                                
+			
+			<a href="../../../de/elements/entities/ENTI71.html" target="contentIframe">Beziehung</a>
+			
+                            </td>
+                            <td class="attribute">
+                                
+                            </td>
+                            <td class="attribute">
+                                
+                            </td>
+
+                            <td class="attribute">Data Layer</td>
+                            <td class="attribute">0 - 4</td>
+                            <td class="attribute">publiziert</td> 
+                            <td class="attribute">
+                                
+                                
+                                
+                                <a href="../../../de/elements/diagrams/DIAG917.html" target="contentIframe">Information model-0</a>
+                                
+                            </td>
+                            <td class="attribute">stb, 2020-07-30 13:03:21 UTC</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!--attributes-->
+            <div class="panel"  id="#ENTI84attr">
+						<div class="panel-heading collapsed" data-toggle="collapse"  data-target="#ENTI84attr">
+							<img class="icon-chevron-up" alt="minus" src="../../../infra/images/icons/chevron-up.svg">
+							<img class="icon-chevron-down" alt="plus" src="../../../infra/images/icons/chevron-down.svg">
+							<label class="label1">Attribute</label>
+						</div>
+					</div>
+					<div class="collapse" id="ENTI84attr">
+						
+                <h4>Eigene Attribute</h4>
+				<div class="table-responsive">
+					<table class="table borderless" >
+						<tbody>
+							<tr>
+								<th>Name</th>
+								<th>Wertebereich</th>
+								<th>Typ</th>
+								<th>Pflichtattribut</th>
+								<th>Schlüssel</th>
+								<th>Deskriptor</th>
+								
+								<th>übersetzt</th>
+								<th>wiederholt</th>
+								<th>historisiert</th>
+								<th>verschlüsselt</th>
+								
+							</tr>
+							
+						</tbody>
+					</table>
+				</div>
+                
+            
+					</div>
+
+            <!--examples-->
+            
+            <div class="panel"  id="#ENTI84expl">
+						<div class="panel-heading collapsed" data-toggle="collapse"  data-target="#ENTI84expl">
+							<img class="icon-chevron-up" alt="minus" src="../../../infra/images/icons/chevron-up.svg">
+							<img class="icon-chevron-down" alt="plus" src="../../../infra/images/icons/chevron-down.svg">
+							<label class="label1">Beispiele</label>
+						</div>
+					</div>
+					<div class="collapse" id="ENTI84expl">
+						
+                <div class="table-responsive">
+                    <table class="table borderless" >
+                        <tbody>
+                            
+                            <tr>
+                                <td>Ein Arbeitnehmer ist eine Person - eine Person kann ein Arbeitnehmer sein. </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Ein Mieter ist eine Person - eine Person kann ein Mieter sein. </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Ein öffentliches Verkehrsmittel ist entweder ein Bus oder ein Zug oder ein Schiff </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Ein Schiff ist ein öffentliches Verkehrsmittel </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Ein Zug ist ein öffentliches Verkehrsmittel </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Ein Bus ist ein öffentliches Verkehrsmittel </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Ein Artikel ist entweder ein virtueller Artikel oder ein physischer Artikel </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Ein virtueller Artikel ist ein Artikel </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Ein physikalischer Artikel ist ein Artikel </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            
+					</div>
+            
+
+            <!--keys-->
+            <div class="panel"  id="#ENTI84keys">
+						<div class="panel-heading collapsed" data-toggle="collapse"  data-target="#ENTI84keys">
+							<img class="icon-chevron-up" alt="minus" src="../../../infra/images/icons/chevron-up.svg">
+							<img class="icon-chevron-down" alt="plus" src="../../../infra/images/icons/chevron-down.svg">
+							<label class="label1">Schlüssel</label>
+						</div>
+					</div>
+					<div class="collapse" id="ENTI84keys">
+						
+                <div class="table-responsive">
+                    <table class="table borderless" >
+                        <tbody>
+                            <tr>
+                                <th>Name</th>
+                                <th>Attribute(e)</th>
+                                <th>Beziehung(en)</th>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            
+					</div>
+
+            <!-- relationships-->
+            <div class="panel"  id="#ENTI84rela">
+						<div class="panel-heading collapsed" data-toggle="collapse"  data-target="#ENTI84rela">
+							<img class="icon-chevron-up" alt="minus" src="../../../infra/images/icons/chevron-up.svg">
+							<img class="icon-chevron-down" alt="plus" src="../../../infra/images/icons/chevron-down.svg">
+							<label class="label1">Beziehungen</label>
+						</div>
+					</div>
+					<div class="collapse" id="ENTI84rela">
+						
+                <div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                version="1.1" viewBox="0 0 600.0 90" width="600.0" height="90">
+    <g  stroke="blue" fill-opacity="0.3" stroke-opacity="0.8" 
+            transform="translate(0,5.0)" >
+            <rect fill="#efa09f" x="0" y="0" width="160" height="20" rx="10" ry="10" ><title>Eine Beziehung verbindet immer eine Entität (Startentität) mit genau einer zweiten Entität (End-/Reversentität). 
+
+Die beiden Enden können einen Entität mit sich selber verknüpfen. Man nennt dies reku
+
+Ein Planet umkreist einen Stern. - Ein Stern wird umkreist von 0 - vielen Planeten.
+Ein Bus ist ein Verkehrsmittel. - Ein Verkehrsmittel kann ein Bus sein.
+Ein Zug ist ein Verkehrsmittel.- Ein Verkehrsmittel kann ein Zug sein.</title></rect>
+            <a href="../../../de/elements/entities/ENTI71.html" target="contentIframe" >
+            <text x="6" y="13" fill="blue" font-weight="bold"  fill-opacity="1.0" font-size="9" stroke="none">
+            Beziehung </text><title>Eine Beziehung verbindet immer eine Entität (Startentität) mit genau einer zweiten Entität (End-/Reversentität). 
+
+Die beiden Enden können einen Entität mit sich selber verknüpfen. Man nennt dies reku
+
+Ein Planet umkreist einen Stern. - Ein Stern wird umkreist von 0 - vielen Planeten.
+Ein Bus ist ein Verkehrsmittel. - Ein Verkehrsmittel kann ein Bus sein.
+Ein Zug ist ein Verkehrsmittel.- Ein Verkehrsmittel kann ein Zug sein.</title>
+            </a>
+            </g>
+            <g stroke-linecap="butt" >
+              <path stroke="rgb(0,0,0)" fill="none" stroke-opacity="100"  stroke-width="1" 
+                    d="M160 15.0 L200.0 15.0" />
+                </g>
+            <g  stroke="blue" fill-opacity="0.3" stroke-opacity="0.8" 
+            transform="translate(200.0,5.0)" >
+            <rect fill="#efa09f" x="0" y="0" width="160" height="20" rx="10" ry="10" ><title></title></rect>
+            <a href="../../../de/elements/entities/ENTI84.html" target="contentIframe" >
+            <text x="6" y="13" fill="black" font-weight="bold"  fill-opacity="1.0" font-size="9" stroke="none">
+            Rollenbeziehung </text><title></title>
+            </a>
+            </g>
+            <g  fill="white" stroke="blue" fill-opacity="80" stroke-opacity="80" 
+            transform="translate(245.0,35.0)" >
+            <text x="2" y="4" fill="black" font-weight="bold"  fill-opacity="1.0" font-size="9" stroke="none">
+            abgeschlossen mit </text></g><g  stroke="blue" fill-opacity="0.3" stroke-opacity="0.8" 
+            transform="translate(400.0,35.0)" >
+            <rect fill="#efa09f" x="0" y="0" width="160" height="20" rx="10" ry="10" ><title>*Endpunkt einer Beziehung. Anknüpfungspunkt der Relation an eine Entität.
+Es gibt immer genau 2 Endpunkte in einer Relation.
+Es gibt eine Richtung der Beziehung: vorwärts/rückwärts
+Zur Vereinfachung d
+
+Eine Adresse muss liegen in einem Postleitzahlgebiet.
+Ein Postleitzahlgebiet kann enthalten viele Adressen.
+Ein Bus fährt optional mehre Strecken.</title></rect>
+            <a href="../../../de/elements/entities/ENTI72.html" target="contentIframe" >
+            <text x="6" y="13" fill="blue" font-weight="bold"  fill-opacity="1.0" font-size="9" stroke="none">
+            Beziehungsende </text><title>*Endpunkt einer Beziehung. Anknüpfungspunkt der Relation an eine Entität.
+Es gibt immer genau 2 Endpunkte in einer Relation.
+Es gibt eine Richtung der Beziehung: vorwärts/rückwärts
+Zur Vereinfachung d
+
+Eine Adresse muss liegen in einem Postleitzahlgebiet.
+Ein Postleitzahlgebiet kann enthalten viele Adressen.
+Ein Bus fährt optional mehre Strecken.</title>
+            </a>
+            </g>
+            <g stroke-linecap="butt" >
+              <path stroke="rgb(160,160,160)" fill="none" stroke-opacity="100"  stroke-width="1" 
+                    d="M400.0 45.0 L240.0 45.0" />
+                </g>
+            <g  fill="white" stroke="blue" fill-opacity="80" stroke-opacity="80" 
+            transform="translate(245.0,65.0)" >
+            <text x="2" y="4" fill="black" font-weight="bold"  fill-opacity="1.0" font-size="9" stroke="none">
+            erklärt </text></g><g  stroke="blue" fill-opacity="0.3" stroke-opacity="0.8" 
+            transform="translate(400.0,65.0)" >
+            <rect fill="#efa09f" x="0" y="0" width="160" height="20" rx="10" ry="10" ><title>*Generisches Element. Beispiel oder user defined property die zur Beschreibung eines Elements beitragen.
+
+</title></rect>
+            <a href="../../../de/elements/entities/ENTI80.html" target="contentIframe" >
+            <text x="6" y="13" fill="blue" font-weight="bold"  fill-opacity="1.0" font-size="9" stroke="none">
+            Generisches Element </text><title>*Generisches Element. Beispiel oder user defined property die zur Beschreibung eines Elements beitragen.
+
+</title>
+            </a>
+            </g>
+            <g stroke-linecap="butt" >
+              <path stroke="rgb(160,160,160)" fill="none" stroke-opacity="100"  stroke-width="1" 
+                    d="M400.0 75.0 L240.0 75.0" />
+                </g>
+            <g stroke-linecap="butt" >
+              <path stroke="rgb(0,0,0)" fill="none" stroke-opacity="100"  stroke-width="1" 
+                    d="M240.0 25.0 L240.0 75.0" />
+                </g>
+            
+        </svg>
+    
+</div>
+                
+                    <h4>Eigene Beziehungen</h4>
+			<div class="table-responsive">
+				<table class="table borderless" >
+					<tbody>
+						<tr>
+							<th>Name</th>
+							<th>Entität-1</th>
+							<th></th>
+							<th>Beziehung</th>
+							<th></th>
+							<th>Entität-2</th>
+							<th>Arc</th>
+							<th>Schlüssel</th>
+							<th>Business Rules</th>
+						</tr>
+						
+						
+							
+						
+					</tbody>
+				</table>
+			</div>
+                
+
+                
+                    <h4>Geerbte Beziehungen</h4>
+			<div class="table-responsive">
+				<table class="table borderless" >
+					<tbody>
+						<tr>
+							<th>Name</th>
+							<th>Entität-1</th>
+							<th></th>
+							<th>Beziehung</th>
+							<th></th>
+							<th>Entität-2</th>
+							<th>Arc</th>
+							<th>Schlüssel</th>
+							<th>Business Rules</th>
+						</tr>
+						
+						
+							
+								
+								
+								
+								
+									
+									
+								
+								<tr>
+								<td>Relation_328</td>
+								<td>Beziehung</td>
+								<td>-&gt;</td>
+								<td>abgeschlossen mit</td>
+								<td>1..N</td>
+									
+		<td class="leftsymbol"><img alt="?" class="icon-down" src="../../../infra/images/icons/downarrow.svg"></td>
+	
+								<td></td>
+									
+		<td class="symbol"><img alt="?" class="icon-check" src="../../../infra/images/icons/checkmark.svg"></td>
+	
+									<td> 
+									</td>
+							   </tr>
+								<tr>
+								<td></td>
+										
+		<td class="leftsymbol"><img alt="?" class="icon-up" src="../../../infra/images/icons/uparrow.svg"></td>
+	
+								<td>1</td>
+								<td>&lt;-</td>
+								<td>schliesst ab</td>
+								<td><a href="../../../de/elements/entities/ENTI72.html" target="contentIframe">Beziehungsende</a></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								</tr>
+							
+						
+						
+							
+								
+								
+								 
+								
+									
+									
+								
+								<tr>
+								<td>Relation_149</td>
+								<td>Generisches Element</td>
+								<td>-&gt;</td>
+								<td>erklärt mit</td>
+								<td>1</td>
+									
+		<td class="leftsymbol"><img alt="?" class="icon-down" src="../../../infra/images/icons/downarrow.svg"></td>
+	
+								<td>Arc_7</td>
+									
+		<td class="symbol"><img alt="?" class="icon-check" src="../../../infra/images/icons/checkmark.svg"></td>
+	
+									<td> 
+									</td>
+							   </tr>
+								<tr>
+								<td></td>
+										
+		<td class="leftsymbol"><img alt="?" class="icon-up" src="../../../infra/images/icons/uparrow.svg"></td>
+	
+								<td>0..N</td>
+								<td>&lt;-</td>
+								<td>erklärt</td>
+								<td><a href="../../../de/elements/entities/ENTI71.html" target="contentIframe">Beziehung</a></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								</tr>
+							
+						
+					</tbody>
+				</table>
+			</div>
+                
+
+            
+					</div>
+
+            <!--businessrules-->
+            
+
+            <!--actorroles-->
+            
+
+
+            <!--referencedby-->
+            
+
+            <!--user defined properties-->
+            
+
+            <!--mappings-->
+            
+            <div class="panel"  id="#ENTI84map">
+						<div class="panel-heading collapsed" data-toggle="collapse"  data-target="#ENTI84map">
+							<img class="icon-chevron-up" alt="minus" src="../../../infra/images/icons/chevron-up.svg">
+							<img class="icon-chevron-down" alt="plus" src="../../../infra/images/icons/chevron-down.svg">
+							<label class="label1">Mappings</label>
+						</div>
+					</div>
+					<div class="collapse" id="ENTI84map">
+						
+                <div class="table-responsive">
+                    <table class="table borderless" >
+                        <tbody>
+                            <tr>
+                                <th>System</th>
+                                <th>Tabellen</th>
+                            </tr>
+                            
+                            
+                            <tr>
+                                <td>SPOD json</td>
+                                <td>
+                                    
+                                        
+                                        
+                                        <a href="../../../datamodels/SPOD json/index.html#TABL288" target="_self">entities</a> (R) 
+                                    
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            
+					</div>
+            
+
+            <!--translations-->
+            
+            
+            
+            <div class="panel"  id="#ENTI84transl">
+						<div class="panel-heading collapsed" data-toggle="collapse"  data-target="#ENTI84transl">
+							<img class="icon-chevron-up" alt="minus" src="../../../infra/images/icons/chevron-up.svg">
+							<img class="icon-chevron-down" alt="plus" src="../../../infra/images/icons/chevron-down.svg">
+							<label class="label1">Übersetzungen</label>
+						</div>
+					</div>
+					<div class="collapse" id="ENTI84transl">
+						
+                <div class="table-responsive">
+                    <table class="table borderless" >
+                        <tbody>
+                            <tr>
+                                <th>Element </th>
+                                
+                                    <th>en</th>
+                                
+                            </tr>
+                            <tr>
+                                <td>Name</td>
+                                
+                                    <td><a href="../../../en/elements/entities/ENTI84.html" target="contentIframe">Role Relation</a></td>
+                                
+                            </tr>
+                            <tr>
+                                <td>Synonym</td>
+                                
+                                    <td>
+                                        
+                                    </td>
+                                
+                            </tr>
+                            <tr>
+                                <td>Beschreibung</td>
+                                
+                                    <td>1:1 relationship that defines a role
+Relationship from father to child is usually optional. From child to father it must be mandatory.</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>Beispiele</td>
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <td>Person IsA<br>
+Buyer<br>
+Employee<br>
+Tenant<br>
+Member of the club<br>
+*de* Ein Bus ist ein öffentliches Verkehrsmittel<br>
+*de* Ein Artikel ist entweder ein virtueller Artikel oder ein physischer Artikel<br>
+*de* Ein virtueller Artikel ist ein Artikel<br>
+*de* Ein physikalischer Artikel ist ein Artikel</td>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            
+					</div>
+            
+					
+		
+    			
+			</div>
+            
+		</div>
+
+
+	
+</body>
+</html>

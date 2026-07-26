@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3A6C14F8-383E-5F6E-9271-BCFDB89DECEF" name="STORAGE_FORMATS">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<comment><![CDATA[Format for storeing binary coded values.  
+Examples: GIF TIFF JPEG DOC DOCX SVG PDF]]></comment>
+<generatorID>97697E1A-8F6A-19AC-AF05-F9351CD69864</generatorID>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Format für die Speicherung binär verkodeter Werte.
+
+Beispiele:
+GIF
+TIFF
+JPEG
+DOC
+DOCX
+SVG
+PDF
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Format for storeing binary coded values.  
+Examples: 
+GIF 
+TIFF 
+JPEG 
+DOC 
+DOCX 
+SVG 
+PDF
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<ordsAlias>storage_format</ordsAlias>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<abbreviation>STFO</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STFO_ID" id="90531C0A-F9E7-03A7-3719-0F7B49315D86">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="STFO_NAME" id="64FD7BB6-9FA7-04A6-9036-6B6920E1BFD9">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>5EFDBF4E-3616-86A7-60CB-3C8E864F9BF7</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STFO_DESCRIPTION" id="B7FEEFEB-3795-1F2A-51B3-65AA81490833">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>102EF215-5D55-196F-A9B2-CC5771D133B7</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F4741C88-3FC7-14B5-9A2A-1966934BDDEA" name="STFO_PK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="90531C0A-F9E7-03A7-3719-0F7B49315D86"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="42993D40-3864-AB83-2524-0DC3389D41F7" name="STFO_NAME_UN">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>A7D8A5E2-0DDB-0F43-FB71-5189E5697FDF</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64FD7BB6-9FA7-04A6-9036-6B6920E1BFD9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

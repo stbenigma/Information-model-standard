@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<CollectionType class="oracle.dbtools.crest.model.design.datatypes.CollectionType" name="linepath" directorySegmentName="seg_0" id="48447D07-1A40-4940-6DD8-8F4C8507B749">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:16:06 UTC</createdTime>
+<comment><![CDATA[collection of line segments attached to each other]]></comment>
+<generatorID>169479B0-6B4F-A7C5-8370-11483E134C49</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>169479B0-6B4F-A7C5-8370-11483E134C49</importedID>
+<predefined>false</predefined>
+<dataTypeDescr class="oracle.dbtools.crest.model.design.datatypes.CollectionType$DataTypeWrapper">
+<size></size>
+<type>DOM3000004</type>
+<isreference>false</isreference>
+</dataTypeDescr>
+<maxElement>9999</maxElement>
+<type>ARRAY</type>
+</CollectionType>

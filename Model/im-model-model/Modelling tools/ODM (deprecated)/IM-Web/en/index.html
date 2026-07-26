@@ -1,0 +1,623 @@
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>IM-standard</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../infra/image/imicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../infra/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../infra/js/jscode.js"></script>
+    <script src="../infra/js/IM.js"></script>
+	<script src="../infra/js/svg-pan-zoom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="../infra/images/icons/favicon/favicon-16x16.png?v=2" sizes="16x16">
+	<link rel="icon" type="image/png" href="../infra/images/icons/favicon/favicon-32x32.png?v=2" sizes="32x32">
+	<link rel="icon" type="image/png" href="../infra/images/icons/favicon/favicon-96x96.png?v=2" sizes="96x96">
+	<link rel="shortcut icon" type="image/x-icon" href="../infra/images/icons/favicon/favicon.ico?v=2">
+</head>
+
+<body>
+	<div class="header" id="TopBar">
+		<h4>foryouandyourcustomers</h4>
+		<h4>IM-standard</h4>
+		<h4>2025-02-02 11:16:50.894485</h4>
+		<img src="../infra/image/logo.jpg" alt="foryouandyourcustomers" id="LLogo">
+	</div>
+	<button id="btnF" type="button" class="btn btn-info" data-toggle="modal" data-target="#MobileSearch">
+		<img class="icon-filter" alt="filter" src="../infra/images/icons/search.svg">
+	</button>
+	<div class="container" id="sidebar">
+		<div id="toc_list">
+			<div class="form-wrapper">
+				<form autocomplete="off">
+					<div class="form-group focused">
+						<label class="form-label" for="first">search key</label>
+						<input id="first" class="form-input" type="text" onkeyup="$d_Find('toc_list',this.value,'a')">
+						<img id="searchclear" alt="plus" class="icon-times" src="../infra/images/icons/cross.svg" type="display: none;">
+						<img class="icon-search" alt="minus" src="../infra/images/icons/search.svg" id="searcher">
+					</div>
+				</form>
+			</div>
+			<h3>Hits:</h3>
+			<output id="count"></output>
+			<div class="contentView">
+
+				<!--diagrams-->
+				
+				<div class="panel-body" id="DiagramL">
+					<div class="panel">
+						<div class="panel-heading collapsed" data-toggle="collapse" data-target="#bardiag">
+							<label class="label0">Diagrams</label>
+							<img class="icon-minus" alt="minus" src="../infra/images/icons/minus.svg">
+							<img class="icon-plus" alt="plus" src="../infra/images/icons/plus.svg">
+						</div>
+					</div>
+					<!-- The inside div eliminates the 'jumping' animation. -->
+					<div class="collapse" id="bardiag">
+						
+					<ol class="tree" id="DiagramList">
+						
+							<li class="obj"><a href="../en/elements/diagrams/DIAG917.html" target="contentIframe">Information model-0</a>
+						
+					</ol>
+				
+					</div>
+				</div>
+				
+
+				<!--entites-->
+				<div class="panel-body" id="EntitesL">
+					<div class="panel">
+						<div class="panel-heading collapsed" data-toggle="collapse" data-target="#barenti">
+							<label class="label0">Entities</label>
+							<img class="icon-minus" alt="minus" src="../infra/images/icons/minus.svg">
+							<img class="icon-plus" alt="plus" src="../infra/images/icons/plus.svg">
+						</div>
+					</div>
+					<!-- The inside div eliminates the 'jumping' animation. -->
+					<div class="collapse" id="barenti">
+						
+						<ol class="tree" id="EntitesList">
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI91.html" target="contentIframe">Additional property</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI86.html" target="contentIframe">Allowed value</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI70.html" target="contentIframe">Attribute</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI95.html" target="contentIframe">Binary domain</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI96.html" target="contentIframe">Boolean domain</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI82.html" target="contentIframe">Category</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI73.html" target="contentIframe">Data layer</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI87.html" target="contentIframe">Domain</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI74.html" target="contentIframe">Domain Attribute</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI75.html" target="contentIframe">Element linkage</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI76.html" target="contentIframe">Entity</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI93.html" target="contentIframe">Entity Attribute</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI77.html" target="contentIframe">Entity key</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI94.html" target="contentIframe">Example</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI78.html" target="contentIframe">Exclusive relation</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI79.html" target="contentIframe">Functional relation</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI80.html" target="contentIframe">Generic element</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI88.html" target="contentIframe">Group domain</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI81.html" target="contentIframe">Information model</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI85.html" target="contentIframe">Key element</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI92.html" target="contentIframe">many-to-many Relation</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI97.html" target="contentIframe">Numeric domain</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI83.html" target="contentIframe">Physical unit</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI71.html" target="contentIframe">Relation</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI72.html" target="contentIframe">Relation End</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI84.html" target="contentIframe">Role Relation</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI98.html" target="contentIframe">Text domain</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI90.html" target="contentIframe">Time domain</a>
+							
+							<li class="obj"><a href="../en/elements/entities/ENTI89.html" target="contentIframe">Value list</a>
+							
+						</ol>
+				
+					</div>
+				</div>
+				
+				<!--attributes-->
+				<div class="panel-body" id="AttrsL">
+					<div class="panel">
+						<div class="panel-heading collapsed" data-toggle="collapse" data-target="#barattr">
+							<label class="label0">Attributes</label>
+							<img class="icon-minus" alt="minus" src="../infra/images/icons/minus.svg">
+							<img class="icon-plus" alt="plus" src="../infra/images/icons/plus.svg">
+						</div>
+					</div>
+					<!-- The inside div eliminates the 'jumping' animation. -->
+					<div class="collapse" id="barattr">
+						
+						<ol class="tree" id="AttrsList">
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR171.html" target="contentIframe">Association (Relation End)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR172.html" target="contentIframe">Cardinality (Relation End)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR179.html" target="contentIframe">Description (Information model)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR185.html" target="contentIframe">Description (Attribute)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR197.html" target="contentIframe">Description (Category)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR200.html" target="contentIframe">Description (Entity)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR210.html" target="contentIframe">Description (Domain)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR212.html" target="contentIframe">Description (Physical unit)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR220.html" target="contentIframe">Description (Allowed value)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR186.html" target="contentIframe">Display name (Attribute)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR188.html" target="contentIframe">Display sequence (Attribute)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR218.html" target="contentIframe">Display text (Allowed value)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR205.html" target="contentIframe">Fractional digits (Numeric domain)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR216.html" target="contentIframe">Granularity (Time domain)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR169.html" target="contentIframe">is descriptive (Entity Attribute)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR192.html" target="contentIframe">is encrypted (Attribute)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR174.html" target="contentIframe">is historicized (Relation End)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR191.html" target="contentIframe">is language-dependent (Attribute)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR173.html" target="contentIframe">is mandatory (Relation End)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR189.html" target="contentIframe">is mandatory (Attribute)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR190.html" target="contentIframe">is repeated (Attribute)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR181.html" target="contentIframe">Languages (Information model)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR180.html" target="contentIframe">Main language (Information model)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR222.html" target="contentIframe">Max length (Text domain)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR215.html" target="contentIframe">Max Time (Time domain)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR207.html" target="contentIframe">Max value (Numeric domain)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR194.html" target="contentIframe">Meaning (Element linkage)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR221.html" target="contentIframe">Min length (Text domain)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR214.html" target="contentIframe">Min Time (Time domain)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR206.html" target="contentIframe">Min value (Numeric domain)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR176.html" target="contentIframe">Name (Information model)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR182.html" target="contentIframe">Name (Additional property)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR184.html" target="contentIframe">Name (Attribute)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR196.html" target="contentIframe">Name (Category)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR199.html" target="contentIframe">Name (Entity)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR209.html" target="contentIframe">Name (Domain)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR198.html" target="contentIframe">Number (Exclusive relation)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR170.html" target="contentIframe">Relation end type (Relation End)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR195.html" target="contentIframe">Representation (Element linkage)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR208.html" target="contentIframe">Rounding unit (Numeric domain)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR187.html" target="contentIframe">Short Description (Attribute)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR201.html" target="contentIframe">Short Description (Entity)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR203.html" target="contentIframe">Short name (Entity)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR213.html" target="contentIframe">SI unit (Physical unit)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR219.html" target="contentIframe">Sort order (Allowed value)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR211.html" target="contentIframe">Symbol (Physical unit)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR202.html" target="contentIframe">Synonym (Entity)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR177.html" target="contentIframe">Target environment (Information model)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR204.html" target="contentIframe">Total digits (Numeric domain)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR193.html" target="contentIframe">type of relation+E158 (Element linkage)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR175.html" target="contentIframe">Value (Example)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR183.html" target="contentIframe">Value (Additional property)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR217.html" target="contentIframe">Value (Allowed value)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR223.html" target="contentIframe">Value rule (Text domain)</a>
+							
+							
+							
+							<li class="obj"><a href="../en/elements/attributes/ATTR178.html" target="contentIframe">Version (Information model)</a>
+							
+						</ol>
+				
+					</div>
+				</div>
+
+				<!--domains-->       
+				
+				<div class="panel-body" id="DomainsL">
+					<div class="panel">
+						<div class="panel-heading collapsed" data-toggle="collapse" data-target="#bardoma">
+							<label class="label0">Domains</label>
+							<img class="icon-minus" alt="minus" src="../infra/images/icons/minus.svg">
+							<img class="icon-plus" alt="plus" src="../infra/images/icons/plus.svg">
+						</div>
+					</div>
+					<!-- The inside div eliminates the 'jumping' animation. -->
+					<div class="collapse" id="bardoma">
+						
+						<ol class="tree" id="DomainList">
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA14.html" target="contentIframe">Boolean</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA15.html" target="contentIframe">Coordinate</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA19.html" target="contentIframe">Date</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA20.html" target="contentIframe">DateTimeGranularity</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA21.html" target="contentIframe">Description</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA22.html" target="contentIframe">Designation</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA23.html" target="contentIframe">Diagram coordinate</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA24.html" target="contentIframe">Digits#</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA25.html" target="contentIframe">DomainGroupMember</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA26.html" target="contentIframe">DomainType</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA27.html" target="contentIframe">ElementId</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA28.html" target="contentIframe">Email address</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA29.html" target="contentIframe">ID</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA34.html" target="contentIframe">Integer</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA30.html" target="contentIframe">ISO country code 2</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA31.html" target="contentIframe">ISO country code 3</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA32.html" target="contentIframe">ISO language code 2</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA33.html" target="contentIframe">ISO language code 3</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA56.html" target="contentIframe">languagename</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA57.html" target="contentIframe">languagetext</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA35.html" target="contentIframe">Name</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA36.html" target="contentIframe">Point in time</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA37.html" target="contentIframe">Prefix</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA39.html" target="contentIframe">Relation End Type</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA40.html" target="contentIframe">Relationptype</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA41.html" target="contentIframe">Relationship cardinality</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA42.html" target="contentIframe">Rounding unit</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA43.html" target="contentIframe">SDO_GEOMETRY</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA45.html" target="contentIframe">SequenceNo</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA46.html" target="contentIframe">Serial number</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA47.html" target="contentIframe">Short Description</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA48.html" target="contentIframe">Shortname</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA44.html" target="contentIframe">SI-Unit</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA58.html" target="contentIframe">text</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA49.html" target="contentIframe">Text length</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA50.html" target="contentIframe">Type of content</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA51.html" target="contentIframe">Type of technical data</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA52.html" target="contentIframe">Unknown</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA53.html" target="contentIframe">Value limit</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA54.html" target="contentIframe">Version-number</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA59.html" target="contentIframe">x</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA55.html" target="contentIframe">XMLTYPE</a>
+							
+							<li class="obj"><a href="../en/elements/domains/DOMA60.html" target="contentIframe">y</a>
+							
+						</ol>
+				
+					</div>
+				</div>
+				
+
+				<!--business rules-->
+				
+				<div class="panel-body" id="BurusL">
+					<div class="panel">
+						<div class="panel-heading collapsed" data-toggle="collapse" data-target="#barburu">
+							<label class="label0">Business Rules</label>
+							<img class="icon-minus" alt="minus" src="../infra/images/icons/minus.svg">
+							<img class="icon-plus" alt="plus" src="../infra/images/icons/plus.svg">
+						</div>
+					</div>
+					<!-- The inside div eliminates the 'jumping' animation. -->
+					<div class="collapse" id="barburu">
+						
+						<ol class="tree" id="BuruList">
+							
+							<li class="obj"><a href="../en/elements/businessrules/BURU910.html" target="contentIframe">Email address_CHK</a>
+							
+							<li class="obj"><a href="../en/elements/businessrules/BURU911.html" target="contentIframe">ISO country code 2_CHK</a>
+							
+							<li class="obj"><a href="../en/elements/businessrules/BURU912.html" target="contentIframe">ISO country code 3_CHK</a>
+							
+							<li class="obj"><a href="../en/elements/businessrules/BURU913.html" target="contentIframe">ISO language code 2_CHK</a>
+							
+							<li class="obj"><a href="../en/elements/businessrules/BURU914.html" target="contentIframe">ISO language code 3_CHK</a>
+							
+							<li class="obj"><a href="../en/elements/businessrules/BURU915.html" target="contentIframe">Name_CHK</a>
+							
+							<li class="obj"><a href="../en/elements/businessrules/BURU916.html" target="contentIframe">Numerischer Wertebereich.NACHKOMMASTELLEN_CHECK</a>
+							
+						</ol>
+				
+					</div>
+				</div>
+				
+
+				<!--Documents-->
+				
+
+				<!--OrgUnits-->       
+				
+
+				<!--ActorRoles-->
+				
+
+
+				<!--datamodels-->
+				
+				<div class="panel-body" id="datmL">
+					<div class="panel">
+						<div class="panel-heading collapsed" data-toggle="collapse" data-target="#bardatm">
+							<label class="label0">Data Models</label>
+							<img class="icon-minus" alt="minus" src="../infra/images/icons/minus.svg">
+							<img class="icon-plus" alt="plus" src="../infra/images/icons/plus.svg">
+						</div>
+					</div>
+					<!-- The inside div eliminates the 'jumping' animation. -->
+					<div class="collapse" id="bardatm">
+						
+						<ol class="tree" id="DatmList">
+							
+							<li class="obj"><a href="../datamodels/OpenApi model/index.html" target="contentIframe">OpenApi model</a>
+							
+							<li class="obj"><a href="../datamodels/SPOD json/index.html" target="contentIframe">SPOD json</a>
+							
+							<li class="obj"><a href="../datamodels/sql model/index.html" target="contentIframe">sql model</a>
+							
+						</ol>
+				
+					</div>
+				</div>
+				
+
+				</div>
+			</div>
+		</div>
+
+
+    
+         <div class="wrapper">
+    		<div class="top-container">
+			
+			
+				
+				DE <a href="../de/index.html" target="_self"><img class="icon-check" alt="DE" src="../infra/images/icons/de.png"></a>
+			
+            <br><button onclick=location.reload()>Diagram(s)</button>
+		</div>
+		<hr>
+             <div style="margin:2rem;position:relative;height:1000px">
+		        <iframe name="contentIframe" loading="lazy" style="position:absolute;top:0;left:0;"
+                        height="100%" width="100%"
+                        src="../en/elements/diagrams/DIAG917.html"></iframe>
+             </div>
+    	</div>
+    
+
+    <div class="modal" id="MobileSearch" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-full" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Filter</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeM0">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalContent">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closeM1">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

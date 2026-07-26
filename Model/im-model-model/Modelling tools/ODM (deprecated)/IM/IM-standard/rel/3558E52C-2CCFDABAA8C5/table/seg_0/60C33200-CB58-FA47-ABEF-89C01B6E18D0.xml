@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="60C33200-CB58-FA47-ABEF-89C01B6E18D0" name="INFORMATION_MODELS">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<comment><![CDATA[An information model describes the relevant things (entities), their properties (attributes) and relationships in a target environment (shpere of influence). It defines the names to be used in communication as well as the meaning and purpose they have in this environment.
+Thanks to its mathematical basis (relational model), it provides a verifiable model that describes all possible true statements (facts/predicates in the sense of predicate logic) for the environment. 
+For the management of knowledge in the form of data, the information model provides the exact description of the information requirements as well as the desired interpretation of the data content for its use
+
+]]></comment>
+<generatorID>A8EA854F-1E9B-5C2F-E5B7-770235FC1669</generatorID>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Ein Informationmodell beschreibt die in einer Zielumgebung (Wirkungswelt) relevanten Dinge (Entitäten), deren Eigenschaften (Attribute) und Beziehungen. Es legt die in der Kommunikation zu verwendenden Namen fest sowie die Bedeutung, den Zweck, den sie in dieser Umgebung haben.
+Dank seiner mathematischen Grundlage (relationales Modell) liefert es ein nachprüfbares Modell, das alle möglichen wahren Aussagen (Fakten / Prädikate im Sinne der Prädikatenlogik) für die Umgebung beschreibt. 
+Für die Verwaltung von Wissen in Form von Daten, liefert das Informationsmodell die exakte Beschreibung der Informationsanforderungen sowie die erwünschte Interpretation der Dateninhalte für deren Nutzung.
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+An information model describes the relevant things (entities), their properties (attributes) and relationships in a target environment (shpere of influence). It defines the names to be used  in communication as well as the meaning and purpose they have in this environment.
+Thanks to its mathematical basis (relational model), it provides a verifiable model that describes all possible true statements (facts/predicates in the sense of predicate logic) for the environment. 
+For the management of knowledge in the form of data, the information model provides the exact description of the information requirements as well as the desired interpretation of the data content for its use.
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<ordsAlias>information_model</ordsAlias>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<abbreviation>INFM</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="INFM_ID" id="AE38D360-4615-9E3C-254B-EFDFE5C71FCD">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:11:03 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INFM_NAME" id="29540D25-BAAC-0EBE-948E-41717EEACC44">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<generatorID>AB6554AF-DFFF-EA79-99CF-84D5586888C1</generatorID>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+
+
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INFM_TARGET_ENVIRONMENT" id="6F2CD6D5-6F30-EDB5-1652-BBEA1221CD00">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<comment><![CDATA[The target environment (also known as the sphere of influence) is the group of people who want, should or must communicate with each other as clearly as possible using the exact language described in the information model.]]></comment>
+<generatorID>EAA8D3CB-A4AF-2841-A552-193F9D08D24A</generatorID>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Die Zielumgebung (auch Wirkungswelt genannt) ist die Gruppe von Leuten, die mittels der im Informationsmodell beschriebenen exakten Sprache möglichst unmissverständlich miteinander kommunizieren wollen, sollen oder müssen.
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+The target environment (also known as the sphere of influence) is the group of people who want, should or must communicate with each other as clearly as possible using the exact language described in the information model.
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INFM_VERSION" id="3326EDCF-8AD7-1880-9DE3-AD2C2A64780B">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<comment><![CDATA[Version of the model in for form.
+major.minor.release]]></comment>
+<generatorID>5C2D56B1-16E3-2893-2071-10856311963A</generatorID>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>A3FB4AF0-BF96-9DD8-9659-03CA5AD21EA9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INFM_DESCRIPTION" id="F692D436-9031-8491-75F8-5DE23FC8B6EC">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<comment><![CDATA[Description of purpose, usage, audience of the information model.
+]]></comment>
+<generatorID>9CB59C50-707B-94CF-8683-C483BAC19A27</generatorID>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Beschreibung von Zweck, Nutzung und Publikum für dieses Modell
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Description of purpose, usage, audience of the information model.
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="66E8EBB0-BF6A-5CAF-7FB9-76880A050D15" name="INFM_MODEL_PK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:11:03 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE38D360-4615-9E3C-254B-EFDFE5C71FCD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2581E450-0864-E73B-E132-0742A0F2E4E5" name="INFM_NAME_UN">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<generatorID>A68A1B80-2EB2-814C-270C-7F92491C6CDB</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="29540D25-BAAC-0EBE-948E-41717EEACC44"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,180 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F2BCE2D9-EA23-5A44-B6FB-586967A5D0A9" name="Generisches Element">
+<createdBy>stb</createdBy>
+<createdTime>2022-10-05 14:17:42 UTC</createdTime>
+<comment><![CDATA[Generisches Element. Beispiel oder user defined property die zur Beschreibung eines Elements beitragen.]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Generisches Element. Beispiel oder user defined property die zur Beschreibung eines Elements beitragen.
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Generic expansion of elements
+Example or user defined property adding to the documentation of an element.
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="false"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="false"/>
+</engineerTo>
+<typeID>77D381F5-7647-2CBC-11A1-08B38B65FA57</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributeInherType>All atributes</attributeInherType>
+<propertyMap>
+<property name="DE_ENTI_NAME" value="Generisches Element"/>
+<property name="DE_ENTI_SYNONYM" value=""/>
+<property name="EN_ENTI_NAME" value="Generic element"/>
+<property name="EN_ENTI_SYNONYM" value=""/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Name1" id="3E225136-34A3-FD81-DBB3-6B795EB101F3">
+<createdBy>stb</createdBy>
+<createdTime>2022-10-05 14:24:19 UTC</createdTime>
+<comment><![CDATA[Name, der etwas über die Rolle, Verwendung der Eigenschaft in der Entität aussagt. Häufig = Domänenname]]></comment>
+<generatorID>E78AB63C-91DE-85BD-335B-0BAD75CC66FF</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Name, der etwas über die Rolle, Verwendung der Eigenschaft in der Entität aussagt. Häufig = Domänenname
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Name that says something about the role, use of the property in the entity. Frequently = domain name
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<referedAttribute>FD95360A-BA62-DA9C-BB95-FACB2DAA42D4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="Name1"/>
+<property name="EN_ATTR_NAME" value="Name1"/>
+<property name="isdescriptive" value=""/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Name [L]" id="1DA0BEE6-62A0-9F07-67FB-053FAAFCE598">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 08:08:10 UTC</createdTime>
+<generatorID>1C57893A-ED27-EB0B-98EC-F1C0508D2E80</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<referedAttribute>59DD8C2A-74AA-122C-8E66-8E203419DBF9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="Name [L]"/>
+<property name="EN_ATTR_NAME" value="Name [L]"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Name [L]1" id="4790401F-8731-2A98-A4C2-26036EA7EF8A">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-31 10:21:30 UTC</createdTime>
+<comment><![CDATA[*EN* unique Name of the entity normally used in communication.]]></comment>
+<generatorID>DAC25E4B-D658-59E0-E516-81E0449DBBA0</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+*EN* unique Name of the entity normally used in communication.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+unique Name of the entity normally used in communication.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<referedAttribute>F1D0F128-7361-E0A9-E706-227C158FCD42</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="Name [L]1"/>
+<property name="EN_ATTR_NAME" value="Name [L]1"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Name" id="0295C5D8-4492-DD4A-6FE5-300AC05D8BA3">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-31 10:21:30 UTC</createdTime>
+<generatorID>DAC25E4B-D658-59E0-E516-81E0449DBBA0</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<referedAttribute>970C26B8-4A9C-9B24-92F4-85B0E648E1F5</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="Name"/>
+<property name="EN_ATTR_NAME" value="Name"/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FF59442B-E227-B4A6-8E78-D3C0A5DACCE0" name="Key_1">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-11 14:44:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<newElementsIDs>8CFDF423-EA1E-4E52-FEEE-6AF82FFEEFF9,1C57893A-ED27-EB0B-98EC-F1C0508D2E80,DAC25E4B-D658-59E0-E516-81E0449DBBA0,E78AB63C-91DE-85BD-335B-0BAD75CC66FF</newElementsIDs>
+<usedAttributes>
+<attributeRef>1DA0BEE6-62A0-9F07-67FB-053FAAFCE598</attributeRef>
+<attributeRef>4790401F-8731-2A98-A4C2-26036EA7EF8A</attributeRef>
+<attributeRef>0295C5D8-4492-DD4A-6FE5-300AC05D8BA3</attributeRef>
+<attributeRef>3E225136-34A3-FD81-DBB3-6B795EB101F3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

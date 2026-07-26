@@ -1,0 +1,14 @@
+{
+  "elementId": "RELA1",
+  "relationType": "ROLE",
+  "fwd": {
+    "entityId": "ENTI2",
+    "cardinality": "1",
+    "mandatory": true
+  },
+  "bwd": {
+    "entityId": "ENTI3",
+    "cardinality": "1",
+    "mandatory": false
+  }
+}

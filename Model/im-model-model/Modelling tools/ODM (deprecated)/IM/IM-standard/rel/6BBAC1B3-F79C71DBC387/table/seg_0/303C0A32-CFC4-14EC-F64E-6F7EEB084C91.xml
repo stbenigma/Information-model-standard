@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="303C0A32-CFC4-14EC-F64E-6F7EEB084C91" name="model">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 08:26:37 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="modelname" id="3B050B85-3A8A-779F-8AEA-ABCEE62F3404">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 08:26:37 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="mainlanguage" id="4B21C3BC-A00B-8DA0-8392-62922284DE65">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 08:26:37 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>3CFAACDE-10D2-A99A-844A-975DA633F49B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="datetimecreated" id="6B3995E1-40DB-7B15-5630-E7816BD18D51">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 08:26:37 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>631FC893-D28E-5FE4-89DB-473C78BB2B2A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="languages" id="9AA82773-37B1-F784-002C-EC07C17782C4">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 08:34:47 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>4</use>
+<collectionType>7F9D9B77-9B22-B782-2810-35744CC7140D</collectionType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="modelversion" id="743B58E6-B6F8-1D9D-F03C-F75B1D17866A">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 08:35:11 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>A3FB4AF0-BF96-9DD8-9659-03CA5AD21EA9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="90A31907-40D5-C57A-A07E-9203C4460752" name="model_PK">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 08:39:38 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B050B85-3A8A-779F-8AEA-ABCEE62F3404"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

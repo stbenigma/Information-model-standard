@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CB8A4F1C-9E60-C19B-9889-65BDE25D890F" name="Binärer Wertebereich">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<comment><![CDATA[Dokumente irgendwelcher Art, die nicht in einem als strukturiert bezeichneten Format (Text, Zahl, Boolean, Zeitpunkt) abgespeichert werden kann.
+
+Als Dokumente im Filesystem (Formate: PDF, PNG, TIFF, XLS, DOC, kynote, etc.) oder als binäre Datenbankobjekte verwaltet.]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Dokumente irgendwelcher Art, die nicht in einem als strukturiert bezeichneten Format (Text, Zahl, Boolean, Zeitpunkt) abgespeichert werden kann.
+
+Als Dokumente im Filesystem (Formate: PDF, PNG, TIFF, XLS, DOC, kynote, etc.) oder als binäre Datenbankobjekte verwaltet.
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Documents of any kind that cannot be saved in a format designated as structured (text, number, Boolean, time).
+
+Managed as documents in the file system (formats: PDF, PNG, TIFF, XLS, DOC, keynote, etc.) or as binary database objects.
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="false"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="false"/>
+</engineerTo>
+<typeID>77D381F5-7647-2CBC-11A1-08B38B65FA57</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>1725C503-BB91-0A6D-6E10-6908B44EDA95</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>DOMA</shortName>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="DE_ENTI_NAME" value="Binärer Wertebereich"/>
+<property name="DE_ENTI_SYNONYM" value=""/>
+<property name="EN_ENTI_NAME" value="Binary domain"/>
+<property name="EN_ENTI_SYNONYM" value=""/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Entity>

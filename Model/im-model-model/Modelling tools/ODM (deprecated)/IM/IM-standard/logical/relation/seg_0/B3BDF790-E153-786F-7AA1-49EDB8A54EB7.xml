@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_171" directorySegmentName="seg_0" id="B3BDF790-E153-786F-7AA1-49EDB8A54EB7">
+<createdBy>stb</createdBy>
+<createdTime>2020-03-28 10:40:45 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="17F5F16D-4CB1-2968-618E-D369CD8C5B93" value="true"/>
+<item key="BE22189E-C358-530C-6354-65FB4784079F" value="true"/>
+<item key="A91573EF-1254-1C9A-797A-A2AF60AC738D" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="1A90F064-D225-B8AB-AC38-0393157EE4FC" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>false</identifying>
+<nameOnSource>belongs to</nameOnSource>
+<nameOnTarget>includes</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>65AB1100-52CA-B51C-FC80-72D9A95AD501</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1B33B1DD-2EF3-488D-0701-BA26CE161C6E</targetEntity>
+<transferable>true</transferable>
+<propertyMap>
+<property name="DE_RELA_TEXT_FROM" value="gehört zu"/>
+<property name="DE_RELA_TEXT_TO" value="umfasst"/>
+<property name="EN_RELA_TEXT_FROM" value="belongs to"/>
+<property name="EN_RELA_TEXT_TO" value="includes"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="DRAFT"/>
+</propertyMap>
+</Relation>

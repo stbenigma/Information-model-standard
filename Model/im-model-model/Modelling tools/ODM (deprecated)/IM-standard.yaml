@@ -1,0 +1,109 @@
+#template configuration for uploading the foryouandyourcustomer model to a confluence space
+# copy this file to your local envionment and add the proper path's and credenttials
+# used for confluence page rendering
+
+# datasource for Rendeering
+renderjson: FULL
+
+#diagrams to be inclueded in PUBL and GTOP filters
+diagrams:
+  PUBL:
+    - 'Information model-0'
+  GTOP: 
+    - 'Information model-0'
+
+# translations to _publishable
+# first language listed here is not placed in a language subfolder
+# and titles will not be suffixed
+languages:
+  - 'de'
+  - 'en'
+
+# acutally hardwired in Renderer.py
+# locale: ./locale
+
+# output structure
+content:
+  diagrams:
+    title: Diagrams [TOC]
+    template: diagram.templ.html
+    labels:
+      - diagram
+      - IM
+
+  entities:
+    title: Entities [TOC]
+    template: entity.templ.html
+    labels:
+      - entity
+      - IM
+
+    content:
+      attributes:
+        title: Attributes [TOC]
+        template: attribute.templ.html
+        labels:
+          - attribute
+          - IM
+
+  documents:
+    title: Documents [TOC]
+    template: document.templ.html
+    labels:
+      - domain
+      - IM
+
+  documents:
+    title: Documents [TOC]
+    template: document.templ.html
+    filter: "item.get('parent') is None and level == 1"
+    labels:
+      - document
+      - IM
+
+    content:
+      documents:
+        title: Documents [TOC]
+        template: document.templ.html
+        labels:
+          - document
+          - IM
+
+  datamodels:
+    title: Datamodels [TOC]
+    template: datamodel.templ.html
+    labels:
+      - system
+      - DM
+
+    content:
+      tables:
+        title: Tables [TOC]
+        template: table.templ.html
+        manual-documentation:
+          template: children.templ.html
+          title-format: '{parent_title} - Table-Documentation'
+          labels:
+            - table
+            - DM
+            - documentation
+            - manual
+        labels:
+          - table
+          - DM
+
+        content:
+          columns:
+            title: Columns [TOC]
+            template: column.templ.html
+            manual-documentation:
+              template: manual-documentation.templ.html
+              labels:
+                - column
+                - DM
+                - manual
+                - documentation
+            labels:
+              - column
+              - DM
+

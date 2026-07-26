@@ -1,0 +1,21 @@
+[ {
+  "_type" : "ReferenceObject",
+  "id" : "c48a12ff-9848-4cb9-93cf-e1fe5ed2245e",
+  "href" : "/web/foryouandyourcustomers/enumerations/c48a12ff-9848-4cb9-93cf-e1fe5ed2245e",
+  "label" : "Relationptype",
+  "inCollection" : "Informationsmodellwertebereiche",
+  "status" : "SUBMITTED",
+  "createdBy" : "stb@foryouandyourcustomers.com",
+  "dateCreated" : 1752417531845,
+  "Label:en" : "Relationptype"
+}, {
+  "_type" : "ReferenceObject",
+  "id" : "ca01d81f-a74d-4603-bff6-4b3cb0069717",
+  "href" : "/web/foryouandyourcustomers/enumerations/ca01d81f-a74d-4603-bff6-4b3cb0069717",
+  "label" : "Relationship cardinality",
+  "inCollection" : "Informationsmodellwertebereiche",
+  "status" : "SUBMITTED",
+  "createdBy" : "stb@foryouandyourcustomers.com",
+  "dateCreated" : 1752417531845,
+  "Label:en" : "Relationship cardinality"
+} ]

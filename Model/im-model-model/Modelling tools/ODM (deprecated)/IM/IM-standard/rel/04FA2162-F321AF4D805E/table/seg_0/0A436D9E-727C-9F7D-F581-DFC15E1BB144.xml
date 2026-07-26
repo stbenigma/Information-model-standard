@@ -1,0 +1,526 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0A436D9E-727C-9F7D-F581-DFC15E1BB144" name="attributes.">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>D63A20E5-1CC2-715D-CA91-1D795D298422</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="techname" id="6C2BA082-71B5-8E39-1982-2C51AA966E41">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>1C13FB52-F877-941F-E3BE-0D75C53D8C7B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="name" id="AD34309E-BB47-DA61-07CB-E7698B2B1A9F">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>5A622A17-3B69-538A-4FB9-75BFE4185A03</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="seq" id="F8E15E8C-6445-E3FE-8B80-85A7B7CC14A1">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>4F0D3FDF-3FFA-5F76-839E-7935AE2F255C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="entity" id="989C36F4-8BCA-8F79-562D-3103E16A3FEC">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>8970E5D6-7113-E6EC-7BCB-06E1205AF780</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="domain" id="58EFC105-53D5-ED79-1079-869F976DDC24">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>03BBCDB3-2468-075C-B73F-06B7A04B4245</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="basedatatype+" id="D51BEE2D-9959-CD01-D18C-0B2FF432A859">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>8A133DE0-A064-6D23-0E7A-6CE4B6E575C5</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="type+" id="5F138896-3A88-A00F-BA6F-C74CFBF9198C">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>3603D342-A071-A1C3-437F-BFA305AF26A0</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="memberattrs+" id="EE3D1A2B-7E87-C6EB-7B0A-A737ACA8AC70">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>F757F03D-E103-DD9E-0073-CAB7C5976569</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="descriptive" id="EC994A09-381F-DD34-D302-BAEE16B4D0A3">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>7A916DA7-76AE-70B3-3182-8236B0F5FA1F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="mandatory" id="70E7F5EE-498E-0D9A-7735-52E0FD09B037">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>85E6B998-1DB3-F5A1-CCA6-88C9529FE995</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="historicised" id="FC85751B-4F17-63CA-9956-F790FB44BE8A">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>8060A72D-2919-4FCD-5E88-8924933669ED</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="repeated" id="15CACC18-A887-1822-C213-EA706BBFF932">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>D720BCF9-DBDF-1AFB-F239-B1EED8C39289</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="translated" id="A3905B4D-0F37-0205-B8D4-DED8D4DBD3E5">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>ED5D3FC3-840D-4BCC-88AA-985335CE8900</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="encrypted" id="28E11BEC-69FB-0FE9-8D3F-93E31B2DAB81">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>EA7A9C92-AD76-5F2C-D14D-1625137B32C1</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="examples" id="7DD74435-181D-C9CC-56F5-FB1FBC13F106">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>AB3AFED5-110B-4FB2-68CD-75E091DBA639</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="shortdescr" id="295DE6ED-703A-2FDB-9EE7-5532606FD70C">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>4BC15E56-C696-02E5-781C-2468997A0412</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="descr" id="EBCF4F72-C139-7C35-D4A6-32AB0E8728F4">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>F6C8B204-A8A7-2693-984E-402AF5584546</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="uc" id="858525D0-7C21-9A10-4F59-893EA72BF134">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>771A633E-25DB-0F61-D518-F427D12FBC03</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="dc" id="23F0EA09-5095-BA37-2EC7-9EFE243541E3">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>894C03DD-421E-3F90-C49E-DC94D6FF1C04</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="um" id="8D118F59-DD1C-3A02-4A12-B6585E960AB8">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>79E282F2-8C19-3818-0546-1E64B6AC1E88</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="dm" id="1082ED16-A1A8-3A7E-0308-525DF0508796">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>9390355C-A8F5-83E2-F39E-E5F5364A665B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="minzoomlevel" id="8CDF39DF-5C13-D8DB-1F9C-2ABD20E8ACA0">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>F190EDD5-C944-61EC-1B35-115E80799987</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="maxzoomlevel" id="FC3971E3-4E81-1915-3F34-8373C0F73715">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>72ADB16D-F594-F94F-761D-11526B2D0E00</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="publstatus" id="1DB1FEF0-A79B-F086-D724-2E9532008E55">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>C121602B-2BDD-F644-3DEE-B84569473DA7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="sourceref.ODM" id="020681FE-2AA8-DB02-CA0A-86C8F8B8307B">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>89A41110-DE46-8990-B972-67C835B1AB1A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="raci+" id="CCA5E8D8-DD15-C307-5933-FEA885521E77">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>DD849CE7-9435-C4FB-FEAC-7758BFCE5B73</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="keys+" id="4183F6F3-5A32-584E-F876-7C80AF41D79D">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>5324DA9F-8145-D8EA-6B41-774BD25210CC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="businessrules+" id="65C6C1C6-3CAE-CA5B-044E-D4BED4244AC4">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>3FD0ECDB-0936-5DB6-F745-827DE58A0530</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="referencedby" id="9C3ADA7A-30F3-F962-65E8-678E022A6F81">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>7333B41E-5BF5-C86D-A5E9-1D1249E84F05</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="userdefprops.Theme.Group.UDPR000.name" id="D89FD2EB-F0B5-09EF-9889-FC7F6C495AFE">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>FF73CBA5-9A0A-F7A0-01F8-C1C6DF37F841</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="userdefprops.Theme.Group.UDPR000.value" id="C3AEDB69-9346-D9E2-A690-B8D0FF8E05E9">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>6E592F3B-C818-49D4-087F-029C71C1CB26</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="columnsmapped+" id="713B92F2-96DF-76CF-A33B-6FBCBDCDBEBD">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>75D83719-E20A-7AAD-6D13-1A4D341CA3E7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+<Column name="diagrams+" id="7B4A88D2-04F7-63F6-C62C-40F885D32D5B">
+<sourceDDLFile>konbert-export-bcf81e940ca24.sql</sourceDDLFile>
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:50 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>782EAC2B-3C31-C866-DFBA-7E50AB86FABC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<propertyMap>
+<property name="publ_status" value="GTOP"/>
+</propertyMap>
+</Column>
+</columns>
+</Table>

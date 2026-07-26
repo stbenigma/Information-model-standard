@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="SPOD json" id="04FA2162-E381-5467-1B9E-F321AF4D805E" mainViewID="3401066E-1544-12C3-5E94-65A87865D6E4">
+<createdBy>stb</createdBy>
+<createdTime>2024-05-20 15:37:43 UTC</createdTime>
+<ownerDesignName>ModellModell_neu</ownerDesignName>
+<shouldBeOpen>true</shouldBeOpen>
+<selectedRDBMSSite>980FCE9E-D688-BDF0-C89A-C9FB2DCAED45</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>konbert-export-bcf81e940ca24.sql</fileName>
+<pathName>/Users/stb/Downloads</pathName>
+<dbType>13</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

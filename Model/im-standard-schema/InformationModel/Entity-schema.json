@@ -1,0 +1,119 @@
+{
+  "$id": "Entity-schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "0.9",
+  "description": "Designates something that exists, a being, a tangible or abstract object with properties and relationships.\nThing of interest in the considered environment / mini-world.\nIt is an IT-system- and technology-independent and consolidated description of the structure and meaning of the thing of interest.\nAn entity  consist of individual parts (attributes, subentities, etc.).\nAn entity name is unique in the considered environment and the definition of the entity (attributes, description, rules, relationships,...) is the only valid definition expressed with this name.",
+  "type": "object",
+  "properties": {
+    "$id": {
+      "description": "full identification path of the element",
+      "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/Uri"
+    },
+    "elementId": {
+      "description": "unique ID of the entity for reference purposes within the model or mme-environment\nOnly used (and stable) in current version of model. Can change over time, as it is only used",
+      "$ref": "#/$defs/EntityId"
+    },
+    "name": {
+      "description": "uniuque 'official' name for the thing of consideration",
+      "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/SomeName"
+    },
+    "shortName": {
+      "description": "unique short name of the entity to be used for short references in text.\n must be unique in the environment",
+      "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/ShortName"
+    },
+    "description": {
+      "description": "Meaning, Benefits, Use of the Entity",
+      "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/SomeText"
+    },
+    "shortDescr": {
+      "description": "Short text explaining the meaning for the user în the user interface (hint, tooltip).",
+      "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/SomeText"
+    },
+    "categoryId": {
+      "description": "Category the entity belongs to",
+      "$ref": "../GeneralDefinitions/Category-schema.json#/$defs/CategoryId"
+    },
+    "modelId": {
+      "description": "refrences the model it belongs to",
+      "$ref": "../GeneralDefinitions/GeneralStructures-schema.json#/$defs/ModelId"
+    },
+    "synonyms": {
+      "description": "List of synonym names for this thing beeing used in old systems or out of habit. Not unique.",
+      "type": "array",
+      "items": {
+        "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/SomeName"
+      },
+      "uniqueItems": true
+    },
+    "examples": {
+      "descriptions": "some example values which are typical for this entity",
+      "$ref": "../GeneralDefinitions/GeneralStructures-schema.json#/$defs/Examples"
+    },
+    "keys": {
+      "description": "List of keys containing information to identify on instance of this entity.\nA key consist of one or several attributes and relationships, whose values in combination are unequivocal, no matter how many instances there are. There may be any number of keys for one entity.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Key"
+      },
+      "uniqueItems": true
+    },
+    "additionalProps": {
+      "description": "additional properties (aka user defined properties udp) are  any properties of an this element  added by the current modeller. They serve as an extension to the predfefined element properties.",
+      "$ref": "../GeneralDefinitions/GeneralStructures-schema.json#/$defs/AdditionalProperties"
+    }
+  },
+  "required": [
+    "name",
+    "elementId"
+  ],
+  "additionalProperties": false,
+  "examples": [],
+    "$defs": {
+      "Key": {
+        "description": "combination of attributes and (functional or 1:1) relationships whose combined values are unique over all instances of an entity",
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "name, identifying the key within the entity",
+            "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/Name"
+          },
+          "elements": {
+            "description": "List of examplevalues for this entity, attribute, domain or relationship",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "../InformationModel/Attribute-schema.json#/$defs/AttributeId"
+                },
+                {
+                  "$ref": "../InformationModel/Relation-schema.json#/$defs/RelationId"
+                }
+              ]
+            },
+            "uniqueItems": true,
+            "examples": [
+              [
+                "ATTR123",
+                "RELA1"
+              ],
+              [
+                "ATTR1"
+              ]
+            ]
+          }
+        },
+        "additionalProperties": false
+      },
+      "EntityId": {
+        "description": "typed ID unique over all eneities in this model",
+        "allOf": [
+          {
+            "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/ElementId"
+          },
+          {
+            "pattern": ".*ENTI[0-9]+$"
+          }
+        ]
+      }
+    }
+}

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4BB581E8-FE0C-6084-7743-9D0B182341E6" containerWithKeyObject="7CE24C1C-B793-C6A8-8CBA-9CE1940596B1" localFKIndex="A75D8A15-8349-F3AD-3A1B-F758CC3BB489" name="CATG_INFM_FK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>F25D2523-2AC9-A8C9-613A-D59FA866413B</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<referredTableLongName>INFORMATION_MODEL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>60C33200-CB58-FA47-ABEF-89C01B6E18D0</referredTableID>
+<keyObject>66E8EBB0-BF6A-5CAF-7FB9-76880A050D15</keyObject>
+<referredKeyID>66E8EBB0-BF6A-5CAF-7FB9-76880A050D15</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>INFM_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

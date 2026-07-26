@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D3073729-B26A-E23D-9C54-89CA24731254" name="LANGUAGES">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-28 13:52:54 UTC</createdTime>
+<comment><![CDATA[Examplevalue  for Entity, Attribute, Domain, Relationship
+
+Examples:
+0
+1
+99
+married
+divorced
+Peter is married to Jane]]></comment>
+<generatorID>6A5501D1-E3E1-1B35-7A7B-6C55C038DCC6</generatorID>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Beispielwert für Entität, Attribut, Bereich, Beziehung
+
+Beispiele:
+0
+1
+99
+verheiratet
+geschieden
+Peter ist mit Jane verheiratet]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Examplevalue  for Entity, Attribute, Domain, Relationship
+
+Examples:
+0
+1
+99
+married
+divorced
+Peter is married to Jane
+
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<ordsAlias>examplev1</ordsAlias>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<abbreviation>LANG</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LANG_ID" id="A7EA39A0-8F45-86FA-C748-6C8AE232C7D8">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-28 13:52:54 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LANG_NAME" id="7E4F718F-F444-530B-525E-D34618C5D512">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-28 13:52:54 UTC</createdTime>
+<generatorID>78178DFE-CAC7-A5AD-8621-76A30C566379</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LANG_ISO2" id="37DC6020-3257-F1C3-2671-3C503FBE7284">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-28 13:55:18 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>3CFAACDE-10D2-A99A-844A-975DA633F49B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LANG_ISO3" id="C889D750-03F7-E811-A9F7-B6B841C14FC4">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-28 13:55:18 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>7EF070A4-018B-18D6-E996-291F316D16A7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DF5C1986-4355-A68D-66FE-685710A14060" name="LANG_PK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-28 13:55:18 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7EA39A0-8F45-86FA-C748-6C8AE232C7D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2122E4B9-4C4F-5C31-5D7B-84EEA1A45E37" name="LANG_NAME_UN">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-28 13:52:54 UTC</createdTime>
+<generatorID>6C64AC80-E833-063B-EF8A-B29E6D964783</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E4F718F-F444-530B-525E-D34618C5D512"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E171C3BF-9186-B147-EB72-9FB1B95B4FD9" name="LANG_ISO2_UN">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-28 14:04:12 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37DC6020-3257-F1C3-2671-3C503FBE7284"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="EXAMPLEv1_CK" directorySegmentName="seg_1" id="FCA16095-67E2-BDBC-7459-07DCB790DC05">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-28 13:52:54 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<rule><![CDATA[(EXPL_ENTI_ID IS  NULL AND EXPL_DOMA_ID IS  NULL AND EXPL_RELA_ID IS  NULL AND EXPL_ATTR_ID IS  NULL AND)]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

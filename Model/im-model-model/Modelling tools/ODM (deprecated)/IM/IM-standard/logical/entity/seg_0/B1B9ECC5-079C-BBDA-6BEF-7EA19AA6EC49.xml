@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B1B9ECC5-079C-BBDA-6BEF-7EA19AA6EC49" name="Boolean Wertebereich">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-11 16:25:58 UTC</createdTime>
+<comment><![CDATA[Wahrheitswert (Boolean). Es kann es nur einen geben.
+Die Bedeutung von Wahr (true) und Falsch (false) ist immer dieselbe:  Die Aussage ist wahr oder sie ist falsch.
+Was wahr und falsch für eine Bedeutung oder Auswirkung hat, wird im Attribut festgelegt.]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Wahrheitswert (Boolean). Es kann es nur einen geben.
+Die Bedeutung von Wahr (true) und Falsch (false) ist immer dieselbe:  Die Aussage ist wahr oder sie ist falsch.
+Was wahr und falsch für eine Bedeutung oder Auswirkung hat, wird im Attribut festgelegt.
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Truth value (Boolean) there can only be one.
+The meaning of true and false is always the same: the statement is true or it is false.
+The meaning or effect of true and false is defined by the attribute.
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="false"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="false"/>
+</engineerTo>
+<typeID>77D381F5-7647-2CBC-11A1-08B38B65FA57</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>1725C503-BB91-0A6D-6E10-6908B44EDA95</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>DOMA</shortName>
+<propertyMap>
+<property name="DE_ENTI_NAME" value="Boolean Wertebereich"/>
+<property name="DE_ENTI_SYNONYM" value=""/>
+<property name="EN_ENTI_NAME" value="Boolean domain"/>
+<property name="EN_ENTI_SYNONYM" value=""/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Entity>

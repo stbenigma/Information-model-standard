@@ -1,0 +1,114 @@
+{
+  "$id": "BusinessRule-schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "0.9",
+  "description": "A business rule that cannot be described with the standard elements of the information model. A rule must restrict at least 1 element.",
+  "type": "object",
+  "properties": {
+    "elementId": {
+      "description": "unique ID (over whole model) of the business rule for reference purposes",
+      "$ref": "#/$defs/BusinessRuleId"
+    },
+    "name": {
+      "description": "name for textual references of the busiess rule",
+      "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/Name"
+    },
+    "level": {
+      "description": "level of elements the busiess rule acts on",
+      "$ref": "#/$defs/BusinessRuleLevel"
+    },
+    "type": {
+      "description": "Kind of businessrule, acting, checking, triggering",
+      "$ref": "#/$defs/BusinessRuleType"
+    },
+    "description": {
+      "description": "Explanation of the rule, its application and consequenses.",
+      "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/SomeText"
+    },
+    "restrictedElements": {
+      "description": "Elements that are restricted by this business rule.",
+      "type": "array",
+      "items": {
+        "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/ElementId"
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "affectedElements": {
+      "description": "Elements that are affected, meaning can be changed by this business rule.",
+      "type": "array",
+      "items": {
+        "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/ElementId"
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "rule": {
+      "description": "Expression, rule, formula stating how the linked elements depend on each other.",
+      "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/Text"
+    },
+    "modelId": {
+      "description": "refrences the model it belongs to",
+      "$ref": "../GeneralDefinitions/GeneralStructures-schema.json#/$defs/ModelId"
+    },
+    "additionalProps": {
+      "description": "additional properties (aka user defined properties udp) are  any properties of this element, added by the current modeller. They serve as an extension to the predfefined element properties.",
+      "$ref": "../GeneralDefinitions/GeneralStructures-schema.json#/$defs/AdditionalProperties"
+    }
+  },
+  "anyOf": [
+    {
+      "required": [
+        "description"
+      ]
+    },
+    {
+      "required": [
+        "rule"
+      ]
+    }
+  ],
+  "required": [
+    "elementId",
+    "restrictedElements"
+  ],
+  "additionalProperties": false,
+  "examples": [
+    "The start date must be less than the end date.",
+    "A mixture must consist of at least 2 substances.",
+    "Telephone number or e-mail address (or both) must be filled in for a person."
+  ],
+  "$defs": {
+    "BusinessRuleId": {
+      "description": "typed ID unique over all businessrules in this schema",
+      "allOf": [
+        {
+          "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/ElementId"
+        },
+        {
+          "pattern": ".*BURU[0-9]+$"
+        }
+      ]
+    },
+    "BusinessRuleType": {
+      "description": "Kind of businessrule, acting, checking, triggering",
+      "type": "string",
+      "enum": [
+        "calculation",
+        "check",
+        "trigger"
+      ]
+    },
+    "BusinessRuleLevel": {
+      "description": "Level of db elements the business rule acts on",
+      "type": "string",
+      "enum": [
+        "database",
+        "entity",
+        "tuple",
+        "attribute"
+      ]
+    }
+  }
+}
+

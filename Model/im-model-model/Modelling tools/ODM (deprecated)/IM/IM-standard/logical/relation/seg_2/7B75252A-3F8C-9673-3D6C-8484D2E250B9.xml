@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_244" directorySegmentName="seg_2" id="7B75252A-3F8C-9673-3D6C-8484D2E250B9">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:05:22 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="17F5F16D-4CB1-2968-618E-D369CD8C5B93" value="true"/>
+<item key="BE22189E-C358-530C-6354-65FB4784079F" value="true"/>
+<item key="A91573EF-1254-1C9A-797A-A2AF60AC738D" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="1A90F064-D225-B8AB-AC38-0393157EE4FC" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>false</identifying>
+<nameOnSource>may buy</nameOnSource>
+<nameOnTarget>purchased from</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>1B33B1DD-2EF3-488D-0701-BA26CE161C6E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C35E4835-EDF5-A402-994E-6D97091BE8DD</targetEntity>
+<transferable>true</transferable>
+<propertyMap>
+<property name="DE_RELA_TEXT_FROM" value="kauft möglicherweise"/>
+<property name="DE_RELA_TEXT_TO" value="gekauft von"/>
+<property name="EN_RELA_TEXT_FROM" value="may buy"/>
+<property name="EN_RELA_TEXT_TO" value="purchased from"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="DRAFT"/>
+</propertyMap>
+</Relation>

@@ -1,0 +1,44 @@
+            {% call blocks.mainblock(type=webmodel.gettransltext("Business Rule"), id=elemid, name=webmodel.getlangstr(elem["name"]),
+					descr=webmodel.getlangstr(elem["descr"]), lbc=elemid ~ "main",
+                    basedirec=basedirec,singlefile=webmodel.export.singlefile) %}
+			<h2>Information</h2>
+			<div class="table-responsive">
+				<table class="table borderless">
+					<tbody>
+						<tr>
+							<th>{{ webmodel.gettransltext('Ebene') }}</th>
+							<th>{{ webmodel.gettransltext('Typ') }}</th>
+							<th>{{ webmodel.gettransltext('Auswirkung') }}</th>
+						</tr>
+						<tr>
+							<td>{{ elem["level"] }}</td>
+							<td>{{ elem["type"] }}</td>
+							<td>{{ elem["impact"] }}</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="table-responsive">
+					<table class="table borderless" >
+						<tbody>
+							<tr>
+								<td>{{ webmodel.gettransltext('Regel')  }}</td>
+								<td>{{ elem["rule"] }}
+							</tr>
+							<tr>
+								<td>{{ webmodel.gettransltext('Fehlermeldung')  }}</td>
+								<td>{{ webmodel.getlangstr(elem["errormsg"]) }}
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<!--references-->
+			{% if elem["elements"]|count > 0 %}
+			{% call blocks.subblock(header=webmodel.gettransltext("Referenziert"), lbc=elemid ~ "element",
+                            basedirec=basedirec) %}
+				{{ blocks.referencelist(webmodel,elemid,elem["elements"],basedirec=basedirec) }}
+			{% endcall %}
+			{% endif %}
+
+		{% endcall%}

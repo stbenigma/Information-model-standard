@@ -1,0 +1,10 @@
+{
+  "elementId": "DOMA19",
+  "name": "myname",
+  "domainType": "NumericDomain",
+  "unit": {
+    "symbol": "10^6 km",
+    "description": "ziemlich weit",
+    "siUnit": "mm"
+  }
+}

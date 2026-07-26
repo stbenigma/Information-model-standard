@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="7810FD23-A6BA-9ECA-1944-4593B865E654" name="Entitätsschlüssel">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<comment><![CDATA[Liste von Schlüsseln, die alle dazu dienen, eine Instanz dieser Entität in der Realität zu identifizieren.
+Ein Schlüssel besteht aus einem oder mehreren Attributen und funktionalen Beziehungen, deren Werte in Kombination eine eindeutige Gesamtinstanz darstellen. Es kann eine beliebige Anzahl von Schlüsseln für eine Entität geben.
+Schlüssel sollten nach Möglichkeit natürliche Schlüssel sein. D.h. Eigenschaften, die in der Realität vorkommen. Künstliche Schlüssel helfen nicht dabei, eine Instanz einer Sache in der realen Welt zu finden.
+
+Beispiele:
+Land, Postleitzahl
+Produktname, Versionsnummer, BOM-Position
+Produktname
+GSC-Identifikation]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Liste von Schlüsseln, die alle dazu dienen, eine Instanz dieser Entität in der Realität zu identifizieren.
+Ein Schlüssel besteht aus einem oder mehreren Attributen und funktionalen Beziehungen, deren Werte in Kombination eine eindeutige Gesamtinstanz darstellen. Es kann eine beliebige Anzahl von Schlüsseln für eine Entität geben.
+Schlüssel sollten nach Möglichkeit natürliche Schlüssel sein. D.h. Eigenschaften, die in der Realität vorkommen. Künstliche Schlüssel helfen nicht dabei, eine Instanz einer Sache in der realen Welt zu finden.
+
+Beispiele:
+Land, Postleitzahl
+Produktname, Versionsnummer, BOM-Position
+Produktname
+GSC-Identifikation
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+List of keys, all of which serve to identify one instance of this entity in reality.
+A key consist of one or several attributes and functional relationships, whose values in combination are unequivocal overall instances. There may be any number of keys for one entity.
+Keys should be natural keys wherever possible. I.e. properties occuring in reality. Artificial keys do not help to find an instance of a thing in the real world.
+
+Examples:
+Country, Zipcode
+Product name, version number, BOM position
+Product name
+GSC identification
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<typeID>77D381F5-7647-2CBC-11A1-08B38B65FA57</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>KEYS</shortName>
+<synonym>Schlüssel</synonym>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="DE_ENTI_NAME" value="Entitätsschlüssel"/>
+<property name="DE_ENTI_SYNONYM" value="Schlüssel"/>
+<property name="EN_ENTI_NAME" value="Entity key"/>
+<property name="EN_ENTI_SYNONYM" value="Key"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Name [L]" id="D09FA426-80FC-17E6-C0D7-FE5B2E397F26">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-31 10:21:30 UTC</createdTime>
+<comment><![CDATA[Eindeutiger Name, normalerweise in Kommunikation genutzt.]]></comment>
+<generatorID>7DFF44B9-D585-A3B7-7342-79EA825C4941</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Eindeutiger Name, normalerweise in Kommunikation genutzt.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+unique Name of the entity normally used in communication.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<referedAttribute>F1D0F128-7361-E0A9-E706-227C158FCD42</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="Name [L]"/>
+<property name="EN_ATTR_NAME" value="Name [L]"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Name" id="5E6D0E19-FD6C-49F8-EB61-11F789F01DDF">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-31 10:21:30 UTC</createdTime>
+<generatorID>7DFF44B9-D585-A3B7-7342-79EA825C4941</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<referedAttribute>970C26B8-4A9C-9B24-92F4-85B0E648E1F5</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="Name"/>
+<property name="EN_ATTR_NAME" value="Name"/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="535AE6A2-9084-B091-55AD-DDEE049BF6F0" name="Key_1">
+<createdBy>stb</createdBy>
+<createdTime>2020-08-09 08:47:01 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<newElementsIDs>7DFF44B9-D585-A3B7-7342-79EA825C4941</newElementsIDs>
+<usedAttributes>
+<attributeRef>D09FA426-80FC-17E6-C0D7-FE5B2E397F26</attributeRef>
+<attributeRef>5E6D0E19-FD6C-49F8-EB61-11F789F01DDF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

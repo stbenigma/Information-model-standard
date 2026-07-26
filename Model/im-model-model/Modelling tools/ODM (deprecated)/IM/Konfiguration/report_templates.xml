@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<report_templates>
+	<report_template id="2A4B4A5D-BFBC-22E0-DD1B-F8CDADE5424F" name="RTemplate_1" class="oracle.dbtools.crest.model.design.logical.Entity" >
+		<description_notes>true</description_notes>
+		<quantitative_info>true</quantitative_info>
+		<diagrams>true</diagrams>
+		<entity_attributes>true</entity_attributes>
+		<entity_attributes_comments>true</entity_attributes_comments>
+		<entity_constraints>true</entity_constraints>
+		<entity_identifiers>true</entity_identifiers>
+		<entity_relationships>true</entity_relationships>
+		<entity_inc_processes>true</entity_inc_processes>
+		<entity_out_processes>true</entity_out_processes>
+	</report_template>
+	<report_template id="1F643DA3-798F-867F-E3FE-1748C042693A" name="temp" class="oracle.dbtools.crest.model.design.relational.Table" >
+		<description_notes>true</description_notes>
+		<quantitative_info>true</quantitative_info>
+		<diagrams>true</diagrams>
+		<table_columns>true</table_columns>
+		<table_columns_comments>true</table_columns_comments>
+		<table_constraints>true</table_constraints>
+		<table_fk_rf>true</table_fk_rf>
+		<table_fk_rt>true</table_fk_rt>
+		<table_indexes>true</table_indexes>
+	</report_template>
+	<report_template id="8EE2804C-FEFF-9A04-C6A7-BAFFE35E9E72" name="simple" class="oracle.dbtools.crest.model.design.Domain" >
+		<domain_constraints>true</domain_constraints>
+		<domain_used_in_entities>true</domain_used_in_entities>
+		<domain_used_in_tables>true</domain_used_in_tables>
+	</report_template>
+</report_templates>

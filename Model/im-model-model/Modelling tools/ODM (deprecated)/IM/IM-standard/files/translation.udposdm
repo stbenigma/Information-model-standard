@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<udp_library>
+	<udp_groups>
+		<group name="EN" id="E440DDD0-F80B-D860-C1E1-8FD113152BF4" />
+		<group name="DE" id="22CACA77-B34D-DA6C-6BC2-771480AB8778" />
+	</udp_groups>
+	<properties>
+		<property name="DE_ENTI_NAME" dispalay_name="" type="Text" group_id="22CACA77-B34D-DA6C-6BC2-771480AB8778" default_value="">
+			<objects>
+				<object class="oracle.dbtools.crest.model.design.logical.Entity" visible="false" color="-1"/>
+			</objects>
+		</property>
+		<property name="EN_ENTI_NAME" dispalay_name="" type="Text" group_id="E440DDD0-F80B-D860-C1E1-8FD113152BF4" default_value="">
+			<objects>
+				<object class="oracle.dbtools.crest.model.design.logical.Entity" visible="false" color="-1"/>
+			</objects>
+		</property>
+		<property name="DE_ENTI_SYNONYM" dispalay_name="" type="Text" group_id="22CACA77-B34D-DA6C-6BC2-771480AB8778" default_value="">
+			<objects>
+				<object class="oracle.dbtools.crest.model.design.logical.Entity" visible="false" color="-1"/>
+			</objects>
+		</property>
+		<property name="EN_ENTI_SYNONYM" dispalay_name="" type="Text" group_id="E440DDD0-F80B-D860-C1E1-8FD113152BF4" default_value="">
+			<objects>
+				<object class="oracle.dbtools.crest.model.design.logical.Entity" visible="false" color="-1"/>
+			</objects>
+		</property>
+		<property name="DE_ATTR_NAME" dispalay_name="" type="Text" group_id="22CACA77-B34D-DA6C-6BC2-771480AB8778" default_value="">
+			<objects>
+				<object class="oracle.dbtools.crest.model.design.logical.Attribute" visible="false" color="-1"/>
+			</objects>
+		</property>
+		<property name="EN_ATTR_NAME" dispalay_name="" type="Text" group_id="E440DDD0-F80B-D860-C1E1-8FD113152BF4" default_value="">
+			<objects>
+				<object class="oracle.dbtools.crest.model.design.logical.Attribute" visible="false" color="-1"/>
+			</objects>
+		</property>
+		<property name="DE_RELA_TEXT_FROM" dispalay_name="" type="Text" group_id="22CACA77-B34D-DA6C-6BC2-771480AB8778" default_value="">
+			<objects>
+				<object class="oracle.dbtools.crest.model.design.logical.Relation" visible="false" color="-1"/>
+			</objects>
+		</property>
+		<property name="DE_RELA_TEXT_TO" dispalay_name="" type="Text" group_id="22CACA77-B34D-DA6C-6BC2-771480AB8778" default_value="">
+			<objects>
+				<object class="oracle.dbtools.crest.model.design.logical.Relation" visible="false" color="-1"/>
+			</objects>
+		</property>
+		<property name="EN_RELA_TEXT_FROM" dispalay_name="" type="Text" group_id="E440DDD0-F80B-D860-C1E1-8FD113152BF4" default_value="">
+			<objects>
+				<object class="oracle.dbtools.crest.model.design.logical.Relation" visible="false" color="-1"/>
+			</objects>
+		</property>
+		<property name="EN_RELA_TEXT_TO" dispalay_name="" type="Text" group_id="E440DDD0-F80B-D860-C1E1-8FD113152BF4" default_value="">
+			<objects>
+				<object class="oracle.dbtools.crest.model.design.logical.Relation" visible="false" color="-1"/>
+			</objects>
+		</property>
+	</properties>
+</udp_library>

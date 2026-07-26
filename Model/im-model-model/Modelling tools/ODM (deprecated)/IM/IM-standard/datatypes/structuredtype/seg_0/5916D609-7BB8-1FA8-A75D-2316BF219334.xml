@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StructuredType class="oracle.dbtools.crest.model.design.datatypes.StructuredType" name="DomainGroupMember" directorySegmentName="seg_0" id="5916D609-7BB8-1FA8-A75D-2316BF219334">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 16:03:22 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<predefined>false</predefined>
+<final>false</final>
+<instantiable>true</instantiable>
+<attributes itemClass="oracle.dbtools.crest.model.design.datatypes.TypeElement">
+<Attribute name="name" id="8B424088-86FB-EDAA-1381-A244DEE4F6A1">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 16:03:36 UTC</createdTime>
+<ownerDesignName>ModellModell_neu</ownerDesignName>
+<mandatory>true</mandatory>
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<type>56884D85-5713-C479-05C8-AC712C556A05</type>
+</Attribute>
+<Attribute name="mandatory" id="6DD95155-69E9-6E2E-F0C9-5CE3ADFE8078">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 16:03:48 UTC</createdTime>
+<ownerDesignName>ModellModell_neu</ownerDesignName>
+<mandatory>true</mandatory>
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<type>7F06A64B-0C00-1355-F863-DBD9FDE5B848</type>
+</Attribute>
+<Attribute name="domainId" id="1F4AA558-3459-83C8-18E5-055E7E9FE6D7">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 16:04:04 UTC</createdTime>
+<ownerDesignName>ModellModell_neu</ownerDesignName>
+<mandatory>true</mandatory>
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<type>95EF892F-DD50-79ED-90F5-D7FEFFD0CDFB</type>
+</Attribute>
+</attributes>
+</StructuredType>

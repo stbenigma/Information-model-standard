@@ -1,0 +1,77 @@
+{
+  "$id": "Category-schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "0.9",
+  "type": "object",
+  "description": "Group of entities domains and/or categories. Categorizing elements for ease of display and finding",
+  "properties": {
+    "elementId": {
+      "description": "unique ID of the category for reference purposes",
+      "$ref": "#/$defs/CategoryId"
+    },
+    "name": {
+      "description": "Unique (over the whole schema) name of the category",
+      "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/SomeName"
+    },
+    "categoryType": {
+      "description": "Type of elements the category is used to group.",
+      "$ref": "#/$defs/CategoryType",
+      "examples": [
+        "ENTITY",
+        "DOMAIN",
+        "DATAOBJECT"
+      ]
+    },
+    "description": {
+      "description": "Reason, building aspect for this category.",
+      "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/SomeText"
+    },
+    "categoryId": {
+      "description": "ElementId of parent of current category, null for root categories",
+      "$ref": "#/$defs/CategoryId"
+    },
+    "modelId": {
+      "description": "refrences the model it belongs to",
+      "$ref": "../GeneralDefinitions/GeneralStructures-schema.json#/$defs/ModelId"
+    },
+    "additionalProps": {
+      "description": "additional properties (aka user defined properties udp) are  any properties of an this element  added by the current modeller. They serve as an extension to the predfefined element properties.",
+      "$ref": "../GeneralDefinitions/GeneralStructures-schema.json#/$defs/AdditionalProperties"
+    }
+  },
+  "required": [
+    "name",
+    "elementId",
+    "categoryType"
+  ],
+  "additionalProperties": false,
+  "examples": [
+    "Products",
+    "Supplier Information",
+    "HR"
+  ],
+    "$defs": {
+      "CategoryId": {
+        "description": "typed ID unique over all categories in this schema",
+        "allOf": [
+          {
+            "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/ElementId"
+          },
+          {
+            "pattern": ".*CATG[0-9]+$"
+          }
+        ]
+      },
+      "CategoryType": {
+        "description": "Catetory-objecttype, of which aspect a category groups elements together",
+        "type": "string",
+        "enum": [
+          "ENTITY",
+          "DOMAIN",
+          "DOCUMENT",
+          "DATAOBJECT",
+          "SYSTEM"
+        ]
+      }
+    }
+}

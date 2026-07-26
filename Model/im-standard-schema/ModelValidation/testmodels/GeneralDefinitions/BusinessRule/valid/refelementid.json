@@ -1,0 +1,10 @@
+{
+  "elementId": "BURU0",
+  "description": "something to check",
+  "restrictedElements": [
+    "ATTR0",
+    "ENTI99999",
+    "Model IIx:DOMA123",
+    "y0:RELA1"
+  ]
+}

@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_192" directorySegmentName="seg_1" id="3357B549-5ADB-12A9-11E9-8BC17407E9B0">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:06:24 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="17F5F16D-4CB1-2968-618E-D369CD8C5B93" value="true"/>
+<item key="BE22189E-C358-530C-6354-65FB4784079F" value="true"/>
+<item key="A91573EF-1254-1C9A-797A-A2AF60AC738D" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="1A90F064-D225-B8AB-AC38-0393157EE4FC" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>false</identifying>
+<nameOnSource>contains</nameOnSource>
+<nameOnTarget>kept in</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>26D10469-4749-7916-5F83-20F23C1CA7D7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>434F5721-A84C-C9C9-1B29-C30F54ABAD58</targetEntity>
+<transferable>true</transferable>
+<propertyMap>
+<property name="DE_RELA_TEXT_FROM" value="enthält"/>
+<property name="DE_RELA_TEXT_TO" value="gehalten in"/>
+<property name="EN_RELA_TEXT_FROM" value="contains"/>
+<property name="EN_RELA_TEXT_TO" value="kept in"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Relation>

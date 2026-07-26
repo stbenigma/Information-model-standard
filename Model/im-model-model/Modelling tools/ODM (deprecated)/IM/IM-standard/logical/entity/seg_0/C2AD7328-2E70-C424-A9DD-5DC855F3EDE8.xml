@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C2AD7328-2E70-C424-A9DD-5DC855F3EDE8" name="Zusätzliche Eigenschaft">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:03:22 UTC</createdTime>
+<comment><![CDATA[Für projekt- oder umgebungsspezifische Erweiterungen, können für jedes Modellelement eigene Eigenschaften definiert werden.
+
+Beispiel:
+- Qualitätsanspruch-Level
+- Sicherheitsstufe]]></comment>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Für projekt- oder umgebungsspezifische Erweiterungen, können für jedes Modellelement eigene Eigenschaften definiert werden.
+
+Beispiel:
+- Qualitätsanspruch-Level
+- Sicherheitsstufe
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+For project- or environment-specific extensions, separate properties can be defined for each model element.  
+
+Examples: 
+Quality requirement level
+Security level
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<typeID>E0CC5767-562C-A871-BD70-DA70B40552A8</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>F2BCE2D9-EA23-5A44-B6FB-586967A5D0A9</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>ADPR</shortName>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="DE_ENTI_NAME" value="Zusätzliche Eigenschaft"/>
+<property name="DE_ENTI_SYNONYM" value=""/>
+<property name="EN_ENTI_NAME" value="Additional property"/>
+<property name="EN_ENTI_SYNONYM" value=""/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="2"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Name" id="41CD85F5-88E3-F509-4545-3308BEF8D46F">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:03:22 UTC</createdTime>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<importedID>2A1A6E68-D38D-9101-ABF5-633C9DAFCFEC</importedID>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>56884D85-5713-C479-05C8-AC712C556A05</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_COMMENT" value=""/>
+<property name="DE_ATTR_NAME" value="Name"/>
+<property name="EN_ATTR_COMMENT" value=""/>
+<property name="EN_ATTR_NAME" value="Name"/>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="2"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+<Attribute name="Standardwert" id="4A7B398E-26D2-68A3-B252-6D7F75EBB6A0">
+<createdBy>stb</createdBy>
+<createdTime>2021-03-23 13:57:30 UTC</createdTime>
+<notes><![CDATA[[EN_ATTR_COMMENT[
+
+]EN_ATTR_COMMENT]
+[DE_ATTR_COMMENT[
+
+]DE_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="DE_ATTR_NAME" value="Standardwert"/>
+<property name="EN_ATTR_NAME" value="Value"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="2"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="65AA54E8-2C0B-0ADF-711F-83E6CFDEF5B2" name="Key_1">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-11 14:44:36 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<newElementsIDs>41CD85F5-88E3-F509-4545-3308BEF8D46F</newElementsIDs>
+<usedAttributes>
+<attributeRef>41CD85F5-88E3-F509-4545-3308BEF8D46F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

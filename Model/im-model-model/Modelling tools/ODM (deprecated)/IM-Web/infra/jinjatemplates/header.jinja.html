@@ -1,0 +1,63 @@
+{# company specific header in main file
+	can use any variable 
+	uses: 
+		modelname
+		databasename
+		company
+#}
+{% macro databaseheader(modelname,databasename,company) -%}
+		<div class="top-container">
+			<h3 class="descr">This website contains the complete content
+				of the data model <b>{{ modelname }} - {{ databasename }}</b> from {{ company }}.
+				This page was created with software from <a class="fyayc">foryouandyourcustomers</a>.
+			</h3>
+			<br>References in brackets are indirect references:<br>
+			(Table reference) for tables: Indirect linking of a table via an entity to a table in another datamodel<br>
+			(Column reference): Indirect linking of a column via an attribute to a column  in another datamodel
+		</div>
+		<br><hr>
+{%- endmacro %}
+
+{% macro IMheader(model,company,language,basedirec) -%}
+		<div class="top-container">
+			<p3 class="descr">
+		    {% if language.lower() == 'de' %}
+				Diese Webseite enthält den ganzen Inhalt 
+				des <p2 class="IM">Informationsmodells {{ model.getmodelname() }}</p2> von {{ company }}.
+				Diese Seite wurde von Software von <p2 class="fyayc">foryouandyourcustomers</p2> 
+				erstellt.
+		    {% elif language.lower() == 'fr' %}
+				Ce site web contient l'intégralité du contenu 
+				du <p2 class="IM">Modèle d'Information {{ model.getmodelname() }}</p2> de {{ company }}.
+				Cette page a été créée par le logiciel de <p2 class="fyayc">foryouandyourcustomers</p2>. 
+		    {% else %}
+				This website contains the complete content 
+				of the <p2 class="IM">Information model {{ model.getmodelname() }}</p2> from {{ company }}.
+				This page was created with software from <p2 class="fyayc">foryouandyourcustomers</p2>.
+		    {% endif %}
+			</p3>
+			<br>
+			{% set otherlangs = model.getlanguages(all=False) %}
+			{% for lang in otherlangs %}
+				{% set icon = ('gb' if lang.lower() == 'en' else lang.lower()) ~ '.png'  %}
+				{{ lang.upper() }} {{ model.getreflink(name='<img class="icon-check" alt="{}" src="{}infra/images/icons/{}">'.format(lang.upper(),basedirec,icon)
+				                        ,desttype='model',destid=None,destlang=lang)|safe }}
+			{% endfor  %}
+
+		</div>
+		<hr>
+{%- endmacro %}
+
+{% macro IMheadermulti(model,company,language,basedirec) -%}
+		<div class="top-container">
+			{% set otherlangs = model.getlanguages(all=False) %}
+			{% for lang in otherlangs %}
+				{% set icon = ('gb' if lang.lower() == 'en' else lang.lower()) ~ '.png'  %}
+				{{ lang.upper() }} {{ model.getreflink(name='<img class="icon-check" alt="{}" src="{}infra/images/icons/{}">'.format(lang.upper(),basedirec,icon)
+				                ,desttype='model',destid=None,
+				                destlang=lang,basedirec=basedirec)|safe }}
+			{% endfor  %}
+            <br><button onclick=location.reload()>Diagram(s)</button>
+		</div>
+		<hr>
+{%- endmacro %}

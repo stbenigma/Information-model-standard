@@ -1,0 +1,238 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="defaultdomains">
+<domains>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Point in time" id="0AD80E26-0F5C-D068-29EA-4740A04582AE">
+<createdBy>stb</createdBy>
+<createdTime>2019-03-10 11:09:09 UTC</createdTime>
+<comment><![CDATA[Time (day, time to the nearest milisecond)]]></comment>
+<ownerDesignName>System</ownerDesignName>
+<importedID>0AD80E26-0F5C-D068-29EA-4740A04582AE</importedID>
+<avTSortOrder>0</avTSortOrder>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<unitOfMeasure>MILISECOND</unitOfMeasure>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Relationptype" id="186E4854-422C-66EA-4D3F-174E5B49B2B2">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 14:38:57 UTC</createdTime>
+<comment><![CDATA[subtypes of relationship]]></comment>
+<ownerDesignName>System</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>10</dataTypeSize>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<listOfValues>
+<valueDef value="1:1" description="one-to-one"/>
+<valueDef value="M:1" description="many-to-one, functional"/>
+<valueDef value="M:N" description="many-to-many"/>
+<valueDef value="ROLE" description="1:1, role"/>
+<valueDef value="SUBTYPE" description="1:1, (exclusive) subtype"/>
+</listOfValues>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="SequenceNo" id="39B01BA7-C3D2-D42E-5518-83CB3845A63D">
+<createdBy>stb</createdBy>
+<createdTime>2020-07-30 14:19:34 UTC</createdTime>
+<ownerDesignName>System</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999</endValue>
+</rangeDef>
+</listOfRanges>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="ISO language code 2" id="3CFAACDE-10D2-A99A-844A-975DA633F49B">
+<createdBy>stb</createdBy>
+<createdTime>2019-03-10 10:49:47 UTC</createdTime>
+<comment><![CDATA[2-digit ISO code for a language (lower case, ISO 639)]]></comment>
+<ownerDesignName>System</ownerDesignName>
+<importedID>3CFAACDE-10D2-A99A-844A-975DA633F49B</importedID>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="ISO Sprachcode 2 = lower(ISO Sprachcode 2)"/>
+</checkConstraint>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Prefix" id="4134D0C7-BB61-4182-3736-8DE33C572E80">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 07:50:50 UTC</createdTime>
+<comment><![CDATA[Shortname to be used as a prefix e.g. for tableprefix in columnsnames. Lenght 2-5 characters, "^[\w_\-:$]{2,5}$"]]></comment>
+<ownerDesignName>System</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="DomainType" id="4204B4D1-9B87-7C6E-B6DA-8F942F4D6990">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 15:40:59 UTC</createdTime>
+<ownerDesignName>System</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>20</dataTypeSize>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<listOfValues>
+<valueDef value="BooleanDomain" description=""/>
+<valueDef value="DatetimeDomain" description=""/>
+<valueDef value="GroupDomain" description=""/>
+<valueDef value="LOVDomain" description=""/>
+<valueDef value="NumericDomain" description=""/>
+<valueDef value="TextDomain" description=""/>
+</listOfValues>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Email address" id="4B4F8F40-D3A4-4F39-8CB3-BB6C57534E96">
+<createdBy>stb</createdBy>
+<createdTime>2019-03-10 11:09:09 UTC</createdTime>
+<comment><![CDATA[valid email address according to SMTP/RFC protocol]]></comment>
+<ownerDesignName>System</ownerDesignName>
+<importedID>4B4F8F40-D3A4-4F39-8CB3-BB6C57534E96</importedID>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="match(eMail-Adresse, &quot;(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)&quot; )"/>
+</checkConstraint>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Name" id="56884D85-5713-C479-05C8-AC712C556A05">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 10:33:54 UTC</createdTime>
+<comment><![CDATA[Nonempty name build with characters or digits plus some special characters to name something. Maximum length is 100]]></comment>
+<ownerDesignName>System</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>100</dataTypeSize>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="^[\\w:$?*([{][\\w -_:°·$?*()[\\]{}]{0,99}$"/>
+</checkConstraint>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Date" id="631FC893-D28E-5FE4-89DB-473C78BB2B2A">
+<createdBy>stb</createdBy>
+<createdTime>2019-03-10 11:09:09 UTC</createdTime>
+<comment><![CDATA[Date to the nearest day]]></comment>
+<ownerDesignName>System</ownerDesignName>
+<importedID>631FC893-D28E-5FE4-89DB-473C78BB2B2A</importedID>
+<avTSortOrder>0</avTSortOrder>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<unitOfMeasure>TAG</unitOfMeasure>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Datum = trunc(Datum,&apos;DAY&apos;)"/>
+</checkConstraint>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="ISO language code 3" id="7EF070A4-018B-18D6-E996-291F316D16A7">
+<createdBy>stb</createdBy>
+<createdTime>2019-03-10 11:17:31 UTC</createdTime>
+<comment><![CDATA[3-digit ISO code for a language (lower case, ISO 639)]]></comment>
+<ownerDesignName>System</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="ISO Sprachcode 3 = lower (ISO Sprachcode 3)"/>
+</checkConstraint>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Boolean" id="7F06A64B-0C00-1355-F863-DBD9FDE5B848">
+<createdBy>stb</createdBy>
+<createdTime>2019-03-10 11:09:09 UTC</createdTime>
+<comment><![CDATA[logical value TRUE/FALSE]]></comment>
+<ownerDesignName>System</ownerDesignName>
+<importedID>7F06A64B-0C00-1355-F863-DBD9FDE5B848</importedID>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<listOfValues>
+<valueDef value="FALSE" description="falsch"/>
+<valueDef value="TRUE" description="wahr"/>
+</listOfValues>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="ElementId" id="95EF892F-DD50-79ED-90F5-D7FEFFD0CDFB">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 08:44:17 UTC</createdTime>
+<comment><![CDATA[typed ID for elementidentification in the database Format xxxxnnnnn, xxxx is the prefix of the table using the id]]></comment>
+<ownerDesignName>System</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>12</dataTypeSize>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Version-number" id="A3FB4AF0-BF96-9DD8-9659-03CA5AD21EA9">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 08:37:01 UTC</createdTime>
+<comment><![CDATA[Version-no in the form n.n.n]]></comment>
+<ownerDesignName>System</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>15</dataTypeSize>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="ISO country code 2" id="A7FEF26D-E676-B32E-E09E-E7C3CBBD53BA">
+<createdBy>stb</createdBy>
+<createdTime>2021-01-13 10:31:36 UTC</createdTime>
+<comment><![CDATA[2-digit ISO code for a country (lower case, ISO 3166)]]></comment>
+<ownerDesignName>System</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="ISO Landcode 2 = lower(ISO Landcode 2)"/>
+</checkConstraint>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Relation End Type" id="D7358D01-5940-01DA-912E-C6AA71503BF2">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-29 15:20:09 UTC</createdTime>
+<ownerDesignName>System</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>7 CHAR</dataTypeSize>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<listOfValues>
+<valueDef value="FORWARD" description="Forward Relation"/>
+<valueDef value="REVERSE" description="Reverse Relation"/>
+</listOfValues>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Short Description" id="D8C19083-EC1D-27E7-A2FD-5091C2B48044">
+<createdBy>stb</createdBy>
+<createdTime>2025-02-02 10:03:33 UTC</createdTime>
+<comment><![CDATA[Short description e.g. for tooltips]]></comment>
+<ownerDesignName>System</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>150 CHAR</dataTypeSize>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Shortname" id="DF321C7C-26AB-AE86-F75B-320EE5F91E6D">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 07:53:33 UTC</createdTime>
+<comment><![CDATA[nonempty short text for often used for references. Using letters, digits and ' ',-,:,$,_ Maxlength 15,]]></comment>
+<ownerDesignName>System</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="ISO country code 3" id="E630CC32-FE0F-D3B6-576A-ABD92840DA87">
+<createdBy>stb</createdBy>
+<createdTime>2021-01-13 10:31:36 UTC</createdTime>
+<comment><![CDATA[3-digit ISO code for a country (lower case, ISO 3166)]]></comment>
+<ownerDesignName>System</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="ISO Landcode 3 = lower (ISO Landcode 3)"/>
+</checkConstraint>
+</Domain>
+</domains>
+</DomainFile>

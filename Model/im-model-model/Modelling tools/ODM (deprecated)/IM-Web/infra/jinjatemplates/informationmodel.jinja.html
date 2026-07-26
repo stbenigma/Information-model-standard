@@ -1,0 +1,282 @@
+{# expected parameters:
+	timestamp
+	webmodel
+#}
+{% set company =  webmodel.metainfo.company  %}
+{% set modelname = webmodel.metainfo.modelname  %}
+{% set databasename = webmodel.metainfo.databasename  %}
+{% set title = webmodel.metainfo.modelname  %}
+{% set logofilename = "logo.jpg" %}
+{% set mylang = webmodel.curlanguage %}
+{% set basedirec = '../' %} {# basedirec for main file is webfile directory #}
+{% set dummy = webmodel.setbasedirec(basedirec) %}
+{% import 'macros.jinja.html' as blocks %}
+{% import 'header.jinja.html' as companyheader %}
+
+
+<!DOCTYPE html>
+<html lang="{{ mylang }}">
+<head>
+    <title>{{ title }}</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="{{ basedirec }}infra/image/imicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ basedirec }}infra/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="{{ basedirec }}infra/js/jscode.js"></script>
+    <script src="{{ basedirec }}infra/js/IM.js"></script>
+	<script src="{{ basedirec }}infra/js/svg-pan-zoom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="{{ basedirec }}infra/images/icons/favicon/favicon-16x16.png?v=2" sizes="16x16">
+	<link rel="icon" type="image/png" href="{{ basedirec }}infra/images/icons/favicon/favicon-32x32.png?v=2" sizes="32x32">
+	<link rel="icon" type="image/png" href="{{ basedirec }}infra/images/icons/favicon/favicon-96x96.png?v=2" sizes="96x96">
+	<link rel="shortcut icon" type="image/x-icon" href="{{ basedirec }}infra/images/icons/favicon/favicon.ico?v=2">
+</head>
+
+<body>
+	<div class="header" id="TopBar">
+		<h4>{{ company }}</h4>
+		<h4>{{ title }}</h4>
+		<h4>{{ timestamp }}</h4>
+		<img src="{{ basedirec }}infra/image/{{ logofilename }}" alt="{{ company }}" id="LLogo">
+	</div>
+	<button id="btnF" type="button" class="btn btn-info" data-toggle="modal" data-target="#MobileSearch">
+		<img class="icon-filter" alt="filter" src="{{ basedirec }}infra/images/icons/search.svg">
+	</button>
+	<div class="container" id="sidebar">
+		<div id="toc_list">
+			<div class="form-wrapper">
+				<form autocomplete="off">
+					<div class="form-group focused">
+						<label class="form-label" for="first">search key</label>
+						<input id="first" class="form-input" type="text" onkeyup="$d_Find('toc_list',this.value,'a')">
+						<img id="searchclear" alt="plus" class="icon-times" src="{{ basedirec }}infra/images/icons/cross.svg" type="display: none;">
+						<img class="icon-search" alt="minus" src="{{ basedirec }}infra/images/icons/search.svg" id="searcher">
+					</div>
+				</form>
+			</div>
+			<h3>Hits:</h3>
+			<output id="count"></output>
+			<div class="contentView">
+
+				<!--diagrams-->
+				{% if webmodel.diagrams|count > 0 %}
+				{% call blocks.listblock(label=webmodel.gettransltext("Diagramme"),
+				                        id="DiagramL",lbc="bardiag",basedirec=basedirec) %}
+					<ol class="tree" id="DiagramList">
+						{% for elem in webmodel.diagrams %}
+							<li class="obj">{{ webmodel.getreflink(name=elem.name,destid=elem.id
+							                ,desttype="diagrams",destlang=mylang,
+                                            basedirec=basedirec) |safe}}
+						{% endfor %}
+					</ol>
+				{% endcall %}
+				{% endif %}
+
+				<!--entites-->
+				{% call blocks.listblock(label=webmodel.gettransltext("Entitäten"), id="EntitesL", lbc="barenti",
+				                            basedirec=basedirec) %}
+						<ol class="tree" id="EntitesList">
+							{% for enti in webmodel.entities %}
+							<li class="obj">{{ webmodel.getreflink(name=enti[1], destid=enti[0]
+							                ,desttype="entities",destlang=mylang,
+                                            basedirec=basedirec) |safe}}
+							{% endfor %}
+						</ol>
+				{% endcall %}
+				
+				<!--attributes-->
+				{% call blocks.listblock(label=webmodel.gettransltext("Attribute"), id="AttrsL",lbc="barattr",basedirec=basedirec) %}
+						<ol class="tree" id="AttrsList">
+							{% for attr in webmodel.attributes %}
+							{% set entiid = webmodel.getelem(attr[0])["entity"] %}
+							{% set enti = webmodel.getelem(entiid) %}
+							<li class="obj">{{ webmodel.getreflink(name=attr[1] ~ " (" ~ webmodel.getlangstr(enti["name"]) ~ ")",
+							                        destid=attr[0]
+							                ,desttype="attributes",destlang=mylang,
+                                            basedirec=basedirec) |safe}}
+							{% endfor %}
+						</ol>
+				{% endcall %}
+
+				<!--domains-->       
+				{% if webmodel.domains|count > 0 %}
+				{% call blocks.listblock(label=webmodel.gettransltext("Wertebereiche"), id="DomainsL",lbc="bardoma",basedirec=basedirec) %}
+						<ol class="tree" id="DomainList">
+							{% for dom in webmodel.domains %}
+							<li class="obj">{{ webmodel.getreflink(name=dom[1],destid=dom[0]
+							                ,desttype="domains",destlang=mylang,
+                                            basedirec=basedirec) |safe}}
+							{% endfor %}
+						</ol>
+				{% endcall %}
+				{% endif %}
+
+				<!--business rules-->
+				{% if webmodel.businessrules|count > 0 %}
+				{% call blocks.listblock(label=webmodel.gettransltext("Business Rules"), id="BurusL",lbc="barburu",basedirec=basedirec) %}
+						<ol class="tree" id="BuruList">
+							{% for buru in webmodel.businessrules %}
+							<li class="obj">{{ webmodel.getreflink(name=buru[1],destid=buru[0]
+							                ,desttype="businessrules",destlang=mylang,
+                                            basedirec=basedirec) |safe}}
+							{% endfor %}
+						</ol>
+				{% endcall %}
+				{% endif %}
+
+				<!--Documents-->
+				{% if webmodel.documents|count > 0 %}
+				{% call blocks.listblock(label=webmodel.gettransltext("Dokumente"), id="DocusL",lbc="bardocu",basedirec=basedirec) %}
+						<ol class="tree" id="DocusList">
+							{% for elem in webmodel.documents %}
+							<li class="obj">{{ webmodel.getreflink(name=elem[1],destid=elem[0]
+							                ,desttype="documents",destlang=mylang,
+                                            basedirec=basedirec) |safe}}
+							{% endfor %}
+						</ol>
+				{% endcall %}
+				{% endif %}
+
+				<!--OrgUnits-->       
+				{% if webmodel.orgunits|count > 0 %}
+				{% call blocks.listblock(label=webmodel.gettransltext("Org. Einheiten"), id="OrgusL",lbc="barorgu",basedirec=basedirec) %}
+						<ol class="tree" id="OrguList">
+							{% for elem in webmodel.orgunits %}
+							<li class="obj">{{ webmodel.getreflink(name=elem[1],destid=elem[0]
+							                ,desttype="orgunits",destlang=mylang,
+                                            basedirec=basedirec) |safe}}
+							{% endfor %}
+						</ol>
+				{% endcall %}
+				{% endif %}
+
+				<!--ActorRoles-->
+				{% if webmodel.actorroles|count > 0 %}
+				{% call blocks.listblock(label=webmodel.gettransltext("Akteurrollen"), id="ActrsL",lbc="baractr",basedirec=basedirec) %}
+						<ol class="tree" id="ActrList">
+							{% for elem in webmodel.actorroles %}
+							<li class="obj">{{ webmodel.getreflink(name=elem[1],destid=elem[0]
+							                ,desttype="actorroles",destlang=mylang,
+                                            basedirec=basedirec) |safe}}
+							{% endfor %}
+						</ol>
+				{% endcall %}
+				{% endif %}
+
+
+				<!--datamodels-->
+				{% if webmodel.datamodels|count > 0 %}
+				{% call blocks.listblock(label=webmodel.gettransltext("Datenmodelle"), id="datmL",lbc="bardatm"
+				                        ,basedirec=basedirec) %}
+						<ol class="tree" id="DatmList">
+							{% for elem in webmodel.datamodels %}
+							<li class="obj">{{ webmodel.getreflink(name=elem[1],destid=elem[0]
+								                , destdatmid=elem[0],desttype="datamodels",
+                                            basedirec=basedirec) |safe }}
+							{% endfor %}
+						</ol>
+				{% endcall %}
+				{% endif %}
+
+				</div>
+			</div>
+		</div>
+
+
+    {% if webmodel.export.singlefile %}
+        <div class="wrapper">
+		{{ companyheader.IMheader(model=webmodel,company=company,language=mylang,basedirec=basedirec) }}
+        <!--Entities-->
+		{% for enti in webmodel.entities %}
+		    {% set elemid = enti[0] %}
+		    {% set elem = webmodel.getelem (elemid) %}
+		    {% include 'entities.jinja.html' %}
+		{% endfor %}
+        <!--Attributes-->
+		{% for attr in webmodel.attributes %}
+            {% set elemid = attr[0] %}
+            {% set elem = webmodel.getelem (elemid) %}
+            {% include 'attributes.jinja.html' %}
+		{% endfor %}
+        <!--domains-->
+		{% for doma in webmodel.domains %}
+		    {% set elemid = doma[0] %}
+		    {% set elem = webmodel.getelem (elemid) %}
+            {% include 'domains.jinja.html' %}
+		{% endfor %}
+		<!--business rules-->
+		{% for buru in webmodel.businessrules %}
+    		{% set elemid = buru[0] %}
+		    {% set elem = webmodel.getelem (elemid) %}
+            {% include 'businessrules.jinja.html' %}
+		{% endfor %}
+
+		<!--Documents-->
+		{% for docu in webmodel.documents %}
+		    {% set elemid = docu[0] %}
+		    {% set elem = webmodel.getelem (elemid) %}
+            {% include 'documents.jinja.html' %}
+		{% endfor %}
+		
+		<!--organisational units-->
+		{% for orgu in webmodel.orgunits %}
+		    {% set elemid = orgu[0] %}
+		    {% set elem = webmodel.getelem (elemid) %}
+            {% include 'orgunits.jinja.html' %}
+		{% endfor %}
+
+		<!--actor roles-->
+		{% for actr in webmodel.actorroles %}
+		    {% set elemid = actr[0] %}
+		    {% set elem = webmodel.getelem (elemid) %}
+            {% include 'actorroles.jinja.html' %}
+		{% endfor %}
+
+		<!--diagrams-->
+		{% if webmodel.diagrams|count > 0 %}
+			{% for diag in webmodel.diagrams %}
+    			{% set elemid = diag['id']  %}
+	    		{% set elem =  webmodel.getelem(elemid)  %}
+                {% include 'diagrams.jinja.html' %}
+			{% endfor %}
+		{% endif %}
+	    </div>
+    {% else %}
+         <div class="wrapper">
+    		{{ companyheader.IMheadermulti(model=webmodel,company=company,language=mylang,basedirec=basedirec) }}
+             <div style="margin:2rem;position:relative;height:1000px">
+		        <iframe name="contentIframe" loading="lazy" style="position:absolute;top:0;left:0;"
+                        height="100%" width="100%"
+                        src="{{ webmodel.gethref(destid=webmodel.startdiagram,
+                                                destlang=mylang,
+                                                desttype="diagrams",basedirec=basedirec) }}"></iframe>
+             </div>
+    	</div>
+    {% endif %}
+
+    <div class="modal" id="MobileSearch" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-full" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Filter</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeM0">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalContent">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closeM1">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% if webmodel.export.singlefile %}
+    	{{ blocks.zoomfinish(diagrams=webmodel.diagrams) }}
+    {% endif  %}
+</body>
+</html>

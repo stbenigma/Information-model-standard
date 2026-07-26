@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="OpenApi model" id="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" mainViewID="D6038C85-D5FF-4D7B-2CEE-5B4119EDD28D">
+<createdBy>stb</createdBy>
+<createdTime>2024-11-25 08:24:01 UTC</createdTime>
+<ownerDesignName>ModellModell_neu</ownerDesignName>
+<shouldBeOpen>true</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+<importConnectionStamps>
+<importConnectionStamp class="oracle.dbtools.crest.imports.DBConnectionStamp">
+<connName>sqlserver-modelmodel</connName>
+<connUser>fyayc-admin</connUser>
+<connType>2</connType>
+</importConnectionStamp>
+</importConnectionStamps>
+</relationalModel>

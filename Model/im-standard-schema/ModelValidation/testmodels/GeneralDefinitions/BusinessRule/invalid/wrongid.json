@@ -1,0 +1,5 @@
+{
+  "elementId": "ENTI2",
+  "name": "myname",
+  "restrictedElements": ["ABCD"]
+}

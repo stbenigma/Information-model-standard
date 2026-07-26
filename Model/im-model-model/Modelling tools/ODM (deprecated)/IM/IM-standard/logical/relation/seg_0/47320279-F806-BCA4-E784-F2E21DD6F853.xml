@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_DOMA_DOMA" directorySegmentName="seg_0" id="47320279-F806-BCA4-E784-F2E21DD6F853">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>true</identifying>
+<nameOnSource>umfasst</nameOnSource>
+<nameOnTarget>trägt bei zu</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C94035A2-FF8C-E960-646F-00D06287717F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DDA70D9B-F8A6-0860-C557-CC433CE3B059</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<propertyMap>
+<property name="DE_RELA_TEXT_FROM" value="umfasst"/>
+<property name="DE_RELA_TEXT_TO" value="trägt bei zu"/>
+<property name="EN_RELA_TEXT_FROM" value="includes"/>
+<property name="EN_RELA_TEXT_TO" value="contributes to"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="2"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="Attr Name" id="667049A4-A102-C37F-B2C8-0D6A3FF07FF5">
+<createdBy>stb</createdBy>
+<createdTime>2020-08-09 14:38:32 UTC</createdTime>
+<comment><![CDATA[Name des Attributs in einer Gruppe]]></comment>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</attribute>
+<attribute name="Attr Description" id="651162DE-0996-9971-047A-99255D4DBA0B">
+<createdBy>stb</createdBy>
+<createdTime>2020-08-09 14:38:38 UTC</createdTime>
+<comment><![CDATA[Use, purpose of the attribute in the group
+Verwendung, Zweck des Attributs in der Gruppe]]></comment>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</attribute>
+<attribute name="is_mandatory" id="CDE33621-83BB-DBDB-294E-9047BD2B2884">
+<createdBy>stb</createdBy>
+<createdTime>2020-09-01 17:46:22 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>7F06A64B-0C00-1355-F863-DBD9FDE5B848</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="isdescriptive" value="FALSE"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</attribute>
+</attributes>
+</Relation>

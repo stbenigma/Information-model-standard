@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_217" directorySegmentName="seg_1" id="6CA1C5DF-F6D9-AA8D-F2B4-EB193ED74383">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:03:22 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="false"/>
+<item key="17F5F16D-4CB1-2968-618E-D369CD8C5B93" value="true"/>
+<item key="BE22189E-C358-530C-6354-65FB4784079F" value="true"/>
+<item key="A91573EF-1254-1C9A-797A-A2AF60AC738D" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="1A90F064-D225-B8AB-AC38-0393157EE4FC" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>false</identifying>
+<nameOnSource>used for</nameOnSource>
+<nameOnTarget>to be interpreted in</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BCDB1085-96EC-0105-47E6-CF515AF98956</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>067E5859-1B16-FD36-D2DE-49F6A02E4D1D</targetEntity>
+<transferable>true</transferable>
+<propertyMap>
+<property name="DE_RELA_TEXT_FROM" value="verwendet für"/>
+<property name="DE_RELA_TEXT_TO" value="zu interpretieren in"/>
+<property name="EN_RELA_TEXT_FROM" value="used for"/>
+<property name="EN_RELA_TEXT_TO" value="to be interpreted in"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Relation>

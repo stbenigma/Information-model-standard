@@ -1,0 +1,190 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F45CB973-CB81-E152-708E-CC3FFFA45A6B" name="ALLOWED_VALUES">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<comment><![CDATA[Value that is a valid value for an enumerated value list. 
+The attribute "value" is the physical (language-independent) value, which is the actual value in the conceptual model
+
+Internal -> Logical value, information model (in the company)
+External -> Value used in an interface / system]]></comment>
+<generatorID>9B10A30A-9185-8568-3F5A-30A4DB81182F</generatorID>
+<notes><![CDATA[[DE_ENTI_COMMENT[
+Wert, der für eine Aufzählungs-Werteliste ein gültiger Wert ist.
+Das Attribut "Wert ist der physikalische (sprachunabhängige) Wert, der als eigentlicher Wert im konzeptionellen Modell gilt.
+
+Beispiele:
+Bayern
+Niedersachsen
+Ok
+NotOk
+
+]DE_ENTI_COMMENT]
+[EN_ENTI_COMMENT[
+Value that is a valid value for an enumerated value list. 
+The attribute "value" is the physical (language-independent) value, which is the actual value in the conceptual model
+
+Examples:
+Bayern
+Niedersachsen
+Ok
+NotOk
+
+]EN_ENTI_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<ordsAlias>allowed_value</ordsAlias>
+<typeID>899A6DDC-95E0-4AD5-5F58-B3A2FF5C2D08</typeID>
+<abbreviation>VALU</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="VALU_ID" id="C77E27F2-4740-58BE-34DB-2C7D03EAD15C">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="VALU_VALUE" id="7F9FA8C5-0620-4B7B-D2F7-71FFF6DD93F9">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<comment><![CDATA[A value that an attribute can assume.]]></comment>
+<generatorID>C64892B8-1474-E5AC-044B-909ED247F4B5</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Ein Wert den ein Attribut annehmen kann.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+A value that an attribute can assume.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VALU_DISPLAY_TEXT" id="EF90AE98-FAA6-26FB-A44B-86E40354941E">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<comment><![CDATA[Textual representation of a value in several languages possible.]]></comment>
+<generatorID>13085E12-B520-73E9-F36A-D716638264B1</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Textliche Darstellung eines Wertes in mehreren Sprachen möglich.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Textual representation of a value in several languages possible.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<collectionType>53EF0FEC-74CF-B5E7-3547-0E74F449ACA7</collectionType>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VALU_SORT_ORDER" id="09771DCF-34E9-598F-D31A-E9CBAB006D8B">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<comment><![CDATA[Number by which the values in a display are sorted in ascending order. Empty -> Value is placed at the end of the list in random order]]></comment>
+<generatorID>555F662C-236E-BA4D-E517-51C3C51143EE</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Zahl nach der die Werte in einer Anzeige aufsteigend sortiert werden. Leer -> Wert kommt an den Schluss der Liste in zufälliger Reihenfolge
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Number by which the values in a display are sorted in ascending order. Empty -> Value is placed at the end of the list in random order
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>39B01BA7-C3D2-D42E-5518-83CB3845A63D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VALU_DESCRIPTION" id="99DA240B-BF4F-2DC8-B7A4-2585F61F0342">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<comment><![CDATA[Long text / description of a value in several languages possible.]]></comment>
+<generatorID>92FC87AC-8106-08CC-12A8-2849A8185FA9</generatorID>
+<notes><![CDATA[[DE_ATTR_COMMENT[
+Langer Text / Beschreibung eines Wertes in mehreren Sprachen möglich.
+]DE_ATTR_COMMENT]
+[EN_ATTR_COMMENT[
+Long text / description of a value in several languages possible.
+]EN_ATTR_COMMENT]
+]]></notes>
+<ownerDesignName>IM-standard</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<collectionType>53EF0FEC-74CF-B5E7-3547-0E74F449ACA7</collectionType>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>C3DAFABD-5133-27CA-E0E5-B039A45135D6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VALU_DOMA_ID" id="FCEDFAA6-E054-1D84-E0D9-4E3B2000C72D">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F2A77F25-5E5D-1BB8-7C92-67491783DF83</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4ED5AD5A-730C-8232-0A53-332DFD3F73EC" referredColumn="35C198EB-9FB4-07C8-CB8B-AFABF06D8AF8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="50745B0D-97D0-73B1-6712-3942BC2B6FD2" name="VALU_PK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:16 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="C77E27F2-4740-58BE-34DB-2C7D03EAD15C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="62F58A9C-6E1C-8AB8-8542-4F4694DD2953" name="VALU__UN">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:48:35 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F9FA8C5-0620-4B7B-D2F7-71FFF6DD93F9"/>
+<colUsage columnID="FCEDFAA6-E054-1D84-E0D9-4E3B2000C72D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8F9EE3E1-8EB2-336E-F0BA-E2B62A1C5974" name="ALLOWED_VALUE_DOMAIN_FK">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-24 13:09:17 UTC</createdTime>
+<generatorID>92D7319E-29FB-1C82-60D6-1E9DDE1DA72C</generatorID>
+<ownerDesignName>IM-standard</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FCEDFAA6-E054-1D84-E0D9-4E3B2000C72D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

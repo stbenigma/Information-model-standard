@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_76" directorySegmentName="seg_3" id="5E0DCA43-3EB8-45DF-03D2-28AF1A00D8E9">
+<createdBy>stb</createdBy>
+<createdTime>2020-02-03 20:04:00 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="76547D0C-003E-6F74-D2FC-7ADFC63697F6" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>false</identifying>
+<nameOnSource>converted by</nameOnSource>
+<nameOnTarget>counts towards</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>23D800D2-69D7-19A7-A112-599DD4855100</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0E2F395D-6242-F7C9-8A3B-6A901C6816E1</targetEntity>
+<transferable>true</transferable>
+<propertyMap>
+<property name="DE_RELA_TEXT_FROM" value="umgerechnet mit"/>
+<property name="DE_RELA_TEXT_TO" value="rechnet zu"/>
+<property name="EN_RELA_TEXT_FROM" value="converted by"/>
+<property name="EN_RELA_TEXT_TO" value="counts towards"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="DRAFT"/>
+</propertyMap>
+</Relation>

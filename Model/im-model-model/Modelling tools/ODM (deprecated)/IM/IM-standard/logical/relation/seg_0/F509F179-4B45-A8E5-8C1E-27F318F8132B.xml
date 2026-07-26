@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_146" directorySegmentName="seg_0" id="F509F179-4B45-A8E5-8C1E-27F318F8132B">
+<createdBy>stb</createdBy>
+<createdTime>2024-12-09 14:49:03 UTC</createdTime>
+<ownerDesignName>IM-standard</ownerDesignName>
+<engineerTo>
+<item key="6BBAC1B3-2078-0BD6-3E5A-F79C71DBC387" value="true"/>
+<item key="04FA2162-E381-5467-1B9E-F321AF4D805E" value="true"/>
+<item key="3558E52C-AEC8-517D-8AEC-2CCFDABAA8C5" value="true"/>
+</engineerTo>
+<sourcePk>535AE6A2-9084-B091-55AD-DDEE049BF6F0</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>formt</nameOnSource>
+<nameOnTarget>besteht aus</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7810FD23-A6BA-9ECA-1944-4593B865E654</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>234A5520-6FC5-F97D-0838-A80335AEF71D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<propertyMap>
+<property name="DE_RELA_TEXT_FROM" value="formt"/>
+<property name="DE_RELA_TEXT_TO" value="besteht aus"/>
+<property name="EN_RELA_TEXT_FROM" value="consists of"/>
+<property name="EN_RELA_TEXT_TO" value="forms"/>
+<property name="maxzoomlevel" value="4"/>
+<property name="minzoomlevel" value="0"/>
+<property name="publ_status" value="PUBL"/>
+</propertyMap>
+</Relation>
