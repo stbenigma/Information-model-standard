@@ -27,7 +27,7 @@
 <scale>0</scale>
 <type>7F06A64B-0C00-1355-F863-DBD9FDE5B848</type>
 </Attribute>
-<Attribute name="domainId" id="1F4AA558-3459-83C8-18E5-055E7E9FE6D7">
+<Attribute name="domainid" id="1F4AA558-3459-83C8-18E5-055E7E9FE6D7">
 <createdBy>stb</createdBy>
 <createdTime>2024-11-25 16:04:04 UTC</createdTime>
 <ownerDesignName>ModellModell_neu</ownerDesignName>

@@ -1,0 +1,17 @@
+{
+  "elementId": "RELA0",
+  "relationType": "SUBTYPE",
+  "fwd": {
+    "entityId": "ENTI0",
+    "cardinality": "M",
+    "mandatory": true
+  },
+  "bwd": {
+    "entityId": "ENTI0",
+    "assocText": {
+      "de": "kommt von",
+      "en": "comes from"
+    },
+    "mandatory": true
+  }
+}

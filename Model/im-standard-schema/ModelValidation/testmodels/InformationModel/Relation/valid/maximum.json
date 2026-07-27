@@ -1,0 +1,29 @@
+{
+  "elementId": "RELA9",
+  "relationType": "M:N",
+  "fwd": {
+    "entityId": "ENTI7",
+    "cardinality": "M",
+    "assocText": "goes to",
+    "mandatory": true,
+    "historicised": false
+  },
+  "bwd": {
+    "entityId": "ENTI8",
+    "assocText": {
+      "de": "kommt von",
+      "en": "comes from"
+    },
+    "cardinality": "M",
+    "arcNumber": 1,
+    "mandatory": true,
+    "historicised": true
+  },
+  "examples": [
+    "von 1 zu viele / von viele zu 1"
+  ],
+  "additionalProps":
+    {
+      "fkattribute": "CUST-ID"
+    }
+}

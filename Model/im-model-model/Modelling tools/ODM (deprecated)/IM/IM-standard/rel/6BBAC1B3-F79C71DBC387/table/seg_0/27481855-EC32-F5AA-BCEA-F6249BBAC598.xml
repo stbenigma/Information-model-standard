@@ -72,7 +72,7 @@
 <colAssociation fkAssociation="38A6FA92-7296-A42F-4A95-7D29F72E2BCC" referredColumn="B3945E8F-F0EF-07C1-9918-6B0CE67D3FBB"/>
 </associations>
 </Column>
-<Column name="domainId" id="CDF2A544-5381-BDBE-3FB6-94C84BE09D29">
+<Column name="domainid" id="CDF2A544-5381-BDBE-3FB6-94C84BE09D29">
 <createdBy>stb</createdBy>
 <createdTime>2024-11-25 09:17:36 UTC</createdTime>
 <ownerDesignName>IM-standard</ownerDesignName>

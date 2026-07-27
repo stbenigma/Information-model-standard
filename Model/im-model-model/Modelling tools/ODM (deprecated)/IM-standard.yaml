@@ -8,9 +8,9 @@ renderjson: FULL
 #diagrams to be inclueded in PUBL and GTOP filters
 diagrams:
   PUBL:
-    - 'Information model-0'
+    - 'Information Model-0'
   GTOP: 
-    - 'Information model-0'
+    - 'Information Model-0'
 
 # translations to _publishable
 # first language listed here is not placed in a language subfolder

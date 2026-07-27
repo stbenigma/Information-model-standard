@@ -1,0 +1,25 @@
+{
+  "elementId": "DOMA9",
+  "name": "myname",
+  "domainType": "TextDomain",
+  "minLength": 0,
+  "maxLength": 999,
+  "technicalName": "AB_YX$",
+  "description": {
+    "de": "deutsch"
+  },
+  "categoryId": "CATG123",
+  "examples": [
+    "bsp1",
+    [
+      1,
+      2,
+      3
+    ]
+  ],
+  "additionalProps":
+    {
+      "p1": "prop 1",
+      "p2": "any property"
+    }
+}

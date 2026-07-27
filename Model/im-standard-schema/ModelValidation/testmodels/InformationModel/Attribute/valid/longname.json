@@ -1,0 +1,13 @@
+{
+  "elementId": "ATTR353",
+  "name": "Specific rules for Mass Balance Credit Method - attribution proportionality to input immer länger mehr als 100 zeichen",
+  "mandatory": false,
+  "parentId": "ENTI101",
+  "domainId": "DOMA195",
+  "displaySeq": 6,
+  "additionalProps":
+    {
+      "SOURCE-ID": "058019ba-4422-4571-b8c6-01130b4fb52e",
+      "SOURCE-MODEL": "DMP Definition"
+    }
+}

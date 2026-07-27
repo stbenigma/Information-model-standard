@@ -128,7 +128,7 @@
 			<object id="B5A4599C-1B2D-B322-E185-8FFD18F95237" />
 		</objects>
 	</standard_report>
-	<standard_report id="B29E8DA9-2E02-57AA-E2BC-4135F57D5AEF" name="Information model" description="" design="C0F99BD6-EFBC-2981-8BDE-316C8D1D0E97" model="523BCA79-7737-3835-F4C2-B2D4A37604CA" inc_dp="true" class="oracle.dbtools.crest.model.design.logical.Entity">
+	<standard_report id="B29E8DA9-2E02-57AA-E2BC-4135F57D5AEF" name="Information Model" description="" design="C0F99BD6-EFBC-2981-8BDE-316C8D1D0E97" model="523BCA79-7737-3835-F4C2-B2D4A37604CA" inc_dp="true" class="oracle.dbtools.crest.model.design.logical.Entity">
 		<subviews>
 			<subview id="09C17719-4C27-619D-41E3-8E8F9567BBC0" />
 			<subview id="A1FEDF24-676C-CD9A-6CA6-2A390A60BFC1" />

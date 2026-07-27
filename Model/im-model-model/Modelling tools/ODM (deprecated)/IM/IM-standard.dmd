@@ -10,9 +10,9 @@ version=2.1
 DEEPLAuthKey=
 }
 
-Information model of the Information model.
+Information Model of the Information Model.
 Based on the relational model and described in 
-- the book Information modelling (ISBN-978-3-7281-3943-6).
+- the book Information Modelling (ISBN-978-3-7281-3943-6).
 - the jsonschema definition Informationmodel.json (https://...)]]></comment>
 <ownerDesignName>ModellModell_neu</ownerDesignName>
 <capitalNames>false</capitalNames>

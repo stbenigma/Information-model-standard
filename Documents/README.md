@@ -8,3 +8,6 @@ documents of older versions of the information model (-model)
 First version of Information model model done in Oracle's ODM
 Examples for no longer accurate as ODM-model is no longer maintaibned. 
 Shown as examples of representation of models
+
+
+

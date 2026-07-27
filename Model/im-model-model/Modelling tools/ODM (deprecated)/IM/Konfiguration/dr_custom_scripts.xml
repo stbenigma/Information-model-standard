@@ -1081,7 +1081,7 @@ var rels =[];
 					}
 				} else {
 					allmapping = {
-						"header": ['Information model', ''],
+						"header": ['Information Model', ''],
 						"subheader": ['entity', 'attr']
 					}
 					for (ih = 0; ih < g_rmodels.length; ih++) {
@@ -1103,7 +1103,7 @@ var rels =[];
 				// lies alle Mappings des gewählten Modells
 				getAllMappings([relModel])
 				allmapping = {
-					"model": [relModel.getName(), '', 'Information model', ''],
+					"model": [relModel.getName(), '', 'Information Model', ''],
 					"header": ['tableName', 'columnName','entityName', 'attrName'],
 					"attrlist": gatherCols(relModel)
 				}
@@ -1114,7 +1114,7 @@ var rels =[];
 				// lies alle Mappings des gewählten Modells
 				mymodelname = relModel.getName()
 				allmapping = {
-					"model": [mymodelname,'','','','','','', 'Information model',''],
+					"model": [mymodelname,'','','','','','', 'Information Model',''],
 					"header": ['tableName', 'columnName','datatype','mand.','def. value','descr','rules','entity','attribute'],
 					"attrlist": gatherDevCols(relModel)
 				}
@@ -2100,7 +2100,7 @@ var rels =[];
 					}
 				} else {
 					allmapping = {
-						"header": ['Information model', ''],
+						"header": ['Information Model', ''],
 						"subheader": ['entity', 'attr']
 					}
 					for (ih = 0; ih < g_rmodels.length; ih++) {
@@ -2122,7 +2122,7 @@ var rels =[];
 				// lies alle Mappings des gewählten Modells
 				getAllMappings([relModel])
 				allmapping = {
-					"model": [relModel.getName(), '', 'Information model', ''],
+					"model": [relModel.getName(), '', 'Information Model', ''],
 					"header": ['tableName', 'columnName','entityName', 'attrName'],
 					"attrlist": gatherCols(relModel)
 				}
@@ -2133,7 +2133,7 @@ var rels =[];
 				// lies alle Mappings des gewählten Modells
 				mymodelname = relModel.getName()
 				allmapping = {
-					"model": [mymodelname,'','','','','','', 'Information model',''],
+					"model": [mymodelname,'','','','','','', 'Information Model',''],
 					"header": ['tableName', 'columnName','datatype','mand.','def. value','descr','rules','entity','attribute'],
 					"attrlist": gatherDevCols(relModel)
 				}
@@ -3119,7 +3119,7 @@ var rels =[];
 					}
 				} else {
 					allmapping = {
-						"header": ['Information model', ''],
+						"header": ['Information Model', ''],
 						"subheader": ['entity', 'attr']
 					}
 					for (ih = 0; ih < g_rmodels.length; ih++) {
@@ -3141,7 +3141,7 @@ var rels =[];
 				// lies alle Mappings des gewählten Modells
 				getAllMappings([relModel])
 				allmapping = {
-					"model": [relModel.getName(), '', 'Information model', ''],
+					"model": [relModel.getName(), '', 'Information Model', ''],
 					"header": ['tableName', 'columnName','entityName', 'attrName'],
 					"attrlist": gatherCols(relModel)
 				}
@@ -3152,7 +3152,7 @@ var rels =[];
 				// lies alle Mappings des gewählten Modells
 				mymodelname = relModel.getName()
 				allmapping = {
-					"model": [mymodelname,'','','','','','', 'Information model',''],
+					"model": [mymodelname,'','','','','','', 'Information Model',''],
 					"header": ['tableName', 'columnName','datatype','mand.','def. value','descr','rules','entity','attribute'],
 					"attrlist": gatherDevCols(relModel)
 				}
@@ -4138,7 +4138,7 @@ var rels =[];
 					}
 				} else {
 					allmapping = {
-						"header": ['Information model', ''],
+						"header": ['Information Model', ''],
 						"subheader": ['entity', 'attr']
 					}
 					for (ih = 0; ih < g_rmodels.length; ih++) {
@@ -4160,7 +4160,7 @@ var rels =[];
 				// lies alle Mappings des gewählten Modells
 				getAllMappings([relModel])
 				allmapping = {
-					"model": [relModel.getName(), '', 'Information model', ''],
+					"model": [relModel.getName(), '', 'Information Model', ''],
 					"header": ['tableName', 'columnName','entityName', 'attrName'],
 					"attrlist": gatherCols(relModel)
 				}
@@ -4171,7 +4171,7 @@ var rels =[];
 				// lies alle Mappings des gewählten Modells
 				mymodelname = relModel.getName()
 				allmapping = {
-					"model": [mymodelname,'','','','','','', 'Information model',''],
+					"model": [mymodelname,'','','','','','', 'Information Model',''],
 					"header": ['tableName', 'columnName','datatype','mand.','def. value','descr','rules','entity','attribute'],
 					"attrlist": gatherDevCols(relModel)
 				}
@@ -5157,7 +5157,7 @@ var rels =[];
 					}
 				} else {
 					allmapping = {
-						"header": ['Information model', ''],
+						"header": ['Information Model', ''],
 						"subheader": ['entity', 'attr']
 					}
 					for (ih = 0; ih < g_rmodels.length; ih++) {
@@ -5179,7 +5179,7 @@ var rels =[];
 				// lies alle Mappings des gewählten Modells
 				getAllMappings([relModel])
 				allmapping = {
-					"model": [relModel.getName(), '', 'Information model', ''],
+					"model": [relModel.getName(), '', 'Information Model', ''],
 					"header": ['tableName', 'columnName','entityName', 'attrName'],
 					"attrlist": gatherCols(relModel)
 				}
@@ -5190,7 +5190,7 @@ var rels =[];
 				// lies alle Mappings des gewählten Modells
 				mymodelname = relModel.getName()
 				allmapping = {
-					"model": [mymodelname,'','','','','','', 'Information model',''],
+					"model": [mymodelname,'','','','','','', 'Information Model',''],
 					"header": ['tableName', 'columnName','datatype','mand.','def. value','descr','rules','entity','attribute'],
 					"attrlist": gatherDevCols(relModel)
 				}
@@ -10350,7 +10350,7 @@ function initzoomlevel(){
 								}
 							} else {
 								allmapping = {
-									"header": ['Information model', ''],
+									"header": ['Information Model', ''],
 									"subheader": ['entity', 'attr']
 								}
 								for (ih = 0; ih < g_rmodels.length; ih++) {
@@ -10372,7 +10372,7 @@ function initzoomlevel(){
 							// lies alle Mappings des gewählten Modells
 							getAllMappings([relModel])
 							allmapping = {
-								"model": [relModel.getName(), '', 'Information model', ''],
+								"model": [relModel.getName(), '', 'Information Model', ''],
 								"header": ['tableName', 'columnName','entityName', 'attrName'],
 								"attrlist": gatherCols(relModel)
 							}
@@ -10386,7 +10386,7 @@ function initzoomlevel(){
 							mymodelname = relModel.getName()
 							// prepare jsonstructure for Header and data
 							allmapping = {
-								"model": [mymodelname,'','','','','','','', 'Information model',''],
+								"model": [mymodelname,'','','','','','','', 'Information Model',''],
 								"header": ['tableName', 'columnName','ID','datatype','mand.','def. value','descr','rules','entity','attribute'],
 								"attrlist": gatherDevCols(relModel)
 							}
