@@ -58,7 +58,7 @@ SCHEMA_URI_HINTS = {
     "draft/2020-12": "2020",
 }
 
-STD_IM_PATH = Path(__file__).parent.parent
+STD_IM_PATH = Path(__file__).parent.parent.parent.parent.parent
 STD_SCHEMA_PATH = STD_IM_PATH / "Model" / "im-standard-schema"
 TOP_SCHEMAS = {"IM": STD_SCHEMA_PATH / "InformationModel" / "InformationModel-schema.json"
                }
@@ -181,6 +181,7 @@ def _make_local_registry(schema_dir: Path, draft: str):
 
     return Registry(retrieve=retrieve)
 
+
 def dovalidate(data, schema, draft: str=None, quiet: bool=True,
                schema_dir: Path=STD_SCHEMA_PATH):
 
@@ -202,11 +203,10 @@ def dovalidate(data, schema, draft: str=None, quiet: bool=True,
         logging.warning("********Validator-Error in schema:\n"+json.dumps(schema)+"\n******")
         errors=[]
     errors=sorted(errors,key=lambda e: list(e.absolute_path))
-    #errors = sorted(validator.iter_errors(data)), key=lambda e: list(e.absolute_path))
     return errors,draft_label
 
 
-def main():
+def main(args=None):
     parser = argparse.ArgumentParser(
         description="""
 validate_json.py — Validate a JSON file against a JSON Schema file.
@@ -246,7 +246,7 @@ Options:
         metavar="{" + ",".join(DRAFT_MAP) + "}",
         help="Force a specific JSON Schema draft (auto-detected from $schema if omitted, defaulted to 2020 if none found)",
     )
-    args = parser.parse_args()
+    args = parser.parse_args(args)
 
     jsoninputfile=args.json_file.resolve()
     if Path(args.schema_file).is_file():

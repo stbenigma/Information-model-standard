@@ -1,9 +1,10 @@
+import json
 import logging
 import sys
 import unittest
 from pathlib import Path
-
 import pytest
+
 import jsonvalidate
 
 parent_dir = Path(__file__).resolve().parent.parent
@@ -25,6 +26,7 @@ class MyTestCase(unittest.TestCase):
         self.basepath = jsonvalidate.STD_IM_PATH.resolve()
         self.schemapath = jsonvalidate.STD_SCHEMA_PATH.resolve()
         self.IM_schema = jsonvalidate.TOP_SCHEMAS["IM"].resolve()
+        self.testfilepath=self.schemapath / "model-validation" / "testmodels"
         return
 
     def test_jsonvalidate(self):
@@ -32,8 +34,12 @@ class MyTestCase(unittest.TestCase):
         test the jsonvalidate.dovalidate function with a direct call
         :return:
         """
-        data = jsonvalidate.load_json(path=Path(__file__).parent / "simpleIM_test.json")
-        schema = jsonvalidate.load_json(path=self.IM_schema)
+        datajsonfile = (self.testfilepath / "simpleIM_test.json").resolve()
+        with open(datajsonfile) as infile:
+            data=json.load(infile)
+        with open(self.IM_schema) as infile:
+            schema=json.load(infile)
+
         errors, draft_label = jsonvalidate.dovalidate(data=data,
                                                       schema=schema,
                                                       # draft=,
@@ -44,11 +50,14 @@ class MyTestCase(unittest.TestCase):
         self.assertTrue(len(errors) == 0)
 
         # validate entity with im-schema
+        datajsonfile = (self.testfilepath / "simpleentity_test.json").resolve()
+        if not datajsonfile.is_file():
+            self.skipTest(f"testfile not found '{self.testfilepath / 'simpleIM_test.json'}'")
+        with open(datajsonfile) as infile:
+            data=json.load(infile)
         errors, draft_label = jsonvalidate.dovalidate \
-                (data=jsonvalidate.load_json(
-                path=Path(__file__).parent / "simpleentity_test.json"),
-                schema=jsonvalidate.load_json
-                (path=self.IM_schema),
+                (data=data,
+                schema=schema,
                 draft="7",
                 quiet=True,
                 schema_dir=self.IM_schema
@@ -57,9 +66,16 @@ class MyTestCase(unittest.TestCase):
         self.assertTrue(len(errors) == 2)
 
         # validate entity with entity
-        errors, draft_label = jsonvalidate.dovalidate(data=jsonvalidate.load_json(
-            path=Path(__file__).parent / "simpleentity_test.json"),
-            schema=jsonvalidate.load_json(self.schemapath / "InformationModel" / "Entity-schema.json"),
+        datajsonfile = (self.testfilepath / "simpleentity_test.json").resolve()
+        if not datajsonfile.is_file():
+            self.skipTest(f"testfile not found '{self.testfilepath / 'simpleIM_test.json'}'")
+        with open(datajsonfile) as infile:
+            data=json.load(infile)
+        with open(self.schemapath / "InformationModel" / "Entity-schema.json") as infile:
+            schema=json.load(infile)
+
+        errors, draft_label = jsonvalidate.dovalidate(data=data,
+            schema=schema,
             # draft=,
             quiet=False,
             schema_dir=self.schemapath
@@ -67,7 +83,18 @@ class MyTestCase(unittest.TestCase):
         self.assertTrue(len(errors) == 0)
         return
 
-    def test_callvalidatemain(self):
+    def test_directmain(self):
+        with pytest.raises(SystemExit) as exc_info:
+            jsonvalidate.main([str((self.testfilepath / 'simpleentity_test.json').resolve()),  # json file
+                               str(self.schemapath / "InformationModel" / "Entity-schema.json")  # schema file
+                               ])
+
+        # Assert that the exit code was specifically 0 (success)
+        assert exc_info.value.code == 0
+
+        return
+
+    def test_viasubprocessok(self):
         """
         test the call of the pythom module (main) as a subprocess
         :return:
@@ -75,15 +102,15 @@ class MyTestCase(unittest.TestCase):
         import subprocess
         command = [
             sys.executable,
-            "../../im-standard-python/jsonvalidate.py",
-            str((Path(__file__).parent /"simpleentity_test.json").resolve()), #json file
+            str(self.testfilepath.parent / "validation-python"/"jsonvalidate.py"),
+            str((self.testfilepath / 'simpleentity_test.json').resolve()), #json file
             str((self.schemapath / "InformationModel" / "Entity-schema.json")), #schema file
             "--verbose",
         ]
 
         result = subprocess.run(
             command,
-            cwd=Path(__file__).parent.parent.parent / "Model" / "im-standard-schema",
+            cwd=str(self.testfilepath.parent.parent),
             capture_output=True,
             text=True
         )
@@ -91,23 +118,31 @@ class MyTestCase(unittest.TestCase):
         print (result.stderr)
 
         self.assertTrue( result.returncode == 0)
+        return
+
+    def test_viasubprocessnok(self):
+        """
+        test the call of the pythom module with illegal schema
+        :return:
+        """
+        import subprocess
 
         command = [
             sys.executable,
-            "../../im-standard-python/jsonvalidate.py",
-            str((Path(__file__).parent /"simpleentity_test.json").resolve()), #json file
+            str(self.testfilepath.parent / "validation-python"/"jsonvalidate.py"),
+            str((self.testfilepath /"simpleentity_test.json").resolve()), #json file
             str((self.schemapath / "InformationModel" / "InformationModel-schema.json")), #schema file
             "--verbose",
         ]
         result = subprocess.run(
             command,
-            cwd=Path(__file__).parent.parent.parent / "Model" / "im-standard-schema",
+            cwd=str(self.schemapath),
             capture_output=True,
             text=True
         )
         print (result.stdout)
         print (result.stderr)
-        self.assertTrue( result.returncode == 1)
+        self.assertTrue( result.returncode ==1)
         self.assertTrue("INVALID — 3 error(s) found" in result.stdout)
 
         return
