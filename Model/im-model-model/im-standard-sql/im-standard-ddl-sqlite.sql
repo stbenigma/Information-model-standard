@@ -184,6 +184,7 @@ CREATE TABLE lov_values
     CONSTRAINT FK_lovv_doma_fk FOREIGN KEY (lovv_doma_id)
         REFERENCES domains (doma_id) ON DELETE CASCADE,
     constraint UK_lovv_value unique (lovv_doma_id, lovv_value),
+    constraint UK_lovv_displ unique (lovv_doma_id, lovv_displ),
     constraint UK_lovv_sort unique (lovv_doma_id, lovv_sort_order)
 );
 
@@ -316,26 +317,6 @@ CREATE TABLE businessrule_elements
     FOREIGN KEY (bure_buru_id) REFERENCES business_rules (buru_id) ON DELETE CASCADE
 );
 
-CREATE TABLE systems (
-    syst_id INTEGER PRIMARY KEY,
-    syst_descr TEXT,
-    syst_internal TEXT CHECK (syst_internal IN ('TRUE', 'FALSE')),
-    syst_name TEXT NOT NULL,
-    syst_operating_system TEXT CONSTRAINT Check_syst_operating_system
-            CHECK (syst_operating_system IN ('AIX','AlmaLinux','Android','ChromeOS','Debian','Debian Server',
-                                             '/e/OS','Fedora','FreeBSD','FreeBSD Server','HarmonyOS','HP-UX',
-                                             'iOS','iPadOS','KaiOS','Linux','macOS','Mint','OpenBSD','openSUSE',
-                                             'Oracle Linux','RHEL','Rocky','Sailfish','SLES','Solaris','Ubuntu',
-                                             'Ubuntu Server','Windows','Windows Server')),
-    syst_parent_id INTEGER,
-    syst_short_name TEXT,
-    syst_type TEXT CONSTRAINT Check_syst_type CHECK (syst_type IN ('APG','APP','ASV','DB','DSV','MOD','OTH','WSV')),
-    syst_virtual TEXT CHECK (syst_virtual IN ('TRUE', 'FALSE')),
-    syst_zone TEXT CONSTRAINT Check_syst_zone CHECK (syst_zone IN ('DMZ','EXT','TRUST')),
-    UNIQUE (syst_name, syst_parent_id),
-    FOREIGN KEY (syst_id) REFERENCES modelelements (mode_id) ON DELETE RESTRICT,
-    FOREIGN KEY (syst_parent_id) REFERENCES systems (syst_id) ON DELETE RESTRICT
-);
 PRAGMA foreign_keys = ON;
 
 -------- VIEWS are maintained manually ----------------

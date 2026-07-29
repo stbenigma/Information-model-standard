@@ -100,34 +100,6 @@
         "$ref": "../GeneralDefinitions/Category-schema.json"
       }
     },
-    "Derivations":{
-      "description": "List derivations, an element of this model is a target in.",
-      "type": "array",
-      "items": {
-        "$ref": "../MetaModel/MetaModel-schema.json#/$defs/Derivation"
-      }
-    },
-    "Mappings":{
-      "description": "List Mappings, linking LOV-values of different LOV's together. The source or target LOV-domain must me in this model.",
-      "type": "array",
-      "items": {
-        "$ref": "../MetaModel/MetaModel-schema.json#/$defs/Mapping"
-      }
-    },
-    "Transformations":{
-      "description": "List transformations from some dataelements to other dataelements. At least one source or target dataelement  must me in this model.",
-      "type": "array",
-      "items": {
-        "$ref": "../MetaModel/MetaModel-schema.json#/$defs/Transformation"
-      }
-    },
-    "Diagrams":{
-      "description": "List of diagrams, combining model elements into a view of chosen elements",
-      "type": "array",
-      "items": {
-        "$ref": "../MetaModel/MetaModel-schema.json#/$defs/Diagram"
-      }
-    },
     "additionalProps": {
       "description": "additional properties (aka user defined properties udp) are  any properties of an this element  added by the current modeller. They serve as an extension to the predfefined element properties.",
       "$ref": "../GeneralDefinitions/GeneralStructures-schema.json#/$defs/AdditionalProperties"
