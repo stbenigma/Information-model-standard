@@ -34,7 +34,7 @@ class MyTestCase(unittest.TestCase):
         self.imdeffilename="InformationModel-schema.json"
         self.imdeffilepath=self.schemapath/ "InformationModel"/ self.imdeffilename
 
-        self.testmodelpath = self.basepath / "Model" / "im-standard-json" / "testmodels"
+        self.testmodelpath = self.basepath / "Model" / "im-standard-schema" / "model-validation"/ "testmodels"
 
         return
 
@@ -53,7 +53,7 @@ class MyTestCase(unittest.TestCase):
             #print(' ' * level * 4 + item.name)
             if item.is_dir():
                 self.list_tree(item, dotest, level + 1)
-            elif item.is_file() and item.suffix==".json":
+            elif item.is_file() and level >0 and item.suffix==".json":
                dotest(file=item,reffile=self.schemapath / item.parts[-4] / (item.parts[-3] + "-schema" + item.suffix))
         return
 
