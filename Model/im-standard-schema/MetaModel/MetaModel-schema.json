@@ -1,0 +1,419 @@
+{
+  "$id": "MetaModel-schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "General (meta) information elements. Information about modelelement.\nUsed for all models",
+  "version": "0.9",
+  "type": "object",
+    "$defs": {
+      "Derivation": {
+        "type": "object",
+        "description": "Links one element of the model to another in semantic terms. The source provides information for a more complete understanding of the meaning or purpose of the target.\n\nThis is model information. It concerns information for understanding elements, not data values carried by the elements . (See the entity Transformation for more information).\n\nSince derivation is part of the meta model, it is possible between all model elements. Therefore, the relationships are defined here as generic foreign keys.",
+        "properties": {
+          "derivationType": {
+            "description": "Kind of information the source provides for the target",
+            "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/Name",
+            "examples": [
+              "defines",
+              "restricts",
+              "explains"
+            ]
+          },
+          "sourceElement": {
+            "description": "ID of any kind of source element",
+            "anyOf": [
+              {
+                "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/ElementId"
+              },
+              {
+                "$ref": "#/$defs/ElementPath"
+              }
+            ],
+            "examples": [
+              "ENTI01",
+              "ERP-Model:RELA002"
+            ]
+          },
+          "targetElement": {
+            "description": "ID of any kind of target element",
+            "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/ElementId"
+          },
+          "additionalProps": {
+            "description": "additional properties (aka user defined properties udp) are  any properties of an this element  added by the current modeller. They serve as an extension to the predfefined element properties.",
+            "$ref": "../GeneralDefinitions/GeneralStructures-schema.json#/$defs/AdditionalProperties"
+          }
+        },
+        "required": [
+          "targetElement",
+          "sourceElement"
+        ],
+        "additionalProperties": false,
+        "examples": [
+          "REFE02 defines DOMA101"
+        ]
+      },
+      "Mapping": {
+        "description": "Mappings are links that connect reference value ranges with each other. They are typically used to connect different value ranges from different systems and ensure that values are transferred from one system to another.\nThe assignment of reference values from the source value list must be clearly translatable into values from the target value list. Many reference values leading to the same target value (many-to-1) are possible.",
+        "type": "object",
+        "properties": {
+          "sourcedomain": {
+            "description": "ID of source LOV domain",
+            "$ref": "../GeneralDefinitions/Domain-schema.json#/$defs/DomainId"
+          },
+          "targetdomain": {
+            "description": "ID of target LOV domain",
+            "$ref": "../GeneralDefinitions/Domain-schema.json#/$defs/DomainId"
+          },
+          "valuemappings": {
+            "description": "Value assignments are links between reference values of the two reference value ranges.",
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/valuemapping"
+            },
+            "examples": [
+              [
+                "Schweiz",
+                "CH"
+              ],
+              [
+                "France",
+                "FR"
+              ]
+            ]
+          },
+          "additionalProps": {
+            "description": "additional properties (aka user defined properties udp) are  any properties of an this element  added by the current modeller. They serve as an extension to the predfefined element properties.",
+            "$ref": "../GeneralDefinitions/GeneralStructures-schema.json#/$defs/AdditionalProperties"
+          }
+        },
+        "required": [
+          "sourcedomain",
+          "targetdomain"
+        ],
+        "additionalProperties": false,
+        "examples": [
+          "DOMA02 maps to DOMA109"
+        ]
+      },
+      "Transformation": {
+        "description": "A transformation describes how data values from a source are transformed into data values in the target (or vice versa).",
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "Name of the transformation.",
+            "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/Name",
+            "examples": [
+              "Order data",
+              "erp2pim transform"
+            ]
+          },
+          "is1to1": {
+            "description": "1:1 transformations do not require a rule.",
+            "type": "boolean",
+            "default": false
+          },
+          "fwd": {
+            "description": "Transformation from source elements to the target elements",
+            "$ref": "#/$defs/OneDirectionTransformation"
+          },
+          "bwd": {
+            "description": "Transformation from target elements to the source elements",
+            "$ref": "#/$defs/OneDirectionTransformation"
+          },
+          "sourceElements": {
+            "description": "List of dataelements, providing input to the transformation (for fwd, conversely for bwd)",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "../InformationModel/Entity-schema.json#/$defs/EntityId"
+                },
+                {
+                  "$ref": "../InformationModel/Attribute-schema.json#/$defs/AttributeId"
+                },
+                {
+                  "$ref": "../InformationModel/Relation-schema.json#/$defs/RelationId"
+                },
+                {
+                  "$ref": "../DataModel/DataModel-schema.json#/$defs/DataAttributeId"
+                },
+                {
+                  "$ref": "../DataModel/DataModel-schema.json#/$defs/DataObjectId"
+                },
+                {
+                  "$ref": "../GeneralDefinitions/Domain-schema.json#/$defs/DomainId"
+                },
+                {
+                  "$ref": "#/$defs/ElementPath"
+                }
+              ],
+              "uniqueItems": true
+            }
+          },
+          "targetElements": {
+            "description": "List of dataelements, filled by this transformation (for fwd, conversely for bwd)",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "../InformationModel/Attribute-schema.json#/$defs/AttributeId"
+                },
+                {
+                  "$ref": "../InformationModel/Relation-schema.json#/$defs/RelationId"
+                },
+                {
+                  "$ref": "../GeneralDefinitions/Domain-schema.json#/$defs/DomainId"
+                },
+                {
+                  "$ref": "#/$defs/ElementPath"
+                }
+              ],
+              "uniqueItems": true
+            }
+          },
+          "additionalProps": {
+            "description": "additional properties (aka user defined properties udp) are  any properties of an this element  added by the current modeller. They serve as an extension to the predfefined element properties.",
+            "$ref": "../GeneralDefinitions/GeneralStructures-schema.json#/$defs/AdditionalProperties"
+          }
+        },
+        "required": [
+          "sourceElements",
+          "targetElements"
+        ],
+        "additionalProperties": false
+      },
+      "Source": {
+        "description": "An external source providing information restricting, explaining, defining or enhancing the my definitions.",
+        "type": "object",
+        "properties": {
+          "elementId": {
+            "description": "unique ID of the source for reference purposes",
+            "$ref": "#/$defs/SourceId"
+          },
+          "name": {
+            "description": "Name of the source. unique within the MME",
+            "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/Name",
+            "examples": [
+              "ISO-Standard 3166",
+              "Schweizer Zoll Tarifseite"
+            ]
+          },
+          "organsiation": {
+            "description": "Organisation managing the source",
+            "$ref": "#/$defs/Organisations",
+            "examples": [
+              "ISO",
+              "Schweizer Zoll"
+            ]
+          },
+          "description": {
+            "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/SomeText"
+          },
+          "uri": {
+            "description": "worldwide uniqe reference where to find the documentation ",
+            "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/Uri",
+            "examples": [
+              "https://www.iso.org/iso-3166-country-codes.html",
+              "https://xtares.admin.ch/tares/login/loginFormFiller.do?l=de"
+            ]
+          },
+          "additionalProps": {
+            "description": "additional properties (aka user defined properties udp) are  any properties of an this element  added by the current modeller. They serve as an extension to the predfefined element properties.",
+            "$ref": "../GeneralDefinitions/GeneralStructures-schema.json#/$defs/AdditionalProperties"
+          }
+        },
+        "required": [
+          "elementId",
+          "name"
+        ],
+        "additionalProperties": false
+      },
+      "Organisations": {
+        "description": "Corporation (association, federation, cooperative, standards organisation, consortium) that are mostly non-profit-oriented..",
+        "type": "object",
+        "properties": {
+          "elementId": {
+            "description": "unique ID of the organisation for reference purposes",
+            "$ref": "#/$defs/OrganisationId"
+          },
+          "name": {
+            "description": "Name of the source. unique within the MME",
+            "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/Name",
+            "examples": [
+              "ISO-Standard 3166",
+              "Schweizer Zoll Tarifseite"
+            ]
+          },
+          "description": {
+            "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/SomeText"
+          },
+          "email": {
+            "description": "main email address of the organisation",
+            "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/Email",
+            "examples": [
+              "ISO",
+              "Schweizer Zoll"
+            ]
+          },
+          "url": {
+            "description": "worldwide uniqe reference where to find the documentation ",
+            "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/Url",
+            "examples": [
+              "https://www.iso.org/iso-3166-country-codes.html",
+              "https://xtares.admin.ch/tares/login/loginFormFiller.do?l=de"
+            ]
+          },
+          "additionalProps": {
+            "description": "additional properties (aka user defined properties udp) are  any properties of an this element  added by the current modeller. They serve as an extension to the predfefined element properties.",
+            "$ref": "../GeneralDefinitions/GeneralStructures-schema.json#/$defs/AdditionalProperties"
+          }
+        },
+        "required": [
+          "elementId",
+          "name"
+        ],
+        "additionalProperties": false
+      },
+      "Diagram": {
+        "description": "Combination of model elements to form a restricted view on the whole model",
+        "type": "object",
+        "properties": {
+          "elementId": {
+            "description": "unique ID of the organisation for reference purposes",
+            "$ref": "#/$defs/DiagramId"
+          },
+          "name": {
+            "description": "Name of the source. unique within the MME",
+            "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/Name",
+            "examples": [
+              "ISO-Standard 3166",
+              "Schweizer Zoll Tarifseite"
+            ]
+          },
+          "description": {
+            "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/SomeText"
+          },
+          "position": {
+            "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/Position"
+          },
+          "size": {
+            "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/Size"
+          },
+          "elements": {
+            "type": "array",
+            "items": {
+              "type": [
+                "string"
+              ]
+            },
+            "additionalProps": {
+              "description": "additional properties (aka user defined properties udp) are  any properties of an this element  added by the current modeller. They serve as an extension to the predfefined element properties.",
+              "$ref": "../GeneralDefinitions/GeneralStructures-schema.json#/$defs/AdditionalProperties"
+            }
+          },
+          "additionalProps": {
+            "description": "additional properties (aka user defined properties udp) are  any properties of an this element  added by the current modeller. They serve as an extension to the predfefined element properties.",
+            "$ref": "../GeneralDefinitions/GeneralStructures-schema.json#/$defs/AdditionalProperties"
+          }
+        },
+        "required": [
+          "elementId",
+          "name"
+        ],
+        "additionalProperties": false
+      },
+      "valuemapping": {
+        "description": "Mappings of two values of the 2 parents",
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "prefixItems": [
+          {
+            "description": "source element, must be in list of sourcedomain-values",
+            "type": [
+              "string",
+              "number",
+              "boolean"
+            ]
+          },
+          {
+            "description": "target element, must be in list of targetdomain-values",
+            "type": [
+              "string",
+              "number",
+              "boolean"
+            ]
+          }
+        ],
+        "items": false
+      },
+      "OneDirectionTransformation": {
+        "description": "Rule and conditition, specifying the transformation in one direction",
+        "type": "object",
+        "properties": {
+          "rule": {
+            "description": "formula, algorithm transformation source values into target values",
+            "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/SomeText"
+          },
+          "condition": {
+            "description": "Conditions under which the transformation should/must be carried out",
+            "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/SomeText"
+          },
+          "additionalProps": {
+            "description": "additional properties (aka user defined properties udp) are  any properties of an this element  added by the current modeller. They serve as an extension to the predfefined element properties.",
+            "$ref": "../GeneralDefinitions/GeneralStructures-schema.json#/$defs/AdditionalProperties"
+          }
+        },
+        "anyOf": [
+          {
+            "required": [
+              "rule"
+            ]
+          },
+          {
+            "required": [
+              "condition"
+            ]
+          }
+        ],
+        "additionalProperties": false
+      },
+      "SourceId": {
+        "description": "typed ID unique over all sources in this MME",
+        "allOf": [
+          {
+            "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/ElementId"
+          },
+          {
+            "pattern": ".*SRCE[0-9]+$"
+          }
+        ]
+      },
+      "OrganisationId": {
+        "description": "typed ID unique over all sources in this MME",
+        "allOf": [
+          {
+            "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/ElementId"
+          },
+          {
+            "pattern": ".*ORGA[0-9]+$"
+          }
+        ]
+      },
+      "DiagramId": {
+        "description": "typed ID unique over all sources in this MME",
+        "allOf": [
+          {
+            "$ref": "../GeneralDefinitions/GeneralTypes-schema.json#/$defs/ElementId"
+          },
+          {
+            "pattern": ".*DIAG[0-9]+$"
+          }
+        ]
+      },
+      "ElementPath": {
+        "description": "String, showing path from model over categories to the element. Replaces ElementID's for elements which were not identifiable \n Starting with \"/\" : first element is model, starting without \"/\" relativ to current model",
+        "type": "string",
+        "pattern": "^\/?([^\/]+\/)*[^\/]+$"
+      }
+    }
+}

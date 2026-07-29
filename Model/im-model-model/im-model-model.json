@@ -1,2434 +1,1403 @@
 {
   "ModelInfo": {
-    "modelname": "Informationsmodell-modell",
-    "modeltype": "Information model",
-    "mainlanguage": "en",
-    "modelversion": "0.9",
+    "elementId": "MODL1",
+    "modelName": "im-standard",
+    "modelType": "Information model",
+    "mainLanguage": "de",
+    "modelVersion": "0.0",
     "languages": [
-      "de"
+      "de",
+      "en"
     ],
-    "targetenvironment": "Informationmodel-model",
-    "origintool": "dataspot"
+    "targetEnvironment": "???",
+    "additionalProps": {
+      "uc": "ich",
+      "dc": "2026-06-08T15:08:11.342985"
+    }
   },
   "Categories": [
     {
-      "elementid": "CATG10",
+      "elementId": "CATG8",
       "name": {
-        "en": "Generische Wertebereiche"
+        "de": "Beziehungen",
+        "en": "Relations"
       },
-      "categorytype": "DOMAIN",
       "description": {
-        "en": "Basis Wertebereiche, generisch, d.h. sie k\u00f6nnen f\u00fcr viele Anwendungen genutzt werden und haben keine spezifische fachliche Bedeutung.\n\nWenn sie f\u00fcr ein Attribut verwendet werden, muss das Attribut beschreiben, wie es zu nutzen ist."
-      }
+        "de": "Gruppiere alle Entit\u00e4ten zum Thema Beziehungen",
+        "en": "Group all entities of regarding relationships"
+      },
+      "categoryId": "CATG7",
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Semantische, fachliche Modelle/Informationsmodelle/Kernmodell/Beziehungen",
+        "SOURCE-ID": "3aebd254-1119-4e07-9b97-1d3f4a6b3674",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-14T17:46:22.207000"
+      },
+      "categoryType": "ENTITY"
     },
     {
-      "elementid": "CATG11",
+      "elementId": "CATG9",
       "name": {
-        "en": "Semantische Wertebereiche"
+        "de": "Entit\u00e4ten",
+        "en": "Entities"
       },
-      "categorytype": "DOMAIN",
       "description": {
-        "en": "Spezifische Wertebereiche, die eine Bedeutung in der Sprache haben, die \u00fcber die reine strukturelle Darstellung (generische Wertebereiche) hinausgeht."
-      }
+        "de": "Gruppierung der Elemente rund um die Entit\u00e4t",
+        "en": "Group all entities of regarding entities"
+      },
+      "categoryId": "CATG7",
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Semantische, fachliche Modelle/Informationsmodelle/Kernmodell/Entit\u00e4ten",
+        "SOURCE-ID": "0a76397f-1411-4061-b604-35f2db183f68",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-14T17:50:39.389000"
+      },
+      "categoryType": "ENTITY"
     },
     {
-      "elementid": "CATG12",
+      "elementId": "CATG6",
       "name": {
-        "en": "Allgemeing\u00fcltige Wertebereiche"
-      },
-      "categorytype": "DOMAIN",
-      "categoryid": "CATG11",
-      "description": {
-        "en": "Wertebereiche die f\u00fcr viele Attribute in vielen Entit\u00e4ten genutzt werden k\u00f6nnen.\nWie z.B. Name, Anzahl, Datum"
-      }
-    },
-    {
-      "elementid": "CATG13",
-      "name": {
-        "en": "Spezifische Wertebereiche"
-      },
-      "categorytype": "DOMAIN",
-      "categoryid": "CATG11",
-      "description": {
-        "en": "Wertebereiche f\u00fcr einzelne (oder wenige) Attribute.\n\nSie legen eine sehr eingeschr\u00e4nkte Bedeuteung und/oder sehr klare Regeln f\u00fcr die m\u00f6glichen Werte und deren Nutzung fest."
-      }
-    },
-    {
-      "elementid": "CATG14",
-      "name": {
-        "en": "Standard Wertebereiche"
-      },
-      "categorytype": "DOMAIN",
-      "categoryid": "CATG11",
-      "description": {
-        "en": "Wertebereiche, die in einem weit akzeptierten Standards definiert sind.\nz.B: ISO-Code f\u00fcr Land"
-      }
-    },
-    {
-      "elementid": "CATG15",
-      "name": {
-        "en": "Informationsmodellwertebereiche"
-      },
-      "categorytype": "DOMAIN",
-      "description": {
-        "en": "Wertebereiche f\u00fcr das Informationsmodell"
-      }
-    },
-    {
-      "elementid": "CATG16",
-      "name": {
+        "de": "Erweitertes Modell",
         "en": "Erweitertes Modell"
       },
-      "categorytype": "ENTITY",
       "description": {
+        "de": "The core model consists of the basic elements according to relational theory.\n\nTheoretically, an information model can only be formed completely with these elements.\n\nFor practical applications, however, it makes sense to introduce extended elements that offer simplifications for readability and administration. \nBut they can all be clearly mapped to concepts of the core model. In other words, they are additions that do not corrupt the strictness of the core model.",
+        "en": "The extended model consists of the elements to ease the usage of the basic model.\n\nThey can all be clearly mapped to concepts of the core model. In other words, they are additions that do not corrupt the strictness of the core model."
+      },
+      "categoryId": "CATG5",
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Semantische, fachliche Modelle/Informationsmodelle/Erweitertes Modell",
+        "SOURCE-ID": "ed7652a3-d76b-44eb-afbf-98ac5a015ab5",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "2",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-14T10:19:45.913000"
+      },
+      "categoryType": "ENTITY"
+    },
+    {
+      "elementId": "CATG4",
+      "name": {
+        "de": "Generische Modellelemente",
+        "en": "Generische Modellelemente"
+      },
+      "description": {
+        "de": "Informationen, die f\u00fcr (fast) jedes Element des gesamten SE-Modells genutzt angegeben werden k\u00f6nnen.",
+        "en": "Informationen, die f\u00fcr (fast) jedes Element des gesamten SE-Modells genutzt angegeben werden k\u00f6nnen."
+      },
+      "categoryId": "CATG2",
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Organisation Metamodell/Generische Modellelemente",
+        "SOURCE-ID": "76bb0c89-22d8-4487-9735-87fbcefb5272",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-12-14T17:13:59.994000"
+      },
+      "categoryType": "ENTITY"
+    },
+    {
+      "elementId": "CATG5",
+      "name": {
+        "de": "Informationsmodelle",
+        "en": "Information models"
+      },
+      "description": {
+        "de": "Dieses Informationsmodell ist das Metamodell f\u00fcr Informationsmodelle.\nEs beschreibt was wir (alle die diesen Standard akzeptieren) unter einem Informationsmodell verstehen, wie es aufgebaut ist und wir es nutzen sollen.\n\nsiehe auch: www.informationsmodellierung.ch/",
+        "en": "This information model is the meta model for information models.\nIt describes what we (all those who accept this standard) understand by an information model, how it is structured and how we should use it.\n\nSee also: www.informationsmodellierung.ch/"
+      },
+      "categoryId": "CATG3",
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Semantische, fachliche Modelle/Informationsmodelle",
+        "SOURCE-ID": "6e8e189a-54bc-4722-af4d-9a0305632bd0",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "1",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-12-01T08:55:46.117000"
+      },
+      "categoryType": "ENTITY"
+    },
+    {
+      "elementId": "CATG7",
+      "name": {
+        "de": "Kernmodell",
+        "en": "Base model"
+      },
+      "description": {
+        "de": "Das Kernmodell sind die grundlegenden Elemente gem\u00e4ss der relationalen Theorie.\n\nTheoretisch kann ein Informaionsmodell vollst\u00e4ndig nur mit diesen Elementen gebildet werden.\nF\u00fcr praktische Anwendungen macht es aber Sinn erweiterte Elemente einzuf\u00fchren, die Vereinfachungen f\u00fcr die Lesbarkeit und Verwaltung anbieten. \nAber sie sind alle eindeutig auf Konzepte des Kernmodells abbildbar. D.h. es sind Zus\u00e4tze, die die Striktheit des Kernmodells nicht korrumpieren.",
         "en": "The core model consists of the basic elements according to relational theory.\n\nTheoretically, an information model can only be formed completely with these elements.\n\nFor practical applications, however, it makes sense to introduce extended elements that offer simplifications for readability and administration. \nBut they can all be clearly mapped to concepts of the core model. In other words, they are additions that do not corrupt the strictness of the core model."
-      }
+      },
+      "categoryId": "CATG5",
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Semantische, fachliche Modelle/Informationsmodelle/Kernmodell",
+        "SOURCE-ID": "328b4425-3a07-488a-9b9e-1390b98b3d72",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "1",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-14T10:19:45.913000"
+      },
+      "categoryType": "ENTITY"
     },
     {
-      "elementid": "CATG17",
+      "elementId": "CATG2",
       "name": {
-        "en": "Kernmodell"
+        "de": "Organisation Metamodell",
+        "en": "Orgnisational meta model"
       },
-      "categorytype": "ENTITY",
       "description": {
-        "en": "Das Kernmodell sind die grundlegenden Elemente gem\u00e4ss der relationalen Theorie.\n\nTheoretisch kann ein Informaionsmodell vollst\u00e4ndig nur mit diesen Elementen gebildet werden.\nF\u00fcr praktische Anwendungen macht es aber Sinn erweiterte Elemente einzuf\u00fchren, die Vereinfachungen f\u00fcr die Lesbarkeit und Verwaltung anbieten. \nAber sie sind alle eindeutig auf Konzepte des Kernmodells abbildbar. D.h. es sind Zus\u00e4tze, die die Striktheit des Kernmodells nicht korrumpieren."
-      }
+        "de": "Im Metamodell sind Informationen die der Begr\u00fcndung, Verwaltung und Referenzierung von Modellelemente dienen. Beispiele Referenzdokumente, Verantwortlichkeiten, Sicherheitsanforderungen.",
+        "en": "Im Metamodell sind Informationen die der Begr\u00fcndung, Verwaltung und Referenzierung von Modellelemente dienen. Beispiele Referenzdokumente, Verantwortlichkeiten, Sicherheitsanforderungen."
+      },
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:/Organisation Metamodell",
+        "SOURCE-ID": "814c4d09-2ed6-4a85-b9d7-35fb0d112470",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "9",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-11-27T20:44:42.937000"
+      },
+      "categoryType": "ENTITY"
     },
     {
-      "elementid": "CATG18",
+      "elementId": "CATG3",
       "name": {
-        "en": "Beziehungen"
+        "de": "Semantische, fachliche Modelle",
+        "en": "Semantic, business related models"
       },
-      "categorytype": "ENTITY",
-      "categoryid": "CATG17",
       "description": {
-        "en": "Gruppiere alle Entit\u00e4ten zum Thema Beziehungen"
-      }
+        "de": "Semantische Modelle, die ausschliesslich Begriffe, Bedeutungen, Zusammenh\u00e4nge und Intentionen f\u00fcr Menschen kl\u00e4ren. Es dient der unmissverst\u00e4ndlichen Kommunikation zwichen Menschen im Bereich in dem diese Modell g\u00fcltig sind.\n\nEs umfasst Informationen wie Fachwissen, Informationsmodelle, Gesch\u00e4ftsprozess Modelle, Business-Glossare, Ontologien, Referenzen.\n\nSemantische Modelle sind technologie\u2011agnostisch, verwenden Fachsprache und dienen als gemeinsame Sicht f\u00fcr Fachbereich, Architekten und Entwickler; sie reduzieren Semantik\u2011Streit in allen Phasen der Softwareentwicklung.",
+        "en": "Semantic models that exclusively clarify terms, meanings, contexts and intentions for humans. They serve to enable unambiguous communication between humans in the area in which these models are valid.\n\nThey comprise information such as specialist knowledge, information models, business process models, business glossaries, ontologies and references.\n\nSemantic models are technology-agnostic, use technical language and serve as a common view for subject matter experts, architects and developers; they reduce semantic disputes in all phases of software development."
+      },
+      "modelId": "MODL1",
+      "additionalProps": {
+        "Delimitation": "Semantische Modelle machen **keine** Angaben zu technischer Darsstellung, Umsetzung, Speicherung, Verarbeitung von Daten.",
+        "FULLPATH": "Software Engineering Modell:/Semantische, fachliche Modelle",
+        "SOURCE-ID": "111cbc16-a3e2-45dd-a3d9-7190a01b09a7",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-12-14T15:48:27.254000"
+      },
+      "categoryType": "ENTITY"
     },
     {
-      "elementid": "CATG19",
+      "elementId": "CATG10",
       "name": {
-        "en": "Entit\u00e4ten"
+        "de": "Wertebereiche",
+        "en": "Domains"
       },
-      "categorytype": "ENTITY",
-      "categoryid": "CATG17",
       "description": {
-        "en": "Gruppierung der Elemente rund um die Entit\u00e4t"
-      }
-    },
-    {
-      "elementid": "CATG20",
-      "name": {
-        "en": "Wertebereiche"
+        "de": "Gruppiere alle Entit\u00e4ten zum Thema Wertebereiche",
+        "en": "Group all entities regarding domains"
       },
-      "categorytype": "ENTITY",
-      "categoryid": "CATG17",
-      "description": {
-        "en": "Gruppiere alle Entit\u00e4ten zum Thema Wertebereiche"
-      }
+      "categoryId": "CATG7",
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Semantische, fachliche Modelle/Informationsmodelle/Kernmodell/Wertebereiche",
+        "SOURCE-ID": "f65a3570-1e40-4ef7-bc56-d4019c0c880a",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-14T10:54:36.910000"
+      },
+      "categoryType": "ENTITY"
     }
   ],
   "Domains": [
     {
-      "elementid": "DOMA32",
+      "elementId": "DOMA11",
       "name": {
-        "en": "Beschreibung"
+        "de": "Beschreibung",
+        "en": "Description"
       },
-      "domaintype": "TextDomain",
-      "categoryid": "CATG12",
       "description": {
-        "en": "Textliche Erl\u00e4uterung eines Elementes. Beliebig lang, m\u00f6glicherweise strukturiert (z.B. markdown)"
+        "de": "Textliche Erl\u00e4uterung eines Elementes. Beliebig lang, m\u00f6glicherweise strukturiert (z.B. markdown)",
+        "en": "Textual explanation of an element. Any length, possibly structured (e.g. markdown)"
+      },
+      "domainType": "TextDomain",
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Information Wertebereiche:Semantische Wertebereiche/Allgemeing\u00fcltige Wertebereiche/Beschreibung",
+        "SOURCE-ID": "6e75da68-92d9-4b0b-881e-96c444ad09d0",
+        "SOURCE-MODEL": "Information Wertebereiche",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-13T16:52:16.151000"
       }
     },
     {
-      "elementid": "DOMA33",
+      "elementId": "DOMA12",
       "name": {
-        "en": "ID"
+        "de": "Kurzbeschreibung",
+        "en": "Short Description"
       },
-      "domaintype": "TextDomain",
-      "categoryid": "CATG12"
-    },
-    {
-      "elementid": "DOMA34",
-      "name": {
-        "en": "Kurzbeschreibung"
-      },
-      "domaintype": "TextDomain",
-      "categoryid": "CATG12",
       "description": {
-        "en": "Kurze textliche Erl\u00e4uterung zur Erkl\u00e4rung eines Elementes"
+        "de": "Kurze textliche Erl\u00e4uterung zur Erkl\u00e4rung eines Elementes",
+        "en": "Short textual explanation to explain an element"
       },
-      "maxlength": 150
+      "domainType": "TextDomain",
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Information Wertebereiche:Semantische Wertebereiche/Allgemeing\u00fcltige Wertebereiche/Kurzbeschreibung",
+        "SOURCE-ID": "7d99bfe4-eb3c-423f-b4c0-f9c363e04818",
+        "SOURCE-MODEL": "Information Wertebereiche",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-13T16:52:16.151000"
+      }
     },
     {
-      "elementid": "DOMA35",
+      "elementId": "DOMA13",
       "name": {
-        "en": "Kurzname"
+        "de": "Kurzname",
+        "en": "Shortname"
       },
-      "domaintype": "TextDomain",
-      "categoryid": "CATG12",
       "description": {
-        "en": "Kurzer Name f\u00fcr ein Element, max. 15 Zeichen lang"
+        "de": "Kurzer Name f\u00fcr ein Element, max. 15 Zeichen lang",
+        "en": "Short name (max 15 chars) for an element"
       },
-      "maxlength": 15
+      "domainType": "TextDomain",
+      "examples": [
+        "MktEvent",
+        "KdNr",
+        "CustNo"
+      ],
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Information Wertebereiche:Semantische Wertebereiche/Allgemeing\u00fcltige Wertebereiche/Kurzname",
+        "SOURCE-ID": "7bd24fa1-489d-465d-8696-3e53eaa456e7",
+        "SOURCE-MODEL": "Information Wertebereiche",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-13T16:52:16.151000"
+      }
     },
     {
-      "elementid": "DOMA36",
+      "elementId": "DOMA14",
       "name": {
+        "de": "Name",
         "en": "Name"
       },
-      "domaintype": "TextDomain",
-      "categoryid": "CATG12",
       "description": {
-        "en": "Zeichenfolge, typischerweise Buchstaben mit einigen Sonderzeichen (Ziffern, Bindestrichte, Leerschl\u00e4ge...), die genutzt wird um etwas zu benennen."
+        "de": "Zeichenfolge, typischerweise Buchstaben mit einigen Sonderzeichen (Ziffern, Bindestrichte, Leerschl\u00e4ge...), die genutzt wird um etwas zu benennen.",
+        "en": "A sequence of characters, typically letters with some special characters (numbers, hyphens, blanks etc.), used to name something."
       },
-      "maxlength": 100
+      "domainType": "TextDomain",
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Information Wertebereiche:Semantische Wertebereiche/Allgemeing\u00fcltige Wertebereiche/Name",
+        "SOURCE-ID": "651a2d8d-2146-4187-a2d4-eda40fd83931",
+        "SOURCE-MODEL": "Information Wertebereiche",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-13T16:52:16.151000"
+      }
     },
     {
-      "elementid": "DOMA37",
+      "elementId": "DOMA15",
       "name": {
+        "de": "ID",
+        "en": "ID"
+      },
+      "domainType": "TextDomain",
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Information Wertebereiche:DEFAULTCOLLECTION/ID",
+        "SOURCE-ID": "3197299b-47db-47bb-9b3b-f5b71e61eb19",
+        "SOURCE-MODEL": "Information Wertebereiche",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-13T16:52:16.151000"
+      }
+    },
+    {
+      "elementId": "DOMA16",
+      "name": {
+        "de": "Boolean",
         "en": "Boolean"
       },
-      "domaintype": "BooleanDomain",
-      "categoryid": "CATG10",
       "description": {
-        "en": "Wahrheitswert (wahr/falsch bzw. true/false)"
+        "de": "Wahrheitswert (wahr/falsch bzw. true/false)",
+        "en": "Truth value (true/false)"
+      },
+      "domainType": "BooleanDomain",
+      "examples": [
+        "true",
+        "false"
+      ],
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Information Wertebereiche:Generische Wertebereiche/Boolean",
+        "SOURCE-ID": "a1abac28-cb72-41f3-b742-e5fb25686ae8",
+        "SOURCE-MODEL": "Information Wertebereiche",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-13T16:52:16.151000"
       }
     },
     {
-      "elementid": "DOMA38",
+      "elementId": "DOMA17",
       "name": {
-        "en": "Datum"
+        "de": "Datum",
+        "en": "Date"
       },
-      "domaintype": "DatetimeDomain",
-      "categoryid": "CATG10",
       "description": {
-        "en": "Bezeichnet einen Tag im gregorianischen Kalender.\n\nDer Wertebereich selber kennt keine Darstellung. \nDie Darstellung JJJJ-MM-TT (siehe Muster) orientiert sich an ISO und ist wichtig beim Austausch einer Datumsdarstellung. "
+        "de": "Bezeichnet einen Tag im gregorianischen Kalender.\n\nDer Wertebereich selber kennt keine Darstellung. \nDie Darstellung JJJJ-MM-TT (siehe Muster) orientiert sich an ISO und ist wichtig beim Austausch einer Datumsdarstellung.",
+        "en": "Refers to a day in the Gregorian calendar.\n\nThe value range itself has no representation. \nThe representation YYYY-MM-DD (see Pattern) is based on ISO and is important when exchanging a date representation."
       },
-      "granularity": "DAY"
-    },
-    {
-      "elementid": "DOMA39",
-      "name": {
-        "en": "Dezimalzahl"
-      },
-      "domaintype": "NumericDomain",
-      "categoryid": "CATG10",
-      "description": {
-        "en": "Zahl mit Kommastellen\n\nOhne Limite. Eine solche muss im Attribut gegeben werden. \nEine Dezimalzahl mit Limite sollte als eigener Wertebereich definiert werden."
+      "domainType": "DatetimeDomain",
+      "granularity": "DAY",
+      "examples": [
+        "2025-03-26",
+        "13. April 1945",
+        "12.12.2001"
+      ],
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Information Wertebereiche:Generische Wertebereiche/Datum",
+        "SOURCE-ID": "e5f8cf41-46f0-476a-8e2f-86a5639294e1",
+        "SOURCE-MODEL": "Information Wertebereiche",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-13T16:52:16.151000"
       }
     },
     {
-      "elementid": "DOMA40",
+      "elementId": "DOMA18",
       "name": {
+        "de": "Integer",
         "en": "Integer"
       },
-      "domaintype": "NumericDomain",
-      "categoryid": "CATG10",
       "description": {
-        "en": "Nat\u00fcrliche Zahl.\n\nOhne Limite. Eine solche muss im Attribut gegeben werden. Eine Integer mit Limite sollte als eigener Wertebereich definiert werden."
+        "de": "Nat\u00fcrliche Zahl.\n\nOhne Limite. Eine solche muss im Attribut gegeben werden. Eine Integer mit Limite sollte als eigener Wertebereich definiert werden.",
+        "en": "Natural number\n\nWithout limit. This must be specified in the attribute. An integer with a limit should be defined as a separate value range."
+      },
+      "domainType": "NumericDomain",
+      "examples": [
+        "9987134",
+        "4",
+        "0",
+        "-1"
+      ],
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Information Wertebereiche:Generische Wertebereiche/Integer",
+        "SOURCE-ID": "f17aa6b6-5b7b-471a-97a2-ef4bfe56561c",
+        "SOURCE-MODEL": "Information Wertebereiche",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-13T16:52:16.151000"
       }
     },
     {
-      "elementid": "DOMA41",
+      "elementId": "DOMA19",
       "name": {
+        "de": "String",
         "en": "String"
       },
-      "domaintype": "TextDomain",
-      "categoryid": "CATG10",
       "description": {
-        "en": "Eine Zeichenfolge als einzeilige Kurzbeschreibung, Erl\u00e4uterung.\n\nNicht formatiert.\nEine leere Zeichenfolge ist ein erlaubter Wert und ist nicht gleichbedeutend mit nicht existent (*null*)"
+        "de": "Eine Zeichenfolge als einzeilige Kurzbeschreibung, Erl\u00e4uterung.\n\nNicht formatiert.\nEine leere Zeichenfolge ist ein erlaubter Wert und ist nicht gleichbedeutend mit nicht existent (*null*)",
+        "en": "A string of characters as a one-line brief description or explanation.\n\nnon formatted\nAn empty string is a valid value and is not equivalent to non-existent (*null*)."
       },
-      "maxlength": 2000
-    },
-    {
-      "elementid": "DOMA42",
-      "name": {
-        "en": "Text"
-      },
-      "domaintype": "TextDomain",
-      "categoryid": "CATG10",
-      "description": {
-        "en": "Irgend ein text als Folge von Schriftzeichen\n\nEin leerer Text ist nicht gleichbedeutend mit nicht existierend (*null*)"
+      "domainType": "TextDomain",
+      "examples": [
+        "Adresse f\u00fcr legale Dokumente",
+        "Address for legal documents"
+      ],
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Information Wertebereiche:Generische Wertebereiche/String",
+        "SOURCE-ID": "24f4d087-8cd3-4913-b3b0-679545d7c458",
+        "SOURCE-MODEL": "Information Wertebereiche",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-13T16:52:16.151000"
       }
     },
     {
-      "elementid": "DOMA43",
+      "elementId": "DOMA20",
       "name": {
-        "en": "Zeitpunkt"
+        "de": "Text",
+        "en": "Text"
       },
-      "domaintype": "DatetimeDomain",
-      "categoryid": "CATG10",
       "description": {
-        "en": "Punkt auf dem Zeitstrahl in einer Granularit\u00e4t Sekunden.\n\nDer Wertebereich kennt selber keine Darstellung. Die ISO Darstellung yyyy-mm-ddThh:mi.ss+hh:mi (siehe Muster) dient nur dem Austausch von Zeitpunkten im Schriftzeichenformat.\n"
+        "de": "Irgend ein text als Folge von Schriftzeichen\n\nEin leerer Text ist nicht gleichbedeutend mit nicht existierend (*null*)",
+        "en": "Any text as a sequence of characters\n\nAn empty text is not equivalent to non-existent (*null*)"
       },
-      "granularity": "MINUTE"
+      "domainType": "TextDomain",
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Information Wertebereiche:Generische Wertebereiche/Text",
+        "SOURCE-ID": "b20591ff-a5b4-42b5-857e-a1cfa7256d11",
+        "SOURCE-MODEL": "Information Wertebereiche",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-13T16:52:16.151000"
+      }
     },
     {
-      "elementid": "DOMA44",
+      "elementId": "DOMA21",
       "name": {
-        "en": "ISO language code 3"
-      },
-      "domaintype": "TextDomain",
-      "categoryid": "CATG11",
-      "maxlength": 3
-    },
-    {
-      "elementid": "DOMA45",
-      "name": {
-        "en": "SI-Unit"
-      },
-      "domaintype": "TextDomain",
-      "categoryid": "CATG11",
-      "maxlength": 10
-    },
-    {
-      "elementid": "DOMA46",
-      "name": {
+        "de": "Beispielwert",
         "en": "Beispielwert"
       },
-      "domaintype": "TextDomain",
-      "categoryid": "CATG13"
+      "domainType": "TextDomain",
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Information Wertebereiche:Semantische Wertebereiche/Spezifische Wertebereiche/Beispielwert",
+        "SOURCE-ID": "886193a2-f604-4ed4-b44d-36a0d8a02d6d",
+        "SOURCE-MODEL": "Information Wertebereiche",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-13T16:52:16.151000"
+      }
     },
     {
-      "elementid": "DOMA47",
+      "elementId": "DOMA22",
       "name": {
-        "en": "Digits#"
+        "de": "Reihenfolge Nummer",
+        "en": "Sequence number"
       },
-      "domaintype": "TextDomain",
-      "categoryid": "CATG13"
-    },
-    {
-      "elementid": "DOMA48",
-      "name": {
-        "en": "ElementId"
-      },
-      "domaintype": "TextDomain",
-      "categoryid": "CATG13",
-      "maxlength": 12
-    },
-    {
-      "elementid": "DOMA49",
-      "name": {
-        "en": "Reihenfolge Nummer"
-      },
-      "domaintype": "NumericDomain",
-      "categoryid": "CATG13",
       "description": {
-        "en": "Zahl die eine Reihenfolge f\u00fcr die Sortiereung in einer Liste angibt."
+        "de": "Zahl die eine Reihenfolge f\u00fcr die Sortiereung in einer Liste angibt.",
+        "en": "Number that specifies the order for sorting in a list."
       },
-      "minvalue": 1,
-      "totaldigits": 5
+      "domainType": "NumericDomain",
+      "minValue": 1,
+      "totalDigits": 5,
+      "examples": [
+        "1",
+        "99"
+      ],
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Information Wertebereiche:Semantische Wertebereiche/Spezifische Wertebereiche/Reihenfolge Nummer",
+        "SOURCE-ID": "b551f46c-e4ce-4358-b806-d98ac46b215b",
+        "SOURCE-MODEL": "Information Wertebereiche",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-13T16:52:16.151000"
+      }
     },
     {
-      "elementid": "DOMA50",
+      "elementId": "DOMA23",
       "name": {
-        "en": "Text length"
+        "de": "Versionsnummer",
+        "en": "Version number"
       },
-      "domaintype": "TextDomain",
-      "categoryid": "CATG13"
-    },
-    {
-      "elementid": "DOMA51",
-      "name": {
-        "en": "Value limit"
-      },
-      "domaintype": "TextDomain",
-      "categoryid": "CATG13"
-    },
-    {
-      "elementid": "DOMA52",
-      "name": {
-        "en": "Versionsnummer"
-      },
-      "domaintype": "TextDomain",
-      "categoryid": "CATG13",
       "description": {
-        "en": "Versionsnummer f\u00fcr ein Artefakt, Dokument, Produkt"
+        "de": "Versionsnummer f\u00fcr ein Artefakt, Dokument, Produkt",
+        "en": "Version number for an artefact, document, product"
       },
-      "maxlength": 15,
-      "syntaxrule": "^\\d{1,2}\\.\\d{1,2}(\\.\\d{1,2})?$"
+      "domainType": "TextDomain",
+      "pattern": "^\\d{1,2}\\.\\d{1,2}(\\.\\d{1,2})?$",
+      "examples": [
+        "1.0",
+        "3.0.17"
+      ],
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Information Wertebereiche:Semantische Wertebereiche/Spezifische Wertebereiche/Versionsnummer",
+        "SOURCE-ID": "efe49206-6c9d-4838-bc06-4ff97074fc14",
+        "SOURCE-MODEL": "Information Wertebereiche",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-13T16:52:16.151000"
+      }
     },
     {
-      "elementid": "DOMA53",
+      "elementId": "DOMA24",
       "name": {
-        "en": "ISO language code 2"
+        "de": "ISO Land Code (2)",
+        "en": "ISO country code (2)"
       },
-      "domaintype": "TextDomain",
-      "categoryid": "CATG14",
+      "domainType": "TextDomain",
+      "pattern": "[a-z]{2}",
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Information Wertebereiche:Semantische Wertebereiche/Standard Wertebereiche/ISO Land Code (2)",
+        "SOURCE-ID": "6ebf24aa-42bc-4612-ba0d-cf20e08556bc",
+        "SOURCE-MODEL": "Information Wertebereiche",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2026-04-28T14:38:59.563000"
+      }
+    },
+    {
+      "elementId": "DOMA25",
+      "name": {
+        "de": "ISO Sprache Code (2)",
+        "en": "ISO language code (2)"
+      },
       "description": {
-        "en": "2 Buchstaben ISO-Code gem\u00e4ss ISO 639."
+        "de": "2 Buchstaben ISO-Code f\u00fcr Sprachen gem\u00e4ss ISO 639.",
+        "en": "2 letter iso code for languages according to ISO 639"
       },
-      "syntaxrule": "[a-z]{2}"
-    },
-    {
-      "elementid": "DOMA54",
-      "name": {
-        "en": "ATTR_TYPE"
-      },
-      "domaintype": "LOVDomain",
-      "categoryid": "CATG15",
-      "values": [
-        {
-          "value": "ENTITY",
-          "displayvalue": {
-            "en": "Entity-Attribute"
-          }
-        },
-        {
-          "value": "GroupDomain",
-          "displayvalue": {
-            "en": "GroupDomain Attribute"
-          }
-        }
-      ]
-    },
-    {
-      "elementid": "DOMA55",
-      "name": {
-        "en": "Boolean"
-      },
-      "domaintype": "LOVDomain",
-      "categoryid": "CATG15",
-      "values": [
-        {
-          "value": "FALSE",
-          "displayvalue": {
-            "en": "falsch"
-          }
-        },
-        {
-          "value": "TRUE",
-          "displayvalue": {
-            "en": "wahr"
-          }
-        }
-      ]
-    },
-    {
-      "elementid": "DOMA56",
-      "name": {
-        "en": "DateTimeGranularity"
-      },
-      "domaintype": "LOVDomain",
-      "categoryid": "CATG15",
-      "values": [
-        {
-          "value": "QUARTER",
-          "displayvalue": {
-            "en": "Quartal"
-          }
-        },
-        {
-          "value": "HOUR",
-          "displayvalue": {
-            "en": "Hour"
-          }
-        },
-        {
-          "value": "DAY",
-          "displayvalue": {
-            "en": "Day"
-          }
-        },
-        {
-          "value": "MONTH",
-          "displayvalue": {
-            "en": "Month"
-          }
-        },
-        {
-          "value": "MILlISECOND",
-          "displayvalue": {
-            "en": "Millisecond"
-          }
-        },
-        {
-          "value": "SEMESTER",
-          "displayvalue": {
-            "en": "Semestre "
-          }
-        },
-        {
-          "value": "CENTURY",
-          "displayvalue": {
-            "en": "Century"
-          }
-        },
-        {
-          "value": "MINUTE",
-          "displayvalue": {
-            "en": "Minute"
-          }
-        },
-        {
-          "value": "WEEK",
-          "displayvalue": {
-            "en": "Week"
-          }
-        },
-        {
-          "value": "YEAR",
-          "displayvalue": {
-            "en": "Year"
-          }
-        },
-        {
-          "value": "SECOND",
-          "displayvalue": {
-            "en": "Second"
-          }
-        }
-      ]
-    },
-    {
-      "elementid": "DOMA57",
-      "name": {
-        "en": "DomainType"
-      },
-      "domaintype": "LOVDomain",
-      "categoryid": "CATG15",
-      "values": [
-        {
-          "value": "TextDomain"
-        },
-        {
-          "value": "LOVDomain"
-        },
-        {
-          "value": "NumericDomain"
-        },
-        {
-          "value": "DatetimeDomain"
-        },
-        {
-          "value": "BooleanDomain"
-        },
-        {
-          "value": "GroupDomain"
-        }
-      ]
-    },
-    {
-      "elementid": "DOMA58",
-      "name": {
-        "en": "DOMA_TYPE"
-      },
-      "domaintype": "LOVDomain",
-      "categoryid": "CATG15",
-      "values": [
-        {
-          "value": "DOM",
-          "displayvalue": {
-            "en": "entity Domain"
-          }
-        },
-        {
-          "value": "DOMA",
-          "displayvalue": {
-            "en": "entity Text domain"
-          }
-        }
-      ]
-    },
-    {
-      "elementid": "DOMA59",
-      "name": {
-        "en": "Relation End Type"
-      },
-      "domaintype": "LOVDomain",
-      "categoryid": "CATG15",
-      "values": [
-        {
-          "value": "FORWARD",
-          "displayvalue": {
-            "en": "Forward Relation"
-          }
-        },
-        {
-          "value": "REVERSE",
-          "displayvalue": {
-            "en": "Reverse Relation"
-          }
-        }
-      ]
-    },
-    {
-      "elementid": "DOMA60",
-      "name": {
-        "en": "Relationptype"
-      },
-      "domaintype": "LOVDomain",
-      "categoryid": "CATG15",
-      "values": [
-        {
-          "value": "SUBTYPE",
-          "displayvalue": {
-            "en": "1:1, (exclusive) subtype"
-          }
-        },
-        {
-          "value": "ROLE",
-          "displayvalue": {
-            "en": "1:1, role"
-          }
-        },
-        {
-          "value": "1:1",
-          "displayvalue": {
-            "en": "one-to-one"
-          }
-        },
-        {
-          "value": "M:N",
-          "displayvalue": {
-            "en": "many-to-many"
-          }
-        },
-        {
-          "value": "M:1",
-          "displayvalue": {
-            "en": "many-to-one, functional"
-          }
-        }
-      ]
-    },
-    {
-      "elementid": "DOMA61",
-      "name": {
-        "en": "Relationship cardinality"
-      },
-      "domaintype": "LOVDomain",
-      "categoryid": "CATG15",
-      "values": [
-        {
-          "value": "1",
-          "displayvalue": {
-            "en": "one"
-          }
-        },
-        {
-          "value": "M",
-          "displayvalue": {
-            "en": "many"
-          }
-        }
-      ]
-    },
-    {
-      "elementid": "DOMA62",
-      "name": {
-        "en": "RELA_TYPE"
-      },
-      "domaintype": "LOVDomain",
-      "categoryid": "CATG15",
-      "values": [
-        {
-          "value": "RELA",
-          "displayvalue": {
-            "en": "entity many-to-many Relation"
-          }
-        }
-      ]
-    },
-    {
-      "elementid": "DOMA63",
-      "name": {
-        "en": "Rounding unit"
-      },
-      "domaintype": "LOVDomain",
-      "categoryid": "CATG15",
-      "values": [
-        {
-          "value": "1000"
-        },
-        {
-          "value": "0.001"
-        },
-        {
-          "value": "0.1"
-        },
-        {
-          "value": "0.25"
-        },
-        {
-          "value": "0.5"
-        },
-        {
-          "value": "1"
-        },
-        {
-          "value": "0.01"
-        },
-        {
-          "value": "100"
-        },
-        {
-          "value": "10"
-        },
-        {
-          "value": "0.05"
-        }
-      ]
-    },
-    {
-      "elementid": "DOMA64",
-      "name": {
-        "en": "Type of content"
-      },
-      "domaintype": "LOVDomain",
-      "categoryid": "CATG15",
-      "values": [
-        {
-          "value": "SOUND",
-          "displayvalue": {
-            "en": "Ton"
-          }
-        },
-        {
-          "value": "DRAWING",
-          "displayvalue": {
-            "en": "Graphik"
-          }
-        },
-        {
-          "value": "IMAGE",
-          "displayvalue": {
-            "en": "Bild"
-          }
-        },
-        {
-          "value": "OTHER"
-        },
-        {
-          "value": "FILM",
-          "displayvalue": {
-            "en": "Film"
-          }
-        },
-        {
-          "value": "TEXT",
-          "displayvalue": {
-            "en": "Formatierter Text"
-          }
-        }
-      ]
+      "domainType": "TextDomain",
+      "pattern": "[a-z]{2}",
+      "examples": [
+        "de",
+        "it",
+        "fr"
+      ],
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Information Wertebereiche:Semantische Wertebereiche/Standard Wertebereiche/ISO Sprache Code (2)",
+        "SOURCE-ID": "10120dfe-2f2f-4f43-8527-559f36d635c6",
+        "SOURCE-MODEL": "Information Wertebereiche",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-13T16:52:16.151000"
+      }
     }
   ],
   "Entities": [
     {
-      "elementid": "ENTI8",
+      "elementId": "ENTI26",
       "name": {
-        "en": "Beziehung"
+        "de": "Beziehung",
+        "en": "Relationship"
       },
-      "categoryid": "CATG18",
       "description": {
-        "en": "Eine Beziehung verbindet immer eine Entit\u00e4t (Startentit\u00e4t) mit genau einer zweiten Entit\u00e4t (End-/Reversentit\u00e4t).  \n\nDie beiden Enden k\u00f6nnen eine Entit\u00e4t mit sich selber verkn\u00fcpfen. Man nennt dies rekursive Beziehung. Sie repr\u00e4sentiert typischerweise eine Hierarchie. Die beiden Enden einer rekursiven Beziehung m\u00fcssen optional sein.\n\nEs werden 3 Typen von Beziehung unterschieden.  *Funktionale Beziehungen*  bilden eine eindeutige Abbildung von der ersten zur zweiten Entit\u00e4t. D.h. von einer Instanz der ersten Entit\u00e4t gibt es eine Beziehung zu maxmal 1 Instanz der 2 Entit\u00e4t. (oder auch keine f\u00fcr optionale Beziehungen).  \n\n*Rollenbeziehung* bilden eine Spezialisierung einer Entit\u00e4t. Rollen einer Entit\u00e4t *sind* die Entit\u00e4t erg\u00e4nzt um zus\u00e4tzliche Beziehungen oder Attribute.  D.h. Rollen erben immer alle Eigenschaften der Entit\u00e4t von der sie eine Rolle sind und erweiteren sie um Eigenschaften, die f\u00fcr ihre Bedeutung oder Nutzung notwendig sind.  \n\n*Viele-zu-viele Beziehungen* Eine Instanz der einen Seite kann mit vielen Instanzen der anderen Seite in Beziehung stehen. Und umgekehrt. Diese Beziehungsart ist im relationalen Modell nicht vorgesehen und muss in der technischen Umsetzung mittels einer zus\u00e4tlichen Entit\u00e4t / Tabelle aufgel\u00f6st werden. Diese Aufl\u00f6sung ist algorithmisch klar definiert, so dass die viele-zu-viele Beziehung die Regeln des relationalen Modells nicht verletzt. F\u00fcr das Informationsmodell macht die Beziehung Sinn, da sie einen Sachverhalt einfacher und damit lesbarer darstellt."
+        "de": "Eine Beziehung verbindet immer eine Entit\u00e4t (Startentit\u00e4t) mit genau einer zweiten Entit\u00e4t (End-/Reversentit\u00e4t).  \n\nDie beiden Enden k\u00f6nnen eine Entit\u00e4t mit sich selber verkn\u00fcpfen. Man nennt dies rekursive Beziehung. Sie repr\u00e4sentiert typischerweise eine Hierarchie. Die beiden Enden einer rekursiven Beziehung m\u00fcssen optional sein.\n\nEs werden 3 Typen von Beziehung unterschieden.  *Funktionale Beziehungen*  bilden eine eindeutige Abbildung von der ersten zur zweiten Entit\u00e4t. D.h. von einer Instanz der ersten Entit\u00e4t gibt es eine Beziehung zu maxmal 1 Instanz der 2 Entit\u00e4t. (oder auch keine f\u00fcr optionale Beziehungen).  \n\n*Rollenbeziehung* bilden eine Spezialisierung einer Entit\u00e4t. Rollen einer Entit\u00e4t *sind* die Entit\u00e4t erg\u00e4nzt um zus\u00e4tzliche Beziehungen oder Attribute.  D.h. Rollen erben immer alle Eigenschaften der Entit\u00e4t von der sie eine Rolle sind und erweiteren sie um Eigenschaften, die f\u00fcr ihre Bedeutung oder Nutzung notwendig sind.  \n\n*Viele-zu-viele Beziehungen* Eine Instanz der einen Seite kann mit vielen Instanzen der anderen Seite in Beziehung stehen. Und umgekehrt. Diese Beziehungsart ist im relationalen Modell nicht vorgesehen und muss in der technischen Umsetzung mittels einer zus\u00e4tlichen Entit\u00e4t / Tabelle aufgel\u00f6st werden. Diese Aufl\u00f6sung ist algorithmisch klar definiert, so dass die viele-zu-viele Beziehung die Regeln des relationalen Modells nicht verletzt. F\u00fcr das Informationsmodell macht die Beziehung Sinn, da sie einen Sachverhalt einfacher und damit lesbarer darstellt.",
+        "en": "A relationship always connects one entity (starting entity) with exactly one second entity (end/reverse entity).  \n\nBoth ends can link an entity to itself. This is called a recursive relationship. It typically represents a hierarchy. Both ends of a recursive relationship must be optional.\n\nThere are three types of relationships.  \n\n*Functional relationships*  form a unique mapping from the first to the second entity. This means that there is a relationship from one instance of the first entity to a maximum of one instance of the second entity (or none for optional relationships).  \n\n*Role relationships* form a specialisation of an entity. Roles of an entity *are* the entity supplemented by additional relationships or attributes.  This means that roles always inherit all properties of the entity of which they are a role and extend them with properties that are necessary for their meaning or use.  \n\n*Many-to-many relationships* An instance on one side can be related to many instances on the other side. And vice versa. This type of relationship is not provided for in the relational model and must be resolved in the technical implementation by means of an additional entity/table. This resolution is clearly defined algorithmically so that the many-to-many relationship does not violate the rules of the relational model. The relationship makes sense for the information model because it presents a fact more simply and thus more legibly."
       },
-      "shortdescr": {
-        "en": "Verkn\u00fcpfung zweier Entit\u00e4ten"
-      },
+      "shortDescr": "Verkn\u00fcpfung zweier Entit\u00e4ten",
+      "categoryId": "CATG8",
       "examples": [
         "Ein Planet umkreist einen Stern. - Ein Stern wird umkreist von 0 - vielen Planeten.",
         "Ein Zug ist ein Verkehrsmittel.- Ein Verkehrsmittel kann ein Zug sein.",
         "Ein Kunde kaufte 0 - viele Produkte.  -  Ein Produkt kann gekauft werden von 0 - vielen Kunden.",
         "A bus is a means of transport. - A means of transport can be a bus."
-      ]
-    },
-    {
-      "elementid": "ENTI9",
-      "name": {
-        "en": "Beziehungsende"
-      },
-      "categoryid": "CATG18",
-      "description": {
-        "en": "Endpunkt einer Beziehung. Ankn\u00fcpfungspunkt der Relation an eine Entit\u00e4t. Es gibt immer genau 2 Endpunkte in einer Relation. Es gibt eine Richtung der Beziehung: vorw\u00e4rts/r\u00fcckw\u00e4rts Zur Vereinfachung der Verwendung der verschiedenen Arten der Beziehung Rolle, funktional, viele-2-viele verwenden spezifische Beziehung endet als vorw\u00e4rts und r\u00fcckw\u00e4rts.  Die Beziehung ist wie folgt zu lesen: 1 Instanz der Entit\u00e4t <assoziations-text> <optional/zwingend> <1/viele> Instanzen der Entit\u00e4t am anderen Ende der Relation."
-      },
-      "examples": [
-        "Eine Adresse muss liegen in einem Postleitzahlgebiet.",
-        "Ein Postleitzahlgebiet kann enthalten viele Adressen.",
-        "Ein Bus f\u00e4hrt optional mehre Strecken.",
-        "Eine Strecke wird optional befahren von vielen Bussen."
-      ]
-    },
-    {
-      "elementid": "ENTI10",
-      "name": {
-        "en": "Exklusivbeziehung"
-      },
-      "categoryid": "CATG18",
-      "synonyms": [
-        "Arc"
       ],
-      "description": {
-        "en": "Beziehungen die von einer Entit\u00e4t ausgehen k\u00f6nnen exklusiv sein. D.h. keine oder 1 davon ist m\u00f6glich, aber nie mehrere gleichzeitig"
-      },
-      "examples": [
-        "eine Person ist erreichbar \u00fcber Mobil-Telefon oder \u00fcber Festnetz-Telefon"
-      ]
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Semantische, fachliche Modelle/Informationsmodelle/Kernmodell/Beziehungen/Beziehung",
+        "SOURCE-ID": "9f5151fb-80ce-4744-a661-59a37b689472",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-14T10:52:44.767000"
+      }
     },
     {
-      "elementid": "ENTI11",
+      "elementId": "ENTI27",
       "name": {
-        "en": "Funktionale Beziehung"
+        "de": "Attribut",
+        "en": "Attribute"
       },
-      "categoryid": "CATG18",
       "description": {
-        "en": "Eine Many-zu-1-Beziehung. Jede Instanz der ersten Entit\u00e4t ist mit genau einer Instanz der Entit\u00e4t am anderen Ende (reverse/ende-Entit\u00e4t) verbunden. Es handelt sich um eine eindeutige, funktionale Abh\u00e4ngigkeit. Ausgehend von der Instanz der 1. Entit\u00e4t findet man eindeutig die zugewiesene Instanz der anderen Entit\u00e4t. Die Bezeichnung \\\"viele\\\" bedeutet 1 oder mehrere. Falls das Beziehungsende optional ist, bedeutet es 0,1 oder mehrere.  Die Kardinalit\u00e4t ab der ersten (Start-)Entit\u00e4t ist immer \\\"1\\\". Die Kardinalit\u00e4t am anderen Ende kann \\\"1\\\" oder \\\"M\\\" sein. Wir sprechen von einer \u201eM:1\u201c / \u201emany-to-1\u201c respektive von einer 1:1 Beziehung.  F\u00fcr funktionale Beziehungen m\u00fcssen die Assotziationstexte in beide Richtungen angegeben werden. Sie liefern die Bedeutung der funktionalien Abh\u00e4ngigkeit.  Eine 1:1 funktionale Beziehung kann es nur sein, wenn beide Seiten optional oder beide Seiten obligatorisch sind. Im letzteren Fall darf die Beziehung nicht in einem Arc gruppiert sein. Abgrenzung von 1:1 funktionalen Beziehungen zu Rollen/Subentit\u00e4t- Beziehungen:  1:1    1 optional - 1 optional    1 obligatorsich - 1 obligatorisch (ohne arc)   1 obligatorsich - 1 optional Rollen    1 obligatorisch - 1 optional Subentit\u00e4ten    1 obligatorisch - 1 obligatorisch (mit arc)"
+        "de": "Beschreibung des Beh\u00e4lters eines Wertes. \n\nDas Attribut bildet zusammen mit den Beziehungen die einzige M\u00f6glichkeit elementare Aussagen (Werte) zu beschreiben.\n\nEin Attribut ist entweder direkt eine Eigenschaft einer Entit\u00e4t (Entit\u00e4tsattribut). Oder es ist als Wertebereichattribut Mitglied in einer Gruppe von Attributen, die zusammen einen Wertebereich vom Typ Gruppenattribut bilden.\n\nAttribute repr\u00e4sentieren atomare Informationen. Attribute, deren Werte durch mathematische Operationen eindeutig aus bestehen Attributwerten berechnet werden k\u00f6nnen, sind nicht atomar. Nichtatomare Attribute werden nur beschrieben, wenn sie einen Beitrag zum besseren Verst\u00e4ndnis lieferen. \nSie sind als *abgeleitet* zu bezeichnen und die Ableitungsformel sollte angegeben werden. Beispiel: *Totalgewicht eines Produktes, das die Summe der Gewichte aller Komponenten + Gewicht der Verpackung ist.* \n\nNach der ersten Normalform (1NF) des relationalen Modells macht ein Attributwert *eine* Aussage \u00fcber *einen* Aspekt *einer* Instanz der Entit\u00e4t, f\u00fcr die das Attribut eine Eigenschaft ist. Dies bedeutet, dass mehrwertige Attribute und kombinierte Attributwerte in Theorie nicht zul\u00e4ssig sind. \n\nDie Kennzeichen *wiederholt*\u201c *historisiert* und *mehrsprachig* kennzeichnen mehrwertige Attribute f\u00fcr besondere Zwecke. Diese Erweiterungen sind aus Gr\u00fcnden der Benutzerfreundlichkeit definiert und stehen nicht im Widerspruch zu 1NF, da sie algorithmisch in eine 1NFl umgewandelt werden k\u00f6nnen.",
+        "en": "Description of the container of a value. \n\nTogether with relationships, attributes are the only way to describe elementary values (statements).\n\nAn attribute is either directly a property of an entity (Entity attribute) or, as a Value range attribute, a member of a group of attributes that together form a value range of the type Group attribute.\n\nAttributes represent atomic information. Attributes whose values can be uniquely calculated from attribute values using mathematical operations are not atomic. Non-atomic attributes are only described if they contribute to a better understanding. \nThey should be labelled as *derived* and the derivation formula should be specified. Example: *Total weight of a product, which is the sum of the weights of all components + weight of the packaging.*\n\nAccording to the first normal form (1NF) of the relational model, an attribute value represents *one* fact about *one* aspect of *one* instance of the entity for which the attribute is a property. This means that multi-valued attributes and combined attribute values are theoretically not permitted. \nThe flags *repeated*, *historised* and *multilingual* indicate multi-valued attributes for special purposes. These extensions are defined for ease of use and do not contradict 1NF, as they can be algorithmically transformed into a 1NF."
       },
-      "examples": [
-        "Ein Angestellter angestellt in einer Firma - Eine Firma besch\u00e4ftigt viele Angestellte.",
-        "Eine Person ist verheiratet mit 1 Person.",
-        "Ein Planet umkreist eine Sonne - Eine Sonne wird umkreist von vielen Planeten."
-      ]
-    },
-    {
-      "elementid": "ENTI12",
-      "name": {
-        "en": "Attribut"
-      },
-      "categoryid": "CATG19",
+      "shortDescr": "Beh\u00e4lter f\u00fcr atomaren Wert",
+      "categoryId": "CATG9",
       "synonyms": [
         "Eigenschaft",
         "Merkmal",
         "Charateristic",
         "Property"
       ],
-      "description": {
-        "en": "Beschreibung des Beh\u00e4lters eines Wertes. \nAuch Eigenschaft oder Merkmal genannt. \n\nDas Attribut bildet zusammen mit den Beziehungen die einzige M\u00f6glichkeit elementare Werte (Aussagen) zu beschreiben.\n\nEin Attribut ist entweder direkt eine Eigenschaft einer Entit\u00e4t (Entit\u00e4tsattribut). Oder es ist als Wertebereichattribut Mitglied in einer Gruppe von Attributen, die zusammen einen Wertebereich vom Typ Gruppenattribut bilden.\n\nUm das Informationsmodell redundanzfrei zu halten, d\u00fcrfen Attributwerte nicht algorithmisch aus anderen Attributwerden abgeleitet werden. Ist ein abgeleitetes Attribut f\u00fcr das Verst\u00e4ndnis oder die Kommunikation notwendig, ist es als spezielle Rolle \"Abgeleitetes Attribut* zu modellieren.\n\nNach der ersten Normalform (1NF) des relationalen Modells macht ein Attributwert *eine* Aussage \u00fcber *einen* Aspekt *einer* Instanz der Entit\u00e4t, f\u00fcr die das Attribut eine Eigenschaft ist. Dies bedeutet, dass mehrwertige Attribute und kombinierte Attributwerte nicht zul\u00e4ssig sind. \nDie Kennzeichen *wiederholt*\u201c *historisiert* und *mehrsprachig* kennzeichnen mehrwertige Attribute f\u00fcr besondere Zwecke. Diese Erweiterungen sind aus Gr\u00fcnden der Benutzerfreundlichkeit definiert und stehen nicht im Widerspruch zu 1NF, da sie algorithmisch in eine 1NFl umgewandelt werden k\u00f6nnen. "
-      },
-      "shortdescr": {
-        "en": "Beh\u00e4lter f\u00fcr atomaren Wert"
-      },
       "examples": [
         "Name",
         "Geburtsdatum",
         "L\u00e4ngengrad",
-        "Geo-Koordinate"
+        "Geo-Koordinate",
+        "Hair colour"
+      ],
+      "modelId": "MODL1",
+      "additionalProps": {
+        "Delimitation": "Im Informationsmodell werden keine Attribute beschrieben, deren Zweck allein die technische Umsetzung ist.  Solche Datenorganisationsattribute wie Fremdschl\u00fcssel, Kombinierte/Codierte Schl\u00fcssel, Suchpfade, Redundanzen f\u00fcr die Zugriffsoptimierung etc.  geh\u00f6ren in die Datenmodelle.",
+        "FULLPATH": "Software Engineering Modell:Semantische, fachliche Modelle/Informationsmodelle/Kernmodell/Entit\u00e4ten/Attribut",
+        "SOURCE-ID": "48a33cd1-c320-449c-8080-ab09c990ae6c",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-14T10:52:44.767000"
+      },
+      "keys": [
+        {
+          "name": "Attribut_1",
+          "elements": [
+            "ATTR44",
+            "ATTR54"
+          ]
+        }
       ]
     },
     {
-      "elementid": "ENTI13",
+      "elementId": "ENTI28",
       "name": {
-        "en": "Entit\u00e4t"
+        "de": "Entit\u00e4t",
+        "en": "Entity"
       },
-      "categoryid": "CATG19",
+      "description": {
+        "de": "Beschreibt die Struktur und Bedeutung f\u00fcr ein Ding, eine Sache von Interesse aus der Realit\u00e4t dieser Zielumgebung / Wirkungswelt.\n\nSie beschreibt ein Wesen, ein materielles oder immaterielles (abstraktes) Objekt mit Eigenschaften und Beziehungen. Es handelt sich um eine konsolidierte, von allen Beteiligten akzeptierte Definition der Struktur und Bedeutung diesr Sache. \n\nEin Entit\u00e4tsname ist in der betrachteten SE Umgebung eindeutig. Die Definition der Entit\u00e4t (Attribute, Beschreibng, Regeln, Beziehungen, Beispiele, ...) ist die einzig g\u00fcltige Interpretation, die mit ihrem Namen ausgedr\u00fcckt wird.\nDie Definition der Entit\u00e4t muss einmalig sein. 2 Entit\u00e4ten mit identischen Definitionen beschreiben dasselbe Ding.\nEntit\u00e4ten sind die einzige M\u00f6glichkeit Dinge in der Realit\u00e4t per se zu definieren.\n\nDie Definition der Entit\u00e4t gilt f\u00fcr alle realen Auspr\u00e4gungen (Instanzen) aller Dinge in der Realit\u00e4t, deren Merkmalsauspr\u00e4gungen (Datenwerte) genau dieser Definition entsprechen.  \n*Alle uns bekannten Planeten werden durch die Merkmale der Entit\u00e4t Planet beschrieben.*\n\nUnterscheiden sich in der Realit\u00e4t 2 real existierende Dinge (Instanzen) nur in den Werten ihrer Merkmale, werden sie durch die selbe Entit\u00e4t beschrieben. \nUnterscheiden sich 2 reale Dinge in ihrer Struktur (Anzahl, Bedeutung oder Typ von Attributen und Beziehungen) voneinander, werden sie durch unterschiedliche  Entit\u00e4t beschrieben.",
+        "en": "Describes the structure and meaning of a thing or object of interest from the reality of this target environment/sphere of influence.\n\nIt describes an entity, a material or immaterial (abstract) object with properties and relationships. It is a consolidated definition of the structure and meaning of this thing that is accepted by all parties involved. \n\nAn entity name is unique in the SE environment under consideration. The definition of the entity (attributes, description, rules, relationships, examples, etc.) is the only valid interpretation expressed by its name.\nThe definition of the entity must be unique. Two entities with identical definitions describe the same thing.\nEntities are the only way to define things in reality per se.\n\nThe definition of the entity applies to all real instances of all things in reality whose characteristics (data values) correspond exactly to this definition.  \n*All planets known to us are described by the characteristics of the entity Planet.*\n\nIf two real things (instances) differ in reality only in the values of their characteristics, they are described by the same entity. \nIf two real things differ from each other in their structure (number, meaning or type of attributes and relationships), they are described by different entities."
+      },
+      "categoryId": "CATG9",
       "synonyms": [
         "Gesch\u00e4ftsobjekt",
         "Business object"
       ],
-      "description": {
-        "en": "Bezeichnet eine Sache von Interesse in dieser Zielumgebung / Wirkungswelt. \n\nEin Wesen, ein materielles oder immaterielles (abstraktes) Objekt mit Eigenschaften und Beziehungen. Es handelt sich um eine konsolidierte, von allen Beteiligten akzeptierte Beschreibung der Struktur und Bedeutung der Sache von Interesse. \n\nEin Entit\u00e4tsname ist in der betrachteten Umgebung eindeutig. Die Definition der Entit\u00e4t (Attribute, Beschreibung, Regeln, Beziehungen, ...) ist die einzig g\u00fcltige Interpretation, die mit ihrem Namen ausgedr\u00fcckt wird.\n\nDie Beschreibung ist unabh\u00e4ngig von der Verwendung dieser Entit\u00e4t in Gesch\u00e4fts- oder IT-Prozessen. Sie ist ferner unabh\u00e4ngig von jeder Art der Implementierung als Daten oder Programmcode in einem beliebigen IT-System. "
+      "examples": [
+        "Planet",
+        "Person",
+        "Schraube",
+        "Berg",
+        "Mountain",
+        "Vertrag",
+        "Bank account"
+      ],
+      "modelId": "MODL1",
+      "additionalProps": {
+        "Delimitation": "Die Definition der Entit\u00e4t macht **keine** Angaben:\n* zur Verwendung dieser Entit\u00e4t in Gesch\u00e4fts- oder IT-Prozessen. \n* zur Implementierung der Entit\u00e4tsauspr\u00e4gungen als Daten oder Programmcode in einem beliebigen IT-System.",
+        "FULLPATH": "Software Engineering Modell:Semantische, fachliche Modelle/Informationsmodelle/Kernmodell/Entit\u00e4ten/Entit\u00e4t",
+        "SOURCE-ID": "d6cb4b36-fa13-4310-83c2-3f4ac7bc7b1a",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-14T10:52:44.767000"
       },
       "keys": [
-        [
-          "RELA29"
-        ]
+        {
+          "name": "Entit\u00e4t_1",
+          "elements": [
+            "ATTR56"
+          ]
+        }
       ]
     },
     {
-      "elementid": "ENTI14",
+      "elementId": "ENTI29",
       "name": {
-        "en": "Entit\u00e4tsschl\u00fcssel"
+        "de": "Entit\u00e4tsschl\u00fcssel",
+        "en": "Entity key"
       },
-      "categoryid": "CATG19",
+      "description": {
+        "de": "Fachliche Schl\u00fcssel, der dazu dient, eine Instanz dieser Entit\u00e4t in der Realit\u00e4t zu identifizieren. \n\nEin Schl\u00fcssel besteht aus einem oder mehreren Schl\u00fcsselelemeten (Attribut oder funktionale Beziehung), deren Werte in Kombination eindeutig eine Instanz in der Realit\u00e4t identifiziern. \n\nAlle Entit\u00e4sschl\u00fcssel sind gleichwertig. Jede Implementierung muss jederzeit die Eindeutigkeit der Wertekombinationen aller Schl\u00fcssel einer Entit\u00e4t garantieren.\n\nSchl\u00fcssel sollten nach M\u00f6glichkeit nat\u00fcrliche (fachlich relevante) Schl\u00fcssel sein. D.h. aus Eigenschaften bestehen, die f\u00fcr das fachliche Verst\u00e4ndnis der Entit\u00e4t relevant sind. K\u00fcnstliche Schl\u00fcssel (systemgenerierte ID's) sind technische Hilfskonstrukte ohne fachliche Relevanz und sollten (im Informationsmodell) nur im Notfall verwendet werden.",
+        "en": "Combination of business relevant values, used to identify an instance of this entity in reality. \n\nA key consists of one or more key elements (attribute or functional relationship) whose values, when combined, uniquely identify an instance in reality. \n\nAll entity keys are equivalent. Each implementation must guarantee the uniqueness of the value combinations of all keys of an entity at all times.\n\nKeys should be natural (subject-relevant) keys wherever possible. This means that they should consist of properties that are relevant to the subject-specific understanding of the entity. Artificial keys (system-generated IDs) are technical auxiliary constructs with no subject-specific relevance and should only be used (in the information model) in emergencies."
+      },
+      "categoryId": "CATG9",
       "synonyms": [
         "Schl\u00fcssel"
       ],
-      "description": {
-        "en": "Fachliche Schl\u00fcssel, der dazu dient, eine Instanz dieser Entit\u00e4t in der Realit\u00e4t zu identifizieren. \n\nEin Schl\u00fcssel besteht aus einem oder mehreren Schl\u00fcsselelemeten (Attribut oder funktionale Beziehung), deren Werte in Kombination eindeutig eine Instanz in der Realit\u00e4t identifiziern. \n\nAlle Entit\u00e4sschl\u00fcssel sind gleichwertig. Jede Implementierung muss jederzeit die Eindeutigkeit der Wertekombinationen aller Schl\u00fcssel einer Entit\u00e4t garantieren.\n\nSchl\u00fcssel sollten nach M\u00f6glichkeit nat\u00fcrliche (fachlich relevante) Schl\u00fcssel sein. D.h. aus Eigenschaften bestehen, die f\u00fcr das fachliche Verst\u00e4ndnis der Entit\u00e4t relevant sind. K\u00fcnstliche Schl\u00fcssel (systemgenerierte ID's) sind technische Hilfskonstrukte ohne fachliche Relevanz und sollten (im Informationsmodell) nur im Notfall verwendet werden."
-      },
       "examples": [
         "Land, Postleitzahl",
         "Produktname, Versionsnummer, BOM-Position",
         "Produktname",
         "GSC-Identifikation"
       ],
-      "keys": [
-        [
-          "RELA22"
-        ]
-      ]
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Semantische, fachliche Modelle/Informationsmodelle/Kernmodell/Entit\u00e4ten/Entit\u00e4tsschl\u00fcssel",
+        "SOURCE-ID": "22218f62-7f70-4257-8400-618a24d08c2a",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-14T10:52:44.767000"
+      }
     },
     {
-      "elementid": "ENTI15",
+      "elementId": "ENTI30",
       "name": {
-        "en": "Entit\u00e4tsttribut"
+        "de": "Entit\u00e4tsttribut",
+        "en": "Entity Attribute"
       },
-      "categoryid": "CATG19",
+      "description": {
+        "de": "Roille eines Attributs genutzt als Eigenschaft einer Entit\u00e4t",
+        "en": "Role of an attribute used as a property of an entity."
+      },
+      "categoryId": "CATG9",
       "synonyms": [
         "Eigenschaft",
         "Merkmal"
       ],
-      "description": {
-        "en": "Roille eines Attributs genutzt als Eigenschaft einer Entit\u00e4t "
-      },
       "examples": [
         "Name",
         "Strassenname",
         "Geo-Koordinate"
-      ]
+      ],
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Semantische, fachliche Modelle/Informationsmodelle/Kernmodell/Entit\u00e4ten/Entit\u00e4tsttribut",
+        "SOURCE-ID": "c9084428-dd23-4362-88bf-66e9831a8974",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-14T10:52:44.767000"
+      }
     },
     {
-      "elementid": "ENTI16",
+      "elementId": "ENTI31",
       "name": {
-        "en": "Schl\u00fcsselelement"
+        "de": "Schl\u00fcsselelement",
+        "en": "Key element"
       },
-      "categoryid": "CATG19",
       "description": {
-        "en": "Attribut- oder (funktionale) Beziehung, die Teil eines Schl\u00fcssels f\u00fcr die Entit\u00e4t ist.\n\nDie Kombination Entit\u00e4tsschl\u00fcssel und refereziertes Entit\u00e4tsattribut bzw. Funktionalie Beziehung muss eindeutig sein."
+        "de": "Attribut- oder (funktionale) Beziehung, die Teil eines Schl\u00fcssels f\u00fcr die Entit\u00e4t ist.\n\nDie Kombination Entit\u00e4tsschl\u00fcssel und refereziertes Entit\u00e4tsattribut bzw. Funktionalie Beziehung muss eindeutig sein.",
+        "en": "Attribute or (functional) relationship that is part of a key for the entity.\n\nThe combination of entity key and referenced entity attribute or functional relationship must be unique."
       },
-      "keys": [
-        [
-          "RELA22",
-          "RELA37",
-          "RELA38"
-        ]
-      ]
+      "categoryId": "CATG9",
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Semantische, fachliche Modelle/Informationsmodelle/Kernmodell/Entit\u00e4ten/Schl\u00fcsselelement",
+        "SOURCE-ID": "b91bf6b7-4166-4d25-af9e-cf678b4e051f",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-14T10:52:44.767000"
+      }
     },
     {
-      "elementid": "ENTI17",
+      "elementId": "ENTI32",
       "name": {
-        "en": "Abgeleitetes attribut"
+        "de": "Gesch\u00e4ftsregel",
+        "en": "Business rule"
       },
-      "categoryid": "CATG16",
       "description": {
-        "en": "Attribut, dessen Wert aus anderen Attributen aus diesem Informatiosmodell berechnet werden kann.\n\nSolche Attributwerte sind redundant und sollten immer algorithmisch verarbeitet oder \u00fcberpr\u00fcft werden um die Konsistenz der gesamten Informationen zu gew\u00e4hrleisten.\n\nDa abgeleitete Attribute h\u00e4ufig in Gesch\u00e4ftsprozessen und Benutzerschnittstellen verwendet werden, sollten sie im Informationsmodell beschreibbar sein."
+        "de": "Eine gesch\u00e4ftliche Regel zur Konsistenz und Integrit\u00e4t der Daten, die mit den Standardelementen des Informationsmodells nicht beschrieben werden kann. Eine Regel muss mindestens 1 Element betreffen.",
+        "en": "A business rule for data consistency and integrity, that cannot be described using the standard elements of the information model. A rule must apply to at least one element."
       },
-      "examples": [
-        "Dauer = Endedatum - Startdatum",
-        "Premium customer if more than 1mio turnover or more than 100 orders/year"
-      ]
-    },
-    {
-      "elementid": "ENTI18",
-      "name": {
-        "en": "Gesch\u00e4ftsregel"
-      },
-      "categoryid": "CATG16",
-      "description": {
-        "en": "Eine gesch\u00e4ftliche Regel, die mit den Standardelementen des Informationsmodells nicht beschrieben werden kann. Eine Regel muss mindestens 1 Element betreffen."
-      },
+      "categoryId": "CATG6",
       "examples": [
         "Das Startdatum muss kleiner als das Endedatum sein.",
         "Eine Mischung muss aus mindestens 2 Substanzen bestehen.",
         "A Person has a telefon-number or a mail-address or both"
-      ]
+      ],
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Semantische, fachliche Modelle/Informationsmodelle/Erweitertes Modell/Gesch\u00e4ftsregel",
+        "SOURCE-ID": "86446f71-6ff1-42e6-b3c4-e4b0fdaa0f7c",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-14T10:52:44.767000"
+      }
     },
     {
-      "elementid": "ENTI19",
+      "elementId": "ENTI33",
       "name": {
-        "en": "Kategorie"
+        "de": "Kategorie",
+        "en": "Category"
       },
-      "categoryid": "CATG16",
       "description": {
-        "en": "Kategorie, Gruppierung von Wertebereichen, Entit\u00e4ten oder Kategorien f\u00fcr eine einfache Kommunikation, Anzeige oder Suche.\n\nDie Kriterien f\u00fcr eine Gruppierung sind frei w\u00e4hlbar. Es empfiehlt sich einheitliche Apsekte f\u00fcr eine Gruppeneinteilung zu nutzen. Bew\u00e4hrt hat sich eine Einteilung in die Gesch\u00e4ftsf\u00e4higkeiten (Finanzen, Produktion, Marketing, Persona,...) eines Unternehmens."
+        "de": "Kategorie, Gruppierung von Wertebereichen, Entit\u00e4ten oder Kategorien f\u00fcr eine einfache Kommunikation, Anzeige oder Suche.\n\nDie Kriterien f\u00fcr eine Gruppierung sind frei w\u00e4hlbar. Es empfiehlt sich einheitliche Apsekte f\u00fcr eine Gruppeneinteilung zu nutzen. Bew\u00e4hrt hat sich eine Einteilung in die Gesch\u00e4ftsf\u00e4higkeiten (Finanzen, Produktion, Marketing, Persona,...) eines Unternehmens.",
+        "en": "Categorisation / grouping of value ranges, entities or categories for easy communication, display or search.\n\nThe criteria for grouping can be freely selected. It is advisable to use uniform aspects for grouping. A proven method is to divide the business capabilities (finance, production, marketing, persona, etc.) of a company."
       },
+      "categoryId": "CATG6",
       "examples": [
         "Produkte",
         "HR",
         "procurement"
-      ]
+      ],
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Semantische, fachliche Modelle/Informationsmodelle/Erweitertes Modell/Kategorie",
+        "SOURCE-ID": "ce497c07-c057-41eb-895b-8ae3c87fb068",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-14T10:52:44.767000"
+      }
     },
     {
-      "elementid": "ENTI20",
+      "elementId": "ENTI34",
       "name": {
-        "en": "Rollenbeziehung"
+        "de": "Wertebereichgruppe",
+        "en": "Group domain"
       },
-      "categoryid": "CATG16",
       "description": {
-        "en": "1:1 Beziehung die eine Rolle darstellt. Analogon: Ein:e Schauspieler:in (Person) spielt eine Rolle um eine andere Person (mit anderen Merkmalen) zu repr\u00e4sentieren.  Eine Rolle hat immer eine Grundentit\u00e4t, die sie erweitert.  Ein physikalischer Artikel ist ein Artikel mit Abmessungen und Gewicht. Alle Eigenschaften (Attribute, Beziehungen, Schl\u00fcssel, Regeln,... ) der Grundentit\u00e4t gelten auch f\u00fcr die Rolle. Die Rolle *ist* die Grundentit\u00e4t, erweitert umd eigene Eigenschaften, f\u00fcr spezielle Nutzungen.  Eine spezielle Art von Rolle sind exklusive / \\\"entweder-oder\\\" Rollen sog. Subentit\u00e4ten. Eine Gruppe von exkusiven Rollen wird in einem Arc zusammengefasst. Die Grundentit\u00e4t (in dem Fall genannt Superentit\u00e4t) muss genau eine der Rollen aus der Gruppe annehmen. Bsp: Ein \u00f6ffentliches Verkehrsmittel ist entweder ein Bus oder ein Zug oder ein Schiff.  Bei Rollenbeziehungen sind die Kardinalit\u00e4ten auf beiden Seiten \\\"1\\\". Die Beziehung von der Rolle zur Grundentit\u00e4t ist obligatorisch, von der Grundentit\u00e4t zur Rolle ist optional. Bei Subentit\u00e4ten ist die Beziehung der Subentit\u00e4t zur Grundentit\u00e4t (Superentit\u00e4t) immer obligatorisch, von der Superentit\u00e4t zur Grundentit\u00e4t ist die Beziehunge obligatorisch und in einem  \\\"entweder-oder\\\", d.h. in einem Arc zusammengefasst.  Der Assoziationstext ist immer \\\"ist\\\". Darum w\u00e4re der Text redundant und er kann zu Gunsten der Einfachheit, weggelassen werden."
+        "de": "Es gibt Attribute, die aus mehreren Bestandteilen bestehen, aber f\u00fcr eine Entit\u00e4t wie ein Attribut angesehen werden k\u00f6nnen. Die Bestandteile dieser Attributgruppe treten immer gemeinsam auf. Dass ein Attribut Teilwerte enth\u00e4lt, f\u00fcr die man sich separat interessiert, verletzt im Grundsatz die 1. Normalform. Wenn aber die Elemente einer Attributgruppe selber Attribute sind und die Gruppe als Platzhalter von mehreren Attributen verstanden werden kann, ist diese Verletzung aufl\u00f6sbar.",
+        "en": "There are attributes that consist of several components, but can be regarded as one attribute for an entity. \nThe components of this attribute group always occur together. \nThe fact that an attribute contains partial values in which one is interested separately basically violates the 1st normal form. However, if the elements of an attribute group are attributes themselves and the group can be understood as a placeholder for several attributes, this violation can be resolved."
       },
-      "examples": [
-        "Ein Arbeitnehmer ist eine Person - eine Person kann ein Arbeitnehmer sein.",
-        "Ein Mieter ist eine Person - eine Person kann ein Mieter sein.",
-        "Ein \u00f6ffentliches Verkehrsmittel ist entweder ein Bus oder ein Zug oder ein Schiff",
-        "Ein Schiff ist ein \u00f6ffentliches Verkehrsmittel",
-        "Ein Zug ist ein \u00f6ffentliches Verkehrsmittel",
-        "Ein Bus ist ein \u00f6ffentliches Verkehrsmittel",
-        "Ein Artikel ist entweder ein virtueller Artikel oder ein physischer Artikel",
-        "Ein virtueller Artikel ist ein Artikel",
-        "Ein physikalischer Artikel ist ein Artikel"
-      ]
-    },
-    {
-      "elementid": "ENTI21",
-      "name": {
-        "en": "viele-zu-viele Beziehung"
-      },
-      "categoryid": "CATG16",
-      "description": {
-        "en": "Die many-to-many Beziehung verkn\u00fcpft in beide Richung 1 Instanz der einen Entit\u00e4t mit 0.. vielen Instanzen der anderen Entit\u00e4t. Die Kardinalit\u00e4t muss bei beiden Enden \\\"M\\\" sein. Assoziationstexte sind in beide Richtungen Pflicht.  Eine many-to-many Beziehung impliziert immer eine weitere Entit\u00e4t, die diese Art der Verkn\u00fcpfung abbildet. Wir verzichten im Informationsmodell dzu Gunsten der einfacheren Darstellung darauf, diese zus\u00e4tzliche Entit\u00e4t (mit je einer Verbindung zu den beiden Entit\u00e4ten) darzustellen. Sobald dieses zus\u00e4tzliche Entit\u00e4t aber Attribute oder Beziehungen hat, muss sie als normale Entit\u00e4t dokumentiert werden."
-      },
-      "examples": [
-        "Eine Bestellung enh\u00e4lt viele Artikel. - Ein Artikel wird in vielen Bestellung bestellt.",
-        "Eine Person wird kontaktiert von vielen Personen - Eine Person kontaktiert viele Personen."
-      ]
-    },
-    {
-      "elementid": "ENTI22",
-      "name": {
-        "en": "Wertebereichattribut"
-      },
-      "categoryid": "CATG16",
-      "description": {
-        "en": "Beschreibung eines Feldes in einer Gruppendom\u00e4ne. Ist einerseits Teil einer Wertebereichgruppe (tr\u00e4gt bei zu) und hat anderer seit selber einen Wertebereich f\u00fcr seine Werte (eingeschr\u00e4nkt durch)."
-      },
-      "examples": [
-        "L\u00e4ngengrad",
-        "Breitengrad"
-      ]
-    },
-    {
-      "elementid": "ENTI23",
-      "name": {
-        "en": "Wertebereichgruppe"
-      },
-      "categoryid": "CATG16",
+      "categoryId": "CATG6",
       "synonyms": [
         "Gruppenattribut"
       ],
-      "description": {
-        "en": "Es gibt Attribute, die aus mehreren Bestandteilen bestehen, aber f\u00fcr eine Entit\u00e4t wie ein Attribut angesehen werden k\u00f6nnen. Die Bestandteile dieser Attributgruppe treten immer gemeinsam auf. Dass ein Attribut Teilwerte enth\u00e4lt, f\u00fcr die man sich separat interessiert, verletzt im Grundsatz die 1. Normalform. Wenn aber die Elemente einer Attributgruppe selber Attribute sind und die Gruppe als Platzhalter von mehreren Attributen verstanden werden kann, ist diese Verletzung aufl\u00f6sbar."
-      },
       "examples": [
         "Telefon-Nr: (Landesvorwahl , Rufnummer)",
         "Koordinaten (Westliche l\u00e4nge und n\u00f6rdliche Breite)",
         "Hotelzimmer-Nr (Stockwerk, ZimmerNr)",
         "Flugkennung (Fluggesellschaft K\u00fcrzel ,Flugnummer (LX1247))"
+      ],
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Semantische, fachliche Modelle/Informationsmodelle/Erweitertes Modell/Wertebereichgruppe",
+        "SOURCE-ID": "25e9f173-8edc-438f-a638-c5332e1c3118",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-14T10:52:44.767000"
+      }
+    },
+    {
+      "elementId": "ENTI35",
+      "name": {
+        "de": "Modellelement",
+        "en": "Model element"
+      },
+      "description": {
+        "de": "Dies ist eine Meta-Modellinformation. Es ist ein Platzhalter f\u00fcr irgend ein Modellelement. Es erlaubt es, Eigenschaften und Beziehungen, die f\u00fcr jedes Modellelement definiert werden k\u00f6nnen (wie \u00c4nderungsinformation, zus\u00e4tztliche Eigenschaften,...) zu modellieren, ohne dass hunderte von Beziehungen gezogen werden m\u00fcssen.\n\nDas generische Element hat eine 1:1 Beziehung zu jedem Element im Modell (ausser zu sich selber). Dies wird im Sinne eines Fremschl\u00fcssels durch das Attribut Elementidentifikation ausgedr\u00fcckt.",
+        "en": "This is meta-model information. It is a placeholder for any model element. It allows properties and relationships that can be defined for each model element (such as change information, additional properties, etc.) to be modelled without having to draw hundreds of relationships.\n\nThe generic element has a 1:1 relationship with every element in the model (except itself). This is expressed in the sense of a foreign key by the attribute element identification."
+      },
+      "shortDescr": "Platzhalter f\u00fcr viele Zusatzinformationen",
+      "categoryId": "CATG4",
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Organisation Metamodell/Generische Modellelemente/Modellelement",
+        "SOURCE-ID": "74ca2841-09fa-453f-9fe8-4e853969dfca",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-12-15T17:26:46.724000"
+      },
+      "keys": [
+        {
+          "name": "Modellelement_1",
+          "elements": [
+            "ATTR64"
+          ]
+        }
       ]
     },
     {
-      "elementid": "ENTI24",
+      "elementId": "ENTI36",
       "name": {
-        "en": "Zus\u00e4tzliche Eigenschaft"
+        "de": "Zus\u00e4tzliche Eigenschaft",
+        "en": "Additional property"
       },
-      "categoryid": "CATG16",
+      "description": {
+        "de": "F\u00fcr projekt- oder umgebungsspezifische Erweiterungen, k\u00f6nnen f\u00fcr jedes Modellelement eigene Eigenschaften definiert werden.  \n\nZus\u00e4tzliche Eigenschaften werden nie in der Logik des Modells interpretiert. Sie sind umgebungsdefinierte Werte f\u00fcr spezfische Nutzung in der enstprechenden Umgebung.",
+        "en": "For project- or environment-specific extensions, separate properties can be defined for each model element.  \n\nAdditional properties are never interpreted in the logic of the model. They are environment-defined values for specific use in the corresponding environment."
+      },
+      "categoryId": "CATG4",
       "synonyms": [
         "User defined property"
       ],
-      "description": {
-        "en": "F\u00fcr projekt- oder umgebungsspezifische Erweiterungen, k\u00f6nnen f\u00fcr jedes Modellelement eigene Eigenschaften definiert werden.  Zus\u00e4tzliche Eigenschaften werden nie in der Logik des Basis- oder erweiterten Informaitionsmodells interpretiert. Sie sind umgebungsdefinierte Werte f\u00fcr spezfische Nutzung in der enstprechenden Umgebung."
-      },
       "examples": [
         "Qualit\u00e4tsanspruch-Level",
         "Sicherheitsstufe",
         "Referenz auf eine Quelle f\u00fcr das Element"
-      ]
+      ],
+      "modelId": "MODL1",
+      "additionalProps": {
+        "Delimitation": "Zus\u00e4tzliche Eigenschaften d\u00fcrfen ordentliche Modelleigenschaften weder \u00fcberlagern noch deren Bedeutung oder Struktur ver\u00e4ndern.",
+        "FULLPATH": "Software Engineering Modell:Organisation Metamodell/Generische Modellelemente/Zus\u00e4tzliche Eigenschaft",
+        "SOURCE-ID": "fe260087-4d26-4b2f-8ad1-dddbc2b47414",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-14T10:52:44.767000"
+      }
     },
     {
-      "elementid": "ENTI25",
+      "elementId": "ENTI37",
       "name": {
-        "en": "Informationsmodell"
+        "de": "Informationsmodell",
+        "en": "Information model"
       },
-      "categoryid": "CATG17",
+      "description": {
+        "de": "Ein Informationmodell beschreibt die in einer Zielumgebung (Wirkungswelt) relevanten Dinge (Entit\u00e4ten), deren Eigenschaften (Attribute) und Beziehungen. Es legt die in der Kommunikation zu verwendenden Namen fest sowie die Bedeutung, den Zweck, den sie in dieser Umgebung haben. \n\nEs ist die gemeinsame Einigung auf eine gemeinsame Sprache \u00fcber Elemente unserer Wirkungswelt.\n\nDank seiner mathematischen Grundlage (relationales Modell) liefert es ein nachpr\u00fcfbares Modell, das alle **m\u00f6glichen wahren** Aussagen (Fakten / Pr\u00e4dikate im Sinne der Pr\u00e4dikatenlogik) f\u00fcr die Umgebung beschreibt. Alle Aussagen die gem\u00e4ss diesem Modell strukturiert sind oder durch logische Operatoren (Pr\u00e4dikatenlogik) daraus abgeleitet wertden k\u00f6nnen wahr sein. Alle Aussagen die dem Modell widersprechen sind in dieser Umgebung unwahr. Alle Aussagen die durch das Modell weder best\u00e4tigt noch widerlegt werden k\u00f6nnen sind unbestimmt und damit f\u00fcr diese Umgebung nicht relevant.\n\nF\u00fcr die Verwaltung von Wissen in Form von Daten, liefert das Informationsmodell die exakte Beschreibung der Informationsanforderungen sowie die erw\u00fcnschte Interpretation der Dateninhalte bei deren Nutzung.",
+        "en": "An information model describes the relevant things (entities) in a target environment (world of influence), their properties (attributes) and relationships. It defines the names to be used in communication as well as their meaning and purpose in this environment.\n\nIt is the common agreement on a common language for elements of our world of influence.\n\nThanks to its mathematical basis (relational model), it provides a verifiable model that describes all **possible true** statements (facts/predicates in the sense of predicate logic) for the environment. All statements that are structured according to this model or can be derived from it using logical operators (predicate logic) can be true. All statements that contradict the model are false in this environment. All statements that cannot be confirmed or refuted by the model are indeterminate and therefore irrelevant for this environment.\n\nFor the management of knowledge in the form of data, the information model provides the exact description of the information requirements and the desired interpretation of the data content for its use."
+      },
+      "categoryId": "CATG7",
       "synonyms": [
         "Fachdatenmodell",
         "Konzeptionelles Datenmodell",
         "Conceptual data model",
         "Business data model"
       ],
-      "description": {
-        "en": "Ein Informationmodell beschreibt die in einer Zielumgebung (Wirkungswelt) relevanten Dinge (Entit\u00e4ten), deren Eigenschaften (Attribute) und Beziehungen. Es legt die in der Kommunikation zu verwendenden Namen fest sowie die Bedeutung, den Zweck, den sie in dieser Umgebung haben. \n\nEs ist die gemeinsame Einigung auf eine gemeinsame Sprache \u00fcber Elemente unserer Wirkungswelt.\n\nDank seiner mathematischen Grundlage (relationales Modell) liefert es ein nachpr\u00fcfbares Modell, das alle m\u00f6glichen wahren Aussagen (Fakten / Pr\u00e4dikate im Sinne der Pr\u00e4dikatenlogik) f\u00fcr die Umgebung beschreibt. \n\nF\u00fcr die Verwaltung von Wissen in Form von Daten, liefert das Informationsmodell die exakte Beschreibung der Informationsanforderungen sowie die erw\u00fcnschte Interpretation der Dateninhalte f\u00fcr deren Nutzung."
-      },
       "examples": [
         "Informationsmodell foryouandyourcustomers",
         "IM project xyz"
-      ]
-    },
-    {
-      "elementid": "ENTI26",
-      "name": {
-        "en": "Bin\u00e4rer Wertebereich"
-      },
-      "categoryid": "CATG20",
-      "description": {
-        "en": "Dokumente irgendwelcher Art, die nicht in einem als strukturiert bezeichneten Format (Text, Zahl, Boolean, Zeitpunkt) abgespeichert werden kann.  Als Dokumente im Filesystem (Formate: PDF, PNG, TIFF, XLS, DOC, kynote, etc.) oder als bin\u00e4re Datenbankobjekte verwaltet."
-      }
-    },
-    {
-      "elementid": "ENTI27",
-      "name": {
-        "en": "Boolean Wertebereich"
-      },
-      "categoryid": "CATG20",
-      "description": {
-        "en": "Wahrheitswert (Boolean). Es kann es nur einen geben. Die Bedeutung von Wahr (true) und Falsch (false) ist immer dieselbe:  Die Aussage ist wahr oder sie ist falsch. Was wahr und falsch f\u00fcr eine Bedeutung oder Auswirkung hat, wird im Attribut festgelegt."
-      }
-    },
-    {
-      "elementid": "ENTI28",
-      "name": {
-        "en": "Numerischer Wertebereich"
-      },
-      "categoryid": "CATG20",
-      "description": {
-        "en": "Beschreibung von Zahlenwerten."
-      }
-    },
-    {
-      "elementid": "ENTI29",
-      "name": {
-        "en": "Physikalische Einheit"
-      },
-      "categoryid": "CATG20",
-      "description": {
-        "en": "Physikalische Messeinheit. Siehe dazu z.B. https://de.wikipedia.org/wiki/Liste_physikalischer_Gr\u00f6\u00dfen #SI-Basisgr\u00f6\u00dfen_und_-einheiten"
-      }
-    },
-    {
-      "elementid": "ENTI30",
-      "name": {
-        "en": "Textlicher Wertebereich"
-      },
-      "categoryid": "CATG20",
-      "description": {
-        "en": "Textwerte sind Zeichenfolgen.   Die Werteregel ist typischerweise ein regul\u00e4rer Ausdruck, der die erlaubten Zeichen und ihre Anordnung vorgibt."
-      },
-      "examples": [
-        "Bergname, 1-100 Zeichen",
-        "Mailadresse, ^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
-      ]
-    },
-    {
-      "elementid": "ENTI31",
-      "name": {
-        "en": "Vorgabewert"
-      },
-      "categoryid": "CATG20",
-      "description": {
-        "en": "Wert, der f\u00fcr eine Aufz\u00e4hlungs-Werteliste ein g\u00fcltiger Wert ist. Das Attribut \\\"Wert ist der physikalische (sprachunabh\u00e4ngige) Wert, der als eigentlicher Wert im konzeptionellen Modell gilt."
-      },
-      "examples": [
-        "Bayern",
-        "Niedersachsen",
-        "Ok",
-        "NotOk"
-      ]
-    },
-    {
-      "elementid": "ENTI32",
-      "name": {
-        "en": "Wertebereich"
-      },
-      "categoryid": "CATG20",
-      "synonyms": [
-        "Dom\u00e4ne"
       ],
-      "description": {
-        "en": "Beschreibung der zul\u00e4ssigen Werte f\u00fcr ein oder mehrere Attribute. Die Typen Numerisch, Text, Zeit oder Aufz\u00e4hlung sind begrifflich zu verstehen. Reale Datentypen und ggf. Anzeigeformate und Speicherung werden in der Implementierung festgelegt.  Wertegruppen sind Attributgruppen, d.h. mehrere Attribute, die mehrfach zusammen vorkommen. Sie werden unter einem neuen Namen zusammengefasst, um die Handhabung zu erleichtern.   List of Values (LOVs) sind explizite Aufz\u00e4hlungen aller erlaubten Werte."
+      "modelId": "MODL1",
+      "additionalProps": {
+        "Delimitation": "Das Informationsmodell macht in den meisten F\u00e4llen **keine** Aussagen \n* zur technischer Umsetzung von Informationen als Daten. Weder \u00fcber die Datenmodelle, noch \u00fcber deren Umsetzung in Datenbanken noch zu Systemen oder \u00dcbermittlzung von Daten.\n* zur Darstellung von Informationen in Bedienerschnittstellen (UI, UX)\n* zur Verwendung in Gech\u00e4ftsprozessen\n\nGrundlegende technische und physikalische Merkmale (Verarbeitungszeit bei NP-vollst\u00e4ndig, \u00dcbertragungsgeschwindigkeiten, Kanalkapazit\u00e4ten etc.) k\u00f6nnen ber\u00fccksichtigt werden. Dabei ist darauf zu achten dass sie als technische Grenzen erkennbar sind.",
+        "FULLPATH": "Software Engineering Modell:Semantische, fachliche Modelle/Informationsmodelle/Kernmodell/Informationsmodell",
+        "SOURCE-ID": "bfcef863-5b8a-4cbe-ad12-ebb2f64fc825",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-14T10:52:44.767000"
       },
-      "examples": [
-        "Bergname, 1-100 Zeichen",
-        "Mailadresse, ^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
-        "Ganzzahl 1..100",
-        "L\u00e4nge, in mm, numerisch(7,3)",
-        "Bearbeitungsstatus (Offen, inArbeit, abgebrochen, beendet)",
-        "Geo-Koordinate (L\u00e4ngengrad, Breitengrad)"
+      "keys": [
+        {
+          "name": "Informationsmodell_1",
+          "elements": [
+            "ATTR59"
+          ]
+        }
       ]
     },
     {
-      "elementid": "ENTI33",
+      "elementId": "ENTI38",
       "name": {
-        "en": "Werteliste"
+        "de": "Bin\u00e4rer Wertebereich",
+        "en": "Binary domain"
       },
-      "categoryid": "CATG20",
+      "description": {
+        "de": "Dokumente irgendwelcher Art, die nicht in einem als strukturiert bezeichneten Format (Text, Zahl, Boolean, Zeitpunkt) abgespeichert werden kann.  Als Dokumente im Filesystem (Formate: PDF, PNG, TIFF, XLS, DOC, kynote, etc.) oder als bin\u00e4re Datenbankobjekte verwaltet.",
+        "en": "Documents of any kind that cannot be saved in a format designated as structured (text, number, Boolean, time).\n\nManaged as documents in the file system (formats: PDF, PNG, TIFF, XLS, DOC, keynote, etc.) or as binary database objects."
+      },
+      "categoryId": "CATG10",
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Semantische, fachliche Modelle/Informationsmodelle/Kernmodell/Wertebereiche/Bin\u00e4rer Wertebereich",
+        "SOURCE-ID": "e7401a5f-3c5c-4dae-bc9a-f27ed7320d20",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-14T10:52:44.767000"
+      }
+    },
+    {
+      "elementId": "ENTI39",
+      "name": {
+        "de": "Boolean Wertebereich",
+        "en": "Boolean domain"
+      },
+      "description": {
+        "de": "Wahrheitswert (Boolean). Es kann es nur einen geben. Die Bedeutung von Wahr (true) und Falsch (false) ist immer dieselbe:  Die Aussage ist wahr oder sie ist falsch. Was wahr und falsch f\u00fcr eine Bedeutung oder Auswirkung hat, wird im Attribut festgelegt.",
+        "en": "Truth value (Boolean) there can only be one.\nThe meaning of true and false is always the same: the statement is true or it is false.\nThe meaning or effect of true and false is defined by the attribute."
+      },
+      "categoryId": "CATG10",
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Semantische, fachliche Modelle/Informationsmodelle/Kernmodell/Wertebereiche/Boolean Wertebereich",
+        "SOURCE-ID": "09798017-8954-4282-b19b-b0041de5b2ec",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-14T10:52:44.767000"
+      }
+    },
+    {
+      "elementId": "ENTI40",
+      "name": {
+        "de": "Numerischer Wertebereich",
+        "en": "Numeric domain"
+      },
+      "description": {
+        "de": "Beschreibung von Zahlenwerten.",
+        "en": "Specification of numeric values."
+      },
+      "categoryId": "CATG10",
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Semantische, fachliche Modelle/Informationsmodelle/Kernmodell/Wertebereiche/Numerischer Wertebereich",
+        "SOURCE-ID": "c53ad299-b029-41ae-b54f-8114fb0a5327",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-14T10:52:44.767000"
+      }
+    },
+    {
+      "elementId": "ENTI41",
+      "name": {
+        "de": "Textlicher Wertebereich",
+        "en": "Text domain"
+      },
+      "description": {
+        "de": "Textwerte sind Zeichenfolgen.   Die Werteregel ist typischerweise ein regul\u00e4rer Ausdruck, der die erlaubten Zeichen und ihre Anordnung vorgibt.",
+        "en": "Text values are character strings. \n\nThe value rule is typically a regular expression that specifies the permitted characters and their order."
+      },
+      "categoryId": "CATG10",
+      "examples": "[\"Bergname, 1-100 Zeichen\",\"Mailadresse, ^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$\"]",
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Semantische, fachliche Modelle/Informationsmodelle/Kernmodell/Wertebereiche/Textlicher Wertebereich",
+        "SOURCE-ID": "839ae311-cce5-4ea4-8a68-12757b6adfcf",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-14T10:52:44.767000"
+      }
+    },
+    {
+      "elementId": "ENTI42",
+      "name": {
+        "de": "Werteliste",
+        "en": "Value list"
+      },
+      "description": {
+        "de": "Eine Liste (abschliessende Aufz\u00e4hlung) von g\u00fcltigen Werten",
+        "en": "A list (final enumeration) of valid values"
+      },
+      "categoryId": "CATG10",
       "synonyms": [
         "*LOV",
         "Enumeration"
       ],
-      "description": {
-        "en": "Eine Liste (abschliessende Aufz\u00e4hlung) von g\u00fcltigen Werten"
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Semantische, fachliche Modelle/Informationsmodelle/Kernmodell/Wertebereiche/Werteliste",
+        "SOURCE-ID": "0b12dc9e-a288-4ae9-9e3c-c636d78ba1d5",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-14T10:52:44.767000"
       }
     },
     {
-      "elementid": "ENTI34",
+      "elementId": "ENTI43",
       "name": {
-        "en": "Zeitpunkt Wertebereich"
+        "de": "Zeitpunkt Wertebereich",
+        "en": "Time domain"
       },
-      "categoryid": "CATG20",
       "description": {
-        "en": "Werte die einen Zeitpunkt beschreiben. Die Genauigkeit des Wertes  wird durch die Granularit\u00e4t festgelegt (Miliosekunde, Sekunde, Minute, Stunde, Tag, Woche, Monat, Quartal, Halbjahr, Jahr, Jahrhundert). Weder die Speicherung noch die textliche Darstellung des Zeitpunkts ist Teil des Informationsmodells. Dies wird in der Datenbank- oder UI-Spezifikation behandelt.  Beispiele:: 2024-06-11 15:65:13.076 Januar, 2025 Isowoche 42 2023"
-      }
-    }
-  ],
-  "Relations": [
-    {
-      "elementid": "RELA43",
-      "relationtype": "SUBTYPE",
-      "fwd": {
-        "entityid": "ENTI8",
-        "assoctext": {
-          "de": "ist",
-          "en": "is"
-        },
-        "cardinality": "1",
-        "mandatory": true
+        "de": "Werte die einen Zeitpunkt beschreiben. Die Genauigkeit des Wertes  wird durch die Granularit\u00e4t festgelegt (Miliosekunde, Sekunde, Minute, Stunde, Tag, Woche, Monat, Quartal, Halbjahr, Jahr, Jahrhundert). Weder die Speicherung noch die textliche Darstellung des Zeitpunkts ist Teil des Informationsmodells. Dies wird in der Datenbank- oder UI-Spezifikation behandelt.  Beispiele:: 2024-06-11 15:65:13.076 Januar, 2025 Isowoche 42 2023",
+        "en": "Values that describe a point in time.\nThe accuracy of the value (from millisecond to year) is determined by the granularity (millisecond, second, minute, hour, day, week, month, quarter, half-year, year).\nNeither the storage nor the representation of the point in time is part of the information model. This is handled in the database or UI specification."
       },
-      "bwd": {
-        "entityid": "ENTI11",
-        "assoctext": {
-          "de": "ist",
-          "en": "is"
-        },
-        "cardinality": "1",
-        "mandatory": true,
-        "arcnumber": 0
-      }
-    },
-    {
-      "elementid": "RELA44",
-      "relationtype": "SUBTYPE",
-      "fwd": {
-        "entityid": "ENTI12",
-        "assoctext": {
-          "de": "ist",
-          "en": "is"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      },
-      "bwd": {
-        "entityid": "ENTI15",
-        "assoctext": {
-          "de": "ist",
-          "en": "is"
-        },
-        "cardinality": "1",
-        "mandatory": true,
-        "arcnumber": 0
-      }
-    },
-    {
-      "elementid": "RELA45",
-      "relationtype": "SUBTYPE",
-      "fwd": {
-        "entityid": "ENTI8",
-        "assoctext": {
-          "de": "ist",
-          "en": "is"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      },
-      "bwd": {
-        "entityid": "ENTI20",
-        "assoctext": {
-          "de": "ist",
-          "en": "is"
-        },
-        "cardinality": "1",
-        "mandatory": true,
-        "arcnumber": 0
-      }
-    },
-    {
-      "elementid": "RELA46",
-      "relationtype": "SUBTYPE",
-      "fwd": {
-        "entityid": "ENTI8",
-        "assoctext": {
-          "de": "ist",
-          "en": "is"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      },
-      "bwd": {
-        "entityid": "ENTI21",
-        "assoctext": {
-          "de": "ist",
-          "en": "is"
-        },
-        "cardinality": "1",
-        "mandatory": true,
-        "arcnumber": 0
-      }
-    },
-    {
-      "elementid": "RELA47",
-      "relationtype": "SUBTYPE",
-      "fwd": {
-        "entityid": "ENTI12",
-        "assoctext": {
-          "de": "ist",
-          "en": "is"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      },
-      "bwd": {
-        "entityid": "ENTI22",
-        "assoctext": {
-          "de": "ist",
-          "en": "is"
-        },
-        "cardinality": "1",
-        "mandatory": true,
-        "arcnumber": 0
-      }
-    },
-    {
-      "elementid": "RELA48",
-      "relationtype": "SUBTYPE",
-      "fwd": {
-        "entityid": "ENTI32",
-        "assoctext": {
-          "de": "ist",
-          "en": "is"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      },
-      "bwd": {
-        "entityid": "ENTI23",
-        "assoctext": {
-          "de": "ist",
-          "en": "is"
-        },
-        "cardinality": "1",
-        "mandatory": true,
-        "arcnumber": 0
-      }
-    },
-    {
-      "elementid": "RELA49",
-      "relationtype": "SUBTYPE",
-      "fwd": {
-        "entityid": "ENTI32",
-        "assoctext": {
-          "de": "ist",
-          "en": "is"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      },
-      "bwd": {
-        "entityid": "ENTI26",
-        "assoctext": {
-          "de": "ist",
-          "en": "is"
-        },
-        "cardinality": "1",
-        "mandatory": true,
-        "arcnumber": 0
-      }
-    },
-    {
-      "elementid": "RELA50",
-      "relationtype": "SUBTYPE",
-      "fwd": {
-        "entityid": "ENTI32",
-        "assoctext": {
-          "de": "ist",
-          "en": "is"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      },
-      "bwd": {
-        "entityid": "ENTI27",
-        "assoctext": {
-          "de": "ist",
-          "en": "is"
-        },
-        "cardinality": "1",
-        "mandatory": true,
-        "arcnumber": 0
-      }
-    },
-    {
-      "elementid": "RELA51",
-      "relationtype": "SUBTYPE",
-      "fwd": {
-        "entityid": "ENTI32",
-        "assoctext": {
-          "de": "ist",
-          "en": "is"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      },
-      "bwd": {
-        "entityid": "ENTI28",
-        "assoctext": {
-          "de": "ist",
-          "en": "is"
-        },
-        "cardinality": "1",
-        "mandatory": true,
-        "arcnumber": 0
-      }
-    },
-    {
-      "elementid": "RELA52",
-      "relationtype": "SUBTYPE",
-      "fwd": {
-        "entityid": "ENTI32",
-        "assoctext": {
-          "de": "ist",
-          "en": "is"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      },
-      "bwd": {
-        "entityid": "ENTI30",
-        "assoctext": {
-          "de": "ist",
-          "en": "is"
-        },
-        "cardinality": "1",
-        "mandatory": true,
-        "arcnumber": 0
-      }
-    },
-    {
-      "elementid": "RELA53",
-      "relationtype": "SUBTYPE",
-      "fwd": {
-        "entityid": "ENTI32",
-        "assoctext": {
-          "de": "ist",
-          "en": "is"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      },
-      "bwd": {
-        "entityid": "ENTI33",
-        "assoctext": {
-          "de": "ist",
-          "en": "is"
-        },
-        "cardinality": "1",
-        "mandatory": true,
-        "arcnumber": 0
-      }
-    },
-    {
-      "elementid": "RELA54",
-      "relationtype": "SUBTYPE",
-      "fwd": {
-        "entityid": "ENTI32",
-        "assoctext": {
-          "de": "ist",
-          "en": "is"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      },
-      "bwd": {
-        "entityid": "ENTI34",
-        "assoctext": {
-          "de": "ist",
-          "en": "is"
-        },
-        "cardinality": "1",
-        "mandatory": true,
-        "arcnumber": 0
-      }
-    },
-    {
-      "elementid": "RELA13",
-      "relationtype": "M:1",
-      "fwd": {
-        "entityid": "ENTI12",
-        "assoctext": {
-          "en": "erg\u00e4nzt um"
-        },
-        "cardinality": "M",
-        "mandatory": false,
-        "historicised": false,
-        "arcnumber": 1
-      },
-      "bwd": {
-        "entityid": "ENTI24",
-        "assoctext": {
-          "en": "erg\u00e4nzt"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      }
-    },
-    {
-      "elementid": "RELA14",
-      "relationtype": "ROLE",
-      "fwd": {
-        "entityid": "ENTI12",
-        "assoctext": {
-          "en": "ist"
-        },
-        "cardinality": "1",
-        "mandatory": false,
-        "historicised": false
-      },
-      "bwd": {
-        "entityid": "ENTI17",
-        "assoctext": null,
-        "cardinality": "1",
-        "mandatory": true
-      }
-    },
-    {
-      "elementid": "RELA15",
-      "relationtype": "M:1",
-      "fwd": {
-        "entityid": "ENTI8",
-        "assoctext": {
-          "en": "erg\u00e4nzt um"
-        },
-        "cardinality": "M",
-        "mandatory": false,
-        "historicised": false,
-        "arcnumber": 1
-      },
-      "bwd": {
-        "entityid": "ENTI24",
-        "assoctext": {
-          "en": "erg\u00e4nzt"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      }
-    },
-    {
-      "elementid": "RELA16",
-      "relationtype": "ROLE",
-      "fwd": {
-        "entityid": "ENTI8",
-        "assoctext": {
-          "en": "abgeschlossen mit"
-        },
-        "cardinality": "1",
-        "mandatory": false,
-        "historicised": false
-      },
-      "bwd": {
-        "entityid": "ENTI9",
-        "assoctext": {
-          "en": "schliesst ab"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      }
-    },
-    {
-      "elementid": "RELA17",
-      "relationtype": "M:1",
-      "fwd": {
-        "entityid": "ENTI13",
-        "assoctext": {
-          "en": "eingeschr\u00e4nkt durch"
-        },
-        "cardinality": "M",
-        "mandatory": false,
-        "historicised": false
-      },
-      "bwd": {
-        "entityid": "ENTI10",
-        "assoctext": {
-          "en": "schr\u00e4nkt ein"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      }
-    },
-    {
-      "elementid": "RELA18",
-      "relationtype": "M:1",
-      "fwd": {
-        "entityid": "ENTI13",
-        "assoctext": {
-          "en": "eingeschr\u00e4nkt durch"
-        },
-        "cardinality": "M",
-        "mandatory": false,
-        "historicised": false
-      },
-      "bwd": {
-        "entityid": "ENTI14",
-        "assoctext": {
-          "en": "sch\u00e4nkt ein"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      }
-    },
-    {
-      "elementid": "RELA19",
-      "relationtype": "M:1",
-      "fwd": {
-        "entityid": "ENTI13",
-        "assoctext": {
-          "en": "erg\u00e4nzt um"
-        },
-        "cardinality": "M",
-        "mandatory": false,
-        "historicised": false,
-        "arcnumber": 1
-      },
-      "bwd": {
-        "entityid": "ENTI24",
-        "assoctext": {
-          "en": "erg\u00e4nzt"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      }
-    },
-    {
-      "elementid": "RELA20",
-      "relationtype": "M:1",
-      "fwd": {
-        "entityid": "ENTI13",
-        "assoctext": {
-          "en": "verkn\u00fcpft mittels"
-        },
-        "cardinality": "M",
-        "mandatory": false,
-        "historicised": false
-      },
-      "bwd": {
-        "entityid": "ENTI9",
-        "assoctext": {
-          "en": "verkn\u00fcpft"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      }
-    },
-    {
-      "elementid": "RELA21",
-      "relationtype": "M:1",
-      "fwd": {
-        "entityid": "ENTI13",
-        "assoctext": {
-          "en": "beschrieben durch"
-        },
-        "cardinality": "M",
-        "mandatory": false,
-        "historicised": false
-      },
-      "bwd": {
-        "entityid": "ENTI15",
-        "assoctext": {
-          "en": "beschreibt"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      }
-    },
-    {
-      "elementid": "RELA22",
-      "relationtype": "ROLE",
-      "fwd": {
-        "entityid": "ENTI14",
-        "assoctext": {
-          "en": "besteht aus"
-        },
-        "cardinality": "1",
-        "mandatory": false,
-        "historicised": false
-      },
-      "bwd": {
-        "entityid": "ENTI16",
-        "assoctext": {
-          "en": "formt"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      }
-    },
-    {
-      "elementid": "RELA23",
-      "relationtype": "1:1",
-      "fwd": {
-        "entityid": "ENTI10",
-        "assoctext": {
-          "en": "schr\u00e4nkt ein"
-        },
-        "cardinality": "1",
-        "mandatory": false,
-        "historicised": false
-      },
-      "bwd": {
-        "entityid": "ENTI9",
-        "assoctext": {
-          "en": "eingeschr\u00e4nkt durch"
-        },
-        "cardinality": "1",
-        "mandatory": false
-      }
-    },
-    {
-      "elementid": "RELA24",
-      "relationtype": "M:N",
-      "fwd": {
-        "entityid": "ENTI18",
-        "assoctext": {
-          "en": "schr\u00e4nkt ein"
-        },
-        "cardinality": "M",
-        "mandatory": false,
-        "historicised": false
-      },
-      "bwd": {
-        "entityid": "ENTI12",
-        "assoctext": {
-          "en": "eingeschr\u00e4nkt durch"
-        },
-        "cardinality": "M",
-        "mandatory": false
-      }
-    },
-    {
-      "elementid": "RELA25",
-      "relationtype": "M:1",
-      "fwd": {
-        "entityid": "ENTI18",
-        "assoctext": {
-          "en": "erg\u00e4nzt um"
-        },
-        "cardinality": "M",
-        "mandatory": false,
-        "historicised": false,
-        "arcnumber": 1
-      },
-      "bwd": {
-        "entityid": "ENTI24",
-        "assoctext": {
-          "en": "erg\u00e4nzt"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      }
-    },
-    {
-      "elementid": "RELA26",
-      "relationtype": "M:N",
-      "fwd": {
-        "entityid": "ENTI18",
-        "assoctext": {
-          "en": "sch\u00e4nkt ein"
-        },
-        "cardinality": "M",
-        "mandatory": false,
-        "historicised": false
-      },
-      "bwd": {
-        "entityid": "ENTI13",
-        "assoctext": {
-          "en": "eingeschr\u00e4nkt durch"
-        },
-        "cardinality": "M",
-        "mandatory": false
-      }
-    },
-    {
-      "elementid": "RELA27",
-      "relationtype": "M:N",
-      "fwd": {
-        "entityid": "ENTI18",
-        "assoctext": {
-          "en": "sch\u00e4nkt ein"
-        },
-        "cardinality": "M",
-        "mandatory": false,
-        "historicised": false
-      },
-      "bwd": {
-        "entityid": "ENTI8",
-        "assoctext": {
-          "en": "eingeschr\u00e4nkt durch"
-        },
-        "cardinality": "M",
-        "mandatory": false
-      }
-    },
-    {
-      "elementid": "RELA28",
-      "relationtype": "M:1",
-      "fwd": {
-        "entityid": "ENTI25",
-        "assoctext": {
-          "en": "definiert"
-        },
-        "cardinality": "M",
-        "mandatory": false,
-        "historicised": false
-      },
-      "bwd": {
-        "entityid": "ENTI19",
-        "assoctext": {
-          "en": "definiert f\u00fcr"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      }
-    },
-    {
-      "elementid": "RELA29",
-      "relationtype": "M:1",
-      "fwd": {
-        "entityid": "ENTI25",
-        "assoctext": {
-          "en": "aufgebaut aus"
-        },
-        "cardinality": "M",
-        "mandatory": false,
-        "historicised": false
-      },
-      "bwd": {
-        "entityid": "ENTI13",
-        "assoctext": {
-          "en": "tr\u00e4gt bei zu"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      }
-    },
-    {
-      "elementid": "RELA30",
-      "relationtype": "M:1",
-      "fwd": {
-        "entityid": "ENTI25",
-        "assoctext": {
-          "en": "erg\u00e4nzt um"
-        },
-        "cardinality": "M",
-        "mandatory": false,
-        "historicised": false,
-        "arcnumber": 1
-      },
-      "bwd": {
-        "entityid": "ENTI24",
-        "assoctext": {
-          "en": "erg\u00e4nzt"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      }
-    },
-    {
-      "elementid": "RELA31",
-      "relationtype": "M:1",
-      "fwd": {
-        "entityid": "ENTI25",
-        "assoctext": {
-          "en": "aufgebaut aus"
-        },
-        "cardinality": "M",
-        "mandatory": false,
-        "historicised": false
-      },
-      "bwd": {
-        "entityid": "ENTI32",
-        "assoctext": {
-          "en": "tr\u00e4gt bei zu"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      }
-    },
-    {
-      "elementid": "RELA32",
-      "relationtype": "M:1",
-      "fwd": {
-        "entityid": "ENTI19",
-        "assoctext": {
-          "en": "gruppiert"
-        },
-        "cardinality": "M",
-        "mandatory": false,
-        "historicised": false
-      },
-      "bwd": {
-        "entityid": "ENTI19",
-        "assoctext": {
-          "en": "gruppiert in"
-        },
-        "cardinality": "1",
-        "mandatory": false
-      }
-    },
-    {
-      "elementid": "RELA33",
-      "relationtype": "M:1",
-      "fwd": {
-        "entityid": "ENTI19",
-        "assoctext": {
-          "en": "gruppiert"
-        },
-        "cardinality": "M",
-        "mandatory": false,
-        "historicised": false
-      },
-      "bwd": {
-        "entityid": "ENTI32",
-        "assoctext": {
-          "en": "gruppiert in"
-        },
-        "cardinality": "1",
-        "mandatory": false
-      }
-    },
-    {
-      "elementid": "RELA34",
-      "relationtype": "M:1",
-      "fwd": {
-        "entityid": "ENTI19",
-        "assoctext": {
-          "en": "erg\u00e4nzt um"
-        },
-        "cardinality": "M",
-        "mandatory": false,
-        "historicised": false,
-        "arcnumber": 1
-      },
-      "bwd": {
-        "entityid": "ENTI24",
-        "assoctext": {
-          "en": "erg\u00e4nzt"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      }
-    },
-    {
-      "elementid": "RELA35",
-      "relationtype": "M:1",
-      "fwd": {
-        "entityid": "ENTI19",
-        "assoctext": {
-          "en": "gruppiert"
-        },
-        "cardinality": "M",
-        "mandatory": false,
-        "historicised": false
-      },
-      "bwd": {
-        "entityid": "ENTI13",
-        "assoctext": {
-          "en": "gruppiert in"
-        },
-        "cardinality": "1",
-        "mandatory": false
-      }
-    },
-    {
-      "elementid": "RELA36",
-      "relationtype": "M:1",
-      "fwd": {
-        "entityid": "ENTI29",
-        "assoctext": {
-          "en": "definiert"
-        },
-        "cardinality": "M",
-        "mandatory": false,
-        "historicised": false
-      },
-      "bwd": {
-        "entityid": "ENTI28",
-        "assoctext": {
-          "en": "gemessen in"
-        },
-        "cardinality": "1",
-        "mandatory": false
-      }
-    },
-    {
-      "elementid": "RELA37",
-      "relationtype": "M:1",
-      "fwd": {
-        "entityid": "ENTI16",
-        "assoctext": {
-          "en": "ist"
-        },
-        "cardinality": "1",
-        "mandatory": true,
-        "historicised": false,
-        "arcnumber": 1
-      },
-      "bwd": {
-        "entityid": "ENTI11",
-        "assoctext": {
-          "en": "dient als"
-        },
-        "cardinality": "M",
-        "mandatory": false
-      }
-    },
-    {
-      "elementid": "RELA38",
-      "relationtype": "M:1",
-      "fwd": {
-        "entityid": "ENTI16",
-        "assoctext": {
-          "en": "ist"
-        },
-        "cardinality": "1",
-        "mandatory": true,
-        "historicised": false,
-        "arcnumber": 1
-      },
-      "bwd": {
-        "entityid": "ENTI15",
-        "assoctext": {
-          "en": "dient als"
-        },
-        "cardinality": "M",
-        "mandatory": false
-      }
-    },
-    {
-      "elementid": "RELA39",
-      "relationtype": "M:1",
-      "fwd": {
-        "entityid": "ENTI32",
-        "assoctext": {
-          "en": "erg\u00e4nzt um"
-        },
-        "cardinality": "M",
-        "mandatory": false,
-        "historicised": false,
-        "arcnumber": 1
-      },
-      "bwd": {
-        "entityid": "ENTI24",
-        "assoctext": {
-          "en": "erg\u00e4nzt"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      }
-    },
-    {
-      "elementid": "RELA40",
-      "relationtype": "M:1",
-      "fwd": {
-        "entityid": "ENTI32",
-        "assoctext": {
-          "en": "schr\u00e4nkt ein"
-        },
-        "cardinality": "M",
-        "mandatory": false,
-        "historicised": false
-      },
-      "bwd": {
-        "entityid": "ENTI12",
-        "assoctext": {
-          "en": "eingeschr\u00e4nkt durch"
-        },
-        "cardinality": "1",
-        "mandatory": false
-      }
-    },
-    {
-      "elementid": "RELA41",
-      "relationtype": "M:1",
-      "fwd": {
-        "entityid": "ENTI23",
-        "assoctext": {
-          "en": "umfasst"
-        },
-        "cardinality": "M",
-        "mandatory": false,
-        "historicised": false
-      },
-      "bwd": {
-        "entityid": "ENTI22",
-        "assoctext": {
-          "en": "tr\u00e4gt bei zu"
-        },
-        "cardinality": "1",
-        "mandatory": true
-      }
-    },
-    {
-      "elementid": "RELA42",
-      "relationtype": "M:1",
-      "fwd": {
-        "entityid": "ENTI33",
-        "assoctext": {
-          "en": "aufgebaut aus"
-        },
-        "cardinality": "M",
-        "mandatory": false,
-        "historicised": false
-      },
-      "bwd": {
-        "entityid": "ENTI31",
-        "assoctext": {
-          "en": "bildet"
-        },
-        "cardinality": "1",
-        "mandatory": true
+      "categoryId": "CATG10",
+      "modelId": "MODL1",
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Semantische, fachliche Modelle/Informationsmodelle/Kernmodell/Wertebereiche/Zeitpunkt Wertebereich",
+        "SOURCE-ID": "7d67aa42-70dc-46e1-aace-9e79d72f3db3",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-14T10:52:44.767000"
       }
     }
   ],
   "Attributes": [
     {
-      "elementid": "ATTR25",
-      "name": {
-        "en": "Ableitungsformel"
-      },
-      "mandatory": true,
-      "parentid": "ENTI17",
-      "domainid": "DOMA32",
-      "displayseq": 1,
+      "elementId": "ATTR44",
+      "name": "Anzeigename",
       "description": {
-        "en": "Beschreibung der Regeln, Formeln die festlegen, wie der Wert dieses Attributs aus anderen Attributen des Informationsmodells gerechnet werden kann.\n\nDie Beschreibung kann informell sein, sollte aber auf die exakten Regeln, Programme, Formeln hinweisen."
+        "de": "M\u00f6glicherweise \u00fcbersetzter Name eines Attributs f\u00fcr die Anzeige auf Bildschirmmasken und in umgangssprachlich formulierten Dokumenten.\n\nBedeutung: siehe auch beim Attribut *Name* in dieser Entit\u00e4t.\n\nMuss innerhalb der Entit\u00e4t f\u00fcr jede Sprache eindeutig sein.",
+        "en": "Possibly translated name of an attribute for display on screen masks and in colloquially worded documents.\n\nMeaning: see also the *Name* attribute in this entity.\n\nMust be unique within the entity for each language."
       },
-      "descriptive": true,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR26",
-      "name": {
-        "en": "Anzeigename"
+      "domainId": "DOMA14",
+      "parentId": "ENTI27",
+      "displname": {
+        "de": "Anzeigename",
+        "en": "Display name"
       },
+      "sortOrder": 2,
       "mandatory": false,
-      "parentid": "ENTI12",
-      "domainid": "DOMA36",
-      "displayseq": 2,
-      "description": {
-        "en": "M\u00f6glicherweise \u00fcbersetzter Name eines Attributs f\u00fcr die Anzeige auf Bildschirmmasken und in umgangssprachlich formulierten Dokumenten.\n\nBedeutung: siehe auch beim Attribut *Name* in dieser Entit\u00e4t.\n\nMuss innerhalb der Entit\u00e4t f\u00fcr jede Sprache eindeutig sein.\n"
-      },
+      "descriptive": false,
+      "temporal": false,
+      "repeated": false,
       "examples": [
         "Kundennummer",
         "Product name"
       ],
-      "descriptive": false,
-      "historicised": false,
-      "translated": true
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Attribut/Anzeigename",
+        "MULTILINGUAL": "1",
+        "SOURCE-ID": "382bb3c1-5079-4bbb-b296-3b30bddb8b73",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "2",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com"
+      }
     },
     {
-      "elementid": "ATTR27",
-      "name": {
-        "en": "Anzeigereihenfolge"
-      },
-      "mandatory": false,
-      "parentid": "ENTI12",
-      "domainid": "DOMA49",
-      "displayseq": 5,
+      "elementId": "ATTR45",
+      "name": "Anzeigereihenfolge",
       "description": {
-        "en": "Reihenfolge der Darstellungs dieses Attributs innerhalb der Entit\u00e4t.\nSortiert nach fachlichen Aspekten (Wichtigkeit, Zusammengeh\u00f6rigkeit)"
+        "de": "Reihenfolge der Darstellungs dieses Attributs innerhalb der Entit\u00e4t.\nSortiert nach fachlichen Aspekten (Wichtigkeit, Zusammengeh\u00f6rigkeit) mit dem Zweck der einfacheren Lesbarkeit.",
+        "en": "Order in which this attribute should be displayed within the entity.\nSorted according to technical aspects (importance, relatedness) for the purpose of easier readability."
       },
+      "domainId": "DOMA22",
+      "parentId": "ENTI27",
+      "displname": {
+        "de": "Anzeigereihenfolge",
+        "en": "Display sequence"
+      },
+      "sortOrder": 5,
+      "mandatory": false,
+      "descriptive": false,
+      "temporal": false,
+      "repeated": false,
       "examples": [
         "1",
         "99"
       ],
-      "descriptive": false,
-      "historicised": false
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Attribut/Anzeigereihenfolge",
+        "SOURCE-ID": "bc3ef225-c9c6-485f-ad71-2dff0c10f392",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "5",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com"
+      }
     },
     {
-      "elementid": "ATTR28",
-      "name": {
-        "en": "Beispiel"
-      },
-      "mandatory": false,
-      "parentid": "ENTI12",
-      "domainid": "DOMA46",
-      "displayseq": 12,
+      "elementId": "ATTR46",
+      "name": "Beispiel",
       "description": {
-        "en": "Beispielwerte f\u00fcr ein Attribut. In der Regel 1\u20132 Werte als Beispiele aus der realen Welt . \n\nSie helfen dabei, ein Attribut besser zu verstehen und mit bestehendem Wissen zu verkn\u00fcpfen.\n\nBeispielwerte sollten wiederholt  oder \u00fcber mehrere Elemente hinweg verkn\u00fcpft werden (Entit\u00e4t, Attribut, Beziehung usw.). Auf diese Weise lassen sich konkrete *Geschichten* bilden."
+        "de": "Beispielwerte f\u00fcr ein Attribut. In der Regel 1\u20132 Werte als Beispiele aus der realen Welt . \n\nSie helfen dabei, ein Attribut besser zu verstehen und mit bestehendem Wissen zu verkn\u00fcpfen.\n\nBeispielwerte sollten wiederholt  oder \u00fcber mehrere Elemente hinweg verkn\u00fcpft werden (Entit\u00e4t, Attribut, Beziehung usw.). Auf diese Weise lassen sich konkrete *Geschichten* bilden.",
+        "en": "Example values for an attribute. Usually 1\u20132 values as examples from the real world. \n\nThey help to better understand an attribute and link it to existing knowledge.\n\nExample values should be repeated  or linked across multiple elements (entity, attribute, relationship, etc.). This allows concrete *stories* to be formed."
       },
-      "descriptive": false,
-      "historicised": false,
-      "repeated": true
-    },
-    {
-      "elementid": "ATTR29",
-      "name": {
-        "en": "Beschreibung"
+      "domainId": "DOMA21",
+      "parentId": "ENTI27",
+      "displname": {
+        "de": "Beispiel",
+        "en": "Value"
       },
+      "sortOrder": 6,
       "mandatory": false,
-      "parentid": "ENTI12",
-      "domainid": "DOMA32",
-      "displayseq": 3,
-      "description": {
-        "en": "Erl\u00e4uterung der Verwendung, Bedeutung die ein Wert dieses Attributs \u00fcber die Entit\u00e4t macht."
-      },
       "descriptive": false,
-      "historicised": false,
-      "translated": true
+      "temporal": false,
+      "repeated": true,
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Attribut/Beispiel",
+        "SOURCE-ID": "7068d5e7-9133-4845-9be4-8624e1bc79ba",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "6",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com"
+      }
     },
     {
-      "elementid": "ATTR30",
-      "name": {
-        "en": "ist deskriptiv"
+      "elementId": "ATTR47",
+      "name": "Beschreibung",
+      "description": {
+        "de": "Erl\u00e4uterung der Verwendung, Bedeutung die ein Wert dieses Attributs \u00fcber die Entit\u00e4t macht.",
+        "en": "Explanation of the use and significance of a value of this attribute in relation to the entity."
       },
+      "domainId": "DOMA11",
+      "parentId": "ENTI27",
+      "displname": {
+        "de": "Beschreibung",
+        "en": "Description"
+      },
+      "sortOrder": 3,
+      "mandatory": false,
+      "descriptive": false,
+      "temporal": false,
+      "repeated": false,
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Attribut/Beschreibung",
+        "MULTILINGUAL": "1",
+        "SOURCE-ID": "573d6b75-7548-4765-9b9c-a68a46efda8c",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "3",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com"
+      }
+    },
+    {
+      "elementId": "ATTR48",
+      "name": "ist deskriptiv",
+      "description": {
+        "de": "Das Attribut charakterisiert diese Entit\u00e4t bzw. dieses Gruppenattribut und ist wichtig f\u00fcr deren Verst\u00e4ndnis.",
+        "en": "The attribute characterizes the entity or the group attribute and is important for its understanding."
+      },
+      "domainId": "DOMA16",
+      "parentId": "ENTI27",
+      "displname": {
+        "de": "ist deskriptiv",
+        "en": "is descriptive"
+      },
+      "sortOrder": 7,
       "mandatory": true,
-      "parentid": "ENTI12",
-      "domainid": "DOMA55",
-      "displayseq": 6,
-      "description": {
-        "en": "Das Attribut charakterisiert diese Entit\u00e4t bzw. dieses Gruppenattribut und ist wichtig f\u00fcr deren Verst\u00e4ndnis."
-      },
       "descriptive": false,
-      "historicised": false
+      "temporal": false,
+      "repeated": false,
+      "additionalProps": {
+        "DefaultValue": "False",
+        "FULLPATH": "Software Engineering Modell:Attribut/ist deskriptiv",
+        "SOURCE-ID": "cb686d5b-ceae-49c8-bb1b-5ed06ab10b05",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "7",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com"
+      }
     },
     {
-      "elementid": "ATTR31",
-      "name": {
-        "en": "ist historisiert"
+      "elementId": "ATTR49",
+      "name": "ist historisiert",
+      "description": {
+        "de": "Indikator, der angibt, ob Werte dieses Attributs historisiert werden. D.h. ob die \u00c4nderungsgeschichte (alte Werte + Zeitpunkt der \u00c4nderung) aus fachlicher Sicht nachgef\u00fchrt und in der fachlichen Applikation angeboten wird.",
+        "en": "Indicator that specifies whether values for this attribute are historicised. In other words, whether the change history (old values + time of change) is tracked from a functional perspective and made available in the functional application."
       },
+      "domainId": "DOMA16",
+      "parentId": "ENTI27",
+      "displname": {
+        "de": "ist historisiert",
+        "en": "is historicised"
+      },
+      "sortOrder": 10,
       "mandatory": false,
-      "parentid": "ENTI12",
-      "domainid": "DOMA55",
-      "displayseq": 8,
-      "description": {
-        "en": "Indikator, der angibt, ob Werte dieses Attributs historisiert werden. D.h. ob die \u00c4nderungsgeschichte (alte Werte + Zeitpunkt der \u00c4nderung) aus fachlicher Sicht nachgef\u00fchrt und in der fachlichen Applikation angeboten wird.\n"
-      },
       "descriptive": false,
-      "historicised": false
+      "temporal": false,
+      "repeated": false,
+      "additionalProps": {
+        "DefaultValue": "false",
+        "FULLPATH": "Software Engineering Modell:Attribut/ist historisiert",
+        "SOURCE-ID": "3b66df26-0722-45f8-b025-36ea43a295d2",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "10",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com"
+      }
     },
     {
-      "elementid": "ATTR32",
-      "name": {
-        "en": "ist mehrsprachig"
+      "elementId": "ATTR50",
+      "name": "ist mehrsprachig",
+      "description": {
+        "de": "Indikator, der angibt, ob der Wert des Attributs in mehreren Sprachen verwaltet werden soll.\n\nNur m\u00f6glich f\u00fcr textbasierte Attribute.\n\nSemantisch ist es **ein** Wert. Das bedeutet, auch wenn er in verschiedenen Sprachen ausgedr\u00fcckt werden kann, muss er immer dasselbe bedeuten.\n\nFalls ein ein Schl\u00fcsselattribut mehrsprachig sein kann, muss die Eindeutigkeit f\u00fcr jede Sprache garantiert werden.\n\nWie viele oder welche Sprachen es sind, ist nicht spezifiziert.",
+        "en": "Indicator that specifies whether the value of the attribute should be managed in multiple languages.\n\nOnly possible for text-based attributes.\n\nSemantically, it is **one** value. This means that even if it can be expressed in different languages, it must always have the same meaning.\n\nIf a key attribute can be multilingual, uniqueness must be guaranteed for each language.\n\nHow many or which languages there are is not specified."
       },
+      "domainId": "DOMA16",
+      "parentId": "ENTI27",
+      "displname": {
+        "de": "ist mehrsprachig",
+        "en": "is multilingual"
+      },
+      "sortOrder": 12,
       "mandatory": false,
-      "parentid": "ENTI12",
-      "domainid": "DOMA55",
-      "displayseq": 10,
-      "description": {
-        "en": "Indikator, der angibt, ob der Wert des Attributs in mehreren Sprachen verwaltet werden soll.\n\nNur m\u00f6glich f\u00fcr textbasierte Attribute.\n\nSemantisch ist es **ein** Wert. Das bedeutet, auch wenn er in verschiedenen Sprachen ausgedr\u00fcckt werden kann, muss er immer dasselbe bedeuten.\n\nFalls ein ein Schl\u00fcsselattribut mehrsprachig sein kann, muss die Eindeutigkeit f\u00fcr jede Sprache garantiert werden.\n\nWie viele oder welche Sprachen es sind, ist nicht spezifiziert. \n"
-      },
       "descriptive": false,
-      "historicised": false
+      "temporal": false,
+      "repeated": false,
+      "additionalProps": {
+        "DefaultValue": "false",
+        "FULLPATH": "Software Engineering Modell:Attribut/ist mehrsprachig",
+        "SOURCE-ID": "b4a1892c-ba76-4eab-a2a8-41545f31da22",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "12",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com"
+      }
     },
     {
-      "elementid": "ATTR33",
-      "name": {
-        "en": "ist obligatorisch"
-      },
-      "mandatory": true,
-      "parentid": "ENTI12",
-      "domainid": "DOMA55",
-      "displayseq": 7,
+      "elementId": "ATTR51",
+      "name": "ist verschl\u00fcsselt",
       "description": {
-        "en": "Indikator ob dieses Attribut einen Wert haben muss (*true*) oder ob es leer bleiben kann (\"false*)"
+        "de": "Indikator, der angibt, dass Wert in der Datenspeicherung und in gewissen Kommunikationskan\u00e4len zu verschl\u00fcsseln ist.",
+        "en": "Indicator that specifies that the value is to be encrypted in data storage and in certain communication channels."
       },
-      "descriptive": true,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR34",
-      "name": {
-        "en": "ist verschl\u00fcsselt"
+      "domainId": "DOMA16",
+      "parentId": "ENTI27",
+      "displname": {
+        "de": "ist verschl\u00fcsselt",
+        "en": "is encrypted"
       },
+      "sortOrder": 13,
       "mandatory": false,
-      "parentid": "ENTI12",
-      "domainid": "DOMA55",
-      "displayseq": 11,
-      "description": {
-        "en": "Indikator, der angibt, dass Wert in der Datenspeicherung und in gewissen Kommunikationskan\u00e4len zu verschl\u00fcsseln ist."
-      },
       "descriptive": false,
-      "historicised": false
+      "temporal": false,
+      "repeated": false,
+      "additionalProps": {
+        "DefaultValue": "false",
+        "FULLPATH": "Software Engineering Modell:Attribut/ist verschl\u00fcsselt",
+        "SOURCE-ID": "ad9a6e35-9bb9-40ab-9486-88217bd5e466",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "13",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com"
+      }
     },
     {
-      "elementid": "ATTR35",
-      "name": {
-        "en": "ist wiederholt"
+      "elementId": "ATTR52",
+      "name": "ist wiederholt",
+      "description": {
+        "de": "Indikator, der angibt, ob das Attribut mehrere Werte annehmen kann. \n\nAlle Werte sind aus dem gleichen Wertebereich. Wiederholte Attributwerte haben keine definierte Reihenfolge. D.h. die Position in der Liste der Wiederholungen macht keine fachliche Aussage.",
+        "en": "Indicator that specifies whether the attribute can have multiple values.\n\nAll values are from the same value range. Repeated attribute values have no defined order. This means that the position in the list of repetitions has no technical significance."
       },
+      "domainId": "DOMA16",
+      "parentId": "ENTI27",
+      "displname": {
+        "de": "ist wiederholt",
+        "en": "is repeated"
+      },
+      "sortOrder": 11,
       "mandatory": false,
-      "parentid": "ENTI12",
-      "domainid": "DOMA55",
-      "displayseq": 9,
-      "description": {
-        "en": "Indikator, der angibt, ob das Attribut mehrere Werte annehmen kann. \n\nAlle Werte sind aus dem gleichen Wertebereich. Wiederholte Attributwerte haben keine definierte Reihenfolge. D.h. die Position in der Liste der Wiederholungen macht keine fachliche Aussage."
-      },
       "descriptive": false,
-      "historicised": false
+      "temporal": false,
+      "repeated": false,
+      "additionalProps": {
+        "DefaultValue": "false",
+        "FULLPATH": "Software Engineering Modell:Attribut/ist wiederholt",
+        "SOURCE-ID": "eb38f678-c678-4d46-9d35-1b88001844cc",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "11",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com"
+      }
     },
     {
-      "elementid": "ATTR36",
-      "name": {
-        "en": "Kurzbeschrieb"
+      "elementId": "ATTR53",
+      "name": "Kurzbeschrieb",
+      "description": {
+        "de": "Kurze Erl\u00e4uterung zur Verwendung, Handhabung und Bedeutung des Attributs, das in Benutzeroberfl\u00e4chen angezeigt werden soll.",
+        "en": "Short explanation of use, handling, meaning of the attribute to be displayed in user interfaces."
       },
+      "domainId": "DOMA12",
+      "parentId": "ENTI27",
+      "displname": {
+        "de": "Kurzbeschrieb",
+        "en": "Short Description"
+      },
+      "sortOrder": 4,
       "mandatory": false,
-      "parentid": "ENTI12",
-      "domainid": "DOMA34",
-      "displayseq": 4,
-      "description": {
-        "en": "Kurze Erl\u00e4uterung zur Verwendung, Handhabung und Bedeutung des Attributs, das in Benutzeroberfl\u00e4chen angezeigt werden soll."
-      },
       "descriptive": false,
-      "historicised": false,
-      "translated": true
+      "temporal": false,
+      "repeated": false,
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Attribut/Kurzbeschrieb",
+        "MULTILINGUAL": "1",
+        "SOURCE-ID": "f98ae5d0-0edf-4c88-88ae-f96bb887c0b0",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "4",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com"
+      }
     },
     {
-      "elementid": "ATTR37",
-      "name": {
+      "elementId": "ATTR54",
+      "name": "Name",
+      "description": {
+        "de": "Aussagekr\u00e4ftige Bezeichnung des Attributs in nat\u00fcrlicher Sprache. Sagt etwas aus \u00fcber die Rolle, Verwendung oder Herkunft der Werte die das Attribut beschriebt aussagen. Der Namen sollte in der Wirkgungswelt nicht mehrdeutig belegt sein\n\nEindeutig Innerhalb der Entit\u00e4t. \n\n*Offizieller* Name, der in der verbalen Kommunikation und in allen Dokumenten verwendet werden soll. Typischerweise der Name in der Hauptsprache des Modells.",
+        "en": "Meaningful natural language name for the attribute.\nShould say something about the role, use or origin of the values described by the attribute. The name should not be ambiguous in the real world.\n\nIt must be unique within the entity.\n\n*Official* name to be used in verbal communication and in all documents. Typically, the name in the model's main language."
+      },
+      "domainId": "DOMA14",
+      "parentId": "ENTI27",
+      "displname": {
+        "de": "Name",
         "en": "Name"
       },
+      "sortOrder": 1,
       "mandatory": true,
-      "parentid": "ENTI12",
-      "domainid": "DOMA36",
-      "displayseq": 1,
-      "description": {
-        "en": "Aussagekr\u00e4ftige Bezeichnung des Attributs in nat\u00fcrlicher Sprache. Sagt etwas aus \u00fcber die Rolle, Verwendung oder Herkunft der Werte die das Attribut beschriebt aussagen. Der Namen sollte in der Wirkgungswelt nicht mehrdeutig belegt sein\n\nEindeutig Innerhalb der Entit\u00e4t. \n\n*Offizieller* Name, der in der verbalen Kommunikation und in allen Dokumenten verwendet werden soll. Typischerweise der Name in der Hauptsprache des Modells.\n"
-      },
       "descriptive": true,
-      "historicised": false,
-      "translated": false
+      "temporal": false,
+      "repeated": false,
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Attribut/Name",
+        "MULTILINGUAL": "0",
+        "SOURCE-ID": "f2412b70-e7bf-404b-aa06-fc059d93094e",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "1",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com"
+      }
     },
     {
-      "elementid": "ATTR38",
-      "name": {
-        "en": "Assoziation"
-      },
-      "mandatory": false,
-      "parentid": "ENTI9",
-      "domainid": "DOMA34",
-      "displayseq": 2,
-      "examples": [
-        "gekauft",
-        "liegt auf",
-        "enth\u00e4lt",
-        "enthalten in"
-      ],
-      "descriptive": true,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR39",
-      "name": {
-        "en": "Beispiel"
-      },
-      "mandatory": false,
-      "parentid": "ENTI9",
-      "domainid": "DOMA46",
-      "displayseq": 9,
-      "examples": [
-        "Ein Kunde kauft optional mehrere Produkte",
-        "Ein Planet umkeist  zwingend einen Stern",
-        "Ein Mond umkrest zwingend entweder einen Planeten oder einen Asteroiden"
-      ],
-      "descriptive": false,
-      "historicised": false,
-      "repeated": true
-    },
-    {
-      "elementid": "ATTR40",
-      "name": {
-        "en": "ist historisiert"
-      },
-      "mandatory": false,
-      "parentid": "ENTI9",
-      "domainid": "DOMA55",
-      "displayseq": 5,
-      "descriptive": false,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR41",
-      "name": {
-        "en": "ist obligatorisch"
-      },
-      "mandatory": true,
-      "parentid": "ENTI9",
-      "domainid": "DOMA55",
-      "displayseq": 4,
-      "descriptive": true,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR42",
-      "name": {
-        "en": "Kardinalit\u00e4t"
-      },
-      "mandatory": true,
-      "parentid": "ENTI9",
-      "domainid": "DOMA61",
-      "displayseq": 3,
-      "descriptive": true,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR43",
-      "name": {
-        "en": "Relationsendetyp"
-      },
-      "mandatory": true,
-      "parentid": "ENTI9",
-      "domainid": "DOMA59",
-      "displayseq": 1,
-      "descriptive": true,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR44",
-      "name": {
-        "en": "Beispiel"
-      },
-      "mandatory": false,
-      "parentid": "ENTI13",
-      "domainid": "DOMA46",
-      "displayseq": 6,
+      "elementId": "ATTR55",
+      "name": "Kurzbeschrieb",
       "description": {
-        "en": "Beispielwerte f\u00fcr eine Entit\u00e4t. In der Regel 1\u20132 Werte beschreibender Attribute aus Beispielen aus der realen Welt . \n\nSie helfen dabei, eine Entit\u00e4t besser zu verstehen oder sie schnell in die eigene Erfahrung zu integrieren.\n\nBeispielwerte sollten wiederholt  oder \u00fcber mehrere Elemente hinweg verkn\u00fcpft werden (Entit\u00e4t, Attribut, Beziehung usw.). Auf diese Weise lassen sich konkrete \u201eGeschichten\u201d bilden."
+        "de": "Kurzer Text, der die Bedeutung und Verwendung erkl\u00e4rt. Wird z. B. als Tooltip in der Benutzeroberfl\u00e4che verwendet.",
+        "en": "Short text explaining the meaning and the usage. Used e.g. as tooltips in UI"
       },
-      "shortdescr": {
-        "en": "Exemplarische reale Werte"
+      "domainId": "DOMA12",
+      "parentId": "ENTI28",
+      "displname": {
+        "de": "Kurzbeschrieb",
+        "en": "Short Description"
       },
+      "sortOrder": 3,
+      "mandatory": false,
       "descriptive": false,
-      "historicised": false,
-      "repeated": true
+      "temporal": false,
+      "repeated": false,
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Entit\u00e4t/Kurzbeschrieb",
+        "MULTILINGUAL": "1",
+        "SOURCE-ID": "014718fe-5bc0-4532-a4dd-502e0349bc37",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "3",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com"
+      }
     },
     {
-      "elementid": "ATTR45",
-      "name": {
-        "en": "Beschreibung"
-      },
-      "mandatory": false,
-      "parentid": "ENTI13",
-      "domainid": "DOMA32",
-      "displayseq": 2,
+      "elementId": "ATTR56",
+      "name": "Kurzname",
       "description": {
-        "en": "Definition, Bedeutung, Nutzen, Verwendung der Entit\u00e4t.\n"
+        "de": "Abgek\u00fcrzter Namen f\u00fcr die Entit\u00e4t.\nVerwendet f\u00fcr Erw\u00e4hnungen in Diagrammen, technischen Beschreibungen etc. \n\nEindeutig in diesem Informationsmodell.",
+        "en": "Abbreviated name for the entity.\nUsed for references in diagrams, technical descriptions, etc.\n\nMust be unique in this information model."
       },
-      "shortdescr": {
-        "en": "Definition, Bedeutung, Nutzung"
+      "domainId": "DOMA13",
+      "parentId": "ENTI28",
+      "displname": {
+        "de": "Kurzname",
+        "en": "Short name"
       },
+      "tooltip": "Abk\u00fcrzung",
+      "sortOrder": 5,
+      "mandatory": false,
       "descriptive": false,
-      "historicised": false,
-      "translated": true
-    },
-    {
-      "elementid": "ATTR46",
-      "name": {
-        "en": "Kurzbeschrieb"
-      },
-      "mandatory": false,
-      "parentid": "ENTI13",
-      "domainid": "DOMA34",
-      "displayseq": 3,
-      "description": {
-        "en": "Kurzer Text, der die Bedeutung und Verwendung erkl\u00e4rt. Wird z. B. als Tooltip in der Benutzeroberfl\u00e4che verwendet."
-      },
-      "descriptive": false,
-      "historicised": false,
-      "translated": true
-    },
-    {
-      "elementid": "ATTR47",
-      "name": {
-        "en": "Kurzname"
-      },
-      "mandatory": false,
-      "parentid": "ENTI13",
-      "domainid": "DOMA35",
-      "displayseq": 5,
-      "description": {
-        "en": "Abgek\u00fcrzter Namen f\u00fcr die Entit\u00e4t.\nVerwendet f\u00fcr Erw\u00e4hnungen in Diagrammen, technischen Beschreibungen etc. \n\nEindeutig in diesem Informationsmodell."
-      },
-      "shortdescr": {
-        "en": "Abk\u00fcrzung"
-      },
+      "temporal": false,
+      "repeated": false,
       "examples": [
         "ISBN",
         "SalesProd",
@@ -2437,537 +1406,492 @@
         "CustNo",
         "KdNr"
       ],
-      "descriptive": false,
-      "historicised": false
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Entit\u00e4t/Kurzname",
+        "SOURCE-ID": "c52f9895-0250-479d-b7bf-dddebf2fd088",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "5",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com"
+      }
     },
     {
-      "elementid": "ATTR48",
-      "name": {
+      "elementId": "ATTR57",
+      "name": "Beschreibung",
+      "description": {
+        "de": "Beschreibung des Zwecks, der Verwendung und der Zielgruppe dieses Informationsmodells.",
+        "en": "Description of purpose, usage, audience of this information model."
+      },
+      "domainId": "DOMA11",
+      "parentId": "ENTI37",
+      "displname": {
+        "de": "Beschreibung",
+        "en": "Description"
+      },
+      "sortOrder": 4,
+      "mandatory": false,
+      "descriptive": false,
+      "temporal": false,
+      "repeated": false,
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Informationsmodell/Beschreibung",
+        "SOURCE-ID": "0d39121f-f03b-4271-a06f-f6f0cfa8dd0f",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "4",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com"
+      }
+    },
+    {
+      "elementId": "ATTR58",
+      "name": "Hauptsprache",
+      "description": {
+        "de": "Sprache in der dieses Modell urspr\u00fcnglich beschrieben ist.\n\nIm Zweifelsfall gilt immer die Beschreibung/Definition der Hauptsprache.\n\nDient als Standardsprache in mehrsprachigen Zeichenfolgen, wenn f\u00fcr eine Sprache keine \u00dcbersetzung vorhanden ist..",
+        "en": "Main (and possibley only) language in which this model was originally described.\n\nIn case of doubt, the description/definition in the main language always applies.\n\nServes as default language in multilingual strings, whenever for any  language a translation is missing."
+      },
+      "domainId": "DOMA25",
+      "parentId": "ENTI37",
+      "displname": {
+        "de": "Hauptsprache",
+        "en": "Main language"
+      },
+      "sortOrder": 5,
+      "mandatory": true,
+      "descriptive": false,
+      "temporal": false,
+      "repeated": false,
+      "additionalProps": {
+        "DefaultValue": "en",
+        "FULLPATH": "Software Engineering Modell:Informationsmodell/Hauptsprache",
+        "SOURCE-ID": "359bffae-b4fe-4d62-9024-fbd4d39d5528",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "5",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com"
+      }
+    },
+    {
+      "elementId": "ATTR59",
+      "name": "Name",
+      "description": {
+        "de": "Name des Modells, eindeutig in der Zielumgebung (Firma, Organisation, Fachbereich...)",
+        "en": "Name of the information model. Unique in the environment (company, organisation, field of business) it exists in."
+      },
+      "domainId": "DOMA14",
+      "parentId": "ENTI37",
+      "displname": {
+        "de": "Name",
         "en": "Name"
       },
+      "sortOrder": 1,
       "mandatory": true,
-      "parentid": "ENTI13",
-      "domainid": "DOMA36",
-      "displayseq": 1,
-      "description": {
-        "en": "Eindeutige m\u00f6glichst aussagekr\u00e4ftige Bezeichnung eines Dings das diese Entit\u00e4t beschreibt.\n\nEindeutig in diesem Informationsmodell.\n\n*Offizieller* Name, der in der verbalen Kommunikation und in allen Dokumenten verwendet werden soll."
-      },
-      "examples": [
-        "Verkaufsprodukt",
-        "Lieferant",
-        "Supplier",
-        "Hersteller"
-      ],
       "descriptive": true,
-      "historicised": false,
-      "translated": true
-    },
-    {
-      "elementid": "ATTR49",
-      "name": {
-        "en": "Synonym"
-      },
-      "mandatory": false,
-      "parentid": "ENTI13",
-      "domainid": "DOMA36",
-      "displayseq": 4,
-      "description": {
-        "en": "Liste der Synonymnamen f\u00fcr dieses Ding, die in alten Systemen oder aus Gewohnheit verwendet werden. Nicht \u00fcber alle Entit\u00e4ten hinweg eindeutig."
-      },
-      "shortdescr": {
-        "en": "Alternative Bezeichnungen"
-      },
-      "descriptive": false,
-      "historicised": false,
-      "repeated": true
-    },
-    {
-      "elementid": "ATTR50",
-      "name": {
-        "en": "Nummer"
-      },
-      "mandatory": true,
-      "parentid": "ENTI10",
-      "domainid": "DOMA40",
-      "displayseq": 1,
-      "description": {
-        "en": "Nummer zur Unterscheidung mehrerer exklusiver Beziehungsgruppen innerhalb einer Entit\u00e4t.  Sie zu einer exklusiven Beziehungsgruppe machen"
-      },
-      "descriptive": false,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR51",
-      "name": {
-        "en": "Beschreibung"
-      },
-      "mandatory": false,
-      "parentid": "ENTI18",
-      "domainid": "DOMA32",
-      "displayseq": 2,
-      "description": {
-        "en": "Begr\u00fcndung, Erl\u00e4uterung, Quellen, Konsequenzen f\u00fcr diese Gesch\u00e4ftsregel."
-      },
-      "examples": [
-        "Gem\u00e4ss Vorgaben ISO-xxxx",
-        "According to Swiss customs tariff 2310.1900"
-      ],
-      "descriptive": false,
-      "historicised": false,
-      "translated": true
-    },
-    {
-      "elementid": "ATTR52",
-      "name": {
-        "en": "Regel"
-      },
-      "mandatory": true,
-      "parentid": "ENTI18",
-      "domainid": "DOMA32",
-      "displayseq": 1,
-      "description": {
-        "en": "Regel die beschreibt, wie die verkn\u00fcpften Elemente voneinander abh\u00e4ngen."
-      },
-      "examples": [
-        "Endedatum >= Startdatum",
-        "A customer may have a maximum of 10 outstanding invoices."
-      ],
-      "descriptive": true,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR53",
-      "name": {
-        "en": "Beschreibung"
-      },
-      "mandatory": false,
-      "parentid": "ENTI25",
-      "domainid": "DOMA32",
-      "displayseq": 4,
-      "description": {
-        "en": "Beschreibung des Zwecks, der Verwendung und der Zielgruppe dieses Informationsmodells."
-      },
-      "descriptive": false,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR54",
-      "name": {
-        "en": "Hauptsprache"
-      },
-      "mandatory": true,
-      "parentid": "ENTI25",
-      "domainid": "DOMA53",
-      "displayseq": 5,
-      "description": {
-        "en": "Sprache in der dieses Modell urspr\u00fcnglich beschrieben ist.\n\nIm Zweifelsfall gilt immer die Beschreibung/Definition der Hauptsprache.\n\nDient als Standardsprache in mehrsprachigen Zeichenfolgen, wenn f\u00fcr eine Sprache keine \u00dcbersetzung vorhanden ist.."
-      },
-      "descriptive": false,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR55",
-      "name": {
-        "en": "Name"
-      },
-      "mandatory": true,
-      "parentid": "ENTI25",
-      "domainid": "DOMA36",
-      "displayseq": 1,
-      "description": {
-        "en": "Name des Modells, eindeutig in der Zielumgebung (Firma, Organisation, Fachbereich...)"
-      },
+      "temporal": false,
+      "repeated": false,
       "examples": [
         "Informationsmodell foryouandyourcustomers",
         "Battery Pass Model"
       ],
-      "descriptive": true,
-      "historicised": false
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Informationsmodell/Name",
+        "SOURCE-ID": "60698900-d00e-40db-af26-335d1e047964",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "1",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com"
+      }
     },
     {
-      "elementid": "ATTR56",
-      "name": {
-        "en": "Sprachen"
-      },
-      "mandatory": false,
-      "parentid": "ENTI25",
-      "domainid": "DOMA53",
-      "displayseq": 6,
+      "elementId": "ATTR60",
+      "name": "Sprachen",
       "description": {
-        "en": "Liste der Sprachen, in die Modelltextelemente \u00fcbersetzt werden k\u00f6nnen. (excl. Hauptsprache)\n\nMussfelder m\u00fcssen mindestens in der Hauptsprache einen Wert haben. Fehlt eine \u00dcbersetzung in eine der Sprachen, gilt als Default-Wert der Wert in der Hauptsprache."
+        "de": "Liste der Sprachen, in die Modelltextelemente \u00fcbersetzt werden k\u00f6nnen. (excl. Hauptsprache)\n\nMussfelder m\u00fcssen mindestens in der Hauptsprache einen Wert haben. Fehlt eine \u00dcbersetzung in eine der Sprachen, gilt als Default-Wert der Wert in der Hauptsprache.",
+        "en": "List of languages into which model text elements can be translated. (excluding main language)\n\nMandatory fields must have a value in the main language at least. If a translation into one of the languages is missing, the value in the main language is used as the default value."
       },
+      "domainId": "DOMA25",
+      "parentId": "ENTI37",
+      "displname": {
+        "de": "Sprachen",
+        "en": "Languages"
+      },
+      "sortOrder": 6,
+      "mandatory": false,
       "descriptive": false,
-      "historicised": false,
-      "repeated": true
+      "temporal": false,
+      "repeated": true,
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Informationsmodell/Sprachen",
+        "SOURCE-ID": "953f0f8f-d912-41f1-8d73-6e7c0b17a451",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "6",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com"
+      }
     },
     {
-      "elementid": "ATTR57",
-      "name": {
+      "elementId": "ATTR61",
+      "name": "Version",
+      "description": {
+        "de": "Versionsnummer des in dieser Dokumentation dokumentierten Informationsmodells.",
+        "en": "Version number of the information model documented in this documentation (file, model...)"
+      },
+      "domainId": "DOMA23",
+      "parentId": "ENTI37",
+      "displname": {
+        "de": "Version",
         "en": "Version"
       },
+      "sortOrder": 3,
       "mandatory": false,
-      "parentid": "ENTI25",
-      "domainid": "DOMA52",
-      "displayseq": 3,
-      "description": {
-        "en": "Versionsnummer des in dieser Dokumentation dokumentierten Informationsmodells."
-      },
+      "descriptive": false,
+      "temporal": false,
+      "repeated": false,
       "examples": [
         "1.0",
         "0.9"
       ],
-      "descriptive": false,
-      "historicised": false
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Informationsmodell/Version",
+        "SOURCE-ID": "0746ff21-25e0-474f-9ff9-853a43292ffa",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "3",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com"
+      }
     },
     {
-      "elementid": "ATTR58",
-      "name": {
-        "en": "Zielumgebung"
-      },
-      "mandatory": false,
-      "parentid": "ENTI25",
-      "domainid": "DOMA41",
-      "displayseq": 2,
+      "elementId": "ATTR62",
+      "name": "Beschreibung",
       "description": {
-        "en": "Die Zielumgebung (auch als Wirkungswelt bezeichnet) ist die Gemeinschaft (Gruppe von Personen), die mithilfe der im Informationsmodell beschriebenen, genau definierten Sprache miteinander kommunizieren und zusammenarbeiten m\u00f6chte, sollte oder muss."
+        "de": "Grund, Gruppierunsaspekt f\u00fcr diese Kategorie.",
+        "en": "Reason, building aspect for this category."
       },
-      "shortdescr": {
-        "en": "Anwendungsbereich des Informationsmodell"
+      "domainId": "DOMA11",
+      "parentId": "ENTI33",
+      "displname": {
+        "de": "Beschreibung",
+        "en": "Description"
       },
-      "examples": [
-        "Firma GutesProdukt",
-        "Association of Swiss Energy Suppliers"
-      ],
-      "descriptive": true,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR59",
-      "name": {
-        "en": "Beschreibung"
-      },
+      "sortOrder": 2,
       "mandatory": false,
-      "parentid": "ENTI19",
-      "domainid": "DOMA32",
-      "displayseq": 2,
-      "description": {
-        "en": "Grund, Gruppierunsaspekt f\u00fcr diese Kategorie."
-      },
       "descriptive": false,
-      "historicised": false
+      "temporal": false,
+      "repeated": false,
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Kategorie/Beschreibung",
+        "SOURCE-ID": "c2c671b2-300b-497a-a165-9b336d3e18bd",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "2",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com"
+      }
     },
     {
-      "elementid": "ATTR60",
-      "name": {
+      "elementId": "ATTR63",
+      "name": "Name",
+      "description": {
+        "de": "Bezeichung der Kategorie, eindeutig innerhalb der Vater-Kategorie.",
+        "en": "Name of the category. Unique within its parent category"
+      },
+      "domainId": "DOMA14",
+      "parentId": "ENTI33",
+      "displname": {
+        "de": "Name",
         "en": "Name"
       },
+      "sortOrder": 1,
       "mandatory": true,
-      "parentid": "ENTI19",
-      "domainid": "DOMA36",
-      "displayseq": 1,
-      "description": {
-        "en": "Bezeichung der Kategorie, eindeutig innerhalb der Vater-Kategorie."
-      },
+      "descriptive": true,
+      "temporal": false,
+      "repeated": false,
       "examples": [
         "HR",
         "procurement",
         "Products",
         "Sales"
       ],
-      "descriptive": true,
-      "historicised": false
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Kategorie/Name",
+        "SOURCE-ID": "d1525462-13d5-4549-a698-b28dc1e3e5b8",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "1",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com"
+      }
     },
     {
-      "elementid": "ATTR61",
-      "name": {
-        "en": "Max Wert"
-      },
-      "mandatory": false,
-      "parentid": "ENTI28",
-      "domainid": "DOMA51",
-      "displayseq": 4,
-      "descriptive": false,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR62",
-      "name": {
-        "en": "Min Wert"
-      },
-      "mandatory": false,
-      "parentid": "ENTI28",
-      "domainid": "DOMA51",
-      "displayseq": 3,
-      "descriptive": false,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR63",
-      "name": {
-        "en": "Nachkommastellen"
-      },
-      "mandatory": false,
-      "parentid": "ENTI28",
-      "domainid": "DOMA47",
-      "displayseq": 2,
-      "descriptive": true,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR64",
-      "name": {
-        "en": "Rundungseinheit"
-      },
-      "mandatory": false,
-      "parentid": "ENTI28",
-      "domainid": "DOMA63",
-      "displayseq": 5,
-      "examples": [
-        "0.5",
-        "0.25",
-        "1000"
-      ],
-      "descriptive": false,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR65",
-      "name": {
-        "en": "Totalstellen"
-      },
-      "mandatory": false,
-      "parentid": "ENTI28",
-      "domainid": "DOMA47",
-      "displayseq": 1,
-      "descriptive": true,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR66",
-      "name": {
-        "en": "Beschreibung"
-      },
-      "mandatory": false,
-      "parentid": "ENTI29",
-      "domainid": "DOMA32",
-      "displayseq": 2,
-      "descriptive": false,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR67",
-      "name": {
-        "en": "SI-Einheit"
-      },
-      "mandatory": false,
-      "parentid": "ENTI29",
-      "domainid": "DOMA45",
-      "displayseq": 3,
-      "descriptive": true,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR68",
-      "name": {
-        "en": "Symbol"
-      },
-      "mandatory": true,
-      "parentid": "ENTI29",
-      "domainid": "DOMA35",
-      "displayseq": 1,
-      "descriptive": true,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR69",
-      "name": {
-        "en": "Max L\u00e4nge"
-      },
-      "mandatory": false,
-      "parentid": "ENTI30",
-      "domainid": "DOMA50",
-      "displayseq": 2,
-      "descriptive": true,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR70",
-      "name": {
-        "en": "Min L\u00e4nge"
-      },
-      "mandatory": false,
-      "parentid": "ENTI30",
-      "domainid": "DOMA50",
-      "displayseq": 1,
-      "descriptive": false,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR71",
-      "name": {
-        "en": "Werteregel"
-      },
-      "mandatory": false,
-      "parentid": "ENTI30",
-      "domainid": "DOMA32",
-      "displayseq": 3,
-      "descriptive": false,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR72",
-      "name": {
-        "en": "Anzeigetext"
-      },
-      "mandatory": true,
-      "parentid": "ENTI31",
-      "domainid": "DOMA32",
-      "displayseq": 2,
-      "descriptive": true,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR73",
-      "name": {
-        "en": "Beschreibung"
-      },
-      "mandatory": false,
-      "parentid": "ENTI31",
-      "domainid": "DOMA32",
-      "displayseq": 4,
-      "descriptive": false,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR74",
-      "name": {
-        "en": "Sortierreihenfolge"
-      },
-      "mandatory": false,
-      "parentid": "ENTI31",
-      "domainid": "DOMA49",
-      "displayseq": 3,
-      "descriptive": true,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR75",
-      "name": {
-        "en": "Wert"
-      },
-      "mandatory": true,
-      "parentid": "ENTI31",
-      "domainid": "DOMA32",
-      "displayseq": 1,
-      "descriptive": true,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR76",
-      "name": {
-        "en": "Beispiel"
-      },
-      "mandatory": false,
-      "parentid": "ENTI32",
-      "domainid": "DOMA46",
-      "displayseq": 3,
-      "descriptive": false,
-      "historicised": false,
-      "repeated": true
-    },
-    {
-      "elementid": "ATTR77",
-      "name": {
-        "en": "Beschreibung"
-      },
-      "mandatory": false,
-      "parentid": "ENTI32",
-      "domainid": "DOMA32",
-      "displayseq": 2,
-      "descriptive": false,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR78",
-      "name": {
-        "en": "Name"
-      },
-      "mandatory": true,
-      "parentid": "ENTI32",
-      "domainid": "DOMA36",
-      "displayseq": 1,
-      "descriptive": true,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR79",
-      "name": {
-        "en": "Granularit\u00e4t"
-      },
-      "mandatory": true,
-      "parentid": "ENTI34",
-      "domainid": "DOMA56",
-      "displayseq": 1,
-      "descriptive": true,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR80",
-      "name": {
-        "en": "Max Zeitpunkt"
-      },
-      "mandatory": false,
-      "parentid": "ENTI34",
-      "domainid": "DOMA43",
-      "displayseq": 3,
-      "descriptive": false,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR81",
-      "name": {
-        "en": "Min Zeitpunkt"
-      },
-      "mandatory": false,
-      "parentid": "ENTI34",
-      "domainid": "DOMA43",
-      "displayseq": 2,
-      "descriptive": false,
-      "historicised": false
-    },
-    {
-      "elementid": "ATTR82",
-      "name": {
-        "en": "Name"
-      },
-      "mandatory": true,
-      "parentid": "ENTI24",
-      "domainid": "DOMA36",
-      "displayseq": 1,
+      "elementId": "ATTR64",
+      "name": "Elementidentifikation",
       "description": {
+        "de": "Verweis auf eine Instanz irgend eines Elementes im Modell",
+        "en": "Verweis auf eine Instanz irgend eines Elementes im Modell"
+      },
+      "domainId": "DOMA15",
+      "parentId": "ENTI35",
+      "displname": {
+        "de": "Elementidentifikation",
+        "en": "Element identification"
+      },
+      "tooltip": "Verweis auf eine Instanz irgend eines Elementes im Modell",
+      "sortOrder": 1,
+      "mandatory": true,
+      "descriptive": false,
+      "repeated": false,
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Modellelement/Elementidentifikation",
+        "SOURCE-ID": "57009995-0aa4-4965-b2b0-186d377c0e83",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "1",
+        "uc": "stb@foryouandyourcustomers.com"
+      }
+    },
+    {
+      "elementId": "ATTR65",
+      "name": "Name",
+      "description": {
+        "de": "Name of the attribute that is listed as an additional property for the element.",
         "en": "Name of the attribute that is listed as an additional property for the element."
       },
+      "domainId": "DOMA14",
+      "parentId": "ENTI36",
+      "displname": {
+        "de": "Name",
+        "en": "Name"
+      },
+      "sortOrder": 1,
+      "mandatory": true,
+      "descriptive": true,
+      "temporal": false,
+      "repeated": false,
       "examples": [
         "SOURCE-ID",
         "Schutzstatus"
       ],
-      "descriptive": true,
-      "historicised": false
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Zus\u00e4tzliche Eigenschaft/Name",
+        "SOURCE-ID": "f4a1ff5e-49d8-4130-aab2-63af031992d0",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "1",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com"
+      }
     },
     {
-      "elementid": "ATTR83",
-      "name": {
-        "en": "Wert"
-      },
-      "mandatory": false,
-      "parentid": "ENTI24",
-      "domainid": "DOMA41",
-      "displayseq": 2,
+      "elementId": "ATTR66",
+      "name": "Wert",
       "description": {
-        "en": "Wert, den eine zus\u00e4tzliche Eigenschaft f\u00fcr dieses Element hat.\n\nWerte sind Zeichenfolgen. Datentyp, Einschr\u00e4nkungen usw. sind von den Personen oder Tools zu handhaben, die die Werte verwalten."
+        "de": "Wert, den eine zus\u00e4tzliche Eigenschaft f\u00fcr dieses Element hat.\n\nWerte sind Zeichenfolgen. Datentyp, Einschr\u00e4nkungen usw. sind von den Personen oder Tools zu handhaben, die die Werte verwalten.",
+        "en": "Value that an additional property has for this element.\n\nValues are strings. Datatype, restrictions etc. are to be handled by the people or tools managing the values"
       },
+      "domainId": "DOMA19",
+      "parentId": "ENTI36",
+      "displname": {
+        "de": "Wert",
+        "en": "Value"
+      },
+      "sortOrder": 2,
+      "mandatory": false,
       "descriptive": false,
-      "historicised": false
+      "temporal": false,
+      "repeated": false,
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Zus\u00e4tzliche Eigenschaft/Wert",
+        "SOURCE-ID": "03e42b1f-2ff7-495c-9b43-5ad8c4298b53",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "order": "2",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com"
+      }
     }
-  ]
+  ],
+  "Relations": [
+    {
+      "elementId": "RELA67",
+      "relationType": "M:1",
+      "fwd": {
+        "entityId": "ENTI28",
+        "assocText": {
+          "de": "beschrieben durch",
+          "en": "described by"
+        },
+        "mandatory": false,
+        "cardinality": "M",
+        "historicised": false
+      },
+      "bwd": {
+        "entityId": "ENTI27",
+        "assocText": {
+          "de": "beschreibt",
+          "en": "describes"
+        },
+        "mandatory": true,
+        "cardinality": "1",
+        "arcNumber": 1
+      },
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Entit\u00e4t->beschrieben durch->Attribut",
+        "SOURCE-ID": "fe1c105e-43b4-4a1b-8730-f463f5e07412",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-15T09:25:40.490000"
+      }
+    },
+    {
+      "elementId": "RELA68",
+      "relationType": "M:N",
+      "fwd": {
+        "entityId": "ENTI32",
+        "assocText": {
+          "de": "schr\u00e4nkt ein",
+          "en": "restricts"
+        },
+        "mandatory": false,
+        "cardinality": "M",
+        "historicised": false
+      },
+      "bwd": {
+        "entityId": "ENTI27",
+        "assocText": {
+          "de": "eingeschr\u00e4nkt durch",
+          "en": "restricted by"
+        },
+        "mandatory": false,
+        "cardinality": "M"
+      },
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Gesch\u00e4ftsregel->schr\u00e4nkt ein->Attribut",
+        "SOURCE-ID": "7f4df747-d3ec-4b59-8f26-e32150e74f61",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-14T18:20:08.578000"
+      }
+    },
+    {
+      "elementId": "RELA69",
+      "relationType": "M:N",
+      "fwd": {
+        "entityId": "ENTI32",
+        "assocText": {
+          "de": "sch\u00e4nkt ein",
+          "en": "restricts"
+        },
+        "mandatory": false,
+        "cardinality": "M",
+        "historicised": false
+      },
+      "bwd": {
+        "entityId": "ENTI28",
+        "assocText": {
+          "de": "eingeschr\u00e4nkt durch",
+          "en": "restricted by"
+        },
+        "mandatory": false,
+        "cardinality": "M"
+      },
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Gesch\u00e4ftsregel->sch\u00e4nkt ein->Entit\u00e4t",
+        "SOURCE-ID": "b768ddc3-8f19-4183-885e-918dc6aad860",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-14T18:20:08.578000"
+      }
+    },
+    {
+      "elementId": "RELA70",
+      "relationType": "M:1",
+      "fwd": {
+        "entityId": "ENTI37",
+        "assocText": {
+          "de": "aufgebaut aus",
+          "en": "constructed from"
+        },
+        "mandatory": false,
+        "cardinality": "M",
+        "historicised": false
+      },
+      "bwd": {
+        "entityId": "ENTI28",
+        "assocText": {
+          "de": "tr\u00e4gt bei zu",
+          "en": "contributes to"
+        },
+        "mandatory": true,
+        "cardinality": "1"
+      },
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Informationsmodell->aufgebaut aus->Entit\u00e4t",
+        "SOURCE-ID": "7f5440f6-69e0-474b-a872-e561dddc1f00",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-14T18:20:08.578000"
+      }
+    },
+    {
+      "elementId": "RELA71",
+      "relationType": "M:1",
+      "fwd": {
+        "entityId": "ENTI33",
+        "assocText": {
+          "de": "gruppiert",
+          "en": "groups"
+        },
+        "mandatory": false,
+        "cardinality": "M",
+        "historicised": false
+      },
+      "bwd": {
+        "entityId": "ENTI33",
+        "assocText": {
+          "de": "gruppiert in",
+          "en": "grouped in"
+        },
+        "mandatory": false,
+        "cardinality": "1"
+      },
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Kategorie->gruppiert->Kategorie",
+        "SOURCE-ID": "5b88c4f3-6b5d-4ce1-931b-f8f92c9bafdb",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-15T09:25:40.490000"
+      }
+    },
+    {
+      "elementId": "RELA72",
+      "relationType": "M:1",
+      "fwd": {
+        "entityId": "ENTI33",
+        "assocText": {
+          "de": "gruppiert",
+          "en": "groups"
+        },
+        "mandatory": false,
+        "cardinality": "M",
+        "historicised": false
+      },
+      "bwd": {
+        "entityId": "ENTI28",
+        "assocText": {
+          "de": "gruppiert in",
+          "en": "gouped in"
+        },
+        "mandatory": false,
+        "cardinality": "1"
+      },
+      "additionalProps": {
+        "FULLPATH": "Software Engineering Modell:Kategorie->gruppiert->Entit\u00e4t",
+        "SOURCE-ID": "99b9b82d-4f32-43b2-bbe8-09356dd6f0c7",
+        "SOURCE-MODEL": "Software Engineering Modell",
+        "temporal": "0",
+        "uc": "stb@foryouandyourcustomers.com",
+        "dc": "2025-07-15T09:25:40.490000"
+      }
+    }
+  ],
+  "BusinessRules": []
 }
